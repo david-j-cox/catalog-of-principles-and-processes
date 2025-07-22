@@ -13,8 +13,13 @@ from crud import (
     get_articles_by_year_range
 )
 
-# Create database tables
-Base.metadata.create_all(bind=engine)
+# Create database tables (only if database is available)
+try:
+    Base.metadata.create_all(bind=engine)
+    print("✅ Database tables created successfully")
+except Exception as e:
+    print(f"⚠️  Database connection failed during startup: {e}")
+    print("   This is normal if the database is not ready yet.")
 
 app = FastAPI(
     title="JEAB Article Database",
@@ -34,6 +39,10 @@ app.add_middleware(
 @app.get("/")
 async def root():
     return {"message": "JEAB Article Database API", "version": "1.0.0"}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy", "message": "JEAB API is running"}
 
 @app.get("/api/articles", response_model=List[ArticleResponse])
 async def read_articles(
