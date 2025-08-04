@@ -1,112 +1,47 @@
 // Behavioral Process Catalog - JavaScript Functionality
 
-// Sample data for demonstration
-let behavioralData = [
-    {
-        title: "Effects of Variable-Ratio Schedules on Response Rate in Pigeons",
-        year: 1995,
-        volume: 63,
-        issue: 2,
-        process: "Variable-Ratio Reinforcement",
-        equation: "R = k × (SR/t)"
-    },
-    {
-        title: "Temporal Control in Fixed-Interval Schedules: A Quantitative Analysis",
-        year: 1998,
-        volume: 69,
-        issue: 1,
-        process: "Fixed-Interval Responding",
-        equation: "P(t) = 1 - e^(-λt)"
-    },
-    {
-        title: "Choice Behavior Under Concurrent Variable-Interval Schedules",
-        year: 2001,
-        volume: 75,
-        issue: 3,
-        process: "Concurrent Schedules",
-        equation: "B₁/B₂ = (R₁/R₂)^a"
-    },
-    {
-        title: "Delay Discounting and Self-Control in Humans",
-        year: 2003,
-        volume: 80,
-        issue: 1,
-        process: "Delay Discounting",
-        equation: "V = A/(1 + kD)"
-    },
-    {
-        title: "Stimulus Equivalence and Derived Relational Responding",
-        year: 2005,
-        volume: 84,
-        issue: 2,
-        process: "Stimulus Equivalence",
-        equation: "P(match) = e^(s×S)/(1 + e^(s×S))"
-    },
-    {
-        title: "Behavioral Economics of Drug Self-Administration",
-        year: 2007,
-        volume: 88,
-        issue: 1,
-        process: "Behavioral Economics",
-        equation: "Q = Q₀ × 10^(-α×P^β)"
-    },
-    {
-        title: "Resurgence of Previously Reinforced Behavior",
-        year: 2010,
-        volume: 94,
-        issue: 3,
-        process: "Resurgence",
-        equation: "R(t) = R₀ × e^(-kt) + Rₑ"
-    },
-    {
-        title: "Matching Law in Group Contingencies",
-        year: 2012,
-        volume: 98,
-        issue: 2,
-        process: "Matching Law",
-        equation: "B₁/(B₁+B₂) = R₁/(R₁+R₂)"
-    },
-    {
-        title: "Contextual Control of Operant Behavior",
-        year: 2015,
-        volume: 104,
-        issue: 1,
-        process: "Contextual Control",
-        equation: "R = β₀ + β₁×C + β₂×S"
-    },
-    {
-        title: "Peak-Shift Effects in Stimulus Generalization",
-        year: 2018,
-        volume: 110,
-        issue: 2,
-        process: "Peak Shift",
-        equation: "G(x) = A × e^(-b(x-μ)²)"
-    },
-    {
-        title: "Temporal Bisection and the Scalar Expectancy Theory",
-        year: 2020,
-        volume: 114,
-        issue: 3,
-        process: "Temporal Bisection",
-        equation: "P(long) = 1/(1 + e^(-β(t-PSE)))"
-    },
-    {
-        title: "Operant Variability and Behavioral Flexibility",
-        year: 2022,
-        volume: 118,
-        issue: 1,
-        process: "Operant Variability",
-        equation: "U = -Σpᵢ × log₂(pᵢ)"
-    }
-];
+// Behavioral data will be loaded from data.json
+let behavioralData = [];
 
-// Load data from localStorage or use default data
-function loadData() {
-    const savedData = localStorage.getItem('behavioralData');
-    if (savedData) {
-        behavioralData = JSON.parse(savedData);
+// GitHub configuration
+const GITHUB_CONFIG = {
+    owner: 'david-j-cox',
+    repo: 'catalog-of-principles-and-processes',
+    dataFile: 'data.json'
+};
+
+// Load data from data.json file
+async function loadData() {
+    try {
+        const response = await fetch('data.json');
+        const jsonData = await response.json();
+        
+        // Merge with any local additions
+        const savedData = localStorage.getItem('behavioralData');
+        if (savedData) {
+            const localData = JSON.parse(savedData);
+            // Only keep local entries that aren't in the main data
+            const localOnlyEntries = localData.filter(localEntry => 
+                !jsonData.some(jsonEntry => 
+                    jsonEntry.title === localEntry.title && 
+                    jsonEntry.year === localEntry.year
+                )
+            );
+            behavioralData = [...jsonData, ...localOnlyEntries];
+        } else {
+            behavioralData = jsonData;
+        }
+        
+        return behavioralData;
+    } catch (error) {
+        console.error('Error loading data:', error);
+        // Fallback to localStorage only
+        const savedData = localStorage.getItem('behavioralData');
+        if (savedData) {
+            behavioralData = JSON.parse(savedData);
+        }
+        return behavioralData;
     }
-    return behavioralData;
 }
 
 // Save data to localStorage
@@ -114,15 +49,209 @@ function saveData() {
     localStorage.setItem('behavioralData', JSON.stringify(behavioralData));
 }
 
+// GitHub API Functions
+let githubToken = localStorage.getItem('github_token');
+
+function initializeGitHubAuth() {
+    const authSection = document.createElement('div');
+    authSection.innerHTML = `
+        <div id="github-auth" class="github-auth-panel">
+            <div class="auth-content">
+                <h3>🔗 Connect to GitHub</h3>
+                <p>To contribute entries to the catalog, connect your GitHub account:</p>
+                <div class="auth-controls">
+                    <input type="password" id="github-token" placeholder="GitHub Personal Access Token" 
+                           style="display: ${githubToken ? 'none' : 'block'}">
+                    <button id="connect-github" class="auth-btn">${githubToken ? '✅ Connected' : 'Connect GitHub'}</button>
+                    <button id="disconnect-github" class="auth-btn secondary" 
+                            style="display: ${githubToken ? 'block' : 'none'}">Disconnect</button>
+                </div>
+                <div class="auth-help">
+                    <a href="https://github.com/settings/tokens/new?scopes=repo&description=Behavioral%20Process%20Catalog" 
+                       target="_blank">📝 Create a GitHub token</a>
+                    <small>Requires 'repo' scope for creating pull requests</small>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.querySelector('.add-entry-container').before(authSection);
+    
+    // Event listeners
+    document.getElementById('connect-github').addEventListener('click', handleGitHubConnect);
+    document.getElementById('disconnect-github').addEventListener('click', handleGitHubDisconnect);
+}
+
+function handleGitHubConnect() {
+    if (githubToken) {
+        showSuccessMessage('Already connected to GitHub!');
+        return;
+    }
+    
+    const tokenInput = document.getElementById('github-token');
+    const token = tokenInput.value.trim();
+    
+    if (!token) {
+        showErrorMessage('Please enter a GitHub token');
+        return;
+    }
+    
+    // Validate token
+    validateGitHubToken(token).then(isValid => {
+        if (isValid) {
+            githubToken = token;
+            localStorage.setItem('github_token', token);
+            updateAuthUI(true);
+            showSuccessMessage('Successfully connected to GitHub!');
+        } else {
+            showErrorMessage('Invalid GitHub token. Please check and try again.');
+        }
+    });
+}
+
+function handleGitHubDisconnect() {
+    githubToken = null;
+    localStorage.removeItem('github_token');
+    updateAuthUI(false);
+    showSuccessMessage('Disconnected from GitHub');
+}
+
+function updateAuthUI(connected) {
+    document.getElementById('github-token').style.display = connected ? 'none' : 'block';
+    document.getElementById('connect-github').textContent = connected ? '✅ Connected' : 'Connect GitHub';
+    document.getElementById('disconnect-github').style.display = connected ? 'block' : 'none';
+}
+
+async function validateGitHubToken(token) {
+    try {
+        const response = await fetch('https://api.github.com/user', {
+            headers: {
+                'Authorization': `token ${token}`,
+                'Accept': 'application/vnd.github.v3+json'
+            }
+        });
+        return response.ok;
+    } catch (error) {
+        console.error('Token validation failed:', error);
+        return false;
+    }
+}
+
+async function createPullRequest(newEntry) {
+    if (!githubToken) {
+        throw new Error('GitHub token not found. Please connect your GitHub account first.');
+    }
+    
+    try {
+        // 1. Get the current data.json file
+        const dataResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json'
+            }
+        });
+        
+        if (!dataResponse.ok) {
+            throw new Error('Failed to fetch current data file');
+        }
+        
+        const dataFile = await dataResponse.json();
+        const currentData = JSON.parse(atob(dataFile.content));
+        
+        // 2. Add the new entry
+        const updatedData = [...currentData, newEntry];
+        const updatedContent = btoa(JSON.stringify(updatedData, null, 4));
+        
+        // 3. Create a new branch
+        const branchName = `add-entry-${Date.now()}`;
+        const mainBranchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs/heads/main`, {
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json'
+            }
+        });
+        
+        const mainBranch = await mainBranchResponse.json();
+        
+        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
+            method: 'POST',
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                ref: `refs/heads/${branchName}`,
+                sha: mainBranch.object.sha
+            })
+        });
+        
+        // 4. Update the file in the new branch
+        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                message: `Add new entry: ${newEntry.title}`,
+                content: updatedContent,
+                sha: dataFile.sha,
+                branch: branchName
+            })
+        });
+        
+        // 5. Create the pull request
+        const prResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/pulls`, {
+            method: 'POST',
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                title: `Add new behavioral process entry: ${newEntry.title}`,
+                head: branchName,
+                base: 'main',
+                body: `## New Behavioral Process Entry
+
+**Article Title:** ${newEntry.title}
+**Year:** ${newEntry.year}
+**Volume:** ${newEntry.volume}
+**Issue:** ${newEntry.issue}
+**Behavioral Process:** ${newEntry.process}
+**Equation:** ${newEntry.equation || 'N/A'}
+
+This entry was submitted through the Behavioral Process Catalog web interface.
+
+Please review and merge if appropriate.`
+            })
+        });
+        
+        if (!prResponse.ok) {
+            throw new Error('Failed to create pull request');
+        }
+        
+        const pullRequest = await prResponse.json();
+        return pullRequest;
+        
+    } catch (error) {
+        console.error('Error creating pull request:', error);
+        throw error;
+    }
+}
+
 // Initialize the application
-document.addEventListener('DOMContentLoaded', function() {
-    loadData();
+document.addEventListener('DOMContentLoaded', async function() {
+    await loadData();
     initializeNavigation();
     populateTable(behavioralData);
     populateFilters();
     updateStatistics();
     initializeSearch();
     initializeModal();
+    initializeGitHubAuth();
 });
 
 // Navigation functionality
@@ -341,8 +470,13 @@ function initializeModal() {
     });
     
     // Handle form submission
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async function(e) {
         e.preventDefault();
+        
+        const submitButton = form.querySelector('.submit-btn');
+        const originalText = submitButton.textContent;
+        submitButton.textContent = 'Processing...';
+        submitButton.disabled = true;
         
         const newEntry = {
             title: document.getElementById('new-title').value,
@@ -353,25 +487,97 @@ function initializeModal() {
             equation: document.getElementById('new-equation').value || 'N/A'
         };
         
-        // Add to data array
-        behavioralData.push(newEntry);
-        
-        // Save to localStorage
-        saveData();
-        
-        // Update table and filters
-        populateTable(behavioralData);
-        populateFilters();
-        updateStatistics();
-        
-        // Close modal and reset form
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-        form.reset();
-        
-        // Show success animation
-        showSuccessMessage('Entry added successfully!');
+        try {
+            if (githubToken) {
+                // Try to create pull request
+                const pullRequest = await createPullRequest(newEntry);
+                
+                // Show success with PR link
+                showPullRequestSuccess(pullRequest);
+                
+                // Also add to local data for immediate display
+                behavioralData.push(newEntry);
+                saveData();
+                
+            } else {
+                // Fallback to local storage only
+                behavioralData.push(newEntry);
+                saveData();
+                showSuccessMessage('Entry saved locally! Connect GitHub to contribute to the main catalog.');
+            }
+            
+            // Update table and filters
+            populateTable(behavioralData);
+            populateFilters();
+            updateStatistics();
+            
+            // Close modal and reset form
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            form.reset();
+            
+        } catch (error) {
+            console.error('Error submitting entry:', error);
+            
+            // Fallback to local storage
+            behavioralData.push(newEntry);
+            saveData();
+            populateTable(behavioralData);
+            populateFilters();
+            updateStatistics();
+            
+            // Close modal
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            form.reset();
+            
+            showErrorMessage(`Failed to create pull request: ${error.message}. Entry saved locally instead.`);
+        } finally {
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+        }
     });
+}
+
+// Pull request success message
+function showPullRequestSuccess(pullRequest) {
+    const successDiv = document.createElement('div');
+    successDiv.innerHTML = `
+        <div>🎉 Pull request created successfully!</div>
+        <div style="margin-top: 8px;">
+            <a href="${pullRequest.html_url}" target="_blank" style="color: var(--bg-dark); text-decoration: underline;">
+                View PR #${pullRequest.number}
+            </a>
+        </div>
+        <div style="font-size: 0.9em; margin-top: 4px;">Your contribution will be reviewed and merged if approved.</div>
+    `;
+    successDiv.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: var(--success-green);
+        color: var(--bg-dark);
+        padding: 15px 25px;
+        border-radius: 5px;
+        font-family: 'Orbitron', monospace;
+        font-weight: 700;
+        z-index: 1001;
+        animation: slideIn 0.5s ease-out;
+        box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+        max-width: 350px;
+        line-height: 1.4;
+    `;
+    
+    document.body.appendChild(successDiv);
+    
+    setTimeout(() => {
+        successDiv.style.animation = 'slideOut 0.5s ease-in';
+        setTimeout(() => {
+            if (document.body.contains(successDiv)) {
+                document.body.removeChild(successDiv);
+            }
+        }, 500);
+    }, 5000);
 }
 
 // Success message display

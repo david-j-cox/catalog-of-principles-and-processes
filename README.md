@@ -2,21 +2,21 @@
 
 A retro-themed web application for cataloging behavioral processes from the Journal of Experimental Analysis of Behavior (JEAB). Built with a 1990s science aesthetic celebrating biology, nature, and biodiversity.
 
-## 🚀 Live Demo
+## Live Demo
 
-Visit the live site: [Your GitHub Pages URL will be here]
+Visit the live site: [URL Coming]
 
-## 📋 Features
+## Features
 
 - **Interactive Data Table**: Browse articles with columns for title, year, volume, issue, behavioral process, and IV→DV equations
 - **Search & Filter**: Real-time search across all fields with filtering by year and behavioral process
 - **Add New Entries**: Modal form to add new research articles to the catalog
 - **Statistics Dashboard**: Overview of catalog metrics and database statistics
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
-- **Data Persistence**: Entries are saved in browser localStorage
+- **Data Persistence**: Entries are saved in browser localStorage and generate pull request to site owner to approve or deny
 - **Retro Science Theme**: 1990s-inspired design with neon colors and geometric patterns
 
-## 🎨 Design Theme
+## Design Theme
 
 The application features a distinctive 1990s retro science aesthetic:
 - **Neon Color Palette**: Bright greens (#00ff88), cyans (#00ccff), and purples (#9933ff)
@@ -24,52 +24,8 @@ The application features a distinctive 1990s retro science aesthetic:
 - **Animations**: Smooth transitions, glowing effects, and floating elements
 - **Biology-Inspired**: Color schemes and visual elements celebrating nature and biodiversity
 
-## 🛠️ Deployment to GitHub Pages
 
-### Method 1: Direct Upload
-1. Create a new repository on GitHub
-2. Upload these files to the repository:
-   - `index.html`
-   - `styles.css`
-   - `script.js`
-   - `README.md`
-3. Go to Settings → Pages
-4. Select "Deploy from a branch" and choose `main` branch
-5. Your site will be available at `https://[username].github.io/[repository-name]`
-
-### Method 2: Git Commands
-```bash
-# Initialize git repository
-git init
-
-# Add all files
-git add .
-
-# Commit files
-git commit -m "Initial commit: Behavioral Process Catalog"
-
-# Add remote repository
-git remote add origin https://github.com/[username]/[repository-name].git
-
-# Push to GitHub
-git push -u origin main
-
-# Enable GitHub Pages in repository settings
-```
-
-## 📊 Sample Data
-
-The application comes pre-loaded with sample entries representing typical JEAB research:
-
-- Variable-Ratio Reinforcement studies
-- Fixed-Interval schedule analyses
-- Concurrent schedule investigations
-- Delay discounting research
-- Stimulus equivalence studies
-- Behavioral economics applications
-- And more!
-
-## 💻 Usage
+## Usage
 
 ### Viewing the Catalog
 - **Browse**: Navigate through the data table to view all entries
@@ -93,7 +49,7 @@ The application comes pre-loaded with sample entries representing typical JEAB r
 - `Ctrl+Enter` (or `Cmd+Enter`): Open add entry modal
 - `Escape`: Close modal
 
-## 🔧 Customization
+## Customization
 
 ### Adding More Sample Data
 Edit the `behavioralData` array in `script.js`:
@@ -104,6 +60,7 @@ Edit the `behavioralData` array in `script.js`:
     year: 2024,
     volume: 120,
     issue: 1,
+    abstract: "Enter abstract"
     process: "Behavioral Process Name",
     equation: "Mathematical Equation"
 }
@@ -123,31 +80,20 @@ The CSS uses CSS custom properties (variables) for easy theme customization:
 }
 ```
 
-## 📱 Responsive Features
+## Responsive Features
 
 - Mobile-optimized table layout
 - Collapsible navigation for small screens
 - Touch-friendly interface elements
 - Responsive grid layouts for cards and statistics
 
-## 🔄 Data Management
+## Data Management
 
 - **Local Storage**: All data persists in browser localStorage
 - **Export Capability**: Future enhancement for data export
 - **Import Functionality**: Potential for CSV/JSON import features
 
-## 🎯 Future Enhancements
-
-- [ ] Data export to CSV/JSON
-- [ ] Bulk import functionality
-- [ ] Advanced filtering options
-- [ ] Article detail view with abstracts
-- [ ] Citation formatting tools
-- [ ] Data visualization charts
-- [ ] Collaborative features
-- [ ] Backend database integration
-
-## 🧪 Technical Stack
+## Technical Stack
 
 - **Frontend**: Vanilla HTML5, CSS3, JavaScript (ES6+)
 - **Styling**: Custom CSS with CSS Grid and Flexbox
@@ -155,7 +101,7 @@ The CSS uses CSS custom properties (variables) for easy theme customization:
 - **Storage**: Browser localStorage
 - **Deployment**: GitHub Pages
 
-## 📄 File Structure
+## File Structure
 
 ```
 catalog-of-principles-and-processes/
@@ -165,7 +111,7 @@ catalog-of-principles-and-processes/
 └── README.md           # Documentation
 ```
 
-## 🤝 Contributing
+## Contributing
 
 To contribute to this project:
 
@@ -175,17 +121,13 @@ To contribute to this project:
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Create a Pull Request
 
-## 📜 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🔬 About JEAB
+## About JEAB
 
 The Journal of Experimental Analysis of Behavior (JEAB) is a leading publication in behavior analysis, publishing research on fundamental behavioral processes across species. This catalog aims to make the rich history of behavioral research more accessible and searchable.
-
-## 💡 Inspiration
-
-This project celebrates the intersection of technology and behavioral science, honoring both the rigorous scientific methodology of JEAB and the innovative spirit of 1990s digital design.
 
 ---
 

@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Effects of Variable-Ratio Schedules on Response Rate in Pigeons",
+        "year": 1995,
+        "volume": 63,
+        "issue": 2,
+        "process": "Variable-Ratio Reinforcement",
+        "equation": "R = k × (SR/t)"
+    },
+    {
+        "title": "Temporal Control in Fixed-Interval Schedules: A Quantitative Analysis",
+        "year": 1998,
+        "volume": 69,
+        "issue": 1,
+        "process": "Fixed-Interval Responding",
+        "equation": "P(t) = 1 - e^(-λt)"
+    },
+    {
+        "title": "Choice Behavior Under Concurrent Variable-Interval Schedules",
+        "year": 2001,
+        "volume": 75,
+        "issue": 3,
+        "process": "Concurrent Schedules",
+        "equation": "B₁/B₂ = (R₁/R₂)^a"
+    },
+    {
+        "title": "Delay Discounting and Self-Control in Humans",
+        "year": 2003,
+        "volume": 80,
+        "issue": 1,
+        "process": "Delay Discounting",
+        "equation": "V = A/(1 + kD)"
+    },
+    {
+        "title": "Stimulus Equivalence and Derived Relational Responding",
+        "year": 2005,
+        "volume": 84,
+        "issue": 2,
+        "process": "Stimulus Equivalence",
+        "equation": "P(match) = e^(s×S)/(1 + e^(s×S))"
+    },
+    {
+        "title": "Behavioral Economics of Drug Self-Administration",
+        "year": 2007,
+        "volume": 88,
+        "issue": 1,
+        "process": "Behavioral Economics",
+        "equation": "Q = Q₀ × 10^(-α×P^β)"
+    },
+    {
+        "title": "Resurgence of Previously Reinforced Behavior",
+        "year": 2010,
+        "volume": 94,
+        "issue": 3,
+        "process": "Resurgence",
+        "equation": "R(t) = R₀ × e^(-kt) + Rₑ"
+    },
+    {
+        "title": "Matching Law in Group Contingencies",
+        "year": 2012,
+        "volume": 98,
+        "issue": 2,
+        "process": "Matching Law",
+        "equation": "B₁/(B₁+B₂) = R₁/(R₁+R₂)"
+    },
+    {
+        "title": "Contextual Control of Operant Behavior",
+        "year": 2015,
+        "volume": 104,
+        "issue": 1,
+        "process": "Contextual Control",
+        "equation": "R = β₀ + β₁×C + β₂×S"
+    },
+    {
+        "title": "Peak-Shift Effects in Stimulus Generalization",
+        "year": 2018,
+        "volume": 110,
+        "issue": 2,
+        "process": "Peak Shift",
+        "equation": "G(x) = A × e^(-b(x-μ)²)"
+    },
+    {
+        "title": "Temporal Bisection and the Scalar Expectancy Theory",
+        "year": 2020,
+        "volume": 114,
+        "issue": 3,
+        "process": "Temporal Bisection",
+        "equation": "P(long) = 1/(1 + e^(-β(t-PSE)))"
+    },
+    {
+        "title": "Operant Variability and Behavioral Flexibility",
+        "year": 2022,
+        "volume": 118,
+        "issue": 1,
+        "process": "Operant Variability",
+        "equation": "U = -Σpᵢ × log₂(pᵢ)"
+    }
+]

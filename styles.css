@@ -312,6 +312,109 @@ body::before {
     background: rgba(0, 204, 255, 0.05);
 }
 
+/* GitHub Authentication Panel */
+.github-auth-panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border-glow);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 5px 20px rgba(0, 255, 136, 0.2);
+}
+
+.auth-content h3 {
+    font-family: 'Orbitron', monospace;
+    color: var(--secondary-neon);
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.auth-content p {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.auth-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.auth-controls input {
+    flex: 1;
+    min-width: 250px;
+    padding: 12px 16px;
+    background: var(--bg-dark);
+    border: 2px solid var(--border-glow);
+    border-radius: 5px;
+    color: var(--text-bright);
+    font-family: 'Space Mono', monospace;
+    outline: none;
+}
+
+.auth-controls input:focus {
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.auth-btn {
+    background: var(--primary-neon);
+    color: var(--bg-dark);
+    border: none;
+    padding: 12px 20px;
+    font-family: 'Orbitron', monospace;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.auth-btn:hover {
+    background: var(--secondary-neon);
+    box-shadow: 0 0 15px var(--secondary-neon);
+    transform: translateY(-2px);
+}
+
+.auth-btn.secondary {
+    background: var(--warning-orange);
+}
+
+.auth-btn.secondary:hover {
+    background: #ff8833;
+}
+
+.auth-help {
+    text-align: center;
+    color: var(--text-light);
+}
+
+.auth-help a {
+    color: var(--primary-neon);
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.auth-help a:hover {
+    text-decoration: underline;
+    color: var(--secondary-neon);
+}
+
+.auth-help small {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
 /* Add Entry Button */
 .add-entry-container {
     text-align: center;
