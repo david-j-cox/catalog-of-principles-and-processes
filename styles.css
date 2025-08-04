@@ -312,6 +312,65 @@ body::before {
     background: rgba(0, 204, 255, 0.05);
 }
 
+/* Abstract Column Styling */
+.abstract-cell {
+    max-width: 300px;
+    position: relative;
+}
+
+.abstract-content {
+    line-height: 1.4;
+    margin: 0;
+}
+
+.abstract-content.collapsed {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 1.4em;
+}
+
+.abstract-content.expanded {
+    white-space: normal;
+    max-height: none;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: var(--primary-neon);
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-left: 5px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.read-more-btn:hover {
+    background: var(--primary-neon);
+    color: var(--bg-dark);
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+    transform: translateY(-1px);
+}
+
+.read-more-btn:active {
+    transform: translateY(0);
+}
+
+/* Adjust table column widths for better layout */
+.data-table th:nth-child(1) { width: 25%; } /* Article Title */
+.data-table th:nth-child(2) { width: 8%; }  /* Year */
+.data-table th:nth-child(3) { width: 8%; }  /* Volume */
+.data-table th:nth-child(4) { width: 8%; }  /* Issue */
+.data-table th:nth-child(5) { width: 18%; } /* Behavioral Process */
+.data-table th:nth-child(6) { width: 25%; } /* Abstract */
+.data-table th:nth-child(7) { width: 18%; } /* Equation */
+
 /* GitHub Authentication Panel */
 .github-auth-panel {
     background: var(--bg-card);
@@ -565,7 +624,8 @@ body::before {
     gap: 15px;
 }
 
-.modal-content input {
+.modal-content input,
+.modal-content textarea {
     padding: 12px 16px;
     background: var(--bg-dark);
     border: 2px solid var(--border-glow);
@@ -573,9 +633,11 @@ body::before {
     color: var(--text-bright);
     font-family: 'Space Mono', monospace;
     outline: none;
+    resize: vertical;
 }
 
-.modal-content input:focus {
+.modal-content input:focus,
+.modal-content textarea:focus {
     box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
 }
 

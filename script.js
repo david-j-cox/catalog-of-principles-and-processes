@@ -49,6 +49,53 @@ function saveData() {
     localStorage.setItem('behavioralData', JSON.stringify(behavioralData));
 }
 
+// Create abstract content with expand/collapse functionality
+function createAbstractContent(abstract, articleIndex) {
+    if (!abstract || abstract === 'No abstract available') {
+        return '<em style="opacity: 0.7;">No abstract available</em>';
+    }
+    
+    // Truncate to approximately one line (about 80 characters)
+    const maxLength = 80;
+    const truncated = abstract.length > maxLength ? abstract.substring(0, maxLength) : abstract;
+    const needsTruncation = abstract.length > maxLength;
+    
+    const contentId = `abstract-${articleIndex}`;
+    const btnId = `btn-${articleIndex}`;
+    
+    return `
+        <div class="abstract-content collapsed" id="${contentId}">
+            ${needsTruncation ? truncated + '...' : abstract}
+        </div>
+        ${needsTruncation ? `<button class="read-more-btn" id="${btnId}" onclick="toggleAbstract('${contentId}', '${btnId}', \`${abstract.replace(/`/g, '\\`').replace(/"/g, '&quot;')}\`)">Read More</button>` : ''}
+    `;
+}
+
+// Toggle abstract expand/collapse
+function toggleAbstract(contentId, btnId, fullText) {
+    const content = document.getElementById(contentId);
+    const button = document.getElementById(btnId);
+    
+    if (!content || !button) return;
+    
+    const isCollapsed = content.classList.contains('collapsed');
+    
+    if (isCollapsed) {
+        // Expand
+        content.classList.remove('collapsed');
+        content.classList.add('expanded');
+        content.innerHTML = fullText;
+        button.textContent = 'Read Less';
+    } else {
+        // Collapse
+        content.classList.remove('expanded');
+        content.classList.add('collapsed');
+        const truncated = fullText.length > 80 ? fullText.substring(0, 80) + '...' : fullText;
+        content.innerHTML = truncated;
+        button.textContent = 'Read More';
+    }
+}
+
 // GitHub API Functions
 let githubToken = localStorage.getItem('github_token');
 
@@ -57,18 +104,18 @@ function initializeGitHubAuth() {
     authSection.innerHTML = `
         <div id="github-auth" class="github-auth-panel">
             <div class="auth-content">
-                <h3>🔗 Connect to GitHub</h3>
+                <h3>Connect to GitHub</h3>
                 <p>To contribute entries to the catalog, connect your GitHub account:</p>
                 <div class="auth-controls">
                     <input type="password" id="github-token" placeholder="GitHub Personal Access Token" 
                            style="display: ${githubToken ? 'none' : 'block'}">
-                    <button id="connect-github" class="auth-btn">${githubToken ? '✅ Connected' : 'Connect GitHub'}</button>
+                    <button id="connect-github" class="auth-btn">${githubToken ? 'Connected' : 'Connect GitHub'}</button>
                     <button id="disconnect-github" class="auth-btn secondary" 
                             style="display: ${githubToken ? 'block' : 'none'}">Disconnect</button>
                 </div>
                 <div class="auth-help">
                     <a href="https://github.com/settings/tokens/new?scopes=repo&description=Behavioral%20Process%20Catalog" 
-                       target="_blank">📝 Create a GitHub token</a>
+                       target="_blank">Create a GitHub token</a>
                     <small>Requires 'repo' scope for creating pull requests</small>
                 </div>
             </div>
@@ -118,7 +165,7 @@ function handleGitHubDisconnect() {
 
 function updateAuthUI(connected) {
     document.getElementById('github-token').style.display = connected ? 'none' : 'block';
-    document.getElementById('connect-github').textContent = connected ? '✅ Connected' : 'Connect GitHub';
+    document.getElementById('connect-github').textContent = connected ? 'Connected' : 'Connect GitHub';
     document.getElementById('disconnect-github').style.display = connected ? 'block' : 'none';
 }
 
@@ -221,6 +268,7 @@ async function createPullRequest(newEntry) {
 **Volume:** ${newEntry.volume}
 **Issue:** ${newEntry.issue}
 **Behavioral Process:** ${newEntry.process}
+**Abstract:** ${newEntry.abstract || 'No abstract provided'}
 **Equation:** ${newEntry.equation || 'N/A'}
 
 This entry was submitted through the Behavioral Process Catalog web interface.
@@ -292,6 +340,7 @@ function populateTable(data) {
             <td class="volume">${article.volume}</td>
             <td class="issue">${article.issue}</td>
             <td class="process">${article.process}</td>
+            <td class="abstract-cell">${createAbstractContent(article.abstract || 'No abstract available', index)}</td>
             <td class="equation">${article.equation || 'N/A'}</td>
         `;
         
@@ -368,7 +417,8 @@ function applyFilters() {
         filteredData = filteredData.filter(article => 
             article.title.toLowerCase().includes(searchTerm) ||
             article.process.toLowerCase().includes(searchTerm) ||
-            (article.equation && article.equation.toLowerCase().includes(searchTerm))
+            (article.equation && article.equation.toLowerCase().includes(searchTerm)) ||
+            (article.abstract && article.abstract.toLowerCase().includes(searchTerm))
         );
     }
     
@@ -484,6 +534,7 @@ function initializeModal() {
             volume: parseInt(document.getElementById('new-volume').value),
             issue: parseInt(document.getElementById('new-issue').value),
             process: document.getElementById('new-process').value,
+            abstract: document.getElementById('new-abstract').value || 'No abstract available',
             equation: document.getElementById('new-equation').value || 'N/A'
         };
         

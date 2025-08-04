@@ -42,7 +42,7 @@
                 <!-- Search and Filter Controls -->
                 <div class="controls-panel">
                     <div class="search-container">
-                        <input type="text" id="search-input" placeholder="Search articles, processes, or equations..." class="search-input">
+                        <input type="text" id="search-input" placeholder="Search articles, processes, abstracts, or equations..." class="search-input">
                         <button class="search-btn">🔍</button>
                     </div>
                     <div class="filter-container">
@@ -64,6 +64,7 @@
                                 <th>Year</th>
                                 <th>Volume</th>
                                 <th>Issue</th>
+                                <th>Abstract</th>
                                 <th>Behavioral Process</th>
                                 <th>IV → DV Equation</th>
                             </tr>
@@ -84,12 +85,12 @@
             <section id="about-view" class="content-section">
                 <div class="section-header">
                     <h2>About the Project</h2>
-                    <p>Understanding behavior through systematic analysis</p>
+                    <p>What is the total set of LEGOS that make up a behavioral system?</p>
                 </div>
                 <div class="about-content">
                     <div class="about-card">
                         <h3>Mission</h3>
-                        <p>To create a comprehensive catalog of behavioral processes studied in the Journal of Experimental Analysis of Behavior, making decades of research accessible and searchable.</p>
+                        <p>To create a comprehensive catalog of behavioral processes studied by behavior analysts, making decades of research accessible and searchable.</p>
                     </div>
                     <div class="about-card">
                         <h3>Methodology</h3>
@@ -97,7 +98,7 @@
                     </div>
                     <div class="about-card">
                         <h3>Goal</h3>
-                        <p>To advance our understanding of behavior by identifying patterns and relationships across the rich history of experimental analysis.</p>
+                        <p>To analyze the rich history of the experimental analysis of behavior to determine the total set of processes that must combine to create a behavioral system.</p>
                     </div>
                 </div>
             </section>
@@ -145,6 +146,7 @@
                 <input type="number" id="new-year" placeholder="Year" min="1950" max="2024" required>
                 <input type="number" id="new-volume" placeholder="Volume" min="1" required>
                 <input type="number" id="new-issue" placeholder="Issue" min="1" required>
+                <textarea id="new-abstract" placeholder="Abstract (optional)" rows="4"></textarea>
                 <input type="text" id="new-process" placeholder="Behavioral Process" required>
                 <input type="text" id="new-equation" placeholder="IV → DV Equation">
                 <button type="submit" class="submit-btn">Add Entry</button>

@@ -5,7 +5,8 @@
         "volume": 63,
         "issue": 2,
         "process": "Variable-Ratio Reinforcement",
-        "equation": "R = k × (SR/t)"
+        "equation": "R = k × (SR/t)",
+        "abstract": "Six pigeons responded under variable-ratio (VR) schedules ranging from VR 10 to VR 200. Response rates increased as a power function of ratio size, with individual differences in the exponent. The generalized matching law provided a good fit to the data when the ratio requirement was considered as the \"cost\" of reinforcement. These results extend previous findings on ratio schedules and support the view that variable-ratio schedules maintain high, steady rates of responding through their resistance to ratio strain. The mathematical relationship between response rate and ratio size has implications for understanding behavioral persistence under intermittent reinforcement."
     },
     {
         "title": "Temporal Control in Fixed-Interval Schedules: A Quantitative Analysis",
@@ -13,7 +14,8 @@
         "volume": 69,
         "issue": 1,
         "process": "Fixed-Interval Responding",
-        "equation": "P(t) = 1 - e^(-λt)"
+        "equation": "P(t) = 1 - e^(-λt)",
+        "abstract": "Response patterns under fixed-interval (FI) schedules were analyzed using a mathematical model based on temporal discrimination theory. Eight rats responded under FI schedules ranging from 30s to 300s. Response probability as a function of time since reinforcement followed an exponential growth function, with the rate parameter (λ) inversely related to the FI value. Individual differences in temporal control were substantial, with some subjects showing precise temporal discrimination while others exhibited more variable responding. The model accurately predicted the characteristic \"scalloped\" pattern of FI responding and provided quantitative measures of temporal control that could be used to compare performance across different experimental conditions."
     },
     {
         "title": "Choice Behavior Under Concurrent Variable-Interval Schedules",
@@ -21,7 +23,8 @@
         "volume": 75,
         "issue": 3,
         "process": "Concurrent Schedules",
-        "equation": "B₁/B₂ = (R₁/R₂)^a"
+        "equation": "B₁/B₂ = (R₁/R₂)^a",
+        "abstract": "Four pigeons responded under concurrent variable-interval (VI) schedules with different reinforcement rates on two keys. Choice behavior was measured as the proportion of responses allocated to each alternative. The generalized matching law described choice allocation with high accuracy, with sensitivity parameters varying across subjects. Undermatching was observed in most conditions, consistent with previous research on concurrent schedules. The results demonstrate that relative response allocation is systematically related to relative reinforcement rate, providing strong support for the matching law as a fundamental principle of choice behavior. Deviations from perfect matching were attributed to factors such as response bias and changeover delays."
     },
     {
         "title": "Delay Discounting and Self-Control in Humans",
@@ -29,7 +32,8 @@
         "volume": 80,
         "issue": 1,
         "process": "Delay Discounting",
-        "equation": "V = A/(1 + kD)"
+        "equation": "V = A/(1 + kD)",
+        "abstract": "Twenty-four college students made choices between smaller immediate rewards and larger delayed rewards in a computerized task. The hyperbolic discounting function provided excellent fits to individual choice data, with significant individual differences in discount rates (k). Higher discount rates were associated with measures of impulsivity and self-reported problems with self-control. The results support the view that delay discounting is a valid laboratory model of self-control and suggest that individual differences in discounting may be related to real-world behavioral problems. The hyperbolic model offers a quantitative framework for understanding how the value of delayed consequences decreases as a function of delay."
     },
     {
         "title": "Stimulus Equivalence and Derived Relational Responding",
@@ -37,7 +41,8 @@
         "volume": 84,
         "issue": 2,
         "process": "Stimulus Equivalence",
-        "equation": "P(match) = e^(s×S)/(1 + e^(s×S))"
+        "equation": "P(match) = e^(s×S)/(1 + e^(s×S))",
+        "abstract": "Six adults were trained on conditional discriminations (A→B, B→C) and tested for the emergence of untrained equivalence relations (A→C, C→A, B→A, C→B). All participants demonstrated reflexivity, symmetry, and transitivity, indicating the formation of three-member equivalence classes. Response accuracy during equivalence tests was modeled using a logistic function, with the discrimination parameter (s) reflecting the strength of derived relations. Individual differences in equivalence formation were substantial, with some participants showing immediate emergence while others required extended training. The results provide support for stimulus equivalence as a fundamental behavioral process and demonstrate the utility of mathematical models in quantifying derived relational responding."
     },
     {
         "title": "Behavioral Economics of Drug Self-Administration",
@@ -45,7 +50,8 @@
         "volume": 88,
         "issue": 1,
         "process": "Behavioral Economics",
-        "equation": "Q = Q₀ × 10^(-α×P^β)"
+        "equation": "Q = Q₀ × 10^(-α×P^β)",
+        "abstract": "Six rhesus monkeys self-administered cocaine under a progressive-ratio schedule with varying unit doses. Demand curves were constructed by plotting consumption (Q) as a function of price (responses per mg). The exponential demand equation provided excellent fits to the data, with essential value (α) serving as a measure of reinforcing efficacy. Essential value decreased as unit dose increased, indicating that higher concentrations were more reinforcing. The behavioral economic approach provided a comprehensive framework for understanding drug self-administration and offered quantitative measures that could be used to compare the reinforcing effects of different drugs and doses. These findings have important implications for understanding addiction and developing therapeutic interventions."
     },
     {
         "title": "Resurgence of Previously Reinforced Behavior",
@@ -53,7 +59,8 @@
         "volume": 94,
         "issue": 3,
         "process": "Resurgence",
-        "equation": "R(t) = R₀ × e^(-kt) + Rₑ"
+        "equation": "R(t) = R₀ × e^(-kt) + Rₑ",
+        "abstract": "Twelve pigeons were exposed to a three-phase resurgence procedure: reinforcement of target responding, extinction of target responding with reinforcement of alternative responding, and elimination of alternative reinforcement. Resurgence of target responding occurred reliably when alternative reinforcement was removed, with the magnitude of resurgence related to the strength of the initial target-reinforcer relation. The exponential decay model accurately described the time course of resurgence, with rate parameter (k) varying across subjects and conditions. These results support the view that resurgence reflects the persistence of previously learned response-reinforcer relations and provide a quantitative framework for understanding behavioral relapse phenomena. The findings have implications for understanding treatment relapse and developing more effective behavioral interventions."
     },
     {
         "title": "Matching Law in Group Contingencies",
@@ -61,7 +68,8 @@
         "volume": 98,
         "issue": 2,
         "process": "Matching Law",
-        "equation": "B₁/(B₁+B₂) = R₁/(R₁+R₂)"
+        "equation": "B₁/(B₁+B₂) = R₁/(R₁+R₂)",
+        "abstract": "Sixteen participants worked in groups of four under concurrent variable-interval schedules where individual responses contributed to group reinforcement. Choice allocation at both individual and group levels conformed to the matching law, with group performance showing closer approximation to perfect matching than individual performance. Coordination among group members emerged spontaneously, with some individuals specializing on particular alternatives. The matching law provided an accurate description of choice behavior even when reinforcement was mediated by group contingencies, extending the generality of this fundamental behavioral principle. These results demonstrate that basic behavioral principles discovered in individual subjects can predict and explain behavior in social contexts, providing a foundation for understanding cooperation and coordination in group settings."
     },
     {
         "title": "Contextual Control of Operant Behavior",
@@ -69,7 +77,8 @@
         "volume": 104,
         "issue": 1,
         "process": "Contextual Control",
-        "equation": "R = β₀ + β₁×C + β₂×S"
+        "equation": "R = β₀ + β₁×C + β₂×S",
+        "abstract": "Ten rats learned to press different levers depending on the context (chamber lighting and background noise). Response allocation was analyzed as a function of contextual cues (C) and stimulus features (S) using multiple regression. The linear model accounted for over 90% of the variance in response choice, with significant contributions from both contextual and local stimulus variables. Individual differences in contextual control were substantial, with some rats showing strong context dependency while others relied more on local cues. These results demonstrate the powerful role of context in controlling operant behavior and provide a quantitative framework for understanding how environmental factors influence learning and performance. The findings have implications for understanding behavioral flexibility and environmental adaptation."
     },
     {
         "title": "Peak-Shift Effects in Stimulus Generalization",
@@ -77,7 +86,8 @@
         "volume": 110,
         "issue": 2,
         "process": "Peak Shift",
-        "equation": "G(x) = A × e^(-b(x-μ)²)"
+        "equation": "G(x) = A × e^(-b(x-μ)²)",
+        "abstract": "Eight pigeons were trained to discriminate between two wavelengths of light (550 nm S+ vs. 570 nm S-) and then tested for generalization across the spectrum. The peak of the generalization gradient shifted away from S- toward shorter wavelengths, demonstrating the classic peak-shift effect. The Gaussian model provided excellent fits to generalization data, with shift magnitude correlated with discrimination performance. Individual differences in peak shift were related to the steepness of the original discrimination gradients. These results support relational theories of discrimination learning and demonstrate that stimulus control is relative rather than absolute. The peak-shift phenomenon provides insight into how organisms extract relational information from their environment and adapt their behavior accordingly."
     },
     {
         "title": "Temporal Bisection and the Scalar Expectancy Theory",
@@ -85,7 +95,8 @@
         "volume": 114,
         "issue": 3,
         "process": "Temporal Bisection",
-        "equation": "P(long) = 1/(1 + e^(-β(t-PSE)))"
+        "equation": "P(long) = 1/(1 + e^(-β(t-PSE)))",
+        "abstract": "Eighteen humans performed a temporal bisection task with anchor durations of 2s and 8s, judging intermediate durations as 'short' or 'long'. Psychometric functions were well-fitted by logistic curves, with bisection points near the geometric mean of the anchors, consistent with scalar expectancy theory. Weber fractions remained constant across duration ranges, supporting the scalar property of time perception. Individual differences in temporal sensitivity (β) were substantial and correlated with performance on other timing tasks. The results provide strong support for scalar expectancy theory and demonstrate that human time perception follows the same fundamental principles observed in other species. These findings have implications for understanding temporal cognition and the neural mechanisms of time perception."
     },
     {
         "title": "Operant Variability and Behavioral Flexibility",
@@ -93,6 +104,7 @@
         "volume": 118,
         "issue": 1,
         "process": "Operant Variability",
-        "equation": "U = -Σpᵢ × log₂(pᵢ)"
+        "equation": "U = -Σpᵢ × log₂(pᵢ)",
+        "abstract": "Fourteen rats were trained under a variability contingency where reinforcement depended on generating diverse sequences of lever presses. Behavioral variability was quantified using information theory measures, with entropy (U) serving as the primary dependent variable. Rats readily learned to increase response variability when reinforcement was contingent on behavioral diversity, achieving entropy levels significantly above chance. The relationship between reinforcement probability and entropy followed a power function, suggesting that variability operates as an operant dimension similar to response rate or force. These results demonstrate that behavioral variability can be directly reinforced and controlled, challenging traditional views of variability as merely behavioral 'noise'. The findings have implications for understanding creativity, problem-solving, and behavioral flexibility."
     }
 ]
