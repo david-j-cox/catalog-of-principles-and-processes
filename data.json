@@ -53,19 +53,5 @@
         "recursive-equation": "S_{n+1} = S_n - \\delta_A \\cdot P_A(S_n) + \\delta_B \\cdot P_B(S_n), \\\\ P_A(S) = \\sigma(\\beta_A (S - \\theta)), \\quad P_B(S) = 1 - P_A(S)",
                  "recursive-equation-definitions": "$S_n$: stimulus intensity at step $n$; $\\delta_A$, $\\delta_B$: magnitude of intensity change per peck on keys A or B; $P_A(S)$: probability of pecking key A at intensity $S$; $\\sigma(x) = 1/(1 + e^{-x})$ is the logistic function; $\\beta_A$: slope parameter reflecting steepness of psychometric function; $\\theta$: threshold intensity (point of subjective equality between 'light on' and 'light off'). The feedback loop causes $S_n$ to oscillate around $\\theta$ over time, producing an on-line threshold record.",
         "abstract": "A psychophysical method for measuring the pigeon’s absolute visual threshold, combining Bekesy’s human audiometric tracking technique with operant conditioning procedures is described. Pigeons peck one key (A) when a lighted stimulus patch is visible and another (B) when it appears dark. Pecking key A reduces stimulus intensity; pecking key B increases it. Correct sequences under variable-ratio and variable-interval schedules maintain stimulus control and drive the stimulus intensity to oscillate across the bird’s threshold, yielding a continuous graphical record. Special contingencies—such as penalties for incorrect pecks, enforced pauses when switching keys, occasional omission of light after reinforcement, and differentiated reinforcement for below-threshold vs. above-threshold conditions—enhance control and minimize artifacts like wandering thresholds. The procedure can be generalized to measure other sensory thresholds by substituting appropriate stimulus continua. Its applicability to both absolute and differential thresholds are discussed."
-    },
-    {
-        "title": "The Phantom Plateau",
-        "year": 1958,
-        "volume": 1,
-        "issue": 1,
-        "authors": ["Keller, F. S."],
-        "url": "https://onlinelibrary.wiley.com/doi/10.1901/jeab.1958.1-1",
-        "process": "Taking Dictation",
-        "static-equation": "",
-        "static-equation-definitions": "",
-        "recursive-equation": "",
-        "recursive-equation-definitions": "",
-        "abstract": "None"
     }
 ]
