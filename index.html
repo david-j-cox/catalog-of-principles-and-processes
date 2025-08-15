@@ -6,6 +6,21 @@
     <title>Behavioral Process Catalog - JEAB Archive</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- MathJax for equation rendering -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <div class="container">
@@ -42,7 +57,7 @@
                 <!-- Search and Filter Controls -->
                 <div class="controls-panel">
                     <div class="search-container">
-                        <input type="text" id="search-input" placeholder="Search articles, processes, or equations..." class="search-input">
+                        <input type="text" id="search-input" placeholder="Search articles, processes, abstracts, static equations, or recursive equations..." class="search-input">
                         <button class="search-btn">🔍</button>
                     </div>
                     <div class="filter-container">
@@ -52,6 +67,12 @@
                         <select id="process-filter" class="filter-select">
                             <option value="">All Processes</option>
                         </select>
+                        <select id="author-filter" class="filter-select">
+                            <option value="">All Authors</option>
+                        </select>
+                        <button id="export-csv-btn" class="export-btn" title="Export current table to CSV">
+                            📊 Export CSV
+                        </button>
                     </div>
                 </div>
 
@@ -61,11 +82,14 @@
                         <thead>
                             <tr>
                                 <th>Article Title</th>
+                                <th>Authors</th>
                                 <th>Year</th>
                                 <th>Volume</th>
                                 <th>Issue</th>
+                                <th>Abstract</th>
                                 <th>Behavioral Process</th>
-                                <th>IV → DV Equation</th>
+                                <th>Static Equation</th>
+                                <th>Recursive Equation</th>
                             </tr>
                         </thead>
                         <tbody id="table-body">
@@ -84,12 +108,12 @@
             <section id="about-view" class="content-section">
                 <div class="section-header">
                     <h2>About the Project</h2>
-                    <p>Understanding behavior through systematic analysis</p>
+                    <p>What is the total set of LEGOS that make up a behavioral system?</p>
                 </div>
                 <div class="about-content">
                     <div class="about-card">
                         <h3>Mission</h3>
-                        <p>To create a comprehensive catalog of behavioral processes studied in the Journal of Experimental Analysis of Behavior, making decades of research accessible and searchable.</p>
+                        <p>To create a comprehensive catalog of behavioral processes studied by behavior analysts, making decades of research accessible and searchable.</p>
                     </div>
                     <div class="about-card">
                         <h3>Methodology</h3>
@@ -97,7 +121,7 @@
                     </div>
                     <div class="about-card">
                         <h3>Goal</h3>
-                        <p>To advance our understanding of behavior by identifying patterns and relationships across the rich history of experimental analysis.</p>
+                        <p>To analyze the rich history of the experimental analysis of behavior to determine the total set of processes that must combine to create a behavioral system.</p>
                     </div>
                 </div>
             </section>
@@ -131,7 +155,7 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2024 Behavioral Process Catalog | Advancing the Science of Behavior</p>
+            <p>&copy; 2025 Behavioral Process Catalog | Advancing the Science of Behavior</p>
         </footer>
     </div>
 
@@ -142,11 +166,18 @@
             <h3>Add New Article Entry</h3>
             <form id="add-entry-form">
                 <input type="text" id="new-title" placeholder="Article Title" required>
+                <input type="text" id="new-authors" placeholder="Authors (e.g., Smith, J. B. & Jones, A. C.)" required>
+                <input type="url" id="new-url" placeholder="Article URL (e.g., https://doi.org/...)">
                 <input type="number" id="new-year" placeholder="Year" min="1950" max="2024" required>
                 <input type="number" id="new-volume" placeholder="Volume" min="1" required>
                 <input type="number" id="new-issue" placeholder="Issue" min="1" required>
-                <input type="text" id="new-process" placeholder="Behavioral Process" required>
-                <input type="text" id="new-equation" placeholder="IV → DV Equation">
+                <textarea id="new-abstract" placeholder="Abstract (optional)" rows="4"></textarea>
+                <input type="text" id="new-process" placeholder="Behavioral Processes (comma-separated for multiple)" required>
+                <small class="field-help">Tip: Enter multiple processes separated by commas (e.g., "Reinforcement, Extinction")</small>
+                <input type="text" id="new-static-equation" placeholder="Static Equation (e.g., IV ↔ DV relationship)">
+                <textarea id="new-static-definitions" placeholder="Static Equation Definitions (semicolon-separated, e.g., t = time; R = response rate)" rows="2"></textarea>
+                <input type="text" id="new-recursive-equation" placeholder="Recursive Equation (e.g., dynamic equations with recursion)">
+                <textarea id="new-recursive-definitions" placeholder="Recursive Equation Definitions (semicolon-separated, e.g., R_n = response rate at time n; α = learning rate)" rows="2"></textarea>
                 <button type="submit" class="submit-btn">Add Entry</button>
             </form>
         </div>

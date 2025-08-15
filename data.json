@@ -1,98 +1,71 @@
 [
     {
-        "title": "Effects of Variable-Ratio Schedules on Response Rate in Pigeons",
-        "year": 1995,
-        "volume": 63,
-        "issue": 2,
-        "process": "Variable-Ratio Reinforcement",
-        "equation": "R = k × (SR/t)"
-    },
-    {
-        "title": "Temporal Control in Fixed-Interval Schedules: A Quantitative Analysis",
-        "year": 1998,
-        "volume": 69,
+        "title": "The Phantom Plateau",
+        "year": 1958,
+        "volume": 1,
         "issue": 1,
-        "process": "Fixed-Interval Responding",
-        "equation": "P(t) = 1 - e^(-λt)"
+        "authors": ["Keller, F. S."],
+        "url": "https://onlinelibrary.wiley.com/doi/10.1901/jeab.1958.1-1",
+        "process": "Taking Dictation",
+        "static-equation-definitions": "",
+        "recursive-equation": "",
+        "recursive-equation-definitions": "",
+        "abstract": "None"
     },
     {
-        "title": "Choice Behavior Under Concurrent Variable-Interval Schedules",
-        "year": 2001,
-        "volume": 75,
-        "issue": 3,
-        "process": "Concurrent Schedules",
-        "equation": "B₁/B₂ = (R₁/R₂)^a"
-    },
-    {
-        "title": "Delay Discounting and Self-Control in Humans",
-        "year": 2003,
-        "volume": 80,
+        "title": "A Conjunctive Schedule of Reinforcement",
+        "year": 1958,
+        "volume": 1,
         "issue": 1,
-        "process": "Delay Discounting",
-        "equation": "V = A/(1 + kD)"
-    },
+        "authors": ["Herrnstein, R. J.", "Morse, W. H."],
+        "url": "https://doi.org/10.1901/jeab.1958.1-15",
+        "process": ["Conjunctive Schedules", "Fixed Interval", "Fixed Ratio", "Reinforcement"],
+        "static-equation": "Reinforcement \\Leftrightarrow (t \\geq T) \\land (r \\geq N)",
+        "static-equation-definitions": "t = time since last reinforcement; T = minimum time requirement; r = number of responses emitted since last reinforcement; N = minimum response requirement",
+        "recursive-equation": "R_{n+1} = \\begin{cases} R_n - \\alpha(R_n - \\frac{N^*}{T}) & \\text{if } R_n > \\frac{N^*}{T} \\\\ R_n & \\text{otherwise} \\end{cases}",
+        "recursive-equation-definitions": "R_n = response rate at time n; \\alpha = learning rate or adjustment parameter; N^* = minimum response rate necessary to meet the ratio requirement; T = time period", 
+        "abstract": "Two pigeons were trained on a 15-minute, fixed-interval schedule. They were then trained on the conjunctive fixed-interval, fixed-ratio schedule, in which a response is reinforced only after the passage of a specified time and the emission of a minimal number of unreinforced responses. The period of time was kept at 15 minutes, while the number requirement was varied from 10 to 240 responses. Increasing the number requirement had the effect of decreasing the average rate of responding. The presence of the number requirement also changed the patternof responding within the 15-minute period from that obtained with ordinary fixed-interval reinforcement."
+    }, 
     {
-        "title": "Stimulus Equivalence and Derived Relational Responding",
-        "year": 2005,
-        "volume": 84,
-        "issue": 2,
-        "process": "Stimulus Equivalence",
-        "equation": "P(match) = e^(s×S)/(1 + e^(s×S))"
-    },
-    {
-        "title": "Behavioral Economics of Drug Self-Administration",
-        "year": 2007,
-        "volume": 88,
+        "title": "Operant Extinction After Fixed-Interval Schedules with Young Children",
+        "year": 1958,
+        "volume": 1,
         "issue": 1,
-        "process": "Behavioral Economics",
-        "equation": "Q = Q₀ × 10^(-α×P^β)"
-    },
-    {
-        "title": "Resurgence of Previously Reinforced Behavior",
-        "year": 2010,
-        "volume": 94,
-        "issue": 3,
-        "process": "Resurgence",
-        "equation": "R(t) = R₀ × e^(-kt) + Rₑ"
-    },
-    {
-        "title": "Matching Law in Group Contingencies",
-        "year": 2012,
-        "volume": 98,
-        "issue": 2,
-        "process": "Matching Law",
-        "equation": "B₁/(B₁+B₂) = R₁/(R₁+R₂)"
-    },
-    {
-        "title": "Contextual Control of Operant Behavior",
-        "year": 2015,
-        "volume": 104,
+        "authors": ["Bijou, S. W."],
+        "url": "https://doi.org/10.1901/jeab.1958.1-25",
+        "process": ["Operant Extinction", "Fixed-Interval", "Reinforcement"],
+        "static-equation": "R(t) = \\begin{cases} 1 & \\text{if } (t - t_{\\text{last}}) \\geq T \\text{ and response occurs at } t \\text{ and } t < t_{\\text{ext}} \\\\ 0 & \\text{if } t \\geq t_{\\text{ext}} \\text{ (extinction phase)} \\end{cases}",
+        "static-equation-definitions": "R(t): reinforcement delivery indicator function (1 if reinforcement delivered, 0 otherwise); t: current time; t_last: time when the most recent reinforcement was delivered; T: fixed-interval duration requirement (e.g., 20, 30, or 60 seconds); t_ext: time when extinction phase begins (all programmed reinforcement discontinued). During FI training: reinforcement is delivered for the first response occurring after T seconds have elapsed since the last reinforcer. During extinction: no responses produce reinforcement regardless of timing.",
+        "recursive-equation": "V_{n+1} = V_n + \\alpha \\cdot [\\lambda_n - \\beta \\cdot V_n]; \\quad \\tau_{n+1} = \\begin{cases} 0 & \\text{if reinforcement at } n \\\\ \\tau_n + \\Delta t & \\text{otherwise} \\end{cases}; \\quad R_n = f(V_n, \\tau_n)",
+        "recursive-equation-definitions": "$V_n$: response strength/motivation at trial $n$; $\\tau_n$: time elapsed since last reinforcement at trial $n$; $R_n$: response rate/probability at trial $n$; $\\alpha > 0$: learning rate for reinforcement; $\\beta > 0$: decay/forgetting rate; $\\lambda_n \\in \\{0,1\\}$: reinforcement obtained at trial $n$ (1 if $\\tau_n \\geq T$ and response occurs during FI training, 0 during extinction); $\\Delta t$: time increment per trial; $f(V_n, \\tau_n)$: response function that increases with both strength $V$ and time since reinforcement $\\tau$. During FI training: $V$ increases when reinforced, decays otherwise; $\\tau$ tracks time and resets upon reinforcement. During extinction: $\\lambda_n = 0$ always, so $V$ decays while $\\tau$ continues accumulating, leading to response decline.",
+        "abstract": "Four preschool children (~4 years old) were trained on fixed-interval schedules (FI 20 s, FI 30 s, FI 60 s) using plastic trinkets and, at times, dispenser-motor hum as reinforcers. After several conditioning sessions (3–4 per child, spaced ~22–29 days), extinction was introduced following a brief sequence of programmed reinforcers on the trained FI. Extinction performance, plotted cumulatively, showed marked individual variability, with higher extinction response rates generally observed following longer FI schedules (e.g., ~84 responses/min after FI 60 vs. ~10 after FI 20), and no clear relation to baseline (operant-level) rates. Observational notes suggested that self-generated behaviors (e.g., counting, self-talk, toy manipulation) appeared to modulate extinction, potentially functioning as discriminative or competing stimuli. The paper argues that, compared with nonhuman preparations, children introduce uncontrolled, response-produced stimuli that can either sustain or suppress responding during extinction, motivating future studies to bring such variables under experimental control."
+      },
+      {
+        "title": "A Method for Obtaining Psychophysical Thresholds from the Pigeon",
+        "year": 1958,
+        "volume": 1,
         "issue": 1,
-        "process": "Contextual Control",
-        "equation": "R = β₀ + β₁×C + β₂×S"
+        "authors": ["Blough, D. S."],
+        "url": "https://doi.org/10.1901/jeab.1958.1-31",
+        "process": ["Psychophysical Threshold", "Stimulus Control", "Shaping", "Variable Ratio", "Variable Interval", "Fixed Ratio", "Reinforcement", "Punishment"],
+        "static-equation": "R_A(t) = 1[ S(t) > \\theta ] , \\quad R_B(t) = 1[ S(t) \\leq \\theta ] \\quad ; \\quad S(t+1) = S(t) - \\delta_A R_A(t) + \\delta_B R_B(t)",
+        "static-equation-definitions": "$R_A(t)$: response on key A (\"yes\"); $R_B(t)$: response on key B (\"no\"); $S(t)$: current stimulus intensity; $\\theta$: momentary absolute threshold; $\\delta_A > 0$: decrement to intensity per key A peck; $\\delta_B > 0$: increment to intensity per key B peck. Key A is reinforced indirectly by producing darkness (stimulus off), after which key B produces food; key B is reinforced directly with food when stimulus is off. Reinforcement schedules (variable ratio, variable interval, and false-response penalties) modulate response probabilities but do not alter the basic stimulus–response–feedback contingency.",
+        "recursive-equation": "S_{n+1} = S_n - \\delta_A \\cdot P_A(S_n) + \\delta_B \\cdot P_B(S_n), \\\\ P_A(S) = \\sigma(\\beta_A (S - \\theta)), \\quad P_B(S) = 1 - P_A(S)",
+                 "recursive-equation-definitions": "$S_n$: stimulus intensity at step $n$; $\\delta_A$, $\\delta_B$: magnitude of intensity change per peck on keys A or B; $P_A(S)$: probability of pecking key A at intensity $S$; $\\sigma(x) = 1/(1 + e^{-x})$ is the logistic function; $\\beta_A$: slope parameter reflecting steepness of psychometric function; $\\theta$: threshold intensity (point of subjective equality between 'light on' and 'light off'). The feedback loop causes $S_n$ to oscillate around $\\theta$ over time, producing an on-line threshold record.",
+        "abstract": "A psychophysical method for measuring the pigeon’s absolute visual threshold, combining Bekesy’s human audiometric tracking technique with operant conditioning procedures is described. Pigeons peck one key (A) when a lighted stimulus patch is visible and another (B) when it appears dark. Pecking key A reduces stimulus intensity; pecking key B increases it. Correct sequences under variable-ratio and variable-interval schedules maintain stimulus control and drive the stimulus intensity to oscillate across the bird’s threshold, yielding a continuous graphical record. Special contingencies—such as penalties for incorrect pecks, enforced pauses when switching keys, occasional omission of light after reinforcement, and differentiated reinforcement for below-threshold vs. above-threshold conditions—enhance control and minimize artifacts like wandering thresholds. The procedure can be generalized to measure other sensory thresholds by substituting appropriate stimulus continua. Its applicability to both absolute and differential thresholds are discussed."
     },
     {
-        "title": "Peak-Shift Effects in Stimulus Generalization",
-        "year": 2018,
-        "volume": 110,
-        "issue": 2,
-        "process": "Peak Shift",
-        "equation": "G(x) = A × e^(-b(x-μ)²)"
-    },
-    {
-        "title": "Temporal Bisection and the Scalar Expectancy Theory",
-        "year": 2020,
-        "volume": 114,
-        "issue": 3,
-        "process": "Temporal Bisection",
-        "equation": "P(long) = 1/(1 + e^(-β(t-PSE)))"
-    },
-    {
-        "title": "Operant Variability and Behavioral Flexibility",
-        "year": 2022,
-        "volume": 118,
+        "title": "The Phantom Plateau",
+        "year": 1958,
+        "volume": 1,
         "issue": 1,
-        "process": "Operant Variability",
-        "equation": "U = -Σpᵢ × log₂(pᵢ)"
+        "authors": ["Keller, F. S."],
+        "url": "https://onlinelibrary.wiley.com/doi/10.1901/jeab.1958.1-1",
+        "process": "Taking Dictation",
+        "static-equation": "",
+        "static-equation-definitions": "",
+        "recursive-equation": "",
+        "recursive-equation-definitions": "",
+        "abstract": "None"
     }
 ]
