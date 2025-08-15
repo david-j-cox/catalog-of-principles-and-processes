@@ -1,4 +1,4 @@
-# Behavioral Process Catalog 🧬
+# Behavioral Process Catalog
 
 A retro-themed web application for cataloging behavioral processes from the Journal of Experimental Analysis of Behavior (JEAB). Built with a 1990s science aesthetic celebrating biology, nature, and biodiversity.
 
