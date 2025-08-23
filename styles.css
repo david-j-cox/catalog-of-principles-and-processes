@@ -50,7 +50,7 @@ body::before {
 }
 
 .container {
-    max-width: 1400px;
+    width: 90%;
     margin: 0 auto;
     padding: 0 20px;
     overflow-x: auto; /* Prevent horizontal overflow */
@@ -355,7 +355,7 @@ body::before {
 
 /* Abstract Column Styling */
 .abstract-cell {
-    max-width: 300px;
+    max-width: 600px;
     position: relative;
 }
 
@@ -409,10 +409,11 @@ body::before {
 .data-table th:nth-child(3) { width: 60px; min-width: 60px; }  /* Year */
 .data-table th:nth-child(4) { width: 60px; min-width: 60px; }  /* Volume */
 .data-table th:nth-child(5) { width: 60px; min-width: 60px; }  /* Issue */
-.data-table th:nth-child(6) { width: 200px; min-width: 200px; } /* Abstract */
-.data-table th:nth-child(7) { width: 120px; min-width: 120px; } /* Behavioral Process */
-.data-table th:nth-child(8) { width: 220px; min-width: 220px; } /* Static Equation */
-.data-table th:nth-child(9) { width: 220px; min-width: 220px; } /* Recursive Equation */
+.data-table th:nth-child(6) { width: 80px; min-width: 80px; }  /* Pages */
+.data-table th:nth-child(7) { width: 200px; min-width: 600px; } /* Abstract */
+.data-table th:nth-child(8) { width: 120px; min-width: 120px; } /* Behavioral Process */
+.data-table th:nth-child(9) { width: 220px; min-width: 220px; } /* Static Equation */
+.data-table th:nth-child(10) { width: 220px; min-width: 220px; } /* Recursive Equation */
 
 /* Apply same widths to table cells */
 .data-table td:nth-child(1) { width: 140px; min-width: 140px; }
@@ -420,10 +421,11 @@ body::before {
 .data-table td:nth-child(3) { width: 60px; min-width: 60px; }
 .data-table td:nth-child(4) { width: 60px; min-width: 60px; }
 .data-table td:nth-child(5) { width: 60px; min-width: 60px; }
-.data-table td:nth-child(6) { width: 200px; min-width: 200px; }
-.data-table td:nth-child(7) { width: 120px; min-width: 120px; }
-.data-table td:nth-child(8) { width: 220px; min-width: 220px; }
+.data-table td:nth-child(6) { width: 80px; min-width: 80px; }
+.data-table td:nth-child(7) { width: 200px; min-width: 600px; }
+.data-table td:nth-child(8) { width: 120px; min-width: 120px; }
 .data-table td:nth-child(9) { width: 220px; min-width: 220px; }
+.data-table td:nth-child(10) { width: 220px; min-width: 220px; }
 
 /* GitHub Authentication Panel */
 .github-auth-panel {
@@ -818,6 +820,39 @@ body::before {
     color: var(--text-bright) !important;
 }
 
+/* Equation Definitions - block style */
+.equation-definitions-block {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8em;
+    color: var(--text-light);
+    background: rgba(0, 255, 136, 0.05);
+    padding: 8px;
+    border-radius: 4px;
+    border-left: 2px solid var(--primary-neon);
+    margin-top: 6px;
+}
+
+.equation-definitions-block .where-label {
+    font-weight: 700;
+    color: var(--secondary-neon);
+    margin-bottom: 6px;
+    display: block;
+}
+
+.equation-definitions-block .definition-item {
+    margin-bottom: 4px;
+    padding-left: 8px;
+    line-height: 1.5;
+    display: block; /* force each item onto its own line */
+}
+
+.equation-definitions-inline .definition-item {
+    white-space: normal;      /* allow normal spacing */
+    word-break: normal;       /* don't chop words */
+    overflow-wrap: anywhere;  /* wrap long chunks if needed */
+  }
+  
+
 /* Enhanced Mobile Responsiveness for Table */
 @media (max-width: 768px) {
     .container {
@@ -847,10 +882,11 @@ body::before {
     .data-table th:nth-child(3), .data-table td:nth-child(3) { width: 50px; min-width: 50px; }
     .data-table th:nth-child(4), .data-table td:nth-child(4) { width: 50px; min-width: 50px; }
     .data-table th:nth-child(5), .data-table td:nth-child(5) { width: 50px; min-width: 50px; }
-    .data-table th:nth-child(6), .data-table td:nth-child(6) { width: 150px; min-width: 150px; }
-    .data-table th:nth-child(7), .data-table td:nth-child(7) { width: 100px; min-width: 100px; }
-    .data-table th:nth-child(8), .data-table td:nth-child(8) { width: 180px; min-width: 180px; }
+    .data-table th:nth-child(6), .data-table td:nth-child(6) { width: 60px; min-width: 60px; }
+    .data-table th:nth-child(7), .data-table td:nth-child(7) { width: 150px; min-width: 600px; }
+    .data-table th:nth-child(8), .data-table td:nth-child(8) { width: 100px; min-width: 100px; }
     .data-table th:nth-child(9), .data-table td:nth-child(9) { width: 180px; min-width: 180px; }
+    .data-table th:nth-child(10), .data-table td:nth-child(10) { width: 180px; min-width: 180px; }
     
     /* Smaller equation text on mobile */
     .equation-display {

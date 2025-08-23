@@ -17,6 +17,7 @@ const fallbackData = [
         "year": 2024,
         "volume": 1,
         "issue": 1,
+        "pages": "1-5",
         "process": "Getting Started",
         "equation": "N/A",
         "abstract": "This is a demonstration entry. For full functionality, please view this site through GitHub Pages or run a local web server. The complete database is stored in data.json and will load automatically when served over HTTP."
@@ -26,6 +27,7 @@ const fallbackData = [
         "year": 1995,
         "volume": 63,
         "issue": 2,
+        "pages": "123-135",
         "process": "Variable-Ratio Reinforcement",
         "equation": "R = k × (SR/t)",
         "abstract": "Six pigeons responded under variable-ratio (VR) schedules ranging from VR 10 to VR 200. Response rates increased as a power function of ratio size, with individual differences in the exponent."
@@ -127,6 +129,15 @@ function toggleAbstract(contentId, btnId, fullText) {
         const truncated = fullText.length > 80 ? fullText.substring(0, 80) + '...' : fullText;
         content.innerHTML = truncated;
         button.textContent = 'Read More';
+    }
+    
+    // Re-render MathJax for the updated content
+    if (window.MathJax && window.MathJax.typesetPromise) {
+        setTimeout(() => {
+            MathJax.typesetPromise([content]).catch(function (err) {
+                console.log('MathJax typeset failed: ' + err.message);
+            });
+        }, 50);
     }
 }
 
@@ -303,6 +314,7 @@ async function createPullRequest(newEntry) {
 **Year:** ${newEntry.year}
 **Volume:** ${newEntry.volume}
 **Issue:** ${newEntry.issue}
+**Pages:** ${newEntry.pages || 'N/A'}
 **Behavioral Process:** ${newEntry.process}
 **Abstract:** ${newEntry.abstract || 'No abstract provided'}
 **Static Equation:** ${newEntry['static-equation'] || 'N/A'}
@@ -485,44 +497,31 @@ function createEquationContent(equation, definitions) {
     
     // Prepare equation for rendering
     let renderedEquation = equation;
-    if (equation.includes('$$')) {
-        renderedEquation = equation;
-    } else if (equation.includes('$')) {
-        renderedEquation = equation;
-    } else {
+    if (!equation.includes('$')) {
         renderedEquation = `$$${equation}$$`;
     }
     
     let content = `<div class="equation-display">${renderedEquation}</div>`;
     
-    // Add definitions if available - render as LaTeX
+    // Add definitions if available - render each on a new line
     if (definitions && definitions.trim() !== '') {
-        const definitionList = definitions.split(';').map(def => def.trim()).filter(def => def.length > 0);
+        const definitionList = definitions
+            // treat MathJax line breaks as separators too
+            .replace(/\\\\/g, ' __BRK__ ')
+            .split(/;|__BRK__/)
+            .map(def => def.trim())
+            .filter(Boolean);
         
         if (definitionList.length > 0) {
             content += `
-                <div class="equation-definitions-inline">
+                <div class="equation-definitions-block">
                     <div class="where-label">Where:</div>
                     ${definitionList.map(def => {
-                        // Smart LaTeX parsing: only wrap variables, keep text as regular text
-                        let processedDef = def;
+                        let processedDef = def.trim();
                         
-                        if (!def.includes('$')) {
-                            // Parse definition: variable = description
-                            const parts = def.split('=');
-                            if (parts.length === 2) {
-                                const variable = parts[0].trim();
-                                const description = parts[1].trim();
-                                
-                                // Wrap only the variable part in LaTeX, keep description as text
-                                processedDef = `$${variable}$ = ${description}`;
-                            } else {
-                                // If no '=' found, treat as regular text
-                                processedDef = def;
-                            }
-                        } else {
-                            // Already has LaTeX markup, use as-is
-                            processedDef = def;
+                        // Keep MathJax formatting intact
+                        if (!processedDef.startsWith('$')) {
+                            processedDef = `$${processedDef}$`;
                         }
                         
                         return `<div class="definition-item">${processedDef}</div>`;
@@ -555,6 +554,7 @@ function populateTable(data) {
             <td class="year">${article.year}</td>
             <td class="volume">${article.volume}</td>
             <td class="issue">${article.issue}</td>
+            <td class="pages">${article.pages || 'N/A'}</td>
             <td class="abstract-cell">${createAbstractContent(article.abstract || 'No abstract available', index)}</td>
             <td class="process">${createProcessContent(article.process)}</td>
             <td class="static-equation">${createEquationContent(staticEquation, staticDefinitions)}</td>
@@ -576,9 +576,15 @@ function populateTable(data) {
     if (window.MathJax) {
         setTimeout(() => {
             if (window.MathJax.typesetPromise) {
+                // Clear any previous MathJax processing
+                MathJax.startup.document.clear();
+                // Re-process the entire table
                 MathJax.typesetPromise([tableBody]).catch(function (err) {
                     console.log('MathJax typeset failed: ' + err.message);
                 });
+            } else if (window.MathJax.Hub) {
+                // Fallback for MathJax v2
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub, tableBody]);
             }
         }, 200);
     }
@@ -587,6 +593,8 @@ function populateTable(data) {
 // Filter population
 function populateFilters() {
     const yearFilter = document.getElementById('year-filter');
+    const volumeFilter = document.getElementById('volume-filter');
+    const issueFilter = document.getElementById('issue-filter');
     const processFilter = document.getElementById('process-filter');
     const authorFilter = document.getElementById('author-filter');
     
@@ -597,6 +605,24 @@ function populateFilters() {
         option.value = year;
         option.textContent = year;
         yearFilter.appendChild(option);
+    });
+    
+    // Get unique volumes and sort
+    const volumes = [...new Set(behavioralData.map(article => article.volume))].sort((a, b) => a - b);
+    volumes.forEach(volume => {
+        const option = document.createElement('option');
+        option.value = volume;
+        option.textContent = volume;
+        volumeFilter.appendChild(option);
+    });
+    
+    // Get unique issues and sort
+    const issues = [...new Set(behavioralData.map(article => article.issue))].sort((a, b) => a - b);
+    issues.forEach(issue => {
+        const option = document.createElement('option');
+        option.value = issue;
+        option.textContent = issue;
+        issueFilter.appendChild(option);
     });
     
     // Get unique processes and sort (flatten arrays)
@@ -635,6 +661,8 @@ function populateFilters() {
     
     // Add filter event listeners
     yearFilter.addEventListener('change', applyFilters);
+    volumeFilter.addEventListener('change', applyFilters);
+    issueFilter.addEventListener('change', applyFilters);
     processFilter.addEventListener('change', applyFilters);
     authorFilter.addEventListener('change', applyFilters);
 }
@@ -663,6 +691,8 @@ function initializeSearch() {
 function applyFilters() {
     const searchTerm = document.getElementById('search-input').value.toLowerCase();
     const yearFilter = document.getElementById('year-filter').value;
+    const volumeFilter = document.getElementById('volume-filter').value;
+    const issueFilter = document.getElementById('issue-filter').value;
     const processFilter = document.getElementById('process-filter').value;
     const authorFilter = document.getElementById('author-filter').value;
     
@@ -686,6 +716,16 @@ function applyFilters() {
     // Apply year filter
     if (yearFilter) {
         filteredData = filteredData.filter(article => article.year.toString() === yearFilter);
+    }
+    
+    // Apply volume filter
+    if (volumeFilter) {
+        filteredData = filteredData.filter(article => article.volume.toString() === volumeFilter);
+    }
+    
+    // Apply issue filter
+    if (issueFilter) {
+        filteredData = filteredData.filter(article => article.issue.toString() === issueFilter);
     }
     
     // Apply process filter
@@ -801,6 +841,7 @@ function initializeModal() {
             year: parseInt(document.getElementById('new-year').value),
             volume: parseInt(document.getElementById('new-volume').value),
             issue: parseInt(document.getElementById('new-issue').value),
+            pages: document.getElementById('new-pages').value || '',
             abstract: document.getElementById('new-abstract').value || 'No abstract available',
             process: parseProcessInput(document.getElementById('new-process').value),
             'static-equation': document.getElementById('new-static-equation').value || '',
@@ -1017,6 +1058,7 @@ function exportTableToCSV() {
         'Year',
         'Volume',
         'Issue',
+        'Pages',
         'Abstract',
         'Behavioral Process',
         'Static Equation',
@@ -1035,6 +1077,7 @@ function exportTableToCSV() {
             article.year || '',
             article.volume || '',
             article.issue || '',
+            `"${(article.pages || '').replace(/"/g, '""')}"`,
             `"${(article.abstract || '').replace(/"/g, '""')}"`,
             `"${formatProcessForCSV(article.process)}"`,
             `"${cleanEquationForCSV(article['static-equation'] || article.equation || '')}"`,
@@ -1069,7 +1112,10 @@ function exportTableToCSV() {
 function getCurrentDisplayedData() {
     const searchTerm = document.getElementById('search-input').value.toLowerCase();
     const yearFilter = document.getElementById('year-filter').value;
+    const volumeFilter = document.getElementById('volume-filter').value;
+    const issueFilter = document.getElementById('issue-filter').value;
     const processFilter = document.getElementById('process-filter').value;
+    const authorFilter = document.getElementById('author-filter').value;
     
     return behavioralData.filter(article => {
         // Apply search filter
@@ -1086,10 +1132,19 @@ function getCurrentDisplayedData() {
         // Apply year filter
         const matchesYear = !yearFilter || article.year.toString() === yearFilter;
         
+        // Apply volume filter
+        const matchesVolume = !volumeFilter || article.volume.toString() === volumeFilter;
+        
+        // Apply issue filter
+        const matchesIssue = !issueFilter || article.issue.toString() === issueFilter;
+        
         // Apply process filter
         const matchesProcess = !processFilter || matchesProcessFilter(article.process, processFilter);
         
-        return matchesSearch && matchesYear && matchesProcess;
+        // Apply author filter
+        const matchesAuthor = !authorFilter || matchesAuthorFilter(article.authors, authorFilter);
+        
+        return matchesSearch && matchesYear && matchesVolume && matchesIssue && matchesProcess && matchesAuthor;
     });
 }
 

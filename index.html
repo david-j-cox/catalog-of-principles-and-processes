@@ -64,6 +64,12 @@
                         <select id="year-filter" class="filter-select">
                             <option value="">All Years</option>
                         </select>
+                        <select id="volume-filter" class="filter-select">
+                            <option value="">All Volumes</option>
+                        </select>
+                        <select id="issue-filter" class="filter-select">
+                            <option value="">All Issues</option>
+                        </select>
                         <select id="process-filter" class="filter-select">
                             <option value="">All Processes</option>
                         </select>
@@ -86,6 +92,7 @@
                                 <th>Year</th>
                                 <th>Volume</th>
                                 <th>Issue</th>
+                                <th>Pages</th>
                                 <th>Abstract</th>
                                 <th>Behavioral Process</th>
                                 <th>Static Equation</th>
@@ -171,6 +178,7 @@
                 <input type="number" id="new-year" placeholder="Year" min="1950" max="2024" required>
                 <input type="number" id="new-volume" placeholder="Volume" min="1" required>
                 <input type="number" id="new-issue" placeholder="Issue" min="1" required>
+                <input type="text" id="new-pages" placeholder="Pages (e.g., 1-15 or 1, 2, 3)">
                 <textarea id="new-abstract" placeholder="Abstract (optional)" rows="4"></textarea>
                 <input type="text" id="new-process" placeholder="Behavioral Processes (comma-separated for multiple)" required>
                 <small class="field-help">Tip: Enter multiple processes separated by commas (e.g., "Reinforcement, Extinction")</small>
