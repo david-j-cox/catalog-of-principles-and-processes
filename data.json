@@ -200,7 +200,7 @@
         "volume": 1,
         "issue": 2,
         "pages": "123-144",
-        "authors": ['Findley, J. D.'],
+        "authors": ["Findley, J. D."],
         "url": "https://doi.org/10.1901/jeab.1958.1-123",
         "process": ["Schedule: Concurrent", "Reinforcement", "Stimulus Control", "Schedule: Variable Interval", "Schedule: Fixed Interval", "Schedule: Progressive Interval", "Schedule: Fixed Ratio", "Schedule: Chained"],
         "static-equation": "",
@@ -223,20 +223,5 @@
         "recursive-equation": "",
         "recursive-equation-definitions": "",
         "abstract": "When the intensity of the shock is raised or lowered for rats pressing a bar on a variable-interval escape procedure, the transition to a new rate is usually immediate. The rates are roughly proportional to the level of current but show more moderate positive acceleration from 40 to at least 400 microamperes."
-    },
-    {
-        "title": "",
-        "year": 1958,
-        "volume": 1,
-        "issue": 2,
-        "pages": "",
-        "authors": [""],
-        "url": "",
-        "process": [],
-        "static-equation": "",
-        "static-equation-definitions": "",
-        "recursive-equation": "",
-        "recursive-equation-definitions": "",
-        "abstract": ""
     }
 ]
