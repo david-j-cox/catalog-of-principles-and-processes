@@ -714,11 +714,61 @@ function populateFilters() {
     authorFilter.innerHTML = '';
     authorFilter.appendChild(authorNote);
 
-    // Add filter event listeners
-    yearFilter.addEventListener('change', applyFilters);
-    volumeFilter.addEventListener('change', applyFilters);
+    // Year and volume changes rebuild dependent dropdowns before filtering
+    yearFilter.addEventListener('change', () => { rebuildDependentDropdowns(); applyFilters(); });
+    volumeFilter.addEventListener('change', () => { rebuildDependentDropdowns(); applyFilters(); });
     issueFilter.addEventListener('change', applyFilters);
     processFilter.addEventListener('change', applyFilters);
+}
+
+// Rebuild volume and issue dropdowns based on current year/volume selection
+function rebuildDependentDropdowns() {
+    const yearVal   = document.getElementById('year-filter').value;
+    const volumeVal = document.getElementById('volume-filter').value;
+    const volumeFilter = document.getElementById('volume-filter');
+    const issueFilter  = document.getElementById('issue-filter');
+
+    // Narrow dataset by year first
+    let subset = behavioralData;
+    if (yearVal) {
+        subset = subset.filter(a => a.year != null && a.year.toString() === yearVal);
+    }
+
+    // Rebuild volume options from year-filtered subset
+    const prevVolume = volumeFilter.value;
+    volumeFilter.innerHTML = '<option value="">All Volumes</option>';
+    [...new Set(subset.map(a => a.volume).filter(v => v != null))]
+        .sort((a, b) => a - b)
+        .forEach(v => {
+            const opt = document.createElement('option');
+            opt.value = v; opt.textContent = v;
+            volumeFilter.appendChild(opt);
+        });
+    // Restore volume selection if it still exists in the new list
+    if (prevVolume && [...volumeFilter.options].some(o => o.value === prevVolume)) {
+        volumeFilter.value = prevVolume;
+    }
+
+    // Narrow further by (possibly restored) volume for issue options
+    const activeVolume = volumeFilter.value;
+    if (activeVolume) {
+        subset = subset.filter(a => a.volume != null && a.volume.toString() === activeVolume);
+    }
+
+    // Rebuild issue options from year+volume-filtered subset
+    const prevIssue = issueFilter.value;
+    issueFilter.innerHTML = '<option value="">All Issues</option>';
+    [...new Set(subset.map(a => a.issue).filter(i => i != null))]
+        .sort((a, b) => a - b)
+        .forEach(i => {
+            const opt = document.createElement('option');
+            opt.value = i; opt.textContent = i;
+            issueFilter.appendChild(opt);
+        });
+    // Restore issue selection if it still exists in the new list
+    if (prevIssue && [...issueFilter.options].some(o => o.value === prevIssue)) {
+        issueFilter.value = prevIssue;
+    }
 }
 
 // Search functionality
