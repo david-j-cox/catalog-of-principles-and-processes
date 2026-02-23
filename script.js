@@ -703,29 +703,22 @@ function populateFilters() {
         processFilter.appendChild(option);
     });
     
-    // Get unique authors and sort (flatten arrays)
-    const allAuthors = [];
-    behavioralData.forEach(article => {
-        if (Array.isArray(article.authors)) {
-            allAuthors.push(...article.authors);
-        } else if (article.authors) {
-            allAuthors.push(article.authors);
-        }
-    });
-    const authors = [...new Set(allAuthors)].sort();
-    authors.forEach(author => {
-        const option = document.createElement('option');
-        option.value = author;
-        option.textContent = author;
-        authorFilter.appendChild(option);
-    });
-    
+    // Author dropdown is intentionally not populated — with thousands of unique
+    // authors across 4,000+ entries, building a select would crash the browser.
+    // Author search is handled by the text search box above.
+    authorFilter.disabled = true;
+    authorFilter.title = 'Search authors using the text search box above';
+    const authorNote = document.createElement('option');
+    authorNote.textContent = 'Use search box for authors';
+    authorNote.value = '';
+    authorFilter.innerHTML = '';
+    authorFilter.appendChild(authorNote);
+
     // Add filter event listeners
     yearFilter.addEventListener('change', applyFilters);
     volumeFilter.addEventListener('change', applyFilters);
     issueFilter.addEventListener('change', applyFilters);
     processFilter.addEventListener('change', applyFilters);
-    authorFilter.addEventListener('change', applyFilters);
 }
 
 // Search functionality
@@ -761,8 +754,8 @@ function applyFilters() {
     
     // Apply search filter
     if (searchTerm) {
-        filteredData = filteredData.filter(article => 
-            article.title.toLowerCase().includes(searchTerm) ||
+        filteredData = filteredData.filter(article =>
+            (article.title || '').toLowerCase().includes(searchTerm) ||
             matchesProcessSearch(article.process, searchTerm) ||
             matchesAuthorsSearch(article.authors, searchTerm) ||
             (article.equation && article.equation.toLowerCase().includes(searchTerm)) ||
@@ -776,17 +769,17 @@ function applyFilters() {
     
     // Apply year filter
     if (yearFilter) {
-        filteredData = filteredData.filter(article => article.year.toString() === yearFilter);
+        filteredData = filteredData.filter(article => article.year != null && article.year.toString() === yearFilter);
     }
-    
+
     // Apply volume filter
     if (volumeFilter) {
-        filteredData = filteredData.filter(article => article.volume.toString() === volumeFilter);
+        filteredData = filteredData.filter(article => article.volume != null && article.volume.toString() === volumeFilter);
     }
-    
+
     // Apply issue filter
     if (issueFilter) {
-        filteredData = filteredData.filter(article => article.issue.toString() === issueFilter);
+        filteredData = filteredData.filter(article => article.issue != null && article.issue.toString() === issueFilter);
     }
     
     // Apply process filter
