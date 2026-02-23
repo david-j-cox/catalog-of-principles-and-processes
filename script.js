@@ -3,6 +3,11 @@
 // Behavioral data will be loaded from data.json
 let behavioralData = [];
 
+// Pagination state
+let currentPage = 1;
+let rowsPerPage = 20;
+let currentFilteredData = [];
+
 // GitHub configuration
 const GITHUB_CONFIG = {
     owner: 'david-j-cox',
@@ -536,9 +541,18 @@ function createEquationContent(equation, definitions) {
 
 // Table population and management
 function populateTable(data) {
+    currentFilteredData = data;
+    currentPage = 1;
+    renderPage();
+}
+
+function renderPage() {
     const tableBody = document.getElementById('table-body');
     tableBody.innerHTML = '';
-    
+
+    const start = (currentPage - 1) * rowsPerPage;
+    const pageData = currentFilteredData.slice(start, start + rowsPerPage);
+
     // Normalize an equation field: arrays become '; '-joined strings
     function normalizeEq(eq) {
         if (!eq) return '';
@@ -546,7 +560,7 @@ function populateTable(data) {
         return eq;
     }
 
-    data.forEach((article, index) => {
+    pageData.forEach((article, index) => {
         const row = document.createElement('tr');
 
         // Handle different equation field names for backward compatibility
@@ -583,18 +597,58 @@ function populateTable(data) {
     if (window.MathJax) {
         setTimeout(() => {
             if (window.MathJax.typesetPromise) {
-                // Clear any previous MathJax processing
                 MathJax.startup.document.clear();
-                // Re-process the entire table
                 MathJax.typesetPromise([tableBody]).catch(function (err) {
                     console.log('MathJax typeset failed: ' + err.message);
                 });
             } else if (window.MathJax.Hub) {
-                // Fallback for MathJax v2
                 MathJax.Hub.Queue(["Typeset", MathJax.Hub, tableBody]);
             }
         }, 200);
     }
+
+    renderPagination();
+}
+
+function renderPagination() {
+    const total = currentFilteredData.length;
+    const totalPages = Math.max(1, Math.ceil(total / rowsPerPage));
+    const start = total === 0 ? 0 : (currentPage - 1) * rowsPerPage + 1;
+    const end = Math.min(currentPage * rowsPerPage, total);
+
+    let bar = document.getElementById('pagination-bar');
+    if (!bar) return;
+
+    bar.innerHTML = `
+        <div class="pagination-info">
+            Showing <strong>${start}–${end}</strong> of <strong>${total}</strong> entries
+        </div>
+        <div class="pagination-controls">
+            <button class="page-btn" id="page-prev" ${currentPage === 1 ? 'disabled' : ''}>&#8592; Prev</button>
+            <span class="page-indicator">Page ${currentPage} / ${totalPages}</span>
+            <button class="page-btn" id="page-next" ${currentPage >= totalPages ? 'disabled' : ''}>Next &#8594;</button>
+        </div>
+        <div class="pagination-size">
+            Show:
+            ${[20, 50, 100].map(n => `
+                <button class="size-btn ${rowsPerPage === n ? 'active' : ''}" data-size="${n}">${n}</button>
+            `).join('')}
+        </div>
+    `;
+
+    bar.querySelector('#page-prev').addEventListener('click', () => {
+        if (currentPage > 1) { currentPage--; renderPage(); window.scrollTo(0, 0); }
+    });
+    bar.querySelector('#page-next').addEventListener('click', () => {
+        if (currentPage < totalPages) { currentPage++; renderPage(); window.scrollTo(0, 0); }
+    });
+    bar.querySelectorAll('.size-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            rowsPerPage = parseInt(btn.dataset.size);
+            currentPage = 1;
+            renderPage();
+        });
+    });
 }
 
 // Filter population
@@ -712,9 +766,9 @@ function applyFilters() {
             matchesProcessSearch(article.process, searchTerm) ||
             matchesAuthorsSearch(article.authors, searchTerm) ||
             (article.equation && article.equation.toLowerCase().includes(searchTerm)) ||
-            (article['static-equation'] && article['static-equation'].toLowerCase().includes(searchTerm)) ||
+            (article['static-equation'] && [].concat(article['static-equation']).join(' ').toLowerCase().includes(searchTerm)) ||
             (article['static-equation-definitions'] && article['static-equation-definitions'].toLowerCase().includes(searchTerm)) ||
-            (article['recursive-equation'] && article['recursive-equation'].toLowerCase().includes(searchTerm)) ||
+            (article['recursive-equation'] && [].concat(article['recursive-equation']).join(' ').toLowerCase().includes(searchTerm)) ||
             (article['recursive-equation-definitions'] && article['recursive-equation-definitions'].toLowerCase().includes(searchTerm)) ||
             (article.abstract && article.abstract.toLowerCase().includes(searchTerm))
         );
