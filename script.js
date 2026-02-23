@@ -391,17 +391,33 @@ function createTitleContent(title, url) {
     return title;
 }
 
+// Normalize a process field into a clean array of strings.
+// Handles: proper arrays, raw JSON strings like '["A","B"]',
+// comma-delimited strings, and strips stray brackets/quotes/asterisks.
+function normalizeProcesses(value) {
+    if (!value) return [];
+    const items = Array.isArray(value) ? value : [String(value)];
+    const result = [];
+    for (const item of items) {
+        let s = String(item).trim();
+        // Strip outer [ ] if the whole string is a bracket-wrapped list
+        s = s.replace(/^\[|\]$/g, '').trim();
+        // Split on commas (user-specified delimiter)
+        for (const part of s.split(',')) {
+            const cleaned = part
+                .replace(/["'\[\]\*]/g, '')  // remove quotes, brackets, asterisks
+                .trim();
+            if (cleaned) result.push(cleaned);
+        }
+    }
+    return result;
+}
+
 // Create process content - handle both string and array formats
 function createProcessContent(process) {
-    if (!process) return '<em style="opacity: 0.7;">N/A</em>';
-    
-    // Handle array of processes
-    if (Array.isArray(process)) {
-        return process.map(p => `<span class="process-tag">${p}</span>`).join(' ');
-    }
-    
-    // Handle single process (backward compatibility)
-    return `<span class="process-tag">${process}</span>`;
+    const processes = normalizeProcesses(process);
+    if (!processes.length) return '<em style="opacity: 0.7;">N/A</em>';
+    return processes.map(p => `<span class="process-tag">${p}</span>`).join(' ');
 }
 
 // Create authors content - handle both string and array formats
@@ -419,13 +435,7 @@ function createAuthorsContent(authors) {
 
 // Helper function for process search matching
 function matchesProcessSearch(processField, searchTerm) {
-    if (!processField) return false;
-    
-    if (Array.isArray(processField)) {
-        return processField.some(process => process.toLowerCase().includes(searchTerm));
-    }
-    
-    return processField.toLowerCase().includes(searchTerm);
+    return normalizeProcesses(processField).some(p => p.toLowerCase().includes(searchTerm));
 }
 
 // Helper function for authors search matching
@@ -441,13 +451,7 @@ function matchesAuthorsSearch(authorsField, searchTerm) {
 
 // Helper function for process filter matching
 function matchesProcessFilter(processField, filterValue) {
-    if (!processField) return false;
-    
-    if (Array.isArray(processField)) {
-        return processField.includes(filterValue);
-    }
-    
-    return processField === filterValue;
+    return normalizeProcesses(processField).includes(filterValue);
 }
 
 // Helper function for author filter matching
@@ -686,16 +690,13 @@ function populateFilters() {
         issueFilter.appendChild(option);
     });
     
-    // Get unique processes and sort (flatten arrays)
+    // Get unique processes — normalize all entries through normalizeProcesses()
+    // so raw JSON strings, comma-lists, stray brackets etc. are cleaned first
     const allProcesses = [];
     behavioralData.forEach(article => {
-        if (Array.isArray(article.process)) {
-            allProcesses.push(...article.process);
-        } else if (article.process) {
-            allProcesses.push(article.process);
-        }
+        allProcesses.push(...normalizeProcesses(article.process));
     });
-    const processes = [...new Set(allProcesses)].sort();
+    const processes = [...new Set(allProcesses)].filter(Boolean).sort();
     processes.forEach(process => {
         const option = document.createElement('option');
         option.value = process;
