@@ -539,13 +539,20 @@ function populateTable(data) {
     const tableBody = document.getElementById('table-body');
     tableBody.innerHTML = '';
     
+    // Normalize an equation field: arrays become '; '-joined strings
+    function normalizeEq(eq) {
+        if (!eq) return '';
+        if (Array.isArray(eq)) return eq.filter(Boolean).join('; ');
+        return eq;
+    }
+
     data.forEach((article, index) => {
         const row = document.createElement('tr');
-        
+
         // Handle different equation field names for backward compatibility
-        const staticEquation = article['static-equation'] || article.equation || '';
+        const staticEquation = normalizeEq(article['static-equation'] || article.equation);
         const staticDefinitions = article['static-equation-definitions'] || '';
-        const recursiveEquation = article['recursive-equation'] || '';
+        const recursiveEquation = normalizeEq(article['recursive-equation']);
         const recursiveDefinitions = article['recursive-equation-definitions'] || '';
         
         row.innerHTML = `
