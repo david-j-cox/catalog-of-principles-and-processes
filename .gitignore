@@ -129,4 +129,8 @@ public
 
 # Temporary folders
 tmp/
-temp/ 
+temp/
+
+# Scraper cache and staging output
+cache/
+jeab_scraped.json 
