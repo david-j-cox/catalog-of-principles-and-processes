@@ -73,6 +73,11 @@
                         <select id="process-filter" class="filter-select">
                             <option value="">All Processes</option>
                         </select>
+                        <select id="review-filter" class="filter-select">
+                            <option value="">All Entries</option>
+                            <option value="reviewed">Reviewed</option>
+                            <option value="needs-review">Needs Review</option>
+                        </select>
                         <select id="author-filter" class="filter-select">
                             <option value="">All Authors</option>
                         </select>
@@ -190,6 +195,37 @@
                 <input type="text" id="new-recursive-equation" placeholder="Recursive Equation (e.g., dynamic equations with recursion)">
                 <textarea id="new-recursive-definitions" placeholder="Recursive Equation Definitions (semicolon-separated, e.g., R_n = response rate at time n; α = learning rate)" rows="2"></textarea>
                 <button type="submit" class="submit-btn">Add Entry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Edit Entry Modal -->
+    <div id="edit-entry-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-edit-modal">&times;</span>
+            <h3>Suggest a Correction</h3>
+            <small class="field-help" style="text-align:center;display:block;margin-bottom:14px;">Your correction opens as a GitHub issue for review, or a PR if you're connected.</small>
+            <form id="edit-entry-form">
+                <input type="text" id="edit-title" placeholder="Article Title" required>
+                <input type="text" id="edit-authors" placeholder="Authors (e.g., Smith, J. B. & Jones, A. C.)" required>
+                <input type="url" id="edit-url" placeholder="Article URL (e.g., https://doi.org/...)">
+                <input type="number" id="edit-year" placeholder="Year" min="1950" max="2030" required>
+                <input type="number" id="edit-volume" placeholder="Volume" min="1" required>
+                <input type="number" id="edit-issue" placeholder="Issue" min="1" required>
+                <input type="text" id="edit-pages" placeholder="Pages (e.g., 1-15 or 1, 2, 3)">
+                <textarea id="edit-abstract" placeholder="Abstract (optional)" rows="4"></textarea>
+                <input type="text" id="edit-process" placeholder="Behavioral Processes (comma-separated for multiple)" required>
+                <input type="text" id="edit-static-equation" placeholder="Static Equation">
+                <textarea id="edit-static-definitions" placeholder="Static Equation Definitions (semicolon-separated)" rows="2"></textarea>
+                <input type="text" id="edit-recursive-equation" placeholder="Recursive Equation">
+                <textarea id="edit-recursive-definitions" placeholder="Recursive Equation Definitions (semicolon-separated)" rows="2"></textarea>
+                <div id="edit-reviewed-section" class="reviewed-section" style="display:none">
+                    <label>
+                        <input type="checkbox" id="edit-mark-reviewed">
+                        Mark as reviewed (I've verified all fields are correct)
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">Submit Correction</button>
             </form>
         </div>
     </div>
