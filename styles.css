@@ -869,3 +869,195 @@ body {
     .data-table .authors { display: none; }
     .data-table thead th:nth-child(2) { display: none; }
 }
+
+/* ── Review Status + Edit Button ────────────────────────────────────────── */
+.row-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.badge-reviewed {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(63, 185, 80, 0.15);
+    color: #3fb950;
+    border: 1px solid rgba(63, 185, 80, 0.3);
+    white-space: nowrap;
+}
+
+.badge-needs-review {
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 10px;
+    background: rgba(210, 153, 34, 0.15);
+    color: #d29922;
+    border: 1px solid rgba(210, 153, 34, 0.3);
+    white-space: nowrap;
+}
+
+.edit-row-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 11px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+tr:hover .edit-row-btn {
+    opacity: 1;
+}
+
+/* ── Verify Button ──────────────────────────────────────────────────────── */
+.signoff-btn {
+    background: none;
+    border: 1px solid rgba(63, 185, 80, 0.4);
+    color: #3fb950;
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 11px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+tr:hover .signoff-btn { opacity: 1; }
+
+/* ── Leaderboard ─────────────────────────────────────────────────────────── */
+.leaderboard-stats {
+    display: flex;
+    gap: 24px;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    margin-bottom: 4px;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.leaderboard-table th {
+    background: var(--bg-panel);
+    color: var(--text-muted);
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.leaderboard-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.rank-cell {
+    width: 60px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.rank-medal {
+    font-size: 1.2rem;
+}
+
+.contributor-name a {
+    color: var(--accent-teal);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contributor-name a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+.stat-cell {
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9rem;
+}
+
+.verified-cell {
+    color: #3fb950;
+    font-weight: 600;
+}
+
+.score-cell {
+    color: var(--accent-teal);
+    font-weight: 700;
+}
+
+.top-contributor td {
+    background: rgba(74, 158, 186, 0.04);
+}
+
+.scoring-note {
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-align: center;
+    font-style: italic;
+}
+
+.no-contributors {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 40px 0;
+    font-style: italic;
+}
+
+/* ── Contributor Info Cards ──────────────────────────────────────────────── */
+.contributor-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 36px;
+}
+
+.contributor-info-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.contributor-info-card h3 {
+    color: var(--text-bright);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contributor-info-card p {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+}
+
+/* ── Reviewed Section in Edit Modal ─────────────────────────────────────── */
+.reviewed-section {
+    padding: 10px 12px;
+    background: rgba(63, 185, 80, 0.08);
+    border: 1px solid rgba(63, 185, 80, 0.25);
+    border-radius: 6px;
+}
+
+.reviewed-section label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #3fb950;
+    font-size: 0.88rem;
+    cursor: pointer;
+}

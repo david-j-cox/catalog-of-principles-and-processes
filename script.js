@@ -8,6 +8,9 @@ let currentPage = 1;
 let rowsPerPage = 20;
 let currentFilteredData = [];
 
+// Edit modal state
+let editModalOriginalArticle = null;
+
 // GitHub configuration
 const GITHUB_CONFIG = {
     owner: 'david-j-cox',
@@ -148,6 +151,8 @@ function toggleAbstract(contentId, btnId, fullText) {
 
 // GitHub API Functions
 let githubToken = localStorage.getItem('github_token');
+let githubUsername = localStorage.getItem('github_username');
+const SIGNOFF_THRESHOLD = 3;
 
 function initializeGitHubAuth() {
     const authSection = document.createElement('div');
@@ -159,7 +164,7 @@ function initializeGitHubAuth() {
                 <div class="auth-controls">
                     <input type="password" id="github-token" placeholder="GitHub Personal Access Token" 
                            style="display: ${githubToken ? 'none' : 'block'}">
-                    <button id="connect-github" class="auth-btn">${githubToken ? 'Connected' : 'Connect GitHub'}</button>
+                    <button id="connect-github" class="auth-btn">${githubToken ? `Connected as @${githubUsername || '?'}` : 'Connect GitHub'}</button>
                     <button id="disconnect-github" class="auth-btn secondary" 
                             style="display: ${githubToken ? 'block' : 'none'}">Disconnect</button>
                 </div>
@@ -194,12 +199,14 @@ function handleGitHubConnect() {
     }
     
     // Validate token
-    validateGitHubToken(token).then(isValid => {
-        if (isValid) {
+    validateGitHubToken(token).then(user => {
+        if (user) {
             githubToken = token;
+            githubUsername = user.login;
             localStorage.setItem('github_token', token);
-            updateAuthUI(true);
-            showSuccessMessage('Successfully connected to GitHub!');
+            localStorage.setItem('github_username', user.login);
+            updateAuthUI(true, user.login);
+            showSuccessMessage(`Connected as @${user.login}`);
         } else {
             showErrorMessage('Invalid GitHub token. Please check and try again.');
         }
@@ -208,14 +215,18 @@ function handleGitHubConnect() {
 
 function handleGitHubDisconnect() {
     githubToken = null;
+    githubUsername = null;
     localStorage.removeItem('github_token');
+    localStorage.removeItem('github_username');
     updateAuthUI(false);
     showSuccessMessage('Disconnected from GitHub');
 }
 
-function updateAuthUI(connected) {
+function updateAuthUI(connected, username) {
     document.getElementById('github-token').style.display = connected ? 'none' : 'block';
-    document.getElementById('connect-github').textContent = connected ? 'Connected' : 'Connect GitHub';
+    document.getElementById('connect-github').textContent = connected
+        ? `Connected as @${username || githubUsername || '?'}`
+        : 'Connect GitHub';
     document.getElementById('disconnect-github').style.display = connected ? 'block' : 'none';
 }
 
@@ -227,10 +238,11 @@ async function validateGitHubToken(token) {
                 'Accept': 'application/vnd.github.v3+json'
             }
         });
-        return response.ok;
+        if (!response.ok) return null;
+        return await response.json();
     } catch (error) {
         console.error('Token validation failed:', error);
-        return false;
+        return null;
     }
 }
 
@@ -253,11 +265,11 @@ async function createPullRequest(newEntry) {
         }
         
         const dataFile = await dataResponse.json();
-        const currentData = JSON.parse(atob(dataFile.content));
+        const currentData = JSON.parse(decodeURIComponent(escape(atob(dataFile.content))));
         
         // 2. Add the new entry
         const updatedData = [...currentData, newEntry];
-        const updatedContent = btoa(JSON.stringify(updatedData, null, 4));
+        const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(updatedData, null, 4))));
         
         // 3. Create a new branch
         const branchName = `add-entry-${Date.now()}`;
@@ -356,6 +368,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     initializeSearch();
     initializeModal();
     initializeGitHubAuth();
+    initializeEditModal();
 });
 
 // Navigation functionality
@@ -378,6 +391,11 @@ function initializeNavigation() {
             // Update statistics if switching to stats view
             if (targetView === 'stats') {
                 updateStatistics();
+            }
+
+            // Render contributors leaderboard if switching to contributors view
+            if (targetView === 'contributors') {
+                renderContributors();
             }
         });
     });
@@ -498,6 +516,27 @@ function parseAuthorsInput(authorsInput) {
     return authors.length === 1 ? authors[0] : authors;
 }
 
+// Normalize an equation field to a plain string (global version for use outside renderPage)
+function normalizeEqGlobal(eq) {
+    if (!eq) return '';
+    if (Array.isArray(eq)) return eq.filter(Boolean).join('; ');
+    return eq;
+}
+
+// Format authors array for edit form input
+function formatAuthorsForInput(authors) {
+    if (!authors) return '';
+    if (Array.isArray(authors)) return authors.join(' & ');
+    return authors;
+}
+
+// Format process field for edit form input
+function formatProcessForInput(process) {
+    if (!process) return '';
+    if (Array.isArray(process)) return process.join(', ');
+    return process;
+}
+
 // Create equation content for table cell - render both types directly in table
 function createEquationContent(equation, definitions) {
     if (!equation || equation === 'N/A' || equation === 'None' || equation.trim() === '') {
@@ -572,9 +611,29 @@ function renderPage() {
         const staticDefinitions = article['static-equation-definitions'] || '';
         const recursiveEquation = normalizeEq(article['recursive-equation']);
         const recursiveDefinitions = article['recursive-equation-definitions'] || '';
-        
+
+        const isReviewed = article.reviewed === true ||
+            (article.signoffs || []).length >= SIGNOFF_THRESHOLD;
+        const statusBadge = isReviewed
+            ? `<span class="badge-reviewed">✓ Reviewed</span>`
+            : `<span class="badge-needs-review">Needs Review</span>`;
+
+        let signoffBtn = '';
+        if (githubToken && githubUsername && article.contributor &&
+            !(article.signoffs || []).includes(githubUsername) &&
+            (article.signoffs || []).length < SIGNOFF_THRESHOLD) {
+            signoffBtn = `<button class="signoff-btn" title="Verify this entry is accurate">✓ Verify</button>`;
+        }
+
         row.innerHTML = `
-            <td class="article-title">${createTitleContent(article.title, article.url)}</td>
+            <td class="article-title">
+                ${createTitleContent(article.title, article.url)}
+                <div class="row-meta">
+                    ${statusBadge}
+                    ${signoffBtn}
+                    <button class="edit-row-btn" title="Suggest a correction">✏</button>
+                </div>
+            </td>
             <td class="authors">${createAuthorsContent(article.authors)}</td>
             <td class="year">${article.year}</td>
             <td class="volume">${article.volume}</td>
@@ -585,7 +644,7 @@ function renderPage() {
             <td class="static-equation">${createEquationContent(staticEquation, staticDefinitions)}</td>
             <td class="recursive-equation">${createEquationContent(recursiveEquation, recursiveDefinitions)}</td>
         `;
-        
+
         // Add click animation
         row.addEventListener('click', function() {
             this.style.animation = 'none';
@@ -593,8 +652,21 @@ function renderPage() {
                 this.style.animation = 'pulse 0.6s ease-in-out';
             }, 10);
         });
-        
+
         tableBody.appendChild(row);
+
+        const signoffEl = row.querySelector('.signoff-btn');
+        if (signoffEl) {
+            signoffEl.addEventListener('click', (e) => {
+                e.stopPropagation();
+                createSignoffPullRequest(article);
+            });
+        }
+
+        row.querySelector('.edit-row-btn').addEventListener('click', (e) => {
+            e.stopPropagation();
+            openEditModal(article);
+        });
     });
     
     // Re-render MathJax after table update
@@ -720,6 +792,7 @@ function populateFilters() {
     volumeFilter.addEventListener('change', () => { rebuildDependentDropdowns(); applyFilters(); });
     issueFilter.addEventListener('change', applyFilters);
     processFilter.addEventListener('change', applyFilters);
+    document.getElementById('review-filter').addEventListener('change', applyFilters);
 }
 
 // Rebuild volume and issue dropdowns based on current year/volume selection
@@ -799,10 +872,11 @@ function applyFilters() {
     const volumeFilter = document.getElementById('volume-filter').value;
     const issueFilter = document.getElementById('issue-filter').value;
     const processFilter = document.getElementById('process-filter').value;
+    const reviewFilter = document.getElementById('review-filter').value;
     const authorFilter = document.getElementById('author-filter').value;
-    
+
     let filteredData = behavioralData;
-    
+
     // Apply search filter
     if (searchTerm) {
         filteredData = filteredData.filter(article =>
@@ -817,7 +891,7 @@ function applyFilters() {
             (article.abstract && article.abstract.toLowerCase().includes(searchTerm))
         );
     }
-    
+
     // Apply year filter
     if (yearFilter) {
         filteredData = filteredData.filter(article => article.year != null && article.year.toString() === yearFilter);
@@ -832,17 +906,26 @@ function applyFilters() {
     if (issueFilter) {
         filteredData = filteredData.filter(article => article.issue != null && article.issue.toString() === issueFilter);
     }
-    
+
     // Apply process filter
     if (processFilter) {
         filteredData = filteredData.filter(article => matchesProcessFilter(article.process, processFilter));
     }
-    
+
+    // Apply review status filter
+    if (reviewFilter === 'reviewed') {
+        filteredData = filteredData.filter(a =>
+            a.reviewed === true || (a.signoffs || []).length >= SIGNOFF_THRESHOLD);
+    } else if (reviewFilter === 'needs-review') {
+        filteredData = filteredData.filter(a =>
+            a.reviewed !== true && (a.signoffs || []).length < SIGNOFF_THRESHOLD);
+    }
+
     // Apply author filter
     if (authorFilter) {
         filteredData = filteredData.filter(article => matchesAuthorFilter(article.authors, authorFilter));
     }
-    
+
     populateTable(filteredData);
 }
 
@@ -954,7 +1037,12 @@ function initializeModal() {
             'recursive-equation': document.getElementById('new-recursive-equation').value || '',
             'recursive-equation-definitions': document.getElementById('new-recursive-definitions').value || ''
         };
-        
+
+        if (githubUsername) {
+            newEntry.contributor = githubUsername;
+            newEntry.signoffs = [];
+        }
+
         try {
             if (githubToken) {
                 // Try to create pull request
@@ -1112,13 +1200,17 @@ document.addEventListener('keydown', function(e) {
         document.getElementById('search-input').focus();
     }
     
-    // Escape key to close modal
+    // Escape key to close modals
     if (e.key === 'Escape') {
         const modal = document.getElementById('add-entry-modal');
         if (modal.style.display === 'block') {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
             document.getElementById('add-entry-form').reset();
+        }
+        const editModal = document.getElementById('edit-entry-modal');
+        if (editModal && editModal.style.display === 'block') {
+            closeEditModal();
         }
     }
     
@@ -1220,11 +1312,11 @@ function getCurrentDisplayedData() {
     const volumeFilter = document.getElementById('volume-filter').value;
     const issueFilter = document.getElementById('issue-filter').value;
     const processFilter = document.getElementById('process-filter').value;
+    const reviewFilter = document.getElementById('review-filter').value;
     const authorFilter = document.getElementById('author-filter').value;
-    
+
     return behavioralData.filter(article => {
-        // Apply search filter
-        const matchesSearch = !searchTerm || 
+        const matchesSearch = !searchTerm ||
             (article.title && article.title.toLowerCase().includes(searchTerm)) ||
             matchesAuthorsSearch(article.authors, searchTerm) ||
             (article.abstract && article.abstract.toLowerCase().includes(searchTerm)) ||
@@ -1233,23 +1325,18 @@ function getCurrentDisplayedData() {
             (article['recursive-equation'] && article['recursive-equation'].toLowerCase().includes(searchTerm)) ||
             (article['static-equation-definitions'] && article['static-equation-definitions'].toLowerCase().includes(searchTerm)) ||
             (article['recursive-equation-definitions'] && article['recursive-equation-definitions'].toLowerCase().includes(searchTerm));
-        
-        // Apply year filter
+
         const matchesYear = !yearFilter || article.year.toString() === yearFilter;
-        
-        // Apply volume filter
         const matchesVolume = !volumeFilter || article.volume.toString() === volumeFilter;
-        
-        // Apply issue filter
         const matchesIssue = !issueFilter || article.issue.toString() === issueFilter;
-        
-        // Apply process filter
         const matchesProcess = !processFilter || matchesProcessFilter(article.process, processFilter);
-        
-        // Apply author filter
+        const matchesReview = !reviewFilter ||
+            (reviewFilter === 'reviewed'
+                ? article.reviewed === true || (article.signoffs || []).length >= SIGNOFF_THRESHOLD
+                : article.reviewed !== true && (article.signoffs || []).length < SIGNOFF_THRESHOLD);
         const matchesAuthor = !authorFilter || matchesAuthorFilter(article.authors, authorFilter);
-        
-        return matchesSearch && matchesYear && matchesVolume && matchesIssue && matchesProcess && matchesAuthor;
+
+        return matchesSearch && matchesYear && matchesVolume && matchesIssue && matchesProcess && matchesReview && matchesAuthor;
     });
 }
 
@@ -1300,6 +1387,433 @@ function exportData() {
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
 }
+
+// ── Edit Entry Feature ────────────────────────────────────────────────────
+
+function closeEditModal() {
+    const modal = document.getElementById('edit-entry-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        document.getElementById('edit-entry-form').reset();
+    }
+}
+
+function openEditModal(article) {
+    editModalOriginalArticle = article;
+    document.getElementById('edit-title').value = article.title || '';
+    document.getElementById('edit-authors').value = formatAuthorsForInput(article.authors);
+    document.getElementById('edit-url').value = article.url || '';
+    document.getElementById('edit-year').value = article.year || '';
+    document.getElementById('edit-volume').value = article.volume || '';
+    document.getElementById('edit-issue').value = article.issue || '';
+    document.getElementById('edit-pages').value = article.pages || '';
+    document.getElementById('edit-abstract').value = article.abstract || '';
+    document.getElementById('edit-process').value = formatProcessForInput(article.process);
+    document.getElementById('edit-static-equation').value = normalizeEqGlobal(article['static-equation']);
+    document.getElementById('edit-static-definitions').value = article['static-equation-definitions'] || '';
+    document.getElementById('edit-recursive-equation').value = normalizeEqGlobal(article['recursive-equation']);
+    document.getElementById('edit-recursive-definitions').value = article['recursive-equation-definitions'] || '';
+    document.getElementById('edit-mark-reviewed').checked = false;
+    document.getElementById('edit-reviewed-section').style.display = githubToken ? 'block' : 'none';
+
+    document.getElementById('edit-entry-modal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function initializeEditModal() {
+    const modal = document.getElementById('edit-entry-modal');
+    const closeButton = document.querySelector('.close-edit-modal');
+    const form = document.getElementById('edit-entry-form');
+
+    closeButton.addEventListener('click', closeEditModal);
+
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) closeEditModal();
+    });
+
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const original = editModalOriginalArticle;
+        if (!original) return;
+
+        const submitButton = form.querySelector('.submit-btn');
+        const originalText = submitButton.textContent;
+        submitButton.textContent = 'Processing...';
+        submitButton.disabled = true;
+
+        const editedEntry = {
+            ...original,
+            title: document.getElementById('edit-title').value,
+            authors: parseAuthorsInput(document.getElementById('edit-authors').value),
+            url: document.getElementById('edit-url').value || '',
+            year: parseInt(document.getElementById('edit-year').value),
+            volume: parseInt(document.getElementById('edit-volume').value),
+            issue: parseInt(document.getElementById('edit-issue').value),
+            pages: document.getElementById('edit-pages').value || '',
+            abstract: document.getElementById('edit-abstract').value || '',
+            process: parseProcessInput(document.getElementById('edit-process').value),
+            'static-equation': document.getElementById('edit-static-equation').value || '',
+            'static-equation-definitions': document.getElementById('edit-static-definitions').value || '',
+            'recursive-equation': document.getElementById('edit-recursive-equation').value || '',
+            'recursive-equation-definitions': document.getElementById('edit-recursive-definitions').value || '',
+        };
+
+        const markReviewed = document.getElementById('edit-mark-reviewed').checked;
+        if (markReviewed) editedEntry.reviewed = true;
+
+        if (githubUsername) {
+            const existing = editedEntry.correctors || [];
+            if (!existing.includes(githubUsername)) {
+                editedEntry.correctors = [...existing, githubUsername];
+            }
+        }
+
+        try {
+            if (githubToken) {
+                await createEditPullRequest(original, editedEntry);
+            } else {
+                window.open(buildGitHubIssueUrl(original, editedEntry), '_blank');
+                showSuccessMessage('Opening GitHub issue with your correction. Thank you!');
+                closeEditModal();
+            }
+        } catch (error) {
+            console.error('Error submitting correction:', error);
+            showErrorMessage(`Failed to submit correction: ${error.message}`);
+        } finally {
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+        }
+    });
+}
+
+async function createEditPullRequest(original, edited) {
+    if (!githubToken) {
+        throw new Error('GitHub token not found. Please connect your GitHub account first.');
+    }
+
+    try {
+        // 1. Fetch current data.json
+        const dataResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json'
+            }
+        });
+
+        if (!dataResponse.ok) throw new Error('Failed to fetch current data file');
+
+        const dataFile = await dataResponse.json();
+        const currentData = JSON.parse(decodeURIComponent(escape(atob(dataFile.content))));
+
+        // 2. Find and replace the entry
+        const idx = currentData.findIndex(e => e.title === original.title && e.year === original.year);
+        if (idx === -1) {
+            window.open(buildGitHubIssueUrl(original, edited), '_blank');
+            showSuccessMessage('Could not locate entry in data file. Opening GitHub issue instead.');
+            closeEditModal();
+            return;
+        }
+
+        currentData[idx] = edited;
+        const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(currentData, null, 4))));
+
+        // 3. Create branch from main
+        const branchName = `edit-entry-${Date.now()}`;
+        const mainBranchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs/heads/main`, {
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json'
+            }
+        });
+
+        const mainBranch = await mainBranchResponse.json();
+
+        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
+            method: 'POST',
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                ref: `refs/heads/${branchName}`,
+                sha: mainBranch.object.sha
+            })
+        });
+
+        // 4. Update file in branch
+        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                message: `Correction: ${original.title.slice(0, 60)}`,
+                content: updatedContent,
+                sha: dataFile.sha,
+                branch: branchName
+            })
+        });
+
+        // 5. Create PR
+        const prResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/pulls`, {
+            method: 'POST',
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                title: `Correction: ${original.title.slice(0, 60)}`,
+                head: branchName,
+                base: 'main',
+                body: `## Suggested Correction\n\n**Article:** ${original.title} (${original.year}, Vol. ${original.volume})\n\nSubmitted via catalog edit form.`
+            })
+        });
+
+        if (!prResponse.ok) throw new Error('Failed to create pull request');
+
+        const pr = await prResponse.json();
+        showPullRequestSuccess(pr);
+        closeEditModal();
+
+    } catch (error) {
+        console.error('Error creating edit pull request:', error);
+        throw error;
+    }
+}
+
+function buildGitHubIssueUrl(original, edited) {
+    const fields = ['title', 'authors', 'url', 'year', 'volume', 'issue', 'pages',
+                    'process', 'static-equation', 'static-equation-definitions',
+                    'recursive-equation', 'recursive-equation-definitions'];
+    const changed = fields.filter(f => {
+        const a = Array.isArray(original[f]) ? original[f].join('; ') : String(original[f] || '');
+        const b = Array.isArray(edited[f]) ? edited[f].join('; ') : String(edited[f] || '');
+        return a !== b;
+    });
+
+    let body = `## Suggested Correction\n\n`;
+    body += `**Article:** ${original.title} (${original.year}, Vol. ${original.volume})\n\n`;
+    body += `### Changed Fields\n| Field | Current | Suggested |\n|---|---|---|\n`;
+    for (const f of changed) {
+        const curr = String(original[f] || '').slice(0, 120);
+        const sugg = String(edited[f] || '').slice(0, 120);
+        body += `| ${f} | ${curr} | ${sugg} |\n`;
+    }
+    body += `\n*Submitted via catalog edit form*`;
+
+    const title = encodeURIComponent(`Correction: ${original.title.slice(0, 60)}`);
+    const bodyEnc = encodeURIComponent(body);
+    return `https://github.com/david-j-cox/catalog-of-principles-and-processes/issues/new?title=${title}&body=${bodyEnc}`;
+}
+
+// ── Signoff Pull Request ──────────────────────────────────────────────────
+
+async function createSignoffPullRequest(article) {
+    if (!githubToken || !githubUsername) return;
+
+    const signoffs = article.signoffs || [];
+    if (signoffs.includes(githubUsername)) {
+        showSuccessMessage("You've already verified this entry.");
+        return;
+    }
+
+    try {
+        // 1. Fetch current data.json
+        const dataResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json'
+            }
+        });
+
+        if (!dataResponse.ok) throw new Error('Failed to fetch current data file');
+
+        const dataFile = await dataResponse.json();
+        const currentData = JSON.parse(decodeURIComponent(escape(atob(dataFile.content))));
+
+        // 2. Find entry and add signoff
+        const idx = currentData.findIndex(e => e.title === article.title && e.year === article.year);
+        if (idx === -1) throw new Error('Could not locate entry in data file');
+
+        const newSignoffs = [...(currentData[idx].signoffs || []), githubUsername];
+        currentData[idx].signoffs = newSignoffs;
+        if (newSignoffs.length >= SIGNOFF_THRESHOLD) {
+            currentData[idx].reviewed = true;
+        }
+
+        const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(currentData, null, 4))));
+
+        // 3. Create branch from main
+        const branchName = `signoff-entry-${Date.now()}`;
+        const mainBranchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs/heads/main`, {
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json'
+            }
+        });
+
+        const mainBranch = await mainBranchResponse.json();
+
+        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
+            method: 'POST',
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                ref: `refs/heads/${branchName}`,
+                sha: mainBranch.object.sha
+            })
+        });
+
+        // 4. PUT updated file to branch
+        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                message: `Signoff: ${article.title.slice(0, 60)}`,
+                content: updatedContent,
+                sha: dataFile.sha,
+                branch: branchName
+            })
+        });
+
+        // 5. Create PR
+        const signoffCount = newSignoffs.length;
+        const prResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/pulls`, {
+            method: 'POST',
+            headers: {
+                'Authorization': `token ${githubToken}`,
+                'Accept': 'application/vnd.github.v3+json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                title: `Signoff: ${article.title.slice(0, 60)}`,
+                head: branchName,
+                base: 'main',
+                body: `## Verification Sign-off\n\n**Article:** ${article.title} (${article.year}, Vol. ${article.volume})\n\n**Sign-off count:** ${signoffCount}/${SIGNOFF_THRESHOLD}\n\nVerified by @${githubUsername} via the Behavioral Process Catalog web interface.`
+            })
+        });
+
+        if (!prResponse.ok) throw new Error('Failed to create pull request');
+
+        const pr = await prResponse.json();
+        showPullRequestSuccess(pr);
+
+    } catch (error) {
+        console.error('Error creating signoff pull request:', error);
+        showErrorMessage(`Failed to submit verification: ${error.message}`);
+    }
+}
+
+// ── Leaderboard ───────────────────────────────────────────────────────────
+
+function computeLeaderboard() {
+    const stats = {};
+    for (const entry of behavioralData) {
+        // Original submission credit
+        if (entry.contributor) {
+            if (!stats[entry.contributor]) {
+                stats[entry.contributor] = { verified: 0, pending: 0, corrections: 0, reviews: 0 };
+            }
+            const n = (entry.signoffs || []).length;
+            if (n >= SIGNOFF_THRESHOLD) {
+                stats[entry.contributor].verified++;
+            } else {
+                stats[entry.contributor].pending++;
+            }
+        }
+        // Correction credit
+        for (const c of (entry.correctors || [])) {
+            if (!stats[c]) stats[c] = { verified: 0, pending: 0, corrections: 0, reviews: 0 };
+            stats[c].corrections++;
+        }
+        // Sign-off credit
+        for (const r of (entry.signoffs || [])) {
+            if (!stats[r]) stats[r] = { verified: 0, pending: 0, corrections: 0, reviews: 0 };
+            stats[r].reviews++;
+        }
+    }
+    return Object.entries(stats)
+        .map(([name, s]) => ({
+            name, ...s,
+            score: s.verified * 3 + s.pending + s.corrections + s.reviews
+        }))
+        .sort((a, b) => b.score - a.score);
+}
+
+function renderContributors() {
+    const container = document.getElementById('leaderboard-container');
+    if (!container) return;
+
+    const leaders = computeLeaderboard();
+    const totalVerified = behavioralData.filter(e =>
+        e.reviewed === true || (e.signoffs || []).length >= SIGNOFF_THRESHOLD
+    ).length;
+
+    if (leaders.length === 0) {
+        container.innerHTML = `
+            <p class="no-contributors">No contributors yet. Connect your GitHub account and add or verify entries to appear here!</p>
+        `;
+        return;
+    }
+
+    const medals = ['🥇', '🥈', '🥉'];
+
+    const rows = leaders.map((l, i) => {
+        const rankCell = i < 3
+            ? `<span class="rank-medal">${medals[i]}</span>`
+            : `#${i + 1}`;
+        const rowClass = i < 3 ? ' class="top-contributor"' : '';
+        const safeName = l.name.replace(/[^a-zA-Z0-9\-]/g, '');
+        return `
+            <tr${rowClass}>
+                <td class="rank-cell">${rankCell}</td>
+                <td class="contributor-name"><a href="https://github.com/${safeName}" target="_blank" rel="noopener noreferrer">@${safeName}</a></td>
+                <td class="stat-cell verified-cell">${l.verified}</td>
+                <td class="stat-cell">${l.pending}</td>
+                <td class="stat-cell">${l.corrections}</td>
+                <td class="stat-cell">${l.reviews}</td>
+                <td class="stat-cell score-cell">${l.score}</td>
+            </tr>
+        `;
+    }).join('');
+
+    container.innerHTML = `
+        <div class="leaderboard-stats">
+            <span>${leaders.length} contributor${leaders.length !== 1 ? 's' : ''}</span>
+            <span>·</span>
+            <span>${totalVerified} verified ${totalVerified !== 1 ? 'entries' : 'entry'}</span>
+        </div>
+        <table class="leaderboard-table">
+            <thead>
+                <tr>
+                    <th class="rank-cell">Rank</th>
+                    <th>Contributor</th>
+                    <th class="stat-cell">Verified</th>
+                    <th class="stat-cell">Pending</th>
+                    <th class="stat-cell">Corrections</th>
+                    <th class="stat-cell">Reviews Given</th>
+                    <th class="stat-cell">Score</th>
+                </tr>
+            </thead>
+            <tbody>${rows}</tbody>
+        </table>
+        <p class="scoring-note">Verified contribution: 3 pts · Pending contribution: 1 pt · Correction: 1 pt · Verification given: 1 pt</p>
+    `;
+}
+
+// ── Error handling ────────────────────────────────────────────────────────
 
 // Error handling
 window.addEventListener('error', function(e) {
