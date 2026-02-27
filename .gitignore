@@ -133,4 +133,14 @@ temp/
 
 # Scraper cache and staging output
 cache/
-jeab_scraped.json 
+jeab_scraped.json
+equations_staged.json
+equations_judged.json
+
+# Backup files
+*.bak
+*.bak2
+*.bak3
+
+# Data collection template
+data_colleciton_template.xlsx 
