@@ -945,10 +945,17 @@ function debounce(func, wait) {
 // Statistics calculation
 function updateStatistics() {
     const totalArticles = behavioralData.length;
-    const uniqueProcesses = new Set(behavioralData.map(article => article.process)).size;
-    const years = behavioralData.map(article => article.year);
-    const yearRange = `${Math.min(...years)} - ${Math.max(...years)}`;
-    const latestVolume = Math.max(...behavioralData.map(article => article.volume));
+    const allProcesses = new Set();
+    behavioralData.forEach(article => {
+        const p = article.process;
+        if (Array.isArray(p)) p.forEach(name => allProcesses.add(name));
+        else if (p) allProcesses.add(p);
+    });
+    const uniqueProcesses = allProcesses.size;
+    const years = behavioralData.map(a => a.year).filter(y => y != null && y > 0);
+    const yearRange = years.length ? `${Math.min(...years)} - ${Math.max(...years)}` : 'N/A';
+    const volumes = behavioralData.map(a => a.volume).filter(v => v != null && v > 0);
+    const latestVolume = volumes.length ? Math.max(...volumes) : 0;
     
     // Animate the numbers
     animateNumber('total-articles', totalArticles);
