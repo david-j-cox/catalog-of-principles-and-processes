@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A searchable catalog of behavioral processes and equations from the Journal of the Experimental Analysis of Behavior (JEAB). Browse 4,000+ articles with equations, abstracts, and citation data.">
     <title>Behavioral Process Catalog - JEAB Archive</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <!-- MathJax for equation rendering -->
@@ -192,29 +194,42 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>&copy; 2025 Behavioral Process Catalog | Advancing the Science of Behavior</p>
+            <p>&copy; 2026 Behavioral Process Catalog | Advancing the Science of Behavior</p>
         </footer>
     </div>
 
     <!-- Add Entry Modal -->
     <div id="add-entry-modal" class="modal">
         <div class="modal-content">
-            <span class="close-modal">&times;</span>
+            <button class="close-modal" aria-label="Close">&times;</button>
             <h3>Add New Article Entry</h3>
             <form id="add-entry-form">
+                <label for="new-title" class="sr-only">Article Title</label>
                 <input type="text" id="new-title" placeholder="Article Title" required>
+                <label for="new-authors" class="sr-only">Authors</label>
                 <input type="text" id="new-authors" placeholder="Authors (e.g., Smith, J. B. & Jones, A. C.)" required>
+                <label for="new-url" class="sr-only">Article URL</label>
                 <input type="url" id="new-url" placeholder="Article URL (e.g., https://doi.org/...)">
+                <label for="new-year" class="sr-only">Year</label>
                 <input type="number" id="new-year" placeholder="Year" min="1950" max="2099" required>
+                <label for="new-volume" class="sr-only">Volume</label>
                 <input type="number" id="new-volume" placeholder="Volume" min="1" required>
+                <label for="new-issue" class="sr-only">Issue</label>
                 <input type="number" id="new-issue" placeholder="Issue" min="1" required>
+                <label for="new-pages" class="sr-only">Pages</label>
                 <input type="text" id="new-pages" placeholder="Pages (e.g., 1-15 or 1, 2, 3)">
+                <label for="new-abstract" class="sr-only">Abstract</label>
                 <textarea id="new-abstract" placeholder="Abstract (optional)" rows="4"></textarea>
+                <label for="new-process" class="sr-only">Behavioral Processes</label>
                 <input type="text" id="new-process" placeholder="Behavioral Processes (comma-separated for multiple)" required>
                 <small class="field-help">Tip: Enter multiple processes separated by commas (e.g., "Reinforcement, Extinction")</small>
+                <label for="new-static-equation" class="sr-only">Static Equation</label>
                 <input type="text" id="new-static-equation" placeholder="Static Equation (e.g., IV ↔ DV relationship)">
+                <label for="new-static-definitions" class="sr-only">Static Equation Definitions</label>
                 <textarea id="new-static-definitions" placeholder="Static Equation Definitions (semicolon-separated, e.g., t = time; R = response rate)" rows="2"></textarea>
+                <label for="new-recursive-equation" class="sr-only">Recursive Equation</label>
                 <input type="text" id="new-recursive-equation" placeholder="Recursive Equation (e.g., dynamic equations with recursion)">
+                <label for="new-recursive-definitions" class="sr-only">Recursive Equation Definitions</label>
                 <textarea id="new-recursive-definitions" placeholder="Recursive Equation Definitions (semicolon-separated, e.g., R_n = response rate at time n; α = learning rate)" rows="2"></textarea>
                 <button type="submit" class="submit-btn">Add Entry</button>
             </form>
@@ -224,22 +239,35 @@
     <!-- Edit Entry Modal -->
     <div id="edit-entry-modal" class="modal">
         <div class="modal-content">
-            <span class="close-edit-modal">&times;</span>
+            <button class="close-edit-modal" aria-label="Close">&times;</button>
             <h3>Suggest a Correction</h3>
             <small class="field-help" style="text-align:center;display:block;margin-bottom:14px;">Your correction opens as a GitHub issue for review, or a PR if you're connected.</small>
             <form id="edit-entry-form">
+                <label for="edit-title" class="sr-only">Article Title</label>
                 <input type="text" id="edit-title" placeholder="Article Title" required>
+                <label for="edit-authors" class="sr-only">Authors</label>
                 <input type="text" id="edit-authors" placeholder="Authors (e.g., Smith, J. B. & Jones, A. C.)" required>
+                <label for="edit-url" class="sr-only">Article URL</label>
                 <input type="url" id="edit-url" placeholder="Article URL (e.g., https://doi.org/...)">
+                <label for="edit-year" class="sr-only">Year</label>
                 <input type="number" id="edit-year" placeholder="Year" min="1950" max="2099" required>
+                <label for="edit-volume" class="sr-only">Volume</label>
                 <input type="number" id="edit-volume" placeholder="Volume" min="1" required>
+                <label for="edit-issue" class="sr-only">Issue</label>
                 <input type="number" id="edit-issue" placeholder="Issue" min="1" required>
+                <label for="edit-pages" class="sr-only">Pages</label>
                 <input type="text" id="edit-pages" placeholder="Pages (e.g., 1-15 or 1, 2, 3)">
+                <label for="edit-abstract" class="sr-only">Abstract</label>
                 <textarea id="edit-abstract" placeholder="Abstract (optional)" rows="4"></textarea>
+                <label for="edit-process" class="sr-only">Behavioral Processes</label>
                 <input type="text" id="edit-process" placeholder="Behavioral Processes (comma-separated for multiple)" required>
+                <label for="edit-static-equation" class="sr-only">Static Equation</label>
                 <input type="text" id="edit-static-equation" placeholder="Static Equation">
+                <label for="edit-static-definitions" class="sr-only">Static Equation Definitions</label>
                 <textarea id="edit-static-definitions" placeholder="Static Equation Definitions (semicolon-separated)" rows="2"></textarea>
+                <label for="edit-recursive-equation" class="sr-only">Recursive Equation</label>
                 <input type="text" id="edit-recursive-equation" placeholder="Recursive Equation">
+                <label for="edit-recursive-definitions" class="sr-only">Recursive Equation Definitions</label>
                 <textarea id="edit-recursive-definitions" placeholder="Recursive Equation Definitions (semicolon-separated)" rows="2"></textarea>
                 <div id="edit-reviewed-section" class="reviewed-section" style="display:none">
                     <label>

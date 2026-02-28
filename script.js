@@ -38,7 +38,10 @@ const fallbackData = [
         "issue": 1,
         "pages": "1-5",
         "process": "Getting Started",
-        "equation": "N/A",
+        "static-equation": "",
+        "static-equation-definitions": "",
+        "recursive-equation": "",
+        "recursive-equation-definitions": "",
         "abstract": "This is a demonstration entry. For full functionality, please view this site through GitHub Pages or run a local web server. The complete database is stored in data.json and will load automatically when served over HTTP."
     },
     {
@@ -48,7 +51,10 @@ const fallbackData = [
         "issue": 2,
         "pages": "123-135",
         "process": "Variable-Ratio Reinforcement",
-        "equation": "R = k × (SR/t)",
+        "static-equation": "R = k \\times (S_R / t)",
+        "static-equation-definitions": "R = response rate; k = scaling constant; S_R = reinforcement rate; t = time",
+        "recursive-equation": "",
+        "recursive-equation-definitions": "",
         "abstract": "Six pigeons responded under variable-ratio (VR) schedules ranging from VR 10 to VR 200. Response rates increased as a power function of ratio size, with individual differences in the exponent."
     }
 ];
@@ -752,33 +758,45 @@ function populateFilters() {
     const processFilter = document.getElementById('process-filter');
     const authorFilter = document.getElementById('author-filter');
     
+    // Helper: clear dropdown options, keeping the first default "All..." option
+    function clearDropdown(select) {
+        const defaultOption = select.querySelector('option');
+        select.innerHTML = '';
+        if (defaultOption) select.appendChild(defaultOption);
+    }
+
+    clearDropdown(yearFilter);
+    clearDropdown(volumeFilter);
+    clearDropdown(issueFilter);
+    clearDropdown(processFilter);
+
     // Get unique years and sort
-    const years = [...new Set(behavioralData.map(article => article.year))].sort((a, b) => b - a);
+    const years = [...new Set(behavioralData.map(article => article.year).filter(y => y != null))].sort((a, b) => b - a);
     years.forEach(year => {
         const option = document.createElement('option');
         option.value = year;
         option.textContent = year;
         yearFilter.appendChild(option);
     });
-    
+
     // Get unique volumes and sort
-    const volumes = [...new Set(behavioralData.map(article => article.volume))].sort((a, b) => a - b);
+    const volumes = [...new Set(behavioralData.map(article => article.volume).filter(v => v != null))].sort((a, b) => a - b);
     volumes.forEach(volume => {
         const option = document.createElement('option');
         option.value = volume;
         option.textContent = volume;
         volumeFilter.appendChild(option);
     });
-    
+
     // Get unique issues and sort
-    const issues = [...new Set(behavioralData.map(article => article.issue))].sort((a, b) => a - b);
+    const issues = [...new Set(behavioralData.map(article => article.issue).filter(i => i != null))].sort((a, b) => a - b);
     issues.forEach(issue => {
         const option = document.createElement('option');
         option.value = issue;
         option.textContent = issue;
         issueFilter.appendChild(option);
     });
-    
+
     // Get unique processes — normalize all entries through normalizeProcesses()
     // so raw JSON strings, comma-lists, stray brackets etc. are cleaned first
     const allProcesses = [];
@@ -1266,8 +1284,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // CSV Export functionality
 function exportTableToCSV() {
-    // Get currently displayed data (respects filters)
-    const currentData = getCurrentDisplayedData();
+    // Use the already-filtered data from the last applyFilters() call
+    const currentData = currentFilteredData;
     
     if (currentData.length === 0) {
         alert('No data to export. Please check your filters.');
@@ -1329,41 +1347,6 @@ function exportTableToCSV() {
         link.click();
         document.body.removeChild(link);
     }
-}
-
-// Get currently displayed data (respects search and filters)
-function getCurrentDisplayedData() {
-    const searchTerm = document.getElementById('search-input').value.toLowerCase();
-    const yearFilter = document.getElementById('year-filter').value;
-    const volumeFilter = document.getElementById('volume-filter').value;
-    const issueFilter = document.getElementById('issue-filter').value;
-    const processFilter = document.getElementById('process-filter').value;
-    const reviewFilter = document.getElementById('review-filter').value;
-    const authorFilter = document.getElementById('author-filter').value;
-
-    return behavioralData.filter(article => {
-        const matchesSearch = !searchTerm ||
-            (article.title && article.title.toLowerCase().includes(searchTerm)) ||
-            matchesAuthorsSearch(article.authors, searchTerm) ||
-            (article.abstract && article.abstract.toLowerCase().includes(searchTerm)) ||
-            (article.process && matchesProcessSearch(article.process, searchTerm)) ||
-            (article['static-equation'] && article['static-equation'].toLowerCase().includes(searchTerm)) ||
-            (article['recursive-equation'] && article['recursive-equation'].toLowerCase().includes(searchTerm)) ||
-            (article['static-equation-definitions'] && article['static-equation-definitions'].toLowerCase().includes(searchTerm)) ||
-            (article['recursive-equation-definitions'] && article['recursive-equation-definitions'].toLowerCase().includes(searchTerm));
-
-        const matchesYear = !yearFilter || article.year.toString() === yearFilter;
-        const matchesVolume = !volumeFilter || article.volume.toString() === volumeFilter;
-        const matchesIssue = !issueFilter || article.issue.toString() === issueFilter;
-        const matchesProcess = !processFilter || matchesProcessFilter(article.process, processFilter);
-        const matchesReview = !reviewFilter ||
-            (reviewFilter === 'reviewed'
-                ? article.reviewed === true || (article.signoffs || []).length >= SIGNOFF_THRESHOLD
-                : article.reviewed !== true && (article.signoffs || []).length < SIGNOFF_THRESHOLD);
-        const matchesAuthor = !authorFilter || matchesAuthorFilter(article.authors, authorFilter);
-
-        return matchesSearch && matchesYear && matchesVolume && matchesIssue && matchesProcess && matchesReview && matchesAuthor;
-    });
 }
 
 // Clean LaTeX equations for CSV export (remove LaTeX markup)

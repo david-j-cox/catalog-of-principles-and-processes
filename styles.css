@@ -589,16 +589,22 @@ body {
     position: relative;
 }
 
-.close-modal {
+.close-modal,
+.close-edit-modal {
+    background: none;
+    border: none;
     color: var(--text-muted);
     float: right;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.2s;
+    padding: 0;
+    line-height: 1;
 }
 
-.close-modal:hover { color: var(--text-bright); }
+.close-modal:hover,
+.close-edit-modal:hover { color: var(--text-bright); }
 
 .modal-content h3 {
     font-family: 'Inter', sans-serif;
@@ -855,7 +861,7 @@ body {
 
     .data-table th:nth-child(1), .data-table td:nth-child(1) { width: 120px; min-width: 120px; }
     .data-table th:nth-child(2), .data-table td:nth-child(2) { width: 100px; min-width: 100px; }
-    .data-table th:nth-child(7), .data-table td:nth-child(7) { width: 150px; min-width: 600px; }
+    .data-table th:nth-child(7), .data-table td:nth-child(7) { width: 150px; min-width: 200px; }
 
     .export-btn { font-size: 0.8rem; padding: 8px 14px; }
 
@@ -1062,4 +1068,46 @@ tr:hover .signoff-btn { opacity: 1; }
     color: #3fb950;
     font-size: 0.88rem;
     cursor: pointer;
+}
+
+/* ── Accessibility ──────────────────────────────────────────────────────── */
+
+/* Visually hidden but available to screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus outlines for keyboard navigation */
+.nav-btn:focus-visible,
+.page-btn:focus-visible,
+.add-entry-btn:focus-visible,
+.submit-btn:focus-visible,
+.auth-btn:focus-visible,
+.edit-row-btn:focus-visible,
+.signoff-btn:focus-visible,
+.export-btn:focus-visible,
+.read-more-btn:focus-visible,
+.close-modal:focus-visible,
+.close-edit-modal:focus-visible,
+.filter-select:focus-visible {
+    outline: 2px solid var(--accent-teal);
+    outline-offset: 2px;
+}
+
+/* ── Touch device fixes ─────────────────────────────────────────────────── */
+
+/* On devices that don't support hover, always show action buttons */
+@media (hover: none) {
+    .edit-row-btn,
+    .signoff-btn {
+        opacity: 1;
+    }
 }
