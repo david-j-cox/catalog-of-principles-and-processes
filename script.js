@@ -1,5 +1,16 @@
 // Behavioral Process Catalog - JavaScript Functionality
 
+// HTML-escape a string to prevent XSS when inserting into innerHTML
+function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
 // Behavioral data will be loaded from data.json
 let behavioralData = [];
 
@@ -98,44 +109,44 @@ function createAbstractContent(abstract, articleIndex) {
     if (!abstract || abstract === 'No abstract available') {
         return '<em style="opacity: 0.7;">No abstract available</em>';
     }
-    
-    // Truncate to approximately one line (about 80 characters)
+
+    const safe = escapeHtml(abstract);
     const maxLength = 80;
-    const truncated = abstract.length > maxLength ? abstract.substring(0, maxLength) : abstract;
-    const needsTruncation = abstract.length > maxLength;
-    
+    const truncated = safe.length > maxLength ? safe.substring(0, maxLength) : safe;
+    const needsTruncation = safe.length > maxLength;
+
     const contentId = `abstract-${articleIndex}`;
     const btnId = `btn-${articleIndex}`;
-    
+
+    // Store the full text in a data attribute instead of inline JS
     return `
-        <div class="abstract-content collapsed" id="${contentId}">
-            ${needsTruncation ? truncated + '...' : abstract}
+        <div class="abstract-content collapsed" id="${contentId}" data-full="${safe}">
+            ${needsTruncation ? truncated + '...' : safe}
         </div>
-        ${needsTruncation ? `<button class="read-more-btn" id="${btnId}" onclick="toggleAbstract('${contentId}', '${btnId}', \`${abstract.replace(/`/g, '\\`').replace(/"/g, '&quot;')}\`)">Read More</button>` : ''}
+        ${needsTruncation ? `<button class="read-more-btn" id="${btnId}" onclick="toggleAbstract('${contentId}', '${btnId}')">Read More</button>` : ''}
     `;
 }
 
 // Toggle abstract expand/collapse
-function toggleAbstract(contentId, btnId, fullText) {
+function toggleAbstract(contentId, btnId) {
     const content = document.getElementById(contentId);
     const button = document.getElementById(btnId);
-    
+
     if (!content || !button) return;
-    
+
+    const fullText = content.getAttribute('data-full');
     const isCollapsed = content.classList.contains('collapsed');
-    
+
     if (isCollapsed) {
-        // Expand
         content.classList.remove('collapsed');
         content.classList.add('expanded');
-        content.innerHTML = fullText;
+        content.textContent = fullText;
         button.textContent = 'Read Less';
     } else {
-        // Collapse
         content.classList.remove('expanded');
         content.classList.add('collapsed');
         const truncated = fullText.length > 80 ? fullText.substring(0, 80) + '...' : fullText;
-        content.innerHTML = truncated;
+        content.textContent = truncated;
         button.textContent = 'Read More';
     }
     
@@ -280,9 +291,10 @@ async function createPullRequest(newEntry) {
             }
         });
         
+        if (!mainBranchResponse.ok) throw new Error('Failed to fetch main branch');
         const mainBranch = await mainBranchResponse.json();
-        
-        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
+
+        const branchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
             method: 'POST',
             headers: {
                 'Authorization': `token ${githubToken}`,
@@ -294,9 +306,10 @@ async function createPullRequest(newEntry) {
                 sha: mainBranch.object.sha
             })
         });
-        
+        if (!branchResponse.ok) throw new Error('Failed to create branch');
+
         // 4. Update the file in the new branch
-        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
+        const fileUpdateResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
             method: 'PUT',
             headers: {
                 'Authorization': `token ${githubToken}`,
@@ -310,7 +323,8 @@ async function createPullRequest(newEntry) {
                 branch: branchName
             })
         });
-        
+        if (!fileUpdateResponse.ok) throw new Error('Failed to update data file');
+
         // 5. Create the pull request
         const prResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/pulls`, {
             method: 'POST',
@@ -403,10 +417,13 @@ function initializeNavigation() {
 
 // Create title content with optional link
 function createTitleContent(title, url) {
+    const safeTitle = escapeHtml(title);
     if (url && url.trim() !== '') {
-        return `<a href="${url}" target="_blank" rel="noopener noreferrer" class="article-link">${title}</a>`;
+        // Only allow http/https URLs
+        const safeUrl = /^https?:\/\//i.test(url.trim()) ? escapeHtml(url) : '#';
+        return `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer" class="article-link">${safeTitle}</a>`;
     }
-    return title;
+    return safeTitle;
 }
 
 // Normalize a process field into a clean array of strings.
@@ -435,7 +452,7 @@ function normalizeProcesses(value) {
 function createProcessContent(process) {
     const processes = normalizeProcesses(process);
     if (!processes.length) return '<em style="opacity: 0.7;">N/A</em>';
-    return processes.map(p => `<span class="process-tag">${p}</span>`).join(' ');
+    return processes.map(p => `<span class="process-tag">${escapeHtml(p)}</span>`).join(' ');
 }
 
 // Create authors content - handle both string and array formats
@@ -444,11 +461,11 @@ function createAuthorsContent(authors) {
     
     // Handle array of authors
     if (Array.isArray(authors)) {
-        return authors.map(author => `<span class="author-tag">${author}</span>`).join(' ');
+        return authors.map(author => `<span class="author-tag">${escapeHtml(author)}</span>`).join(' ');
     }
-    
+
     // Handle single author (backward compatibility)
-    return `<span class="author-tag">${authors}</span>`;
+    return `<span class="author-tag">${escapeHtml(authors)}</span>`;
 }
 
 // Helper function for process search matching
@@ -635,10 +652,10 @@ function renderPage() {
                 </div>
             </td>
             <td class="authors">${createAuthorsContent(article.authors)}</td>
-            <td class="year">${article.year}</td>
-            <td class="volume">${article.volume}</td>
-            <td class="issue">${article.issue}</td>
-            <td class="pages">${article.pages || 'N/A'}</td>
+            <td class="year">${escapeHtml(article.year)}</td>
+            <td class="volume">${escapeHtml(article.volume)}</td>
+            <td class="issue">${escapeHtml(article.issue)}</td>
+            <td class="pages">${escapeHtml(article.pages) || 'N/A'}</td>
             <td class="abstract-cell">${createAbstractContent(article.abstract || 'No abstract available', index)}</td>
             <td class="process">${createProcessContent(article.process)}</td>
             <td class="static-equation">${createEquationContent(staticEquation, staticDefinitions)}</td>
@@ -1122,7 +1139,7 @@ function showPullRequestSuccess(pullRequest) {
         color: var(--bg-dark);
         padding: 15px 25px;
         border-radius: 5px;
-        font-family: 'Orbitron', monospace;
+        font-family: 'Inter', sans-serif;
         font-weight: 700;
         z-index: 1001;
         animation: slideIn 0.5s ease-out;
@@ -1155,7 +1172,7 @@ function showSuccessMessage(message) {
         color: var(--bg-dark);
         padding: 15px 25px;
         border-radius: 5px;
-        font-family: 'Orbitron', monospace;
+        font-family: 'Inter', sans-serif;
         font-weight: 700;
         z-index: 1001;
         animation: slideIn 0.5s ease-out;
@@ -1167,7 +1184,9 @@ function showSuccessMessage(message) {
     setTimeout(() => {
         successDiv.style.animation = 'slideOut 0.5s ease-in';
         setTimeout(() => {
-            document.body.removeChild(successDiv);
+            if (document.body.contains(successDiv)) {
+                document.body.removeChild(successDiv);
+            }
         }, 500);
     }, 3000);
 }
@@ -1534,9 +1553,10 @@ async function createEditPullRequest(original, edited) {
             }
         });
 
+        if (!mainBranchResponse.ok) throw new Error('Failed to fetch main branch');
         const mainBranch = await mainBranchResponse.json();
 
-        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
+        const branchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
             method: 'POST',
             headers: {
                 'Authorization': `token ${githubToken}`,
@@ -1548,9 +1568,10 @@ async function createEditPullRequest(original, edited) {
                 sha: mainBranch.object.sha
             })
         });
+        if (!branchResponse.ok) throw new Error('Failed to create branch');
 
         // 4. Update file in branch
-        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
+        const fileUpdateResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
             method: 'PUT',
             headers: {
                 'Authorization': `token ${githubToken}`,
@@ -1564,6 +1585,7 @@ async function createEditPullRequest(original, edited) {
                 branch: branchName
             })
         });
+        if (!fileUpdateResponse.ok) throw new Error('Failed to update data file');
 
         // 5. Create PR
         const prResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/pulls`, {
@@ -1664,9 +1686,10 @@ async function createSignoffPullRequest(article) {
             }
         });
 
+        if (!mainBranchResponse.ok) throw new Error('Failed to fetch main branch');
         const mainBranch = await mainBranchResponse.json();
 
-        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
+        const branchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
             method: 'POST',
             headers: {
                 'Authorization': `token ${githubToken}`,
@@ -1678,9 +1701,10 @@ async function createSignoffPullRequest(article) {
                 sha: mainBranch.object.sha
             })
         });
+        if (!branchResponse.ok) throw new Error('Failed to create branch');
 
         // 4. PUT updated file to branch
-        await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
+        const fileUpdateResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
             method: 'PUT',
             headers: {
                 'Authorization': `token ${githubToken}`,
@@ -1694,6 +1718,7 @@ async function createSignoffPullRequest(article) {
                 branch: branchName
             })
         });
+        if (!fileUpdateResponse.ok) throw new Error('Failed to update data file');
 
         // 5. Create PR
         const signoffCount = newSignoffs.length;
@@ -1839,7 +1864,7 @@ function showErrorMessage(message) {
         color: var(--text-bright);
         padding: 15px 25px;
         border-radius: 5px;
-        font-family: 'Orbitron', monospace;
+        font-family: 'Inter', sans-serif;
         font-weight: 700;
         z-index: 1001;
         animation: slideIn 0.5s ease-out;
