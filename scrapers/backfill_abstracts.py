@@ -1,20 +1,23 @@
 """
 Backfill Abstracts for Behavioral Process Catalog
 ==================================================
-Two-pass pipeline to fill missing abstracts using free APIs:
+Three-pass pipeline to fill missing abstracts using free APIs:
   Pass 1: OpenAlex (batch DOI lookups, inverted-index → plaintext)
-  Pass 2: Semantic Scholar (single DOI gap-fill, plaintext abstracts)
+  Pass 2: Europe PMC (cursor-paginated ISSN search, best for BP/JEAB)
+  Pass 3: Semantic Scholar (batch DOI gap-fill)
 
 Usage:
-    python scrapers/backfill_abstracts.py                    # all missing
+    python scrapers/backfill_abstracts.py                    # all missing, all sources
     python scrapers/backfill_abstracts.py --journal BP       # just BP
     python scrapers/backfill_abstracts.py --source openalex  # OpenAlex only
+    python scrapers/backfill_abstracts.py --source europepmc # Europe PMC only
     python scrapers/backfill_abstracts.py --source s2        # Semantic Scholar only
     python scrapers/backfill_abstracts.py --dry-run          # report counts only
 """
 
 import argparse
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -26,10 +29,19 @@ MAILTO = "david.cox@endicott.edu"
 
 # ── Rate limits ──────────────────────────────────────────────────────────────
 OPENALEX_DELAY = 0.1       # seconds between OpenAlex requests
+EUROPEPMC_DELAY = 0.2      # seconds between Europe PMC requests
 S2_DELAY = 1.0             # seconds between Semantic Scholar batch requests
 OPENALEX_BATCH_SIZE = 50   # max DOIs per OpenAlex filter query
 S2_BATCH_SIZE = 100        # DOIs per Semantic Scholar batch (max 500)
+EUROPEPMC_PAGE_SIZE = 1000 # results per Europe PMC cursor page
 SAVE_EVERY = 500           # intermediate save interval (entries processed)
+
+# Journal → ISSNs for Europe PMC queries
+JOURNAL_ISSNS = {
+    "JEAB": ["0022-5002"],
+    "BP": ["0376-6357"],
+    "JEP:ALC": ["2329-8456", "0097-7403"],
+}
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
@@ -174,6 +186,110 @@ def backfill_openalex(data, missing_entries):
     return filled
 
 
+# ── Europe PMC ───────────────────────────────────────────────────────────────
+
+def clean_html(text):
+    """Strip HTML/XML tags and collapse whitespace."""
+    text = re.sub(r"</?[a-zA-Z][^>]*>", "", text)
+    return re.sub(r"  +", " ", text).strip()
+
+
+def fetch_europepmc_page(issn, cursor="*"):
+    """Fetch one page of articles with abstracts from Europe PMC."""
+    params = {
+        "query": f"ISSN:{issn} AND HAS_ABSTRACT:y",
+        "resultType": "core",
+        "pageSize": EUROPEPMC_PAGE_SIZE,
+        "cursorMark": cursor,
+        "format": "json",
+    }
+    try:
+        resp = requests.get(
+            "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+            params=params,
+            timeout=30,
+        )
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        print(f"    Europe PMC request error: {e}")
+        return None
+    return resp.json()
+
+
+def backfill_europepmc(data, missing_entries):
+    """Pass 2: fetch abstracts from Europe PMC via ISSN-based cursor pagination."""
+    still_missing = [e for e in missing_entries if not e.get("abstract")]
+    print(f"\n── Europe PMC pass: {len(still_missing)} entries still missing ──")
+
+    if not still_missing:
+        return 0
+
+    # Build DOI → entry index for matching
+    doi_to_entries = {}
+    for entry in still_missing:
+        doi = get_doi(entry)
+        if doi:
+            doi_to_entries.setdefault(doi, []).append(entry)
+
+    # Determine which ISSNs to query based on journals in missing entries
+    journals_needed = {e.get("journal") for e in still_missing}
+    issns_to_query = []
+    for j in journals_needed:
+        issns_to_query.extend(JOURNAL_ISSNS.get(j, []))
+
+    if not issns_to_query:
+        print("  No matching ISSNs for missing journals")
+        return 0
+
+    filled = 0
+    for issn in issns_to_query:
+        print(f"  Querying ISSN {issn}...")
+        cursor = "*"
+        page_num = 0
+
+        while True:
+            page_num += 1
+            result = fetch_europepmc_page(issn, cursor)
+            if not result:
+                break
+
+            articles = result.get("resultList", {}).get("result", [])
+            if not articles:
+                break
+
+            for article in articles:
+                doi = (article.get("doi") or "").strip().lower()
+                abstract = article.get("abstractText", "")
+                if not doi or not abstract:
+                    continue
+
+                abstract = clean_html(abstract)
+                if not abstract or len(abstract) < 30:
+                    continue
+
+                for entry in doi_to_entries.get(doi, []):
+                    if not entry.get("abstract"):
+                        entry["abstract"] = abstract
+                        filled += 1
+
+            print(f"    Page {page_num}: {len(articles)} articles, "
+                  f"filled {filled} so far")
+
+            # Intermediate save every few pages
+            if page_num % 3 == 0:
+                save_data(data)
+
+            next_cursor = result.get("nextCursorMark")
+            if not next_cursor or next_cursor == cursor:
+                break
+            cursor = next_cursor
+            time.sleep(EUROPEPMC_DELAY)
+
+    save_data(data)
+    print(f"  Europe PMC done: filled {filled} abstracts")
+    return filled
+
+
 # ── Semantic Scholar ─────────────────────────────────────────────────────────
 
 def fetch_s2_batch(dois):
@@ -274,9 +390,9 @@ def main():
     )
     parser.add_argument(
         "--source",
-        choices=["openalex", "s2", "both"],
-        default="both",
-        help="Which API to use (default: both)",
+        choices=["openalex", "europepmc", "s2", "all"],
+        default="all",
+        help="Which API to use (default: all three)",
     )
     parser.add_argument(
         "--dry-run",
@@ -322,10 +438,13 @@ def main():
 
     total_filled = 0
 
-    if args.source in ("openalex", "both"):
+    if args.source in ("openalex", "all"):
         total_filled += backfill_openalex(data, missing)
 
-    if args.source in ("s2", "both"):
+    if args.source in ("europepmc", "all"):
+        total_filled += backfill_europepmc(data, missing)
+
+    if args.source in ("s2", "all"):
         total_filled += backfill_semantic_scholar(data, missing)
 
     # Final summary
