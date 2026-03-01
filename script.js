@@ -11,6 +11,20 @@ function escapeHtml(str) {
         .replace(/'/g, '&#039;');
 }
 
+// Journal display config: key → { label, cssClass }
+const JOURNAL_CONFIG = {
+    'JEAB':    { label: 'JEAB',    cssClass: 'journal-jeab' },
+    'BP':      { label: 'BP',      cssClass: 'journal-bp'   },
+    'JEP:ALC': { label: 'JEP:ALC', cssClass: 'journal-jep'  },
+};
+
+// Create journal badge HTML
+function createJournalBadge(journal) {
+    const key = journal || 'JEAB';
+    const config = JOURNAL_CONFIG[key] || JOURNAL_CONFIG['JEAB'];
+    return `<span class="journal-tag ${config.cssClass}">${escapeHtml(config.label)}</span>`;
+}
+
 // Behavioral data will be loaded from data.json
 let behavioralData = [];
 
@@ -346,6 +360,7 @@ async function createPullRequest(newEntry) {
                 body: `## New Behavioral Process Entry
 
 **Article Title:** ${newEntry.title}
+**Journal:** ${newEntry.journal || 'JEAB'}
 **Authors:** ${newEntry.authors}
 **URL:** ${newEntry.url || 'No URL provided'}
 **Year:** ${newEntry.year}
@@ -657,6 +672,7 @@ function renderPage() {
                     <button class="edit-row-btn" title="Suggest a correction">✏</button>
                 </div>
             </td>
+            <td class="journal-cell">${createJournalBadge(article.journal)}</td>
             <td class="authors">${createAuthorsContent(article.authors)}</td>
             <td class="year">${escapeHtml(article.year)}</td>
             <td class="volume">${escapeHtml(article.volume)}</td>
@@ -822,6 +838,9 @@ function populateFilters() {
     authorFilter.innerHTML = '';
     authorFilter.appendChild(authorNote);
 
+    // Journal filter is independent (not part of year/volume/issue cascade)
+    document.getElementById('journal-filter').addEventListener('change', applyFilters);
+
     // Year and volume changes rebuild dependent dropdowns before filtering
     yearFilter.addEventListener('change', () => { rebuildDependentDropdowns(); applyFilters(); });
     volumeFilter.addEventListener('change', () => { rebuildDependentDropdowns(); applyFilters(); });
@@ -903,6 +922,7 @@ function initializeSearch() {
 // Apply filters and search
 function applyFilters() {
     const searchTerm = document.getElementById('search-input').value.toLowerCase();
+    const journalFilter = document.getElementById('journal-filter').value;
     const yearFilter = document.getElementById('year-filter').value;
     const volumeFilter = document.getElementById('volume-filter').value;
     const issueFilter = document.getElementById('issue-filter').value;
@@ -912,10 +932,16 @@ function applyFilters() {
 
     let filteredData = behavioralData;
 
+    // Apply journal filter
+    if (journalFilter) {
+        filteredData = filteredData.filter(article => (article.journal || 'JEAB') === journalFilter);
+    }
+
     // Apply search filter
     if (searchTerm) {
         filteredData = filteredData.filter(article =>
             (article.title || '').toLowerCase().includes(searchTerm) ||
+            (article.journal || 'JEAB').toLowerCase().includes(searchTerm) ||
             matchesProcessSearch(article.process, searchTerm) ||
             matchesAuthorsSearch(article.authors, searchTerm) ||
             (article.equation && article.equation.toLowerCase().includes(searchTerm)) ||
@@ -991,12 +1017,32 @@ function updateStatistics() {
     const yearRange = years.length ? `${Math.min(...years)} - ${Math.max(...years)}` : 'N/A';
     const volumes = behavioralData.map(a => a.volume).filter(v => v != null && v > 0);
     const latestVolume = volumes.length ? Math.max(...volumes) : 0;
-    
+
+    // Per-journal counts
+    const journalCounts = {};
+    behavioralData.forEach(a => {
+        const j = a.journal || 'JEAB';
+        journalCounts[j] = (journalCounts[j] || 0) + 1;
+    });
+
     // Animate the numbers
     animateNumber('total-articles', totalArticles);
     animateNumber('unique-processes', uniqueProcesses);
     document.getElementById('year-range').textContent = yearRange;
     animateNumber('latest-volume', latestVolume);
+
+    // Render per-journal breakdown below stats grid
+    let breakdownEl = document.getElementById('journal-breakdown');
+    if (!breakdownEl) {
+        breakdownEl = document.createElement('div');
+        breakdownEl.id = 'journal-breakdown';
+        breakdownEl.style.cssText = 'text-align:center;margin-top:16px;color:var(--text-muted);font-size:0.88rem;';
+        document.querySelector('.stats-grid').after(breakdownEl);
+    }
+    const parts = Object.entries(journalCounts)
+        .sort((a, b) => b[1] - a[1])
+        .map(([j, c]) => `${j}: ${c.toLocaleString()}`);
+    breakdownEl.textContent = parts.join('  ·  ');
 }
 
 // Number animation for statistics
@@ -1066,6 +1112,7 @@ function initializeModal() {
         
         const newEntry = {
             title: document.getElementById('new-title').value,
+            journal: document.getElementById('new-journal').value,
             authors: parseAuthorsInput(document.getElementById('new-authors').value),
             url: document.getElementById('new-url').value || '',
             year: parseInt(document.getElementById('new-year').value),
@@ -1295,7 +1342,8 @@ function exportTableToCSV() {
     // Define CSV headers
     const headers = [
         'Article Title',
-        'Authors', 
+        'Journal',
+        'Authors',
         'Year',
         'Volume',
         'Issue',
@@ -1308,12 +1356,13 @@ function exportTableToCSV() {
         'Recursive Equation Definitions',
         'URL'
     ];
-    
+
     // Convert data to CSV format
     const csvContent = [
         headers.join(','),
         ...currentData.map(article => [
             `"${(article.title || '').replace(/"/g, '""')}"`,
+            `"${(article.journal || 'JEAB').replace(/"/g, '""')}"`,
             `"${formatAuthorsForCSV(article.authors)}"`,
             article.year || '',
             article.volume || '',
@@ -1413,6 +1462,7 @@ function openEditModal(article) {
     document.getElementById('edit-title').value = article.title || '';
     document.getElementById('edit-authors').value = formatAuthorsForInput(article.authors);
     document.getElementById('edit-url').value = article.url || '';
+    document.getElementById('edit-journal').value = article.journal || 'JEAB';
     document.getElementById('edit-year').value = article.year || '';
     document.getElementById('edit-volume').value = article.volume || '';
     document.getElementById('edit-issue').value = article.issue || '';
@@ -1454,6 +1504,7 @@ function initializeEditModal() {
         const editedEntry = {
             ...original,
             title: document.getElementById('edit-title').value,
+            journal: document.getElementById('edit-journal').value,
             authors: parseAuthorsInput(document.getElementById('edit-authors').value),
             url: document.getElementById('edit-url').value || '',
             year: parseInt(document.getElementById('edit-year').value),
@@ -1515,8 +1566,10 @@ async function createEditPullRequest(original, edited) {
         const dataFile = await dataResponse.json();
         const currentData = JSON.parse(decodeURIComponent(escape(atob(dataFile.content))));
 
-        // 2. Find and replace the entry
-        const idx = currentData.findIndex(e => e.title === original.title && e.year === original.year);
+        // 2. Find and replace the entry (match on title+year+journal for multi-journal uniqueness)
+        const idx = currentData.findIndex(e =>
+            e.title === original.title && e.year === original.year &&
+            (e.journal || 'JEAB') === (original.journal || 'JEAB'));
         if (idx === -1) {
             window.open(buildGitHubIssueUrl(original, edited), '_blank');
             showSuccessMessage('Could not locate entry in data file. Opening GitHub issue instead.');
@@ -1582,7 +1635,7 @@ async function createEditPullRequest(original, edited) {
                 title: `Correction: ${original.title.slice(0, 60)}`,
                 head: branchName,
                 base: 'main',
-                body: `## Suggested Correction\n\n**Article:** ${original.title} (${original.year}, Vol. ${original.volume})\n\nSubmitted via catalog edit form.`
+                body: `## Suggested Correction\n\n**Article:** ${original.title}\n**Journal:** ${original.journal || 'JEAB'} (${original.year}, Vol. ${original.volume})\n\nSubmitted via catalog edit form.`
             })
         });
 
@@ -1599,7 +1652,7 @@ async function createEditPullRequest(original, edited) {
 }
 
 function buildGitHubIssueUrl(original, edited) {
-    const fields = ['title', 'authors', 'url', 'year', 'volume', 'issue', 'pages',
+    const fields = ['title', 'journal', 'authors', 'url', 'year', 'volume', 'issue', 'pages',
                     'process', 'static-equation', 'static-equation-definitions',
                     'recursive-equation', 'recursive-equation-definitions'];
     const changed = fields.filter(f => {
@@ -1648,8 +1701,10 @@ async function createSignoffPullRequest(article) {
         const dataFile = await dataResponse.json();
         const currentData = JSON.parse(decodeURIComponent(escape(atob(dataFile.content))));
 
-        // 2. Find entry and add signoff
-        const idx = currentData.findIndex(e => e.title === article.title && e.year === article.year);
+        // 2. Find entry and add signoff (match on title+year+journal for multi-journal uniqueness)
+        const idx = currentData.findIndex(e =>
+            e.title === article.title && e.year === article.year &&
+            (e.journal || 'JEAB') === (article.journal || 'JEAB'));
         if (idx === -1) throw new Error('Could not locate entry in data file');
 
         const newSignoffs = [...(currentData[idx].signoffs || []), githubUsername];
@@ -1716,7 +1771,7 @@ async function createSignoffPullRequest(article) {
                 title: `Signoff: ${article.title.slice(0, 60)}`,
                 head: branchName,
                 base: 'main',
-                body: `## Verification Sign-off\n\n**Article:** ${article.title} (${article.year}, Vol. ${article.volume})\n\n**Sign-off count:** ${signoffCount}/${SIGNOFF_THRESHOLD}\n\nVerified by @${githubUsername} via the Behavioral Process Catalog web interface.`
+                body: `## Verification Sign-off\n\n**Article:** ${article.title}\n**Journal:** ${article.journal || 'JEAB'} (${article.year}, Vol. ${article.volume})\n\n**Sign-off count:** ${signoffCount}/${SIGNOFF_THRESHOLD}\n\nVerified by @${githubUsername} via the Behavioral Process Catalog web interface.`
             })
         });
 

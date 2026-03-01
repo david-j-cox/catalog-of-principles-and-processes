@@ -215,6 +215,7 @@ def parse_article(article_el):
 
     return {
         "title": title,
+        "journal": "JEAB",
         "year": year,
         "volume": volume,
         "issue": issue,

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A searchable catalog of behavioral processes and equations from the Journal of the Experimental Analysis of Behavior (JEAB). Browse 4,000+ articles with equations, abstracts, and citation data.">
-    <title>Behavioral Process Catalog - JEAB Archive</title>
+    <meta name="description" content="A searchable catalog of behavioral processes and equations from JEAB, Behavioural Processes, and JEP: Animal Learning &amp; Cognition. Browse thousands of articles with equations, abstracts, and citation data.">
+    <title>Behavioral Process Catalog</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -59,10 +59,16 @@
                 <!-- Search and Filter Controls -->
                 <div class="controls-panel">
                     <div class="search-container">
-                        <input type="text" id="search-input" placeholder="Search articles, processes, abstracts, static equations, or recursive equations..." class="search-input">
+                        <input type="text" id="search-input" placeholder="Search articles, journals, processes, abstracts, or equations..." class="search-input">
                         <button class="search-btn">🔍</button>
                     </div>
                     <div class="filter-container">
+                        <select id="journal-filter" class="filter-select">
+                            <option value="">All Journals</option>
+                            <option value="JEAB">JEAB</option>
+                            <option value="BP">Behavioural Processes</option>
+                            <option value="JEP:ALC">JEP: Animal Learning &amp; Cognition</option>
+                        </select>
                         <select id="year-filter" class="filter-select">
                             <option value="">All Years</option>
                         </select>
@@ -95,6 +101,7 @@
                         <thead>
                             <tr>
                                 <th>Article Title</th>
+                                <th>Journal</th>
                                 <th>Authors</th>
                                 <th>Year</th>
                                 <th>Volume</th>
@@ -130,7 +137,7 @@
                 <div class="about-content">
                     <div class="about-card">
                         <h3>Mission</h3>
-                        <p>To create a comprehensive catalog of behavioral processes studied by behavior analysts, making decades of research accessible and searchable.</p>
+                        <p>To create a comprehensive catalog of behavioral processes studied by behavior analysts across JEAB, Behavioural Processes, and JEP: Animal Learning &amp; Cognition, making decades of research accessible and searchable.</p>
                     </div>
                     <div class="about-card">
                         <h3>Methodology</h3>
@@ -140,6 +147,13 @@
                         <h3>Goal</h3>
                         <p>To analyze the rich history of the experimental analysis of behavior to determine the total set of processes that must combine to create a behavioral system.</p>
                     </div>
+                </div>
+                <div class="about-prose">
+                    <h3>What is a Behavioral Process?</h3>
+                    <p><em>Process</em> as a noun comes from the Latin <em>processus</em>, meaning progression or course. It is derived from the verb <em>procedere</em>&mdash;to proceed&mdash;a tact for a sequence of events as opposed to a thing (Harper, n.d.). According to the Oxford dictionary, a process is &ldquo;a series of actions or steps taken in order to achieve a particular end; a natural or involuntary series of changes; or a systematic series of mechanized operations that are performed in order to produce or manufacture something&rdquo; (Oxford, 2025).</p>
+                    <p>A <strong>behavioral process</strong>, then, involves processes specific to behavior. More precisely, behavioral processes are <em>the series of actions or operations that produce or maintain an environment-behavior pattern</em>. At the broadest level, this includes everything under the umbrella of operant and respondent conditioning. More granularly, a behavioral process is the set of actions or operations programmed and studied by a researcher in a laboratory experiment, or the series of actions and operations implemented by a clinician seeking to change behavior.</p>
+                    <p>Arguably, every experimental paper published in the <em>Journal of the Experimental Analysis of Behavior</em> (JEAB) or the <em>Journal of Applied Behavior Analysis</em> (JABA) is an example of the study of one or more actions or operations that produce or maintain an environment-behavior pattern&mdash;an example of the study of one or more behavioral processes. This definition is intentionally broad, and reasonable people may disagree with its scope (e.g., Miltenberger &amp; Flores, 2024). However, maintaining focus on the set of actions or operations that produce or maintain an environment-behavior pattern proves useful when asking: <em>What is the total set of processes that combine to create a behavioral system?</em></p>
+                    <p class="about-citation">Adapted from Perez, McNulty, &amp; Cox (2025).</p>
                 </div>
             </section>
 
@@ -210,6 +224,12 @@
                 <input type="text" id="new-authors" placeholder="Authors (e.g., Smith, J. B. & Jones, A. C.)" required>
                 <label for="new-url" class="sr-only">Article URL</label>
                 <input type="url" id="new-url" placeholder="Article URL (e.g., https://doi.org/...)">
+                <label for="new-journal" class="sr-only">Journal</label>
+                <select id="new-journal" class="filter-select" required>
+                    <option value="JEAB">JEAB</option>
+                    <option value="BP">Behavioural Processes</option>
+                    <option value="JEP:ALC">JEP: Animal Learning &amp; Cognition</option>
+                </select>
                 <label for="new-year" class="sr-only">Year</label>
                 <input type="number" id="new-year" placeholder="Year" min="1950" max="2099" required>
                 <label for="new-volume" class="sr-only">Volume</label>
@@ -249,6 +269,12 @@
                 <input type="text" id="edit-authors" placeholder="Authors (e.g., Smith, J. B. & Jones, A. C.)" required>
                 <label for="edit-url" class="sr-only">Article URL</label>
                 <input type="url" id="edit-url" placeholder="Article URL (e.g., https://doi.org/...)">
+                <label for="edit-journal" class="sr-only">Journal</label>
+                <select id="edit-journal" class="filter-select">
+                    <option value="JEAB">JEAB</option>
+                    <option value="BP">Behavioural Processes</option>
+                    <option value="JEP:ALC">JEP: Animal Learning &amp; Cognition</option>
+                </select>
                 <label for="edit-year" class="sr-only">Year</label>
                 <input type="number" id="edit-year" placeholder="Year" min="1950" max="2099" required>
                 <label for="edit-volume" class="sr-only">Volume</label>
