@@ -72,8 +72,6 @@ def fetch_page(issn, cursor="*"):
         "filter": f"issn:{issn}",
         "rows": ROWS_PER_PAGE,
         "cursor": cursor,
-        "select": "DOI,title,author,published-print,published-online,"
-                  "volume,issue,page,abstract,type,container-title",
     }
     resp = requests.get(
         CROSSREF_BASE,
@@ -186,9 +184,15 @@ def scrape_journal(journal_key):
             page_num += 1
             try:
                 message = fetch_page(issn, cursor)
-            except requests.RequestException as e:
-                print(f"    ERROR on page {page_num}: {e}")
-                break
+            except Exception as e:
+                print(f"    ERROR on page {page_num}: {type(e).__name__}: {e}")
+                # Retry once after a longer pause
+                time.sleep(5)
+                try:
+                    message = fetch_page(issn, cursor)
+                except Exception as e2:
+                    print(f"    RETRY FAILED on page {page_num}: {e2}")
+                    break
 
             if total_items is None:
                 total_items = message.get("total-results", 0)
@@ -196,22 +200,27 @@ def scrape_journal(journal_key):
 
             items = message.get("items", [])
             if not items:
+                print(f"    Page {page_num}: empty items list, stopping")
                 break
 
             for item in items:
-                entry = transform_item(item, journal_key)
-                if entry and entry.get("doi"):
-                    all_entries[entry["doi"]] = entry
+                try:
+                    entry = transform_item(item, journal_key)
+                    if entry and entry.get("doi"):
+                        all_entries[entry["doi"]] = entry
+                except Exception as e:
+                    # Skip individual items that fail to parse
+                    continue
 
             fetched_so_far = len(all_entries)
             print(f"    Page {page_num}: got {len(items)} items "
                   f"(total unique so far: {fetched_so_far})")
 
-            # Get next cursor
+            # Advance cursor (CrossRef may return the same cursor value
+            # while still paginating — stop only on empty items, not cursor equality)
             next_cursor = message.get("next-cursor")
-            if not next_cursor or next_cursor == cursor:
-                break
-            cursor = next_cursor
+            if next_cursor:
+                cursor = next_cursor
 
             time.sleep(DELAY_BETWEEN_REQUESTS)
 
