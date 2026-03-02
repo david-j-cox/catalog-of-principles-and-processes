@@ -1,28 +1,34 @@
 """
 Backfill Abstracts for Behavioral Process Catalog
 ==================================================
-Three-pass pipeline to fill missing abstracts using free APIs:
+Four-pass pipeline to fill missing abstracts using free APIs:
   Pass 1: OpenAlex (batch DOI lookups, inverted-index → plaintext)
   Pass 2: Europe PMC (cursor-paginated ISSN search, best for BP/JEAB)
-  Pass 3: Semantic Scholar (batch DOI gap-fill)
+  Pass 3: ScienceDirect (Elsevier API, requires key in .env, best for BP)
+  Pass 4: Semantic Scholar (batch DOI gap-fill)
 
 Usage:
-    python scrapers/backfill_abstracts.py                    # all missing, all sources
-    python scrapers/backfill_abstracts.py --journal BP       # just BP
-    python scrapers/backfill_abstracts.py --source openalex  # OpenAlex only
-    python scrapers/backfill_abstracts.py --source europepmc # Europe PMC only
-    python scrapers/backfill_abstracts.py --source s2        # Semantic Scholar only
-    python scrapers/backfill_abstracts.py --dry-run          # report counts only
+    python scrapers/backfill_abstracts.py                      # all missing, all sources
+    python scrapers/backfill_abstracts.py --journal BP         # just BP
+    python scrapers/backfill_abstracts.py --source openalex    # OpenAlex only
+    python scrapers/backfill_abstracts.py --source europepmc   # Europe PMC only
+    python scrapers/backfill_abstracts.py --source sciencedirect # ScienceDirect only
+    python scrapers/backfill_abstracts.py --source s2          # Semantic Scholar only
+    python scrapers/backfill_abstracts.py --dry-run            # report counts only
 """
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
 from pathlib import Path
 
 import requests
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 DATA_FILE = Path(__file__).resolve().parent.parent / "data.json"
 MAILTO = "david.cox@endicott.edu"
@@ -30,6 +36,7 @@ MAILTO = "david.cox@endicott.edu"
 # ── Rate limits ──────────────────────────────────────────────────────────────
 OPENALEX_DELAY = 0.1       # seconds between OpenAlex requests
 EUROPEPMC_DELAY = 0.2      # seconds between Europe PMC requests
+SCIENCEDIRECT_DELAY = 0.12 # seconds between ScienceDirect requests (~8/s)
 S2_DELAY = 1.0             # seconds between Semantic Scholar batch requests
 OPENALEX_BATCH_SIZE = 50   # max DOIs per OpenAlex filter query
 S2_BATCH_SIZE = 100        # DOIs per Semantic Scholar batch (max 500)
@@ -290,6 +297,89 @@ def backfill_europepmc(data, missing_entries):
     return filled
 
 
+# ── ScienceDirect (Elsevier) ─────────────────────────────────────────────────
+
+def fetch_sciencedirect_abstract(doi, api_key):
+    """Fetch abstract for a single DOI from ScienceDirect Article API."""
+    try:
+        resp = requests.get(
+            f"https://api.elsevier.com/content/article/doi/{doi}",
+            headers={"X-ELS-APIKey": api_key, "Accept": "application/json"},
+            timeout=15,
+        )
+        if resp.status_code == 404:
+            return None
+        if resp.status_code == 429:
+            time.sleep(5)
+            resp = requests.get(
+                f"https://api.elsevier.com/content/article/doi/{doi}",
+                headers={"X-ELS-APIKey": api_key, "Accept": "application/json"},
+                timeout=15,
+            )
+            if resp.status_code != 200:
+                return None
+        resp.raise_for_status()
+    except requests.RequestException:
+        return None
+
+    fa = resp.json().get("full-text-retrieval-response", {})
+    abstract = fa.get("coredata", {}).get("dc:description")
+    if not abstract:
+        return None
+    abstract = clean_html(abstract)
+    return abstract if len(abstract) >= 30 else None
+
+
+def backfill_sciencedirect(data, missing_entries):
+    """Pass 3: single-DOI lookups via ScienceDirect Article API (Elsevier)."""
+    api_key = os.getenv("ELSEVIER_API_KEY", "")
+    if not api_key:
+        print("\n── ScienceDirect pass: SKIPPED (no ELSEVIER_API_KEY in .env) ──")
+        return 0
+
+    # Only Elsevier journals (BP) benefit from this API
+    still_missing = [e for e in missing_entries if not e.get("abstract")]
+    elsevier_missing = [e for e in still_missing
+                        if e.get("journal") == "BP" or
+                        "elsevier" in (e.get("url", "") or "").lower() or
+                        "sciencedirect" in (e.get("url", "") or "").lower()]
+    print(f"\n── ScienceDirect pass: {len(elsevier_missing)} Elsevier entries to check ──")
+
+    if not elsevier_missing:
+        return 0
+
+    filled = 0
+    processed = 0
+    errors_404 = 0
+
+    for entry in elsevier_missing:
+        doi = get_doi(entry)
+        if not doi:
+            continue
+
+        abstract = fetch_sciencedirect_abstract(doi, api_key)
+        if abstract:
+            entry["abstract"] = abstract
+            filled += 1
+        elif abstract is None:
+            errors_404 += 1
+
+        processed += 1
+        if processed % 100 == 0:
+            print(f"    Processed {processed}/{len(elsevier_missing)}, "
+                  f"filled {filled}, 404s {errors_404}")
+
+        if processed % SAVE_EVERY == 0:
+            save_data(data)
+
+        time.sleep(SCIENCEDIRECT_DELAY)
+
+    save_data(data)
+    print(f"  ScienceDirect done: filled {filled}/{len(elsevier_missing)} "
+          f"({errors_404} 404s)")
+    return filled
+
+
 # ── Semantic Scholar ─────────────────────────────────────────────────────────
 
 def fetch_s2_batch(dois):
@@ -390,9 +480,9 @@ def main():
     )
     parser.add_argument(
         "--source",
-        choices=["openalex", "europepmc", "s2", "all"],
+        choices=["openalex", "europepmc", "sciencedirect", "s2", "all"],
         default="all",
-        help="Which API to use (default: all three)",
+        help="Which API to use (default: all four)",
     )
     parser.add_argument(
         "--dry-run",
@@ -443,6 +533,9 @@ def main():
 
     if args.source in ("europepmc", "all"):
         total_filled += backfill_europepmc(data, missing)
+
+    if args.source in ("sciencedirect", "all"):
+        total_filled += backfill_sciencedirect(data, missing)
 
     if args.source in ("s2", "all"):
         total_filled += backfill_semantic_scholar(data, missing)
