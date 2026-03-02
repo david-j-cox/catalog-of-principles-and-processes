@@ -12,7 +12,7 @@ Each entry includes citation metadata, the behavioral process studied, mathemati
 
 ## Features
 
-- **Search & filter** — full-text search across titles, authors, abstracts, processes, and equations; filter by journal, year, volume, issue, process, author, and review status
+- **Search & filter** — full-text search across titles, authors, abstracts, processes, and equations; filter by journal, year, volume, issue, process, and review status
 - **MathJax equations** — LaTeX-rendered static and recursive equations with variable definitions
 - **CSV export** — download the current filtered view as a spreadsheet
 - **Verification system** — community sign-off workflow; 3 independent verifications mark an entry as "Reviewed"
