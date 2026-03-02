@@ -98,18 +98,22 @@
 
                 <!-- Data Table -->
                 <div class="table-container">
+                    <div id="loading-indicator" class="loading-indicator">
+                        <div class="loading-spinner"></div>
+                        <p>Loading catalog data&hellip;</p>
+                    </div>
                     <table id="data-table" class="data-table">
                         <thead>
                             <tr>
-                                <th>Article Title</th>
-                                <th>Journal</th>
-                                <th>Authors</th>
-                                <th>Year</th>
-                                <th>Volume</th>
-                                <th>Issue</th>
-                                <th>Pages</th>
+                                <th data-sort-key="title">Article Title</th>
+                                <th data-sort-key="journal">Journal</th>
+                                <th data-sort-key="authors">Authors</th>
+                                <th data-sort-key="year">Year</th>
+                                <th data-sort-key="volume">Volume</th>
+                                <th data-sort-key="issue">Issue</th>
+                                <th data-sort-key="pages">Pages</th>
                                 <th>Abstract</th>
-                                <th>Behavioral Process</th>
+                                <th data-sort-key="process">Behavioral Process</th>
                                 <th>Static Equation</th>
                                 <th>Recursive Equation</th>
                             </tr>
@@ -182,6 +186,7 @@
                         <p>Latest Volume</p>
                     </div>
                 </div>
+                <div id="review-progress" class="review-progress"></div>
             </section>
             <!-- Contributors View -->
             <section id="contributors-view" class="content-section">
@@ -203,6 +208,37 @@
                         <h3>Scoring</h3>
                         <p>Verified contribution: 3 pts · Pending contribution: 1 pt · Correction: 1 pt · Verification given: 1 pt</p>
                     </div>
+                </div>
+                <div class="review-rubric">
+                    <h3>Verification Checklist</h3>
+                    <p class="rubric-intro">Before verifying an entry, confirm the following against the published article:</p>
+                    <div class="rubric-checklist">
+                        <div class="rubric-item">
+                            <h4>1. Metadata Accuracy</h4>
+                            <p>Title, authors, year, volume, issue, and pages match the published article.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <h4>2. Journal Correctness</h4>
+                            <p>The journal tag (JEAB, BP, or JEP:ALC) is correct for the article.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <h4>3. Behavioral Process Label</h4>
+                            <p>The process tag(s) reasonably describe what was studied in the article.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <h4>4. Abstract</h4>
+                            <p>If present, the abstract matches the published abstract.</p>
+                        </div>
+                        <div class="rubric-item">
+                            <h4>5. Equations</h4>
+                            <p>Equations render correctly and definitions are present. (No need to re-derive the math&mdash;just confirm the entry is readable.)</p>
+                        </div>
+                        <div class="rubric-item">
+                            <h4>6. URL / DOI Link</h4>
+                            <p>The link resolves to the correct article.</p>
+                        </div>
+                    </div>
+                    <p class="rubric-note">If you find an error, use the edit button instead of verifying. Three independent verifications earn Reviewed status.</p>
                 </div>
                 <div class="onboarding-guide">
                     <h3>Getting Started</h3>

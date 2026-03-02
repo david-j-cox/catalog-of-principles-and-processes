@@ -33,6 +33,10 @@ let currentPage = 1;
 let rowsPerPage = 20;
 let currentFilteredData = [];
 
+// Sort state
+let currentSortKey = null;
+let currentSortDir = null; // 'asc', 'desc', or null
+
 // Edit modal state
 let editModalOriginalArticle = null;
 
@@ -195,7 +199,7 @@ function initializeGitHubAuth() {
                 <div class="auth-controls">
                     <input type="password" id="github-token" placeholder="GitHub Personal Access Token" 
                            style="display: ${githubToken ? 'none' : 'block'}">
-                    <button id="connect-github" class="auth-btn">${githubToken ? `Connected as @${githubUsername || '?'}` : 'Connect GitHub'}</button>
+                    <button id="connect-github" class="auth-btn">${githubToken ? `Connected as @${escapeHtml(githubUsername || '?')}` : 'Connect GitHub'}</button>
                     <button id="disconnect-github" class="auth-btn secondary" 
                             style="display: ${githubToken ? 'block' : 'none'}">Disconnect</button>
                 </div>
@@ -479,6 +483,8 @@ Please review and merge if appropriate.`
 // Initialize the application
 document.addEventListener('DOMContentLoaded', async function() {
     await loadData();
+    const loadingIndicator = document.getElementById('loading-indicator');
+    if (loadingIndicator) loadingIndicator.classList.add('hidden');
     initializeNavigation();
     populateTable(behavioralData);
     populateFilters();
@@ -487,6 +493,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     initializeModal();
     initializeGitHubAuth();
     initializeEditModal();
+    initializeSorting();
 });
 
 // Navigation functionality
@@ -703,9 +710,82 @@ function createEquationContent(equation, definitions) {
     return content;
 }
 
+// ── Column Sorting ────────────────────────────────────────────────────────
+const NUMERIC_SORT_KEYS = new Set(['year', 'volume', 'issue']);
+
+function getSortValue(article, key) {
+    if (key === 'authors') {
+        const a = article.authors;
+        if (Array.isArray(a) && a.length) return String(a[0]).toLowerCase();
+        return String(a || '').toLowerCase();
+    }
+    if (key === 'process') {
+        const p = article.process;
+        if (Array.isArray(p) && p.length) return String(p[0]).toLowerCase();
+        return String(p || '').toLowerCase();
+    }
+    if (key === 'journal') return (article.journal || 'JEAB').toLowerCase();
+    const val = article[key];
+    if (NUMERIC_SORT_KEYS.has(key)) return Number(val) || 0;
+    return String(val || '').toLowerCase();
+}
+
+function sortData(data, key, dir) {
+    const sorted = [...data];
+    const isNumeric = NUMERIC_SORT_KEYS.has(key);
+    const mult = dir === 'asc' ? 1 : -1;
+    sorted.sort((a, b) => {
+        const va = getSortValue(a, key);
+        const vb = getSortValue(b, key);
+        if (isNumeric) return (va - vb) * mult;
+        if (va < vb) return -1 * mult;
+        if (va > vb) return 1 * mult;
+        return 0;
+    });
+    return sorted;
+}
+
+function handleSort(key) {
+    if (currentSortKey === key) {
+        if (currentSortDir === 'asc') currentSortDir = 'desc';
+        else if (currentSortDir === 'desc') { currentSortKey = null; currentSortDir = null; }
+    } else {
+        currentSortKey = key;
+        currentSortDir = 'asc';
+    }
+    updateSortIndicators();
+    // Re-sort current filtered data in place and re-render
+    if (currentSortKey) {
+        currentFilteredData = sortData(currentFilteredData, currentSortKey, currentSortDir);
+    } else {
+        // Restore original filter order by re-applying filters
+        applyFilters();
+        return;
+    }
+    currentPage = 1;
+    renderPage();
+}
+
+function updateSortIndicators() {
+    document.querySelectorAll('.data-table th[data-sort-key]').forEach(th => {
+        th.classList.remove('sort-asc', 'sort-desc');
+        if (th.dataset.sortKey === currentSortKey) {
+            th.classList.add(currentSortDir === 'asc' ? 'sort-asc' : 'sort-desc');
+        }
+    });
+}
+
+function initializeSorting() {
+    document.querySelectorAll('.data-table th[data-sort-key]').forEach(th => {
+        th.addEventListener('click', () => handleSort(th.dataset.sortKey));
+    });
+}
+
 // Table population and management
 function populateTable(data) {
-    currentFilteredData = data;
+    currentFilteredData = currentSortKey
+        ? sortData(data, currentSortKey, currentSortDir)
+        : data;
     currentPage = 1;
     renderPage();
 }
@@ -1126,6 +1206,30 @@ function updateStatistics() {
         .sort((a, b) => b[1] - a[1])
         .map(([j, c]) => `${j}: ${c.toLocaleString()}`);
     breakdownEl.textContent = parts.join('  ·  ');
+
+    // Review progress bar
+    const reviewedCount = behavioralData.filter(a =>
+        a.reviewed === true || (a.signoffs || []).length >= SIGNOFF_THRESHOLD
+    ).length;
+    const pct = totalArticles > 0 ? ((reviewedCount / totalArticles) * 100) : 0;
+    const progressEl = document.getElementById('review-progress');
+    if (progressEl) {
+        progressEl.innerHTML = `
+            <h3>Review Progress</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+            </div>
+            <p class="progress-label">
+                <strong>${reviewedCount.toLocaleString()}</strong> of
+                <strong>${totalArticles.toLocaleString()}</strong> entries reviewed
+                (<strong>${pct.toFixed(1)}%</strong>)
+            </p>
+        `;
+        requestAnimationFrame(() => {
+            const fill = document.getElementById('progress-bar-fill');
+            if (fill) fill.style.width = pct + '%';
+        });
+    }
 }
 
 // Number animation for statistics
@@ -1268,8 +1372,8 @@ function showPullRequestSuccess(pullRequest) {
     successDiv.innerHTML = `
         <div>🎉 Pull request created successfully!</div>
         <div style="margin-top: 8px;">
-            <a href="${pullRequest.html_url}" target="_blank" style="color: var(--bg-dark); text-decoration: underline;">
-                View PR #${pullRequest.number}
+            <a href="${escapeHtml(pullRequest.html_url)}" target="_blank" style="color: var(--bg-dark); text-decoration: underline;">
+                View PR #${escapeHtml(String(pullRequest.number))}
             </a>
         </div>
         <div style="font-size: 0.9em; margin-top: 4px;">Your contribution will be reviewed and merged if approved.</div>
@@ -1695,7 +1799,7 @@ function buildNewEntryIssueUrl(entry) {
     body += `| Field | Value |\n|---|---|\n`;
     body += `| Title | ${entry.title || ''} |\n`;
     body += `| Journal | ${entry.journal || 'JEAB'} |\n`;
-    body += `| Authors | ${(entry.authors || []).join('; ')} |\n`;
+    body += `| Authors | ${[].concat(entry.authors || []).join('; ')} |\n`;
     body += `| URL | ${entry.url || ''} |\n`;
     body += `| Year | ${entry.year || ''} |\n`;
     body += `| Volume | ${entry.volume || ''} |\n`;
@@ -1793,7 +1897,105 @@ function computeLeaderboard() {
         .sort((a, b) => b.score - a.score);
 }
 
+function renderMySubmissions() {
+    const existing = document.getElementById('my-submissions');
+    const container = document.getElementById('leaderboard-container');
+    if (!container) return;
+
+    if (!githubUsername) {
+        if (existing) existing.remove();
+        return;
+    }
+
+    const submitted = [];
+    const corrected = [];
+    const verified = [];
+
+    behavioralData.forEach(entry => {
+        if (entry.contributor === githubUsername) submitted.push(entry);
+        if ((entry.correctors || []).includes(githubUsername)) corrected.push(entry);
+        if ((entry.signoffs || []).includes(githubUsername)) verified.push(entry);
+    });
+
+    // Build combined list with roles for the compact table
+    const seen = new Set();
+    const rows = [];
+    const addRow = (entry, role) => {
+        const key = entry.title + '|' + entry.year;
+        if (!seen.has(key)) {
+            seen.add(key);
+            rows.push({ entry, role });
+        }
+    };
+    submitted.forEach(e => addRow(e, 'Submitted'));
+    corrected.forEach(e => addRow(e, 'Corrected'));
+    verified.forEach(e => addRow(e, 'Verified'));
+
+    let dash = existing;
+    if (!dash) {
+        dash = document.createElement('div');
+        dash.id = 'my-submissions';
+        dash.className = 'my-submissions';
+        container.parentNode.insertBefore(dash, container);
+    }
+
+    if (rows.length === 0) {
+        dash.innerHTML = `
+            <h3>My Activity &mdash; @${escapeHtml(githubUsername)}</h3>
+            <p class="my-empty">No submissions, corrections, or verifications yet. Get started by adding or verifying an entry!</p>
+        `;
+        return;
+    }
+
+    const MAX_ROWS = 10;
+    const displayRows = rows.slice(0, MAX_ROWS);
+    const remaining = rows.length - MAX_ROWS;
+
+    const tableRows = displayRows.map(({ entry, role }) => {
+        const isReviewed = entry.reviewed === true ||
+            (entry.signoffs || []).length >= SIGNOFF_THRESHOLD;
+        const badge = isReviewed
+            ? '<span class="badge-reviewed">Reviewed</span>'
+            : '<span class="badge-needs-review">Needs Review</span>';
+        return `<tr>
+            <td>${escapeHtml(role)}</td>
+            <td>${escapeHtml(entry.title)}</td>
+            <td>${escapeHtml(entry.year)}</td>
+            <td>${badge}</td>
+        </tr>`;
+    }).join('');
+
+    dash.innerHTML = `
+        <h3>My Activity &mdash; @${escapeHtml(githubUsername)}</h3>
+        <div class="my-stats-row">
+            <div class="my-stat">
+                <div class="my-stat-num">${submitted.length}</div>
+                <div class="my-stat-label">Submitted</div>
+            </div>
+            <div class="my-stat">
+                <div class="my-stat-num">${corrected.length}</div>
+                <div class="my-stat-label">Corrected</div>
+            </div>
+            <div class="my-stat">
+                <div class="my-stat-num">${verified.length}</div>
+                <div class="my-stat-label">Verified</div>
+            </div>
+        </div>
+        <table class="my-entries-table">
+            <thead><tr>
+                <th>Role</th>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Status</th>
+            </tr></thead>
+            <tbody>${tableRows}</tbody>
+        </table>
+        ${remaining > 0 ? `<p class="my-more-note">${remaining} more not shown</p>` : ''}
+    `;
+}
+
 function renderContributors() {
+    renderMySubmissions();
     const container = document.getElementById('leaderboard-container');
     if (!container) return;
 

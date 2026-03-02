@@ -256,6 +256,33 @@ body {
     border-color: var(--accent-teal);
 }
 
+/* ── Loading Indicator ──────────────────────────────────────────────────── */
+.loading-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    gap: 16px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.loading-indicator.hidden { display: none; }
+
+.loading-spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--border-color);
+    border-top-color: var(--accent-teal);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
 /* ── Data Table ─────────────────────────────────────────────────────────── */
 .table-container {
     width: 100%;
@@ -290,6 +317,33 @@ body {
 }
 
 .data-table th::before { display: none; }
+
+.data-table th[data-sort-key] {
+    cursor: pointer;
+    user-select: none;
+}
+
+.data-table th[data-sort-key]::after {
+    content: ' \21C5';
+    opacity: 0.3;
+    font-size: 0.75em;
+}
+
+.data-table th[data-sort-key]:hover::after {
+    opacity: 0.6;
+}
+
+.data-table th.sort-asc::after {
+    content: ' \2191';
+    opacity: 1;
+    color: var(--accent-teal);
+}
+
+.data-table th.sort-desc::after {
+    content: ' \2193';
+    opacity: 1;
+    color: var(--accent-teal);
+}
 
 .data-table td {
     padding: 12px 14px;
@@ -599,7 +653,7 @@ body {
 
 .about-citation {
     font-size: 0.82rem !important;
-    color: var(--text-dim) !important;
+    color: var(--text-muted) !important;
     font-style: italic;
     margin-top: 8px !important;
 }
@@ -639,6 +693,50 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
+}
+
+/* ── Review Progress ───────────────────────────────────────────────────── */
+.review-progress {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.review-progress h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-bright);
+    margin-bottom: 12px;
+}
+
+.progress-bar-container {
+    background: var(--bg-dark);
+    border-radius: 12px;
+    height: 24px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    margin-bottom: 8px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(90deg, var(--accent-teal), var(--success-green));
+    transition: width 1s ease-out;
+    min-width: 0;
+}
+
+.progress-label {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.progress-label strong {
+    color: var(--text-light);
 }
 
 /* ── Modal ──────────────────────────────────────────────────────────────── */
@@ -1104,6 +1202,93 @@ tr:hover .signoff-btn { opacity: 1; }
     font-style: italic;
 }
 
+/* ── My Submissions Dashboard ──────────────────────────────────────────── */
+.my-submissions {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.my-submissions h3 {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-bright);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.my-stats-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.my-stat {
+    flex: 1;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 14px 12px;
+    text-align: center;
+}
+
+.my-stat-num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-teal);
+}
+
+.my-stat-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-top: 2px;
+}
+
+.my-entries-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.my-entries-table th {
+    background: var(--bg-panel);
+    color: var(--text-muted);
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.my-entries-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border-subtle);
+    color: var(--text-light);
+}
+
+.my-empty {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 20px 0;
+    font-style: italic;
+    font-size: 0.88rem;
+}
+
+.my-more-note {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    margin-top: 8px;
+    font-style: italic;
+}
+
 /* ── Contributor Info Cards ──────────────────────────────────────────────── */
 .contributor-info {
     display: grid;
@@ -1130,6 +1315,59 @@ tr:hover .signoff-btn { opacity: 1; }
     font-size: 0.86rem;
     color: var(--text-muted);
     line-height: 1.55;
+}
+
+/* ── Review Rubric ─────────────────────────────────────────────────────── */
+.review-rubric {
+    margin-top: 36px;
+}
+
+.review-rubric > h3 {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-bright);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.rubric-intro {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.rubric-checklist {
+    display: grid;
+    gap: 12px;
+}
+
+.rubric-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.rubric-item h4 {
+    font-family: 'Inter', sans-serif;
+    color: var(--accent-teal);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.rubric-item p {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+}
+
+.rubric-note {
+    margin-top: 16px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: center;
 }
 
 /* ── Onboarding Guide ──────────────────────────────────────────────────── */
