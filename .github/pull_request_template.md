@@ -6,7 +6,8 @@
 - **Volume:** [Volume Number]
 - **Issue:** [Issue Number]
 - **Behavioral Process:** [Process Name]
-- **IV → DV Equation:** [Mathematical Equation or N/A]
+- **Static Equation:** [Mathematical Equation or N/A]
+- **Recursive Equation:** [Mathematical Equation or N/A]
 
 ## Submission Details
 - [ ] Entry submitted through the Behavioral Process Catalog web interface

@@ -40,7 +40,6 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 20px;
-    overflow-x: auto;
 }
 
 /* ── Header ─────────────────────────────────────────────────────────────── */
@@ -1067,11 +1066,13 @@ body {
     border: 1px solid var(--border-color);
     color: var(--text-muted);
     border-radius: 4px;
-    padding: 1px 5px;
+    padding: 4px 8px;
     font-size: 11px;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.15s;
+    min-width: 28px;
+    min-height: 28px;
 }
 
 tr:hover .edit-row-btn {
@@ -1084,11 +1085,13 @@ tr:hover .edit-row-btn {
     border: 1px solid rgba(63, 185, 80, 0.4);
     color: #3fb950;
     border-radius: 4px;
-    padding: 1px 5px;
+    padding: 4px 8px;
     font-size: 11px;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.15s;
+    min-width: 28px;
+    min-height: 28px;
 }
 
 tr:hover .signoff-btn { opacity: 1; }
