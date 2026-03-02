@@ -40,6 +40,9 @@ let currentSortDir = null; // 'asc', 'desc', or null
 // Edit modal state
 let editModalOriginalArticle = null;
 
+// Cached filter DOM elements (populated on DOMContentLoaded)
+let filterEls = {};
+
 // GitHub configuration
 const GITHUB_CONFIG = {
     owner: 'david-j-cox',
@@ -498,6 +501,15 @@ document.addEventListener('DOMContentLoaded', async function() {
         subtitle.textContent = behavioralData.length.toLocaleString()
             + ' entries across JEAB, Behavioural Processes, and JEP: Animal Learning & Cognition';
     }
+    filterEls = {
+        search:  document.getElementById('search-input'),
+        journal: document.getElementById('journal-filter'),
+        year:    document.getElementById('year-filter'),
+        volume:  document.getElementById('volume-filter'),
+        issue:   document.getElementById('issue-filter'),
+        process: document.getElementById('process-filter'),
+        review:  document.getElementById('review-filter'),
+    };
     populateFilters();
     initializeFilterListeners();
     updateStatistics();
@@ -620,6 +632,26 @@ function matchesAuthorsSearch(authorsField, searchTerm) {
 // Helper function for process filter matching
 function matchesProcessFilter(processField, filterValue) {
     return normalizeProcesses(processField).includes(filterValue);
+}
+
+// Read all entry fields from an add/edit form by prefix ('new' or 'edit')
+function readEntryForm(prefix) {
+    return {
+        title: document.getElementById(`${prefix}-title`).value,
+        journal: document.getElementById(`${prefix}-journal`).value,
+        authors: parseAuthorsInput(document.getElementById(`${prefix}-authors`).value),
+        url: document.getElementById(`${prefix}-url`).value || '',
+        year: parseInt(document.getElementById(`${prefix}-year`).value, 10),
+        volume: parseInt(document.getElementById(`${prefix}-volume`).value, 10),
+        issue: parseInt(document.getElementById(`${prefix}-issue`).value, 10),
+        pages: document.getElementById(`${prefix}-pages`).value || '',
+        abstract: document.getElementById(`${prefix}-abstract`).value || '',
+        process: parseProcessInput(document.getElementById(`${prefix}-process`).value),
+        'static-equation': document.getElementById(`${prefix}-static-equation`).value || '',
+        'static-equation-definitions': document.getElementById(`${prefix}-static-definitions`).value || '',
+        'recursive-equation': document.getElementById(`${prefix}-recursive-equation`).value || '',
+        'recursive-equation-definitions': document.getElementById(`${prefix}-recursive-definitions`).value || '',
+    };
 }
 
 // Parse process input from form (handles comma-separated values)
@@ -917,7 +949,7 @@ function renderPagination() {
     });
     bar.querySelectorAll('.size-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-            rowsPerPage = parseInt(btn.dataset.size);
+            rowsPerPage = parseInt(btn.dataset.size, 10);
             currentPage = 1;
             renderPage();
         });
@@ -1071,13 +1103,13 @@ function initializeSearch() {
 
 // Apply filters and search
 function applyFilters() {
-    const searchTerm = document.getElementById('search-input').value.toLowerCase();
-    const journalFilter = document.getElementById('journal-filter').value;
-    const yearFilter = document.getElementById('year-filter').value;
-    const volumeFilter = document.getElementById('volume-filter').value;
-    const issueFilter = document.getElementById('issue-filter').value;
-    const processFilter = document.getElementById('process-filter').value;
-    const reviewFilter = document.getElementById('review-filter').value;
+    const searchTerm = filterEls.search.value.toLowerCase();
+    const journalFilter = filterEls.journal.value;
+    const yearFilter = filterEls.year.value;
+    const volumeFilter = filterEls.volume.value;
+    const issueFilter = filterEls.issue.value;
+    const processFilter = filterEls.process.value;
+    const reviewFilter = filterEls.review.value;
 
     let filteredData = behavioralData;
 
@@ -1275,22 +1307,8 @@ function initializeModal() {
         submitButton.textContent = 'Processing...';
         submitButton.disabled = true;
         
-        const newEntry = {
-            title: document.getElementById('new-title').value,
-            journal: document.getElementById('new-journal').value,
-            authors: parseAuthorsInput(document.getElementById('new-authors').value),
-            url: document.getElementById('new-url').value || '',
-            year: parseInt(document.getElementById('new-year').value),
-            volume: parseInt(document.getElementById('new-volume').value),
-            issue: parseInt(document.getElementById('new-issue').value),
-            pages: document.getElementById('new-pages').value || '',
-            abstract: document.getElementById('new-abstract').value || 'No abstract available',
-            process: parseProcessInput(document.getElementById('new-process').value),
-            'static-equation': document.getElementById('new-static-equation').value || '',
-            'static-equation-definitions': document.getElementById('new-static-definitions').value || '',
-            'recursive-equation': document.getElementById('new-recursive-equation').value || '',
-            'recursive-equation-definitions': document.getElementById('new-recursive-definitions').value || ''
-        };
+        const newEntry = readEntryForm('new');
+        if (!newEntry.abstract) newEntry.abstract = 'No abstract available';
 
         if (githubUsername) {
             newEntry.contributor = githubUsername;
@@ -1345,10 +1363,29 @@ function initializeModal() {
 }
 
 // Pull request success message
+// Unified toast notification
+function showToast(contentOrMessage, type = 'success', duration = 3000) {
+    const toast = document.createElement('div');
+    toast.className = `toast toast-${type}`;
+    if (typeof contentOrMessage === 'string') {
+        toast.textContent = contentOrMessage;
+    } else {
+        toast.appendChild(contentOrMessage);
+    }
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.classList.add('toast-exit');
+        setTimeout(() => {
+            if (document.body.contains(toast)) document.body.removeChild(toast);
+        }, 500);
+    }, duration);
+}
+
 function showPullRequestSuccess(pullRequest) {
-    const successDiv = document.createElement('div');
-    successDiv.innerHTML = `
-        <div>🎉 Pull request created successfully!</div>
+    const content = document.createElement('div');
+    content.innerHTML = `
+        <div>Pull request created successfully!</div>
         <div style="margin-top: 8px;">
             <a href="${escapeHtml(pullRequest.html_url)}" target="_blank" style="color: var(--bg-dark); text-decoration: underline;">
                 View PR #${escapeHtml(String(pullRequest.number))}
@@ -1356,92 +1393,16 @@ function showPullRequestSuccess(pullRequest) {
         </div>
         <div style="font-size: 0.9em; margin-top: 4px;">Your contribution will be reviewed and merged if approved.</div>
     `;
-    successDiv.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: var(--success-green);
-        color: var(--bg-dark);
-        padding: 15px 25px;
-        border-radius: 5px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
-        z-index: 1001;
-        animation: slideIn 0.5s ease-out;
-        box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
-        max-width: 350px;
-        line-height: 1.4;
-    `;
-    
-    document.body.appendChild(successDiv);
-    
-    setTimeout(() => {
-        successDiv.style.animation = 'slideOut 0.5s ease-in';
-        setTimeout(() => {
-            if (document.body.contains(successDiv)) {
-                document.body.removeChild(successDiv);
-            }
-        }, 500);
-    }, 5000);
+    showToast(content, 'success', 5000);
 }
 
-// Success message display
 function showSuccessMessage(message) {
-    const successDiv = document.createElement('div');
-    successDiv.textContent = message;
-    successDiv.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: var(--success-green);
-        color: var(--bg-dark);
-        padding: 15px 25px;
-        border-radius: 5px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
-        z-index: 1001;
-        animation: slideIn 0.5s ease-out;
-        box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
-    `;
-    
-    document.body.appendChild(successDiv);
-    
-    setTimeout(() => {
-        successDiv.style.animation = 'slideOut 0.5s ease-in';
-        setTimeout(() => {
-            if (document.body.contains(successDiv)) {
-                document.body.removeChild(successDiv);
-            }
-        }, 500);
-    }, 3000);
+    showToast(message, 'success', 3000);
 }
 
-// Add CSS animations for success message
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes slideIn {
-        from {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-        to {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    
-    @keyframes slideOut {
-        from {
-            transform: translateX(0);
-            opacity: 1;
-        }
-        to {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-    }
-`;
-document.head.appendChild(style);
+function showErrorMessage(message) {
+    showToast(message, 'error', 5000);
+}
 
 // Keyboard shortcuts
 document.addEventListener('keydown', function(e) {
@@ -1545,6 +1506,7 @@ function exportTableToCSV() {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+        URL.revokeObjectURL(url);
     }
 }
 
@@ -1638,23 +1600,7 @@ function initializeEditModal() {
         submitButton.textContent = 'Processing...';
         submitButton.disabled = true;
 
-        const editedEntry = {
-            ...original,
-            title: document.getElementById('edit-title').value,
-            journal: document.getElementById('edit-journal').value,
-            authors: parseAuthorsInput(document.getElementById('edit-authors').value),
-            url: document.getElementById('edit-url').value || '',
-            year: parseInt(document.getElementById('edit-year').value),
-            volume: parseInt(document.getElementById('edit-volume').value),
-            issue: parseInt(document.getElementById('edit-issue').value),
-            pages: document.getElementById('edit-pages').value || '',
-            abstract: document.getElementById('edit-abstract').value || '',
-            process: parseProcessInput(document.getElementById('edit-process').value),
-            'static-equation': document.getElementById('edit-static-equation').value || '',
-            'static-equation-definitions': document.getElementById('edit-static-definitions').value || '',
-            'recursive-equation': document.getElementById('edit-recursive-equation').value || '',
-            'recursive-equation-definitions': document.getElementById('edit-recursive-definitions').value || '',
-        };
+        const editedEntry = { ...original, ...readEntryForm('edit') };
 
         if (githubUsername) {
             const existing = editedEntry.correctors || [];
@@ -2009,32 +1955,3 @@ function renderContributors() {
 }
 
 
-function showErrorMessage(message) {
-    const errorDiv = document.createElement('div');
-    errorDiv.textContent = message;
-    errorDiv.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: var(--warning-orange);
-        color: var(--text-bright);
-        padding: 15px 25px;
-        border-radius: 5px;
-        font-family: 'Inter', sans-serif;
-        font-weight: 700;
-        z-index: 1001;
-        animation: slideIn 0.5s ease-out;
-        box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
-    `;
-    
-    document.body.appendChild(errorDiv);
-    
-    setTimeout(() => {
-        errorDiv.style.animation = 'slideOut 0.5s ease-in';
-        setTimeout(() => {
-            if (document.body.contains(errorDiv)) {
-                document.body.removeChild(errorDiv);
-            }
-        }, 500);
-    }, 5000);
-}
