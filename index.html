@@ -54,13 +54,13 @@
             <section id="catalog-view" class="content-section active">
                 <div class="section-header">
                     <h2>Research Article Database</h2>
-                    <p>Exploring the fundamental behavioral processes that govern life</p>
+                    <p id="catalog-subtitle">Exploring the fundamental behavioral processes that govern life</p>
                 </div>
 
                 <!-- Search and Filter Controls -->
                 <div class="controls-panel">
                     <div class="search-container">
-                        <input type="text" id="search-input" placeholder="Search articles, journals, processes, abstracts, or equations..." class="search-input">
+                        <input type="text" id="search-input" placeholder="Search articles, authors, processes..." class="search-input">
                         <button class="search-btn">🔍</button>
                     </div>
                     <div class="filter-container">
@@ -87,9 +87,6 @@
                             <option value="reviewed">Reviewed</option>
                             <option value="needs-review">Needs Review</option>
                         </select>
-                        <select id="author-filter" class="filter-select">
-                            <option value="">All Authors</option>
-                        </select>
                         <button id="export-csv-btn" class="export-btn" title="Export current table to CSV">
                             📊 Export CSV
                         </button>
@@ -112,10 +109,10 @@
                                 <th data-sort-key="volume">Volume</th>
                                 <th data-sort-key="issue">Issue</th>
                                 <th data-sort-key="pages">Pages</th>
-                                <th>Abstract</th>
-                                <th data-sort-key="process">Behavioral Process</th>
-                                <th>Static Equation</th>
-                                <th>Recursive Equation</th>
+                                <th title="Published abstract of the article">Abstract</th>
+                                <th data-sort-key="process" title="The behavioral process studied in this article">Behavioral Process</th>
+                                <th title="Mathematical relationship between independent and dependent variables">Static Equation</th>
+                                <th title="Dynamic equation where output feeds back as input across time steps">Recursive Equation</th>
                             </tr>
                         </thead>
                         <tbody id="table-body">
@@ -362,12 +359,6 @@
                 <input type="text" id="edit-recursive-equation" placeholder="Recursive Equation">
                 <label for="edit-recursive-definitions" class="sr-only">Recursive Equation Definitions</label>
                 <textarea id="edit-recursive-definitions" placeholder="Recursive Equation Definitions (semicolon-separated)" rows="2"></textarea>
-                <div id="edit-reviewed-section" class="reviewed-section" style="display:none">
-                    <label>
-                        <input type="checkbox" id="edit-mark-reviewed">
-                        Mark as reviewed (I've verified all fields are correct)
-                    </label>
-                </div>
                 <button type="submit" class="submit-btn">Submit Correction</button>
             </form>
         </div>

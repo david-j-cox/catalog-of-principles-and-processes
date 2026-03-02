@@ -1421,23 +1421,6 @@ tr:hover .signoff-btn { opacity: 1; }
     line-height: 1.7;
 }
 
-/* ── Reviewed Section in Edit Modal ─────────────────────────────────────── */
-.reviewed-section {
-    padding: 10px 12px;
-    background: rgba(63, 185, 80, 0.08);
-    border: 1px solid rgba(63, 185, 80, 0.25);
-    border-radius: 6px;
-}
-
-.reviewed-section label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #3fb950;
-    font-size: 0.88rem;
-    cursor: pointer;
-}
-
 /* ── Accessibility ──────────────────────────────────────────────────────── */
 
 /* Visually hidden but available to screen readers */

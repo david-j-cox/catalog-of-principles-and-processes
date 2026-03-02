@@ -487,6 +487,11 @@ document.addEventListener('DOMContentLoaded', async function() {
     if (loadingIndicator) loadingIndicator.classList.add('hidden');
     initializeNavigation();
     populateTable(behavioralData);
+    const subtitle = document.getElementById('catalog-subtitle');
+    if (subtitle) {
+        subtitle.textContent = behavioralData.length.toLocaleString()
+            + ' entries across JEAB, Behavioural Processes, and JEP: Animal Learning & Cognition';
+    }
     populateFilters();
     updateStatistics();
     initializeSearch();
@@ -598,17 +603,6 @@ function matchesAuthorsSearch(authorsField, searchTerm) {
 // Helper function for process filter matching
 function matchesProcessFilter(processField, filterValue) {
     return normalizeProcesses(processField).includes(filterValue);
-}
-
-// Helper function for author filter matching
-function matchesAuthorFilter(authorsField, filterValue) {
-    if (!authorsField) return false;
-    
-    if (Array.isArray(authorsField)) {
-        return authorsField.includes(filterValue);
-    }
-    
-    return authorsField === filterValue;
 }
 
 // Parse process input from form (handles comma-separated values)
@@ -935,8 +929,7 @@ function populateFilters() {
     const volumeFilter = document.getElementById('volume-filter');
     const issueFilter = document.getElementById('issue-filter');
     const processFilter = document.getElementById('process-filter');
-    const authorFilter = document.getElementById('author-filter');
-    
+
     // Helper: clear dropdown options, keeping the first default "All..." option
     function clearDropdown(select) {
         const defaultOption = select.querySelector('option');
@@ -990,17 +983,6 @@ function populateFilters() {
         processFilter.appendChild(option);
     });
     
-    // Author dropdown is intentionally not populated — with thousands of unique
-    // authors across 4,000+ entries, building a select would crash the browser.
-    // Author search is handled by the text search box above.
-    authorFilter.disabled = true;
-    authorFilter.title = 'Search authors using the text search box above';
-    const authorNote = document.createElement('option');
-    authorNote.textContent = 'Use search box for authors';
-    authorNote.value = '';
-    authorFilter.innerHTML = '';
-    authorFilter.appendChild(authorNote);
-
     // Journal filter is independent (not part of year/volume/issue cascade)
     document.getElementById('journal-filter').addEventListener('change', applyFilters);
 
@@ -1091,7 +1073,6 @@ function applyFilters() {
     const issueFilter = document.getElementById('issue-filter').value;
     const processFilter = document.getElementById('process-filter').value;
     const reviewFilter = document.getElementById('review-filter').value;
-    const authorFilter = document.getElementById('author-filter').value;
 
     let filteredData = behavioralData;
 
@@ -1143,11 +1124,6 @@ function applyFilters() {
     } else if (reviewFilter === 'needs-review') {
         filteredData = filteredData.filter(a =>
             a.reviewed !== true && (a.signoffs || []).length < SIGNOFF_THRESHOLD);
-    }
-
-    // Apply author filter
-    if (authorFilter) {
-        filteredData = filteredData.filter(article => matchesAuthorFilter(article.authors, authorFilter));
     }
 
     populateTable(filteredData);
@@ -1655,8 +1631,6 @@ function openEditModal(article) {
     document.getElementById('edit-static-definitions').value = article['static-equation-definitions'] || '';
     document.getElementById('edit-recursive-equation').value = normalizeEqGlobal(article['recursive-equation']);
     document.getElementById('edit-recursive-definitions').value = article['recursive-equation-definitions'] || '';
-    document.getElementById('edit-mark-reviewed').checked = false;
-    document.getElementById('edit-reviewed-section').style.display = githubToken ? 'block' : 'none';
 
     document.getElementById('edit-entry-modal').style.display = 'block';
     document.body.style.overflow = 'hidden';
@@ -1700,9 +1674,6 @@ function initializeEditModal() {
             'recursive-equation': document.getElementById('edit-recursive-equation').value || '',
             'recursive-equation-definitions': document.getElementById('edit-recursive-definitions').value || '',
         };
-
-        const markReviewed = document.getElementById('edit-mark-reviewed').checked;
-        if (markReviewed) editedEntry.reviewed = true;
 
         if (githubUsername) {
             const existing = editedEntry.correctors || [];
