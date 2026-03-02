@@ -142,5 +142,8 @@ equations_judged.json
 *.bak2
 *.bak3
 
-# Data collection template
-data_colleciton_template.xlsx 
+# Non-site files: scrapers, tooling, student data, templates
+*.py
+scrapers/
+DataToAdd/
+data_colleciton_template.xlsx

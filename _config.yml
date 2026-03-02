@@ -1,21 +1,16 @@
 # GitHub Pages Configuration
-theme: minima
 title: "Behavioral Process Catalog"
-description: "A retro-themed catalog of behavioral processes from JEAB"
+description: "A searchable catalog of behavioral processes and equations from JEAB, Behavioural Processes, and JEP: Animal Learning & Cognition"
 
-# GitHub Pages settings
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-
-# Exclude files from processing
+# Exclude non-site files from GitHub Pages serving
 exclude:
   - README.md
+  - TODO.md
   - .gitignore
   - .DS_Store
-
-# Include files
-include:
-  - index.html
-  - styles.css
-  - script.js
+  - .env
+  - "*.py"
+  - DataToAdd/
+  - scrapers/
+  - data_colleciton_template.xlsx
+  - _config.yml

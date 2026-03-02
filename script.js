@@ -197,7 +197,8 @@ function initializeGitHubAuth() {
                 <h3>Connect to GitHub</h3>
                 <p>To contribute entries to the catalog, connect your GitHub account:</p>
                 <div class="auth-controls">
-                    <input type="password" id="github-token" placeholder="GitHub Personal Access Token" 
+                    <input type="password" id="github-token" placeholder="GitHub Personal Access Token"
+                           aria-label="GitHub Personal Access Token"
                            style="display: ${githubToken ? 'none' : 'block'}">
                     <button id="connect-github" class="auth-btn">${githubToken ? `Connected as @${escapeHtml(githubUsername || '?')}` : 'Connect GitHub'}</button>
                     <button id="disconnect-github" class="auth-btn secondary" 
@@ -671,7 +672,7 @@ function createEquationContent(equation, definitions) {
         renderedEquation = `$$${equation}$$`;
     }
     
-    let content = `<div class="equation-display">${renderedEquation}</div>`;
+    let content = `<div class="equation-display">${escapeHtml(renderedEquation)}</div>`;
     
     // Add definitions if available - render each on a new line
     if (definitions && definitions.trim() !== '') {
@@ -694,7 +695,7 @@ function createEquationContent(equation, definitions) {
                             processedDef = `$${processedDef}$`;
                         }
                         
-                        return `<div class="definition-item">${processedDef}</div>`;
+                        return `<div class="definition-item">${escapeHtml(processedDef)}</div>`;
                     }).join('')}
                 </div>
             `;
