@@ -1,45 +1,8 @@
 # TODO — Behavioral Process Catalog
 
-Second audit pass. P0–P3 complete. Items below from deep scan.
+Critical and medium audit items complete. Low-priority items remain.
 
 ---
-
-## Critical (must fix)
-
-- [ ] **Fix localStorage quota overflow**
-  `saveData()` stores 16MB JSON in localStorage (5-10MB limit). Unhandled `QuotaExceededError` crashes form submission after a successful PR. Wrap in try/catch or remove localStorage caching entirely.
-
-- [ ] **Fix unhandled JSON.parse in fetch-error fallback**
-  If `fetch('data.json')` fails AND localStorage is corrupt, `JSON.parse(savedData)` throws unhandled, preventing the app from loading. Wrap in its own try/catch.
-
-- [ ] **Fix 20 entries with corrupted LaTeX**
-  `\frac` became form-feed char (U+000C) + `rac` in 20 entries. MathJax cannot render these. Replace `\x0c` with `\f` in static-equation fields.
-
-- [ ] **Fix CSV export not normalizing equations**
-  `renderPage()` calls `normalizeEqGlobal()` but `exportTableToCSV()` does not. Array equations (if re-introduced via PR) would crash `.replace()`. Add `normalizeEqGlobal()` call in CSV path.
-
-## Medium (should fix)
-
-- [ ] **Fix `Math.min(...years)` stack overflow risk**
-  Spread on 11,920-element array in `updateStatistics()`. Safe now but will crash at ~65K entries. Use a reduce loop instead.
-
-- [ ] **Fix abstract toggle display inconsistency**
-  Collapsed shows HTML-escaped text via innerHTML, expanded shows decoded text from `getAttribute('data-full')` via textContent. Text differs for abstracts containing `&`, `<`, etc.
-
-- [ ] **Add focus trap and ARIA attributes to modals**
-  Missing `role="dialog"`, `aria-modal="true"`, focus management, and focus return on close. WCAG 2.1 AA failure.
-
-- [ ] **Fix color contrast for text-muted on bg-card**
-  `#8b949e` on `#161b22` = ~4.0:1, below WCAG AA 4.5:1 minimum. Lighten `--text-muted` or darken selectively.
-
-- [ ] **Add Open Graph meta tags**
-  No `og:title`, `og:description`, `og:image`, `og:url`. Social sharing shows generic preview.
-
-- [ ] **Fix CSV process field quote escaping**
-  `formatProcessForCSV()` joins array items without escaping double quotes. Process names containing `"` corrupt CSV output.
-
-- [ ] **Remove junk recursive equation at data.json index 62**
-  Contains only a stray `"` character. Should be empty string.
 
 ## Low (nice to have)
 
