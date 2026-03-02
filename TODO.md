@@ -1,10 +1,10 @@
 # TODO — Behavioral Process Catalog
 
-All audit items complete except one deferred item.
+All audit items complete. One item investigated and closed.
 
 ---
 
-## Deferred
+## Closed / Won't Fix
 
-- [ ] **Migrate data.json to Git LFS**
-  `.git` is 38MB with 24 versions of 16MB file. Git LFS is installed but migration deferred: won't shrink existing history, needs GitHub Pages + LFS compatibility verification, and all collaborators would need LFS installed.
+- **~~Migrate data.json to Git LFS~~**
+  Investigated: GitHub Pages does not serve LFS-tracked files — it would serve the pointer file instead of the actual JSON, breaking the site. Workaround requires a GitHub Actions deploy workflow, which adds complexity for a no-build-step site. The `.git` size (38MB) is manageable at current scale.
