@@ -14,7 +14,9 @@
     <title>Behavioral Process Catalog</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <!-- MathJax for equation rendering -->
     <script>
         window.MathJax = {
@@ -54,18 +56,18 @@
 
         <!-- Navigation -->
         <nav class="nav-bar">
-            <div class="nav-content">
-                <button class="nav-btn active" data-view="catalog">Catalog Database</button>
-                <button class="nav-btn" data-view="about">About Project</button>
-                <button class="nav-btn" data-view="stats">Statistics</button>
-                <button class="nav-btn" data-view="contributors">Contributors</button>
+            <div class="nav-content" role="tablist">
+                <button class="nav-btn active" data-view="catalog" role="tab" aria-selected="true" aria-controls="catalog-view">Catalog Database</button>
+                <button class="nav-btn" data-view="about" role="tab" aria-selected="false" aria-controls="about-view">About Project</button>
+                <button class="nav-btn" data-view="stats" role="tab" aria-selected="false" aria-controls="stats-view">Statistics</button>
+                <button class="nav-btn" data-view="contributors" role="tab" aria-selected="false" aria-controls="contributors-view">Contributors</button>
             </div>
         </nav>
 
         <!-- Main Content -->
         <main class="main-content">
             <!-- Catalog View -->
-            <section id="catalog-view" class="content-section active">
+            <section id="catalog-view" class="content-section active" role="tabpanel">
                 <div class="section-header">
                     <h2>Research Article Database</h2>
                     <p id="catalog-subtitle">Exploring the fundamental behavioral processes that govern life</p>
@@ -145,7 +147,7 @@
             </section>
 
             <!-- About View -->
-            <section id="about-view" class="content-section">
+            <section id="about-view" class="content-section" role="tabpanel">
                 <div class="section-header">
                     <h2>About the Project</h2>
                     <p>What is the total set of LEGOS that make up a behavioral system?</p>
@@ -174,7 +176,7 @@
             </section>
 
             <!-- Statistics View -->
-            <section id="stats-view" class="content-section">
+            <section id="stats-view" class="content-section" role="tabpanel">
                 <div class="section-header">
                     <h2>Database Statistics</h2>
                     <p>Quantifying our knowledge of behavior</p>
@@ -200,7 +202,7 @@
                 <div id="review-progress" class="review-progress"></div>
             </section>
             <!-- Contributors View -->
-            <section id="contributors-view" class="content-section">
+            <section id="contributors-view" class="content-section" role="tabpanel">
                 <div class="section-header">
                     <h2>Contributors</h2>
                     <p>Recognizing the researchers building this catalog</p>

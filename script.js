@@ -360,9 +360,15 @@ async function ghFetch(url, options = {}) {
 // Fetch data.json via raw.githubusercontent.com (no size limit, no base64)
 async function fetchUpstreamData() {
     const url = `https://raw.githubusercontent.com/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/main/${GITHUB_CONFIG.dataFile}`;
-    const response = await fetch(url);
-    if (!response.ok) throw new Error('Failed to fetch upstream data.json');
-    return response.json();
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 30000);
+    try {
+        const response = await fetch(url, { signal: controller.signal });
+        if (!response.ok) throw new Error('Failed to fetch upstream data.json');
+        return response.json();
+    } finally {
+        clearTimeout(timeoutId);
+    }
 }
 
 // Create a fork (if needed) and a fresh branch. Returns { forkOwner, branchName, baseSha }.
@@ -594,8 +600,12 @@ function initializeNavigation() {
             const targetView = this.getAttribute('data-view');
             
             // Update active nav button
-            navButtons.forEach(btn => btn.classList.remove('active'));
+            navButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
             this.classList.add('active');
+            this.setAttribute('aria-selected', 'true');
             
             // Update active content section
             contentSections.forEach(section => section.classList.remove('active'));
@@ -940,9 +950,17 @@ function renderPage() {
 
         const signoffEl = row.querySelector('.signoff-btn');
         if (signoffEl) {
-            signoffEl.addEventListener('click', (e) => {
+            signoffEl.addEventListener('click', async (e) => {
                 e.stopPropagation();
-                createSignoffPullRequest(article);
+                if (signoffEl.disabled) return;
+                signoffEl.disabled = true;
+                signoffEl.textContent = '⏳';
+                try {
+                    await createSignoffPullRequest(article);
+                } finally {
+                    signoffEl.disabled = false;
+                    signoffEl.textContent = '✓ Verify';
+                }
             });
         }
 
@@ -1430,11 +1448,13 @@ function showToast(contentOrMessage, type = 'success', duration = 3000) {
 }
 
 function showPullRequestSuccess(pullRequest) {
+    const prUrl = pullRequest.html_url;
+    const safeUrl = (typeof prUrl === 'string' && prUrl.startsWith('https://')) ? prUrl : '#';
     const content = document.createElement('div');
     content.innerHTML = `
         <div>Pull request created successfully!</div>
         <div style="margin-top: 8px;">
-            <a href="${escapeHtml(pullRequest.html_url)}" target="_blank" style="color: var(--bg-dark); text-decoration: underline;">
+            <a href="${escapeHtml(safeUrl)}" target="_blank" rel="noopener" style="color: var(--bg-dark); text-decoration: underline;">
                 View PR #${escapeHtml(String(pullRequest.number))}
             </a>
         </div>
@@ -1491,7 +1511,7 @@ function exportTableToCSV() {
     const currentData = currentFilteredData;
     
     if (currentData.length === 0) {
-        alert('No data to export. Please check your filters.');
+        showToast('No data to export. Please check your filters.', 'error');
         return;
     }
     
