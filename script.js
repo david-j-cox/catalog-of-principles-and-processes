@@ -200,9 +200,9 @@ function initializeGitHubAuth() {
                             style="display: ${githubToken ? 'block' : 'none'}">Disconnect</button>
                 </div>
                 <div class="auth-help">
-                    <a href="https://github.com/settings/tokens/new?scopes=repo&description=Behavioral%20Process%20Catalog" 
+                    <a href="https://github.com/settings/tokens/new?scopes=public_repo&description=Behavioral%20Process%20Catalog"
                        target="_blank">Create a GitHub token</a>
-                    <small>Requires 'repo' scope for creating pull requests</small>
+                    <small>Requires 'public_repo' scope for creating pull requests</small>
                 </div>
             </div>
         </div>
@@ -277,87 +277,179 @@ async function validateGitHubToken(token) {
     }
 }
 
+// ── GitHub API Helpers ────────────────────────────────────────────────────
+
+// Authenticated fetch wrapper — eliminates repeated header blocks
+async function ghFetch(url, options = {}) {
+    const headers = {
+        'Authorization': `token ${githubToken}`,
+        'Accept': 'application/vnd.github.v3+json',
+        ...options.headers
+    };
+    if (options.body) headers['Content-Type'] = 'application/json';
+    return fetch(url, { ...options, headers });
+}
+
+// Fetch data.json via raw.githubusercontent.com (no size limit, no base64)
+async function fetchUpstreamData() {
+    const url = `https://raw.githubusercontent.com/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/main/${GITHUB_CONFIG.dataFile}`;
+    const response = await fetch(url);
+    if (!response.ok) throw new Error('Failed to fetch upstream data.json');
+    return response.json();
+}
+
+// Create a fork (if needed) and a fresh branch. Returns { forkOwner, branchName, baseSha }.
+// Owner shortcut: if the authenticated user owns the repo, skip fork and push directly.
+async function ensureForkAndBranch(branchPrefix) {
+    const { owner, repo } = GITHUB_CONFIG;
+    const branchName = `${branchPrefix}-${Date.now()}`;
+
+    // Get upstream HEAD sha
+    const mainRef = await ghFetch(`https://api.github.com/repos/${owner}/${repo}/git/refs/heads/main`);
+    if (!mainRef.ok) throw new Error('Failed to fetch main branch');
+    const mainData = await mainRef.json();
+    const baseSha = mainData.object.sha;
+
+    // Owner shortcut — push directly to upstream
+    if (githubUsername === owner) {
+        const branchRes = await ghFetch(`https://api.github.com/repos/${owner}/${repo}/git/refs`, {
+            method: 'POST',
+            body: JSON.stringify({ ref: `refs/heads/${branchName}`, sha: baseSha })
+        });
+        if (!branchRes.ok) {
+            // Retry with random suffix on branch name collision
+            const retryName = `${branchPrefix}-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
+            const retryRes = await ghFetch(`https://api.github.com/repos/${owner}/${repo}/git/refs`, {
+                method: 'POST',
+                body: JSON.stringify({ ref: `refs/heads/${retryName}`, sha: baseSha })
+            });
+            if (!retryRes.ok) throw new Error('Failed to create branch');
+            return { forkOwner: owner, branchName: retryName, baseSha };
+        }
+        return { forkOwner: owner, branchName, baseSha };
+    }
+
+    // Fork the repo (idempotent — returns 202 even if fork already exists)
+    const forkRes = await ghFetch(`https://api.github.com/repos/${owner}/${repo}/forks`, {
+        method: 'POST',
+        body: JSON.stringify({})
+    });
+    if (!forkRes.ok && forkRes.status !== 202) throw new Error('Failed to create fork');
+    const forkData = await forkRes.json();
+    const forkOwner = forkData.owner.login;
+
+    // Wait for fork to be ready (up to 5 tries, 2s apart)
+    for (let i = 0; i < 5; i++) {
+        const checkRes = await ghFetch(`https://api.github.com/repos/${forkOwner}/${repo}`);
+        if (checkRes.ok) {
+            const checkData = await checkRes.json();
+            if (checkData.size > 0) break;
+        }
+        await new Promise(resolve => setTimeout(resolve, 2000));
+    }
+
+    // Sync fork's main to upstream
+    await ghFetch(`https://api.github.com/repos/${forkOwner}/${repo}/merge-upstream`, {
+        method: 'POST',
+        body: JSON.stringify({ branch: 'main' })
+    });
+
+    // Create branch on fork
+    const branchRes = await ghFetch(`https://api.github.com/repos/${forkOwner}/${repo}/git/refs`, {
+        method: 'POST',
+        body: JSON.stringify({ ref: `refs/heads/${branchName}`, sha: baseSha })
+    });
+    if (!branchRes.ok) {
+        const retryName = `${branchPrefix}-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`;
+        const retryRes = await ghFetch(`https://api.github.com/repos/${forkOwner}/${repo}/git/refs`, {
+            method: 'POST',
+            body: JSON.stringify({ ref: `refs/heads/${retryName}`, sha: baseSha })
+        });
+        if (!retryRes.ok) throw new Error('Failed to create branch on fork');
+        return { forkOwner, branchName: retryName, baseSha };
+    }
+
+    return { forkOwner, branchName, baseSha };
+}
+
+// Commit updated data via Git Data API (handles 18MB+ files, no btoa needed)
+// and open a cross-fork pull request.
+async function commitAndCreatePR({ forkOwner, branchName, baseSha, updatedData, commitMessage, prTitle, prBody }) {
+    const { owner, repo, dataFile } = GITHUB_CONFIG;
+
+    // 1. Get base tree SHA
+    const commitRes = await ghFetch(`https://api.github.com/repos/${owner}/${repo}/git/commits/${baseSha}`);
+    if (!commitRes.ok) throw new Error('Failed to fetch base commit');
+    const baseCommit = await commitRes.json();
+
+    // 2. Create blob with UTF-8 encoding (up to 100MB, no base64)
+    const blobRes = await ghFetch(`https://api.github.com/repos/${forkOwner}/${repo}/git/blobs`, {
+        method: 'POST',
+        body: JSON.stringify({
+            content: JSON.stringify(updatedData, null, 4),
+            encoding: 'utf-8'
+        })
+    });
+    if (!blobRes.ok) throw new Error('Failed to create blob');
+    const blob = await blobRes.json();
+
+    // 3. Create tree replacing data.json
+    const treeRes = await ghFetch(`https://api.github.com/repos/${forkOwner}/${repo}/git/trees`, {
+        method: 'POST',
+        body: JSON.stringify({
+            base_tree: baseCommit.tree.sha,
+            tree: [{ path: dataFile, mode: '100644', type: 'blob', sha: blob.sha }]
+        })
+    });
+    if (!treeRes.ok) throw new Error('Failed to create tree');
+    const tree = await treeRes.json();
+
+    // 4. Create commit
+    const newCommitRes = await ghFetch(`https://api.github.com/repos/${forkOwner}/${repo}/git/commits`, {
+        method: 'POST',
+        body: JSON.stringify({
+            message: commitMessage,
+            tree: tree.sha,
+            parents: [baseSha]
+        })
+    });
+    if (!newCommitRes.ok) throw new Error('Failed to create commit');
+    const newCommit = await newCommitRes.json();
+
+    // 5. Update branch ref
+    const refRes = await ghFetch(`https://api.github.com/repos/${forkOwner}/${repo}/git/refs/heads/${branchName}`, {
+        method: 'PATCH',
+        body: JSON.stringify({ sha: newCommit.sha })
+    });
+    if (!refRes.ok) throw new Error('Failed to update branch ref');
+
+    // 6. Create cross-fork PR
+    const prHead = forkOwner === owner ? branchName : `${forkOwner}:${branchName}`;
+    const prRes = await ghFetch(`https://api.github.com/repos/${owner}/${repo}/pulls`, {
+        method: 'POST',
+        body: JSON.stringify({ title: prTitle, head: prHead, base: 'main', body: prBody })
+    });
+    if (!prRes.ok) throw new Error('Failed to create pull request');
+    return prRes.json();
+}
+
+// ── PR Creation Functions ─────────────────────────────────────────────────
+
 async function createPullRequest(newEntry) {
     if (!githubToken) {
         throw new Error('GitHub token not found. Please connect your GitHub account first.');
     }
-    
+
     try {
-        // 1. Get the current data.json file
-        const dataResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json'
-            }
-        });
-        
-        if (!dataResponse.ok) {
-            throw new Error('Failed to fetch current data file');
-        }
-        
-        const dataFile = await dataResponse.json();
-        const currentData = JSON.parse(decodeURIComponent(escape(atob(dataFile.content))));
-        
-        // 2. Add the new entry
+        const currentData = await fetchUpstreamData();
         const updatedData = [...currentData, newEntry];
-        const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(updatedData, null, 4))));
-        
-        // 3. Create a new branch
-        const branchName = `add-entry-${Date.now()}`;
-        const mainBranchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs/heads/main`, {
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json'
-            }
-        });
-        
-        if (!mainBranchResponse.ok) throw new Error('Failed to fetch main branch');
-        const mainBranch = await mainBranchResponse.json();
+        const { forkOwner, branchName, baseSha } = await ensureForkAndBranch('add-entry');
 
-        const branchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
-            method: 'POST',
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                ref: `refs/heads/${branchName}`,
-                sha: mainBranch.object.sha
-            })
-        });
-        if (!branchResponse.ok) throw new Error('Failed to create branch');
-
-        // 4. Update the file in the new branch
-        const fileUpdateResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
-            method: 'PUT',
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                message: `Add new entry: ${newEntry.title}`,
-                content: updatedContent,
-                sha: dataFile.sha,
-                branch: branchName
-            })
-        });
-        if (!fileUpdateResponse.ok) throw new Error('Failed to update data file');
-
-        // 5. Create the pull request
-        const prResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/pulls`, {
-            method: 'POST',
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                title: `Add new behavioral process entry: ${newEntry.title}`,
-                head: branchName,
-                base: 'main',
-                body: `## New Behavioral Process Entry
+        return await commitAndCreatePR({
+            forkOwner, branchName, baseSha, updatedData,
+            commitMessage: `Add new entry: ${newEntry.title}`,
+            prTitle: `Add new behavioral process entry: ${newEntry.title}`,
+            prBody: `## New Behavioral Process Entry
 
 **Article Title:** ${newEntry.title}
 **Journal:** ${newEntry.journal || 'JEAB'}
@@ -377,16 +469,7 @@ async function createPullRequest(newEntry) {
 This entry was submitted through the Behavioral Process Catalog web interface.
 
 Please review and merge if appropriate.`
-            })
         });
-        
-        if (!prResponse.ok) {
-            throw new Error('Failed to create pull request');
-        }
-        
-        const pullRequest = await prResponse.json();
-        return pullRequest;
-        
     } catch (error) {
         console.error('Error creating pull request:', error);
         throw error;
@@ -657,7 +740,7 @@ function renderPage() {
             : `<span class="badge-needs-review">Needs Review</span>`;
 
         let signoffBtn = '';
-        if (githubToken && githubUsername && article.contributor &&
+        if (githubToken && githubUsername &&
             !(article.signoffs || []).includes(githubUsername) &&
             (article.signoffs || []).length < SIGNOFF_THRESHOLD) {
             signoffBtn = `<button class="signoff-btn" title="Verify this entry is accurate">✓ Verify</button>`;
@@ -1553,20 +1636,9 @@ async function createEditPullRequest(original, edited) {
     }
 
     try {
-        // 1. Fetch current data.json
-        const dataResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json'
-            }
-        });
+        const currentData = await fetchUpstreamData();
 
-        if (!dataResponse.ok) throw new Error('Failed to fetch current data file');
-
-        const dataFile = await dataResponse.json();
-        const currentData = JSON.parse(decodeURIComponent(escape(atob(dataFile.content))));
-
-        // 2. Find and replace the entry (match on title+year+journal for multi-journal uniqueness)
+        // Find and replace the entry (match on title+year+journal)
         const idx = currentData.findIndex(e =>
             e.title === original.title && e.year === original.year &&
             (e.journal || 'JEAB') === (original.journal || 'JEAB'));
@@ -1578,73 +1650,17 @@ async function createEditPullRequest(original, edited) {
         }
 
         currentData[idx] = edited;
-        const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(currentData, null, 4))));
+        const { forkOwner, branchName, baseSha } = await ensureForkAndBranch('edit-entry');
 
-        // 3. Create branch from main
-        const branchName = `edit-entry-${Date.now()}`;
-        const mainBranchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs/heads/main`, {
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json'
-            }
+        const pr = await commitAndCreatePR({
+            forkOwner, branchName, baseSha, updatedData: currentData,
+            commitMessage: `Correction: ${original.title.slice(0, 60)}`,
+            prTitle: `Correction: ${original.title.slice(0, 60)}`,
+            prBody: `## Suggested Correction\n\n**Article:** ${original.title}\n**Journal:** ${original.journal || 'JEAB'} (${original.year}, Vol. ${original.volume})\n\nSubmitted via catalog edit form.`
         });
 
-        if (!mainBranchResponse.ok) throw new Error('Failed to fetch main branch');
-        const mainBranch = await mainBranchResponse.json();
-
-        const branchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
-            method: 'POST',
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                ref: `refs/heads/${branchName}`,
-                sha: mainBranch.object.sha
-            })
-        });
-        if (!branchResponse.ok) throw new Error('Failed to create branch');
-
-        // 4. Update file in branch
-        const fileUpdateResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
-            method: 'PUT',
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                message: `Correction: ${original.title.slice(0, 60)}`,
-                content: updatedContent,
-                sha: dataFile.sha,
-                branch: branchName
-            })
-        });
-        if (!fileUpdateResponse.ok) throw new Error('Failed to update data file');
-
-        // 5. Create PR
-        const prResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/pulls`, {
-            method: 'POST',
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                title: `Correction: ${original.title.slice(0, 60)}`,
-                head: branchName,
-                base: 'main',
-                body: `## Suggested Correction\n\n**Article:** ${original.title}\n**Journal:** ${original.journal || 'JEAB'} (${original.year}, Vol. ${original.volume})\n\nSubmitted via catalog edit form.`
-            })
-        });
-
-        if (!prResponse.ok) throw new Error('Failed to create pull request');
-
-        const pr = await prResponse.json();
         showPullRequestSuccess(pr);
         closeEditModal();
-
     } catch (error) {
         console.error('Error creating edit pull request:', error);
         throw error;
@@ -1688,20 +1704,9 @@ async function createSignoffPullRequest(article) {
     }
 
     try {
-        // 1. Fetch current data.json
-        const dataResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json'
-            }
-        });
+        const currentData = await fetchUpstreamData();
 
-        if (!dataResponse.ok) throw new Error('Failed to fetch current data file');
-
-        const dataFile = await dataResponse.json();
-        const currentData = JSON.parse(decodeURIComponent(escape(atob(dataFile.content))));
-
-        // 2. Find entry and add signoff (match on title+year+journal for multi-journal uniqueness)
+        // Find entry and add signoff (match on title+year+journal)
         const idx = currentData.findIndex(e =>
             e.title === article.title && e.year === article.year &&
             (e.journal || 'JEAB') === (article.journal || 'JEAB'));
@@ -1713,73 +1718,17 @@ async function createSignoffPullRequest(article) {
             currentData[idx].reviewed = true;
         }
 
-        const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(currentData, null, 4))));
+        const { forkOwner, branchName, baseSha } = await ensureForkAndBranch('signoff-entry');
 
-        // 3. Create branch from main
-        const branchName = `signoff-entry-${Date.now()}`;
-        const mainBranchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs/heads/main`, {
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json'
-            }
-        });
-
-        if (!mainBranchResponse.ok) throw new Error('Failed to fetch main branch');
-        const mainBranch = await mainBranchResponse.json();
-
-        const branchResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/git/refs`, {
-            method: 'POST',
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                ref: `refs/heads/${branchName}`,
-                sha: mainBranch.object.sha
-            })
-        });
-        if (!branchResponse.ok) throw new Error('Failed to create branch');
-
-        // 4. PUT updated file to branch
-        const fileUpdateResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/contents/${GITHUB_CONFIG.dataFile}`, {
-            method: 'PUT',
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                message: `Signoff: ${article.title.slice(0, 60)}`,
-                content: updatedContent,
-                sha: dataFile.sha,
-                branch: branchName
-            })
-        });
-        if (!fileUpdateResponse.ok) throw new Error('Failed to update data file');
-
-        // 5. Create PR
         const signoffCount = newSignoffs.length;
-        const prResponse = await fetch(`https://api.github.com/repos/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/pulls`, {
-            method: 'POST',
-            headers: {
-                'Authorization': `token ${githubToken}`,
-                'Accept': 'application/vnd.github.v3+json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                title: `Signoff: ${article.title.slice(0, 60)}`,
-                head: branchName,
-                base: 'main',
-                body: `## Verification Sign-off\n\n**Article:** ${article.title}\n**Journal:** ${article.journal || 'JEAB'} (${article.year}, Vol. ${article.volume})\n\n**Sign-off count:** ${signoffCount}/${SIGNOFF_THRESHOLD}\n\nVerified by @${githubUsername} via the Behavioral Process Catalog web interface.`
-            })
+        const pr = await commitAndCreatePR({
+            forkOwner, branchName, baseSha, updatedData: currentData,
+            commitMessage: `Signoff: ${article.title.slice(0, 60)}`,
+            prTitle: `Signoff: ${article.title.slice(0, 60)}`,
+            prBody: `## Verification Sign-off\n\n**Article:** ${article.title}\n**Journal:** ${article.journal || 'JEAB'} (${article.year}, Vol. ${article.volume})\n\n**Sign-off count:** ${signoffCount}/${SIGNOFF_THRESHOLD}\n\nVerified by @${githubUsername} via the Behavioral Process Catalog web interface.`
         });
 
-        if (!prResponse.ok) throw new Error('Failed to create pull request');
-
-        const pr = await prResponse.json();
         showPullRequestSuccess(pr);
-
     } catch (error) {
         console.error('Error creating signoff pull request:', error);
         showErrorMessage(`Failed to submit verification: ${error.message}`);
