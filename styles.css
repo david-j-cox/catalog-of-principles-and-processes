@@ -71,13 +71,6 @@ body {
     color: var(--accent-teal);
 }
 
-.subtitle {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    letter-spacing: 0.3px;
-    font-weight: 400;
-}
-
 .header-subtitle {
     font-size: 0.95rem;
     color: var(--text-muted);
@@ -88,8 +81,6 @@ body {
     margin: 0 auto;
     line-height: 1.5;
 }
-
-.dna-helix { display: none; }
 
 /* ── Navigation ─────────────────────────────────────────────────────────── */
 .nav-bar {
@@ -316,8 +307,6 @@ body {
     z-index: 100;
 }
 
-.data-table th::before { display: none; }
-
 .data-table th[data-sort-key] {
     cursor: pointer;
     user-select: none;
@@ -497,14 +486,6 @@ body {
 }
 
 /* ── Equations ──────────────────────────────────────────────────────────── */
-.math-equation {
-    font-family: 'IBM Plex Mono', 'Georgia', serif;
-    font-size: 1em;
-    color: var(--text-bright);
-    overflow-wrap: break-word;
-    word-break: break-all;
-}
-
 .equation-display {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.95em;
@@ -516,7 +497,6 @@ body {
     justify-content: center;
 }
 
-.equation-definitions-inline,
 .equation-definitions-block {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.73rem;
@@ -528,7 +508,6 @@ body {
     margin-top: 5px;
 }
 
-.equation-definitions-inline .where-label,
 .equation-definitions-block .where-label {
     font-weight: 600;
     color: var(--accent-teal);
@@ -539,7 +518,6 @@ body {
     letter-spacing: 0.4px;
 }
 
-.equation-definitions-inline .definition-item,
 .equation-definitions-block .definition-item {
     margin-bottom: 2px;
     padding-left: 4px;
@@ -555,7 +533,7 @@ body {
     padding: 10px 14px;
 }
 
-.MathJax, .MathJax_Display {
+.MathJax {
     color: var(--text-bright) !important;
 }
 

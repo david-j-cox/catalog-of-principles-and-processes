@@ -2,7 +2,7 @@
 
 // HTML-escape a string to prevent XSS when inserting into innerHTML
 function escapeHtml(str) {
-    if (!str) return '';
+    if (str == null || str === '') return '';
     return String(str)
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
@@ -82,21 +82,26 @@ async function loadData() {
     try {
         const response = await fetch('data.json');
         const jsonData = await response.json();
-        
-        // Merge with any local additions
-        const savedData = localStorage.getItem('behavioralData');
-        if (savedData) {
-            const localData = JSON.parse(savedData);
-            // Only keep local entries that aren't in the main data
-            const localOnlyEntries = localData.filter(localEntry => 
-                !jsonData.some(jsonEntry => 
-                    jsonEntry.title === localEntry.title && 
-                    jsonEntry.year === localEntry.year
-                )
-            );
-            behavioralData = [...jsonData, ...localOnlyEntries];
-        } else {
-            behavioralData = jsonData;
+
+        // Merge with any local additions (isolated try/catch so corrupt
+        // localStorage never discards a successful data.json fetch)
+        behavioralData = jsonData;
+        try {
+            const savedData = localStorage.getItem('behavioralData');
+            if (savedData) {
+                const localData = JSON.parse(savedData);
+                const localOnlyEntries = localData.filter(localEntry =>
+                    !jsonData.some(jsonEntry =>
+                        jsonEntry.title === localEntry.title &&
+                        jsonEntry.year === localEntry.year
+                    )
+                );
+                if (localOnlyEntries.length) {
+                    behavioralData = [...jsonData, ...localOnlyEntries];
+                }
+            }
+        } catch (lsError) {
+            console.warn('Could not parse localStorage data, ignoring:', lsError);
         }
         
         return behavioralData;
@@ -494,12 +499,23 @@ document.addEventListener('DOMContentLoaded', async function() {
             + ' entries across JEAB, Behavioural Processes, and JEP: Animal Learning & Cognition';
     }
     populateFilters();
+    initializeFilterListeners();
     updateStatistics();
     initializeSearch();
     initializeModal();
     initializeGitHubAuth();
     initializeEditModal();
     initializeSorting();
+
+    // Tooltips for keyboard shortcuts
+    document.getElementById('search-input').title = 'Press Ctrl+K to focus search';
+    document.querySelector('.add-entry-btn').title = 'Press Ctrl+Enter to add new entry';
+
+    // CSV export
+    const exportButton = document.getElementById('export-csv-btn');
+    if (exportButton) {
+        exportButton.addEventListener('click', exportTableToCSV);
+    }
 });
 
 // Navigation functionality
@@ -792,18 +808,10 @@ function renderPage() {
     const start = (currentPage - 1) * rowsPerPage;
     const pageData = currentFilteredData.slice(start, start + rowsPerPage);
 
-    // Normalize an equation field: arrays become '; '-joined strings
-    function normalizeEq(eq) {
-        if (!eq) return '';
-        if (Array.isArray(eq)) return eq.filter(Boolean).join('; ');
-        return eq;
-    }
-
     pageData.forEach((article, index) => {
         const row = document.createElement('tr');
 
-        // Handle different equation field names for backward compatibility
-        const staticEquation = normalizeEq(article['static-equation'] || article.equation);
+        const staticEquation = normalizeEqGlobal(article['static-equation']);
         const staticDefinitions = article['static-equation-definitions'] || '';
         const recursiveEquation = normalizeEq(article['recursive-equation']);
         const recursiveDefinitions = article['recursive-equation-definitions'] || '';
@@ -841,14 +849,6 @@ function renderPage() {
             <td class="static-equation">${createEquationContent(staticEquation, staticDefinitions)}</td>
             <td class="recursive-equation">${createEquationContent(recursiveEquation, recursiveDefinitions)}</td>
         `;
-
-        // Add click animation
-        row.addEventListener('click', function() {
-            this.style.animation = 'none';
-            setTimeout(() => {
-                this.style.animation = 'pulse 0.6s ease-in-out';
-            }, 10);
-        });
 
         tableBody.appendChild(row);
 
@@ -984,14 +984,18 @@ function populateFilters() {
         processFilter.appendChild(option);
     });
     
-    // Journal filter is independent (not part of year/volume/issue cascade)
-    document.getElementById('journal-filter').addEventListener('change', applyFilters);
+}
 
-    // Year and volume changes rebuild dependent dropdowns before filtering
+// Attach filter event listeners (called once at init, not on every populateFilters call)
+function initializeFilterListeners() {
+    const yearFilter = document.getElementById('year-filter');
+    const volumeFilter = document.getElementById('volume-filter');
+
+    document.getElementById('journal-filter').addEventListener('change', applyFilters);
     yearFilter.addEventListener('change', () => { rebuildDependentDropdowns(); applyFilters(); });
     volumeFilter.addEventListener('change', () => { rebuildDependentDropdowns(); applyFilters(); });
-    issueFilter.addEventListener('change', applyFilters);
-    processFilter.addEventListener('change', applyFilters);
+    document.getElementById('issue-filter').addEventListener('change', applyFilters);
+    document.getElementById('process-filter').addEventListener('change', applyFilters);
     document.getElementById('review-filter').addEventListener('change', applyFilters);
 }
 
@@ -1089,7 +1093,6 @@ function applyFilters() {
             (article.journal || 'JEAB').toLowerCase().includes(searchTerm) ||
             matchesProcessSearch(article.process, searchTerm) ||
             matchesAuthorsSearch(article.authors, searchTerm) ||
-            (article.equation && article.equation.toLowerCase().includes(searchTerm)) ||
             (article['static-equation'] && [].concat(article['static-equation']).join(' ').toLowerCase().includes(searchTerm)) ||
             (article['static-equation-definitions'] && article['static-equation-definitions'].toLowerCase().includes(searchTerm)) ||
             (article['recursive-equation'] && [].concat(article['recursive-equation']).join(' ').toLowerCase().includes(searchTerm)) ||
@@ -1148,9 +1151,7 @@ function updateStatistics() {
     const totalArticles = behavioralData.length;
     const allProcesses = new Set();
     behavioralData.forEach(article => {
-        const p = article.process;
-        if (Array.isArray(p)) p.forEach(name => allProcesses.add(name));
-        else if (p) allProcesses.add(p);
+        normalizeProcesses(article.process).forEach(p => allProcesses.add(p));
     });
     const uniqueProcesses = allProcesses.size;
     const years = behavioralData.map(a => a.year).filter(y => y != null && y > 0);
@@ -1464,25 +1465,15 @@ document.addEventListener('keydown', function(e) {
         }
     }
     
-    // Ctrl/Cmd + Enter to add new entry
+    // Ctrl/Cmd + Enter to add new entry (only when not focused on an input or inside a modal)
     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-        e.preventDefault();
-        document.querySelector('.add-entry-btn').click();
-    }
-});
-
-// Add tooltips for keyboard shortcuts
-document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('search-input');
-    const addButton = document.querySelector('.add-entry-btn');
-    
-    searchInput.title = 'Press Ctrl+K to focus search';
-    addButton.title = 'Press Ctrl+Enter to add new entry';
-    
-    // Add CSV export button event listener
-    const exportButton = document.getElementById('export-csv-btn');
-    if (exportButton) {
-        exportButton.addEventListener('click', exportTableToCSV);
+        const tag = document.activeElement && document.activeElement.tagName;
+        const inInput = tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT';
+        const inModal = document.activeElement && document.activeElement.closest('.modal');
+        if (!inInput && !inModal) {
+            e.preventDefault();
+            document.querySelector('.add-entry-btn').click();
+        }
     }
 });
 
@@ -1529,7 +1520,7 @@ function exportTableToCSV() {
             `"${(article.pages || '').replace(/"/g, '""')}"`,
             `"${(article.abstract || '').replace(/"/g, '""')}"`,
             `"${formatProcessForCSV(article.process)}"`,
-            `"${cleanEquationForCSV(article['static-equation'] || article.equation || '')}"`,
+            `"${cleanEquationForCSV(article['static-equation'] || '')}"`,
             `"${(article['static-equation-definitions'] || '').replace(/"/g, '""')}"`,
             `"${cleanEquationForCSV(article['recursive-equation'] || '')}"`,
             `"${(article['recursive-equation-definitions'] || '').replace(/"/g, '""')}"`,
@@ -1592,17 +1583,6 @@ function formatAuthorsForCSV(authorsField) {
     }
     
     return authorsField.replace(/"/g, '""');
-}
-
-// Export functionality for potential future use (JSON)
-function exportData() {
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(behavioralData, null, 2));
-    const downloadAnchorNode = document.createElement('a');
-    downloadAnchorNode.setAttribute("href", dataStr);
-    downloadAnchorNode.setAttribute("download", "behavioral_process_catalog.json");
-    document.body.appendChild(downloadAnchorNode);
-    downloadAnchorNode.click();
-    downloadAnchorNode.remove();
 }
 
 // ── Edit Entry Feature ────────────────────────────────────────────────────
@@ -1990,11 +1970,11 @@ function renderContributors() {
             ? `<span class="rank-medal">${medals[i]}</span>`
             : `#${i + 1}`;
         const rowClass = i < 3 ? ' class="top-contributor"' : '';
-        const safeName = l.name.replace(/[^a-zA-Z0-9\-]/g, '');
+        const safeName = escapeHtml(l.name);
         return `
             <tr${rowClass}>
                 <td class="rank-cell">${rankCell}</td>
-                <td class="contributor-name"><a href="https://github.com/${safeName}" target="_blank" rel="noopener noreferrer">@${safeName}</a></td>
+                <td class="contributor-name"><a href="https://github.com/${encodeURIComponent(l.name)}" target="_blank" rel="noopener noreferrer">@${safeName}</a></td>
                 <td class="stat-cell verified-cell">${l.verified}</td>
                 <td class="stat-cell">${l.pending}</td>
                 <td class="stat-cell">${l.corrections}</td>
@@ -2028,13 +2008,6 @@ function renderContributors() {
     `;
 }
 
-// ── Error handling ────────────────────────────────────────────────────────
-
-// Error handling
-window.addEventListener('error', function(e) {
-    console.error('Application error:', e.error);
-    showErrorMessage('An error occurred. Please refresh the page.');
-});
 
 function showErrorMessage(message) {
     const errorDiv = document.createElement('div');
