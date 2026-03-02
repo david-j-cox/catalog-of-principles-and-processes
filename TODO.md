@@ -27,23 +27,23 @@
 
 ## P2 — Missing Expected Features
 
-- [ ] **Add loading indicator while data.json fetches**
-  The page loads a ~6MB JSON file. On slow connections the table is empty for several seconds with no feedback — no spinner, skeleton screen, or "Loading..." message.
+- [x] **Add loading indicator while data.json fetches** *(done c95f738)*
+  Spinner + "Loading catalog data..." in the table container during fetch, hidden when load completes.
 
-- [ ] **Add column sorting**
-  Expected behavior for a data table. The README even mentions it as a "future enhancement." Users should be able to sort by year, title, process, etc.
+- [x] **Add column sorting** *(done c95f738)*
+  8 sortable columns (title, journal, authors, year, volume, issue, pages, process) with 3-state click toggle (asc → desc → clear). Arrow indicators on headers. Sort persists across filter changes.
 
-- [ ] **Add review guidelines / rubric**
-  Reviewers don't know what "verified all fields are correct" means. Should they check the original paper? Verify metadata matches the DOI? Check the equation? Need a clear rubric explaining what to verify and to what standard.
+- [x] **Add review guidelines / rubric** *(done c95f738)*
+  6-item verification checklist on Contributors tab between info cards and onboarding guide: metadata, journal, process label, abstract, equations, URL/DOI.
 
 - [x] **Unify "Reviewed" / "Research Grade" terminology** *(done 4e47f15)*
   Changed "Research Grade" to "Reviewed" in Contributors tab. Consistent with catalog badge terminology.
 
-- [ ] **Add review progress metric**
-  No way to see overall review coverage (e.g., "127 / 4,366 entries verified"). A progress bar or stat on the Statistics tab would motivate reviewers by showing collective progress.
+- [x] **Add review progress metric** *(done c95f738)*
+  Animated progress bar on Statistics tab showing reviewed/total entries with percentage.
 
-- [ ] **Add "My Submissions" view for connected contributors**
-  After contributing, users have no way to see what they submitted, PR status, or whether anything was merged. A simple list of their activity would close the feedback loop.
+- [x] **Add "My Submissions" view for connected contributors** *(done c95f738)*
+  "My Activity" dashboard above leaderboard when connected: 3 stat boxes (Submitted/Corrected/Verified), compact table of up to 10 entries, empty state when no activity. Disappears when disconnected.
 
 ## P3 — Polish
 
