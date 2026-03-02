@@ -112,28 +112,36 @@ async function loadData() {
         console.error('Error loading data.json (likely due to local file access), using fallback data:', error);
         
         // Use fallback data, then merge with localStorage
-        const savedData = localStorage.getItem('behavioralData');
-        if (savedData) {
-            const localData = JSON.parse(savedData);
-            // Only keep local entries that aren't in the fallback data
-            const localOnlyEntries = localData.filter(localEntry => 
-                !fallbackData.some(fallbackEntry => 
-                    fallbackEntry.title === localEntry.title && 
-                    fallbackEntry.year === localEntry.year
-                )
-            );
-            behavioralData = [...fallbackData, ...localOnlyEntries];
-        } else {
-            behavioralData = fallbackData;
+        behavioralData = fallbackData;
+        try {
+            const savedData = localStorage.getItem('behavioralData');
+            if (savedData) {
+                const localData = JSON.parse(savedData);
+                // Only keep local entries that aren't in the fallback data
+                const localOnlyEntries = localData.filter(localEntry =>
+                    !fallbackData.some(fallbackEntry =>
+                        fallbackEntry.title === localEntry.title &&
+                        fallbackEntry.year === localEntry.year
+                    )
+                );
+                behavioralData = [...fallbackData, ...localOnlyEntries];
+            }
+        } catch (parseError) {
+            // Corrupt localStorage — stick with fallback data
         }
         
         return behavioralData;
     }
 }
 
-// Save data to localStorage
+// Save data to localStorage (best-effort; may exceed quota on large datasets)
 function saveData() {
-    localStorage.setItem('behavioralData', JSON.stringify(behavioralData));
+    try {
+        localStorage.setItem('behavioralData', JSON.stringify(behavioralData));
+    } catch (e) {
+        // QuotaExceededError — localStorage is too small for the dataset.
+        // This is non-critical; data.json is the source of truth.
+    }
 }
 
 // Create abstract content with expand/collapse functionality
@@ -1481,10 +1489,10 @@ function exportTableToCSV() {
             `"${(article.pages || '').replace(/"/g, '""')}"`,
             `"${(article.abstract || '').replace(/"/g, '""')}"`,
             `"${formatProcessForCSV(article.process)}"`,
-            `"${cleanEquationForCSV(article['static-equation'] || '')}"`,
-            `"${(article['static-equation-definitions'] || '').replace(/"/g, '""')}"`,
-            `"${cleanEquationForCSV(article['recursive-equation'] || '')}"`,
-            `"${(article['recursive-equation-definitions'] || '').replace(/"/g, '""')}"`,
+            `"${cleanEquationForCSV(normalizeEqGlobal(article['static-equation']))}"`,
+            `"${normalizeEqGlobal(article['static-equation-definitions']).replace(/"/g, '""')}"`,
+            `"${cleanEquationForCSV(normalizeEqGlobal(article['recursive-equation']))}"`,
+            `"${normalizeEqGlobal(article['recursive-equation-definitions']).replace(/"/g, '""')}"`,
             `"${(article.url || '').replace(/"/g, '""')}"`
         ].join(','))
     ].join('\n');
@@ -1530,9 +1538,9 @@ function formatProcessForCSV(processField) {
     if (!processField) return '';
     
     if (Array.isArray(processField)) {
-        return processField.join('; ');
+        return processField.join('; ').replace(/"/g, '""');
     }
-    
+
     return processField.replace(/"/g, '""');
 }
 
