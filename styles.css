@@ -78,6 +78,17 @@ body {
     font-weight: 400;
 }
 
+.header-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
 .dna-helix { display: none; }
 
 /* ── Navigation ─────────────────────────────────────────────────────────── */
@@ -1119,6 +1130,57 @@ tr:hover .signoff-btn { opacity: 1; }
     font-size: 0.86rem;
     color: var(--text-muted);
     line-height: 1.55;
+}
+
+/* ── Onboarding Guide ──────────────────────────────────────────────────── */
+.onboarding-guide {
+    margin-top: 36px;
+}
+
+.onboarding-guide > h3 {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-bright);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.onboarding-step {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+.onboarding-step h4 {
+    font-family: 'Inter', sans-serif;
+    color: var(--accent-teal);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.onboarding-step p {
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+}
+
+.onboarding-step a {
+    color: var(--accent-teal);
+    text-decoration: none;
+}
+
+.onboarding-step a:hover {
+    text-decoration: underline;
+}
+
+.onboarding-step ul {
+    margin: 8px 0 0 20px;
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    line-height: 1.7;
 }
 
 /* ── Reviewed Section in Edit Modal ─────────────────────────────────────── */

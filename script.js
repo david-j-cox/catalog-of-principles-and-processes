@@ -1228,10 +1228,9 @@ function initializeModal() {
                 saveData();
                 
             } else {
-                // Fallback to local storage only
-                behavioralData.push(newEntry);
-                saveData();
-                showSuccessMessage('Entry saved locally! Connect GitHub to contribute to the main catalog.');
+                // No token — open pre-filled GitHub Issue
+                window.open(buildNewEntryIssueUrl(newEntry), '_blank');
+                showSuccessMessage('A GitHub Issue has been opened with your entry. A maintainer will review and add it to the catalog.');
             }
             
             // Update table and filters
@@ -1246,20 +1245,16 @@ function initializeModal() {
             
         } catch (error) {
             console.error('Error submitting entry:', error);
-            
-            // Fallback to local storage
-            behavioralData.push(newEntry);
-            saveData();
-            populateTable(behavioralData);
-            populateFilters();
-            updateStatistics();
-            
+
+            // PR failed — fall back to GitHub Issue
+            window.open(buildNewEntryIssueUrl(newEntry), '_blank');
+
             // Close modal
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
             form.reset();
-            
-            showErrorMessage(`Failed to create pull request: ${error.message}. Entry saved locally instead.`);
+
+            showErrorMessage(`Pull request failed: ${error.message}. A GitHub Issue has been opened instead.`);
         } finally {
             submitButton.textContent = originalText;
             submitButton.disabled = false;
@@ -1690,6 +1685,33 @@ function buildGitHubIssueUrl(original, edited) {
     const title = encodeURIComponent(`Correction: ${original.title.slice(0, 60)}`);
     const bodyEnc = encodeURIComponent(body);
     return `https://github.com/david-j-cox/catalog-of-principles-and-processes/issues/new?title=${title}&body=${bodyEnc}`;
+}
+
+// ── New Entry Issue Fallback ──────────────────────────────────────────────
+
+function buildNewEntryIssueUrl(entry) {
+    const process = Array.isArray(entry.process) ? entry.process.join('; ') : String(entry.process || '');
+    let body = `## New Entry Submission\n\n`;
+    body += `| Field | Value |\n|---|---|\n`;
+    body += `| Title | ${entry.title || ''} |\n`;
+    body += `| Journal | ${entry.journal || 'JEAB'} |\n`;
+    body += `| Authors | ${(entry.authors || []).join('; ')} |\n`;
+    body += `| URL | ${entry.url || ''} |\n`;
+    body += `| Year | ${entry.year || ''} |\n`;
+    body += `| Volume | ${entry.volume || ''} |\n`;
+    body += `| Issue | ${entry.issue || ''} |\n`;
+    body += `| Pages | ${entry.pages || ''} |\n`;
+    body += `| Abstract | ${(entry.abstract || '').slice(0, 300)} |\n`;
+    body += `| Process | ${process} |\n`;
+    body += `| Static Equation | ${(entry['static-equation'] || '').slice(0, 500)} |\n`;
+    body += `| Static Equation Definitions | ${(entry['static-equation-definitions'] || '').slice(0, 500)} |\n`;
+    body += `| Recursive Equation | ${(entry['recursive-equation'] || '').slice(0, 500)} |\n`;
+    body += `| Recursive Equation Definitions | ${(entry['recursive-equation-definitions'] || '').slice(0, 500)} |\n`;
+    body += `\n*Submitted via catalog add-entry form*`;
+
+    const title = encodeURIComponent(`New entry: ${(entry.title || '').slice(0, 60)}`);
+    const bodyEnc = encodeURIComponent(body);
+    return `https://github.com/${GITHUB_CONFIG.owner}/${GITHUB_CONFIG.repo}/issues/new?title=${title}&body=${bodyEnc}`;
 }
 
 // ── Signoff Pull Request ──────────────────────────────────────────────────
