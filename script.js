@@ -813,7 +813,7 @@ function renderPage() {
 
         const staticEquation = normalizeEqGlobal(article['static-equation']);
         const staticDefinitions = article['static-equation-definitions'] || '';
-        const recursiveEquation = normalizeEq(article['recursive-equation']);
+        const recursiveEquation = normalizeEqGlobal(article['recursive-equation']);
         const recursiveDefinitions = article['recursive-equation-definitions'] || '';
 
         const isReviewed = article.reviewed === true ||
