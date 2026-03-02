@@ -43,6 +43,51 @@ let editModalOriginalArticle = null;
 // Cached filter DOM elements (populated on DOMContentLoaded)
 let filterEls = {};
 
+// Modal focus trap state
+let previouslyFocusedElement = null;
+let activeTrapHandler = null;
+
+function openModal(modal) {
+    previouslyFocusedElement = document.activeElement;
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    // Focus first focusable element inside the modal
+    const focusable = modal.querySelectorAll('input, select, textarea, button, [tabindex]:not([tabindex="-1"])');
+    if (focusable.length) focusable[0].focus();
+
+    // Trap Tab within modal
+    activeTrapHandler = function(e) {
+        if (e.key !== 'Tab') return;
+        const nodes = modal.querySelectorAll('input, select, textarea, button, [tabindex]:not([tabindex="-1"])');
+        if (!nodes.length) return;
+        const first = nodes[0];
+        const last = nodes[nodes.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
+    };
+    modal.addEventListener('keydown', activeTrapHandler);
+}
+
+function closeModal(modal, form) {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    if (form) form.reset();
+    if (activeTrapHandler) {
+        modal.removeEventListener('keydown', activeTrapHandler);
+        activeTrapHandler = null;
+    }
+    if (previouslyFocusedElement) {
+        previouslyFocusedElement.focus();
+        previouslyFocusedElement = null;
+    }
+}
+
 // GitHub configuration
 const GITHUB_CONFIG = {
     owner: 'david-j-cox',
@@ -152,8 +197,9 @@ function createAbstractContent(abstract, articleIndex) {
 
     const safe = escapeHtml(abstract);
     const maxLength = 80;
-    const truncated = safe.length > maxLength ? safe.substring(0, maxLength) : safe;
-    const needsTruncation = safe.length > maxLength;
+    // Truncate on raw text length so collapsed view is consistent after toggle
+    const needsTruncation = abstract.length > maxLength;
+    const truncated = needsTruncation ? escapeHtml(abstract.substring(0, maxLength)) + '...' : safe;
 
     const contentId = `abstract-${articleIndex}`;
     const btnId = `btn-${articleIndex}`;
@@ -161,7 +207,7 @@ function createAbstractContent(abstract, articleIndex) {
     // Store the full text in a data attribute instead of inline JS
     return `
         <div class="abstract-content collapsed" id="${contentId}" data-full="${safe}">
-            ${needsTruncation ? truncated + '...' : safe}
+            ${truncated}
         </div>
         ${needsTruncation ? `<button class="read-more-btn" id="${btnId}" onclick="toggleAbstract('${contentId}', '${btnId}')">Read More</button>` : ''}
     `;
@@ -1195,9 +1241,11 @@ function updateStatistics() {
     });
     const uniqueProcesses = allProcesses.size;
     const years = behavioralData.map(a => a.year).filter(y => y != null && y > 0);
-    const yearRange = years.length ? `${Math.min(...years)} - ${Math.max(...years)}` : 'N/A';
+    const minYear = years.reduce((m, y) => y < m ? y : m, Infinity);
+    const maxYear = years.reduce((m, y) => y > m ? y : m, -Infinity);
+    const yearRange = years.length ? `${minYear} - ${maxYear}` : 'N/A';
     const volumes = behavioralData.map(a => a.volume).filter(v => v != null && v > 0);
-    const latestVolume = volumes.length ? Math.max(...volumes) : 0;
+    const latestVolume = volumes.reduce((m, v) => v > m ? v : m, 0);
 
     // Per-journal counts
     const journalCounts = {};
@@ -1286,23 +1334,18 @@ function initializeModal() {
     
     // Open modal
     addButton.addEventListener('click', function() {
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden';
+        openModal(modal);
     });
-    
+
     // Close modal
     closeButton.addEventListener('click', function() {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-        form.reset();
+        closeModal(modal, form);
     });
-    
+
     // Close modal when clicking outside
     window.addEventListener('click', function(event) {
         if (event.target === modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            form.reset();
+            closeModal(modal, form);
         }
     });
     
@@ -1347,10 +1390,8 @@ function initializeModal() {
             updateStatistics();
             
             // Close modal and reset form
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            form.reset();
-            
+            closeModal(modal, form);
+
         } catch (error) {
             console.error('Error submitting entry:', error);
 
@@ -1358,9 +1399,7 @@ function initializeModal() {
             window.open(buildNewEntryIssueUrl(newEntry), '_blank');
 
             // Close modal
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            form.reset();
+            closeModal(modal, form);
 
             showErrorMessage(`Pull request failed: ${error.message}. A GitHub Issue has been opened instead.`);
         } finally {
@@ -1424,9 +1463,7 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         const modal = document.getElementById('add-entry-modal');
         if (modal.style.display === 'block') {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-            document.getElementById('add-entry-form').reset();
+            closeModal(modal, document.getElementById('add-entry-form'));
         }
         const editModal = document.getElementById('edit-entry-modal');
         if (editModal && editModal.style.display === 'block') {
@@ -1549,7 +1586,7 @@ function formatAuthorsForCSV(authorsField) {
     if (!authorsField) return '';
     
     if (Array.isArray(authorsField)) {
-        return authorsField.join('; ');
+        return authorsField.join('; ').replace(/"/g, '""');
     }
     
     return authorsField.replace(/"/g, '""');
@@ -1560,9 +1597,7 @@ function formatAuthorsForCSV(authorsField) {
 function closeEditModal() {
     const modal = document.getElementById('edit-entry-modal');
     if (modal) {
-        modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-        document.getElementById('edit-entry-form').reset();
+        closeModal(modal, document.getElementById('edit-entry-form'));
     }
 }
 
@@ -1583,8 +1618,7 @@ function openEditModal(article) {
     document.getElementById('edit-recursive-equation').value = normalizeEqGlobal(article['recursive-equation']);
     document.getElementById('edit-recursive-definitions').value = article['recursive-equation-definitions'] || '';
 
-    document.getElementById('edit-entry-modal').style.display = 'block';
-    document.body.style.overflow = 'hidden';
+    openModal(document.getElementById('edit-entry-modal'));
 }
 
 function initializeEditModal() {
