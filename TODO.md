@@ -47,17 +47,17 @@
 
 ## P3 — Polish
 
-- [ ] **Improve landing page orientation**
-  Move the About content (or a condensed version) to be visible on first load instead of hidden behind a tab. Add a link to JEAB. Show entry count prominently on the catalog view, not just under Statistics.
+- [x] **Improve landing page orientation** *(done 5fafd9f)*
+  Catalog subtitle dynamically shows entry count + journal names once data loads. Static fallback text displays during load.
 
-- [ ] **Fix disabled author filter UX**
-  The author dropdown is grayed out with a tooltip that only shows on hover (invisible on mobile). Either add visible helper text or remove the dropdown entirely and rely on the search box.
+- [x] **Fix disabled author filter UX** *(done 5fafd9f)*
+  Removed the disabled author dropdown entirely. Author search is handled by the text search box.
 
-- [ ] **Separate verify and correct actions**
-  Currently a reviewer who wants to verify without changing anything must open the edit modal, change nothing, check the "Mark as reviewed" box, and submit. Verify and correct are distinct actions that should have distinct UI paths.
+- [x] **Separate verify and correct actions** *(done 5fafd9f)*
+  Removed "Mark as reviewed" checkbox from edit modal. Verification is handled exclusively by the Verify button (signoff flow).
 
-- [ ] **Add search placeholder shortening**
-  The current placeholder ("Search articles, processes, abstracts, static equations, or recursive equations...") is too long and gets truncated on most screens. Shorten to something like "Search articles, authors, processes..."
+- [x] **Add search placeholder shortening** *(done 5fafd9f)*
+  Shortened placeholder to "Search articles, authors, processes..." — fits mobile and mentions authors.
 
-- [ ] **Add column help tooltips**
-  "Static Equation" and "Recursive Equation" are domain-specific terms that may confuse some visitors. Add tooltips or a small help icon explaining what each column represents.
+- [x] **Add column help tooltips** *(done 5fafd9f)*
+  Added title attributes to Abstract, Behavioral Process, Static Equation, and Recursive Equation column headers.
