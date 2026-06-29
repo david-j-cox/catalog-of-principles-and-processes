@@ -251,5 +251,6 @@
     "start": "20:30",
     "end": "04:30",
     "note": "Nightly batch window; cron runs batches only within this range."
-  }
+  },
+  "cooldown_until": 0
 }
