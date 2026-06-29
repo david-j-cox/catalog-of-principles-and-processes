@@ -147,3 +147,5 @@ equations_judged.json
 scrapers/
 DataToAdd/
 data_colleciton_template.xlsx
+# transient validation batch script
+.validation/batch.mjs

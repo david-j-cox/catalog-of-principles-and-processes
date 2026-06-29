@@ -37,7 +37,9 @@
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "A Conjunctive Schedule of Reinforcement",
@@ -76,7 +78,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1958.1-25",
     "process": [
-      "Operant Extinction",
+      "Extinction",
       "Schedule: Fixed Interval",
       "Reinforcement: Positive"
     ],
@@ -841,15 +843,24 @@
     "volume": 1,
     "issue": 2,
     "pages": "205-205",
-    "authors": [],
+    "authors": [
+      "Conrad, D. G.",
+      "Sidman, M.",
+      "Herrnstein, R. J."
+    ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1403933/",
-    "process": [],
+    "process": [
+      "DRL",
+      "Deprivation"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "THE EFFECT OF METHAMPHETAMINE ON OPERANT LEVELAND A VOIDANCE BEHA VIOR",
@@ -1827,17 +1838,19 @@
     "signoffs": 1
   },
   {
-    "title": "PUNISHMENT A ND RECO VER Y D URING FIXED-RA TIO PERFORMA NCE'",
+    "title": "Punishment and Recovery During Fixed-Ratio Performance",
     "year": 1959,
     "volume": 2,
     "issue": 4,
     "pages": "301-305",
     "authors": [
-      "Azrin, Nathan, H."
+      "Azrin, N. H."
     ],
     "url": "https://doi.org/10.1901/jeab.1959.2-301",
     "process": [
-      "Aversive control"
+      "Aversive Control",
+      "Punishment",
+      "Schedule: Fixed Ratio"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -1881,7 +1894,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1959.2-319",
     "process": [
-      "Stimulus generalization"
+      "Stimulus Generalization"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -1995,7 +2008,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1959.2-357",
     "process": [
-      "Conditioned suppression"
+      "Conditioned Suppression"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -2040,7 +2053,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1960.3-1",
     "process": [
-      "Operant conditioning"
+      "Operant Conditioning"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -2124,7 +2137,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1960.3-17",
     "process": [
-      "Operant conditioning"
+      "Operant Conditioning"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -3087,7 +3100,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1961.4-31",
     "process": [
-      "Stimulus generalization"
+      "Stimulus Generalization"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -5375,7 +5388,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1962.5-299",
     "process": [
-      "Operant conditioning"
+      "Operant Conditioning"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -5397,7 +5410,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1962.5-305",
     "process": [
-      "Operant conditioning"
+      "Operant Conditioning"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -10904,7 +10917,7 @@
     "url": "https://doi.org/10.1901%2Fjeab.1965.8-47",
     "process": [
       "Discrimination Learning",
-      "Conditioned suppression",
+      "Conditioned Suppression",
       "Punishment",
       "Generalization"
     ],
@@ -10989,7 +11002,7 @@
     "url": "https://doi.org/10.1901%2Fjeab.1965.8-55",
     "process": [
       "Reinforcement: Positive",
-      "Aversive control"
+      "Aversive Control"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -11201,7 +11214,7 @@
       "Operant Conditioning",
       "Scheduled of Reinforcement: Fixed Interval",
       "Schedules of Reinforcement: Fixed Ratio",
-      "Schedules of Reinforcement:Variable Interval",
+      "Schedules of Reinforcement: Variable Interval",
       "Schedules of Reinforcement: DRL",
       "Reinforcement: Positive"
     ],
@@ -11463,7 +11476,7 @@
     ],
     "url": "https://doi.org/10.1901%2Fjeab.1965.8-125",
     "process": [
-      "Schedules of Reinforcement:Fixed Ratio",
+      "Schedules of Reinforcement: Fixed Ratio",
       "Discrimination Training",
       "Alternating Schedules of Reinforcement"
     ],
@@ -11683,7 +11696,7 @@
     "url": "https://doi.org/10.1901%2Fjeab.1965.8-161",
     "process": [
       "Multiple Schedules of Reinforcement",
-      "Schedules of Reinforcement:Fixed Ratio",
+      "Schedules of Reinforcement: Fixed Ratio",
       "Alternating Schedules of Reinforcement",
       "Secondary Reinforcement Pause"
     ],
@@ -11748,7 +11761,7 @@
     "url": "https://doi.org/10.1901%2Fjeab.1965.8-171",
     "process": [
       "Punishment:Positive",
-      "Schedules of Reinforcement:Variable Interval",
+      "Schedules of Reinforcement: Variable Interval",
       "Schedules of Reinforcement: Negative",
       "Aversive Stimulation",
       "Classical Conditioning",
@@ -11927,7 +11940,7 @@
     "url": "https://doi.org/10.1901%2Fjeab.1965.8-189",
     "process": [
       "Schedules of Reinforcement: Fixed Ratio",
-      "Schedules of Reinforcement:Variable Interval",
+      "Schedules of Reinforcement: Variable Interval",
       "Operant Conditioning",
       "Discrimination Training",
       "Reinforcement: Positive",
@@ -12020,7 +12033,7 @@
     "process": [
       "Multiple Schedules of Reinforcement",
       "Concurrent Schedule of Reinforcement",
-      "Reinforcement:Positive",
+      "Reinforcement: Positive",
       "Reinforcement Mangnitude",
       "Response Rate",
       "Schedules of Reinforcement: Variable Interval",
@@ -13637,7 +13650,7 @@
     ],
     "url": "https://doi.org/10.1901%2Fjeab.1965.8-427",
     "process": [
-      "Schedules of Reinforcement: Fixed-Interval",
+      "Schedules of Reinforcement: Fixed Interval",
       "Discrimination Training",
       "Differential Reinforcement",
       "Scheudules of Reinforcment: Fixed-Rate"
@@ -14412,7 +14425,7 @@
     "url": "https://doi.org/10.1901/jeab.1966.9-95",
     "process": [
       "Opernat Coniditoning",
-      "Reinforcement:Positive",
+      "Reinforcement: Positive",
       "Schedules of Reinforcement: Fixed Interval",
       "Schedules of Reinforcement: Fixed Ratio",
       "Shaping"
@@ -14692,11 +14705,11 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1966.9-147",
     "process": [
-      "Schedules of Reinforcement: Fixed-Ratio",
+      "Schedules of Reinforcement: Fixed Ratio",
       "Disrimination Training",
       "Reinforcement: Postiive",
       "Operant Conditioning",
-      "Time-out"
+      "Time-Out"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -14949,7 +14962,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1966.9-205",
     "process": [
-      "Time-out",
+      "Time-Out",
       "Punishment: Positive",
       "Discrimination Training",
       "Operant Conditioning",
@@ -15292,8 +15305,8 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1966.9-267",
     "process": [
-      "Schedules of Reinforcement: Fixed-Interval",
-      "Schedules of Reinforcement: Fixed-Ratio",
+      "Schedules of Reinforcement: Fixed Interval",
+      "Schedules of Reinforcement: Fixed Ratio",
       "Schedules of Reinforcement: Multiple Schedules",
       "Punishment: Electric Shocks",
       "Schedule-Complex Termination",
@@ -15363,7 +15376,7 @@
       "Discrimination Learning",
       "Discrimination Training",
       "Schedules of Reinforcement: Multiple",
-      "Schedules of Reinforcement: Fixed-Ratio",
+      "Schedules of Reinforcement: Fixed Ratio",
       "Schedules of Reinforcement: Fixed Interval",
       "Reinforcement: Positive",
       "Priming Stimulus"
@@ -15539,7 +15552,7 @@
     "process": [
       "Chained Interval",
       "Schedules of Reinforcement: Continuous Reinforcement",
-      "Schedules of Reinforcement: Fixed-Interval",
+      "Schedules of Reinforcement: Fixed Interval",
       "Operant Conditioning",
       "Schedules of Reinforcemetn: Variable Interval",
       "Schedules of Reinforcement: Variable Ratio",
@@ -15633,7 +15646,7 @@
       "Temporal Relations",
       "Parametric Conditions",
       "Operant Conditioning",
-      "Schedules of Reinforcement: Fixed-Interval",
+      "Schedules of Reinforcement: Fixed Interval",
       "Scheules of Reinforcment: Multiple",
       "Extinction",
       "Discrimination Training"
@@ -15944,7 +15957,7 @@
     "process": [
       "Chained Fixed Interval-Fixed Ratio Schedule",
       "Avoidance Learning",
-      "Time-out",
+      "Time-Out",
       "Two-Component Chain"
     ],
     "static-equation": "",
@@ -16038,9 +16051,9 @@
     "url": "https://doi.org/10.1901/jeab.1966.9-475",
     "process": [
       "Second-Order Schedules",
-      "Schedules of Reinforcement: Fixed-Interval",
+      "Schedules of Reinforcement: Fixed Interval",
       "Reinforcement: Positive",
-      "Schedules of Reinforcement: Fixed-Ratio",
+      "Schedules of Reinforcement: Fixed Ratio",
       "Operant Conditioning",
       "Schedules of Reinforcment: Tandem",
       "Conditioned Reinforcement",
@@ -16499,8 +16512,8 @@
       "Free-Operant Avoidance",
       "Escape-Avoidance Training",
       "Reinforcement Withdrawl",
-      "Reinforcement:Positive",
-      "Time-out",
+      "Reinforcement: Positive",
+      "Time-Out",
       "Schedules of Reinforcement: Variable Interval",
       "Maintenance of Avoidance Behavior"
     ],
@@ -16549,7 +16562,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1966.9-573",
     "process": [
-      "Schedules of Reinforcement: Fixed-Interval",
+      "Schedules of Reinforcement: Fixed Interval",
       "Reinforcement: Positive",
       "Temporal Dependency",
       "Chained Behavior",
@@ -43216,7 +43229,7 @@
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1980.33-59",
     "process": [
       "Schedule-Induced Timeout",
-      "Schedule: Fixed-Time",
+      "Schedule: Fixed Time",
       "Schedule: Variable-Time",
       "Extinction"
     ],
@@ -43271,7 +43284,7 @@
       "Stimulus Control",
       "Over-Shadowing",
       "Blocking",
-      "Schedule: Variable-Interval"
+      "Schedule: Variable Interval"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -43372,7 +43385,7 @@
     "process": [
       "Repeated Acquisition",
       "Response Chains",
-      "Schedule: Fixed-Ratio",
+      "Schedule: Fixed Ratio",
       "Ratio Strain"
     ],
     "static-equation": "",
@@ -43504,7 +43517,7 @@
       "Schedule: Tandem",
       "Schedule: Multiple",
       "Schedule: Mixed",
-      "Schedule: Fixed-Interval",
+      "Schedule: Fixed Interval",
       "Conditioned Reinforcement",
       "Contingency"
     ],
@@ -43764,7 +43777,7 @@
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1980.33-337",
     "process": [
       "Schedule-Induced Polydipsia",
-      "Schedule: Fixed-Time"
+      "Schedule: Fixed Time"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -43791,7 +43804,7 @@
       "Psychophysical Tasks",
       "Auditory Stimuli",
       "Intracranial Stimulaion",
-      "Schedule: Fixed-Interval"
+      "Schedule: Fixed Interval"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -43891,7 +43904,7 @@
       "Matching",
       "Quantitative Law of Effect",
       "Undermatching",
-      "Schedule: Variable-Interval"
+      "Schedule: Variable Interval"
     ],
     "static-equation": "R_{\\text{out}} = \\left\\{ \\ln \\left[ 1 + \\frac{A_B (1 - e^{-w^*})}{\\gamma A_B (1 - e^{-w})} \\left( e^{\\frac{1}{R_{t_n}} + w} - 1 \\right) \\right] - w^* \\right\\}^{-1}; e^{1/R_{\\text{out}}} = m\\, e^{1/R_{t_n}} + b; e^{1/x} = 1 + \\frac{1}{x} + \\frac{1}{2!\\,x^2} + \\frac{1}{3!\\,x^3} + \\cdots + \\frac{1}{(n-1)!\\,x^{n-1}} + \\cdots; e^{1/x} \\approx 1 + \\frac{1}{x}; 1 + \\frac{1}{R_{\\text{out}}} = m\\left(1 + \\frac{1}{R_{t_n}}\\right) + b; \\frac{1}{R_{\\text{out}}} = m\\left(\\frac{1}{R_{t_n}}\\right) + (b + m - 1); R_{\\text{out}} = \\frac{\\frac{1}{(b + m - 1)} R_{t_n}}{R_{t_n} + \\frac{m}{(b + m - 1)}}; R_{\\text{out}} = \\frac{k R_{t_n}}{R_{t_n} + r_e}; \\frac{e^{1/R_{1\\text{OUT}}} - 1}{e^{1/R_{2\\text{OUT}}} - 1} = \\left[ \\frac{a_1}{a_2} \\right] \\frac{e^{1/R_{1\\text{IN}}} - 1}{e^{1/R_{2\\text{IN}}} - 1}; e^{1/x} - 1 \\approx \\frac{1}{x}; \\frac{1/R_{1\\text{OUT}}}{1/R_{2\\text{OUT}}} = \\left[ \\frac{a_1}{a_2} \\right] \\frac{1/R_{1\\text{IN}}}{1/R_{2\\text{IN}}}; \\frac{R_{1\\text{OUT}}}{R_{2\\text{OUT}}} = \\left[ \\frac{a_2}{a_1} \\right] \\frac{R_{1\\text{IN}}}{R_{2\\text{IN}}}; k = \\frac{1}{(b + m - 1)}; k = \\left[ c \\left( \\frac{e^{w}}{A_B} \\right) + d \\right]^{-1}; \\frac{A_{1R}(1 - e^{-w_1})}{A_{2R}(1 - e^{-w_2})}; \\frac{P_{1R}}{P_{2R}} \\cdot \\frac{P_{2B}}{P_{1B}}; \\frac{R_{1\\text{OUT}}}{R_{2\\text{OUT}}} = \\left[ \\frac{P_{1R}}{P_{2R}} \\cdot \\frac{P_{2B}}{P_{1B}} \\right] \\frac{R_{1\\text{IN}}}{R_{2\\text{IN}}}; \\frac{R_{1\\text{OUT}}}{R_{2\\text{OUT}}} = \\frac{e^{\\frac{1}{R_{t_{2n}}} + w} - 1}{e^{\\frac{1}{R_{t_{1n}}} + w} - 1}; \\frac{R_{1\\text{OUT}}}{R_{2\\text{OUT}}} = c \\left( \\frac{R_{1\\text{IN}}}{R_{2\\text{IN}}} \\right)^{n}; \\frac{R_{1\\text{OUT}}}{R_{2\\text{OUT}}} = \\left[ \\frac{a_2}{a_1} \\right] \\frac{e^{\\frac{1}{R_{t_{2n}}} + w} - 1}{e^{\\frac{1}{R_{t_{1n}}} + w} - 1}; R_{\\text{OUT}} = k R_{\\text{IN}}; R_{\\text{OUT}} = \\frac{k R_{\\text{IN}}}{R_{\\text{IN}} + r_e}; \\frac{R_{\\text{OUT}}}{k} = \\frac{R_{\\text{IN}}}{R_{\\text{IN}} + r_e}; \\frac{R_{\\text{OUT}}}{R_{\\text{OUT}} + R_e} = \\frac{R_{\\text{IN}}}{R_{\\text{IN}} + r_e}; R_{\\text{OUT}} = \\left\\{ \\ln \\left[ 1 + \\left( \\frac{P_B}{\\gamma P_B} \\right) \\left( e^{1/R_{\\text{IN}}} - 1 \\right) \\right] \\right\\}^{-1}",
     "static-equation-definitions": "R_{\\text{out}}, R_{\\text{OUT}}: output (response) rate predicted by the multivariate rate equation (MRE). R_{\\text{in}}, R_{\\text{IN}}, R_{t_n}: input (reinforcement) rate; R_{t_n} is the per-schedule input rate (R_{t_{1n}}, R_{t_{2n}} for the two alternatives of a concurrent schedule). k: maximum (asymptotic) response rate, Herrnstein's k, identified here as 1/(b+m-1). r_e: rate of reinforcement from extraneous sources, Herrnstein's r_e, identified here as m/(b+m-1). R_e: output-side extraneous-rate term in the symmetric ratio form; note this is a SEPARATE parameterization and R_e is NOT equal to r_e (the constant-r_e equivalent of R_OUT=kR_IN/(R_IN+r_e) would require R_e=k-R_OUT, not a constant). A_B, P_B: amplitude/probability parameters of the MRE. CAUTION (low confidence, probable OCR conflation): in E1 and E25 the same symbol appears in both numerator and denominator of the prefactor (A_B/(\\gamma A_B), P_B/(\\gamma P_B)), which algebraically self-cancels to 1/\\gamma; the original MRE almost certainly held two DISTINCT amplitude parameters here (e.g., a reinforcer-amplitude over a behavior-amplitude), so this reading is unconfirmed against the scanned source. A_{1R}, A_{2R}: alternative-specific reinforcer-amplitude parameters appearing in the bias term a_1/a_2 = A_{1R}(1-e^{-w_1})/A_{2R}(1-e^{-w_2}); the denominator A_{2R}(1-e^{-w_2}) is an INFERRED reconstruction (mirror of the surviving cut-off numerator fragment), not recovered text. w, w^*, w_1, w_2: weighting/time-constant parameters of the MRE; note the +w additive exponent term appears in E16/E18/E20 but is absent in E9/E11 (possible OCR loss of +w in the OUT/IN-variable forms, unconfirmed). \\gamma: scaling parameter of the MRE. m, b: slope and intercept of the linearizing exponential transform relating e^{1/R_{\\text{out}}} to e^{1/R_{t_n}}. a_1, a_2: alternative-specific sensitivity/bias parameters; the successive re-expressions a_2/a_1 = A_{1R}(1-e^{-w_1})/A_{2R}(1-e^{-w_2}) = P_{1R}/P_{2R} \\cdot P_{2B}/P_{1B} are the paper's re-writings of ONE bias quantity, not independent claims. c: bias coefficient (generalized matching); n: sensitivity exponent (generalized matching); d: additive constant. P_{1R}, P_{2R}, P_{1B}, P_{2B}: probability parameters for reinforcement (subscript R) and behavior (subscript B) on alternatives 1 and 2. x: dummy variable in the series expansion of e^{1/x}.",
@@ -43937,7 +43950,7 @@
       "Schedule-Induced Escape",
       "Timeout from Reinforcement",
       "Schedule: Multiple",
-      "Schedule: Fixed-Ratio"
+      "Schedule: Fixed Ratio"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -44093,8 +44106,8 @@
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1980.34-61",
     "process": [
       "Schedule: Fixed -Ratio",
-      "Schedule: Fixed-Interval",
-      "Schedule: Variable-Interval",
+      "Schedule: Fixed Interval",
+      "Schedule: Variable Interval",
       "Postreinforcement Pause",
       "Proximity",
       "Delay of Reinforcement"
@@ -44120,7 +44133,7 @@
     ],
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1980.34-77",
     "process": [
-      "Schedule: Concurrent Chain",
+      "Schedule: Concurrent-Chain",
       "Preference",
       "Free vs Forced Choice",
       "Response Variability",
@@ -44148,7 +44161,7 @@
     "process": [
       "Repeated Acquisition",
       "Response Chains",
-      "Schedule: Fixed-Ratio"
+      "Schedule: Fixed Ratio"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -44171,7 +44184,7 @@
     ],
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1980.34-93",
     "process": [
-      "Schedule: Fixed-Ratio"
+      "Schedule: Fixed Ratio"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -44226,7 +44239,7 @@
       "Positive Reinforcement",
       "Negative Reinforcement",
       "Schedule: Concurrent",
-      "Schedule: Fixed-Interval",
+      "Schedule: Fixed Interval",
       "Electric Shock"
     ],
     "static-equation": "",
@@ -44380,7 +44393,7 @@
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1980.34-185",
     "process": [
       "Schedule: Fixed Ratio",
-      "Schedule: Fixed-Interval",
+      "Schedule: Fixed Interval",
       "Schedule: Multiple"
     ],
     "static-equation": "",
@@ -44551,7 +44564,7 @@
     ],
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1980.34-285",
     "process": [
-      "Schedule: Fixed-Interval",
+      "Schedule: Fixed Interval",
       "Schedule: DRO",
       "Response-Independent Reinforcement",
       "Schedule: Concurrent",
@@ -45598,7 +45611,7 @@
     ],
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1981.36-41",
     "process": [
-      "Schedule: Variable-Interval",
+      "Schedule: Variable Interval",
       "Extinction",
       "Schedule: Concurrent",
       "Conditioned Reinforcer"
@@ -45627,7 +45640,7 @@
       "Operant Responding",
       "Stimulus Control",
       "Schedule: Mixed",
-      "Schedule: Variable-Interval",
+      "Schedule: Variable Interval",
       "Extinction"
     ],
     "static-equation": "",
@@ -45740,7 +45753,7 @@
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1981.36-101",
     "process": [
       "Adjunctive Behavior",
-      "Schedule: Random-Interval",
+      "Schedule: Random Interval",
       "Schedule: Fixed Time"
     ],
     "static-equation": "y = a \\log x + b",
@@ -45951,7 +45964,7 @@
     ],
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1981.36-221",
     "process": [
-      "Schedule: Concurrent Chain",
+      "Schedule: Concurrent-Chain",
       "Schedule: Variable Interval",
       "Reinforcement Delay",
       "Choice"
@@ -46870,7 +46883,7 @@
     "process": [
       "Discrimination Training",
       "Differential Reinforcement",
-      "Schedule: Random-Interval",
+      "Schedule: Random Interval",
       "Catastrophe Theory",
       "Forced Choice"
     ],
@@ -47099,7 +47112,7 @@
       "Matching",
       "Undermatching",
       "Schedule: Concurrent",
-      "Schedule: Variable-Interval"
+      "Schedule: Variable Interval"
     ],
     "static-equation": "\\log \\frac{B_1}{B_2} = a \\log \\frac{r_1}{r_2} + \\log b; \\sum_i (Y_i - \\bar{Y})^2 \n= \\sum_i (Y_i - \\hat{Y}_i)^2 \n+ \\sum_i (\\hat{Y}_i - \\bar{Y})^2\n+ 2 \\sum_i (Y_i - \\hat{Y}_i)(\\hat{Y}_i - \\bar{Y}); R^2 = \\frac{\\text{SSR}}{\\text{SSTO}} = 1 - \\frac{\\text{SSE}}{\\text{SSTO}}; \\text{Loss in Predictability} = \\frac{H - H'}{H}; D = \\frac{\\mathrm{SSE}_2 - \\mathrm{SSE}_1}{\\mathrm{SSE}_1}",
     "static-equation-definitions": "",
@@ -48166,7 +48179,7 @@
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1982.38-321",
     "process": [
       "Choice",
-      "Schedule: Concurrent Chain",
+      "Schedule: Concurrent-Chain",
       "Delay Reduction",
       "Conditioned Reinforcement"
     ],
