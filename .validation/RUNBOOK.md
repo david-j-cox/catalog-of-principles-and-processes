@@ -26,9 +26,13 @@ reviewed by the EAB single-reviewer (+escalation) workflow, applied, and committ
    to chain cycles; otherwise the next heartbeat fire will pick up.
 6. Done when preflight reports `complete:true` (entry_track done==11920 AND equation_track remaining==[]).
 
-## Tracks remaining
-- entry_track: metadata + process tag for all 11,920 (validate existing 785, assign empties, audit metadata).
-- equation_track: 205 remaining equation entries (resume run wf_90a9eb5a-350, cached prefix returns instantly).
+## Tracks (gen_batch.py auto-selects; apply_batch.py auto-detects)
+- equation_track FIRST: 205 remaining equation entries, 8/cycle via the three-editor panel
+  (tpl_equation.mjs). Drains before the entry track begins.
+- entry_track: metadata + process tag for all 11,920, 40/cycle via single reviewer + escalation
+  (tpl_entry.mjs). Validate existing 785 tags, assign empties, audit metadata.
+gen_batch.py 40 -> emits an 8-entry equation batch while equations remain, else a 40-entry entry batch.
+Pass the printed `selected` CSV to apply_batch.py; it routes by track automatically.
 
 ## Safety invariants
 - Only `reviewed==true && !needs_human` verdicts mutate data.json.
