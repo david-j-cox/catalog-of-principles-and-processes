@@ -61817,12 +61817,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1322084/",
     "process": [],
-    "static-equation": "A' = f(n); B'H = g(n)",
-    "static-equation-definitions": "A' = sensitivity of self-reports; B'H = bias for reporting successful responses; n = number of sample elements",
+    "static-equation": "A' = \\frac{1}{2} + \\frac{(H - F)(1 + H - F)}{4H(1 - F)}; B''_H = \\frac{H(1 - H) - F(1 - F)}{H(1 - H) + F(1 - F)}",
+    "static-equation-definitions": "A' = nonparametric index of sensitivity (discriminability) of self-reports (Pollack & Norman / Grier 1971), reported as a function of n; B''_H = nonparametric Grier/Hodos index of response bias for reporting a successful (point-meeting) choice (Grier 1971), reported as a function of n; H = hit rate (proportion of \"yes\" self-reports on trials in which the choice met the point contingency); F = false-alarm rate (proportion of \"yes\" self-reports on trials in which the choice did not meet the point contingency); n = number of elements in the compound sample stimulus. Defining (H >= F) computing forms; the empirical content of the paper is the dependence of A' and B''_H on n.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Adults' self-reports about their choices in a delayed matching-to-sample task were studied as a function of the number of elements (one, two, or three) in a compound sample stimulus. Signal-detection analyses were used to examine control of self-reports by the number of sample elements, by the speed and accuracy of choices reported about, and by several events contingent on self-reports. On each matching-to-sample trial, a sample element appeared as one of two comparison stimuli. Choice of the matching element, if made within 500 ms of the onset of the comparison stimuli, produced points worth money or chances in a drawing for money, depending on the subject. After each choice, subjects pressed either a \"yes\" or \"no\" button to answer a computer-generated query about whether the choice met the point contingency. The number of sample elements in the matching-to-sample task varied across trials, and events contingent on self-reports varied across experimental conditions. In Experiment 1, the conditions were defined by different combinations of feedback messages and point consequences contingent on self-reports, but self-reports were systematically influenced only by the sample-stimulus manipulation. Self-report errors increased with the number of sample elements. False alarms (inaccurate reports of success) were far more common than misses (inaccurate reports of failure), and false alarms were especially likely after choices that were correct but too slow to meet the point contingency. Sensitivity (A') of self-reports decreases as the number of sample elements increased. In addition, self-reports were more sensitive to choice accuracy than to choice speed. All subjects showed a pronounced bias (B'H) for reporting successful responses, although the bias was reduced as the number of sample elements increased and successful choices became less frequent. Experiment 2 demonstrated that the failure of point contingencies to influence self-reports in the first experiment was not due to a general ineffectiveness of the point consequences. Rates of inaccurate self-reports decreased when they resulted in point losses and increased when they resulted in point gains.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 0
   },
   {
     "title": "Tests for control by exclusion and negative stimulus relations of arbitrary matching to sample in a \"symmetry-emergent\" chimpanzee.",
@@ -63146,12 +63148,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1322171/",
     "process": [],
-    "static-equation": "unit \\text{ price} = \\frac{characteristics \\text{ of the schedule of reinforcement}}{magnitude \\text{ of reinforcement}}",
-    "static-equation-definitions": "unit price = cost-benefit ratio; characteristics of the schedule of reinforcement = features of the reinforcement schedule; magnitude of reinforcement = amount of reinforcement",
+    "static-equation": "\\text{unit price} = \\frac{\\text{characteristics of the schedule of reinforcement}}{\\text{magnitude of reinforcement}}",
+    "static-equation-definitions": "unit price = cost-benefit ratio; characteristics of the schedule of reinforcement = features of the reinforcement schedule (the response/cost requirement, e.g. fixed-ratio value, in the numerator); magnitude of reinforcement = amount of reinforcement (e.g. dose, duration, or number of units) in the denominator",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "In this paper, we applied the behavioral-economic concept of unit price to the study of reinforcer magnitude in an attempt to provide a consistent account of the effects of reinforcer magnitude on behavior. Recent research in the experimental analysis of behavior and in behavioral pharmacology suggests that reinforcer magnitude interacts with the schedule of reinforcement to determine response rate and total consumption. The utility of the unit-price concept thus stems from its ability to quantify this interaction as a cost-benefit ratio (i.e., unit price = characteristics of the schedule of reinforcement divided by magnitude of reinforcement). Research employing the unit-price concept has shown that as unit price increases, a positively decelerating function exists for consumption (i.e., a function with an increasingly negative slope, when plotted on log coordinates) and a bitonic function exists for response rate. Based on these findings, the present analysis applied the unit-price concept to those studies of reinforcer magnitude and drug self-administration that examined the effects of reinforcer magnitude on response rate using simple schedules of reinforcement (e.g., fixed-ratio schedule). This resulted in three findings: (a) Reinforcer-magnitude manipulations and schedule manipulations interact in a manner that can be quantified in terms of unit price as benefit and cost factors, respectively; (b) different reinforcer-magnitude manipulations are functionally interchangeable as benefit factors in the unit-price ratio; and (c) these conclusions appear warranted despite the differences in reinforcers (food or drug), species (dogs, monkeys, or rats), and schedules (interval or ratio), and despite the fact that these studies were not designed for a unit-price analysis. In methodological terms, these results provide further evidence that employing the unit-price concept is a parsimonious method for examining the effects of reinforcer magnitude. In theoretical terms, these results suggest that a single process may underlie the effect of combined reinforcer-magnitude and schedule manipulations.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Temporal control in fixed-interval schedules",
@@ -63260,12 +63264,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1334354/",
     "process": [],
-    "static-equation": "R_e = \\frac{k R_e}{R_e + R_b}",
-    "static-equation-definitions": "R_e = efficacy of the reinforcer; k = motor performance; R_b = background reinforcement rate",
+    "static-equation": "B = \\frac{k r}{r + R_e}",
+    "static-equation-definitions": "B = foreground response rate; k = asymptotic response rate (motor-performance parameter); r = foreground (programmed) reinforcement rate; R_e = rate of reinforcement from extraneous/background sources (reinforcer-efficacy parameter); R_b = added/signaled background reinforcement rate (experimental manipulation hypothesized under Herrnstein's account to increase the estimated R_e; it is not a separate symbol in the fitted equation)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Herrnstein's (1970) hyperbolic matching equation describes the relationship between response rate and reinforcement rate. It has two estimated parameters, k and Re. According to one interpretation, k measures motor performance and Re measures the efficacy of the reinforcer maintaining responding relative to background sources of reinforcement. Experiment 1 tested this interpretation of the Re parameter by observing the effect of adding and removing an additional source of reinforcement to the context. Using a within-session procedure, estimates of Re were obtained from the response-reinforcer relation over a series of seven variable-interval schedules. A second, concurrently available variable-interval schedule of reinforcement was added and then removed from the context. Results showed that when the alternative was added to the context, the value of Re increased by 107 reinforcers per hour; this approximated the 91 reinforcers per hour obtained from this schedule. Experiment 2 investigated the effects of signaling background reinforcement on k and Re. The signal decreased Re, but did not have a systematic effect on k. In general, the results supported Herrnstein's interpretation that in settings with one experimenter-controlled reinforcement source, Re indexes the strength of the reinforcer maintaining responding relative to uncontrolled background sources of reinforcement.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Effects of intertrial reinforcers on self-control choice.",
@@ -63722,11 +63728,13 @@
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1334425/",
     "process": [],
     "static-equation": "T = 90 - t",
-    "static-equation-definitions": "T = programmed terminal-link duration; t = elapsed time in the initial link",
+    "static-equation-definitions": "T = programmed terminal-link (time-left) duration in seconds; t = elapsed time in the initial link in seconds; 90 = fixed total standard interval in seconds",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "In two experiments, rats chose between a standard fixed-duration food-associated stimulus and a stimulus whose duration was the time remaining to reinforcement in an elapsing comparison interval. In Experiment 1, 4 rats responded in a time-left procedure wherein a single initial-link variable-interval schedule set up two potential terminal links simultaneously. As time elapsed in the initial-link schedule, the choice was between a standard fixed-interval 30-s terminal link and a time-left terminal link whose programmed interval requirement equaled 90 s minus the elapsed time in the initial link. Rats generally responded more on the lever with the shortest programmed terminal-link duration, but the temporal parameters of the procedure were found to vary with response distributions. Contrary to previous reports, therefore, time-left data were well predicted by choice models that make no assumptions about animal timing. In Experiment 2, 8 rats responded on a concurrent-chains schedule with independent variable-interval initial links and a time-left terminal link in one of the choice schedules. On the time-left lever, the programmed terminal-link delay equaled 90 s minus the elapsed time in the time-left initial link. On the standard lever, terminal-link responses were reinforced according to a variable-interval schedule whose average value varied over four conditions. Relative time-left initial-link responses increased in the elapsing time-left initial-link schedule as the time-left terminal link became shorter relative to the standard terminal link. Scalar expectancy theory failed to predict the resultant data, but a modified version of the delay-reduction model made good predictions. An analysis of the elaboration of scalar expectancy theory for variable delays demonstrated that the model is poorly formulated for arithmetically distributed delays.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Effects of reinforcement history on responding under progressive-ratio schedules of reinforcement.",
@@ -64757,12 +64765,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1334392/",
     "process": [],
-    "static-equation": "S = \\frac{A}{1 + kD}",
-    "static-equation-definitions": "S = strength of conditioned reinforcer; A = maximum strength; k = decay constant; D = total time spent in presence of reinforcer",
+    "static-equation": "V = \\frac{A}{1 + kD}",
+    "static-equation-definitions": "V = strength (value) of the conditioned reinforcer; A = maximum strength, i.e., value when D = 0; k = decay-rate parameter; D = total time spent in the presence of the conditioned reinforcer (stimulus) before the primary reinforcer is delivered",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "In an adjusting-delay choice procedure, pigeons could peck on either a red key or a green key. A peck on the red key always led to a delay associated with red houselights and then food. The delay was adjusted over trials to estimate an indifference point--a delay at which the two keys were chosen about equally often. In some conditions, a peck on the green key led to food on all trials after delays of either 10 s or 30 s, and green houselights were lit during the delays. In other conditions, food was presented on only half of the green-key trials. If the green houselights continued to occur on both reinforcement and nonreinforcement trials, preference for the green key always decreased. Preference for the green key also decreased if half of the trials had 30-s houselights followed by food and the other half had no green houselights and no food. However, preference for the green key actually increased if half of the trials had 10-s green houselights followed by food and the other half had no green houselights followed by no food. The latter condition therefore demonstrated a case in which preference for an alternative increased when food was removed from half of the trials. The results suggest that the red and green houselights served as conditioned reinforcers. A hyperbolic decay model (Mazur, 1989) provided good predictions for all conditions by assuming that the strength of a conditioned reinforcer is inversely related to the total time spent in its presence before food is delivered.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 0
   },
   {
     "title": "Predicting and scaling hens' preferences for topographically different responses",
@@ -64969,12 +64979,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1334448/",
     "process": [],
-    "static-equation": "R = \\frac{amount}{ITI + latency + delay}",
-    "static-equation-definitions": "R = programmed ratio; amount = amount of food; ITI = intertrial interval; latency = latency; delay = delay to reward",
+    "static-equation": "R = \\frac{\\text{amount}}{\\text{ITI} + \\text{latency} + \\text{delay}}",
+    "static-equation-definitions": "R = rate of food gain (profitability): amount of food obtained per unit total trial time (the paper's abstract phrases this as the \"programmed ratio\" or rate of food return); amount = amount of food obtained; ITI = intertrial interval; latency = latency to respond; delay = delay to reward",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Much research has focused on the effects of environmental variability on foraging decisions. However, the general pattern of preference for variability in delay to reward and aversion to variability in amount of reward remains unexplained a either a mechanistic or a functional level. Starlings' preferences between a fixed and a variable option were studied in two treatments, A and D. The fixed option was the same in both treatments (20-s fixed-interval delay, five units food). In Treatment A the variable option gave two equiprobable amounts of food (20-s delay, three or seven units) and in D it gave two equiprobable delays to food (2.5-s or 60.5-s delays, five units). In both treatments the programmed ratio [amount/(intertrial interval+latency+delay)] in the fixed option equaled the arithmetic mean of the two possible ratios in the variable option (ITI = 40 s, latency = 1 s). The variable option was strongly preferred in Treatment D and was weakly avoided in Treatment A. These results are discussed in the light of two theoretical models, a form of constrained rate maximization and a version of scalar expectancy theory. The latter accommodates more of the data and is based on independently verifiable assumptions, including Weber's law.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "The effects of differing response-force requirements on fixed-ratio responding of rats.",
@@ -65300,12 +65312,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1350112/",
     "process": [],
-    "static-equation": "R = \\frac{aR^b}{1 + aR^{b-1}}",
-    "static-equation-definitions": "R = rate of responding; a = rate of reinforcement; b = parameter",
+    "static-equation": "R = \\frac{kr}{r + r_e}",
+    "static-equation-definitions": "R = rate of responding; r = rate of reinforcement obtained; k = asymptotic (maximum) rate of responding; r_e = rate of reinforcement obtained from extraneous (unprogrammed) sources",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Three pigeons pecked keys and 5 rats pressed levers for food delivered on variable-interval schedules. During baseline conditions, subjects responded on a variable-interval 40-s schedule throughout the session. During experimental conditions, the programmed rate of reinforcement changed every 10 min in the 50-min sessions. When rats served as subjects, Herrnstein's (1970) hyperbolic equation provided a good description of the relation between rate of responding during a 10-min interval and the rate of reinforcement obtained during that interval. Responding, measured over 10-min blocks, was also approximately equally sensitive to changes in the programmed rate of reinforcement at all times in the session. Herrnstein's equation provided a poorer description of the changes in responding when pigeons served as subjects. Differences in experimental experience or differences in the absolute rates at which subjects responded may have contributed to the differences in results for these different species.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Reading and writing about research methods in behavior analysis: A personal account of a review of Johnston and Pennypacker's Strategies and Tactics of Behavioral Research (2nd ed.) and others1",
@@ -68543,12 +68557,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284649/",
     "process": [],
-    "static-equation": "D = \\frac{A}{T}",
-    "static-equation-definitions": "D = overall reinforcement density; A = reinforcer amount; T = total time",
+    "static-equation": "\\log\\left(\\frac{B_1}{B_2}\\right) = a_A \\log\\left(\\frac{A_1}{A_2}\\right) + a_D \\log\\left(\\frac{d_2}{d_1}\\right) + \\log c; D = \\frac{A}{T}",
+    "static-equation-definitions": "B_1, B_2 = number of initial-link choice responses for alternatives 1 and 2; A_1, A_2 = reinforcer amounts (points) of alternatives 1 and 2; d_1, d_2 = reinforcer delays of alternatives 1 and 2; a_A = sensitivity to reinforcer amount; a_D = sensitivity to reinforcer delay; \\log c = bias; D = overall reinforcement density; A = reinforcer amount; T = total time",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Human subjects were exposed to a concurrent-chains schedule in which reinforcer amounts, delays, or both were varied in the terminal links, and consummatory responses were required to receive points that were later exchangeable for money. Two independent variable-interval 30-s schedules were in effect during the initial links, and delay periods were defined by fixed-time schedules. In Experiment 1, subjects were exposed to three different pairs of reinforcer amounts and delays, and sensitivity to reinforcer amount and delay was determined based on the generalized matching law. The relative responding (choice) of most subjects was more sensitive to reinforcer amount than to reinforcer delay. In Experiment 2, subjects chose between immediate smaller reinforcers and delayed larger reinforcers in five conditions with and without timeout periods that followed a shorter delay, in which reinforcer amounts and delays were combined to make different predictions based on local reinforcement density (i.e., points per delay) or overall reinforcement density (i.e., points per total time). In most conditions, subjects' choices were qualitatively in accord with the predictions from the overall reinforcement density calculated by the ratio of reinforcer amount and total time. Therefore, the overall reinforcement density appears to influence the preference of humans in the present self-control choice situation.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 0
   },
   {
     "title": "Mechanisms underlying the effects of unsignaled delayed reinforcement on key pecking of pigeons under variable-interval schedules.",
