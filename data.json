@@ -3479,8 +3479,8 @@
     "process": [
       "Behavioral contrast and relative rate of responding as a function of relative reinforcement frequency (precursor to the Matching Law)"
     ],
-    "static-equation": "Rc=0.13+0.8Fc",
-    "static-equation-definitions": "",
+    "static-equation": "R_c = 0.13 + 0.8\\,F_c",
+    "static-equation-definitions": "R_c = relative rate of responding in component c (response rate in component c divided by the total response rate across components of the multiple schedule); F_c = relative frequency of reinforcement in component c (reinforcements in component c divided by total reinforcements across components); 0.13 (intercept) and 0.8 (slope) are the fitted coefficients of a linear relation between relative response rate and relative reinforcement frequency, reported as extracted from the fragment. Fit method is not verifiable from the scanned-only source (the \"least-squares regression\" attribution is not asserted as fact). This empirical near-matching line (slope < 1, small positive intercept, i.e. undermatching-like deviation from strict equality) is the central relation of Reynolds (1961) and a direct precursor to Herrnstein's (1961) relative-rate matching law R_1/(R_1+R_2) = r_1/(r_1+r_2).",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Reynolds examined how pigeons\u2019 response rates in one component of a multiple schedule depend on the relative frequency of reinforcement across components. Using VI\u2013FR multiple schedules, he showed that as the relative reinforcement frequency for a constant component increased, the response rate in that component rose proportionally\u2014even when its absolute reinforcement rate was unchanged. Across both VI\u2013FR and FR\u2013VI arrangements, the relative response rate closely approximated a linear function of the relative reinforcement frequency, with slope \u2248 0.8 and intercept \u2248 0.13. The study refined the concept of behavioral contrast as part of a broader law of relative reinforcement.",
@@ -3809,8 +3809,8 @@
     "process": [
       "Concurrent schedule performance \u2014 matching law and response strength as functions of reinforcement frequency."
     ],
-    "static-equation": "p=ke; p1+p2p1=e1+e2e1",
-    "static-equation-definitions": "",
+    "static-equation": "p = ke; \\frac{p_1}{p_1 + p_2} = \\frac{e_1}{e_1 + e_2}",
+    "static-equation-definitions": "$p$, $p_1$, $p_2$ = frequency (number) of responses, generic and on alternatives 1 and 2 of a concurrent schedule; $e$, $e_1$, $e_2$ = frequency of reinforcement, generic and on alternatives 1 and 2; $k$ = constant of proportionality. Eq. 1 expresses the \"absolute\" view that response strength is proportional to its own frequency of reinforcement; Eq. 2 is Herrnstein's matching law: relative response frequency equals relative reinforcement frequency. The two cohere mathematically, since applying $p_i = k e_i$ per alternative yields $p_1/(p_1+p_2) = e_1/(e_1+e_2)$.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "\"Bijou and Orlando (1960) outlined an efficient method for establishing multiple-schedule performance in institutionalized developmentally retarded children. The study described a systematic shaping procedure\u2014using brief, simple instructions and edible re",
@@ -4446,14 +4446,14 @@
     "process": [
       "Conditioned suppression (aversive Pavlovian control over operant responding) and its stimulus generalization/gradient sharpening during extinction; modulation by motivation (deprivation) of ongoing operant strength."
     ],
-    "static-equation": "Suppression Ratio=Pre-tone RPre-tone R\u2212Tone R",
-    "static-equation-definitions": "",
+    "static-equation": "\\text{Suppression Ratio} = \\frac{\\text{Pre-tone } R - \\text{Tone } R}{\\text{Pre-tone } R}",
+    "static-equation-definitions": "\\text{Pre-tone } R = \\text{operant response rate (responses per unit time) during the pre-tone baseline period}; \\text{Tone } R = \\text{operant response rate during the tone (CS) period}. This proportion-of-baseline suppression index runs from 0 (no suppression, Tone } R = \\text{Pre-tone } R\\text{) to 1 (complete suppression, Tone } R = 0\\text{). NOTE: the original is a non-machine-readable scanned page image, so the exact orientation Carlton used could not be confirmed; the bounded subtractive form is given as the most defensible reconstruction. The dominant period alternative is the Annau & Kamin (1961) form } \\frac{\\text{Tone } R}{\\text{Pre-tone } R + \\text{Tone } R}\\text{, which ranges from 0.5 (no suppression) to 0 (complete) and remains possible here.}",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons on VI food schedules received 48-s tones ending with 8-s shock. After complete suppression to the training tone, nonshocked generalization tests showed initially broad suppression that narrowed across extinction, with slightly greater generalization to lower frequencies. A second study varied deprivation: stronger motivation (lower body weight) yielded sharper, less-generalized suppression gradients.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Simple devices for liquid reward delivery",
@@ -4606,8 +4606,8 @@
       "motor",
       "and verbal learning contexts"
     ],
-    "static-equation": "P=ktn; logP=nlogt+logk; dP=nktn\u22121",
-    "static-equation-definitions": "",
+    "static-equation": "P = kt^{n}; \\log P = n \\log t + \\log k; \\frac{dP}{dt} = nkt^{n-1}",
+    "static-equation-definitions": "P = the measured performance (e.g., response magnitude/proficiency); t = time or amount of practice (trials); k = scale constant (value of P at t = 1); n = exponent governing the form (slope of the log-log plot). The first equation is the power-function form of the learning curve; the second is its log-log linearization; the third is the instantaneous rate of change (derivative) of P with respect to t.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Across diverse learning experiments, cumulative performance measures (e.g., correct responses, time on target) consistently follow a power function of practice time or number of trials:\n\n\ud835\udc43\n=\n\ud835\udc58\n\ud835\udc61\n\ud835\udc5b\nP=kt\nn\n\nwhere \n\ud835\udc43\nP is cumulative performance, \n\ud835\udc61\nt is practice time, and \n\ud835\udc58\n,\n\ud835\udc5b\nk,n are constants. The exponent \n\ud835\udc5b\nn typically falls between 1 and 2, representing negatively accelerated improvement. This relation holds for humans and animals across various tasks (motor, verbal, operant). Deviations from the power law occur mainly at early stages (reflecting prior skill or transfer). Changes in training conditions often alter the parameters \n\ud835\udc58\nk and \n\ud835\udc5b\nn, suggesting these constants capture key learning dynamics",
@@ -5131,14 +5131,14 @@
     "process": [
       "Interlocking schedules of reinforcement"
     ],
-    "static-equation": "T=T1R1+rR1+PRB\u22c5r",
+    "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Four male pigmented rats were exposed to a procedure designed to investigate the relation between several performance measures and a schedule continuum ranging from FR 36 to FI 2 through four intermediate interlocking schedules. On all schedules, each subject developed a stable, generally break-and-run performance. Analysis of cumulative records, post-reinforcement pauses, and running rates showed a continuum of performance related to the schedule continuum.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Operandum",
@@ -5252,14 +5252,14 @@
     "process": [
       "Motivational control of operant responding by food deprivation and satiation (satiation functions and deprivation effects)."
     ],
-    "static-equation": "N=Ktn,",
-    "static-equation-definitions": "",
+    "static-equation": "N = K t^{n}",
+    "static-equation-definitions": "N = cumulative amount (number of food units / reinforcers) ingested during the satiation session at elapsed time t; K = proportionality (intake-rate) constant; t = elapsed eating time since onset of the satiation session; n = shape exponent (n = 1 yields the linear special case N = Kt, i.e., a straight-line cumulative-intake curve at constant rate K, which is the form the paper's data predominantly support; n < 1 would give the negatively accelerated curvilinear form Skinner reported for rats but Reese & Hogenson did NOT find in pigeons). Reconstructed from the corrupted fragment \"N=Ktn,\"; NOT read from the scanned original. Competing candidate: the printed relation may have been the simple linear N = Kt, with the trailing \"n\" an OCR/subscript artifact rather than a free exponent, since the authors classified curve shapes descriptively (~64% straight with abrupt stop) rather than fitting a power law. Variable identity (amount eaten vs. responses) is reconstructed, not confirmed.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Eight pigeons were permitted to eat to satiation after systematically increasing deprivation intervals (5\u2013191 hr), and two others were tested at prescribed percentages of free-feeding weight. Across 110 sessions, most satiation curves were linear with abrupt stops (\u224864%), fewer were linear with gradual stops, and none were fully curvilinear as in Skinner\u2019s rat data. Pecking rates were constant until eating ceased abruptly at about 85% of free-feeding weight. Weight data showed predictable losses with deprivation and partial recovery after each satiation, with a consistent separation between pre- and post-feeding weights.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "REDUCTION OF SHOCK FREQUENCY ASREINFORCEMENT FOR A VOIDANCE BEHA VIOR",
@@ -5274,7 +5274,7 @@
     "process": [
       "Free-operant avoidance maintained by negative reinforcement via shock-frequency reduction"
     ],
-    "static-equation": "RS<21SS",
+    "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
@@ -5348,12 +5348,12 @@
     ],
     "static-equation": "",
     "static-equation-definitions": "",
-    "recursive-equation": "Tn=5n\u2212z+5",
-    "recursive-equation-definitions": "",
+    "recursive-equation": "T_n = 5n - z + 5",
+    "recursive-equation-definitions": "Unverifiable fragment. The source (Sidman, 1962, JEAB 5(2):271-277) is available only as scanned page images; only the abstract is machine-readable. This is a procedural free-operant avoidance report, not a quantitative-modeling paper, and is unrelated to the matching-law / GML / signal-detection canon. The fragment matches no canonical EAB model and contains an undefined symbol z. It is also mislabeled \"recursive\": it is a closed-form expression linear in n with no T_{n-1} dependence, hence not a true recurrence. If taken at face value, n would index successive lever presses and the \"5\" would reflect the 5 s of accrued \"safe time\" per press confirmed in the abstract, but no such displayed equation could be verified in the source. Retained as a traceability echo only, at very low confidence; do not treat as a validated model.",
     "abstract": "Sidman developed an \u201cadjusting avoidance\u201d schedule in which each lever press postponed shock by 5 s, allowing rats to accumulate up to 50 s of safety. This design eliminated differential reinforcement for long pauses, resulting in response probabilities largely independent of elapsed time since the last press. When a warning stimulus signaled proximity to shock (\u2264 5 s), rats increased responding near the warning period and spent more time closer to shock, demonstrating control by temporal cues. The procedure produced rapid conditioning and revealed that shock-frequency reduction, rather than temporal discrimination alone, governs avoidance behavior.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "PROGRAMMING STIMULI IN MATCHING TO SAMPLE",

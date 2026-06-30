@@ -19,14 +19,6 @@
   },
   "equation_track": {
     "remaining": [
-      159,
-      174,
-      204,
-      211,
-      236,
-      242,
-      243,
-      246,
       338,
       534,
       545,
@@ -226,6 +218,14 @@
       132,
       144,
       145,
+      159,
+      174,
+      204,
+      211,
+      236,
+      242,
+      243,
+      246,
       2120,
       2121,
       2131,
@@ -243,8 +243,8 @@
       4331
     ]
   },
-  "tokens_cumulative": 1206084,
-  "cycles_completed": 3,
+  "tokens_cumulative": 1630462,
+  "cycles_completed": 4,
   "limit_hits": [],
   "window": {
     "tz": "America/New_York",
