@@ -19,14 +19,6 @@
   },
   "equation_track": {
     "remaining": [
-      1694,
-      1695,
-      1727,
-      1736,
-      1749,
-      1756,
-      1757,
-      1774,
       1785,
       1795,
       1796,
@@ -226,6 +218,14 @@
       1648,
       1688,
       1693,
+      1694,
+      1695,
+      1727,
+      1736,
+      1749,
+      1756,
+      1757,
+      1774,
       2120,
       2121,
       2131,
@@ -243,8 +243,8 @@
       4331
     ]
   },
-  "tokens_cumulative": 2472748,
-  "cycles_completed": 6,
+  "tokens_cumulative": 2847427,
+  "cycles_completed": 7,
   "limit_hits": [],
   "window": {
     "tz": "America/New_York",
