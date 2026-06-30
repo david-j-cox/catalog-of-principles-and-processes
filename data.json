@@ -7120,11 +7120,13 @@
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1404302/",
     "process": [],
     "static-equation": "R_{1} = \\frac{K r_{1}}{(r_{1} + r_{2})^{5/6}}",
-    "static-equation-definitions": "R_{1} = response rate on key 1; K = constant; r_{1} = reinforcement rate for key 1; r_{2} = reinforcement rate for key 2",
+    "static-equation-definitions": "R_{1} = response rate on key 1; K = constant of proportionality (total response rate satisfies R_{1}+R_{2} = K(r_{1}+r_{2})^{1/6}, i.e., total response rate is proportional to the one-sixth power of total reinforcement rate); r_{1} = reinforcement rate for key 1; r_{2} = reinforcement rate for key 2",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "When a pigeon's pecks on two keys were reinforced concurrently by two independent variable-interval (VI) schedules, one for each key, the response rate on either key was given by the equation: R1=Kr1/(r1+r2)5/6, where R is response rate, r is reinforcement rate, and the subscripts 1 and 2 indicate keys 1 and 2. When the constant, K, was determined for a given pigeon in one schedule sequence, the equation predicted that pigeon's response rates in a second schedule sequence. The equation derived from two characteristics of the performance: the total response rate on the two keys was proportional to the one-sixth power of the total reinforcement rate provided by the two VI schedules; and, the pigeon matched the relative response rate on a key to the relative reinforcement rate for that key. The equation states that response rate on one key depends in part on reinforcement rate for the other key, but implies that it does not depend on response rate on the other key. This independence of response rates on the two keys was demonstrated by presenting a stimulus to the pigeon whenever one key's schedule programmed reinforcement. This maintained the reinforcement rate for that key, but reduced the response rate almost to zero. The response rate on the other key, nevertheless, continued to vary with reinforcement rates according to the equation.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Errata",
@@ -10835,7 +10837,7 @@
     "process": [
       "Reinforcer: Positive"
     ],
-    "static-equation": "Punishment, Schedules of Reinforcement: Fixed Ratio, Motivation, Schedules of Reiforcement: Variable Interval, Schedules of Reinforcement: DRL ",
+    "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
@@ -11066,12 +11068,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1338360/",
     "process": [],
-    "static-equation": "M \\theta_1 = \\arcsin(R_1 - R_2)",
-    "static-equation-definitions": "M = maximum value; \\theta_1 = angle representing initial response rate; R_1 = first response rate; R_2 = second response rate",
+    "static-equation": "M\\theta_1 = \\arcsin\\sqrt{\\dfrac{R_1}{R_1 + R_2}}",
+    "static-equation-definitions": "M\\theta_1 = the value of \\theta_1 that yields the maximum visual cue (maximum angular difference) for a given rate change (a single symbol, not the product of M and \\theta_1); \\theta_1 = angle of the cumulative response curve representing the initial (first) response rate R_1; \\theta_2 = angle representing the second response rate R_2; R_1 = initial (first) response rate; R_2 = second response rate; \\arcsin\\sqrt{R_1/(R_1+R_2)} = arcsine-square-root (angular, variance-stabilizing) transformation of the proportion of responding R_1/(R_1+R_2)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Because the response and time scales used in plotting cumulative response curves are often poorly selected, ineffective displays often result. The visual cue of a response rate change is the difference, [Formula: see text] between the angles, \u03b81 and \u03b82, representing the two rates, R1 and R2. These variables are related by: [Formula: see text] For a given rate change, the value of \u03b81, namely, M\u03b81, that yields the maximum value of [Formula: see text] namely, [Formula: see text] is given by M\u03b81=arc sin [Formula: see text] Ideally, the initial response rate should be represented by the M\u03b81 appropriate for a given rate change. Because of practical considerations, however, some compromises with the ideal are allowable. Included in the discussion are (a) steps required to select appropriate response and time scales, with examples, and (b) guideposts for evaluating rate changes by means of angular changes.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Decontamination of Pigeons by Inclusion of Chlortetracycline in the Feed ",
@@ -13523,14 +13527,14 @@
     ],
     "url": "https://doi.org/10.1901%2Fjeab.1965.8-415",
     "process": [],
-    "static-equation": "C=12(in \u03bcF)RI(1+50)(in \u03a9)E",
-    "static-equation-definitions": "C: the capacitance in microfarads, R: resistance in ohms, I: current, E: voltage or electromotive force.",
+    "static-equation": "C = \\frac{I^2}{10}; R = \\frac{E}{10\\,I\\left(1 + \\dfrac{50}{E}\\right)}",
+    "static-equation-definitions": "C: the contact-protection (snubber) capacitance in microfarads (\\mu\\text{F}); R: the series snubber resistance in ohms (\\Omega); I: the steady-state current through the contacts/load in amperes; E: the steady-state supply voltage (electromotive force) across the contacts in volts.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "When the current in an inductive circuit is suddenly interrupted, a transient self-induced voltage arises due to the rapid decay of the magnetic field. The magnitude of this transient depends on the field\u2019s strength, its rate of decay, and the circuit resistance. In the absence of suppression networks, such transients can produce destructive arcing across relay contacts or semiconductor junctions, leading to material erosion, contact welding, or component failure. Arc suppression circuits are designed to mitigate these effects by providing an alternate discharge path, thereby protecting relay contacts, safeguarding electronic devices, and preventing false triggering in circuits. Various suppression methods are reviewed, including resistor-capacitor (RC) networks, reverse-biased diodes, neon bulbs, zener diodes, and varistors. The limitations of neon lamps and varistors are discussed, and practical recommendations are made for the use of diode and RC suppression circuits in both conventional electromechanical relays and modern hybrid systems. The analysis emphasizes the physical principles governing transient suppression and offers guidance for effective protection of inductive loads such as relays, solenoids, motors, and stepping switches.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "A transient suppression guide.",
@@ -15039,14 +15043,14 @@
       "Schedules of Reinforcement: Fixed Ratio",
       "Schedules of Reinforcement: Variable Interval"
     ],
-    "static-equation": "$mathrm{D.I.} = frac{R^{SD}}{R^{SD} + 0.31\\,R^{SDelta}}$",
-    "static-equation-definitions": "DI: discrimination index, R^{SD}: response rate for the SD stimulus, R^{SDelta}: response rate for the SDelta stimulus",
+    "static-equation": "\\mathrm{D.I.} = \\frac{R^{S^{D}}}{R^{S^{D}} + R^{S^{\\Delta}}}",
+    "static-equation-definitions": "\\mathrm{D.I.}: discrimination index; R^{S^{D}}: response rate in the presence of the reinforced stimulus (S^{D}); R^{S^{\\Delta}}: response rate in the presence of the nonreinforced stimulus (S^{\\Delta}). Note: the unweighted proportion is the canonical 1960s stimulus-control discrimination index; the stray coefficient 0.31 on the S^{\\Delta} term in the source fragment is removed as an inferred extraction artifact, unverified against the scanned source (PMC1338182) and retained as a candidate datum if the scan is later OCR'd.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Eight groups of rats were trained on an auditory intensity discrimination in which the discriminative stimuli were separated by 10 decibels (db). Four pairs of stimuli were selected from different regions along a 60\u2013100 db (SPL) intensity continuum. Counterpart groups were trained on each stimulus pair, with the relative intensity positions of the reinforced stimulus (SD) and the non-reinforced stimulus (S\u0394) reversed for the two groups. Discrimination acquisition curves were compared to determine whether stimuli separated by equal logarithmic units were of comparable 'difficulty', and to determine the relative effectiveness of an SD serving as the more versus less intense member of a stimulus pair. It was concluded that: (1) When SD is the more intense, auditory intensities of constant logarithmic separation are graded in 'difficulty' along the intensity continuum; high intensity discriminative stimuli are most readily discriminated. When S\u0394 is the more intense, this graded effect is not evident. (2) For a given continuum location, discrimination is inferior when S\u0394 is the more intense. This effect is most pronounced at the high intensity end of the continuum and is chiefly attributable to differences in the rate of S\u0394 responding.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Concurrent Fixed-Ratio and Avoidance Responding in the Squirrel Monkey",
@@ -16635,7 +16639,7 @@
       "Inter-response Time Contingency"
     ],
     "static-equation": "f(t) = \\lambda e^{-\\lambda t}",
-    "static-equation-definitions": "Exponential Density Function, lambda = mean rate, t = time between responses",
+    "static-equation-definitions": "Exponential probability density function for interresponse times (IRTs); \\lambda = rate parameter of the exponential distribution (the constant instantaneous response rate of an ideal constant-probability/Poisson generator), with mean IRT = 1/\\lambda; t = interresponse time (time between successive responses)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "A new schedule of reinforcement was used to maintain key-pecking by pigeons. The schedule reinforced only pecks terminating interresponse times which occurred least often relative to the exponential distribution of interresponse times to be expected from an ideal random generator. Two schedule parameters were varied: (1) the rate constant of the controlling exponential distribution and (2) the probability that a response would be reinforced, given that it met the interresponse-time contingency. Response rate changed quickly and markedly with changes in the rate constant; it changed only slightly with a fourfold change in the reinforcement probability. The schedule produced stable rates and high intra- and inter-subject reliability, yet interresponse time distributions were approximately exponential. Such local interresponse time variability in the context of good overall control suggests that the schedule may be used to generate stable, predictable, yet sensitive baseline rates. Implications for the measurement of rate are discussed.",
@@ -16884,13 +16888,13 @@
       "Reinforcement: Positive"
     ],
     "static-equation": "X_i = \\sum_{j=1}^{\\infty} \\alpha_j \\cos\\!\\left(\\omega_j t_i + \\phi_j\\right)",
-    "static-equation-definitions": "X_i = population of X's at any single value of i, alpha j = the amplitude of the jth component, omega j = the frequency of the jth component wave, phi j the phase varying randomly of the jth component wave",
+    "static-equation-definitions": "X_i = value of the synthesized series X at sample index i (sampled at time t_i); t_i = time of the ith sample; \\alpha_j = amplitude of the jth harmonic component; \\omega_j = angular frequency of the jth harmonic component; \\phi_j = (randomly varying) phase of the jth harmonic component",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Serial dependencies in inter response times were studied by means of a digital computer. In monkeys exposed to a DRL 20-sec schedule of reinforcement, serial interactions appeared at all stages of training. Early in training the serial effects consisted of trains of relatively long interresponse times interspersed among trains of relatively short ones. Later on, the serial effects appeared to be characterized by a tendency to drift up and down in long wavelength periods around the minimum interval required for reinforcement. After training to a point at which most interresponse times produced reinforcement, serial effects of a still more subtle nature appeared. These effects were made apparent by autocorrelation and power spectrum methods and consisted of both long-term and extremely short-term fluctuations in interresponse times.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Stimulus Control in Fixed Ratio Matching-to-Sample",
@@ -17058,7 +17062,7 @@
       "Deprivation"
     ],
     "static-equation": "\\frac{\\text{Pre-tone Rs} - \\text{Tone Rs}}{\\text{Pre-tone Rs}}",
-    "static-equation-definitions": "Pre-tone R = the number of key peck responses in 40 seconds before the onset of a given tone, Tone R= the number of key peck responses during the 40 second tone.",
+    "static-equation-definitions": "Pre-tone R = the number of key peck responses in 40 seconds before the onset of a given tone, Tone R = the number of key peck responses during the 40 second tone.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Five years ago, pigeons trained to peck a key for food were periodically presented with a 1000 cps tone which ended with electrical shock. They were then tested for the stimulus generalization of conditioned suppression. After an interruption of 2.5 yr, another series of generalization tests showed no loss of suppression. The present study was conducted 1.5 yr later to retest the effect of an extended interruption on retention of suppression. It was found, again, that suppression did not decline over time. The present paper, which summarizes the earlier data and reports the most recent findings, provides an overview of the extended behavioral consequences of the original aversive procedures administered five years ago.",
