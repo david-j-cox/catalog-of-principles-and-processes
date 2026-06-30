@@ -2652,7 +2652,7 @@
     "process": [
       "Operant behavior under delayed reinforcement"
     ],
-    "static-equation": "N1Tx\u2032\u2032",
+    "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
@@ -2696,14 +2696,14 @@
     "process": [
       "Extinction and schedule control"
     ],
-    "static-equation": "Response Units=Responses per ReinforcementTotal Extinction Responses",
-    "static-equation-definitions": "",
+    "static-equation": "\\text{Response Units} = \\frac{\\text{Total Extinction Responses}}{\\text{Responses per Reinforcement}}",
+    "static-equation-definitions": "Response Units = extinction output expressed in reinforcement-schedule units (number of reinforcement-equivalent response clusters emitted during extinction); Total Extinction Responses = the number of responses emitted during the extinction period; Responses per Reinforcement = the reinforcement-schedule requirement (e.g., FR value or mean ratio/interval responses per reinforcer) used to normalize extinction output across schedules. Orientation note: the numerator/denominator ordering is inferred on dimensional and conceptual grounds (the response-unit measure of Mowrer & Jones, 1945, expresses extinction in units of the schedule's required response cluster, i.e., total responses divided by responses-per-reinforcement). The surviving corrupted fragment's literal token order points the opposite way, and the 1960 JEAB scan could not be machine-read, so the orientation rests on theory rather than direct confirmation against the page.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "This study examined how different reinforcement schedules affect extinction performance in pigeons across repeated conditioning\u2013extinction sessions. Three birds were trained on a fixed ratio (FR 10) and three on a fixed interval (FI 26 sec) schedule, each followed by a 60-minute extinction period. The number of extinction responses was converted to \u201cresponse units\u201d (responses per reinforcement) to compare schedules. Results showed that extinction responding stabilized within a narrow range, similar to findings in rats under comparable conditions (Weissman, 1959). Final extinction sessions were characterized by an initial \u201cpriming run\u201d followed by pauses and occasional bursts, suggesting schedule-specific temporal control during extinction.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "A semi-automatic teaching machine, 12",
@@ -2780,14 +2780,14 @@
     "process": [
       "Stimulus control and schedule-controlled matching behavior"
     ],
-    "static-equation": "Accuracy Ratio=SD+S\u0394SD; Error Ratio=SDS\u0394",
-    "static-equation-definitions": "",
+    "static-equation": "\\text{Accuracy Ratio} = \\frac{S^{D}}{S^{D} + S^{\\Delta}}; \\text{Error Ratio} = \\frac{S^{\\Delta}}{S^{D}}",
+    "static-equation-definitions": "S^{D} = number (or rate) of responses to the correct, matching stimulus key; S^{\\Delta} = number (or rate) of responses to the incorrect, non-matching stimulus key. The Accuracy Ratio expresses matching responses as a proportion of total responses (the standard proportion-correct measure). The Error Ratio expresses incorrect responses relative to correct responses. Note: both expressions are reconstructions from corrupted OCR fragments of a scanned (non-machine-readable) 1960 JEAB matching-to-sample paper, not a quantitative matching-law study; no canonical EAB model (Herrnstein/Baum/Davison-Tustin) applies. The numerator/denominator orientation of the Error Ratio is inferred on semantic grounds and is unverified: viable alternatives include S^{D}/S^{\\Delta} (literal token order) and S^{\\Delta}/(S^{D}+S^{\\Delta}) (proportion of errors). These may be extraction-tool artifacts rather than formally displayed equations in the original.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Ferster extended the operant matching-to-sample paradigm to intermittent reinforcement schedules. Two pigeons were trained to peck a center key (sample) and then select one of two side keys (comparison) whose color either matched (SD) or did not match (SA) the sample. Matching responses produced brief conditioned reinforcers, while nonmatching responses produced short time-outs. The contingencies were arranged under fixed-ratio (FR), fixed-interval (FI), variable-interval (VI), and multiple FI\u2013FR schedules. Matching accuracy increased with moderate ratio sizes (peaking at FR 15\u201320) and declined when ratios became too large (\u201cratio strain\u201d). SA (nonmatching) responses were higher under interval schedules than ratio schedules. The findings demonstrated that complex chained discriminations could display the same schedule-controlled response patterns as simple operants, supporting the generality of reinforcement-schedule principles.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "TEACHING MA CHINES: AN APPLICATION OF PRINCIPLESFROM THE LABORATORY",
@@ -2802,14 +2802,14 @@
     "process": [
       "Programmed instruction and operant shaping of verbal behavior"
     ],
-    "static-equation": "Error Reduction=E1958E1958\u2212E1959",
-    "static-equation-definitions": "",
+    "static-equation": "\\text{Error Reduction} = \\frac{E_{1958} - E_{1959}}{E_{1958}}",
+    "static-equation-definitions": "E_{1958} = \\text{error rate on the earlier version of the program (e.g., 1958)}; E_{1959} = \\text{error rate on the later/revised version of the program (e.g., 1959)}. \\text{Note: this is a descriptive proportional-reduction index, not a canonical EAB model; the corrupted fragment's token order is ambiguous and a competing literal parse } E_{1958}/(E_{1958}-E_{1959}) \\text{ could not be excluded against the scanned source, and the displayed-equation status is unverified.}",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Holland outlines the conceptual foundation of teaching machines as an application of operant conditioning principles rather than a mechanical innovation. He emphasizes that the essential advance lies in using reinforcement-based behavioral engineering to shape learning systematically, not in the hardware itself. Teaching machines automate the presentation of finely sequenced tasks and immediate feedback to ensure steady progress and individualized pacing. Data from revisions of a Harvard psychology program demonstrated that improvements in programmed material\u2014based on student performance analyses\u2014halved error rates and completion times. Holland concludes that genuine progress in education depends on applying experimentally derived behavioral principles, not mere automation.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "NOTE ON RESPONSE DIFFERENTIATION DURINGA SIMPLE DISCRIMINATION",
@@ -2824,14 +2824,14 @@
     "process": [
       "Operant discrimination learning with response-force differentiation as a secondary topography under stimulus control."
     ],
-    "static-equation": "\u02c9S\u0394>F\u02c9SD",
-    "static-equation-definitions": "",
+    "static-equation": "\\bar{F}_{S^{\\Delta}} > \\bar{F}_{S^{D}}",
+    "static-equation-definitions": "\\bar{F}_{S^{\\Delta}} = mean response force emitted in the presence of the negative/extinction stimulus S^{\\Delta}; \\bar{F}_{S^{D}} = mean response force emitted in the presence of the positive discriminative stimulus S^{D}. The inequality expresses the empirical finding that mean response force was greater during S^{\\Delta} than during S^{D}. NOTE: the inequality direction and the supplied left-hand F are reconstructed from a transposed/corrupted fragment and EAB conventions, not confirmed against the (non-machine-readable, scanned) source; the reverse ordering \\bar{F}_{S^{D}} > \\bar{F}_{S^{\\Delta}} cannot be excluded.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Notterman and Block (1960) analyzed how response force differentiates during the acquisition of a simple light\u2013dark discrimination in rats. Using a strain gauge to measure lever-press force, they found that while response rate increased under the reinforced light (\n\ud835\udc46\n\ud835\udc37\nS\nD\n) and decreased under extinction (\n\ud835\udc46\n\u0394\nS\n\u0394\n), the mean force of responses was consistently higher in \n\ud835\udc46\n\u0394\nS\n\u0394\n. The authors suggested that this pattern reflected \u201cincidental directional reinforcement,\u201d whereby higher-force responses were selectively strengthened during reinforcement, producing persistent higher-force responding in extinction.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "The influence of di-, d-, and l-amphetamine and d-methamphetamine on a fixed-ratio schedule",
@@ -2904,7 +2904,7 @@
     "process": [
       "Conditioned reinforcement and motivational operations"
     ],
-    "static-equation": "T=f(Dw)",
+    "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
@@ -3168,14 +3168,14 @@
     "process": [
       "Behavioral contrast"
     ],
-    "static-equation": "Ri\u221d\u2211jrjri",
+    "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Reynolds (1961) investigated behavioral contrast\u2014the change in response rate to one stimulus when the reinforcement schedule associated with another stimulus is altered. Pigeons responded on a multiple schedule in which key color (e.g., red vs. green) signaled different reinforcement contingencies. When reinforcement during one component was replaced by extinction or time-out, response rates during the unchanged component increased (positive contrast). However, when non-responding during the alternate component was itself reinforced (DRO), the contrast effect disappeared, showing that contrast depends on relative reinforcement frequency rather than response suppression alone. The findings supported a relativistic interpretation of contrast: the rate of responding in a given condition depends on the relative frequency of reinforcement across all concurrently alternating conditions.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "CHARACTERISTICS OF RESPONDING UNDER A TEMPORALLY DEFINEDREINFORCEMENT SCHEDULE OF LONG CYCLE LENGTH",
@@ -3190,8 +3190,8 @@
     "process": [
       "Temporal discrimination and response pacing under a time-correlated reinforcement schedule"
     ],
-    "static-equation": "T=tD+tAtD",
-    "static-equation-definitions": "",
+    "static-equation": "T = t^{D} + t^{\\Delta}",
+    "static-equation-definitions": "T = total cycle length of the temporally defined (t-T) schedule; t^{D} = subinterval of the cycle during which a response is reinforced (reinforcement available); t^{\\Delta} = subinterval of the cycle during which responses are not reinforced (no reinforcement / extinction period).",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Cumming and Schoenfeld (1960) examined pigeon key-pecking under a time-correlated reinforcement schedule with a long total cycle (30 minutes). Only the first response in the \u201creinforcement-eligible\u201d period (\n\ud835\udc61\n\ud835\udc37\nt\nD\n\t\n\n) was reinforced, while \n\ud835\udc61\n\ud835\udc34\nt\nA\n\t\n\n defined the non-reinforcement portion of each cycle. The ratio \n\ud835\udc47\n=\n\ud835\udc61\n\ud835\udc37\n/\n(\n\ud835\udc61\n\ud835\udc37\n+\n\ud835\udc61\n\ud835\udc34\n)\nT=t\nD\n\t\n\n/(t\nD\n\t\n\n+t\nA\n\t\n\n) was systematically reduced from 1.0 to 0.00025 to assess how temporal contingencies shaped response organization. Results showed that post-reinforcement pauses (\u201cpost-SR breaks\u201d) lengthened non-monotonically with decreasing \n\ud835\udc47\nT, peaking near \n\ud835\udc47\n=\n0.004\nT=0.004. Response rate and responses-per-reinforcer covaried with this latency function, revealing cyclic changes in organization and sensitivity to temporal spacing. Distributions of post-reinforcement pauses indicated distinct transition points between early and late responding, highlighting temporal discrimination and periodic organization across long cycles.",
