@@ -45235,14 +45235,14 @@
       "Reinforcer Volume",
       "Schedule: Variable Interval"
     ],
-    "static-equation": "R = R_{\\text{max}} \\cdot \\frac{r}{K_H + r}; \\frac{R_u}{R_v} = c \\left( \\frac{r_u}{r_v} \\right); R_u = R_{\\text{max}(u)} \\cdot \\frac{r_u}{K_{H(u)} + r_u}; R_v = R_{\\text{max}(v)} \\cdot \\frac{r_v}{K_{H(v)} + r_v}; K_{H(v)} = n \\cdot K_{H(u)}; R_v = R_{\\text{max}(v)} \\cdot \\frac{r_v}{\\,n \\cdot K_{H(u)} + r_v}; R_v = \\left( R_{\\text{max}(v)} \\cdot \\frac{r_v}{n} \\right) \\Big/ \\left( K_{H(u)} + \\frac{r_v}{n} \\right); R_B = R_{\\text{max}} \\cdot \\frac{r_B}{K_H + r_A + r_B}; \\frac{R_A}{R_B} = \\frac{r_A}{r_B}; R_u = R_{\\text{max}(u)} \\cdot \\frac{r_u}{K_{H(u)} + r_u + \\frac{r_v}{n}}\n`; R_v = \\left( R_{\\text{max}(v)} \\cdot \\frac{r_v}{n} \\right) \\Big/ \\left( K_{H(u)} + r_u + \\frac{r_v}{n} \\right); \\frac{R_u}{R_v} = n \\left( \\frac{r_u}{r_v} \\right)",
-    "static-equation-definitions": "",
+    "static-equation": "R = R_{\\text{max}} \\cdot \\frac{r}{K_H + r}; \\frac{R_u}{R_v} = c \\left( \\frac{r_u}{r_v} \\right); R_u = R_{\\text{max}(u)} \\cdot \\frac{r_u}{K_{H(u)} + r_u}; R_v = R_{\\text{max}(v)} \\cdot \\frac{r_v}{K_{H(v)} + r_v}; K_{H(v)} = n \\cdot K_{H(u)}; R_v = R_{\\text{max}(v)} \\cdot \\frac{r_v}{n \\cdot K_{H(u)} + r_v}; R_v = \\left( R_{\\text{max}(v)} \\cdot \\frac{r_v}{n} \\right) \\Big/ \\left( K_{H(u)} + \\frac{r_v}{n} \\right); R_B = R_{\\text{max}} \\cdot \\frac{r_B}{K_H + r_A + r_B}; \\frac{R_A}{R_B} = \\frac{r_A}{r_B}; R_u = R_{\\text{max}(u)} \\cdot \\frac{r_u}{K_{H(u)} + r_u + \\frac{r_v}{n}}; R_v = \\left( R_{\\text{max}(v)} \\cdot \\frac{r_v}{n} \\right) \\Big/ \\left( K_{H(u)} + r_u + \\frac{r_v}{n} \\right); \\frac{R_u}{R_v} = n \\left( \\frac{r_u}{r_v} \\right)",
+    "static-equation-definitions": "R = response rate (responses per unit time) on the variable-interval schedule; R_{\\max} = maximum (asymptotic) response rate; r = reinforcement frequency (reinforcers per hour); K_H = Herrnstein's constant, the reinforcement frequency that supports a half-maximal response rate (an index of extraneous/other reinforcement, equivalent to r_e in Herrnstein's 1970 derivation); subscripts u and v denote two different volumes (concentrations) of sucrose reinforcement; R_{\\max(u)}, R_{\\max(v)} = maximum response rates under volumes u and v; K_{H(u)}, K_{H(v)} = K_H values under volumes u and v; n = ratio of K_H between the two volume conditions (K_{H(v)} = n \\cdot K_{H(u)}); c = constant of proportionality in R_u/R_v = c(r_u/r_v); under the equal-R_max premise this is the same scaling factor later identified as n (c = n), though c could not be confirmed against the (non-machine-readable) scan; r_A, r_B and R_A, R_B = reinforcement frequencies and response rates for the two alternatives in Herrnstein's (1970) general two-alternative matching derivation of the single-operant law (background only: this study used single VI schedules, not concurrent schedules, with K_H playing the role of extraneous reinforcement r_e). Load-bearing premise for the reduction to R_u/R_v = n(r_u/r_v): R_max is assumed invariant across reinforcer volumes (R_{\\max(u)} = R_{\\max(v)}), consistent with the paper's empirical finding that volume affects K_H but not the asymptotic rate.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Three rats were exposed to variable-interval schedules specifying a range of different rein-\nforcement frequencies, using three different volumes of .32 molar sucrose (.10, .05, and .02\nmilliliters) as the reinforcer. With each of the three volumes, the rates of responding of\nall three rats were increasing, negatively accelerated functions of reinforcement frequency,\nthe data conforming closely to Herrnstein's equation. In each rat the value of the constant\nKH, which expresses the reinforcement frequency needed to obtain the half-maximal re-\nsponse rate, increased with decreasing reinforcer volume, the values obtained with .02 milli-\nliters being significantly greater than the values obtained with .10 milliliters. The values of\nthe constant RmaG, which expresses the theoretical maximum response rate, were not sys-\ntematically related to reinforcer volume. The effect of reinforcer volume upon the relation-\nship between response rate and reinforcement frequency is thus different from the effect of\nthe concentration of sucrose reinforcement: In a previous experiment (Bradshaw, Szabadi,\n& Bevan, 1978) it was found that sucrose concentration influenced the values of both con-\nstants, Rma_ increasing and KH decreasing with increasing sucrose concentration.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Contrast and Undermatching as a Function of Reinofrcer Duration and Quality During Multiple Schedules",
@@ -45262,8 +45262,8 @@
       "Behavior Contrast",
       "Undermatching"
     ],
-    "static-equation": "\\frac{P_1}{P_1 + P_2} = \\frac{R_1}{R_1 + R_2}\"]",
-    "static-equation-definitions": "",
+    "static-equation": "\\frac{P_1}{P_1 + P_2} = \\frac{R_1}{R_1 + R_2}",
+    "static-equation-definitions": "P_1, P_2 = response (key-peck) rates in components 1 and 2 of the multiple schedule; R_1, R_2 = reinforcement measures obtained in components 1 and 2 (reinforcement rate, or here a relative reinforcer-duration/magnitude measure, since the study manipulated reinforcer duration and quality). The expression is Herrnstein's strict (proportional) matching law: the relative response proportion equals the relative reinforcement proportion. Undermatching is the systematic deviation in which the relative response proportion is a less extreme function of the relative reinforcement proportion than this equality predicts.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Eight pigeons pecked keys under multiple variable-interval two-minute variable-interval\ntwo-minute schedules. In Experiment 1, the reinforcers were 2, 4, or 8 seconds access to\na food magazine. In Experiments 2 and 3, the reinforcers were grains that had been deter-\nmined to be most-, moderately-, or non-preferred. Both positive and negative behavioral\ncontrast occurred when the reinforcers in one component were held constant and the du-\nration or type of reinforcer obtained in the other component varied. Undermatching oc-\ncurred when the relative rate of responding during a component was plotted as a function\nof the relative duration of the reinforcers in that component.",
@@ -45315,13 +45315,13 @@
       "Signaled Reinforcement"
     ],
     "static-equation": "\\frac{R_1}{R_2} = b \\left( \\frac{r_1}{r_2} \\right)^{a}",
-    "static-equation-definitions": "",
+    "static-equation-definitions": "R_1, R_2 are response (behavior) rates in multiple-schedule components 1 and 2; r_1, r_2 are the obtained reinforcement rates in those components; a is the sensitivity exponent (slope of the log-log generalized-matching relation); b is the multiplicative bias parameter, equal to the antilog of the intercept in the log-form GML (b = c in Baum's log(R_1/R_2) = a log(r_1/r_2) + log c). This is the power (ratio) form of Baum's generalized matching law.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Two experiments investigated whether steady-state interactions in multiple schedules\ndepend exclusively on the following schedule of reinforcement. Experiment 1 used a four-\ncomponent multiple schedule in which two components were associated with the same\nconstant schedule of reinforcement, and where rate of reinforcement was varied in the\ncomponent that followed one of these. Contrast effects were reliable only in the component\nthat preceded the point of reinforcement variation, although some contrast did occur\notherwise. In those instances where contrast other than the following-schedule effect did\noccur, it was accounted for by the effect of the preceding schedule, an effect for which\nthere were consistent individual differences among subjects, and which varied with com-\nponent duration. Experiment 2 used a three-component schedule, in which reinforcement\nrate was varied in the middle component. The results were consistent with Experiment 1,\nas the following-schedule effect was the only consistent effect that occurred, although an\neffect of the preceding schedule did occur for some subjects under some conditions, and\nwas especially evident early in training. The conclusion from both experiments is that\nthere is no general effect of relative rate of reinforcement apart from the sum of the\neffects of the preceding and following schedules, and that the following-schedule effect\nis the fundamental cause of steady-state interactions.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Selective Punishment of Interresponse Times",
@@ -45560,8 +45560,8 @@
       "Linear Systems",
       "Postreinforcement Pause"
     ],
-    "static-equation": "t_i = \\left(\\frac{T}{\\pi}\\right)\\cos^{-1}\\!\\left[1 - \\frac{2i}{n}\\right]; i = \\frac{n}{2}\\left(1 - \\cos\\!\\left(\\frac{\\pi}{T} t_i\\right)\\right); \\frac{di}{dt_i} = \\frac{n\\pi}{2T} \\sin\\!\\left(\\frac{\\pi}{T} t_i\\right); \\frac{d^{2} i}{d t_i^{2}} = \\frac{n \\pi^{2}}{2 T^{2}} \\cos\\!\\left(\\frac{\\pi}{T} t_i\\right); i = \\left(\\frac{n}{T^{2}}\\right) t_i^{2}; \\frac{di}{dt_i} = \\left(\\frac{2n}{T^{2}}\\right)t_i; \\frac{d^{2} i}{d t_{i}^{2}} = \\frac{2n}{T^{2}}; t_i = \\left[\\frac{600}{50^{1/2}}\\right] i^{1/2}; t_i - t_{i-1} = \\left[\\frac{600}{50^{1/2}}\\right]\\left[i^{1/2} - (i-1)^{1/2}\\right]\"]",
-    "static-equation-definitions": "",
+    "static-equation": "t_i = \\left(\\frac{T}{\\pi}\\right)\\cos^{-1}\\!\\left[1 - \\frac{2i}{n}\\right]; i = \\frac{n}{2}\\left(1 - \\cos\\!\\left(\\frac{\\pi}{T} t_i\\right)\\right); \\frac{di}{dt_i} = \\frac{n\\pi}{2T} \\sin\\!\\left(\\frac{\\pi}{T} t_i\\right); \\frac{d^{2} i}{d t_i^{2}} = \\frac{n \\pi^{2}}{2 T^{2}} \\cos\\!\\left(\\frac{\\pi}{T} t_i\\right); i = \\left(\\frac{n}{T^{2}}\\right) t_i^{2}; \\frac{di}{dt_i} = \\left(\\frac{2n}{T^{2}}\\right)t_i; \\frac{d^{2} i}{d t_{i}^{2}} = \\frac{2n}{T^{2}}; t_i = \\left[\\frac{600}{50^{1/2}}\\right] i^{1/2}; t_i - t_{i-1} = \\left[\\frac{600}{50^{1/2}}\\right]\\left[i^{1/2} - (i-1)^{1/2}\\right]",
+    "static-equation-definitions": "t_i = elapsed time (s) within a cycle at which the i-th reinforcer becomes available; T = period (full duration) of one cycle; n = total number of reinforcers programmed per cycle; i = ordinal index of the reinforcer (i = 1, 2, ..., n); di/dt_i = instantaneous programmed rate of reinforcement; d^2 i/dt_i^2 = acceleration of cumulative reinforcer accrual. The first family (cosine form, Eqs 1-4) specifies the sinusoidal cyclic-interval schedule; the second family (parabolic form, Eqs 5-7) specifies the linearly ramping reinforcement-rate schedule (di/dt_i \\propto t_i). In the worked numerical example (Eqs 8-9), T = 600 s and n = 50, giving the constant 600/50^{1/2}.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Five human subjects pressed a panel for money on a cyclic-interval schedule that arranged\nrecurring periods of linearly increasing reinforcement rates (ramps). Response rate versus\ntime functions-for all subjects showed recurring periods of linearly increasing response\nrates. The responding of four of the five subjects was in phase with the reinforcement input.\nThe remaining subject showed a two-minute phase shift. These results suggest that\norganisms may act like simple amplifiers on cyclic-interval schedules, that is, the form\nof the input signal is not changed by the organism, but is returned with amplification.\nBy analogy with the variable-interval case, the controlling variable on cyclic-interval\nschedules with rate ramps may be the constant reinforcement acceleration that is arranged\nby the schedule.",
@@ -45588,7 +45588,7 @@
       "Fixed-Ratio Changeover"
     ],
     "static-equation": "\\log \\frac{B_1}{B_2} = a \\log \\frac{r_1}{r_2} + \\log b",
-    "static-equation-definitions": "",
+    "static-equation-definitions": "$B_1, B_2$ = behavior allocated to alternatives 1 and 2 (responses emitted or time spent on the two concurrent VI keys); $r_1, r_2$ = reinforcement rates obtained on alternatives 1 and 2; $a$ = sensitivity to reinforcement (slope of the log-ratio regression), where $a=1$ is strict matching, $a<1$ is undermatching, and $a>1$ is overmatching; $\\log b$ = bias (intercept), the constant log preference for one alternative independent of reinforcement ratio.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Concurrent variable-interval two-minute and six-minute schedules were arranged while\nthe fixed-ratio changeover requirement was varied among one, two, and four responses.\nA four-response requirement produced overmatching in the response and time data. A\none-response requirement produced consistent undermatching in the time data but mixed\nresults in the response data. The two-response requirement showed undermatching in\nthe time data and overmatching in the response data. The results are discussed in relation\nto previous research using changeover requirements of five and ten responses, which\nproduced clear tendencies toward overmatching, especially with response data. Taken\ntogether, these findings suggest that matching is not a unique result, and that under-\nmatching or overmatching can be produced by continuous variation of the changeover\nrequirements.",
@@ -45614,7 +45614,7 @@
       "Schedule: Variable Interval"
     ],
     "static-equation": "R = R_{\\max} \\cdot \\frac{r}{K_H + r}",
-    "static-equation-definitions": "",
+    "static-equation-definitions": "R = response rate on the variable-interval schedule; r = reinforcement frequency (reinforcers per unit time) obtained on the schedule; R_{\\max} = asymptotic (maximum) response rate, corresponding to Herrnstein's k (total behavioral output expressed in rate units); K_H = reinforcement frequency at which response rate is half-maximal, corresponding to Herrnstein's r_e (reinforcement from extraneous/background sources).",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Four rats were exponsed to variable-interval schedules specifying a range of different rein-\nforcement frequencies. The effects of two doses of d-amphetamine (1.6 and 3.2 Zmol/kg)\nupon performance maintained under each schedule were examined. In the case of each\nrat, the response rates observed under control conditions (no injection or injection of\nthe vehicle alone) were increasing, negatively accelerated functions of reinforcement fre-\nquency, the data conforming closely to Herrnstein's (1970) equation. In each rat, d-ampheta-\nmine (3.2 ,umol/kg) significantly reduced the value of the constant Rm,Z, which expresses\nthe theoretical maximum response rate. In each rat, the value of KH, which expresses the\nreinforcement frequency needed to obtain the half-maximal response rate, was also re-\nduced, although this only achieved statistical significance in the case of one rat. When\nthe proportional change in response rate in the presence of the drug was plotted against\nthe response rate under control conditions on double logarithmic co-ordinates, linear\nfunctions of negative slope were obtained; in each rat the slope was steeper and the value\nof the control response rate at which d-amphetamine exerted no effect was lower in the\ncase of the higher dose (3.2 jumol/kg) than in the case of the lower dose (1.6 Smol/kg)",
@@ -45780,14 +45780,14 @@
       "Schedule: Random Interval",
       "Schedule: Fixed Time"
     ],
-    "static-equation": "y = a \\log x + b",
+    "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The present experiments evaluated wlhether transitions in reinforcer probability are neces-\nsary to induce attack in pigeons. In Experiment I, three of six pigeons exposed to response-\ncontingent constant-probability food schedules and a photograph of a conspecific as a target\nexhibited sustained postreinforcement attack on the target. The postreinforcement pattern\nof attack developed over the course of the experiment and was accompanied by a reduction\nin the rate of postreinforcement key pecking and an increase in the postreinforcement\npause in key pecking. These effects on key pecking resulted in unprogrammed variations\nin the probability of reinforcement which may have been responsible for the induction of\nattack. In Experiment II, the attack-inducing properties of a constant-probability response-\nindependent food schedule were compared to a periodic food schedule matched for overall\nrate of food delivery and to a no-food condition. In addition to attack, the spatial location\nof the subjects was monitored during each interfood interval. The periodic and aperiodic\nfood schedules generated very different patterns of spatial location. Postfood attack was in-\nduced by both food schedules, although the constant-probability schedule induced attack\nin fewer birds. The no-food condition was not effective in inducing attack in any birds.\nThese experiments indicate that intermittent food schedules without reductions in rein-\nforcer probability are sufficient to induce attack in some pigeons, although not as effective\nas schedules with transitions in reinforcer probability.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Effects of Diazepam on Schedule-Controlled and Scheduled-Induced Behavior Under Signaled and Unsignaled Shock",
@@ -45853,7 +45853,7 @@
       "Maximation"
     ],
     "static-equation": "\\frac{P_R}{P_R + P_L} = \\frac{R_R}{R_R + R_L}; \\frac{T_R}{T_R + T_L} = \\frac{R_R}{R_R + R_L}; R_D = \\frac{R_R}{T_R} - \\frac{R_L}{T_L}",
-    "static-equation-definitions": "",
+    "static-equation-definitions": "P_R, P_L = number of responses emitted on the right and left alternatives; T_R, T_L = time allocated to the right and left alternatives; R_R, R_L = reinforcers obtained on the right and left alternatives; R_R/T_R and R_L/T_L = the local rates of reinforcement (reinforcers per unit time spent on the alternative); R_D = the difference between the two local reinforcement rates. The first equation is the matching relation expressed for response proportions; the second is the matching relation expressed for time-allocation proportions; the third defines the local-rate difference that, under melioration, drives the organism to shift time toward the alternative with the higher local rate of reinforcement until the two local rates are equal (R_R/T_R = R_L/T_L), which coincides with time and response matching.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons were studied in an experiment involving two concurrently available response keys.\nConditions were such that in the first condition the predictions of melioration (Herrnstein\n& Vaughan, 1980), minimization of deviation from matching, and maximization were iden-\ntical: relative time on the right key should have fallen between .125 and .25, which in fact\noccurred. In the second condition, melioration predicted a shift in relative time on the right\nto between .75 and .875, which would involve a transient deviation from matching as well\nas a substantial drop in rate of reinforcement. All three birds eventually shifted their distri-\nbution of behavior to within the range predicted by melioration",
