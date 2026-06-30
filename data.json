@@ -84218,12 +84218,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5226236/",
     "process": [],
-    "static-equation": "H(X)=\u2212\u2211x\u2208Xp(x)\u00b7log2(p(x)); H(X,Y)=\u2212\u2211x\u2208X\u2211y\u2208Yp(x,y).log2(p(x,y)); H(X|Y)=\u2211x\u2208X,y\u2208Yp(x,y)\u22c5log2(p(y)p(x,y)); H(X|Y)=H(X,Y)\u2212H(Y); I(X;Y)=\u2211x\u2208X\u2211y\u2208Yp(x,y)\u22c5log2(p(x,y)p(x)\u22c5p(y)); I(X;Y)=H(X)\u2212H(X|Y); I(X;Y)=H(Y)\u2212H(Y|X); I(X;Y)=H(X,Y)\u2212H(X|Y)\u2212H(Y|X); U(X)=\u2212\u2211x\u2208Xp(x)\u22c5log2(p(x))log2(count(X)); U(X)=H(X)Hmax(X); U(X;Y)=H(X,Y)\u2212I(X;Y)H(X,Y); U(X;Y)=H(X|Y)+H(Y|X)H(X,Y); DKL(P\u2016Q)=\u2211i=1nP(i)\u22c5log2(P(i)Q(i)); DJS(P1\u2016P2)=DKL(P1\u2016M)+DKL(P2\u2016M)2,M=P1+P22; TX(j,k)=\u2211x\u2208X,n\u2208Np(xn+1,xn(j,k))\u22c5log(p(xn+1|xn(j,k))p(xn+1)); TYX(j,k)=\u2211x\u2208X,y\u2208Y,n\u2208Np(xn+1,xn(j,k),yn(j,k))\u22c5log(p(xn+1|xn(j,k),yn(j,k))p(xn+1+xn(j,k)))",
-    "static-equation-definitions": "",
+    "static-equation": "H(X)=-\\sum_{x \\in X} p(x)\\log_2 p(x); H(X,Y)=-\\sum_{x \\in X}\\sum_{y \\in Y} p(x,y)\\log_2 p(x,y); H(X \\mid Y)=\\sum_{x \\in X,\\, y \\in Y} p(x,y)\\log_2\\frac{p(y)}{p(x,y)}; H(X \\mid Y)=H(X,Y)-H(Y); I(X;Y)=\\sum_{x \\in X}\\sum_{y \\in Y} p(x,y)\\log_2\\frac{p(x,y)}{p(x)\\,p(y)}; I(X;Y)=H(X)-H(X \\mid Y); I(X;Y)=H(Y)-H(Y \\mid X); I(X;Y)=H(X,Y)-H(X \\mid Y)-H(Y \\mid X); U(X)=\\frac{-\\sum_{x \\in X} p(x)\\log_2 p(x)}{\\log_2 \\mathrm{count}(X)}; U(X)=\\frac{H(X)}{H_{\\max}(X)}; U(X;Y)=\\frac{H(X,Y)-I(X;Y)}{H(X,Y)}; U(X;Y)=\\frac{H(X \\mid Y)+H(Y \\mid X)}{H(X,Y)}; D_{KL}(P \\,\\|\\, Q)=\\sum_{i=1}^{n} P(i)\\log_2\\frac{P(i)}{Q(i)}; D_{JS}(P_1 \\,\\|\\, P_2)=\\frac{D_{KL}(P_1 \\,\\|\\, M)+D_{KL}(P_2 \\,\\|\\, M)}{2},\\quad M=\\frac{P_1+P_2}{2}; T_X(j,k)=\\sum_{x \\in X,\\, n \\in N} p\\!\\left(x_{n+1},\\, x_n^{(j,k)}\\right)\\log\\frac{p\\!\\left(x_{n+1} \\mid x_n^{(j,k)}\\right)}{p(x_{n+1})}; T_{YX}(j,k)=\\sum_{x \\in X,\\, y \\in Y,\\, n \\in N} p\\!\\left(x_{n+1},\\, x_n^{(j,k)},\\, y_n^{(j,k)}\\right)\\log\\frac{p\\!\\left(x_{n+1} \\mid x_n^{(j,k)},\\, y_n^{(j,k)}\\right)}{p\\!\\left(x_{n+1} \\mid x_n^{(j,k)}\\right)}",
+    "static-equation-definitions": "X, Y: discrete random variables (e.g., stimulus and response categories); x, y: their values; p(x), p(y): marginal probabilities; p(x,y): joint probability; p(x \\mid y): conditional probability; H(X): Shannon entropy (bits, using \\log_2); H(X,Y): joint entropy; H(X \\mid Y): conditional entropy (written in the paper's ratio form p(y)/p(x,y), equivalent to -\\sum p(x,y)\\log_2 p(x \\mid y)); I(X;Y): mutual information; U(X): normalized uncertainty (entropy divided by maximum possible entropy), where \\mathrm{count}(X) is the number of distinct outcomes of X and H_{\\max}(X)=\\log_2 \\mathrm{count}(X); U(X;Y): normalized joint/relative uncertainty; D_{KL}(P \\,\\|\\, Q): Kullback-Leibler divergence of distribution P from Q; D_{JS}: Jensen-Shannon divergence with mixture M=(P_1+P_2)/2; T_X(j,k): stored information (active information storage) \u2014 how much X's own past predicts its next value relative to baseline (involves no second source variable); T_{YX}(j,k): transfer entropy from Y to X (Schreiber 2000), the predictive gain about x_{n+1} contributed by Y's past beyond X's own past; both use history block lengths j and k, where x_n^{(j,k)} and y_n^{(j,k)} denote the embedded past states (the k-event block beginning j events back) of the source/target time series and x_{n+1} the next target value; N indexes time steps.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "In the 65 years since its formal specification, information theory has become an established statistical paradigm, providing powerful tools for quantifying probabilistic relationships. Behavior analysis has begun to adopt these tools as a novel means of measuring the interrelations between behavior, stimuli, and contingent outcomes. This approach holds great promise for making more precise determinations about the causes of behavior and the forms in which conditioning may be encoded by organisms. In addition to providing an introduction to the basics of information theory, we review some of the ways that information theory has informed the studies of Pavlovian conditioning, operant conditioning, and behavioral neuroscience. In addition to enriching each of these empirical domains, information theory has the potential to act as a common statistical framework by which results from different domains may be integrated, compared, and ultimately unified.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "CONCURRENT IDENTITY TRAINING IS NOT NECESSARY FOR ASSOCIATIVE SYMMETRY IN SUCCESSIVE MATCHING",
@@ -84340,12 +84342,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4056767/",
     "process": [],
-    "static-equation": "V=A/(1+bX)s,",
-    "static-equation-definitions": "",
+    "static-equation": "V = \\frac{A}{(1 + bX)^{s}}",
+    "static-equation-definitions": "V = subjective (present) value of the outcome; A = nominal amount of the delayed or probabilistic outcome; X = delay until receipt (delay discounting) or odds against receiving the outcome, \\theta = (1-p)/p, substituted for delay in probability discounting; b = discounting rate parameter; s = exponent governing the nonlinear scaling of delay/odds-against (and amount sensitivity).",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The present study examined delay and probability discounting of hypothetical monetary losses over a wide range of amounts (from $20 to $500,000) in order to determine how amount affects the parameters of the hyperboloid discounting function. In separate conditions, college students chose between immediate payments and larger, delayed payments and between certain payments and larger, probabilistic payments. The hyperboloid function accurately described both types of discounting, and amount of loss had little or no systematic effect on the degree of discounting. Importantly, the amount of loss also had little systematic effect on either the rate parameter or the exponent of the delay and probability discounting functions. The finding that the parameters of the hyperboloid function remain relatively constant across a wide range of amounts of delayed and probabilistic loss stands in contrast to the robust amount effects observed with delayed and probabilistic rewards. At the individual level, the degree to which delayed losses were discounted was uncorrelated with the degree to which probabilistic losses were discounted, and delay and probability loaded on two separate factors, similar to what is observed with delayed and probabilistic rewards. Taken together, these findings argue that although delay and probability discounting involve fundamentally different decision-making mechanisms, nevertheless the discounting of delayed and probabilistic losses share an insensitivity to amount that distinguishes it from the discounting of delayed and probabilistic gains.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Reward magnitude effects on temporal discrimination",
@@ -84399,12 +84403,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4156525/",
     "process": [],
-    "static-equation": "V=A\u2215(1+kD)s,",
-    "static-equation-definitions": "",
+    "static-equation": "V = \\frac{A}{(1 + kD)^{s}}",
+    "static-equation-definitions": "V = present (subjective) value of the delayed reward; A = amount of the delayed reward; D = delay to receipt of the reward; k = discounting rate parameter (larger values indicate steeper discounting); s = exponent reflecting nonlinear scaling. When s = 1.0, the equation reduces to the simple hyperbola V = A/(1 + kD).",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Several studies have examined discounting by pigeons and rats using concurrent-chains procedures, but the results have been inconsistent. None of these studies, however, has established that discounting functions derived from estimates of indifference points can be obtained with a concurrent-chains procedure, so their validity remains in doubt. The present study used a concurrent-chains procedure within sessions combined with an adjusting-amount procedure across sessions to determine the present, subjective values of food reinforcers to be obtained after a delay. Discounting was well described by the hyperbolic discounting function, suggesting that the concurrent-chains procedure and the more typical adjusting-amount procedure are measuring the same process. Consistent with previous studies with rats and pigeons using adjusting-amount procedures, no significant effect of the amount of the delayed reinforcer on the degree of discounting was observed, suggesting that the amount effect may be unique to humans although consistent with the view that animals' choices are controlled by the relative, rather than the absolute, value of reinforcers.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "MODELING THE EFFECTS OF SENSORY REINFORCERS ON BEHAVIORAL PERSISTENCE WITH ALTERNATIVE REINFORCEMENT",
@@ -84441,12 +84447,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4224988/",
     "process": [],
-    "static-equation": "logQ=logQ0+k(e\u2212\u03b1\u22c5Q0\u22c5C+1).",
-    "static-equation-definitions": "",
+    "static-equation": "\\log Q = \\log Q_0 + k\\left(e^{-\\alpha Q_0 C} - 1\\right)",
+    "static-equation-definitions": "Q = quantity consumed at unit price C; Q_0 = demand intensity (consumption as price approaches zero); k = constant denoting the range of consumption in logarithmic (base-10) units; \\alpha = rate constant governing the decline in elasticity of demand, indexing essential value (smaller \\alpha indicates higher value / lower elasticity); C = cost (unit price) of the commodity.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Nicotine increases the value of some reinforcing stimuli, and this effect may contribute to nicotine's widespread abuse. We aimed to quantify this effect using a behavioral economic analysis. Six Long- Evans rats were exposed to a modified observing response procedure. In this procedure, presses to one lever resulted either in food according to a variable-interval 15 second schedule or extinction; presses to a second, observing lever illuminated stimuli correlated with the schedule in effect on the food/extinction lever (i.e., conditioned reinforcers). The FR requirement on the observing lever increased across sessions. The number of presentations of the conditioned reinforcers was plotted as a function of FR value to generate a demand curve. Nicotine was then administered at a dose of 0.3 mg/kg. All demand curves were fitted to the exponential demand equation and a parameter reflecting reinforcer value was evaluated. Nicotine increased the value of the conditioned reinforcers as measured by this equation; nicotine also increased responding on the food/extinction lever. This analysis demonstrates that nicotine increases the value of conditioned reinforcers under certain conditions. The current procedure allows for a novel method of analyzing demand for conditioned reinforcers.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Experimental Manipulations of Delay Discounting & Related Processes: An Introduction to the Special Issue",
@@ -84482,12 +84490,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5661958/",
     "process": [],
-    "static-equation": "V=Ae-kD; V=A(1+kD); V=A(1+kD)s",
-    "static-equation-definitions": "",
+    "static-equation": "V = A e^{-kD}; V = \\frac{A}{1 + kD}; V = \\frac{A}{(1 + kD)^s}",
+    "static-equation-definitions": "V = subjective (present, discounted) value of the delayed outcome; A = nominal (undiscounted) amount of the delayed outcome; k = discounting rate parameter (larger k = steeper discounting); D = delay to the outcome; s = scaling exponent in the Green & Myerson hyperboloid governing the nonlinear sensitivity of value to the (1 + kD) discounting term.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "We examined the effects of the framing of time on delay discounting. Delay discounting is the process by which delayed outcomes are devalued as a function of time. Time in atitrating delay discounting task is often framed in calendar units (e.g., as 1 week, 1 month, etc.). When time is framed as a specific date, delayed outcomes are discounted less compared to the calendar format. Other forms of framing time; however, have not been explored. All participants completed atitrating calendar unit delay-discounting task for money. Participants were also assigned to one of two delay discounting tasks: time as dates (e.g., June 1st, 2015) or time in units of days (e.g., 5000 days), using the same delay distribution as the calendar delay discounting task. Time framed as dates resulted in less discounting compared to the calendar method, whereas time framed as days resulted in greater discounting compared to the calendar method. The hyperboloid model fit best compared to the hyperbola and exponential models. How time is framed may alter how participants attend to the delays as well as how the delayed outcome is valued. Altering how time is framed may serve to improve adherence to goals with delayed outcomes.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Impulsive Choice, Alcohol Consumption, and Pre-Exposure to Delayed Rewards: II. Potential Mechanisms",
@@ -84503,12 +84513,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4314314/",
     "process": [],
-    "static-equation": "C=(n\u22121)Tn\u22122\u2211i=1n\u22121TinTn,",
-    "static-equation-definitions": "",
+    "static-equation": "C = \\frac{(n-1)T_n - 2\\sum_{i=1}^{n-1} T_i}{n T_n}",
+    "static-equation-definitions": "C = index of curvature (Fry's index) describing the temporal distribution of cumulative time spent in the food receptacle across the delay; n = number of equal time intervals into which the delay is divided (35 half-second intervals in this study); T_i = cumulative time spent in the receptacle through interval i; T_n = cumulative time spent in the receptacle through the final interval n. Observed C was normalized to C_n by dividing by (n-1)/n, yielding a measure bounded by -1 (all time in the first interval) and +1 (all time in the last interval), with 0 indicating evenly distributed time.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "In a prior study (Stein et al., 2013), we reported that rats pre-exposed to delayed rewards made fewer impulsive choices, but consumed more alcohol (12% wt/vol), than rats pre-exposed to immediate rewards. To understand the mechanisms that produced these findings, we again pre-exposed rats to either delayed (17.5 s; n = 32) or immediate (n = 30) rewards. In post-tests, delay-exposed rats made significantly fewer impulsive choices at both 15- and 30-s delays to a larger, later food reward than the immediacy-exposed comparison group. Behavior in an open-field test provided little evidence of differential stress exposure between groups. Further, consumption of either 12% alcohol or isocaloric sucrose in subsequent tests did not differ between groups. Because Stein et al. introduced alcohol concentration gradually (3\u201312%), we speculate that their group differences in 12% alcohol consumption were not determined by alcohol\u2019s pharmacological effects, but by another variable (e.g., taste) that was preserved as an artifact from lower concentrations. We conclude that pre-exposure to delayed rewards generalizes beyond the pre-exposure delay; however, this same experimental variable does not robustly influence alcohol consumption.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Working-Memory Training: Effects on Delay Discounting in Male Long Evans Rats",
@@ -84543,12 +84555,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4428151/",
     "process": [],
-    "static-equation": "IND=1/(1+kD).; IND=e\u2212kD.",
-    "static-equation-definitions": "",
+    "static-equation": "\\mathrm{IND}=\\frac{1}{1+kD}; \\mathrm{IND}=e^{-kD}",
+    "static-equation-definitions": "IND = indifference point expressed as a proportion of the nominal (undiscounted) reward amount; D = delay to the reward; k = free discounting-rate parameter (larger k indicates steeper discounting). The first equation is Mazur's (1987) hyperbolic discounting model; the second is the exponential discounting model.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Humans are reported to discount delayed rewards at lower rates than\nnonhumans. However, nonhumans are studied in tasks that restrict reinforcement\nduring delays, whereas humans are typically studied in tasks that do not\nrestrict reinforcement during delays. In nonhuman tasks, the opportunity cost of\nrestricted reinforcement during delays may increase delay discounting rates. The\npresent within-subjects study used online crowdsourcing (Amazon Mechanical Turk,\nor MTurk) to assess the discounting of hypothetical delayed money (and\ncigarettes in smokers) under four hypothetical framing conditions differing in\nthe availability of reinforcement during delays. At one extreme, participants\nwere free to leave their computer without returning, and engage in any behavior\nduring reward delays (modeling typical human tasks). At the opposite extreme,\nparticipants were required to stay at their computer and engage in little other\nbehavior during reward delays (modeling typical nonhuman tasks). Discounting\nrates increased as an orderly function of opportunity cost. Results also\nindicated predominantly hyperbolic discounting, the \u201cmagnitude\neffect,\u201d steeper discounting of cigarettes than money, and positive\ncorrelations between discounting rates of these commodities. This is the first\nstudy to test the effects of opportunity costs on discounting, and suggests that\nprocedural differences may partially account for observed species differences in\ndiscounting.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "LEARNING TO WAIT FOR MORE LIKELY OR JUST MORE: GREATER TOLERANCE TO DELAYS OF REWARD WITH INCREASINGLY LONGER DELAYS",
@@ -84562,12 +84576,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9211002/",
     "process": [],
-    "static-equation": "damage=100*(1\u2212(10\u2212t10)power)1power; magnitudeorprobability=100\u00d7tmax20\u00d7(1\u2212(tmax\u2212ttmax)power)1power",
-    "static-equation-definitions": "",
+    "static-equation": "\\text{damage} = 100\\left(1 - \\left(\\frac{10 - t}{10}\\right)^{\\text{power}}\\right)^{1/\\text{power}}; \\text{magnitude or probability} = 100 \\times \\frac{t_{\\max}}{20} \\times \\left(1 - \\left(\\frac{t_{\\max} - t}{t_{\\max}}\\right)^{\\text{power}}\\right)^{1/\\text{power}}",
+    "static-equation-definitions": "These are task-design reward-charging functions for the video-game discounting task (superellipse/Lame-form saturating growth), not classic EAB matching/choice models; preserved in the static-equation field as presented in the source. t = time in seconds waited since the last shot/response; power = parameter controlling the growth rate of the function (set to 0.75, giving moderately positively accelerating, initially slow then more rapid, growth); 10 = number of seconds until maximum damage in the baseline game version; t_{max} = the currently programmed delay (in seconds) to the maximum charge/reward (started at 5 s in training); 20 = the normalizing constant in the scaling term (interpreted as the longest programmed delay in seconds, so that t_{max}/20 scales the maximum available magnitude or probability with the programmed delay \u2014 this gloss of the constant 20 is a reasonable inference rather than a verbatim source statement); damage / magnitude or probability = the accumulated value (0 to 100) available at time t.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Little research has focused on training greater tolerance to delays of rewards in the context of delayed gratification. In delayed gratification, waiting for a delayed outcome necessitates the ability to resist defection for a continuously available smaller, immediate outcome. The present research explored the use of a fading procedure for producing greater waiting in a video-game based, delayed gratification task. Participants were assigned to conditions in which either the reward magnitude, or the probability of receiving a reward, was a function of time waited and the delay to the maximum reward was gradually increased throughout this training. Waiting increased for all participants but less for those waiting for a greater reward magnitude than a greater reward probability. All participants showed a tendency to wait in a final testing phase, but training with probabilistic outcomes produced a significantly greater likelihood of waiting during testing. The behavioral requirements of delay discounting versus delay gratification are discussed, as well as the benefits of training greater self-control in a variety of contexts.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Measurement of impulsive choice in rats: Same and alternate form test-retest reliability and temporal tracking",
