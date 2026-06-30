@@ -79984,12 +79984,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2648524/",
     "process": [],
-    "static-equation": "slope = \\frac{1}{1 + kD}",
-    "static-equation-definitions": "slope = slope of the indifference function; k = discounting rate; D = delay",
+    "static-equation": "V = \\frac{A}{1 + KD}",
+    "static-equation-definitions": "V = value (strength) of a reinforcer; A = reinforcer amount; K = decay (discounting) rate parameter; D = delay to the reinforcer",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "An adjusting-delay procedure was used to study the choices of pigeons and rats when both delay and amount of reinforcement were varied. In different conditions, the choice alternatives included one versus two reinforcers, one versus three reinforcers, and three versus two reinforcers. The delay to one alternative (the standard alternative) was kept constant in a condition, and the delay to the other (the adjusting alternative) was increased or decreased many times a session so as to estimate an indifference point\u2014a delay at which the two alternatives were chosen about equally often. Indifference functions were constructed by plotting the adjusting delay as a function of the standard delay for each pair of reinforcer amounts. The experiments were designed to test the prediction of a hyperbolic decay equation that the slopes of the indifference functions should increase as the ratio of the two reinforcer amounts increased. Consistent with the hyperbolic equation, the slopes of the indifference functions depended on the ratios of the two reinforcer amounts for both pigeons and rats. These results were not compatible with an exponential decay equation, which predicts slopes of 1 regardless of the reinforcer amounts. Combined with other data, these findings provide further evidence that delay discounting is well described by a hyperbolic equation for both species, but not by an exponential equation. Quantitative differences in the y-intercepts of the indifference functions from the two species suggested that the rate at which reinforcer strength decreases with increasing delay may be four or five times slower for rats than for pigeons.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "ISOLATING BEHAVIORAL MECHANISMS OF INTERTEMPORAL CHOICE: NICOTINE EFFECTS ON DELAY DISCOUNTING AND AMOUNT SENSITIVITY",
@@ -80401,12 +80403,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2732325/",
     "process": [],
-    "static-equation": "B = \\frac{R^b}{R^b + bR^a}",
-    "static-equation-definitions": "B = bias; R = relative reinforcer densities; a = sensitivity parameter; b = bias parameter",
+    "static-equation": "\\log\\left(\\frac{B_a}{B_b}\\right) = c\\,\\log\\left(\\frac{R_a}{R_b}\\right) + \\log k",
+    "static-equation-definitions": "B_a/B_b = ratio of behavior (responses) allocated to alternatives A and B; R_a/R_b = ratio of reinforcers obtained from alternatives A and B; c = sensitivity to reinforcement (c=1 matching, c<1 undermatching, c>1 overmatching); \\log k = bias, preference independent of the reinforcer ratio (>0 bias toward A, <0 bias toward B). Note: this paper uses the c/k notation (c for sensitivity, k for bias) rather than the more common Baum a/c convention.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Increases in rates of punished behavior by the administration of anxiolytic drugs (called antipunishment effects) are well established in animals but not humans. The present study examined antipunishment effects of ethanol in humans using a choice procedure. The behavior of 5 participants was placed under six concurrent variable-interval schedules of monetary reinforcement. In three of the six concurrent schedules, punishment, in the form of monetary loss, was superimposed on one alternative. Data were analyzed according to the generalized matching equation which distinguishes between bias (allocation of behavior beyond what matching to relative reinforcer densities would predict) and sensitivity to reinforcement (how well behavior tracks relative reinforcer densities). In addition, participants completed a pencil-tapping test. Under placebo punishment conditions, all participants demonstrated low response rates and a bias against the alternative associated with punishment, despite a resultant loss of available reinforcers. Bias against the punished alternative was dose-dependently reduced in participants shown to be most sensitive to ethanol (0.6, 1.2, and 1.8 g/kg) in measures of overall responding and on the pencil-tapping test. No ethanol-induced change in bias was noted when punishment was not imposed. Sensitivity to reinforcement also decreased for participants shown to be sensitive to ethanol. In addition to extending antipunishment effects to humans, these results also show that antipunishment effects can be quantified via the matching equation.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "The Effect of Changes in Criterion Value on Differential Reinforcement of Low Rate Schedule Performance",
@@ -82116,12 +82120,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048357/",
     "process": [],
-    "static-equation": "k = c \\times A^b",
-    "static-equation-definitions": "k = exponent; A = amount; c = constant; b = power",
+    "static-equation": "V = \\frac{A}{(1 + bX)^{s}}; s = a A^{c}",
+    "static-equation-definitions": "V = subjective (discounted) value of the probabilistic reward; A = nominal reward amount; X = odds against receipt, (1 - p)/p; b = rate (discounting) parameter, found to be amount-invariant; s = exponent of the hyperboloid (psychophysical scaling); a = scaling constant in the power function for the exponent; c = power (exponent) governing how s changes with amount",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The present study with college students examined the effect of amount on the discounting of probabilistic monetary rewards. A hyperboloid function accurately described the discounting of hypothetical rewards ranging in amount from $20 to $10,000,000. The degree of discounting increased continuously with amount of probabilistic reward. This effect of amount was not due to changes in the rate parameter of the discounting function, but rather was due to increases in the exponent. These results stand in contrast to those observed with the discounting of delayed monetary rewards, in which the degree of discounting decreases with reward amount due to amount-dependent decreases in the rate parameter. Taken together, this pattern of results suggests that delay and probability discounting reflect different underlying mechanisms. That is, the fact that the exponent in the delay discounting function is independent of amount is consistent with a psychophysical scaling interpretation, whereas the finding that the exponent of the probability-discounting function is amount-dependent is inconsistent with such an interpretation. Instead, the present results are consistent with the idea that the probability-discounting function is itself the product of a value function and a weighting function. This idea was first suggested by Kahneman and Tversky (1979), although their prospect theory does not predict amount effects like those observed. The effect of amount on probability discounting was parsimoniously incorporated into our hyperboloid discounting function by assuming that the exponent was proportional to the amount raised to a power. The amount-dependent exponent of the probability-discounting function may be viewed as reflecting the effect of amount on the weighting of the probability with which the reward will be received.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Incoming Editor of JEAB",
@@ -83127,12 +83133,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3292230/",
     "process": [],
-    "static-equation": "V = e^{-kP}",
-    "static-equation-definitions": "V = essential value; k = elasticity; P = price",
+    "static-equation": "\\log Q = \\log Q_0 + k\\left(e^{-\\alpha Q_0 C} - 1\\right)",
+    "static-equation-definitions": "Q = reinforcer consumption; Q_0 = estimated consumption at the lowest price (demand intensity, consumption at a theoretical price of zero); k = constant representing the range of consumption in log10 units; \\alpha = rate of decline in relative log consumption (the essential-value / elasticity parameter); C = price (cost per reinforcer). log is base 10.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The exponential demand equation proposed by Hursh and Silberberg (2008) provides an estimate of the essential value of a good as a function of price. The model predicts that essential value should remain constant across changes in the magnitude of a reinforcer, but may change as a function of motivational operations. In Experiment 1, rats' demand for food across a sequence of fixed-ratio schedules was assessed during open and closed economy conditions and across one- and two-pellet per reinforcer delivery conditions. The exponential equation was fitted to the relation between fixed-ratio size and the logarithm of the absolute number of reinforcers. Estimates of the rate of change in elasticity of food, the proposed measure of essential value, were compared across conditions. Essential value was equivalent across magnitudes during the closed economy, but showed a slight decrease across magnitudes during the open economy. Experiment 2 explored the behavioral mechanisms of nicotine's effects on consumption with the results from Experiment 1 serving as a within-subject frame of reference. The same subjects were administered nicotine via subcutaneously implanted osmotic minipumps at a dose of 3 mg/kg/day and exposed to both the one- and two-pellet conditions under a closed economy. Although nicotine produced large decreases in demand, essential value was not significantly changed. The data from the present experiments provide further evidence for the adequacy of the exponential demand equation as a tool for quantifying the rate of change in elasticity of a good and for assessing behavioral mechanisms of drug action.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Immediate Postsession Feeding Reduces Operant Responding in Rats",
@@ -83806,12 +83814,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893105/",
     "process": [],
-    "static-equation": "V=A/(1+bX)s,",
-    "static-equation-definitions": "",
+    "static-equation": "V = \\frac{A}{(1 + bX)^{s}}; \\frac{A_S}{m} = \\frac{A_L}{m + D}; \\frac{A_S}{A_L} = \\frac{m}{m + D}; \\frac{A_S}{A_L} = \\frac{1}{1 + D/m}; \\frac{A_S^{a}}{A_L^{a}} = \\frac{m^{d}}{(m + D)^{d}} = \\frac{1}{(1 + D/m)^{d/a}}; \\frac{A_S}{A_L} = \\frac{1}{(1 + D/m)^{s}}",
+    "static-equation-definitions": "V = subjective (present) value of a delayed or probabilistic reward; A = nominal reward amount; X = independent variable, either delay until receipt (delay discounting) or odds against receipt, (1-p)/p (probability discounting); b = free parameter governing the rate of discounting; s = free exponent parameter producing nonlinear (power-function) scaling of the underlying dimension (s = 1 reduces the hyperboloid to Mazur's simple hyperbola). In the rate-of-reward (delay-discounting) derivation: A_S = amount of the smaller-sooner reward; A_L = amount of the larger-later reward; m = subjective delay (in minimal time units) implicit at the sooner option, with the rate parameter b = 1/m; D = additional objective delay to the later reward; a = exponent scaling subjective amount; d = exponent scaling subjective delay. The single hyperboloid exponent equals the ratio of these scaling exponents, s = d/a, which is how the power term arises when amount and delay are nonlinearly scaled before equating rates of reward.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "People discount the value of delayed and uncertain outcomes, and how steeply individuals discount is thought to reflect how impulsive they are. From this perspective, steep discounting of delayed outcomes (which fails to maximize long-term welfare) and shallow discounting of probabilistic outcomes (which fails to adequately take risk into account) reflect the same trait of impulsivity. Despite the fact that a hyperboloid function describes the discounting of both delayed and probabilistic outcomes, there is considerable evidence that the two kinds of discounting involve different processes as well as separate impulsivity traits. Several manipulations differentially affect delay and probability discounting, and correlational studies show that how steeply one discounts delayed rewards is relatively independent of how steeply one discounts probabilistic rewards. Moreover, people\u2019s discounting of delayed money and health outcomes are uncorrelated as are discounting of real, consumable rewards and hypothetical money. These results suggest that even within delay discounting, there may be multiple \u2018impulsivities,\u2019 each of which may be important for understanding a different aspect of decision making. Taken together, the pattern of findings reviewed here argues for a more nuanced view of impulsivity than that which is usually assumed in discounting research.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Changing Delay Discounting in the Light of the Competing Neurobehavioral Decision Systems Theory: a Review",
@@ -83827,12 +83837,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3917566/",
     "process": [],
-    "static-equation": "V=A1+kD",
-    "static-equation-definitions": "",
+    "static-equation": "V = \\frac{A}{1 + kD}",
+    "static-equation-definitions": "V = present (subjective) value of a reinforcer; A = amount (undiscounted magnitude) of the reinforcer; D = delay to receipt of the reinforcer; k = free parameter quantifying the rate at which the reinforcer is devalued as a function of delay (discounting rate)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Excessively devaluing delayed reinforcers co-occurs with a wide variety of clinical conditions such as drug dependence, obesity, and excessive gambling. If excessive delay discounting is a trans-disease process that underlies the choice behavior leading to these and other negative health conditions, efforts to change an individual\u2019s discount rate are arguably important. Although discount rate is often regarded as a relatively stable trait, descriptions of interventions and environmental manipulations that successfully alter discount rate have begun to appear in the literature. In this review, we compare published examples of procedures that change discount rate and classify them into categories of procedures, including therapeutic interventions, direct manipulation of the executive decision-making system, framing effects, physiological state effects, and acute drug effects. These changes in discount rate are interpreted from the perspective of the competing neurobehavioral decision systems theory, which describes a combination of neurological and behavioral processes that account for delay discounting. We also suggest future directions that researchers could take to identify the mechanistic processes that allow for changes in discount rate and to test whether the competing neurobehavioral decision systems view of delay discounting is correct.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Towards a General Model of Temporal Discounting",
@@ -83846,12 +83858,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8127626/",
     "process": [],
-    "static-equation": "V_t = A_t + \\tau D_\\tau; \\quad D_\\tau = \\delta \\tau; \\quad D_\\tau = \\frac{1}{1 + k \\tau}; \\quad D_\\tau = \\frac{1}{(1 + k \\tau)s}; \\quad D_\\tau = \\begin{cases} 1 & \\text{when } \\tau = 0 \\\\ \\beta \\delta \\tau & \\text{when } \\tau > 0 \\end{cases}; \\quad D_\\tau = \\omega \\delta_1 \\tau + (1 - \\omega) \\delta_2 \\tau",
-    "static-equation-definitions": "",
+    "static-equation": "V_t = A_{t+\\tau} D_\\tau; \\quad D_\\tau = \\delta^\\tau; \\quad D_\\tau = \\frac{1}{1 + k \\tau}; \\quad D_\\tau = \\frac{1}{(1 + k \\tau)^s}; \\quad D_\\tau = \\begin{cases} 1 & \\text{when } \\tau = 0 \\\\ \\beta \\delta^\\tau & \\text{when } \\tau > 0 \\end{cases}; \\quad D_\\tau = \\omega \\delta_1^\\tau + (1 - \\omega) \\delta_2^\\tau",
+    "static-equation-definitions": "V_t = subjective (present) value at time t of a delayed outcome; A_{t+\\tau} = reward magnitude (amount) delivered at delay t+\\tau; D_\\tau = discount function giving the fractional value of an outcome delayed by \\tau; \\tau = delay to the outcome; \\delta = exponential (constant-rate) discount factor per unit time (0 < \\delta < 1); k = hyperbolic discount-rate parameter (impulsivity); s = nonlinear scaling/sensitivity exponent on the hyperbolic denominator (Green-Myerson hyperboloid); \\beta = present-bias parameter weighting immediate vs. future rewards in the quasi-hyperbolic (\\beta-\\delta) model; \\omega = mixture weight on the first system in the dual-system double-exponential model (0 \\le \\omega \\le 1); \\delta_1, \\delta_2 = exponential discount factors of the two (myopic and patient) valuation systems",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Psychological models of temporal discounting have now successfully displaced classical economic theory due to the simple fact that many common behavior patterns, such as impulsivity, were unexplainable with classic models. However, the now dominant hyperbolic model of discounting is itself becoming increasingly strained. Numerous factors have arisen that alter discount rates with no means to incorporate the different influences into standard hyperbolic models. Furthermore, disparate literatures are emerging that propose theoretical constructs that are seemingly independent of hyperbolic discounting. We argue that although hyperbolic discounting provides an eminently useful quantitative measure of discounting it fails as a descriptive psychological model of the cognitive processes that produce intertemporal preferences. Instead, we propose that recent contributions from cognitive neuroscience indicate a path for developing a general model of time discounting. New data suggest a means by which neuroscience-based theory may both integrate the diverse empirical data on time preferences and merge seemingly disparate theoretical models that impinge on time preferences.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Change Detection, Multiple Controllers, and Dynamic Environments: Insights from the brain",
@@ -83865,12 +83879,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4153983/",
     "process": [],
-    "static-equation": "v \\leftarrow v + \\alpha (\\tilde{v} - v); \\quad x_{t+1} = \\phi(x_t, u_t); \\quad u_t = \\psi(x_{t+1}^*, x_t); \\quad x_{t+1}^* = \\phi(x_t, \\psi(x_{t+1}^*, x_t)); \\quad \\delta w \\propto -(\\hat{x} - x) \\cdot \\nabla_w \\phi; \\quad \\lambda = \\frac{e^{-\\frac{|x - \\hat{x}_i|^2}{\\sigma^2}}}{\\sum_i e^{-\\frac{|x - \\hat{x}_i|^2}{\\sigma^2}}}; \\quad \\delta w_i \\propto -\\lambda_i (\\hat{x}_i - x) \\cdot \\nabla_w \\phi",
-    "static-equation-definitions": "",
+    "static-equation": "v \\leftarrow v + \\alpha (\\tilde{v} - v); \\quad x_{t+1} = \\phi(x_t, u_t); \\quad u_t = \\psi(x_{t+1}^*, x_t); \\quad x_{t+1}^* = \\phi(x_t, \\psi(x_{t+1}^*, x_t)); \\quad \\delta w \\propto -(\\hat{x} - x) \\cdot \\nabla_w \\phi; \\quad \\lambda = \\frac{e^{-\\frac{|x - \\hat{x}_i|^2}{\\sigma^2}}}{\\sum_i e^{-\\frac{|x - \\hat{x}_i|^2}{\\sigma^2}}}; \\quad \\hat{x} = \\sum_i \\lambda_i \\hat{x}_i; \\quad u = \\sum_i \\lambda_i u_i; \\quad \\delta w_i \\propto -\\lambda_i (\\hat{x}_i - x) \\cdot \\nabla_w \\phi",
+    "static-equation-definitions": "v = current (cached) value estimate; \\tilde{v} = newly observed/target value; \\alpha = learning rate (step size), so v \\leftarrow v + \\alpha(\\tilde{v} - v) is the standard RL/delta-rule value update; x_t = state at time t; u_t = control (motor command) at time t; \\phi = forward model mapping current state and control to the next state x_{t+1}; \\psi = inverse model returning the control needed to reach a desired next state; x_{t+1}^* = desired (goal) next state; the consistency constraint x_{t+1}^* = \\phi(x_t, \\psi(x_{t+1}^*, x_t)) states that forward and inverse models are mutual inverses; \\hat{x} = state predicted by the forward model(s); (\\hat{x} - x) = prediction error; w = forward-model parameters (weights); \\nabla_w \\phi = gradient of the forward model with respect to its weights, so \\delta w is a gradient-descent weight update on squared prediction error; index i = the i-th forward/inverse model pair in a MOSAIC-style modular (multiple-controller) architecture; \\hat{x}_i = prediction of model i; u_i = control signal of model i; \\sigma = width (variance scale) of the Gaussian responsibility kernel; \\lambda_i = responsibility (softmax/normalized) weight of model i given its prediction error, with \\sum_i \\lambda_i = 1 (the softmax equation is written in the paper with an unindexed \\lambda on the left-hand side and \\sigma^2 rather than the more usual 2\\sigma^2 in the exponent, both reproduced verbatim; the intended object is the per-model responsibility \\lambda_i, as confirmed by its use in the subsequent equations); \\hat{x} = \\sum_i \\lambda_i \\hat{x}_i is the responsibility-weighted average of model predictions; u = \\sum_i \\lambda_i u_i is the responsibility-weighted average of model control signals (the combination step that closes the MOSAIC loop); \\delta w_i = weight update for model i scaled by its responsibility \\lambda_i",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Foundational studies in decision making focused on behavior as the most accessible and reliable data on which to build theories of choice. More recent work, however, has incorporated neural data to provide insights unavailable from behavior alone. Among other contributions, these studies have validated reinforcement learning models by demonstrating neural signals posited on the basis of behavioral work in classical and operant conditioning. In such models, the values of actions or options are updated incrementally based on the difference between expectations and outcomes, resulting in the gradual acquisition of stable behavior. By contrast, natural environments are often dynamic, including sudden, unsignaled shifts in reinforcement contingencies. Such rapid changes may necessitate frequent shifts in the behavioral mode, requiring dynamic sensitivity to environmental changes. Recently, we proposed a model in which cingulate cortex plays a key role in detecting behaviorally-relevant environmental changes and facilitating the update of multiple behavioral strategies. Here, we connect this framework to a model developed to handle the analogous problem in motor control. We offer a tentative dictionary of control signals in terms of brain structures and highlight key differences between motor and decision systems that may be important in evaluating the model.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Social Discounting and the Prisoner\u2019s Dilemma Game",
