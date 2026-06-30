@@ -614,14 +614,14 @@
       "Response Bursts",
       "Extinction"
     ],
-    "static-equation": "p(L|T) = n(L \u2227 T) / n(T)",
-    "static-equation-definitions": "p(L|T): Probability of a lever response given a trough response; n(L \u2227 T): Number of times a lever response directly followed a trough response within the observation window; n(T): Total number of trough responses within the observation window.",
-    "recursive-equation": "p_t(L|T) = p_{t-1}(L|T) + (1 / n_t(T)) * ( I_t(L|T) - p_{t-1}(L|T) )",
-    "recursive-equation-definitions": "p_t(L|T): Estimated probability after t events in which a trough response could be followed by a lever response; p_{t-1}(L|T): Previous estimate; n_t(T): Cumulative count of trough responses up to event t; I_t(L|T): Indicator taking value 1 if event t is a lever response that directly follows a trough response, else 0. Initialize p_0(L|T) in [0,1] (e.g., 0.5). Update only on trials where a new T occurs; otherwise, retain the previous estimate.",
+    "static-equation": "p(L \\mid T) = \\frac{n(L \\wedge T)}{n(T)}",
+    "static-equation-definitions": "p(L \\mid T): probability of a lever response given a trough (magazine) response; n(L \\wedge T): number of times a lever response directly followed a trough response within the observation window; n(T): total number of trough responses within the observation window. UNCONFIRMED: this conditional response-transition probability could not be verified against the paper, which is available only as scanned page images. It is topically suspect \u2014 the note concerns the discrepancy between programmed/operated reinforcer-delivery (feeder/magazine) cycles and reinforcements actually obtained, not a lever-given-trough transition probability \u2014 and may not appear in the paper at all. Retained only as a low-confidence candidate pending scan-access confirmation.",
+    "recursive-equation": "",
+    "recursive-equation-definitions": "",
     "abstract": "Five male hooded rats were trained in a lever-pressing apparatus, food serving as reinforcement. Following two tourgh-training sessions, each subject was given three lever-pressing training sessions, a total of 150 reinforcements being given. A continuous record of lever and trough responses was obtained and subsequently analyzed. This showed that the probability of a lever response following a trough responses, i.e., p(L/T), as calculated over the final 40 reinforcements, ranges between 0.69 and 0.81. Furthermore, the probability is high that between the 50th and 110th lever response, subject engages in a response burst on the lever. This response bursts accounts for a considerable proportion of the difference between the total number of lever responses reinforced and the number of reinforcements obtained.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Some effects of temporal variables on conditioned suppression",
@@ -639,14 +639,14 @@
       "Conditioned Suppression",
       "Shedule: Multiple"
     ],
-    "static-equation": "RD = \\log\\!\\left(\\tfrac{X}{Y}\\right) \\\\[6pt] L \\;=\\; \\mathbb{E}_{\\ell}\\!\\left[\\max\\!\\big(X - \\tfrac{1}{2}\\ell,\\,0\\big)\\right] \\;\\approx\\; \\sum_i d_i\\,\\max\\!\\big(X - \\tfrac{1}{2}\\ell_i,\\,0\\big) \\\\[4pt] \\text{(single VI interval } I \\text{ with } I\\ge X):\\quad L = \\tfrac{X^{2}}{2I} \\\\[6pt] M = \\tfrac{L}{\\bar{I}} \\\\[6pt] \\%\\,\\text{lost} = 100\\times \\tfrac{L}{X+Y}",
-    "static-equation-definitions": "RD: Relative Duration predictor of suppression; X: stimulus-on duration in each cycle; Y: stimulus-off duration in each cycle; L: expected 'lock-up' time within one stimulus period X (time during which reinforcers are set up but cannot be obtained under complete suppression); d_i: relative weight for VI interval i (duration_i / sum of all durations); \\ell_i: duration of VI interval i; I: a specific VI interval length; \\bar{I}: mean inter-reinforcement interval of the VI schedule; M: expected number of missed reinforcers per stimulus period; % lost: percentage of total available reinforcers lost per X:Y cycle, equal to 100\u00b7L/(X+Y).",
-    "recursive-equation": "g(\\ell) := \\max\\!\\big(X - \\tfrac{1}{2}\\ell,\\,0\\big) \\\\[4pt] L_t = L_{t-1} + \\tfrac{1}{n_t}\\big( g(\\ell_t) - L_{t-1} \\big) \\\\[4pt] \\bar{I}_t = \\bar{I}_{t-1} + \\tfrac{1}{n_t}\\big( \\Delta I_t - \\bar{I}_{t-1} \\big) \\\\[4pt] M_t = \\tfrac{L_t}{\\bar{I}_t} \\\\[4pt] \\%\\,\\text{lost}_t = 100\\times \\tfrac{L_t}{X+Y}",
-    "recursive-equation-definitions": "g(\\ell): per-interval lock-up contribution function; L_t: running estimate of expected lock-up time within X after t observed VI intervals; n_t: number of VI intervals observed up to t (or sessions/blocks\u2014use the same unit consistently); \\ell_t: duration of the VI interval in force at the onset of the t-th stimulus period; \\bar{I}_t: running estimate of the mean inter-reinforcement interval; \\Delta I_t: observed inter-reinforcement interval at step t; M_t: running estimate of expected missed reinforcers per stimulus period; % lost_t: running estimate of percent reinforcers lost per X:Y cycle. Use initialization L_0=0, \\bar{I}_0>0 (e.g., the programmed mean), and update once per stimulus period. For faster adaptation, replace 1/n_t with a constant learning rate \\alpha\\in(0,1).",
+    "static-equation": "",
+    "static-equation-definitions": "",
+    "recursive-equation": "",
+    "recursive-equation-definitions": "",
     "abstract": "The present experiment investigated two temporal variables in the Estes-Skinner conditioned suppression situation. The five animals were given prolonged training on a series of conditioned-suppression programs; the programs differed from each other with respect to the stimulus and between-stimulus durations. The degree of suppression varied widely from program to program. Roughly, programs in which the stimulus duration was short relative to the duration of the stimulus-off interval produced good suppression, and programs in which the stimulus duration was relatively long produced poor supression. These effects were largely reversible. \"Relative Duration\" defined as log(stimulus duration/stimulus-off duration), correlated 0.90 with the degree of behavioral suppression. The number of reinforcements obtained in each program was relatively constant at approximately 90% of the maximum number obtainable in an experimental session in spite of the wide differences in suppression. An estimate of the percentage of reinforcements that would be lost if the animal suppressed completely in the stimulus period was calculated for each conditioned-suppression program. This measure was correlated 0.92 with suppression scores, indicating that the strength of suppression in any program decreases to the extent that such suppression reduces opportunities for positive reinforcement.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Intermittent reinforcement of a complex response in a chimpanzee",
@@ -1289,8 +1289,8 @@
     "process": [
       "Schedule control; transition from interval-like to ratio-like performance via temporally defined contingencies"
     ],
-    "static-equation": "R=aT\nb",
-    "static-equation-definitions": "",
+    "static-equation": "R = aT^{b}",
+    "static-equation-definitions": "R = overall response rate; T = the time-correlation parameter, defined as the proportion of the cycle during which reinforcement is available, T = t^{D}/(t^{D}+t^{A}), where t^{D} is the reinforcement-available window and t^{A} is the no-reinforcement window (only the first response in t^{D} was reinforced); a, b = fitted constants of the power function (estimated for the 2-min cycle condition).",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Key-pecking by pigeons was reinforced under time-correlated (T) schedules in which a cycle alternated a reinforcement-available window (t\u1d30) and a no-reinforcement window (t\u1d2c); only the first response in t\u1d30 was reinforced, otherwise the reinforcer was missed. With cycle lengths of 2 min and 10 min, T = t\u1d30/(t\u1d30+t\u1d2c) was decreased systematically. As T decreased, behavior shifted from interval-like (scalloped) to ratio-like: overall rate and short IRTs increased, initial\u2013terminal rate differences shrank, and extinction resembled that after ratio schedules. Very small T values produced missed reinforcers and rate drop. Rate\u2019s SD scaled linearly with mean rate. Prefeeding reduced output in a stepwise manner (ratio-like). Switching from a matched T to VR yielded no discernible change. A power function \n\ud835\udc45\n=\n\ud835\udc4e\n\u2009\n\ud835\udc47\n\u2009\n\ud835\udc4f\nR=aT\nb\n fit the rate\u2013T relation (2-min cycles).",
@@ -1512,7 +1512,7 @@
     ],
     "static-equation": "",
     "static-equation-definitions": "",
-    "recursive-equation": "T1\u2229T2,R>M1<M2,N0(1\u2212t)\"",
+    "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Mechner proposes a formal symbolic notation for describing behavioral procedures (schedules of reinforcement, contingencies, etc.) in a concise, logical, and diagrammatic format. The system integrates conventions from psychological paradigms, Boolean algebra, flow-chart notation, and mathematics to express stimulus\u2013response\u2013time relationships unambiguously. Examples include standard schedules (FI, DRL, Sidman avoidance, counting, conjunctive, interlocking) and complex procedures involving time intervals, response magnitude, and mathematical functions. Mechner demonstrates that the notation can facilitate classification of behavioral procedures and reveal formal parallels (e.g., DRL vs. counting schedules). The paper concludes that a standardized symbolic system could advance behavioral science by enhancing precision, communication, and theoretical analysis.",
     "journal": "JEAB",
@@ -1639,14 +1639,14 @@
     "process": [
       "Free-operant (Sidman) avoidance conditioning"
     ],
-    "static-equation": "Y=274.3X\u22121.1104",
-    "static-equation-definitions": "",
-    "recursive-equation": "Y=274.3X\u22121.1104",
-    "recursive-equation-definitions": "",
+    "static-equation": "Y = 274.3 X^{-1.1104}",
+    "static-equation-definitions": "Y = avoidance response rate (responses per unit time); X = the temporal parameter that was varied simultaneously and equally (the shock-shock and response-shock intervals of the Sidman free-operant avoidance procedure); 274.3 = empirically fitted constant; -1.1104 = empirically fitted exponent of the power-function regression. Equivalently log Y = log(274.3) - 1.1104 log X. NOTE: the surviving fragment 'Y=274.3X-1.1104' is genuinely ambiguous and is also readable as an ordinary linear regression Y = 274.3 X - 1.1104 (slope 274.3, intercept -1.1104); the power form is the more defensible reading (a negative exponent yields rate decreasing as the interval lengthens, consistent with avoidance) but cannot be confirmed against the scanned 1959 page image.",
+    "recursive-equation": "Y = 274.3 X^{-1.1104}",
+    "recursive-equation-definitions": "Y = avoidance response rate (responses per unit time); X = the simultaneously and equally varied temporal parameter (shock-shock and response-shock intervals); 274.3 = fitted constant; -1.1104 = fitted exponent. This recursive field is a DUPLICATE of the static field: the catalog carried the single empirical equation across both fields rather than presenting two distinct models. Same linear-alternative caveat applies (Y = 274.3 X - 1.1104).",
     "abstract": "The nature of the relationship between rate of responding and the interval by whicheach response postpones an electric shock is reported. Throughout the experiment theshock-shock interval was varied simultaneously and kept equal to the response-shockinterval. Certain features of the inter-response-time distributions were also reported.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "SOME BEHAVIORAL EFFECTS OF A TWO-VALUED,TEMPORALLY DEFINED REINFORCEMENT SCHED ULE",
@@ -1749,14 +1749,14 @@
     "process": [
       "Escape behavior under titration schedules"
     ],
-    "static-equation": "L_{50} = f\\left(\\frac{\\Delta I}{\\Delta t}\\right)",
+    "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Rats were trained to press a lever to produce fractional reductions in electric shock intensity under a \u201ctitration\u201d schedule, in which shock intensity periodically increased in discrete steps. The study examined how response patterns varied with the rate of programmed shock increments and with ratio requirements for producing decrements. The median maintained shock level rose as the interval between increments shortened and as more responses were required per decrement, reflecting a higher response threshold and competing behavior under stronger aversive control. Wave-like oscillations in shock level and irregular responding emerged under certain parameters, suggesting analogies with psychophysical threshold behavior. The findings characterize titration schedules as a continuous, fractional form of escape responding.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Abstracts of the Conference on the Experimental Analysis of Behavior",
@@ -1828,8 +1828,8 @@
     "process": [
       "Human operant discrimination learning under different schedules of reinforcement"
     ],
-    "static-equation": "DI=RSD+RS\u0394RSD",
-    "static-equation-definitions": "",
+    "static-equation": "DI = \\frac{R_{S^D}}{R_{S^D} + R_{S^\\Delta}}",
+    "static-equation-definitions": "DI = discrimination index; R_{S^D} = number of (lever-press) responses emitted in the presence of the discriminative stimulus S^D; R_{S^\\Delta} = number of responses emitted in the presence of S^\\Delta; R_{S^D} + R_{S^\\Delta} = total responses across both stimulus conditions. DI is bounded 0-1, with 0.5 indicating no discrimination.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Seventy college students were tested in a visual discrimination task (1-2-5 light pattern) under 13 reinforcement schedules: continuous, fixed ratio (FR 5\u201320), variable ratio (VR 5\u201320), fixed interval (FI 5\u201330 s), and variable interval (VI 5\u201330 s). Each 1-hour session included 60 presentations (30 SD, 30 S\u0394), with lever-press responses earning points under schedule control. Discrimination indices (SD responses / total responses) revealed that shorter ratios and intervals produced more rapid and stable discriminations. Longer ratios led to \u201cratio strain\u201d and higher variability; longer intervals yielded flatter SD\u2013S\u0394 separation and signs of temporal discrimination. The results indicated that human discrimination performance reflects response differentiation shaped by reinforcement contingencies, paralleling nonhuman data but bounded by fixed stimulus intervals.",
@@ -2585,14 +2585,14 @@
     "process": [
       "Fixed-Interval (FI) schedule performance and quantitative characterization of response acceleration"
     ],
-    "static-equation": "I=4R43R4\u22122(R1+R2+R3)",
-    "static-equation-definitions": "",
-    "recursive-equation": "I=nRn(n\u22121)Rn\u22122(Rn\u22121+Rn\u22122+\u22ef+R1)",
-    "recursive-equation-definitions": "",
+    "static-equation": "I = \\dfrac{3R_4 - 2(R_1 + R_2 + R_3)}{8R_4}",
+    "static-equation-definitions": "I is the index of curvature; the fixed interval is divided into 4 equal parts (quarters). R_4 is the total (cumulative) number of responses emitted during the interval; R_1, R_2, R_3 are the cumulative numbers of responses emitted by the end of the first, second, and third quarters, respectively. The index equals the normalized area between the cumulative-response curve and the constant-rate diagonal. A constant response rate yields I = 0; positive values indicate positively accelerated (FI-scalloped) responding concentrated near the end of the interval, negative values indicate front-loaded responding. For n = 4 the index is bounded by -3/8 and +3/8 (i.e. \u00b1(n-1)/2n), reaching +3/8 = 0.375 when all responding occurs at the very end of the interval.",
+    "recursive-equation": "I = \\dfrac{(n-1)R_n - 2(R_{n-1} + R_{n-2} + \\cdots + R_1)}{2\\,n\\,R_n}",
+    "recursive-equation-definitions": "I is the index of curvature; n is the number of equal parts into which the fixed interval is divided; R_n is the total (cumulative) number of responses emitted during the interval; R_i (i = 1, 2, ..., n-1) is the cumulative number of responses emitted by the end of the i-th part. The index equals the normalized area between the cumulative-response curve and the constant-rate diagonal. It is 0 for a constant response rate, increases toward +(n-1)/2n (approaching +0.5 as n increases) as responding becomes concentrated near the end of the interval, and decreases toward -(n-1)/2n for front-loaded responding.",
     "abstract": "This paper introduces a quantitative method\u2014the index of curvature\u2014for describing the characteristic shape of cumulative response curves under fixed-interval (FI) schedules. The index measures the deviation of the cumulative record from a straight line, capturing both the extent and direction of acceleration in responding. Derived mathematically by comparing the area under the response curve to that of an ideal constant-rate line, the index is expressed as:\n\n\ud835\udc3c\n=\n3\n\ud835\udc45\n\ud835\udc5b\n\u2212\n2\n(\n\ud835\udc45\n\ud835\udc5b\n\u2212\n1\n+\n\ud835\udc45\n\ud835\udc5b\n\u2212\n2\n+\n\u22ef\n+\n\ud835\udc45\n1\n)\n4\n\ud835\udc45\n\ud835\udc5b\nI=\n4R\nn\n\t\n\n3R\nn\n\t\n\n\u22122(R\nn\u22121\n\t\n\n+R\nn\u22122\n\t\n\n+\u22ef+R\n1\n\t\n\n)\n\t\n\n\nEmpirical examples with pigeons, rats, and squirrel monkeys show the index\u2019s sensitivity to acquisition and drug effects (e.g., chlorpromazine reducing curvature). The measure provides a consistent, rate-independent metric of temporal patterning under FI control.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "DECREMENT IN PERFORMANCE DURING PROLONGEDA VOIDANCE SESSIONS",
