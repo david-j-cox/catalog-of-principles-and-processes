@@ -84603,7 +84603,9 @@
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Impulsive choice is typically measured by presenting smaller-sooner (SS) versus larger-later (LL) rewards, with biases towards the SS indicating impulsivity. The current study tested rats on different impulsive choice procedures with LL delay manipulations to assess same-form and alternate-form test-retest reliability. In the systematic-GE procedure (Green & Estle, 2003), the LL delay increased after several sessions of training; in the systematic-ER procedure (Evenden & Ryan, 1996), the delay increased within each session; and in the adjusting-M procedure (Mazur, 1987), the delay changed after each block of trials within a session based on each rat\u2019s choices in the previous block. In addition to measuring choice behavior, we also assessed temporal tracking of the LL delays using the median times of responding during LL trials. The two systematic procedures yielded similar results in both choice and temporal tracking measures following extensive training, whereas the adjusting procedure resulted in relatively more impulsive choices and poorer temporal tracking. Overall, the three procedures produced acceptable same form test-retest reliability over time, but the adjusting procedure did not show significant alternate form test-retest reliability with the other two procedures. The results suggest that systematic procedures may supply better measurements of impulsive choice in rats.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "ACCURATE CHARACTERIZATION OF DELAY DISCOUNTING: A MULTIPLE MODEL APPROACH USING APPROXIMATE BAYESIAN MODEL SELECTION AND A UNIFIED DISCOUNTING MEASURE",
@@ -84619,12 +84621,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5523140/",
     "process": [],
-    "static-equation": "BIC=-2 \\cdot \\log L + \\log(n) \\cdot p; MSET=11000 \\sum_{i=11000}(ED50^i - ED50_i)^2; P(X|M_d)=\\int P(X|\\theta_d,M_d)P(\\theta_d|M_d)d\\theta_d; P(M_d|X)=P(X|M_d)P(M_d) \\sum_{j=1}^D P(X|M_j)P(M_j); P(M_m|X)P(M_l|X)=P(X|M_m)P(X|M_l)P(M_m)P(M_l); P(M_d|X) \\approx BF_d 1^Q \\text{ for all } d=1,\\ldots,D; BF^{11}=e^{-\\frac{1}{2}(BIC_1-BIC_1)}=1; BF^{21}=e^{-\\frac{1}{2}(BIC_2-BIC_1)} \\cdots BF^{D1}=e^{-\\frac{1}{2}(BIC_D-BIC_1)}; Q=\\sum_{d=1}^D BF^{d1} \\approx \\sum_{d=1}^D P(M_d|X)P(M_1|X)=\\frac{1}{P(M_1|X)}",
-    "static-equation-definitions": "",
+    "static-equation": "BIC = -2\\log L + \\log(n)\\,p; MSE_T = \\frac{1}{1000}\\sum_{i=1}^{1000}\\left(\\widehat{ED50}_i - ED50_i\\right)^2; P(X\\mid M_d) = \\int P(X\\mid \\theta_d, M_d)\\,P(\\theta_d\\mid M_d)\\,d\\theta_d; P(M_d\\mid X) = \\frac{P(X\\mid M_d)\\,P(M_d)}{\\sum_{j=1}^{D} P(X\\mid M_j)\\,P(M_j)}; \\frac{P(M_m\\mid X)}{P(M_l\\mid X)} = \\frac{P(X\\mid M_m)}{P(X\\mid M_l)}\\cdot\\frac{P(M_m)}{P(M_l)}; P(M_d\\mid X) \\approx \\frac{\\widehat{BF}^{\\,d1}}{\\widehat{Q}}, \\quad d = 1,\\ldots,D; \\widehat{BF}^{\\,11} = e^{-\\frac{1}{2}(BIC_1 - BIC_1)} = 1; \\widehat{BF}^{\\,21} = e^{-\\frac{1}{2}(BIC_2 - BIC_1)},\\ \\ldots,\\ \\widehat{BF}^{\\,D1} = e^{-\\frac{1}{2}(BIC_D - BIC_1)}; \\widehat{Q} = \\sum_{d=1}^{D} \\widehat{BF}^{\\,d1} \\approx \\sum_{d=1}^{D} \\frac{P(M_d\\mid X)}{P(M_1\\mid X)} = \\frac{1}{P(M_1\\mid X)}",
+    "static-equation-definitions": "L = maximized likelihood; n = sample size; p = number of free parameters in the model; BIC = Bayesian Information Criterion; MSE_T = mean squared error of the estimated unified discounting measure (ED50) relative to its true value, averaged over 1000 simulated data sets; \\widehat{ED50}_i = estimated ED50 (the delay at which the indifference point is 50% of the immediate amount) for simulated data set i; ED50_i = true ED50 for simulated data set i; M_d = candidate discounting model d (d = 1,\\ldots,D); X = observed data; \\theta_d = parameter vector of model M_d; P(\\theta_d\\mid M_d) = prior over the parameters of model M_d; P(X\\mid M_d) = marginal (integrated) likelihood of model M_d; P(M_d) = prior probability of model M_d; P(M_d\\mid X) = posterior probability of model M_d; \\widehat{BF}^{\\,d1} = BIC-based approximation to the Bayes factor of model M_d relative to the reference model M_1; \\widehat{Q} = BIC-based approximation to the normalizing constant ensuring the approximate posterior model probabilities sum to one. Hats denote BIC-based approximations to the corresponding exact (integrated-likelihood) quantities.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The study of delay discounting, or valuation of future rewards as a function of delay, has contributed to understanding the behavioral economics of addiction. Accurate characterization of discounting can be furthered by statistical model selection given that many functions have been proposed to measure future valuation of rewards. The present study provides a convenient Bayesian model selection algorithm that selects the most probable discounting model among a set of candidate models chosen by the researcher. The approach assigns the most probable model for each individual subject. Importantly, effective delay 50 (ED50) functions as a suitable unifying measure that is computable for and comparable between a number of popular functions, including both one- and two-parameter models. The combined model selection/ED50 approach is illustrated using empirical discounting data collected from a sample of 111 undergraduate students with models proposed by Laibson (1997); Mazur (1987); Myerson & Green (1995); Rachlin (2006); and Samuelson (1937). Computer simulation suggests that the proposed Bayesian model selection approach outperforms the single model approach when data truly arise from multiple models. When a single model underlies all participant data, the simulation suggests that the proposed approach fares no worse than the single model approach.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Delay Discounting and the use of Mindful Attention versus Distraction in the Treatment of Drug Addiction: A Conceptual Review",
@@ -84679,12 +84683,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4670033/",
     "process": [],
-    "static-equation": "\\log(B x B_0) = -x r_b; \\log(B_t B_0) = -t(c + d \\Delta r) r_b.",
-    "static-equation-definitions": "",
+    "static-equation": "\\log\\!\\left(\\frac{B_x}{B_0}\\right) = -\\frac{x}{r^{b}}; \\log\\!\\left(\\frac{B_t}{B_0}\\right) = -\\frac{t\\,(c + d\\,\\Delta r)}{r^{b}}",
+    "static-equation-definitions": "B_x = response rate during disruption; B_0 = baseline response rate; x = disruptor magnitude; r = baseline reinforcement rate (reinforcers/hour); b = sensitivity to baseline reinforcement rate (typically ~0.5); B_t = response rate at time t in extinction; t = time in extinction (sessions); c = impact of suspending the response-reinforcer contingency / generalization decrement (typically ~1); d = scaling parameter for reinforcement-rate change (typically ~0.001); \\Delta r = change (reduction) in reinforcement rate between baseline and extinction (reinforcers omitted/hour).",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Behavioral momentum theory suggests that the relation between a discriminative-stimulus situation and reinforcers obtained in that context (i.e., the Pavlovian stimulus\u2013reinforcer relation) governs persistence of operant behavior. Within the theory, a mass-like aspect of behavior has been shown to be a power function of predisruption reinforcement rates. Previous investigations of resistance to change in multiple schedules, however, have been restricted to examining response persistence following protracted periods of stability in reinforcer rates within a discriminative situation. Thus, it is unclear how long a stimulus\u2013reinforcer relation must be in effect prior to disruption in order to affect resistance to change. The present experiment examined resistance to change of pigeon\u2019s key pecking following baseline conditions where reinforcer rates that were correlated with discriminative-stimulus situations changed. Across conditions, one multiple-schedule component arranged either relatively higher rates or lower rates of variable-interval food delivery, while the other component arranged the opposite rate. These schedules alternated between multiple-schedule components across blocks of sessions such that reinforcer rates in the components were held constant for 20, 5, 3, 2, or 1 session(s) between alternations. Resistance to extinction was higher in the component that most recently was associated with higher rates of food delivery in all conditions except when schedules alternated daily or every other day. These data suggest that resistance to change in multiple schedules is related to recently experienced reinforcer rates but only when multiple-schedule components are associated with specific reinforcer rates for several sessions.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "ROLE OF ESTROGEN RECEPTOR-\u03b1 ON FOOD DEMAND ELASTICITY",
@@ -84700,12 +84706,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4939438/",
     "process": [],
-    "static-equation": "logQ=log(Q0)+k(e-\u03b1P-1)",
-    "static-equation-definitions": "",
+    "static-equation": "\\log Q = \\log Q_0 + k\\left(e^{-\\alpha Q_0 P} - 1\\right)",
+    "static-equation-definitions": "Q = quantity consumed (reinforcers obtained); Q_0 = level of demand/consumption as price approaches zero (demand intensity); k = span of the demand function in logarithmic units (range of consumption); \\alpha = rate constant governing the elasticity of demand (larger \\alpha = faster decline in consumption with price, i.e., more elastic demand); the derived essential value is a transform of \\alpha and k (proportional to 1/(\\alpha k^{1.5})) and should not be equated with \\alpha itself; P = price (responses required per reinforcer, i.e., cost)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Estrogens have been shown to have an inhibitory effect on food intake under free-feeding conditions, yet the effects of estrogens on food-maintained operant responding have been studied to a much lesser extent and, thus, are not well understood. Therefore, the purpose of the present experiment was to use a behavioral economics paradigm to assess differences in demand elasticity between mice with knockout of the estrogen receptor subtype \u03b1, knockout of subtype \u03b2, and their wild type controls. The mice responded in a closed economy, and the price of food was increased by increasing the fixed-ratio response requirement every four sessions. Overall, we found that mice with the knockout of receptor subtype \u03b1 had the most elastic demand functions. Therefore, under these conditions, estrogens increased food seeking via activation of the receptor subtype \u03b1. The results were inconsistent with those reported by previous studies that employed free-feeding conditions.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "EMERGENT IDENTITY BUT NOT SYMMETRY FOLLOWING SUCCESSIVE OLFACTORY DISCRIMINATION TRAINING IN RATS",
@@ -84803,12 +84811,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5562486/",
     "process": [],
-    "static-equation": "\\log(B_t B_0) = -t(c + d \\Delta r) r_b; \\log(B_t B_0) = -t(k R_a + c + d \\Delta r)(r + R_a) b",
-    "static-equation-definitions": "",
+    "static-equation": "\\log\\left(\\frac{B_t}{B_0}\\right) = \\frac{-t\\left(c + d\\,\\Delta r\\right)}{r^{b}}; \\log\\left(\\frac{B_t}{B_0}\\right) = \\frac{-t\\left(kR_a + c + d\\,\\Delta r\\right)}{\\left(r + R_a\\right)^{b}}",
+    "static-equation-definitions": "B_t = target response rate at time t in extinction; B_0 = baseline target response rate; B_t/B_0 = proportion of baseline responding (log-transformed); t = time in extinction (sessions); c = disruptive impact of suspending the response-reinforcer contingency; d = scaling parameter for generalization decrement; \\Delta r = change in reinforcers per hour between baseline and extinction; r = baseline reinforcer rate (reinforcers per hour); b = sensitivity parameter; R_a = rate of alternative reinforcement; k = scaling parameter for the disruptive impact of alternative reinforcement.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The behavioral-momentum model of resurgence predicts reinforcer rates within a resurgence preparation should have three effects on target behavior. First, higher reinforcer rates in baseline (Phase 1) produce more persistent target behavior during extinction plus alternative reinforcement. Second, higher rate alternative reinforcement during Phase 2 generates greater disruption of target responding during extinction. Finally, higher rates of either reinforcement source should produce greater responding when alternative reinforcement is suspended in Phase 3. Recent empirical reports have produced mixed results in terms of these predictions. Thus, the present experiment further examined reinforcer-rate effects on persistence and resurgence. Rats pressed target levers for high-rate or low-rate variable-interval food during Phase 1. In Phase 2, target-lever pressing was extinguished, an alternative nose-poke became available, and nose-poking produced either high-rate variable-interval, low-rate variable-interval, or no (an extinction control) alternative reinforcement. Alternative reinforcement was suspended in Phase 3. For groups that received no alternative reinforcement, target-lever pressing was less persistent following high-rate than low-rate Phase-1 reinforcement. Target behavior was more persistent with low-rate alternative reinforcement than with high-rate alternative reinforcement or extinction alone. Finally, no differences in Phase-3 responding were observed for groups that received either high-rate or low-rate alternative reinforcement, and resurgence occurred only following high-rate alternative reinforcement. These findings are inconsistent with the momentum-based model of resurgence. We conclude this model mischaracterizes the effects of rein-forcer rates on persistence and resurgence of operant behavior.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "EFFECTS OF SIGNALED AND UNSIGNALED ALTERNATIVE REINFORCEMENT ON PERSISTENCE AND RELAPSE IN CHILDREN AND PIGEONS",
@@ -84892,12 +84902,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5042866/",
     "process": [],
-    "static-equation": "V=A/(1+kD),; V=A/(1+h\u0398),",
-    "static-equation-definitions": "",
+    "static-equation": "V = \\frac{A}{1 + kD}; V = \\frac{A}{1 + h\\Theta}",
+    "static-equation-definitions": "$V$ = subjective (present, discounted) value of the reward; $A$ = nominal (objective) amount of the delayed/probabilistic reward; $D$ = delay to receipt of the reward; $k$ = delay-discounting rate parameter (larger $k$ = steeper discounting); $h$ = probability-discounting rate parameter; $\\Theta$ = odds against receiving the reward, $\\Theta = (1-p)/p$, where $p$ is the probability of receipt.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The 27-item Monetary Choice Questionnaire (MCQ; Kirby, Petry, & Bickel, 1999) and 30-item Probability Discounting Questionnaire (PDQ; Madden, Petry, & Johnson, 2009) are widely used, validated measures of preferences for immediate versus delayed rewards and guaranteed versus risky rewards, respectively. The MCQ measures delayed discounting by asking individuals to choose between rewards available immediately and larger rewards available after a delay. The PDQ measures probability discounting by asking individuals to choose between guaranteed rewards and a chance at winning larger rewards. Numerous studies have implicated these measures in addiction and other health behaviors. Unlike typical self-report measures, the MCQ and PDQ generate inferred hyperbolic temporal and probability discounting functions by comparing choice preferences to arrays of functions to which the individual items are preconfigured. This article provides R and SPSS syntax for processing the MCQ and PDQ. Specifically, for the MCQ, the syntax generates k values, consistency of the inferred k, and immediate choice ratios; for the PDQ, the syntax generates h indices, consistency of the inferred h, and risky choice ratios. The syntax is intended to increase the accessibility of these measures, expedite the data processing, and reduce risk for error.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "BEHAVIORAL PHARMACOLOGY OF THE ODOR SPAN TASK: EFFECTS OF FLUNITRAZEPAM, KETAMINE, METHAMPHETAMINE AND METHYLPHENIDATE",
@@ -84939,12 +84951,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5152580/",
     "process": [],
-    "static-equation": "\\log Q = \\log Q_0 + k(e^{-\\alpha p} - 1); \\logit (\\pi_{ij}) = \\beta_0 + \\beta_1 f(p_j) + a_i; \\log Q_{ij} = \\mu_{ij} + \\varepsilon_{ij} = (\\log Q_0 + b_i) + k(e^{-(\\alpha + c_i)p_j} - 1) + \\varepsilon_{ij}; p_{ij} | (\\pi_{ij} = 0.5) = f^{-1}\\left\\{-\\frac{(\\beta_0 + a_i)}{\\beta_1}\\right\\}; \\prod_{i=1}^{N}\\left\\{\\int\\left(\\prod_{j=1}^{n_i}(\\pi_{ij})^{\\delta_{ij}}[(1 - \\pi_{ij})^{\\sigma} e^{-1} \\phi\\left\\{\\frac{(\\log Q_{ij} - \\mu_{ij})}{\\sigma}\\right\\}]^{1 - \\delta_{ij}})\\phi(\\gamma_i) d\\gamma_i\\right\\},",
-    "static-equation-definitions": "",
+    "static-equation": "\\log Q = \\log Q_0 + k(e^{-\\alpha p} - 1); \\operatorname{logit}(\\pi_{ij}) = \\beta_0 + \\beta_1 f(p_j) + a_i; \\log Q_{ij} = \\mu_{ij} + \\varepsilon_{ij} = (\\log Q_0 + b_i) + k\\left(e^{-(\\alpha + c_i)p_j} - 1\\right) + \\varepsilon_{ij}; p_{ij} \\mid (\\pi_{ij} = 0.5) = f^{-1}\\left\\{-\\frac{\\beta_0 + a_i}{\\beta_1}\\right\\}; \\prod_{i=1}^{N}\\left\\{\\int\\left(\\prod_{j=1}^{n_i}(\\pi_{ij})^{\\delta_{ij}}\\left[(1 - \\pi_{ij})\\,\\frac{1}{\\sigma_e}\\,\\phi\\left\\{\\frac{\\log Q_{ij} - \\mu_{ij}}{\\sigma_e}\\right\\}\\right]^{1 - \\delta_{ij}}\\right)\\phi(\\gamma_i)\\,d\\gamma_i\\right\\}",
+    "static-equation-definitions": "Q = quantity (consumption) demanded; Q_0 = demand intensity (consumption as price approaches zero); k = span (range) of consumption in log units; \\alpha = rate constant governing elasticity of demand (essential-value parameter); p = unit price; Q_{ij}, p_j = consumption and price for subject i at price point j; \\pi_{ij} = probability that subject i reports zero consumption at price j; f(p_j) = transform of price used in the logistic part (in this paper the shifted log, f(p_j) = \\log(p_j + 0.001)); \\beta_0, \\beta_1 = fixed-effect intercept and slope of the logistic (zero-consumption) part; a_i, b_i, c_i = subject-level random effects on the logistic intercept, on \\log Q_0, and on \\alpha, respectively; \\gamma_i = (a_i, b_i, c_i)^{\\top} = vector of subject-level random effects with multivariate normal density \\phi(\\gamma_i); \\mu_{ij} = mean of \\log Q_{ij} under the continuous (positive-consumption) part; \\varepsilon_{ij} = residual error, \\varepsilon_{ij}\\sim N(0,\\sigma_e^2); \\sigma_e = residual standard deviation of log consumption; \\phi\\{\\cdot\\} = standard normal density (used for the residual contribution; \\phi(\\gamma_i) denotes the multivariate normal density of the random effects); \\delta_{ij} = indicator equal to 1 if observed consumption is zero and 0 if positive; N = number of subjects; n_i = number of price points (observations) for subject i.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The Cigarette Purchase Task is a behavioral economic assessment tool designed to measure the relative reinforcing efficacy of cigarette smoking across different prices. An exponential demand equation has become a standard model for analyzing purchase task data, but its utility is compromised by its inability to accommodate values of zero consumption. We propose a two-part mixed effects model that keeps the same exponential demand equation for modeling nonzero consumption values, while providing a logistic regression for the binary outcome of zero versus nonzero consumption. Therefore, the proposed model can accommodate zero consumption values and retain the features of the exponential demand equation at the same time. As a byproduct, the logistic regression component of the proposed model provides a new demand index, the \u201cderived breakpoint\u201d, for the price above which a subject is more likely to be abstinent than to be smoking. We apply the proposed model to data collected at baseline from college students (N = 1,217) enrolled in a randomized clinical trial utilizing financial incentives to motivate tobacco cessation. Monte Carlo simulations showed that the proposed model provides better fits than an existing model. We note that the proposed methodology is applicable to other purchase task data, for example, drugs of abuse.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "BEHAVIOR ANALYSTS IN THE WAR ON POVERTY: A REVIEW OF THE USE OF FINANCIAL INCENTIVES TO PROMOTE EDUCATION AND EMPLOYMENT",
@@ -84978,12 +84992,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5247310/",
     "process": [],
-    "static-equation": "P_G = P_G^0 \\frac{1}{1 + k_G (P_G - P_S)}; P_S = P_S^0 \\frac{1}{1 + k_S (P_S - P_G)}",
-    "static-equation-definitions": "P_G = price of generalized tokens; P_S = price of specific tokens; P_G^0 = initial price of generalized tokens; P_S^0 = initial price of specific tokens; k_G = own-price elasticity; k_S = cross-price elasticity",
+    "static-equation": "E_{\\text{own},i} = \\frac{\\Delta C_i / C_i}{\\Delta P_i / P_i}; E_{\\text{cross},ij} = \\frac{\\Delta C_i / C_i}{\\Delta P_j / P_j} \\quad (i \\neq j)",
+    "static-equation-definitions": "E_{own,i} = own-price demand elasticity for commodity i (proportional change in token production/consumption divided by proportional change in that commodity's own token price); E_{cross,ij} = cross-price (substitution) elasticity (proportional change in production of commodity i's tokens relative to proportional change in the price of commodity j's tokens, i != j); C_i = token production/consumption for commodity i; P_i, P_j = price (response requirement per token) for commodities i and j; \\Delta C_i = change in token production for commodity i; \\Delta P = change in price; subscripts i, j = the two token/commodity types (specific vs. generalized). Note: the paper (Andrade & Hackenberg, 2017, PMC5247310) is born-digital and displays NO numbered/typeset equations; elasticity is defined verbally (\"proportion change in token production / proportion change in price\") and tabulated in Table 3. This LaTeX is a standardized rendering of that verbal/tabulated definition, not a transcribed displayed equation. The Hursh & Silberberg (2008) essential-value/exponential demand model is cited but not reproduced in the paper, so it is correctly excluded.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons made repeated choices between earning and exchanging reinforcer-specific tokens (green tokens exchangeable for food, red tokens exchangeable for water) and reinforcer-general tokens (white tokens exchangeable for food or water) in a closed token economy. Food and green food tokens could be earned on one panel; water and red water tokens could be earned on a second panel; white generalized tokens could be earned on either panel. Responses on one key produced tokens according to a fixed-ratio schedule, whereas responses on a second key produced exchange periods, during which all previously earned tokens could be exchanged for the appropriate commodity. Most conditions were conducted in a closed economy, and pigeons distributed their token allocation in ways that permitted food and water consumption. When the price of all tokens was equal and low, most pigeons preferred the generalized tokens. When token-production prices were manipulated, pigeons reduced production of the tokens that increased in price while increasing production of the generalized tokens that remained at a fixed price. The latter is consistent with a substitution effect: Generalized tokens increased and were exchanged for the more expensive reinforcer. When food and water were made freely available outside the session, token production and exchange was sharply reduced but was not eliminated, even in conditions when it no longer produced tokens. The results join with other recent data in showing sustained generalized functions of token reinforcers, and demonstrate the utility of token-economic methods for assessing demand for and substitution among multiple commodities in a laboratory context.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "HOW SUBOPTIMAL IS SUBOPTIMAL CHOICE?",
