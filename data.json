@@ -69037,12 +69037,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284675/",
     "process": [],
-    "static-equation": "y = b \\times (x^{a})",
+    "static-equation": "y = b \\times x^{a}",
     "static-equation-definitions": "y = average number of completed ratios; x = step size; a = fitted parameter; b = fitted parameter",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Key pecking by pigeons was maintained by arithmetic progressive-ratio schedules of food delivery. Successive conditions arranged different step sizes, and each condition remained in effect until behavior appeared stable. Each session continued until a period of time passed in which no key pecks were recorded (the break-point criterion); both a 5-min and a 15-min criterion were tested across a range of step sizes. Average breaking points (i.e, the largest ratio completed) were relatively unaffected by step-size magnitude, whereas the average number of ratios completed and average response rates generally declined across increasing step sizes. Within sessions, preratio pauses were relatively short and fairly constant in duration as the ratio increased; pause durations increased rapidly near the end of a session. The relation between the average number of completed ratios and step size was described well by a power function [y = b(xa), in which y represents the average number of completed ratios, x represents the step size, and a and b are fitted parameters]. Increasing the break-point criterion from 5 to 15 min resulted in increased values of b, whereas parameter a was relatively unaffected and was close to -1 (consistent with the lack of effect of step size on breaking point). This function also provided an excellent description of data drawn from previous reports.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Effects of variable-interval value and amount of training on stimulus generalization.",
@@ -69100,7 +69102,9 @@
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Monkeys were given a choice between cocaine solutions and water under concurrent fixed-ratio reinforcement schedules. The operant response was spout contact. Six rhesus monkeys served as subjects. The cocaine concentration was varied from 0.0125 to 0.8 mg/ml, and the fixed-ratio value was varied from 8 to 128. Cocaine maintained higher response rates than did water over a wide range of conditions. Response rate and number of cocaine deliveries per session were inverted U-shaped functions of concentration. These functions were shifted to the right as the fixed ratio was increased. The number of cocaine deliveries was more persistent as fixed-ratio value was increased when the unit dose was larger rather than smaller. Cocaine consumption was analyzed as a function of unit price (fixed-ratio value divided by cocaine concentration), and unit price accounted for between 77% and 92% of the variance in cocaine consumption for individual monkeys. The current data support the claim that a drug's reinforcing effects increase directly with dose and underscore the need to gather parametric data when examining the effects of experimental manipulations on a drug-reinforced baseline.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Mental rotation and temporal contingencies.",
@@ -69114,12 +69118,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284678/",
     "process": [],
-    "static-equation": "RT = f(alpha)",
-    "static-equation-definitions": "RT = reaction time; alpha = angular disparity",
+    "static-equation": "RT = f(\\alpha)",
+    "static-equation-definitions": "RT = reaction time; \\alpha = angular disparity between the presented forms",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "A task that requires subjects to determine whether two forms of the same shape, but in different orientations, are mirror images or identical except for orientation is called a handedness recognition task. Subjects' reaction times (RT) on this task are consistently related to the angular disparity (termed alpha) between the two presented forms. This pattern of data has been interpreted to indicate that subjects solve the task by imagining that one of the forms rotates into the orientation of the other (termed mental rotation). The speed with which one imagines one of the forms rotating has been widely considered a fixed capability of the individual, and thus immune to the effect of contingencies. We present an experiment that assesses the effects of temporal contingencies in a handedness recognition task on the slope of the function RT = f(alpha). The data indicate that the slope of this function can come under the control of temporal contingencies.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Greatness And Misery In The Teaching Of The Psychology Of Learning.",
@@ -70984,12 +70990,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284780/",
     "process": [],
-    "static-equation": "R(O) = k \\times V",
-    "static-equation-definitions": "R(O) = response rate; k = sensitivity; V = value of the reinforcer",
+    "static-equation": "R = \\frac{kr}{r + r_e}",
+    "static-equation-definitions": "R = response rate; r = rate of reinforcement for the target response; k = asymptotic response rate (maximum total behavioral output); r_e = rate of reinforcement from all extraneous (background) sources",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Six male Wistar rats were exposed to different orders of reinforcement schedules to investigate if estimates from Herrnstein's (1970) single-operant matching law equation would vary systematically with schedule order. Reinforcement schedules were arranged in orders of increasing and decreasing reinforcement rate. Subsequently, all rats were exposed to a single reinforcement schedule within a session to determine within-session changes in responding. For each condition, the operant was lever pressing and the reinforcing consequence was the opportunity to run for 15 s. Estimates of k and R(O) were higher when reinforcement schedules were arranged in order of increasing reinforcement rate. Within a session on a single reinforcement schedule, response rates increased between the beginning and the end of a session. A positive correlation between the difference in parameters between schedule orders and the difference in response rates within a session suggests that the within-session change in response rates may be related to the difference in the asymptotes. These results call into question the validity of parameter estimates from Herrnstein's (1970) equation when reinforcer efficacy changes within a session.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Effects of sleep deprivation on free-operant avoidance.",
@@ -74786,12 +74794,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284982/",
     "process": [],
-    "static-equation": "2\\frac{Tt}{Tt + Ti}; (\\frac{Tt}{Ti})^k",
-    "static-equation-definitions": "Tt = terminal-link duration; Ti = initial-link duration; k = exponent",
+    "static-equation": "2\\frac{T_t}{T_t + T_i}; \\left(\\frac{T_t}{T_i}\\right)^{k}",
+    "static-equation-definitions": "T_t = average terminal-link duration; T_i = average initial-link duration; k = exponent (temporal-context sensitivity parameter)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Two experiments are reported in which the ratio of the average times spent in the terminal and initial links (Tt/Ti) in concurrent chains was varied. In Experiment 1, pigeons responded in a three-component procedure in which terminal-link variable-interval schedules were in constant ratio, but their average duration increased across components by a factor of two. The log initial-link response ratio was a negatively accelerated function of Tt/Ti. Overall, the data were well described by Grace's (1994) contextual choice model (CCM) with temporal context represented as (Tt/Ti)k or 2Tt/(Tt + Ti), and by Mazur's (2001) hyperbolic value-added model (HVA), with each model accounting for approximately 93% of the variance. In Experiment 2, fixed-parameter predictions for each model were generated, based on the data from Experiment 1, for conditions in which Tt/Ti was varied over a more extreme range. Data were consistent with the predictions of CCM with temporal context represented as 2Tt/(Tt + Ti) and to a lesser extent as (Tt/Ti)k, but not with HVA. Overall, these results suggest that preference increases as a hyperbolic function of Tt/Ti when terminal-link duration is increased relative to initial-link duration, with the terminal-link schedule ratio held constant.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Function transfer in human operant experiments: the role of stimulus pairings.",
@@ -75905,7 +75915,9 @@
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The relation between the rate of a response (B) and the rate of its reinforcement (R) is well known to be approximately hyperbolic: B \u200a=\u200a kR/(R + Ro), where k represents the maximum response rate, and Ro indicates the rate of reinforcers that will engender a response rate equal to half its maximum value. A review of data reported in 17 published papers revealed that, under variable-interval schedules of reinforcement, Ro was usually lower when pigeons were the subjects than when rats were the subjects. The value of k, in contrast, did not differ consistently between pigeons and rats. Some accounts interpret Ro as the rate of alternative, unscheduled reinforcers in the situation, expressed in units of the scheduled reinforcer. So interpreted, the difference in Ro implies that less alternative reinforcement (relative to the scheduled reinforcement) typically is available to pigeons in their operant conditioning chambers than it is to rats in theirs. Whether or not that interpretation of Ro is valid, the pigeon\u2013rat difference in Ro ensures that for reinforcer rates above about 10 per hour, response rate will be noticeably less sensitive to changes in reinforcer rate (and presumably to changes in other incentive and motivational operations) with pigeons than with rats as subjects, at least with the experimental conditions typically employed.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "On The Classic And Modern Theories Of Matching",
@@ -76994,12 +77006,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1459845/",
     "process": [],
-    "static-equation": "kD^{s}",
-    "static-equation-definitions": "k = constant; D = delay; s = exponent",
+    "static-equation": "\\frac{v}{V} = \\frac{1}{1 + kD^{s}}",
+    "static-equation-definitions": "v/V = discounted (relative) value; k = discounting constant; D = delay; s = exponent (Stevens power-law sensitivity); s = 1 reduces to Mazur's hyperbola",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "In general, if a variable can be expressed as a function of its own maximum value, that function may be called a discount function. Delay discounting and probability discounting are commonly studied in psychology, but memory, matching, and economic utility also may be viewed as discounting processes. When they are so viewed, the discount function obtained is hyperbolic in form. In some cases the effective discounting variable is proportional to the physical variable on which it is based. For example, in delay discounting, the physical variable, delay (D), may enter into the hyperbolic equation as kD. In many cases, however, the discounting data are not well described with a single-parameter discount function. A much better fit is obtained when the effective variable is a power function of the physical variable (kDs in the case of delay discounting). This power-function form fits the data of delay, probability, and memory discounting as well as other two-parameter discount functions and is consistent with both the generalized matching law and maximization of a constant-elasticity-of-substitution utility function.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Negative Automaintenance Omission Training Is Effective",
@@ -79378,7 +79392,9 @@
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Most complex categories observed in real-world settings consist of perceptually disparate stimuli, such as a picture of a person's face, the person's name as written, and the same name as heard, as well as dimensional variants of some or all of these stimuli. The stimuli function as members of a single partially or fully elaborated generalized equivalence class when they occasion the mutual selection of each other after the establishment of some subset of relations among the stimuli. Indeed, it is these generalized relations among stimuli that enable an individual to respond appropriately to the inevitable flux of natural environments. The present experiments involved procedures for producing both types of generalized equivalence class and for evaluating their retention. Granting the formal and functional similarities that exist between generalized equivalence classes and natural categories, natural kinds, and fuzzy superordinate classes, the variables responsible for the emergence of the former might also account for the emergence of the latter three phenomena. In Experiment 1, After forming an A\u2032\u2013B\u2032 class, a B\u2032\u2013C relation was trained and generalization tests were conducted with B\u2032\u2013C, C\u2013B\u2032, A\u2032\u2013C, and C\u2032\u2013A. Two of 5 participants passed the tests documenting the formation of A\u2032\u2013B\u2032\u2013C classes. Failures occurred in the A\u2032\u2013C and C\u2013A\u2032 tests but not the B\u2032\u2013C and C\u2013B\u2032 tests. Failures were also correlated with time between A\u2032\u2013B\u2032 class formation and C-based testing and with the absence of baseline confirmation when training and testing were separated by about one week. Experiment 2 replicated Experiment 1 but presented baseline confirmation probes immediatley prior to testing when training and testing were separated by one week; all participants then formed partially elaborated generalized equivalence classes. In Experiment 3, 5 of 6 participants formed fully elaborated generalized equivalence classes, represented as A\u2032\u200a=\u200aB\u2032\u200a=\u200aC\u2032 .",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Relative Reinforcer Rates and Magnitudes Do Not Control Concurrent Choice Independently",
