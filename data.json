@@ -17564,12 +17564,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1338319/",
     "process": [],
-    "static-equation": "I = \\frac{1}{D}",
-    "static-equation-definitions": "I = immediacy; D = delay of reinforcement",
+    "static-equation": "I = \\frac{1}{D}; \\frac{P_1}{P_1 + P_2} = \\frac{I_1}{I_1 + I_2}",
+    "static-equation-definitions": "I = immediacy of reinforcement; D = delay of reinforcement; P_1, P_2 = response frequencies (response strengths) allocated to alternatives 1 and 2; I_1, I_2 = immediacies of reinforcement (I = 1/D) associated with alternatives 1 and 2. The matching relation is equivalently expressible in ratio form P_1/P_2 = I_1/I_2 = D_2/D_1, and substituting I = 1/D yields the relative-immediacy prediction P_1/(P_1+P_2) = D_2/(D_1+D_2). The first equation (I = 1/D) is the recovered fragment; the matching relation is a canon-based reconstruction of the paper's central claim (Herrnstein 1961 matching law with immediacy substituted for rate).",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons were trained to peck either of two response keys for food reinforcement on equated aperiodic schedules. The distribution of responding at the two keys was studied as reinforcement was delayed for various durations. The relative frequency of responding at each key was shown to match the relative immediacy of reinforcement, immediacy defined as the reciprocal of the delay of reinforcement.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Oscillatory behavior during approach-avoidance conflict1",
@@ -20191,7 +20193,9 @@
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Two pigeons were trained to peck a key under several multiple variable-interval variable-interval schedules of reinforcement; different numbers of reinforcements were scheduled in two components of equal duration which were correlated with red and green illumination of the response key respectively. The results showed: (1) that the total number of responses in a session was proportional to the one-sixth power of the total number of reinforcements delivered in that session; and (2) that the ratio of responses between the two components was equal to the one-third power of the ratio of reinforcements between them. This latter exponent may be regarded as reflecting the sensitivity of the distribution of responses between the components to the distribution of reinforcements. It was suggested that the effects of a number of complex schedules of reinforcement could be summarized by different values of this exponent.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Magnitude and frequency of reinforcement and frequencies of interresponse times1",
@@ -20985,11 +20989,13 @@
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1338572/",
     "process": [],
     "static-equation": "t < IRT < t + \\frac{t}{10}",
-    "static-equation-definitions": "t = time; IRT = interresponse time",
+    "static-equation-definitions": "t = target time (reinforcement criterion); IRT = interresponse time",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons emitted interresponse times that were reinforced if they fell between an upper and a lower bound (t<IRT<t+t/10). Brief stimuli followed each response; under some experimental conditions the color of these stimuli was correlated with whether the preceding interresponse time was longer or shorter than that specified by the schedule. Preliminary experiments indicated that these \u201cfeedback\u201d stimuli acquired no discriminative properties even after prolonged training. A modified procedure, in which t varied cyclically throughout each experimental session, allowed the stimuli to acquire such properties: stimulus control was demonstrated under the training conditions, for two of the pigeons, and under transfer conditions for all three birds. A series of probe conditions, followed by a replication of the simple procedure using a multiple schedule, indicated that the controlling property of the stimuli was not the relation between stimuli, interresponse time, and value of t, but a variable determined by the interaction between the animals' responding and the cyclic procedure. This variable was probably the relative frequency of the less-frequent feedback stimulus.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Measurement of consummatory behavior in the fish1",
@@ -30010,12 +30016,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1334140/",
     "process": [],
-    "static-equation": "\\text{Relative Reinforcement Value} = \\frac{f_1 \\cdot m_1}{f_1 \\cdot m_1 + f_2 \\cdot m_2}",
-    "static-equation-definitions": "Relative Reinforcement Value = relative reinforcement value; f_1 = frequency of reinforcement in schedule 1; m_1 = magnitude of reinforcement in schedule 1; f_2 = frequency of reinforcement in schedule 2; m_2 = magnitude of reinforcement in schedule 2",
+    "static-equation": "\\frac{R_1}{R_1 + R_2} = \\frac{f_1 m_1}{f_1 m_1 + f_2 m_2}",
+    "static-equation-definitions": "R_1 = relative response rate to alternative 1; R_2 = relative response rate to alternative 2 (the left-side response symbol R is an editorial/reconstructed choice consistent with the Herrnstein-lineage JEAB convention; the exact symbol and whether Todorov printed the proportion form or the algebraically equivalent ratio form R_1/R_2 = (f_1/f_2)(m_1/m_2) cannot be confirmed from the scanned source); f_1, f_2 = frequency of reinforcement in schedules 1 and 2; m_1, m_2 = magnitude (duration of access to food) of reinforcement in schedules 1 and 2. The product f_i m_i is the relative reinforcement value, i.e., relative total access to food (the product of frequency and magnitude divided by the sum of products). Per the abstract, Todorov tested this unweighted value relation and found it held adequately only after frequency was weighted more heavily than magnitude (later expressed as greater sensitivity to reinforcement rate than to magnitude); the exact 1973 frequency-weighted functional form is not recoverable from the scan and is therefore not displayed.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Frequency and magnitude of reinforcement were varied in concurrent variable-interval variable-interval schedules of reinforcement. The relative response rate to the two stimuli did not support the notion that choice approximately matches relative total access to food (the product of frequency and magnitude of reinforcement in one schedule divided by the sum of products of frequency and magnitude in both schedules). Relative response rates matched relative reinforcement value when that measure was adjusted to give more emphasis to reinforcement frequency than to reinforcement duration.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Behavioral aftereffects of reinforcement and its omission as a function of reinforcement magnitude1",
@@ -32647,11 +32655,13 @@
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1333254/",
     "process": [],
     "static-equation": "R = \\frac{1}{10} \\cdot M",
-    "static-equation-definitions": "R = response rate in the presence of the 570-nm stimulus; M = mean response rate in the presence of the 550-nm stimulus during prior reinforcement training",
+    "static-equation-definitions": "R = response rate in the presence of the 570-nm stimulus at the massed-extinction criterion; M = mean response rate in the presence of the 550-nm stimulus during prior reinforcement training. Note: this is the study's procedural response-rate extinction criterion, not a canonical EAB behavioral model.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Prior studies have reported that generalization gradients are not steepened if periods of non-reinforcement in S\u2212 follow and are not interspersed with periods of reinforcement in S+. Sharper gradients are produced by this massed-extinction procedure if it is preceded by prior discriminative training on a dimension orthogonal to the S+, S\u2212 dimension. The present study, using pigeons, found that generalization gradients along the wavelength dimension were steepened by massed-extinction sessions in 570 nm that had been preceded by: (1) discriminative training in which the S+ was a 550-nm light and the S\u2212 was a black vertical line superimposed on the 550-nm light; (2) non-differential reinforcement training with a 550-nm light and a black vertical line superimposed on the 550-nm light; (3) reinforcement training with only the 550-nm light. Massed-extinction sessions were administered until the response rate in the presence of the 570-nm stimulus was one-tenth of the mean response rate in the presence of the 550-nm stimulus during prior reinforcement training. Prior studies have used a time-dependent criterion, rather than a response-rate criterion of extinction, and this difference may be responsible for the differences in the effects of massed extinction on stimulus control.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Two unlike patterns of random-ratio responding associated with different eating habits in rhesus monkeys1",
@@ -32779,12 +32789,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1333261/",
     "process": [],
-    "static-equation": "log\\left(\\frac{B_1}{B_2}\\right) = a \\log\\left(\\frac{r_1}{r_2}\\right) + \\log k",
-    "static-equation-definitions": "B_1 = frequency of responding at Alternative 1; B_2 = frequency of responding at Alternative 2; r_1 = obtained reinforcement from Alternative 1; r_2 = obtained reinforcement from Alternative 2; a = empirical constant; k = empirical constant",
+    "static-equation": "\\log\\left(\\frac{B_1}{B_2}\\right) = a \\log\\left(\\frac{r_1}{r_2}\\right) + \\log k",
+    "static-equation-definitions": "B_1 = frequency of responding at Alternative 1; B_2 = frequency of responding at Alternative 2; r_1 = obtained reinforcement from Alternative 1; r_2 = obtained reinforcement from Alternative 2; a = sensitivity to reinforcement (a<1 undermatching, a>1 overmatching, a=1 strict matching); \\log k = bias (intercept; k = bias parameter, often denoted c in the later GML literature)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Data on choice generally conform closely to an equation of the form: log(B1/B2)=a log(r1/r2+log k, where B1 and B2 are the frequencies of responding at Alternatives 1 and 2, r1 and r2 are the obtained reinforcement from Alternatives 1 and 2, and a and k are empirical constants. When a and k equal one, this equation is equivalent to the matching relation: B1/B2=r1/r2. Two types of deviation from matching can occur with this formulation: a and k not equal to one. In some experiments, a systematically falls short of one. This deviation is undermatching. The reasons for undermatching are obscure at present. Some evidence suggests, however, that factors favoring discrimination also favor matching. Matching (a=1) may represent the norm in choice when discrimination is maximal. When k differs from one, its magnitude indicates the degree of bias in choice. The generalized matching law predicts that bias should take this form (adding a constant proportion of responding to the favored alternative). Data from a variety of experiments indicate that it generally does.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "The evaluation and control of acoustical standing waves1",
@@ -33544,7 +33556,7 @@
     "abstract": "Temporal patterns of key pecking by pigeons were shaped by a schedule in which the delivery of food was contingent upon a measure of the overall extent to which the temporal pattern of behavior within a 5-sec trial conformed to a required pattern. This pattern approximated a constant rate of change in the rate of key pecking throughout the 5-sec trial. In comparison with behavior maintained by a classical fixed-interval 5-sec schedule, the new schedule controlled a better approximation to a ?scallop? within individual trials and greatly reduced intersubject variability. These results are consistent with the view that the delivery of a reinforcer after a behavioral pattern a few seconds in duration may strengthen the entire pattern as a unit, or operant. The response topography contiguous with reinforcement may be a negligible fraction of the strengthened operant. One implication of this view is that mean response rate for such brief responses as key pecks and lever presses is a byproduct of whatever patterns are strengthened, and generally will not reveal fundamental controlling relationships, whenever a reinforcer is not contiguous with all the behavior on which it is contingent.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Editors, 1958-1973",
@@ -33642,14 +33654,14 @@
       "Adjunctive Behavior",
       "Schedule: Concurrent"
     ],
-    "static-equation": "W_1 = P R_1 + P R_2 - R (1 - P); P = \\frac{T_1}{T_1 + T_2}",
-    "static-equation-definitions": "W_1: value of water; T_1, T_2: time spent in each schedule component; R_1, R_2: obtained rates of reinforcement",
+    "static-equation": "P = \\frac{T_1}{T_1 + T_2}; P = \\frac{R_1 + W_1}{(R_1 + W_1) + R_2}; W_1 = \\frac{P R_1 + P R_2 - R_1}{1 - P}",
+    "static-equation-definitions": "W_1: reinforcement value of schedule-induced drinking (water) added to component 1, expressed in food-reinforcement-rate units; T_1, T_2: time allocated to schedule components 1 and 2; R_1, R_2: obtained rates of food reinforcement in components 1 and 2; P: proportion of time allocated to component 1, equated to the proportion of total reinforcement under the strict-matching premise with water value entering only component 1 (W_2 = 0). NOTE: the bridging matching identity P = (R_1 + W_1)/((R_1 + W_1) + R_2) is the load-bearing assumption used to solve for W_1; the equivalent simplified form is W_1 = (T_1/T_2) R_2 - R_1. The trailing (1-P) was reinterpreted from a printed subtracted product '- R(1-P)' into a denominator, and bare R was taken to be R_1 \u2014 both are inferences from model coherence and are NOT verified against the scanned 1975 page image. A competing literal reading (R = total rate, (1-P) as a multiplier) yields W_1 = (R_1 + R_2)(2P - 1) and cannot be excluded without the scan.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The effect of food reinforcement schedules on the reinforcement value of drinking water was evaluated. Food-deprived rats were exposed to concurrent, identical variable-time schedules of food presentation, the food thus being delivered independently of the rats' behavior. When the relative amount of time spent in a schedule component stabilized, an opportunity to drink water was introduced into one schedule component. The value of the variable-time schedules was varied from 60 to 90 to 270 sec. The relative amount of time spent in the schedule component associated with drinking water was a decreasing function of food frequency for two animals and remained constant for the third. Drinking rates were direct functions of food frequency, and the amount of water drunk per pellet was an inverse function of food frequency. The reinforcement value of drinking water, according to the Matching Law, was a direct function of the frequency of food presentation. It was concluded that food reinforcement schedules indirectly influence rates of drinking by altering the reinforcement value of drinking water and that certain properties of schedule-induced drinking can be accounted for in terms of the reinforcement value of drinking water, the rate of drinking, and the frequency of food presentation.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Time allocation in human vigilance",
