@@ -38545,13 +38545,13 @@
       "Schedule: Concurrent"
     ],
     "static-equation": "\\frac{P_1}{P_1 + P_2} = \\frac{R_1}{R_1 + R_2}; \\frac{P_1}{P_2} = k \\left( \\frac{R_1}{R_2} \\right)^a; \\frac{P_1}{P_1 + P_2} = \\frac{p R_1}{p R_1 + x R_2}; \\log\\left(\\frac{P_1}{P_2}\\right) = a \\log\\left(\\frac{R_1}{R_2}\\right) + \\log k",
-    "static-equation-definitions": "P_1, P_2 = Response rate under each schedule; R_1, R_2 = Reinforcement rate under each schedule; k = bias parameter; a = sesitivity parameter (slope); p = FR requirement; x = Responses per VI reinforcer",
+    "static-equation-definitions": "P_1, P_2 = Response rate under each schedule; R_1, R_2 = Reinforcement rate under each schedule; k = bias parameter; a = sensitivity parameter (slope); p = FR requirement (tentative, unverified against scan); x = Responses per VI reinforcer (tentative, unverified against scan)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Four pigeons were exposed to concurrent fixed-ratio, variable-interval schedules of food presentation. The fixed-ratio requirement was either 25, 50, 75, or 100 responses, with the variable-interval schedule parameter held constant at 4 minutes. A delay time was imposed between a changeover from one schedule to the other and subsequent food availability. The delay time was varied at each ratio requirement over four values; no delay, 0-second delay, 1.5-second delay, and 5.0-second delay. As the fixed-ratio requirement or the delay time increased, a greater proportion of the total responses and time spent responding occurred under the variable-interval schedule relative to the proportion of food deliveries under that schedule. Neither relative overall response rate nor relative time spent responding equalled the relative frequency of food presentation, as would be predicted by a linear ?matching? model. Rather, these data were described by power functions with slopes of approximately 1.0 and intercepts greater than 1.0. In the terms of Baum's (1974) analysis, these deviations from linear matching represent bias in favor of responding under the interval schedule. Bias, as reflected in the intercept of the power function, was greater for the ratio of time than the ratio of responses. Four pigeons were exposed to concurrent fixed-ratio, variable-interval schedules of food presentation. The fixed-ratio requirement was either 25, 50, 75, or 100 responses, with the variable-interval schedule parameter held constant at 4 minutes. A delay time was imposed between a changeover from one schedule to the other and subsequent food availability. The delay time was varied at each ratio requirement over four values; no delay, 0-second delay, 1.5-second delay, and 5.0-second delay. As the fixed-ratio requirement or the delay time increased, a greater proportion of the total responses and time spent responding occurred under the variable-interval schedule relative to the proportion of food deliveries under that schedule. Neither relative overall response rate nor relative time spent responding equalled the relative frequency of food presentation, as would be predicted by a linear ?matching? model. Rather, these data were described by power functions with slopes of approximately 1.0 and intercepts greater than 1.0. In the terms of Baum's (1974) analysis, these deviations from linear matching represent bias in favor of responding under the interval schedule. Bias, as reflected in the intercept of the power function, was greater for the ratio of time than the ratio of responses.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "The Matching Law In And Within Groups Of Rats",
@@ -38571,7 +38571,7 @@
       "Schedule: Variable Interval"
     ],
     "static-equation": "\\log\\left(\\frac{R_1}{R_2}\\right) = a \\log\\left(\\frac{r_1}{r_2}\\right) + b; R_i = \\frac{k r_i}{r_0 + r_i}",
-    "static-equation-definitions": "R_1, R_2, R_i = Response rate on schedules; r_1, r_2, r_i = Reinforcement rates on schedules; r_0 = background reinforcement rate; a = sensitivity parameter (slope); b = bias parameter (intercept); k = scaling constant",
+    "static-equation-definitions": "R_1, R_2, R_i = Response rates on the schedules; r_1, r_2, r_i = Reinforcement rates on the schedules; r_0 = rate of background (extraneous) reinforcement; a = sensitivity parameter (slope); b = bias parameter (intercept of the log-ratio line; b = \\log c); k = scaling constant (asymptotic response rate)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "In each of the two experiments, a group of five rats lived in a complex maze containing four small single-lever operant chambers. In two of these chambers, food was available on variable-interval schedules of reinforcement. In Experiment I, nine combinations of variable intervals were used, and the aggregate lever-pressing rates (by the five rats together) were studied. The log ratio of the rates in the two chambers was linearly related to the log ratio of the reinforcement rates in them; this is an instance of Herrnstein's matching law, as generalized by Baum. Summing over the two food chambers, food consumption decreased, and response output increased, as the time required to earn each pellet increased. In Experiment II, the behavior of individual rats was observed by time-sampling on selected days, while different variable-interval schedules were arranged in the two chambers where food was available. Individual lever-pressing rates for the rats were obtained, and their median bore the same ?matching? relationship to the reinforcement rates as the group aggregate in Experiment I. There were differences between the rats in their distribution of time and responses between the two food chambers; these differences were correlated with differences in the proportions of reinforcements the rats obtained from each chamber. In each of the two experiments, a group of five rats lived in a complex maze containing four small single-lever operant chambers. In two of these chambers, food was available on variable-interval schedules of reinforcement. In Experiment I, nine combinations of variable intervals were used, and the aggregate lever-pressing rates (by the five rats together) were studied. The log ratio of the rates in the two chambers was linearly related to the log ratio of the reinforcement rates in them; this is an instance of Herrnstein's matching law, as generalized by Baum. Summing over the two food chambers, food consumption decreased, and response output increased, as the time required to earn each pellet increased. In Experiment II, the behavior of individual rats was observed by time-sampling on selected days, while different variable-interval schedules were arranged in the two chambers where food was available. Individual lever-pressing rates for the rats were obtained, and their median bore the same ?matching? relationship to the reinforcement rates as the group aggregate in Experiment I. There were differences between the rats in their distribution of time and responses between the two food chambers; these differences were correlated with differences in the proportions of reinforcements the rats obtained from each chamber.",
@@ -38737,8 +38737,8 @@
       "Stimulus Control",
       "Conditioned Reinforcement"
     ],
-    "static-equation": "H = p \\log_{2}\\left(\\frac{1}{p}\\right) + (1 - p)\\log_{2}\\left(\\frac{1}{1 - p}\\right); H = p \\log_{2}\\left(\\frac{1}{p}\\right)",
-    "static-equation-definitions": "H = information content; p = probability of reinforcement; 1-p = probability of nonreinforcement",
+    "static-equation": "H = p \\log_{2}\\!\\left(\\frac{1}{p}\\right) + (1-p)\\,\\log_{2}\\!\\left(\\frac{1}{1-p}\\right)",
+    "static-equation-definitions": "H = information content (uncertainty), in bits; p = probability of reinforcement; 1-p = probability of nonreinforcement. Equivalent canonical sign-form: H = -[p \\log_2 p + (1-p)\\log_2(1-p)], since \\log_2(1/x) = -\\log_2 x.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "A concurrent-chain procedure was used to study pigeons' preferences as a function of amount of information. Pigeons chose between two terminal links. Both terminal links ended in food reinforcement with probability (p) and in blackout with probability (1 ? p). One terminal link (noninformative link) was signalled by a stimulus uncorrelated with either food or blackout. The other terminal link (informative link) was signalled by stimuli correlated with these outcomes. Amount of information conveyed by these stimuli was varied across conditions by changing the probability of reinforcement (p) and blackout (1 ? p). The pigeons strongly preferred the informative link, and preferences were greater at p values above 0.50 than for their complements. The pigeons engaged in different behaviors during the stimulus periods, suggesting that the value of informative stimuli may be in their function as discriminative stimuli for interim activities and terminal responses. A concurrent-chain procedure was used to study pigeons' preferences as a function of amount of information. Pigeons chose between two terminal links. Both terminal links ended in food reinforcement with probability (p) and in blackout with probability (1 ? p). One terminal link (noninformative link) was signalled by a stimulus uncorrelated with either food or blackout. The other terminal link (informative link) was signalled by stimuli correlated with these outcomes. Amount of information conveyed by these stimuli was varied across conditions by changing the probability of reinforcement (p) and blackout (1 ? p). The pigeons strongly preferred the informative link, and preferences were greater at p values above 0.50 than for their complements. The pigeons engaged in different behaviors during the stimulus periods, suggesting that the value of informative stimuli may be in their function as discriminative stimuli for interim activities and terminal responses.",
@@ -38795,7 +38795,7 @@
       "Schedule: Variable Ratio"
     ],
     "static-equation": "R = R_{\\max} \\frac{r}{K_H + r}",
-    "static-equation-definitions": "R = response rate; r = reinforcement rate; R_max = Max response rate; K_H = Reinforcement rate corresponding to the half-maximal response rate",
+    "static-equation-definitions": "R = response rate; r = reinforcement rate; R_{\\max} = maximum (asymptotic) response rate; K_H = reinforcement rate corresponding to the half-maximal response rate",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Three female human subjects pressed a button for monetary reinforcement in a range of variable-interval schedules specifying different frequencies of reinforcement. On alternate days, responding was also punished (by subtracting money) according to a variable-ratio 34 schedule. In the absence of punishment, rate of responding was an increasing negatively accelerated function of reinforcement frequency; the relationship between response rate and reinforcement frequency conformed to Herrnstein's equation. The effect of the punishment schedule was to suppress responding at all frequencies of reinforcement. This was reflected in a change in the values of both constants in Herrnstein's equation: the value of the theoretical maximum response-rate parameter was reduced, while the parameter describing the reinforcement frequency corresponding to the half-maximal response rate was increased.",
@@ -39048,8 +39048,8 @@
       "Schedule: Fixed Ratio",
       "Behavioral Contrast"
     ],
-    "static-equation": "\\text{Elasticity} = \\frac{\\frac{\\Delta Y}{Y}}{\\frac{\\Delta X}{X}}",
-    "static-equation-definitions": "Y = Number of reinforcements per session; Delta Y = Change in Y across FR values; X = FR requirements (price); Delta X = Change in X across FR values; Elasticity = Proportional sensitivity of consumption to price changes",
+    "static-equation": "\\text{Elasticity} = \\frac{\\Delta Y / Y}{\\Delta X / X}",
+    "static-equation-definitions": "Y = Number of reinforcements per session (quantity consumed); \\Delta Y = Change in Y across FR values; X = FR requirement (price); \\Delta X = Change in X across FR values; Elasticity = Proportional sensitivity of consumption to price changes",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Six rats lever pressed for food on concurrent fixed-ratio schedules, in a two-compartment chamber. In one compartment, mixed diet pellets were delivered on fixed-ratio schedules of 1, 6, 11, and 16; in the other, either no food was delivered, or sucrose or mixed diet pellets were delivered on fixed-ratio 8. The number of pellets obtained in the first compartment declined as a function of fixed-ratio size in that compartment in all three conditions, but the decline was greatest overall with mixed diet pellets concurrently available in the other compartment, and least with no food concurrently available. The result is discussed in terms of economic demand theory, and is consistent with the prediction that elasticity of demand for a commodity (defined in operant terms as the ratio of the proportionate change in number of reinforcements per session to the proportionate change in fixed-ratio size) is greater the more substitutable for that commodity are any concurrently available commodities. Six rats lever pressed for food on concurrent fixed-ratio schedules, in a two-compartment chamber. In one compartment, mixed diet pellets were delivered on fixed-ratio schedules of 1, 6, 11, and 16; in the other, either no food was delivered, or sucrose or mixed diet pellets were delivered on fixed-ratio 8. The number of pellets obtained in the first compartment declined as a function of fixed-ratio size in that compartment in all three conditions, but the decline was greatest overall with mixed diet pellets concurrently available in the other compartment, and least with no food concurrently available. The result is discussed in terms of economic demand theory, and is consistent with the prediction that elasticity of demand for a commodity (defined in operant terms as the ratio of the proportionate change in number of reinforcements per session to the proportionate change in fixed-ratio size) is greater the more substitutable for that commodity are any concurrently available commodities.",
@@ -40135,12 +40135,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1332744/",
     "process": [],
-    "static-equation": "V = K_H \\frac{R^{max}}{R^{max} + R^a}",
-    "static-equation-definitions": "V = response rate; K_H = constant for half-maximal response rate; R^{max} = maximum response rate; R = reinforcement frequency; a = parameter",
+    "static-equation": "R = \\frac{R_{\\max}\\, r}{r + K_H}",
+    "static-equation-definitions": "R = response rate; R_{\\max} = maximum (asymptotic) response rate; r = reinforcement frequency (rate of reinforcement); K_H = reinforcement frequency at which the response rate is half-maximal (i.e., R = R_{\\max}/2)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "One male and three female human subjects pressed a button for monetary reinforcement under a range of variable-interval schedules specifying different frequencies of reinforcement. On alternate days, responding was also punished (by subtraction of money) according to a variable-interval 170-second schedule. In the absence of punishment, the rate of responding was an increasing negatively accelerated function of reinforcement frequency, as predicted by Herrnstein's equation. The effect of the punishment schedule was to suppress responding under lower frequencies of reinforcement; responding under higher reinforcement frequencies was much less affected. This was reflected in an increase in the value of KH (the constant expressing the reinforcement frequency corresponding to the half-maximal response rate), whereas there was no significant change in the value of Rmax (the constant expressing the maximum response rate). Previous results had shown that variable-ratio punishment resulted in a change in the values of both constants (Bradshaw, Szabadi, and Bevan, 1977). The results of the present study were consistent with the concept that the suppressive effects of punishment on responding depend on the nature of the punishment schedule.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Discriminative functions of schedule stimuli and memory: a combination of schedule and choice procedures",
@@ -40671,12 +40673,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1332842/",
     "process": [],
-    "static-equation": "R = \\frac{A}{1 + kD}",
-    "static-equation-definitions": "R = response rate; A = asymptotic response rate; k = constant; D = reinforcement frequency",
+    "static-equation": "R = \\frac{A D}{D + k}",
+    "static-equation-definitions": "R = response rate; A = asymptotic (maximum) response rate; k = reinforcement frequency yielding half-maximal response rate (at D = k, R = A/2); D = reinforcement frequency",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Four rats were exposed to variable-interval schedules specifying a range of different reinforcement frequencies, using sucrose of two different concentrations and distilled water as the reinforcer. With sucrose, the rates of responding of all four rats were increasing negatively accelerated functions of reinforcement frequency, the data conforming closely to Herrnstein's equation; this was also true of the data from three of the four rats when distilled water was used as the reinforcer. The values of both constants in Herrnstein's equation were related to the sucrose concentration: the asymptotic response rate decreased, and the reinforcement frequency corresponding to the half-maximal response rate increased, with decreasing sucrose concentration.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Matching, contrast, and equalizing in the concurrent lever-press responding of rats1",
@@ -41523,11 +41527,13 @@
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1332774/",
     "process": [],
     "static-equation": "Y = k X^{a}",
-    "static-equation-definitions": "Y = response rate; k = scaling factor; X = reinforcer density; a = exponent",
+    "static-equation-definitions": "Y = ratio of responses to the two alternatives (B_1/B_2); k = bias (scaling) constant c; X = ratio of reinforcer densities (r_1/r_2); a = sensitivity exponent (a < 1 indicates undermatching). This is the power form of Baum's generalized matching law, B_1/B_2 = c (r_1/r_2)^a. Note: the equation form and parameter values (k = unity and a = 0.84 in Exp I, k != 1 in Exp II) are taken verbatim from the machine-readable abstract; the operational ratio definitions of Y and X are reconstructed from the GML canon and corroborated by the k = unity result (curve passing through the equal-allocation point), since the full text is a scanned page image and the abstract does not spell out Y and X.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "In Experiment I, a group of eight pigeons performed on concurrent random-interval schedules constructed by holding probability equal and varying cycle time to produce ratios of reinforcer densities of 1:1, 3:1, and 5:1 for key pecking. Schedules for a second group of seven were constructed with equal cycle times and unequal probabilities. Both groups deviated from simple matching, but the two forms of the schedules appeared to produce no consistent patterns of deviation. The data were found to be consistent with those obtained in concurrent variable-interval situations. The parameters of the matching equation in the form of Y=k Xa were estimated; the value of k was unity and a was 0.84. In Experiment II, six pigeons were exposed to two conc RI RI schedules in which one component increasingly approximated an FI schedule. The value of k was not 1.0. Concurrent RI RI schedules were shown to represent a continuum from conc FI VI to conc VI VI schedules. The use of the exponential equation in testing \u201cmatching laws\u201d suggests that a<1 will continue to be observed, and this will set limits on the form of new laws and the assumed or rational values of the component variables in these laws.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "The relative law of effect: effects of shock intensity on response strength in multiple schedules1",
