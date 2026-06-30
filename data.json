@@ -42769,12 +42769,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1332902/",
     "process": [],
-    "static-equation": "log \\left( \\frac{B_1}{B_2} \\right) = a \\log \\left( \\frac{r_1}{r_2} \\right) + \\log b",
-    "static-equation-definitions": "B_1 = responses at Alternative 1; B_2 = responses at Alternative 2; r_1 = rate of reinforcement from Alternative 1; r_2 = rate of reinforcement from Alternative 2; a = empirical constant; b = empirical constant",
+    "static-equation": "\\log \\left( \\frac{B_1}{B_2} \\right) = a \\log \\left( \\frac{r_1}{r_2} \\right) + \\log b",
+    "static-equation-definitions": "B_1 = responses at Alternative 1; B_2 = responses at Alternative 2; r_1 = rate of reinforcement from Alternative 1; r_2 = rate of reinforcement from Alternative 2; a = sensitivity (empirical constant; a<1 undermatching, a>1 overmatching, a=1 strict matching); b = bias (empirical constant)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Almost all of 103 sets of data from 23 different studies of choice conformed closely to the equation: log (B1/B2) = a log (r1/r2) + log b, where B1 and B2 are either numbers of responses or times spent at Alternatives 1 and 2, r1 and r2 are the rates of reinforcement obtained from Alternatives 1 and 2, and a and b are empirical constants. Although the matching relation requires the slope a to equal 1.0, the best-fitting values of a frequently deviated from this. For B1 and B2 measured as numbers of responses, a tended to fall short of 1.0 (undermatching). For B1 and B2 measured as times, a fell to both sides of 1.0, with the largest mode at about 1.0. Those experiments that produced values of a for both responses and time revealed only a rough correspondence between the two values; a was often noticeably larger for time. Statistical techniques for assessing significance of a deviation of a from 1.0 suggested that values of a between .90 and 1.11 can be considered good approximations to matching. Of the two experimenters who contributed the most data, one generally found undermatching, while the other generally found matching. The difference in results probably arises from differences in procedure. The procedural variations that lead to undermatching appear to be those that produce (a) asymmetrical pausing that favors the poorer alternative; (b) systematic temporal variation in preference that favors the poorer alternative; and (c) patterns of responding that involve changing over between alternatives or brief bouts at the alternatives.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Stimulus properties of conspecific behavior",
@@ -43598,14 +43600,14 @@
       "Response Rate",
       "Postreinforcement Pause"
     ],
-    "static-equation": "y = 0.67x - 4.52; \\; y = 0.51x + 7.16; \\quad r^2 = 0.836",
-    "static-equation-definitions": "",
+    "static-equation": "y = 0.67x - 4.52; y = 0.51x + 7.16; r^2 = 0.836",
+    "static-equation-definitions": "x = independent variable of a fitted least-squares linear regression (an inferred, UNVERIFIED scheduled/programmed measure); y = dependent variable (an inferred, UNVERIFIED obtained response or reinforcement measure); each slope/intercept pair (0.67/-4.52 and 0.51/7.16) defines one fitted regression line in slope-intercept form; r^2 = coefficient of determination (proportion of variance accounted for). NOTE: the identities of x and y are inferred and could not be confirmed against the source, which is a non-machine-readable scanned page-image. NOTE: only a single r^2 = 0.836 accompanies the two reported regression lines; its assignment is ambiguous from the surviving fragment and a second fit statistic may have been lost, so do not assume one r^2 applies to both lines.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Five rats were trained under alternative fixed-ratio fixed-interval schedules, in which food\nreinforcement was provided for the completion of either a fixed-ratio or a fixed-interval\nrequirement, whichever was met first. Overall response rate and running rate (the rate of\nresponding after the postreinforcement pause) decreased for all subjects as the fixed-ratio\nvalue increased. As the proportion of reinforcements obtained from the fixed-ratio com-\nponent increased and the alternative schedule approached a simple fixed ratio, overall\nresponse rate and running rate both increased; conversely, as the proportion of reinforce-\nments obtained from the fixed-interval component increased and the alternative schedule\napproached a simple fixed interval, response rates decreased. Postreinforcement pause\nlength increased linearly as the average time between reinforcements increased, regardless\nof the schedule parameters. A break-run pattern of responding was predominant at low-\nand medium-valued fixed ratios. All subjects displayed at least occasional positively accel-\nerated responding within interreinforcement intervals at higher fixed-ratio values.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Discrimination and Differentiation of Response Number in Stimulus Directed Pecking of Pigeons",
@@ -43999,14 +44001,14 @@
       "Momentary Probability of Reinforcement",
       "Schedule: Random-Time"
     ],
-    "static-equation": "\\[\nR = A \\left( e^{-t/c} - e^{-t/l} \\right)\n\\]",
+    "static-equation": "R = A \\left( e^{-t/c} - e^{-t/l} \\right)",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Staddon and Simmelhag's proposal that behavior is produced by \u201cprinciples of behavioral variation\u201d instead of contingencies of reinforcement was tested in two experiments. In the first experiment pigeons were exposed to either a fixed-interval schedule of response-contingent reinforcement, an autoshaping schedule of stimulus-contingent reinforcement, or a fixed-time schedule of noncontingent reinforcement. Pigeons exposed to contingent reinforcement came to peck more rapidly than those exposed to noncontingent reinforcement. Staddon and Simmelhag's \u201cprinciples of behavioral variation\u201d included the proposal that patterns (interim and terminal) were a function of momentary probability of reinforcement. In the second experiment pigeons were exposed to either a fixed-time or a random-time schedule of noncontingent reinforcement. Pecking showed a constant frequency of occurrence over postfood time on the random-time schedule. Most behavior showed patterns on the fixed-time schedule that differed in overall shape (i.e., interim versus terminal) from those shown on the random-time schedule. It was concluded that both the momentary probability of reinforcement and postfood time can affect patterning.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Physical Restraint Produces Rapid Acquisition of the Pigeon's Key Peck",
@@ -44050,14 +44052,14 @@
       "Temporal Psychophysics",
       "Differential Reinforcement"
     ],
-    "static-equation": "T = 1.6 d^{0.18 t^{(0.82 - 0.052 \\ln d)}}; T = 5.89 d^{1.08 t^{(0.96 + 0.165 \\ln d)}}",
-    "static-equation-definitions": "",
+    "static-equation": "T = 1.6\\,d^{0.18}; T = 5.89\\,d^{1.08}",
+    "static-equation-definitions": "T = mean emitted key-peck duration; d = required (criterion) peck duration for food delivery; a (= 1.6, 5.89) = scaling constant; b (= 0.18, 1.08) = power-function exponent. The two equations are separate power-function fits for the paper's two procedures (e.g., trials vs. free-operant). The general model is the standard psychophysical (Stevens-type) power function T = a\\,d^{b}, matching the abstract's statement that emitted peck duration is a power function of the duration required for food delivery, with exponents that differed considerably across procedures.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The duration of the pigeon's key peck was differentially reinforced in either a trials or a free-operant procedure. Mean emitted peck duration was a power function of the duration required for food delivery to occur. The exponents of the power function differed considerably from those observed in earlier research involving longer duration responses in pigeons and other species. The coefficients of variation also did not correspond with those of the earlier research on other responses, nor did consideration of the durations actually reinforced resolve the differences. Duration was neither a function of response rate nor of intermittency of reinforcement. Key-peck duration was changed in an orderly way by differential reinforcement. However, it appeared to be more strongly determined by its duration in the absence of differential reinforcement than were longer duration responses.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Reinforcement for Errors in a Signal-Detection Procedure",
@@ -44077,14 +44079,14 @@
       "Discriminability",
       "Response Bias"
     ],
-    "static-equation": "\\frac{P_w}{P_z} = \\frac{R_w + \\eta R_y}{R_z + \\eta R_z},; \\frac{P_y}{P_z} = \\frac{R_y + \\eta R_w}{R_z + \\eta R_x},; \\log\\left(\\frac{P_x}{P_z}\\right) = a_{r_1} \\log\\left(\\frac{R_x}{R_z}\\right) + \\log d + \\log c,; \\log\\left(\\frac{P_y}{P_z}\\right) = a_{r_2} \\log\\left(\\frac{R_x}{R_z}\\right) - \\log d + \\log c,; \\text{Discrimination} = \\left( \\frac{R_c - R_e}{R_c + R_e} \\right) \\cdot \\log d,; \\log\\left(\\frac{P_w}{P_z}\\right) = a_{r_1} \\log\\left(\\frac{R_w + R_y}{R_z + R_t}\\right) + \\left(\\frac{R_c - R_e}{R_c + R_e}\\right) \\log d + \\log c,; \\log\\left(\\frac{P_y}{P_z}\\right) = a_{r_2} \\log\\left(\\frac{R_w + R_y}{R_z + R_t}\\right) - \\left(\\frac{R_c - R_e}{R_c + R_e}\\right) \\log d + \\log c.; \\log\\left(\\frac{P_w}{P_z}\\right) - \\log\\left(\\frac{P_y}{P_z}\\right) = 2 \\left( \\frac{R_c - R_e}{R_c + R_e} \\right) \\log d.; \\log\\left(\\frac{P_w}{P_z}\\right) + \\log\\left(\\frac{P_y}{P_z}\\right) = 2a_r \\log\\left(\\frac{R_w + R_y}{R_x + R_z}\\right) + 2\\log c.",
-    "static-equation-definitions": "",
+    "static-equation": "\\frac{P_w}{P_x} = \\frac{R_w + \\eta R_y}{R_x + \\eta R_z}; \\frac{P_y}{P_z} = \\frac{R_y + \\eta R_w}{R_z + \\eta R_x}; \\log\\left(\\frac{P_w}{P_x}\\right) = a_r \\log\\left(\\frac{R_w}{R_z}\\right) + \\log d + \\log c; \\log\\left(\\frac{P_y}{P_z}\\right) = a_r \\log\\left(\\frac{R_w}{R_z}\\right) - \\log d + \\log c; \\text{Discriminability} = \\left(\\frac{R_c - R_e}{R_c + R_e}\\right) \\log d; \\log\\left(\\frac{P_w}{P_x}\\right) = a_r \\log\\left(\\frac{R_w + R_y}{R_x + R_z}\\right) + \\left(\\frac{R_c - R_e}{R_c + R_e}\\right) \\log d + \\log c; \\log\\left(\\frac{P_y}{P_z}\\right) = a_r \\log\\left(\\frac{R_w + R_y}{R_x + R_z}\\right) - \\left(\\frac{R_c - R_e}{R_c + R_e}\\right) \\log d + \\log c; \\log\\left(\\frac{P_w}{P_x}\\right) - \\log\\left(\\frac{P_y}{P_z}\\right) = 2 \\left(\\frac{R_c - R_e}{R_c + R_e}\\right) \\log d; \\log\\left(\\frac{P_w}{P_x}\\right) + \\log\\left(\\frac{P_y}{P_z}\\right) = 2 a_r \\log\\left(\\frac{R_w + R_y}{R_x + R_z}\\right) + 2 \\log c",
+    "static-equation-definitions": "P_w, P_x = responses on the left and right keys given stimulus S1; P_y, P_z = responses on the left and right keys given stimulus S2. The four stimulus-response classes: w = S1 with left (correct), x = S1 with right (error), y = S2 with left (error), z = S2 with right (correct). R_w, R_x, R_y, R_z = reinforcers obtained for each of the four stimulus-response classes. R_c = R_w + R_z = total reinforcers for correct responses; R_e = R_x + R_y = total reinforcers for errors. a_r = sensitivity to the reinforcement ratio (generalized-matching slope). log d = discriminability (degree of stimulus control), of opposite sign in the S1 and S2 equations. log c = inherent (constant) response bias. eta = stimulus generalization/confusion parameter, 0 (perfect discrimination) to 1 (no discrimination); at eta = 1 both response ratios in eqs 1-2 reduce to the overall obtained left/right reinforcer ratio (R_w+R_y)/(R_x+R_z). The factor (R_c - R_e)/(R_c + R_e) is the attenuation of obtained discriminability produced by reinforcing errors: it equals 1 when no errors are reinforced and falls to 0 as error reinforcement approaches correct reinforcement (the paper's \"discrimination as a joint function of stimulus discriminability and stimulus-reinforcement association\"). The point model (eqs 3-4) is the special case of the general error-reinforcement model (eqs 6-7) with R_x = R_y = 0; eqs 8-9 are its difference and sum decompositions, isolating attenuated log d and the reinforcer-ratio/bias terms respectively. CAVEATS (scanned source, not machine-readable): (i) eqs 1-2, the eta confusion/generalization ratio model, are a low-confidence reconstruction (~0.55); the first fragment's denominator was corrupt (R_z + eta R_z) and was repaired to R_x + eta R_z by inference, so the exact eta algebra could not be confirmed against the page image and should not be read with the same authority as the canonical eqs 3-9. (ii) Eqs 1-2 are strict ratio matching (sensitivity implicitly fixed at 1, no log c term), a different parameterization from the free-sensitivity, explicit-bias log models of eqs 3-9. (iii) The separate log c bias term in every equation is fragment-supported and standard for McCarthy/Davison-era (1980) statements, but its presence in the original paper was not scan-verified. The fragment artifacts a_{r1}/a_{r2} were collapsed to a single a_r (the sum/difference forms cancel only with equal slopes) and the phantom class R_t was repaired to R_x.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Six pigeons were trained on a signal-detection procedure. They were required to peck the left key when a 5-second white light had been presented, and the right key when a 10-second light had been presented. These two correct responses were followed by food reinforcement with a probability of .7. Errors, left responses after the 10-second stimulus or right responses after the 5-second stimulus, were initially followed by a 3-second blackout of the chamber. In nine subsequent experimental conditions, errors were followed by food reinforcement with increasing probability while the probability of reinforcement for correct responses was kept constant. The percentage of correct responses decreased as error reinforcement probability increased. A matching model of detection performance, in which discrimination is a joint function of stimulus discriminability and stimulus-reinforcement association, provided a convincing fit to the data and to two sets of published data. The model also fitted published data on multiple and multiple-concurrent free-operant performance. This description of detection performance in terms of matching offers both accurate prediction of complex behavior and measures of discriminability with wide generality.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Memory for Sequences of Stimuli and Responses",
@@ -44134,14 +44136,14 @@
       "Proximity",
       "Delay of Reinforcement"
     ],
-    "static-equation": "p = a \\frac{1}{D_e}; P = \\frac{t}{p} = \\frac{t}{a} D_e = dD_e; D_e = I - P_e; P = b (I - P_e); P = b (I - P); P = \\frac{b}{b + 1} I",
-    "static-equation-definitions": "",
+    "static-equation": "p = a \\frac{1}{D_e}; P = \\frac{t}{p} = \\frac{t}{a} D_e = d D_e; D_e = I - P_e; P = b (I - P_e); P = b (I - P); P = \\frac{b}{b + 1} I",
+    "static-equation-definitions": "$p$ = rate of responding within an interreinforcement interval; $a$ = constant of proportionality; $D_e$ = effective time available for responding within an interreinforcement interval; $P$ = postreinforcement pause (provisional: $P = t/p$ may instead name the run/work time required to emit the criterion responses; meaning to be confirmed against the scanned source); $t$ = fixed amount of responding (response criterion) emitted per interval; $d = t/a$ = constant of proportionality; $I$ = interreinforcement interval (interreinforcement time); $P_e$ = pause term subtracted from the interval, set equal to $P$ at steady state; $b$ = constant of proportionality relating pause to available time, with $b \\equiv d = t/a$ (this identity is forced by the algebra, $P = d D_e$ and $D_e = I - P_e$, not independently confirmed against the source). Note: symbol meanings are inferred from the equation structure, not read from the scanned 1980 paper, and are provisional pending source verification.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons were trained to peck keys on fixed-ratio and fixed-interval schedules of food reinforcement. Both schedules produced a pattern of behavior characterized as pause and run, but the relation of pausing to time between reinforcers differed for the two schedules even when mean time between reinforcers was the same. Pausing in the fixed ratio occupied less of the time between reinforcers for shorter interreinforcer times. For two of three birds, the relation was reversed at longer interreinforcer times. As an interreinforcer time elapsed, there was an increasing tendency to return to responding for the fixed interval, but a roughly constant tendency to return to responding for the fixed-ratio schedule. In Experiment 1 these observations were made for both single-reinforcement schedules and multiple schedules of fixed-ratio and fixed-interval reinforcement. In Experiment 2 the observations were extended to a comparison of fixed-ratio versus variable-interval reinforcement schedules, where the distribution of interreinforcement times in the variable interval approximated that for the fixed ratio.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Preference for Free Choice Over Forced Choice in Pigeons",
@@ -44310,8 +44312,8 @@
       "Matching",
       "Delay"
     ],
-    "static-equation": "\\frac{R_1}{R_1 + R_2} = \\frac{d_2}{d_1 + d_2} = \\frac{r_1}{r_1 + r_2}; \\frac{R_1}{R_2} = \\frac{d_2}{d_1} = \\frac{r_1}{r_2}; \\frac{R_1}{R_1 + R_2} =\n\\frac{T - t_1}{(T - t_1) + (T - t_2)}\n\\quad (\\text{when } t_1 < T, \\, t_2 < T)\n\\]\n\\[\n= 0 \\quad (\\text{when } t_1 > T, \\, t_2 < T)\n\\]\n\\[\n= 1 \\quad (\\text{when } t_2 > T, \\, t_1 < T); \\frac{R_1}{R_2} = k \\left( \\frac{a_1}{a_2} \\right)^{\\alpha}; \\frac{V_1}{V_2} = \\left( \\frac{d_2}{d_1} \\right) \\cdot \\left( \\frac{a_1}{a_2} \\right) = \\frac{R_1}{R_2}; \\frac{R_1}{R_2} = k \\left( \\frac{a_1}{a_2} \\right)^{\\alpha} \\cdot \\left( \\frac{d_2}{d_1} \\right)^{y}",
-    "static-equation-definitions": "",
+    "static-equation": "\\frac{R_1}{R_1 + R_2} = \\frac{d_2}{d_1 + d_2} = \\frac{r_1}{r_1 + r_2}; \\frac{R_1}{R_2} = \\frac{d_2}{d_1} = \\frac{r_1}{r_2}; \\frac{R_1}{R_1 + R_2} = \\begin{cases} \\dfrac{T - t_1}{(T - t_1) + (T - t_2)} & t_1 < T,\\ t_2 < T \\\\[4pt] 0 & t_1 > T,\\ t_2 < T \\\\[4pt] 1 & t_2 > T,\\ t_1 < T \\end{cases}; \\frac{R_1}{R_2} = k \\left( \\frac{a_1}{a_2} \\right)^{\\alpha}; \\frac{V_1}{V_2} = \\left( \\frac{d_2}{d_1} \\right) \\left( \\frac{a_1}{a_2} \\right) = \\frac{R_1}{R_2}; \\frac{R_1}{R_2} = k \\left( \\frac{a_1}{a_2} \\right)^{\\alpha} \\left( \\frac{d_2}{d_1} \\right)^{y}",
+    "static-equation-definitions": "R_1, R_2 = number of responses (or response rate) allocated to alternatives 1 and 2; r_1, r_2 = obtained rates of reinforcement on alternatives 1 and 2; d_1, d_2 (written t_1, t_2 in the piecewise linear-window model) = delays to reinforcement for alternatives 1 and 2 (the same construct, delay, denoted differently across equations in the paper's own notation); a_1, a_2 = amounts (magnitudes) of reinforcement for alternatives 1 and 2; V_1, V_2 = value of alternatives 1 and 2; T = upper temporal bound (time horizon) of the linear delay-value window, beyond which a delay yields zero value; k = bias parameter (residual preference independent of the manipulated variables); \\alpha = sensitivity (exponent) of choice to relative reinforcement amount; y = sensitivity (exponent) of choice to relative reinforcement delay.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "A concurrent-chain procedure was used to study pigeons' choices between rewards differing\nin both amount and delay. The shorter delay terminated with a 2-second access to grain\nwhereas the longer delay terminated with a 6-second access to grain. The ratio of the\ndelays was constant within a given condition while their absolute values were varied.\nOver conditions, ratios of 6:1, 3:1, and 3:2 were studied. As the absolute values of the\ndelays to reinforcement increased, preference for the longer-delayed but larger reward\ndecreased under both the 6:1 and 3:1 ratios, but increased under the 3:2 ratio. These\nresults are inconsistent with choice models predicting no change in preference when the\nratios of delays and amounts are held constant. In addition, the change in preference\nunder the 3:1 ratio is inconsistent with a simple multiplicative interaction of the trade off\nbetween reinforcer amount and delay, and suggests that delay is a more potent de-\nterminant of choice than is amount. These results have implications for models that\nview choice between small immediate rewards and large but delayed rewards as under-\nlying the behavior commonly called self control.",
@@ -44488,7 +44490,7 @@
       "Matching"
     ],
     "static-equation": "\\frac{R_1}{R_2} = \\frac{Q_1}{Q_2}; \\frac{R_1}{Q_1} = \\frac{R_2}{Q_2}; \\log Q = b - a \\log P; \\log R = \\log P + \\log Q; \\log R = b + (1 - a)\\log P; Q = b - aP; R = P \\cdot Q; R = bP - aP^{2}",
-    "static-equation-definitions": "",
+    "static-equation-definitions": "Q = quantity of reinforcer consumed (consumption); R = total response output (responses emitted); P = price, defined as responses per reinforcer (P = R/Q). The parameters a and b are local fitting constants whose meaning and units differ between the two demand specifications and are NOT numerically shared across them. In the log-linear demand log Q = b - a log P: a is the constant price elasticity of demand (dimensionless; elasticity = -a) and b is the log-scale intercept; substituting into R = P*Q yields the work-output function log R = b + (1 - a)log P, whose response output is bitonic (inverted-U) and peaks at unit elasticity (a = 1). In the linear demand Q = b - aP: a is the slope dQ/dP (consumption per unit price, so elasticity here is variable, = -aP/Q, not equal to the log-linear a) and b is the linear (consumption-axis) intercept; substituting into R = P*Q yields the parabolic work function R = bP - aP^2 = P(b - aP). R = P*Q is the definitional identity for total responses, and log R = log P + log Q is its log form. The two equal-price expressions R_1/R_2 = Q_1/Q_2 and R_1/Q_1 = R_2/Q_2 are algebraic rearrangements of one another and together express a single equal-price condition P_1 = P_2 (they are not two independent results). Subscripts 1 and 2 index two commodities (reinforcers) or response alternatives.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "A review of the relationship between schedule of reinforcement, response rate, and choice\nsuggests that certain unifying concepts from economics can contribute to a more complete\nscience of behavior. Four points are made: 1) a behavioral experiment is an economic\nsystem and its characteristics-open or closed-can strongly determine the results; 2) rein-\nforcers can be distinguished by a functional property called elasticity; 3) reinforcers may\ninteract as complements as well as substitutes; 4) no simple choice rule, such as strict\nmatching, can account for all choice behavior.",
