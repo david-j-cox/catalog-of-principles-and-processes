@@ -245,12 +245,21 @@
   },
   "tokens_cumulative": 5442273,
   "cycles_completed": 13,
-  "limit_hits": [],
+  "limit_hits": [
+    {
+      "at": "2026-06-30 00:57 EDT",
+      "resume_after": "2026-07-01 00:50 EDT"
+    },
+    {
+      "at": "2026-06-30 00:58 EDT",
+      "resume_after": "2026-06-30 00:50 EDT"
+    }
+  ],
   "window": {
     "tz": "America/New_York",
     "start": "20:30",
     "end": "04:30",
     "note": "Nightly batch window; cron runs batches only within this range."
   },
-  "cooldown_until": 0
+  "cooldown_until": 1782795559.823535
 }
