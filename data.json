@@ -36008,7 +36008,7 @@
       "Schedule: Concurrent"
     ],
     "static-equation": "R_1 = k \\frac{r_1 + p_2}{r_0 + r_1 + r_2 + p_1 + p_2}; \\frac{R_1}{R_1 + R_2} = \\frac{r_1 + p_2}{r_1 + r_2 + p_1 + p_2}",
-    "static-equation-definitions": "R_1 = Response on level 1; k = Constant; r_1, r_2 = Obtained reinforcement rate for each lever; p_1, p_2 = Obtained punishment rate for each lever; r_0 = Background reinforcement rate; \\frac{R_1}{R_1 + R_2} = Relative rate of responding on lever 1",
+    "static-equation-definitions": "R_1 = Response rate on lever 1; k = Constant; r_1, r_2 = Obtained reinforcement rate for each lever; p_1, p_2 = Obtained punishment rate for each lever; r_0 = Extraneous/background reinforcement rate (Herrnstein's r_e); \\frac{R_1}{R_1 + R_2} = Relative rate of responding on lever 1",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Rats' responses on two levers were reinforced according to independent random-interval 1.5-min food schedules. In addition, both lever presses were intermittently punished according to several concurrent random-interval random-interval shock schedules. For the left, the scheduled rate of punishment was kept constant according to a random-interval 6-min schedule. For the right, the rate of punishment varied. As the frequency of punishment for the right lever press increased, its rate decreased. The rate of the left punished lever press increased, however, even though its scheduled reinforcement rate and punishment rate remained unchanged. Rats' responses on two levers were reinforced according to independent random-interval 1.5-min food schedules. In addition, both lever presses were intermittently punished according to several concurrent random-interval random-interval shock schedules. For the left, the scheduled rate of punishment was kept constant according to a random-interval 6-min schedule. For the right, the rate of punishment varied. As the frequency of punishment for the right lever press increased, its rate decreased. The rate of the left punished lever press increased, however, even though its scheduled reinforcement rate and punishment rate remained unchanged.",
@@ -36259,13 +36259,13 @@
       "Behavioral Contrast"
     ],
     "static-equation": "P_A = \\frac{K R_A}{R_A + m R_B + R_0}",
-    "static-equation-definitions": "P_A = rate of responding or time allocation in component A; R_A, R_B = rate of reinforcement in component A/B; R_) = Rate of reinforcement from extraneous sources; K = scaling constant; m = degree of interaction between components (0-1)",
+    "static-equation-definitions": "P_A = time allocation in component A (proportion/amount of session time spent in A; dependent-variable symbol reconstructed, original may use T_A or B_A); R_A, R_B = rate of reinforcement in component A/B; R_0 = rate of reinforcement from extraneous sources (Herrnstein's r_e; original may use r_e); K = scaling/asymptote constant (original may use lowercase k); m = dimensionless weight on alternate-component reinforcement indexing the degree of cross-component interaction",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons' standing on a platform produced food reinforcement according to two-component multiple schedules in which either both components consisted of the same variable-interval schedule or one of these was replaced with a component without reinforcement (extinction). The components of the multiple schedule alternated every 30 sec, and were signalled by changes in the color of diffuse overhead illumination. Changing the schedule of one of the components to extinction increased the percentage of time spent on the platform during the unchanged component (behavioral contrast). This result casts doubt on accounts that attribute behavioral contrast to variations in the rate of noninstrumental elicited responses.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Contrast, Induction, Facilitation, Suppression, And Conservation",
@@ -36283,7 +36283,7 @@
       "Behavioral Contrast"
     ],
     "static-equation": "N(kI_1 + C_1 + kI_2 + C_2) = kO_i + O_c; k = \\frac{O_c - N(C_1 + C_2)}{N(I_1 + I_2) - O_i}; N = \\frac{kO_i + O_c}{k(I_1 + I_2) + C_1 + C_2}; NI_1 = I_1 \\frac{kO_i + O_c}{kI_1 + C_1 + kI_2 + C_2}; NC_1 = C_1 \\frac{kO_i + O_c}{kI_1 + C_1 + kI_2 + C_2}; NI_2 = I_2 \\frac{kO_i + O_c}{kI_1 + C_1 + kI_2 + C_2}; NC_2 = C_2 \\frac{kO_i + O_c}{kI_1 + C_1 + kI_2 + C_2}; NI - O_i > 0 \\quad \\text{iff} \\quad I O_c > C O_i; NC - O_c < 0 \\quad \\text{iff} \\quad I O_c > C O_i",
-    "static-equation-definitions": "N = number of complete component cycles; k = ratio of the concerved dimension per unit of i to that per unit of c; I_1, I_2 = lever-pressing requriements in components 1 and 2; C_1, C_2 = drinking requirement in components 1 and 2; O_i baseline amount of response i (lever pressing); O_c = baseline amount of response c (drinking)",
+    "static-equation-definitions": "N = number of complete component cycles; k = ratio of the conserved dimension per unit of i to that per unit of c; I_1, I_2 = lever-pressing requirements in components 1 and 2; C_1, C_2 = drinking requirement in components 1 and 2; O_i = baseline amount of response i (lever pressing); O_c = baseline amount of response c (drinking)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Ten rats received all of their water in daily 1-hr sessions. Following a baseline phase in which lever and water spout were freely available throughout each session, subjects were trained to press the lever for water on mixed schedules composed of two alternating components. Each component gave access to water for a fixed cumulation of drinking time every time the rat cumulated a fixed amount of lever-pressing time. Changes in one component produced contrast and induction effects, both positive and negative, with respect to both lever pressing and drinking in the unchanged component. All schedules facilitated lever pressing relative to baseline. All schedules suppressed drinking relative to baseline, even though contingency sessions allowed ample time to perform the baseline amount of drinking. The entire pattern of results was predicted in quantitative detail by assuming that the total amount of a dimension apportioned to lever pressing and drinking is conserved between baseline and contingency sessions. Conservation theory was shown to predict several effects produced by simple fixed-ratio schedules, and was compared favorably with probability-differential (Premack, 1971) and response-deprivation (Timberlake and Allison, 1974) theory.",
@@ -36705,13 +36705,13 @@
       "Schedule: Concurrent"
     ],
     "static-equation": "\\frac{P_1}{P_2} = \\frac{R_1}{R_2}; \\log\\!\\left(\\frac{P_1}{P_2}\\right) = a \\,\\log\\!\\left(\\frac{R_1}{R_2}\\right) + \\log c; \\frac{T_1}{T_2} = c \\left( \\frac{R_1}{R_2} \\right)^{b}; P_1 = \\frac{k \\, R_1}{R_1 + R_2 + R_0}; P_1 = k' \\left( \\frac{R_1}{R_1 + R_2 + R_3 + R_0} \\right)^{a}",
-    "static-equation-definitions": "P_1, P_2 = Responses on keys 1 and 2; R_1, R_2 = Reinforcers obtained on keys 1 and 2; c = bias parameter; a = sensitiviy parameter; T_1, T_2 = Time spent responding on keys 1 and 2; b = sensitivity paramater; k = asymptotic max response rate; k' = scaling constant",
+    "static-equation-definitions": "P_1, P_2 = Responses on keys 1 and 2; R_1, R_2 = Reinforcers obtained on keys 1 and 2; c = bias parameter; a = sensitivity parameter (the choice/concurrent sensitivity slope in the log GML, eq 2; reused as the absolute-rate matching exponent in eq 5, per the paper's convention); T_1, T_2 = Time spent responding on keys 1 and 2; b = sensitivity parameter (time-allocation power form); k, k' = asymptotic/scaling constants for absolute response rate; R_0 = reinforcers maintaining other (extraneous/background) behavior, i.e. the r_e term in Herrnstein's hyperbola; R_3 = reinforcers on a third response key (the study arranged VI schedules singly and concurrently on one, two, and three keys; eq 4 is the two-alternative case and eq 5 the generalized three-key case)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Extensive parametric data were obtained from pigeons responding on variable-interval schedules arranged on three, two, and one response keys. Number of responses on the keys, the time spent responding on the keys, and the number of reinforcements obtained on the keys were measured. Response rates on each key were an increasing function of the reinforcement rate on that key, and an inverse function of the reinforcement rate on the other keys. In terms of preference, both response and time-allocation ratios undermatched ratios of obtained reinforcements, and the degree of undermatching was consistent both within, and between, two- and three-schedule data. When absolute response-rate data were analyzed according to Herrnstein's (1970) quantitative account, obtained values of assumed constants were not consistent either within or between conditions. However, a power-function modification of Herrnstein's account fitted the data well and provided similar exponent values to those obtained for the undermatching of preference ratios.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Aftereffects Of Reinforcement On Variable-Ratio Schedules",
@@ -36808,7 +36808,7 @@
       "Stimulus Control"
     ],
     "static-equation": "\\log\\!\\left(\\frac{B_1}{B_2}\\right) = a \\,\\log\\!\\left(\\frac{E_1}{E_2}\\right) + b",
-    "static-equation-definitions": "B_1, B_2 = number of initial link responses on alternatives 1 and 2; E_1, E_2 = number of entreis into the terminal link associated with alternatives 1 and 2; a = slope (sensitivity); b = intercept (bias);",
+    "static-equation-definitions": "B_1, B_2 = number of initial link responses on alternatives 1 and 2; E_1, E_2 = number of entries into the terminal link associated with alternatives 1 and 2; a = slope (sensitivity); b = intercept (bias)",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Six homing pigeons were trained on concurrent chain schedules in which the terminal links were fixed-interval schedules of 5 sec or 15 sec. One initial-link schedule was always VI 27-sec; the other was varied over conditions from VI 27-sec to VI 181-sec. Preference measured in the initial links varied as a joint function of the initial- and terminal-link schedules. When the initial links were varied with constant, but unequal, terminal links, the slope of the function relating the logarithm of the initial-link response ratio to the logarithm of the terminal-link entry ratio differed from that obtained with equal terminal links. This result indicates that biases attributable to the terminal-link schedules were not constant. The rate of change of preference, or degree of undermatching, in the initial links depended on whether the shorter initial link led to the shorter or the longer terminal link. These results raise the question of whether bias and undermatching in concurrent schedule performance are independent measures.",
@@ -36972,8 +36972,8 @@
       "Schedule: Fixed Interval",
       "Temporal Control"
     ],
-    "static-equation": "\\frac{B_1}{\\sum_{i=1}^{n} B_i}= \\frac{r_1}{\\sum_{i=1}^{n} r_i}",
-    "static-equation-definitions": "B_i = Frequency for activity i; {\\sum_{i=1}^{n} B_i} = Total rate across all n activities; r_i = Rate of reinforcement from activity i; n = number of alternatives",
+    "static-equation": "\\frac{B_1}{\\sum_{i=1}^{n} B_i} = \\frac{r_1}{\\sum_{i=1}^{n} r_i}",
+    "static-equation-definitions": "B_i = Measure (time-based or count-based) of behavior allocated to activity i; B_1 = Behavior measure for activity 1; \\sum_{i=1}^{n} B_i = Total behavior across all n activities; r_1 = Rate of reinforcement from activity 1; r_i = Rate of reinforcement from activity i; \\sum_{i=1}^{n} r_i = Total reinforcement rate across all n activities; n = number of alternatives",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Rats' pressing on two levers was reinforced according to two independent variable-interval schedules that were varied during the experiment. Since the levers were connected directly to the programming equipment, bypassing the standard pulseformers, reinforcement could occur while a lever was held down. Although the time a lever was pressed might, therefore, have varied independently of number of presses, these two measures covaried substantially, because the average duration of the presses remained roughly constant. This rough invariance may have resulted from the rats' tendency to make bursts of brief presses (i.e., to jiggle the levers), even though the contingencies encouraged holding. When duration did vary, presses on the two levers tended to vary together. As a result, relative time spent pressing corresponded closely to relative number of presses. Both of these measures conformed well to the matching law. Absolute behavioral frequency at a lever, measured either way, varied directly with proportion of reinforcement for that lever, in accordance with the generalized version of the matching law. Number of presses seemed, on balance, to be a slightly more reliable measure than pressing time. The substantial interchangeability may prove more significant than the slight disparity, however, because it supports the notion that all behavior can be measured on a common scale of time.",
@@ -37198,7 +37198,7 @@
       "Temporal Control"
     ],
     "static-equation": "R_A = R_{\\max} \\cdot \\frac{r_A}{K_H + r_A}; R_A = R_{\\max} \\cdot \\frac{r_A}{K_H + r_A + r_B}; R_B = R_{\\max} \\cdot \\frac{r_B}{K_H + r_A + r_B}; \\frac{R_A}{R_A + R_B} = \\frac{r_A}{r_A + r_B}",
-    "static-equation-definitions": "R_A = Response rate in component A; r_A = Reinforcement rate on component A; R_Max = Maximum response rate; K_H = Reinforcement frequency that produces R_max/2; R_b = reinforcement frequency on component B; R_b = Response rate on component B; \\frac{R_A}{R_A + R_B} = Relative response rate in A; \\frac{r_A}{r_A + r_B} = Relative reinforcement frequency in A",
+    "static-equation-definitions": "R_A = Response rate in component A; r_A = Reinforcement frequency on component A; R_{\\max} = Maximum (asymptotic) response rate; K_H = Reinforcement frequency that produces the half-maximal response rate R_{\\max}/2 (plays the role of extraneous/background reinforcement r_e in the single-operant fit); r_B = Reinforcement frequency on component B; R_B = Response rate on component B; \\frac{R_A}{R_A + R_B} = Relative response rate in A; \\frac{r_A}{r_A + r_B} = Relative reinforcement frequency in A. Note: subscripts A/B are component labels within the Herrnstein framework; this 1976 study used single (non-concurrent) VI schedules, so the central fitted model is the single-operant hyperbola (eq 1) and the two-source forms (eqs 2-3) are the general derivation steps that motivate it.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "During Phase I, human subjects pressed a button for monetary reinforcement in five variable-interval schedules, each of which specified a different frequency of reinforcement. The rate of responding was an increasing, negatively accelerated function of reinforcement frequency; the data conformed closely to Herrnstein's equation. During Phase II, the same five schedules were in operation, but in addition a concurrent variable-interval schedule (B) was introduced, responses on which were always reinforced at the same frequency. Response rate in component A increased while the response rate in B decreased, as a function of the reinforcement frequency in component A. Relative response rates in the two component schedules matched the relative frequencies of reinforcement. Comparing the absolute response rates in component A during Phase I and Phase II it was found that introduction of the concurrent schedule did not affect the value of the theoretical maximum response rate, but did increase the value of the reinforcement frequency needed to obtain any particular submaximal response rate.",
@@ -37222,14 +37222,14 @@
       "Schedule: Concurrent",
       "Schedule: Variable Interval"
     ],
-    "static-equation": "P_1 = k \\cdot \\frac{R_1}{R_1 + R_2 + R_e}; p_r(A) = \\frac{p_r(A)}{p_r(A) + p_r(D)}; \\frac{v(A)}{v(C)} = \\frac{a}{a + c}",
-    "static-equation-definitions": "P_1 = Response rate on a key; R_1, R_2 = Reinforcement rate for alternative 1 and 2; R_e = Background reinforcement rate; k = maximium response rate; p_r(A), p_r(D)  = Probability of reinforcement given a response to A and D; v(A), v(C) = scaling parameter, a, c = response rate to A and C",
+    "static-equation": "P_1 = k \\cdot \\frac{R_1}{R_1 + R_2 + R_e}; P(A) = \\frac{p_r(A)}{p_r(A) + p_r(D)}; \\frac{v(A)}{v(A) + v(C)} = \\frac{a}{a + c}",
+    "static-equation-definitions": "P_1 = \\text{response rate on a key}; R_1, R_2 = \\text{reinforcement rate for alternatives 1 and 2}; R_e = \\text{background (extraneous) reinforcement rate}; k = \\text{maximum response rate (asymptote)}; P(A) = \\text{proportion of responses (choices) to A}; p_r(A), p_r(D) = \\text{probability of reinforcement given a response to A and D}; v(A), v(C) = \\text{value of network paths/alternatives A and C}; a, c = \\text{parameters associated with paths A and C}",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons were given practice choosing between pairs of alternatives yielding different frequencies of reinforcement. Four individual alternatives were set into four pairwise choices. Averaged over subjects, the distribution of responses in each choice approximated matching. The four individual alternatives were then presented, two by two, in two pairwise choices for which there had been no initial practice. No further reinforcement was given during the tests with the new pairs. Transfer to the two test pairs deviated systematically from matching in most cases by exaggerating the preference for the alternative that had had the higher frequency of reinforcement.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Effects Of Variations In The Temporal Distribution Of Reinforcements On Interval Schedule Performance",

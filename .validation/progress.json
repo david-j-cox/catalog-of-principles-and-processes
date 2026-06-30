@@ -19,14 +19,6 @@
   },
   "equation_track": {
     "remaining": [
-      1785,
-      1795,
-      1796,
-      1813,
-      1817,
-      1824,
-      1833,
-      1834,
       1835,
       1842,
       1843,
@@ -226,6 +218,14 @@
       1756,
       1757,
       1774,
+      1785,
+      1795,
+      1796,
+      1813,
+      1817,
+      1824,
+      1833,
+      1834,
       2120,
       2121,
       2131,
@@ -243,8 +243,8 @@
       4331
     ]
   },
-  "tokens_cumulative": 2847427,
-  "cycles_completed": 7,
+  "tokens_cumulative": 3270446,
+  "cycles_completed": 8,
   "limit_hits": [],
   "window": {
     "tz": "America/New_York",
