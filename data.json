@@ -48482,8 +48482,8 @@
       "Reinforcement",
       "Schedule: Variable Interval"
     ],
-    "static-equation": "\\log\\!\\left(\\frac{P_L}{P_R}\\right)\n= a \\log\\!\\left(\\frac{R_L}{R_R}\\right) + \\log c; \\log\\!\\left(\\frac{P_w}{P_x}\\right)\n= a_r \\log\\!\\left(\\frac{R_w}{R_x}\\right) + \\log d + \\log c; \\log\\!\\left(\\frac{P_y}{P_z}\\right)\n= a_r \\log\\!\\left(\\frac{R_w}{R_z}\\right) - \\log d + \\log c; \\log \\text{response bias}\n= \\tfrac{1}{2} \\log\\!\\left( \\frac{P_w}{P_x} \\cdot \\frac{P_y}{P_z} \\right); \\log d = \\tfrac{1}{2} \\log\\!\\left( \\frac{P_w}{P_x} \\cdot \\frac{P_z}{P_y} \\right)",
-    "static-equation-definitions": "",
+    "static-equation": "\\log\\!\\left(\\frac{P_L}{P_R}\\right) = a \\log\\!\\left(\\frac{R_L}{R_R}\\right) + \\log c; \\log\\!\\left(\\frac{P_w}{P_x}\\right) = a_r \\log\\!\\left(\\frac{R_w}{R_z}\\right) + \\log d + \\log c; \\log\\!\\left(\\frac{P_y}{P_z}\\right) = a_r \\log\\!\\left(\\frac{R_w}{R_z}\\right) - \\log d + \\log c; \\log(\\text{response bias}) = \\tfrac{1}{2} \\log\\!\\left( \\frac{P_w}{P_x} \\cdot \\frac{P_y}{P_z} \\right); \\log d = \\tfrac{1}{2} \\log\\!\\left( \\frac{P_w}{P_x} \\cdot \\frac{P_z}{P_y} \\right)",
+    "static-equation-definitions": "P_L, P_R: number (or proportion) of responses emitted on the left and right keys. P_w, P_x: responses given stimulus S1 (w = correct, x = incorrect/error). P_y, P_z: responses given stimulus S2 (z = correct, y = incorrect/error). R_L, R_R: reinforcers obtained on the left and right keys. R_w, R_z: reinforcers obtained for the two correct responses (w on S1, z on S2). a, a_r: sensitivity of behavior to the reinforcer (or reinforcer-rate) ratio. log c: inherent (reinforcement-independent) response bias. log d: stimulus discriminability (detectability), where d = 1 (log d = 0) indicates no discrimination and larger values indicate better discrimination. log(response bias): overall response bias, the geometric-mean tendency to favor one response across both stimulus conditions (canonically also written log b).",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Using an operant analogue of the yes-no detection task, six pigeons were trained to detect\nluminance changes under two different reinforcement-scheduling procedures. In the first,\nan uncontrolled reinforcement-ratio procedure, the relative frequency of food reinforcers\nobtained for correct detections was free to vary with the birds' behavior as luminance\nlevels were changed. In the second, a controlled reinforcement-ratio procedure, changes in\npreference could not alter the relative distribution of food reinforcers between the two\nresponse alternatives. Extreme response biases developed as luminance was decreased to\nthreshold in the uncontrolled procedure. No progressive changes in response bias as a\nfunction of decreasing luminance were seen in the controlled procedure. Absolute thresh-\nolds for light intensity were lower in the controlled than in the uncontrolled procedure.",
@@ -48511,14 +48511,14 @@
       "Schedule: Variable Interval",
       "Schedule: Concurrent"
     ],
-    "static-equation": "\\frac{B_1}{B_2} = k \\left( \\frac{R_1}{R_2} \\right)^{a}; A' = \\frac{3 + b + \\dfrac{a(b - 1)}{1 - a} - \\dfrac{a}{b}}{4}; B'' = \\left( \\frac{y - x}{x} \\right) 100; B'' = \\left( \\frac{y - x}{y} \\right) 100; \\mathrm{PED}\n= \\frac{1}{2} \\log\\!\\left(\n\\frac{\\text{Hits} \\times \\text{Correct Rejections}}\n     {\\text{False Alarms} \\times \\text{Misses}}\n\\right); \\mathrm{PEB}\n= \\frac{1}{2} \\log\\!\\left(\n\\frac{\\text{Hits} \\times \\text{False Alarms}}\n     {\\text{Correct Rejections} \\times \\text{Misses}}\n\\right)",
-    "static-equation-definitions": "",
+    "static-equation": "\\frac{B_1}{B_2} = k \\left( \\frac{R_1}{R_2} \\right)^{a}; A' = \\frac{3 + b + \\dfrac{a(b - 1)}{1 - a} - \\dfrac{a}{b}}{4}; B'' = \\frac{b(1 - b) - a(1 - a)}{b(1 - b) + a(1 - a)}; B'' = \\frac{a(1 - a) - b(1 - b)}{a(1 - a) + b(1 - b)}; \\mathrm{PED} = \\frac{1}{2} \\log\\!\\left( \\frac{\\text{Hits} \\times \\text{Correct Rejections}}{\\text{False Alarms} \\times \\text{Misses}} \\right); \\mathrm{PEB} = \\frac{1}{2} \\log\\!\\left( \\frac{\\text{Hits} \\times \\text{False Alarms}}{\\text{Correct Rejections} \\times \\text{Misses}} \\right)",
+    "static-equation-definitions": "B_1, B_2 = responses (behavior) emitted on alternatives 1 and 2; R_1, R_2 = reinforcers obtained on alternatives 1 and 2; a (matching law, Eq. 1) = sensitivity of the response ratio to the reinforcer ratio (power-function exponent); k = bias parameter. NOTATION CAUTION: in the signal-detection indices (A', B'') the symbols a and b are reused with DIFFERENT meanings and must not be conflated with the matching-law a: there b = proportion of hits p(H) and a = proportion of false alarms p(FA). A' = nonparametric discriminability (Pollack & Norman, 1964; Grier, 1971); the form given is an exact algebraic identity of the canonical A' = 1/2 + (b-a)(1+b-a)/[4b(1-a)] and applies to the b >= a (Hit >= FA) branch (Grier defines a companion form for b < a). B'' = nonparametric response bias (Grier, 1971): the first form is the b >= a case and the second is the b < a case; B'' is bounded on [-1, 1] and equals 0 at the unbiased line H = 1 - F. PED = point estimate of detectability (discriminability) and PEB = point estimate of response bias, each computed from the four cell frequencies (Hits, Misses, False Alarms, Correct Rejections) of the yes-no detection matrix; these are the McCarthy & Davison / Davison & Tustin point estimates equivalent to log d and log b; \\log is base 10. PROVENANCE NOTE: the two B'' equations are scholarly reconstructions inferred from the surviving 'B''' labels and the standard A'/B'' pairing; the corrupted source fragments (percent-difference forms) do not corroborate this specific algebra, and the 1983 source is a non-machine-readable scan, so the B'' identification rests on the label and the EAB/SDT canon rather than on recovered text.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons' pecks on a red key and a green key were followed by access to grain according to\npairs of concurrent independent variable-interval schedules in a combined signal detection/\nmatching law paradigm. Pecks on the red key were reinforced by the richer variable-interval\nschedule if a short-duration tone had been presented; pecks on the green key were rein-\nforced by the richer variable-interval schedule if a long-duration tone had been presented.\nPecks on the green key given a short-duration tone, or on the red key given a long-duration\ntone, were reinforced by the leaner variable-interval schedule. The data were analyzed ac-\ncording to both signal detection's and the matching law's separate measures of, first, the\ndiscrimination of the choices and, second, the bias to make one response or another. Increas-\ning the difficulty of the tone-duration discrimination decreased both methods' measures of\nthe discrimination of the choices and did not change both methods' measures of the bias\nto make one response or another. Changing the leaner variable-interval schedule so that\nit approached the richer variable-interval schedule decreased signal detection's measure of\ndiscrimination but left its measure of response bias and the matching law measures un-\nchanged. Data collected only until a subject's first changeover response following presenta-\ntion of a long or a short tone showed higher values for both methods' measures of discrimi-\nnation, no change in signal detection's measure of response bias, and lower values for the\nmatching law's measure of response bias. Relationships between the matching law's and\nsignal detection's methods of analyzing choice are discussed. It is concluded that a signal\ndetection analysis is more efficient for examining changes in the difficulty of a discrimina-\ntion, whereas a matching law analysis is more effective for examining the effects of changes\nin relative reinforcer frequency.",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Free-Operant Forgetting: Delayed Stimulus Control of Multiple-Schedule Performance",
@@ -48537,14 +48537,14 @@
       "Schedule: Multiple",
       "Schedule: Variable Interval"
     ],
-    "static-equation": "\\frac{P_1}{P_2} = c \\left( \\frac{R_1}{R_2} \\right)^{a}",
-    "static-equation-definitions": "",
+    "static-equation": "\\frac{P_1}{P_2} = c \\left( \\frac{R_1}{R_2} \\right)^{a}; \\log\\left(\\frac{P_1}{P_2}\\right) = a\\,\\log\\left(\\frac{R_1}{R_2}\\right) + \\log c",
+    "static-equation-definitions": "P_1, P_2 = response measures (response rates or proportions of responding) in components 1 and 2 of the multiple schedule; R_1, R_2 = obtained reinforcement rates in components 1 and 2; a = sensitivity to reinforcement (the generalized-matching exponent). In White's free-operant forgetting / delayed stimulus control framework, a is interpreted as an index of stimulus control (discriminability) by the component-correlated stimuli that is expected to decline as the imposed retention interval/delay increases; this interpretive gloss is consistent with the White program but is not directly verifiable from the surviving extracted fragment. c = bias (multiplicative response-ratio asymmetry independent of the reinforcement ratio; appears as log c in the logarithmic form). The power and log-linear forms are algebraically equivalent; which form was actually typeset in the 1983 scan, and whether the response measure was denoted P (vs. White's frequent B/response-rate notation), could not be confirmed.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons' responses were reinforced in two components of several multiple variable-interval\nvariable-interval schedules of food reinforcement. In one component, the key was illumi-\nnated green for 15 seconds and white for 45 seconds. In the other component, the key was\nilluminated red for 15 seconds and white for 45 seconds. Values for the exponent of the\npower functions relating response ratios to reinforcement ratios were higher in the pres-\nence of the discriminative stimuli (green or red) than in the presence of white. Sensitivity\nof response ratios to changes in reinforcement ratios provided an index of the extent to\nwhich responding was under delayed stimulus control by prior discriminative stimuli",
     "journal": "JEAB",
     "reviewed": true,
-    "signoffs": 1
+    "signoffs": 0
   },
   {
     "title": "Dynamic effects of food magnitude on interim-terminal interaction",
@@ -51719,12 +51719,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1348158/",
     "process": [],
-    "static-equation": "d(t) = d_0 \\times e^{-b \\times t}",
-    "static-equation-definitions": "d(t) = discriminability at time t; d_0 = initial discriminability at zero delay; b = rate of decrement in discriminability; t = delay-interval duration",
+    "static-equation": "\\log d = \\frac{1}{2}\\log\\left(\\frac{B_{11}\\,B_{22}}{B_{12}\\,B_{21}}\\right); \\log d_t = \\log d_0 - b\\,t",
+    "static-equation-definitions": "\\log d = bias-free index of discriminability (sensitivity) between the two sample stimuli, computed as half the log of the cross-product ratio of correct to error responses (Davison & Tustin, 1978), and used by White as the dependent measure; B_{ij} = number (or proportion) of choice responses to comparison stimulus i following sample stimulus j, so B_{11}, B_{22} are correct responses and B_{12}, B_{21} are errors (subscript ordering follows the Davison-Tustin convention; White's verbatim labeling is unverified against the scanned source); \\log d_t = discriminability at delay (retention) interval t; \\log d_0 = initial discriminability at zero delay (intercept); b = rate of decrement in discriminability with increasing delay (slope of the log-linear decline); t = delay-interval (retention-interval) duration. Here \\log denotes base-10 logarithm: the function is the negative-exponential decay of discriminability d expressed log-linearly (equivalently d_t = d_0\\,10^{-b t}); the base-10 slope b relates to the natural-exponential rate b' of the catalog's original d_t = d_0 e^{-b' t} by b = b'/\\ln 10. A defining empirical feature is that increasing sample-stimulus disparity raises \\log d_0 without altering b, yielding parallel forgetting functions.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Performance of pigeons in delayed matching-to-sample procedures was measured in terms of an index of discriminability derived from the difference between logarithms of ratios of choice responses to comparison stimuli following the different sample stimuli. Forgetting functions that plotted discriminability as a function of delay-interval duration were well described by a simple negative exponential function with two parameters, one describing initial discriminability of sample stimuli at zero delay (log d0) and the other describing rate of decrement in discriminability with increasing delay-interval duration (b). With the difference between wavelength values of the comparison stimuli held constant, a large difference between wavelengths of the sample stimuli resulted in a higher log d0 value than that for a small difference between sample stimuli, without changing the rate of decrement in discriminability, b. An increase in the fixed-ratio requirement for sample-key responding produced an increase in log d0 without affecting b, and interpolation of ambient illumination in the delay interval increased b without influencing log d0. Both parameters changed when intertrial-interval duration was varied. The result of variation in the point of interpolation of ambient illumination in the delay interval indicated that levels of discriminability at longer delays were independent of discriminability levels at earlier delays, consistent with the properties of the exponential function. Functions relating performance to delay-interval duration were suggested to have two characteristics: discriminability of the sample stimuli in the absence of a delay between the stimuli and the behavior they occasion, and rate of attenuation in discriminability with increasing delay-interval duration.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Symmetry and transitivity of conditional relations in monkeys (Cebus apella) and pigeons (Columba livia)",
@@ -55889,11 +55891,13 @@
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1338868/",
     "process": [],
     "static-equation": "t = mT",
-    "static-equation-definitions": "t = waiting time; T = food delay; m = slope (less than one)",
-    "recursive-equation": "",
-    "recursive-equation-definitions": "",
+    "static-equation-definitions": "t = waiting time; T = typical food delay (interfood interval); m = slope (less than one)",
+    "recursive-equation": "t_{n+1} = m\\,T_n",
+    "recursive-equation-definitions": "t_{n+1} = waiting time on interval n+1; T_n = food delay (interfood interval) experienced on the immediately preceding interval n; m = slope (less than one). Reconstructed (not transcribed from a displayed equation): the paper's dynamic tests demonstrate one-interval-back control; an exponentially weighted linear-operator expectation form, \\hat{T}_{n+1} = \\hat{T}_n + a(T_n - \\hat{T}_n) with t_n = m\\hat{T}_n, remains a possible alternative.",
     "abstract": "Pigeons and other animals soon learn to wait (pause) after food delivery on periodic-food schedules before resuming the food-rewarded response. Under most conditions the steady-state duration of the average waiting time, t, is a linear function of the typical interfood interval. We describe three experiments designed to explore the limits of this process. In all experiments, t was associated with one key color and the subsequent food delay, T, with another. In the first experiment, we compared the relation between t (waiting time) and T (food delay) under two conditions: when T was held constant, and when T was an inverse function of t. The pigeons could maximize the rate of food delivery under the first condition by setting t to a consistently short value; optimal behavior under the second condition required a linear relation with unit slope between t and T. Despite this difference in optimal policy, the pigeons in both cases showed the same linear relation, with slope less than one, between t and T. This result was confirmed in a second parametric experiment that added a third condition, in which T + t was held constant. Linear waiting appears to be an obligatory rule for pigeons. In a third experiment we arranged for a multiplicative relation between t and T (positive feedback), and produced either very short or very long waiting times as predicted by a quasi-dynamic model in which waiting time is strongly determined by the just-preceding food delay.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 0
   },
   {
     "title": "An inverse relationship between baseline fixed-interval response rate and the effects of a tandem response requirement.",
@@ -56500,12 +56504,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1338889/",
     "process": [],
-    "static-equation": "r = \\frac{r_0}{1 + kD}",
-    "static-equation-definitions": "r = response rate; r_0 = maximum response rate; k = sensitivity parameter; D = reinforcement duration",
+    "static-equation": "R = \\frac{kr}{r + r_0}",
+    "static-equation-definitions": "R = response rate (rate of the target behavior); k = asymptotic maximum response rate; r = rate of contingent reinforcement for the target response; r_0 = rate of extraneous (background) reinforcement from all other sources",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The purpose of the present study was to evaluate Herrnstein's law of effect as a description of socially significant behavior in an applied setting. The subject was an 18-year-old retarded girl with a history of autistic-like and aggressive behavior. Using a baseline design for two response classes and stimulus conditions, eight categories of subject and staff behavior were monitored over a 3-week period. A computerized observation system, developed for use in the present investigation, was used to obtain real-time durations of the behavior categories alone and in combination. Overlapping durations of teacher and subject behavior were then correlated to yield approximations to a functional definition of reinforcement. Plots of behavior by contingent reinforcement revealed a hyperbolic relationship for each response class, the shape of which varied as a function of extraneous reinforcement r0. In addition, estimated parameters in Herrnstein's equation did not differ significantly from those obtained through independent observation. Finally, Herrnstein's equation accounted for an average 63% of variance in response allocation. Results are discussed in terms of the relevance of matching-law theory to behavior in applied settings.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Contextual control of emergent equivalence relations.",
@@ -58462,12 +58468,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1322952/",
     "process": [],
-    "static-equation": "D = A (t - X)",
-    "static-equation-definitions": "D = experienced delay; A = additional delay to reinforcement; t = maximum value for present contingencies; X = latency of the key peck",
+    "static-equation": "D = A(t - X)",
+    "static-equation-definitions": "D = experienced delay between response and reinforcer; A = additional delay to reinforcement accrued per second that response latency X is shorter than t; t = maximum latency value below which the present (additional-delay) contingencies occur; X = latency of the key peck",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons performed on discrete-trial, temporally defined schedules in which the food delay (D) was adjusted according to the latency of the key peck (X) and two schedule parameters (t and A). The schedule function was D = A(t \u2212 X), where D is the experienced delay between a response and a reinforcer. The schedule parameter t is the maximum value below which the present contingencies occur. A is the additional delay to reinforcement for each second the response latency is shorter than the t value. When A = 0 s, the schedule is a continuous reinforcement schedule with immediate reinforcement. When A = 1 s, the schedule is a conjunctive fixed-ratio 1 fixed-time t-s schedule. When A approaches infinity, the schedule becomes a differential reinforcement of long latency schedule. The latencies for subjects with t = 10 s and t = 30 s were observed with the present schedules having seven values for A between 0 s and 11 s. In addition, the latencies for subjects for which t = 30 s were observed at an A value of 31 s to 41 s. As the A value increased, the latencies approached the t value for subjects for which t = 10 s. The latencies for 30-s-t subjects did not approach t, even when the A value was 41 s. The latencies for 10-s-t subjects at 11-s A value were longer than those under yoked conditions having exactly the same delays/interreinforcement intervals. These results demonstrated a continuum of latency related to the schedule continuum (value of A) at a small t value.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "The establishment of stimulus control by instructions and by differential reinforcement",
@@ -60469,12 +60477,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1323120/",
     "process": [],
-    "static-equation": "V = \\frac{A}{1 + kD}",
-    "static-equation-definitions": "V = subjective value; A = maximum value; k = sensitivity parameter; D = demand",
+    "static-equation": "T = \\frac{k r}{r + r_e}",
+    "static-equation-definitions": "T = time allocated to the target behavior (e.g., seconds of eye contact per minute); k = asymptotic time allocation (maximum value of T); r = rate of social (naturalistic) reinforcement for the target behavior; r_e = rate of extraneous (background) reinforcement maintaining all other behavior",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Five college students talked to an experimenter about various topics. Time spent looking at the experimenter was reinforced by verbal statements of praise and interest on five variable-interval schedules. Herrnstein's hyperbola provided a good description of the time-allocation data for 4 of the 5 subjects, and accounted for 95% of the variance of the median time-allocation data. The hyperbola provided a significantly better description of the data than a two-parameter ramp function with similar differential properties. Estimates of the asymptote, k, of the hyperbola varied among subjects from about 2 to about 15 seconds of eye contact per minute. These estimates were much smaller than the constant 60 seconds of eye contact per minute required by Herrnstein's matching theory. These results support the conclusion that Herrnstein's hyperbola describes naturalistic human behavior maintained by naturalistic social reinforcement as well as it describes the behavior of humans and nonhumans in typical laboratory preparations. The results also indicate that the hyperbolic form of the time-allocation version of Herrnstein's equation is accurate, but that the constant k requirement of matching theory may not hold.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Fixed-interval performance and self-control in children.",
