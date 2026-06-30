@@ -83901,12 +83901,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893109/",
     "process": [],
-    "static-equation": "v=V1+kN; logd=2.2(logN)-0.72d=0.19N2.2N=2.1d0.45",
-    "static-equation-definitions": "",
+    "static-equation": "v = \\frac{V}{1 + kN}; \\log d = 2.2(\\log N) - 0.72; d = 0.19 N^{2.2}; N = 2.1 d^{0.45}",
+    "static-equation-definitions": "v = subjective (discounted) value of the reward to the participant; V = undiscounted value of the reward to the recipient (\\$75); N = social distance (ordinal rank on a list of the 100 closest people); k = individual social-discounting constant (median k = 0.055); d = physical distance in feet associated with social distance rank N; the log-log regression had r^2 = .988.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Altruistic behavior has been defined in economic terms as \u201c\u2026costly acts that confer economic benefits on other individuals\u201d (Fehr & Fischbacher, 2003). In a prisoner\u2019s dilemma game, cooperation benefits the group but is costly to the individual (relative to defection), yet a significant number of players choose to cooperate. We propose that people do value rewards to others, albeit at a discounted rate (social discounting), in a manner similar to discounting of delayed rewards (delay discounting). Two experiments opposed the personal benefit from defection to the socially discounted benefit to others from cooperation. The benefit to others was determined from a social discount function relating the individual\u2019s subjective value of a reward to another person and the social distance between that individual and the other person. In Experiment 1, the cost of cooperating was held constant while its social benefit was varied in terms of the number of other players, each gaining a fixed, hypothetical amount of money. In Experiment 2, the cost of cooperating was again held constant while the social benefit of cooperating was varied by the hypothetical amount of money earned by a single other player. In both experiments, significantly more participants cooperated when the social benefit was higher.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Evidence for Response Membership in Stimulus Classes by Pigeons",
@@ -83943,12 +83945,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4267752/",
     "process": [],
-    "static-equation": "V=A1+kD; V=\u2211i=1n(A1+kDi)",
-    "static-equation-definitions": "",
+    "static-equation": "V = \\frac{A}{1 + kD}; V = \\sum_{i=1}^{n} \\frac{A_i}{1 + kD_i}",
+    "static-equation-definitions": "V = discounted (subjective) value of the reward; A = amount of the reward; k = free parameter quantifying steepness of the discounting curve; D = delay to reward delivery; A_i = amount of the i-th reward in the bundle; D_i = delay to the i-th reward in the bundle; n = number of rewards in the bundle",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Pigeons\u2019 Choices with Token Stimuli in Concurrent Variable-Interval Schedules",
@@ -83962,12 +83966,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3896056/",
     "process": [],
-    "static-equation": "B1B2=b(R1R2)S,; B1B2=V1V2.; V=\u2211i=1nPi(A(1+KDi)),",
-    "static-equation-definitions": "",
+    "static-equation": "\\frac{B_1}{B_2} = b\\left(\\frac{R_1}{R_2}\\right)^{s}; \\frac{B_1}{B_2} = \\frac{V_1}{V_2}; V = \\sum_{i=1}^{n} P_i \\left(\\frac{A}{1 + K D_i}\\right)",
+    "static-equation-definitions": "$B_1, B_2$: response (behavior) rates for the two alternatives; $R_1, R_2$: reinforcement rates for the two alternatives; $b$: bias parameter; $s$: sensitivity to reinforcement-rate differences; $V_1, V_2$: values of the two alternatives; $V$: value of a reinforcer delivered with variable delays; $n$: number of possible delays; $P_i$: probability that delay $D_i$ occurs; $A$: reinforcer amount; $D_i$: delay duration (s); $K$: free parameter governing the rate at which value declines with delay.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Twelve pigeons responded on concurrent variable-interval schedules that delivered token stimuli (stimulus lights for some pigeons, and white circles on the response keys for others). During exchange periods, each token could be exchanged for food on a fixed-ratio 1 schedule. Across conditions, the exchange requirements (number of tokens that had to be earned before they could be exchanged for food) varied between one and four for the two response keys. The main findings were that the pigeons\u2019 response percentages varied as a function of the number of tokens earned at any given moment, and they were determined by both the delays to food and by the number of food deliveries in the exchange periods. In some conditions, tokens had to be earned but were not visible during the variable-interval schedules for one or both keys. When one key had visible tokens and the other did not, the pigeons showed a preference for the key without visible tokens. A model based on the matching law and a hyperbolic delay-discounting equation could account for the main patterns of choice responding, and for how response percentages changed as successive tokens were earned. The results are consistent with the view that the token stimuli served as discriminative stimuli that signaled the current delays to food.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Cocaine Versus Food Choice Procedure in Rats: Environmental Manipulations and Effects of Amphetamine",
@@ -84024,12 +84030,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4161207/",
     "process": [],
-    "static-equation": "log(RLRR)=adlog(DRDL)+logb; logd=0.5\u2217log(RLeftLeftRLeftRight\u2217RRightRightRRightLeft),; logb=0.5\u2217log(RLeftLeftRLeftRight\u2217RRightLeftRRightRight); logd=0.5\u2217log(RSmallSmallRSmallLarge\u2217RLargeLargeRLargeSmall); logb=0.5\u2217log(RSmallSmallRSmallLarge\u2217RLargeSmallRLargeLarge)",
-    "static-equation-definitions": "",
+    "static-equation": "\\log\\left(\\frac{R_L}{R_R}\\right) = a_d \\log\\left(\\frac{D_R}{D_L}\\right) + \\log b; \\log d = \\frac{1}{2}\\log\\left(\\frac{R_{LL}}{R_{LR}} \\cdot \\frac{R_{RR}}{R_{RL}}\\right); \\log b = \\frac{1}{2}\\log\\left(\\frac{R_{LL}}{R_{LR}} \\cdot \\frac{R_{RL}}{R_{RR}}\\right); \\log d = \\frac{1}{2}\\log\\left(\\frac{R_{SS}}{R_{SL}} \\cdot \\frac{R_{LL}}{R_{LS}}\\right); \\log b = \\frac{1}{2}\\log\\left(\\frac{R_{SS}}{R_{SL}} \\cdot \\frac{R_{LS}}{R_{LL}}\\right)",
+    "static-equation-definitions": "$R_L$, $R_R$ = number of responses (or response rate) to the Left and Right alternatives; $D_L$, $D_R$ = delays to reinforcement associated with the Left and Right alternatives; $a_d$ = sensitivity of choice to the delay ratio (generalized-matching sensitivity to delay); in Eq. 1, $\\log b$ = inherent response bias (the generalized-matching intercept). In the discriminability/bias point-estimate equations (Davison & Tustin / McCarthy & Davison matrix form), $R_{ij}$ is the count of responses in the cell where $i$ denotes the stimulus/condition presented and $j$ denotes the alternative chosen: for the location matrix $L$ = Left and $R$ = Right (e.g., $R_{LR}$ = Right responses when Left was correct), with diagonal cells ($R_{LL}$, $R_{RR}$) correct and off-diagonal cells errors; for the magnitude matrix $S$ = Small and $L$ = Large, with diagonal cells ($R_{SS}$, $R_{LL}$) correct. $\\log d$ = discriminability (point estimate of accuracy); in Eqs. 3 and 5, $\\log b$ = signal-detection response bias (preference independent of discriminability). Note: the symbol $\\log b$ denotes two context-specific quantities here, the generalized-matching intercept in Eq. 1 versus the detection bias in Eqs. 3 and 5; both are termed \"bias\" in the source tradition. Per the paper, a $+0.25$ correction was added to each matrix cell (Brown & White, 2005) before computing $\\log d$ and $\\log b$ to avoid undefined ratios.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Evaluating the effects of presession drug administration on intertemporal choice in nonhumans is a useful approach for identifying compounds that promote impulsive behavior in clinical populations, such as those prescribed the dopamine agonist pramipexole (PPX). Based on the results of previous studies, it is unclear whether PPX increases rats\u2019 impulsive choice or attenuates aspects of stimulus control. The present study was designed to experimentally isolate behavioral processes fundamental to intertemporal choice and challenge them pharmacologically with PPX administration. In Experiment 1, the hypothesis that PPX increases impulsive choice as a result of enhanced sensitivity to reinforcer delays was tested and disconfirmed. That is, acute PPX diminished delay sensitivity in a manner consistent with disruption of stimulus control whereas repeated PPX had no effect on delay sensitivity. Experiments 2 and 3 elaborated upon this finding by examining the effects of repeated PPX on rats\u2019 discrimination of response\u2013reinforcer contingencies and reinforcer amounts, respectively. Accuracy of both discriminations was reduced by PPX. Collectively these results provide no support for past studies that have suggested PPX increases impulsive choice. Instead, PPX impairs stimulus control over choice behavior. The behavioral approach adopted herein could be profitably integrated with genetic and other biobehavioral models to advance our understanding of impulsive behavior associated with drug administration.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Sensitivity to Changing Contingencies in an Impulsivity Task",
@@ -84045,12 +84053,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3900408/",
     "process": [],
-    "static-equation": "damage=100\u2022(1-((10-t)10)power)1/power",
-    "static-equation-definitions": "",
+    "static-equation": "\\mathrm{damage} = 100 \\cdot \\left(1 - \\left(\\frac{10 - t}{10}\\right)^{\\mathrm{power}}\\right)^{1/\\mathrm{power}}",
+    "static-equation-definitions": "damage = amount of damage delivered to the target by a shot; t = time (s) elapsed since the previous shot (weapon recharge time, 0 to 10 s); power = parameter controlling the shape/rate of the weapon recharge curve (superellipse exponent). Boundary behavior: at t = 0, damage = 0; at t = 10, damage = 100. This is a task-apparatus function for the escalating-interest impulsivity game, not a canonical EAB quantitative model.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Using a video-game-based escalating interest task, participants repeatedly encountered a reward that gradually increased in value over a 10-second interval. Responding early in the interval netted less immediate reward than responding later in the interval. Each participant experienced four different reward contingencies for waiting. These contingencies were changed three times as the experiment proceeded. Behavior tracked these changing contingencies, but wait times reflected long-term carryover from the previously assigned contingencies. Both the tendency to respond slowly and the optimality of behavior were affected by the order of contingencies experienced. Demographic variables only weakly predicted behavior, and delay discounting rate in a hypothetical money choice task predicted choice only when the contingencies in the game were weaker.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "MATCHING-TO-SAMPLE PERFORMANCE IS BETTER ANALYZED IN TERMS OF A FOUR-TERM CONTINGENCY THAN IN TERMS OF A THREE-TERM CONTINGENCY",
@@ -84064,12 +84074,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3895616/",
     "process": [],
-    "static-equation": "logd=.5*log(BC1|S1\u00b7BC2|S2BC2|S1\u00b7BC1|S2); logb=.5*log(BC1|S1\u00b7BC1|S2BC2|S1\u00b7BC2|S2),; logD(S1)=.5.log(BLeft|S1&Conf1\u00b7BRight|S1&Conf2BRight|S1&Conf1\u00b7BLeft|S1&Conf2),; logD(S2)=.5.log(BRight|S2&Conf1\u00b7BLeft|S2&Conf2BLeft|S2&Conf1\u00b7BRight|S2&Conf2),",
-    "static-equation-definitions": "",
+    "static-equation": "\\log d = 0.5\\,\\log\\!\\left(\\frac{B_{C_1\\mid S_1}\\cdot B_{C_2\\mid S_2}}{B_{C_2\\mid S_1}\\cdot B_{C_1\\mid S_2}}\\right); \\log b = 0.5\\,\\log\\!\\left(\\frac{B_{C_1\\mid S_1}\\cdot B_{C_1\\mid S_2}}{B_{C_2\\mid S_1}\\cdot B_{C_2\\mid S_2}}\\right); \\log D(S_1) = 0.5\\,\\log\\!\\left(\\frac{B_{\\mathrm{Left}\\mid S_1\\,\\&\\,\\mathrm{Conf}_1}\\cdot B_{\\mathrm{Right}\\mid S_1\\,\\&\\,\\mathrm{Conf}_2}}{B_{\\mathrm{Right}\\mid S_1\\,\\&\\,\\mathrm{Conf}_1}\\cdot B_{\\mathrm{Left}\\mid S_1\\,\\&\\,\\mathrm{Conf}_2}}\\right); \\log D(S_2) = 0.5\\,\\log\\!\\left(\\frac{B_{\\mathrm{Right}\\mid S_2\\,\\&\\,\\mathrm{Conf}_1}\\cdot B_{\\mathrm{Left}\\mid S_2\\,\\&\\,\\mathrm{Conf}_2}}{B_{\\mathrm{Left}\\mid S_2\\,\\&\\,\\mathrm{Conf}_1}\\cdot B_{\\mathrm{Right}\\mid S_2\\,\\&\\,\\mathrm{Conf}_2}}\\right)",
+    "static-equation-definitions": "B_{X\\mid Y} denotes the frequency (count) of response/event X obtained under condition Y. C_1, C_2 are the two comparison stimuli; S_1, S_2 are the two sample stimuli; Left and Right are the spatial key locations of the comparisons; Conf_1 and Conf_2 are the two configurations (left/right arrangements) of the comparison stimuli. \\log d is the sample-stimulus discriminability: the base-10 logarithm of the geometric mean of the ratios of correct-to-incorrect comparison selections on S_1 and S_2 trials (Davison-Tustin signal-detection form). \\log b is the comparison-response bias: the geometric mean of the ratios of C_1-to-C_2 selections pooled across samples. \\log D(S_1) and \\log D(S_2) are the comparison-location (Left/Right) discrimination accuracies computed separately within each sample type, indexing the fourth term of the contingency; the correct/error cell pairing reverses across configurations (Conf_1/Conf_2) and across samples (S_1 vs S_2).",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Four pigeons performed a simultaneous matching-to-sample (MTS) task involving two samples and two comparisons that differed in their pixel density and luminance. After a long history of reinforcers for correct responses after both samples, 15 conditions arranged either continuous reinforcement of correct responses after Sample 1 and extinction for all responses after Sample 2, or vice versa. The sample after which correct responses were reinforced alternated across successive conditions. The disparity between the samples and the disparity between the comparisons were varied independently across conditions in a quasifactorial design. Contrary to predictions of extant quantitative models, which assume that MTS tasks involve two 3-term contingencies of reinforcement, matching accuracies were not at chance levels in these conditions, comparison\u2013selection ratios differed after the two samples, and effects on matching accuracies of both sample disparity and comparison disparity were observed. These results were, however, consistent with ordinal and sometimes quantitative predictions of Jones\u2019 (2003) theory of stimulus and reinforcement effects in MTS tasks. This theory asserts that MTS tasks involve four-term contingencies of reinforcement and that any tendency to select one comparison more often than the other over a set of trials reflects meaningful differences between comparison-discrimination accuracies after the two samples.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "SYMMETRY IN THE PIGEON WITH SAMPLE AND COMPARISON STIMULI IN DIFFERENT LOCATIONS",
@@ -84128,7 +84140,9 @@
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Twelve adult human subjects were exposed to a sunk-cost procedure with two options: a mixed-ratio schedule of points later exchangeable for money, and an escape schedule that cancelled the current trial and initiated a new one. The mixed ratio included four values, arranged probabilistically in such a way that the expected ratios favored either persistence or escape. These probabilities were varied systematically on a within-subject basis across conditions. Absolute ratio size was thus varied across four groups of three subjects each, yielding unique combinations of expected ratios from escaping and persisting. When the differences between escaping and persisting differed the least, subjects tended to persist, committing the sunk-cost error. When the differences between persisting and escaping differed by a larger margin, choice patterns tended toward optimal\u2014escaping or persisting as a function of the contingencies. These findings demonstrate that sunk-cost decision-making errors in humans are sensitive to their relative costs and benefits, and illustrate a promising set of methods for bringing such behavior under experimental control in the laboratory.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "Delay Discounting of Monetary Rewards over a Wide Range of Amounts",
@@ -84144,12 +84158,14 @@
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3937292/",
     "process": [],
-    "static-equation": "V=A/(1+bX)s,; V=\u03b2Ae\u2212b(X\u2212c),; V=A[we\u2212b1D+(1\u2212w)e\u2212b2D],",
-    "static-equation-definitions": "",
+    "static-equation": "V = \\frac{A}{(1+bX)^{s}}; V = \\beta A e^{-b(X-c)}; V = A\\left[w e^{-b_{1}D} + (1-w) e^{-b_{2}D}\\right]",
+    "static-equation-definitions": "V = subjective (discounted) present value; A = nominal reward amount; X = delay until receipt. Eq. 1 (Myerson-Green hyperboloid): b = discounting rate parameter; s = exponent reflecting nonlinear scaling of amount/delay. Eq. 2 (quasi-hyperbolic / beta-delta): \\beta = proportional weight on value at the end of the first time period (present bias), c = duration of the first time period, b = exponential decay rate thereafter. Eq. 3 (double-exponential, two-system): D = delay; w = weight on the first (valuation) system; b_{1} = decay rate of the valuation system and b_{2} = decay rate of the second (control) system. X (Eqs. 1-2) and D (Eq. 3) both denote delay in the paper's own notation.",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The present study examined delay discounting of hypothetical monetary rewards over a wide range of amounts (from $20 to $10 million) in order to determine how reward amount affects the parameters of the hyperboloid discounting function and to compare fits of the hyperboloid model with fits of two discounting models used in neuroeconomics: the quasi-hyperbolic and the double-exponential. Of the three models assessed, the hyperboloid provided the best fit to the delay discounting data. The present delay discounting results may be compared to those of a previous study on probability discounting (Myerson, Green, & Morris, 2011) that used the same extended range of amounts. The hyperboloid function accurately described both types of discounting, but reward amount had opposite effects on the degree of discounting. Importantly, the amount of delayed reward affected the rate parameter of the hyperboloid discounting function but not its exponent, whereas the opposite was true for the amount of probabilistic reward. The finding that the exponent of the hyperboloid discounting function remains relatively constant across a wide range of delayed amounts provides strong support for a psychophysical scaling interpretation, and stands in stark contrast to the finding that the exponent of the hyperboloid function increases with the amount of probabilistic reward. Taken together, these findings argue that delay and probability discounting involve fundamentally different decision-making mechanisms.",
-    "journal": "JEAB"
+    "journal": "JEAB",
+    "reviewed": true,
+    "signoffs": 1
   },
   {
     "title": "TOLERANCE TO COCAINE\u2019S EFFECTS FOLLOWING CHRONIC ADMINISTRATION OF A DOSE WITHOUT DETECTED EFFECTS ON RESPONSE RATE OR PAUSE",
