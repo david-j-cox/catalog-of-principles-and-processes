@@ -58,7 +58,12 @@
     "next_cursor": 3331
   },
   "equation_track": {
-    "remaining": [],
+    "remaining": [
+      3312,
+      3313,
+      3314,
+      3328
+    ],
     "done": [
       26,
       27,
@@ -282,8 +287,8 @@
       4362
     ]
   },
-  "tokens_cumulative": 16876667,
-  "cycles_completed": 30,
+  "tokens_cumulative": 17553513,
+  "cycles_completed": 31,
   "limit_hits": [
     {
       "at": "2026-06-30 00:57 EDT",

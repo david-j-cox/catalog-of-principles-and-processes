@@ -71456,7 +71456,11 @@
       "Hearst, E."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284581/",
-    "process": [],
+    "process": [
+      "Conditioned Reinforcement",
+      "Avoidance Behavior",
+      "Experimental Analysis of Behavior"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -71488,7 +71492,7 @@
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "Five experiments addressed the issue of how pigeons learn to discriminate the relative frequency of stimuli. During a sampling period, three different stimuli (keylights) were presented serially, in mixed order, and with different frequencies. During a choice period, the stimuli were presented simultaneously, and reinforcement was arranged for choosing the stimulus that was presented the least number of times during the sample. The results showed that (a) the overall proportion of correct choices was always above chance levels; (b) the likelihood of a correct choice decreased with the serial position of the correct stimulus, a negative recency effect; (c) when the last three stimuli of the sample were constrained to be one of each kind, the negative recency effect decreased but errors became more likely when the correct stimulus occurred early in the sample, a negative primacy effect; (d) accurate performance generalized to new and larger samples; and (e) under some conditions the probability of a correct choice was independent of the serial position of the correct stimulus. The serial position curves suggest that in a least frequent discrimination task, two processes determine how the least frequent stimulus controls behavior: a passive decay process (the stimulus loses its effectiveness with time since its last occurrence), and a residual salience process (when the stimulus occurs in the first position it may decay to a higher asymptote than when it occurs in later positions.",
+    "abstract": "Five experiments addressed the issue of how pigeons learn to discriminate the relative frequency of stimuli. During a sampling period, three different stimuli (keylights) were presented serially, in mixed order, and with different frequencies. During a choice period, the stimuli were presented simultaneously, and reinforcement was arranged for choosing the stimulus that was presented the least number of times during the sample. The results showed that (a) the overall proportion of correct choices was always above chance levels; (b) the likelihood of a correct choice decreased with the serial position of the correct stimulus, a negative recency effect; (c) when the last three stimuli of the sample were constrained to be one of each kind, the negative recency effect decreased but errors became more likely when the correct stimulus occurred early in the sample, a negative primacy effect; (d) accurate performance generalized to new and larger samples; and (e) under some conditions the probability of a correct choice was independent of the serial position of the correct stimulus. The serial position curves suggest that in a least frequent discrimination task, two processes determine how the least frequent stimulus controls behavior: a passive decay process (the stimulus loses its effectiveness with time since its last occurrence), and a residual salience process (when the stimulus occurs in the first position it may decay to a higher asymptote than when it occurs in later positions).",
     "journal": "JEAB",
     "signoffs": [],
     "ai-reviewed": true,
@@ -71502,8 +71506,8 @@
     "issue": 1,
     "pages": "43-65",
     "authors": [
-      "Grace, R.",
-      "Nevin, J."
+      "Grace, Randolph C.",
+      "Nevin, John A."
     ],
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1284587/",
     "process": [
@@ -71515,7 +71519,7 @@
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "",
+    "abstract": "Nevin (1979) noted that preference in concurrent chains and resistance to change in multiple schedules were correlated, in that both measures were affected similarly by variations in parameters of reinforcement such as rate, immediacy, and magnitude. To investigate the relationship between preference and resistance to change directly, we used a within-session procedure that arranged concurrent chains in one half of the session and a multiple schedule in the other half. The same variable-interval schedules served as terminal links in concurrent chains and as the components of the multiple schedule, and were signaled by the same stimuli. After performances had stabilized, responding in the multiple schedule was disrupted by delivering response-independent reinforcement during the blackout periods between components. Both preference in concurrent chains and relative resistance to change of multiple-schedule responding were well described as power functions of relative reinforcement rate, as predicted by current quantitative models (Grace, 1994; Nevin, 1992b). In addition, unsystematic variation in preference and resistance to change was positively correlated, which suggests that preference and resistance to change are independent measures of a single construct. That construct could be described as the learning that occurs regarding the prevailing conditions of reinforcement in a distinctive stimulus situation.",
     "journal": "JEAB",
     "signoffs": [],
     "ai-reviewed": true,
@@ -71529,8 +71533,8 @@
     "issue": 1,
     "pages": "67-89",
     "authors": [
-      "Foster, M.",
-      "Blackman, K.",
+      "Foster, T. M.",
+      "Blackman, K. A.",
       "Temple, W."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284588/",
@@ -71542,7 +71546,7 @@
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "",
+    "abstract": "Domestic hens responded under fixed-ratio schedules of food (wheat) reinforcement under several experimental conditions. Part 1 (open economy) investigated performance on fixed-ratio schedules over both multisession steady-state conditions and daily changes of the schedule, with hens maintained at 80% of free-feeding weights by extraexperimental feeding. In Parts 2 and 3 (closed economy and short sessions) sessions were 40 min long, and the hens' weights were allowed to vary (Part 2) or sessions were conducted only when the hens were at approximately 80% of free-feeding weights (Part 3). In Part 4 (closed economy and long sessions) sessions were 24 hr long and the fixed-ratio requirement was changed either daily or after 7 consecutive days. In general, the daily changes of fixed-ratio requirement in the open economy and short-session closed economy gave much the same result as the steady-state open-economy sessions. Overall response and reinforcer rates decreased with increasing fixed-ratio requirement (except at the shortest fixed ratios). Running response rates decreased, and postreinforcement pauses generally increased. In contrast, overall response rates in the long-session closed economy generally increased with the fixed-ratio requirement. Session length is suggested as a cause of the differences between the short- and long-session closed-economy results.",
     "journal": "JEAB",
     "signoffs": [],
     "ai-reviewed": true,
@@ -71666,7 +71670,7 @@
     "pages": "161-179",
     "authors": [
       "Davison, M.",
-      "Jones, M."
+      "Jones, B. M."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284593/",
     "process": [
@@ -71678,7 +71682,7 @@
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "",
+    "abstract": "Five pigeons were trained in a concurrent foraging procedure in which reinforcers were occasionally available after fixed times in two discriminated patches. In Part 1 of the experiment, the fixed times summed to 10 s, and were individually varied between 1 and 9 s over five conditions, with the probability of a reinforcer being delivered at the fixed times always .5. In Part 2, both fixed times were 5 s, and the probabilities of food delivery were varied over conditions, always summing to 1.0. In Parts 3 and 4, one fixed time was kept constant (Part 3, 3 s; Part 4, 7 s) while the other fixed time was varied from 1 s to 15 s. Median residence times in both patches increased with increases in the food-arrival times in either patch, but increased considerably more strongly in the patch in which the arrival time was increased. However, when arrival times were very different in the two patches, residence time in the longer arrival-time patch often decreased. Patch residence also increased with increasing probability of reinforcement, but again tended to fall when one probability was much larger than the other. A detailed analysis of residence times showed that these comprised two distributions, one around a shorter mode that remained constant with changes in arrival times, and one around a longer mode that monotonically increased with increasing arrival time. The frequency of shorter residence times appeared to be controlled by the probability of, and arrival time of, reinforcers in the alternative patch. The frequency of longer residence times was controlled directly by the arrival time of reinforcers in a patch, but not by the probability of reinforcers in a patch. The environmental variables that control both staying in a patch and exiting from a patch need to be understood in the study both of timing processes and of foraging.",
     "journal": "JEAB",
     "signoffs": [],
     "ai-reviewed": true,
@@ -71692,8 +71696,8 @@
     "issue": 2,
     "pages": "181-192",
     "authors": [
-      "Dall, S.",
-      "Cuthill, I.",
+      "Dall, S. R. X.",
+      "Cuthill, I. C.",
       "Cook, N.",
       "Morphet, M."
     ],
@@ -71735,7 +71739,7 @@
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "The central focus of this essay is whether the effect of reinforcement is best viewed as the strengthenng of responding or the strengthening of the environmental control of responding. We make the argument that adherence to Skinner's goal of achieving a moment-to-moment analysis of behavior compels acceptance of the latter view. Moreover, a thoroughgoing commitment to a moment-to-moment analysis undermines the fundamental distinction between the conditioning process instantiated by operant and respondent contingencies while buttressing the crucially important differences in their cumulative outcomes. Computer simulations informed by experimental analyses of behavior and neuroscience are used to illustrate these points.",
+    "abstract": "The central focus of this essay is whether the effect of reinforcement is best viewed as the strengthening of responding or the strengthening of the environmental control of responding. We make the argument that adherence to Skinner's goal of achieving a moment-to-moment analysis of behavior compels acceptance of the latter view. Moreover, a thoroughgoing commitment to a moment-to-moment analysis undermines the fundamental distinction between the conditioning processes instantiated by operant and respondent contingencies while buttressing the crucially important differences in their cumulative outcomes. Computer simulations informed by experimental analyses of behavior and neuroscience are used to illustrate these points.",
     "journal": "JEAB",
     "signoffs": [],
     "ai-reviewed": true,
@@ -71795,23 +71799,30 @@
     "needs-human": false
   },
   {
-    "title": "Beyond The Moment: Complex Behavior In Temporally Extended Environments.",
+    "title": "Beyond the moment: Complex behavior in temporally extended environments.",
     "year": 1997,
     "volume": 67,
     "issue": 2,
     "pages": "217-220",
     "authors": [
-      "Field, D."
+      "Field, Douglas P."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284596/",
-    "process": [],
+    "process": [
+      "Experimental Analysis of Behavior",
+      "Temporal Control",
+      "Stimulus Control"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "In Today's Climate, A Forecast For Change: A commentary On Donahoe, Palmer, And Burgos.",
@@ -71823,14 +71834,21 @@
       "Galbicka, G."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284597/",
-    "process": [],
+    "process": [
+      "Experimental Analysis of Behavior",
+      "Operant Conditioning",
+      "Respondent Conditioning"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "",
+    "abstract": "Donahoe, Palmer, and Burgos' essay raises several interesting questions concerning the future of the analysis of behavior, independent of whether neural networks ultimately turn out to be the potent biobehavioral models the authors suggest. The real difficulty that thwarts the authors' attempted convergence of behavioral systems appears not to be the conceptual nature of the S-R issue, but rather procedural and measurement differences that have evolved following the divergence of operant and classical learning traditions.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "We Also Need Complete Behavioral Models.",
@@ -71839,17 +71857,24 @@
     "issue": 2,
     "pages": "224-228",
     "authors": [
-      "Hutchison, W."
+      "Hutchison, W. R."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284598/",
-    "process": [],
+    "process": [
+      "Operant Conditioning",
+      "Response Produced Stimuli",
+      "Delayed Match to Sample"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "R-S and S(-O)-R: alternative designs for neural networks.",
@@ -71858,17 +71883,24 @@
     "issue": 2,
     "pages": "229-231",
     "authors": [
-      "Kemp, S."
+      "Kemp, S. M."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284590/",
-    "process": [],
+    "process": [
+      "Operant Conditioning",
+      "Stimulus Control",
+      "Experimental Analysis of Behavior"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "The Eternal Antithesis: A Commentary On Donahoe, Palmer, And Burgos.",
@@ -71880,14 +71912,21 @@
       "Marr, M."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284599/",
-    "process": [],
+    "process": [
+      "Contingency",
+      "Stimulus Control",
+      "Experimental Analysis of Behavior"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Units Of Analysis And The Environmental Control Of Behavior.",
@@ -71896,18 +71935,25 @@
     "issue": 2,
     "pages": "235-239",
     "authors": [
-      "McIlvane, W.",
-      "Dube, W."
+      "McIlvane, William J.",
+      "Dube, William V."
     ],
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284600/",
-    "process": [],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1284600/",
+    "process": [
+      "Stimulus Control",
+      "Stimulus Equivalence",
+      "Compound Stimuli"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "The Role Of Motivation In The S-R Issue.",
