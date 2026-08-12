@@ -72,8 +72,27 @@ Return equation_in_text="unknown" with equation_note="" and spend nothing on it.
    - 'present'  -> the article displays at least one equation. In equation_note, name it briefly
                    (e.g. "Eq. 1, Mazur hyperbolic V = A/(1+kD)") so the equation panel can pick it up.
    - 'none'     -> you read the source and it displays no equations.
-   - 'unknown'  -> the source is paywalled, a scan, or otherwise not machine-readable. Do NOT guess
-                   from the abstract, and do not burn further calls trying.
+   - 'unknown'  -> LAST RESORT ONLY, after every route below has failed. Do NOT guess from the
+                   abstract. In equation_note, list which routes you tried and how each failed.
+   RESOLUTION ROUTES -- work them in order; a PMC landing page showing only a PDF is NOT a dead end:
+     a. Europe PMC full text XML (best): https://www.ebi.ac.uk/europepmc/webservices/rest/PMC<id>/fullTextXML
+     b. Europe PMC rendered PDF, which carries a text layer the PMC landing page does not:
+        https://europepmc.org/articles/PMC<id>?pdf=render
+     c. The PMC article page itself: https://pmc.ncbi.nlm.nih.gov/articles/PMC<id>/
+     d. The DOI / publisher page (often HTTP 402; that alone does not justify 'unknown').
+   CRITICAL -- scanned JEAB PDFs carry an OCR text layer that SUBSTITUTES DIGITS FOR OPERATORS:
+   '=' appears as '5', '+' as '1', '-' as '2'. A real equation therefore looks like
+   "PC 5 b0 1 b1S1 1 b2S2" (= "PC = b0 + b1S1 + b2S2"). NEVER conclude 'none' from an absence of
+   '=' characters: a body with zero '=' can still be full of equations.
+   Decide as follows:
+     - Search for explicit references: "Equation <n>", "Eq. <n>", "the following equation". These are
+       RELIABLE. Any hit -> 'present'; quote the reference and the equation line in equation_note.
+     - The digit-substitution pattern alone is NOT reliable evidence: "r 5 2.31" is the inline
+       statistic r = -.31, and "the 5 rats" is just the number five. Use it to READ an equation you
+       have already located, not to detect one.
+     - 'none' only when you have the full body text AND found no equation references AND no set-off
+       display lines. Say in equation_note that you read the full text.
+   Report the character count of the text you actually searched, so a zero-effort verdict is visible.
    Inline statistics (t, F, p, r-squared), fit diagnostics, and descriptive formulas are NOT equations
    for this purpose. Only models mapping independent variables to behavior count. Do NOT write the
    equation into any other field; flagging it here is the whole task.
