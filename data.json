@@ -2071,7 +2071,7 @@
     "ai-reviewed": true
   },
   {
-    "title": "THE PSYCHIATRIC NURSE AS A BEHAVIORAL ENGINEER'",
+    "title": "The Psychiatric Nurse as a Behavioral Engineer",
     "year": 1959,
     "volume": 2,
     "issue": 4,
@@ -2081,22 +2081,24 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1959.2-323",
     "process": [
-      "extinction",
-      "DRA/DRI",
-      "FI limited-hold social reinforcement",
-      "escape/avoidance",
-      "and satiation"
+      "Extinction",
+      "Differential Reinforcement",
+      "Schedule: Fixed Interval",
+      "Escape",
+      "Avoidance",
+      "Motivating Operations"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "Across multiple psychiatric wards, nurses implemented operant programs to reduce disruptive behaviors (e.g., office-intrusion, psychotic talk, violence, hoarding) and to strengthen deficits (e.g., self-feeding). Using time-sample observations and simple contingencies\u2014primarily extinction of attention, differential reinforcement of incompatible/alternative behavior (DRI/DRA), fixed-interval \u201climited-hold\u201d social reinforcement, escape/avoidance via mild food-spilling, and stimulus satiation (abundant magazines)\u2014patients\u2019 target behaviors changed over 6\u201311 weeks with 24/7 coverage. Case data show selective decreases in problem behavior (often via withdrawing nurse attention) and increases in adaptive responses (self-feeding maintained >10 months). Practical constraints (staff turnover, \u201cbootleg\u201d reinforcement) and staff attitudes are discussed, framing nurses as day-to-day behavior engineers.\"Schlosberg describes a mechanical analog model of stimulus generalization that substitutes a physical apparatus for the behaving organism. The model uses movable ordinates (weighted bicycle spokes) on a graph representing stimulus values, with tensioned threads or wires forming a \u201cgeneralization gradient.\u201d Reinforcement and extinction are simulated by adding weights to specific ordinates. Adjusting the tension or stiffness of the connecting line reproduces empirical patterns reported in the literature\u2014such as linear gradients (Solomon & Schlosberg, 1943), depressed gradients after repeated unreinforced tests (Pierrel, 1958), and curved, shifted peaks (Hanson, 1957). The model provides a flexible teaching and conceptual tool for exploring how reinforcement distribution and stimulus spacing determine generalization gradients.",
-    "journal": "JEAB",
+    "abstract": "Across multiple psychiatric wards, nurses implemented operant programs to reduce disruptive behaviors (e.g., office-intrusion, psychotic talk, violence, hoarding) and to strengthen deficits (e.g., self-feeding). Using time-sample observations and simple contingencies-primarily extinction of attention, differential reinforcement of incompatible/alternative behavior (DRI/DRA), fixed-interval \"limited-hold\" social reinforcement, escape/avoidance via mild food-spilling, and stimulus satiation (abundant magazines)-patients' target behaviors changed over 6-11 weeks with 24/7 coverage. Case data show selective decreases in problem behavior (often via withdrawing nurse attention) and increases in adaptive responses (self-feeding maintained >10 months). Practical constraints (staff turnover, \"bootleg\" reinforcement) and staff attitudes are discussed, framing nurses as day-to-day behavior engineers.",
+    "journal": "Journal of the Experimental Analysis of Behavior",
     "reviewed": false,
     "signoffs": [],
     "ai-signoffs": 1,
-    "ai-reviewed": true
+    "ai-reviewed": true,
+    "needs-human": false
   },
   {
     "title": "THE EFFECT OF CHANGING THE SCHEDULE OF REINFORCEMENTUPON DURATION OF RESPONDING'",
@@ -2133,7 +2135,8 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1959.2-343",
     "process": [
-      "Drug-induced modulation of operant and nonoperant behavioral components"
+      "Behavioral Pharmacology",
+      "Measurement: Duration"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -2144,7 +2147,8 @@
     "reviewed": false,
     "signoffs": [],
     "ai-signoffs": 1,
-    "ai-reviewed": true
+    "ai-reviewed": true,
+    "needs-human": false
   },
   {
     "title": "THE RELATION OF AMOUNT OF REINFORCEMENT TO PERFORMANCEUNDER A FIXED-INTERVAL SCHEDULE",
@@ -2195,18 +2199,19 @@
     "ai-reviewed": true
   },
   {
-    "title": "SUPPRESSION OF A PERFORMANCE UNDER DIFFERENTIALREINFORCEMENT OF LOW RATES BY APRE-TIME-OUT STIMULUS",
+    "title": "Suppression of a performance under differential reinforcement of low rates by a pre-time-out stimulus",
     "year": 1960,
     "volume": 2,
     "issue": 2,
     "pages": "143-153",
     "authors": [
-      "[\"Ferster",
-      "C.B.\"]1959"
+      "Ferster, C. B."
     ],
-    "url": "https://doi.org/10.1901/jeab.1960.3-14",
+    "url": "https://doi.org/10.1901/jeab.1960.3-143",
     "process": [
-      "Aversive control / avoidance"
+      "Aversive Control",
+      "Avoidance",
+      "Time-Out"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -2217,10 +2222,11 @@
     "reviewed": false,
     "signoffs": [],
     "ai-signoffs": 1,
-    "ai-reviewed": true
+    "ai-reviewed": true,
+    "needs-human": false
   },
   {
-    "title": "A PRECISION LIQUID FEEDING SYSTEM CONTROLLEDBY LICKING BEHA VIOR'",
+    "title": "A Precision Liquid Feeding System Controlled by Licking Behavior",
     "year": 1960,
     "volume": 3,
     "issue": 1,
@@ -2236,12 +2242,13 @@
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "Hulse (1959) describes a precision liquid-feeding apparatus for controlling fluid delivery contingent on a rat\u2019s licking behavior. The system integrates a specially designed plexiglass drinking tube with a brass electrical contact, an electronic relay that detects each lick, and an infusion pump driven by a rotary solenoid to deliver precise drop volumes. A solenoid-driven lever retracts the fluid between licks to prevent unreinforced contact. The design allows fine control of liquid amount per lick, total consumption, and reinforcement schedules, enabling the use of licking as an operant response. The apparatus provides reliable, quantitative control over consummatory behavior for research applications in operant and taste conditioning.",
+    "abstract": "This article describes a precision liquid-feeding apparatus for controlling fluid delivery contingent on a rat's licking behavior. The system integrates a specially designed plexiglass drinking tube with a brass electrical contact, an electronic relay that detects each lick, and an infusion pump driven by a rotary solenoid to deliver precise drop volumes. A solenoid-driven lever retracts the fluid between licks to prevent unreinforced contact. The design allows fine control of liquid amount per lick, total consumption, and reinforcement schedules, enabling the use of licking as an operant response. The apparatus provides reliable, quantitative control over consummatory behavior for research applications in operant and taste conditioning.",
     "journal": "JEAB",
     "reviewed": false,
     "signoffs": [],
     "ai-signoffs": 1,
-    "ai-reviewed": true
+    "ai-reviewed": true,
+    "needs-human": false
   },
   {
     "title": "A SIMPLE INTER VAL-PROGRAMMING CIRCUIT'",
@@ -2298,26 +2305,37 @@
     "issue": 1,
     "pages": "15-16",
     "authors": [
-      "Dinsmoor, J."
+      "Dinsmoor, J. A."
     ],
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1403998/",
-    "process": [],
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1403998/",
+    "process": [
+      "Electric Shock",
+      "Aversive Control"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
-    "title": "SOME ELECTRONIC CONTROL UNITS FOR OPERANT BEHAVIOR STUDIES:I. A RESPONSE AND REINFORCEMENT CONTINGENCY TRANSLATOR'",
+    "title": "Some Electronic Control Units for Operant Behavior Studies: I. A Response and Reinforcement Contingency Translator",
     "year": 1960,
     "volume": 3,
     "issue": 1,
     "pages": "17-20",
     "authors": [
-      "Schoenfiled, W.N.; Cumming, W.W.; Hearst, E.; Waine, M.; Snapper, A.G.; Haas, P."
+      "Schoenfeld, W. N.",
+      "Cumming, W. W.",
+      "Hearst, E.",
+      "Waine, M.",
+      "Snapper, A. G.",
+      "Haas, P."
     ],
     "url": "https://doi.org/10.1901/jeab.1960.3-17",
     "process": [
@@ -2327,15 +2345,16 @@
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "Schoenfeld, Cumming, Hearst, Waine, Snapper, and Haas (1959) describe an advanced electronic \u201ctranslator\u201d unit for controlling and recording operant behavior contingencies. The system electronically processes response pulses, controls reinforcement timing, and interfaces with programming systems for flexible experimental design. It accepts response input, outputs to counters or recorders, and manages reinforcement availability via pulse gates, flip-flops, and one-shot circuits. The unit handles extremely high response rates (up to 100 kHz) and allows precise timing and manual testing through control switches and indicators. Accompanying Schmitt trigger circuits ensure stable operation. The design offers reliability, modularity, and versatility for complex temporal reinforcement schedules.",
+    "abstract": "Schoenfeld, Cumming, Hearst, Waine, Snapper, and Haas (1960) describe an electronic \"translator\" unit for controlling and recording operant behavior contingencies. The system electronically processes response pulses, controls reinforcement timing, and interfaces with programming systems for flexible experimental design. It accepts response input, outputs to counters or recorders, and manages reinforcement availability via pulse gates, flip-flops, and one-shot circuits. The unit handles very high response pulse rates and allows precise timing and manual testing through control switches and indicators. Accompanying Schmitt trigger circuits ensure stable operation. The design offers reliability, modularity, and versatility for complex temporal reinforcement schedules. This is Part I of a series; Part II (random ratio generator, 1960, 3, 107-108) and Part III (timer and counter with print-out, 1960, 3, 331-338) followed in the same volume.",
     "journal": "JEAB",
     "reviewed": false,
     "signoffs": [],
     "ai-signoffs": 1,
-    "ai-reviewed": true
+    "ai-reviewed": true,
+    "needs-human": false
   },
   {
-    "title": "DISCRIMINA TION OF CHA NGES IN HEA R T RA TE:TWO UNSUCCESSFUL A TTEMPTS",
+    "title": "Discrimination of Changes in Heart Rate: Two Unsuccessful Attempts",
     "year": 1960,
     "volume": 3,
     "issue": 1,
@@ -2345,7 +2364,7 @@
     ],
     "url": "https://doi.org/10.1901/jeab.1960.3-21",
     "process": [
-      "Discrimination learning"
+      "Discrimination Learning"
     ],
     "static-equation": "",
     "static-equation-definitions": "",
@@ -2356,7 +2375,8 @@
     "reviewed": false,
     "signoffs": [],
     "ai-signoffs": 1,
-    "ai-reviewed": true
+    "ai-reviewed": true,
+    "needs-human": false
   },
   {
     "title": "HUMAN OBSERVING BEHAVIOR AFTER SIGNAL DETECTION",
@@ -2503,7 +2523,7 @@
     "ai-reviewed": true
   },
   {
-    "title": "SOME EFFECTS OF BRAIN STIMULATIONON TIMING BEHA VIOR",
+    "title": "Some Effects of Brain Stimulation on Timing Behavior",
     "year": 1960,
     "volume": 3,
     "issue": 2,
@@ -2524,7 +2544,8 @@
     "reviewed": false,
     "signoffs": [],
     "ai-signoffs": 1,
-    "ai-reviewed": true
+    "ai-reviewed": true,
+    "needs-human": false
   },
   {
     "title": "SOME ELECTRONIC CONTROL UNITS FOR OPERANT BEHAVIORSTUDIES: II. A RANDOM RATIO GENERATOR'",
