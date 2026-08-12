@@ -80,7 +80,7 @@ const REVIEW_SCHEMA = {
 
 const SIGNOFF_SCHEMA = {
   type: 'object', additionalProperties: false,
-  required: ['idx','changed','final_static_equation','final_static_definitions','final_recursive_equation','final_recursive_definitions','reviewed','signoffs','human_followup_required','followup_reason','panel_confidence','editor_summary'],
+  required: ['idx','changed','final_static_equation','final_static_definitions','final_recursive_equation','final_recursive_definitions','reviewed','signoffs','human_followup_required','followup_reason','panel_confidence','editor_summary','equation_provenance','diverges_from_printed'],
   properties: {
     idx: { type: 'integer' },
     changed: { type: 'boolean' },
@@ -94,6 +94,8 @@ const SIGNOFF_SCHEMA = {
     followup_reason: { type: 'string' },
     panel_confidence: { type: 'number' },
     editor_summary: { type: 'string' },
+    equation_provenance: { type: 'string', enum: ['printed','reconstructed','mixed','none'] },
+    diverges_from_printed: { type: 'boolean' },
   },
 }
 
@@ -175,6 +177,26 @@ Decide the final fields, applying reviewer fixes you agree with. Rules:
 - human_followup_required = true when correctness depends on details only verifiable against the physical/scanned
   paper, or reviewers materially disagreed.
 - followup_reason: empty string if none.
+
+FIDELITY RULE (overrides any impulse to correct the paper):
+- Where the paper displays an equation, record WHAT THE PAPER PRINTS. Your job is accurate extraction, not
+  correction. Repairing extraction damage (lost fraction bars, dropped exponents/subscripts, Unicode minus,
+  flattened MathML) is REQUIRED. Changing the paper's mathematics is NOT.
+- If you believe the printed equation is erroneous, still store the printed form, set diverges_from_printed = false,
+  and document the suspected error and your evidence in the definitions field. Never silently substitute a
+  "corrected" form.
+- Restoring a mis-rendered glyph to its evident symbol (e.g. "sigma/u" -> sigma/mu, inconsistent J/j subscripts)
+  is extraction repair, not correction.
+- equation_provenance = 'printed' when every stored equation is transcribed from a displayed equation in the paper.
+
+RECONSTRUCTION RULE:
+- If the paper describes a model only narratively and displays no equation, you MAY formalize it, but:
+  - set equation_provenance = 'reconstructed' (or 'mixed' if some equations are printed and some are not);
+  - the reconstructed equation MUST map independent variables to a specific behavior or behavioral pattern.
+    If it does not (e.g. it is a statistical nuisance model, an estimator, or a fit diagnostic), leave the
+    equation fields empty and set equation_provenance = 'none';
+  - state plainly at the START of the definitions field that the equation does not appear in the paper.
+- diverges_from_printed = true ONLY if the stored equation intentionally differs from what the paper displays.
 Return the structured object only.`
   return agent(prompt, { label: `signoff:${p.idx}`, phase: 'Signoff', schema: SIGNOFF_SCHEMA })
 }
