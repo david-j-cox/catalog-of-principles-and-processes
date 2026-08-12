@@ -64,7 +64,10 @@ TASKS:
    (validated_unchanged), fix wrong ones (corrected), normalize case/format variants (normalized), or
    mark clearly-wrong junk for removal (flagged_remove). If NO tags, assign 1-3 canonical processes
    when confident (assigned), else leave_empty + needs_human=true. process_final = the final tag list.
-3) EQUATION SWEEP: determine whether the article DISPLAYS a mathematical equation (a numbered or
+3) EQUATION SWEEP: ${e.sweep_equations ? 'RUN THIS TASK.' : 'SKIP THIS TASK -- this article predates 1997; \
+its source is a scan or paywalled and the sweep cannot resolve it. Do NOT fetch for this purpose. \
+Return equation_in_text="unknown" with equation_note="" and spend nothing on it.'}
+   Determine whether the article DISPLAYS a mathematical equation (a numbered or
    set-off display equation stating a model). Fetch the url once to check. Judge only from the source:
    - 'present'  -> the article displays at least one equation. In equation_note, name it briefly
                    (e.g. "Eq. 1, Mazur hyperbolic V = A/(1+kD)") so the equation panel can pick it up.
