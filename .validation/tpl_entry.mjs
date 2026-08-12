@@ -9,7 +9,7 @@ const BATCH = __BATCH__
 
 const FINAL_SCHEMA = {
   type: 'object', additionalProperties: false,
-  required: ['idx','metadata_changed','metadata_fixes','process_action','process_final','proposes_new_label','reviewed','signoffs','needs_human','confidence','notes'],
+  required: ['idx','metadata_changed','metadata_fixes','process_action','process_final','proposes_new_label','reviewed','signoffs','needs_human','confidence','notes','equation_in_text','equation_note'],
   properties: {
     idx: { type: 'integer' },
     metadata_changed: { type: 'boolean' },
@@ -26,6 +26,8 @@ const FINAL_SCHEMA = {
     needs_human: { type: 'boolean' },
     confidence: { type: 'number' },
     notes: { type: 'string' },
+    equation_in_text: { type: 'string', enum: ['none','present','unknown'] },
+    equation_note: { type: 'string' },
   },
 }
 
@@ -62,7 +64,17 @@ TASKS:
    (validated_unchanged), fix wrong ones (corrected), normalize case/format variants (normalized), or
    mark clearly-wrong junk for removal (flagged_remove). If NO tags, assign 1-3 canonical processes
    when confident (assigned), else leave_empty + needs_human=true. process_final = the final tag list.
-3) SIGNOFF: reviewed=true and signoffs=1 only if you are confident in BOTH metadata and process and
+3) EQUATION SWEEP: determine whether the article DISPLAYS a mathematical equation (a numbered or
+   set-off display equation stating a model). Fetch the url once to check. Judge only from the source:
+   - 'present'  -> the article displays at least one equation. In equation_note, name it briefly
+                   (e.g. "Eq. 1, Mazur hyperbolic V = A/(1+kD)") so the equation panel can pick it up.
+   - 'none'     -> you read the source and it displays no equations.
+   - 'unknown'  -> the source is paywalled, a scan, or otherwise not machine-readable. Do NOT guess
+                   from the abstract, and do not burn further calls trying.
+   Inline statistics (t, F, p, r-squared), fit diagnostics, and descriptive formulas are NOT equations
+   for this purpose. Only models mapping independent variables to behavior count. Do NOT write the
+   equation into any other field; flagging it here is the whole task.
+4) SIGNOFF: reviewed=true and signoffs=1 only if you are confident in BOTH metadata and process and
    no human check is needed; otherwise reviewed=false, signoffs=0, needs_human=true.
 Set needs_human=true if: you propose a new label, you removed/changed an existing human tag, you made a
 metadata fix you are unsure of, or confidence < 0.6. Return the structured object only.`
@@ -77,7 +89,8 @@ Two independent reviewers assessed catalog index ${e.idx}. Reconcile into a sing
 ENTRY: title="${e.title}"; authors=${JSON.stringify(e.authors)}; journal=${e.journal}; current process=${JSON.stringify(e.process)}.
 REVIEWER 1: ${JSON.stringify(r1)}
 REVIEWER 2: ${JSON.stringify(r2)}
-Produce the final metadata_fixes, process_final (canonical tags), and an honest signoff. Only
+Produce the final metadata_fixes, process_final (canonical tags), the equation_in_text verdict
+(prefer a reviewer who actually reached the source over one who did not), and an honest signoff. Only
 signoffs=1 / reviewed=true if both reviewers substantively agree and no human check is needed; else
 needs_human=true. Return the structured object only.`
 }
@@ -103,5 +116,7 @@ return {
   needs_human: results.filter(r => r.needs_human).length,
   metadata_changed: results.filter(r => r.metadata_changed).length,
   process_assigned: results.filter(r => r.process_action === 'assigned').length,
+  equations_found: results.filter(r => r.equation_in_text === 'present').length,
+  equations_unknown: results.filter(r => r.equation_in_text === 'unknown').length,
   results,
 }
