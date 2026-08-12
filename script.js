@@ -251,6 +251,18 @@ let githubToken = localStorage.getItem('github_token');
 let githubUsername = localStorage.getItem('github_username');
 const SIGNOFF_THRESHOLD = 3;
 
+// Human sign-offs are a list of GitHub usernames. Automated validation passes record
+// their own status in `ai-reviewed` / `ai-signoffs` and must never write this field.
+function humanSignoffs(article) {
+    return Array.isArray(article.signoffs) ? article.signoffs : [];
+}
+function isHumanVerified(article) {
+    return humanSignoffs(article).length >= SIGNOFF_THRESHOLD;
+}
+function needsHumanCheck(article) {
+    return article['needs-human'] === true && !isHumanVerified(article);
+}
+
 function initializeGitHubAuth() {
     const authSection = document.createElement('div');
     authSection.innerHTML = `
@@ -912,16 +924,18 @@ function renderPage() {
         const recursiveEquation = normalizeEqGlobal(article['recursive-equation']);
         const recursiveDefinitions = article['recursive-equation-definitions'] || '';
 
-        const isReviewed = article.reviewed === true ||
-            (article.signoffs || []).length >= SIGNOFF_THRESHOLD;
-        const statusBadge = isReviewed
+        const statusBadge = isHumanVerified(article)
             ? `<span class="badge-reviewed">✓ Reviewed</span>`
-            : `<span class="badge-needs-review">Needs Review</span>`;
+            : needsHumanCheck(article)
+                ? `<span class="badge-needs-review">Flagged for review</span>`
+                : article['ai-reviewed'] === true
+                    ? `<span class="badge-needs-review">AI pass · needs review</span>`
+                    : `<span class="badge-needs-review">Needs Review</span>`;
 
         let signoffBtn = '';
         if (githubToken && githubUsername &&
-            !(article.signoffs || []).includes(githubUsername) &&
-            (article.signoffs || []).length < SIGNOFF_THRESHOLD) {
+            !humanSignoffs(article).includes(githubUsername) &&
+            !isHumanVerified(article)) {
             signoffBtn = `<button class="signoff-btn" title="Verify this entry is accurate">✓ Verify</button>`;
         }
 
@@ -1227,11 +1241,12 @@ function applyFilters() {
 
     // Apply review status filter
     if (reviewFilter === 'reviewed') {
-        filteredData = filteredData.filter(a =>
-            a.reviewed === true || (a.signoffs || []).length >= SIGNOFF_THRESHOLD);
+        filteredData = filteredData.filter(a => isHumanVerified(a));
     } else if (reviewFilter === 'needs-review') {
-        filteredData = filteredData.filter(a =>
-            a.reviewed !== true && (a.signoffs || []).length < SIGNOFF_THRESHOLD);
+        // Entries the AI flagged sort first: they are the highest-value review targets.
+        filteredData = filteredData
+            .filter(a => !isHumanVerified(a))
+            .sort((a, b) => (needsHumanCheck(b) ? 1 : 0) - (needsHumanCheck(a) ? 1 : 0));
     }
 
     populateTable(filteredData);
@@ -1292,9 +1307,7 @@ function updateStatistics() {
     breakdownEl.textContent = parts.join('  ·  ');
 
     // Review progress bar
-    const reviewedCount = behavioralData.filter(a =>
-        a.reviewed === true || (a.signoffs || []).length >= SIGNOFF_THRESHOLD
-    ).length;
+    const reviewedCount = behavioralData.filter(a => isHumanVerified(a)).length;
     const pct = totalArticles > 0 ? ((reviewedCount / totalArticles) * 100) : 0;
     const progressEl = document.getElementById('review-progress');
     if (progressEl) {
@@ -1798,7 +1811,7 @@ async function createSignoffPullRequest(article) {
             (e.journal || 'JEAB') === (article.journal || 'JEAB'));
         if (idx === -1) throw new Error('Could not locate entry in data file');
 
-        const newSignoffs = [...(currentData[idx].signoffs || []), githubUsername];
+        const newSignoffs = [...humanSignoffs(currentData[idx]), githubUsername];
         currentData[idx].signoffs = newSignoffs;
         if (newSignoffs.length >= SIGNOFF_THRESHOLD) {
             currentData[idx].reviewed = true;
