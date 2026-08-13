@@ -64,9 +64,19 @@ TASKS:
    (validated_unchanged), fix wrong ones (corrected), normalize case/format variants (normalized), or
    mark clearly-wrong junk for removal (flagged_remove). If NO tags, assign 1-3 canonical processes
    when confident (assigned), else leave_empty + needs_human=true. process_final = the final tag list.
-3) EQUATION SWEEP: ${e.sweep_equations ? 'RUN THIS TASK.' : 'SKIP THIS TASK -- this article predates 1997; \
-its source is a scan or paywalled and the sweep cannot resolve it. Do NOT fetch for this purpose. \
-Return equation_in_text="unknown" with equation_note="" and spend nothing on it.'}
+3) EQUATION SWEEP. Source reachability for this entry was probed in advance:
+   source_status=${e.source_status}${e.pmcid ? `, pmcid=${e.pmcid}` : ''}.
+   ${e.source_status === 'fulltext'
+     ? `RUN THIS TASK. PMC serves the machine-readable HTML body for this article: fetch \
+https://pmc.ncbi.nlm.nih.gov/articles/${e.pmcid}/ and read it directly. Display equations appear as \
+MathML. This route is known to work; do not settle for 'unknown'.`
+     : e.source_status === 'scan'
+       ? `RUN THIS TASK. The PMC page carries only the abstract, so go straight to the rendered PDF: \
+https://europepmc.org/articles/${e.pmcid}?pdf=render -- it has an OCR text layer. Do not stop at the \
+PMC landing page.`
+       : `SKIP THIS TASK. No PMC route exists for this article (Elsevier or APA); it needs publisher \
+access we do not have here. Return equation_in_text="unknown", equation_note="no PMC route", and \
+spend nothing on it.`}
    Determine whether the article DISPLAYS a mathematical equation (a numbered or
    set-off display equation stating a model). Fetch the url once to check. Judge only from the source:
    - 'present'  -> the article displays at least one equation. In equation_note, name it briefly
