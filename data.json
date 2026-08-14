@@ -81047,14 +81047,21 @@
       "Brady, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1243980/",
-    "process": [],
+    "process": [
+      "DRL",
+      "Repeated Acquisition",
+      "Delayed Match to Sample"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The development of technologies for monitoring the welfare of crewmembers is a critical requirement for extended spaceflight. Behavior analytic methodologies provide a framework for studying the performance of individuals and groups, and brief computerized tests have been used successfully to examine the impairing effects of sleep, drug, and nutrition manipulations on human behavior. The purpose of the present study was to evaluate the feasibility and sensitivity of repeated performance testing during spaceflight. Four National Aeronautics and Space Administration crewmembers were trained to complete computerized questionnaires and performance tasks at repeated regular intervals before and after a 10-day shuttle mission and at times that interfered minimally with other mission activities during spaceflight. Two types of performance, Digit-Symbol Substitution trial completion rates and response times during the most complex Number Recognition trials, were altered slightly during spaceflight. All other dimensions of the performance tasks remained essentially unchanged over the course of the study. Verbal ratings of Fatigue increased slightly during spaceflight and decreased during the postflight test sessions. Arousal ratings increased during spaceflight and decreased postflight. No other consistent changes in rating-scale measures were observed over the course of the study. Crewmembers completed all mission requirements in an efficient manner with no indication of clinically significant behavioral impairment during the 10-day spaceflight. These results support the feasibility and utility of computerized task performances and questionnaire rating scales for repeated measurement of behavior during spaceflight.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "The Effect Of Test Schedules On The Formation Of Linked Perceptual Classes",
@@ -81193,14 +81200,21 @@
       "Dawson, G."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389770/",
-    "process": [],
+    "process": [
+      "Extinction",
+      "Behavioral Pharmacology",
+      "Operant Conditioning"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Learning and memory are central topics in behavioral neuroscience, and inbred mice strains are widely investigated. However, operant conditioning techniques are not as extensively used in this field as they should be, given the effectiveness of the methodology of the experimental analysis of behavior. In the present study, male C57Bl/6 mice, widely used as background for transgenic studies, were trained to lever press on discrete-trial fixed-ratio 5 or fixed-interval (11\u2005s or 31\u2005s) schedules of food reinforcement and then exposed to 15 extinction sessions following vehicle or chlordiazepoxide injections (15\u2005mg/kg i.p., administered either prior to all extinction sessions, or prior to the final 10 extinction sessions). Extinction of operant behavior was facilitated by drug administration following training on either schedule, but this facilitation only occurred once a number of extinction sessions had taken place. The extinction process proceeded more rapidly following fixed-interval training. Resistance to extinction was equally high following training with either schedule type, and was reduced by drug administration in both cases. These phenomena were evident in individual cumulative records and in analyses of group data. Results are interpreted in terms of phenomena of operant extinction identified in Skinner's (1938) Behavior of Organisms, and by behavioral momentum theory. These procedures could be used to extend the contribution of operant conditioning to contemporary behavioral neuroscience.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Differential Acquisition of Lever Pressing in Inbred and Outbred Mice: Comparison of One-Lever and Two-Lever Procedures and Correlation with Differences in Locomotor Activity",
@@ -81214,14 +81228,21 @@
       "Fowler, S."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389771/",
-    "process": [],
+    "process": [
+      "Operant Conditioning",
+      "Schedule: Variable Time",
+      "Noncontingent Reinforcement"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Recent progress in mouse genetics has led to an increased interest in developing procedures for assessing mouse behavior, but relatively few of the behavioral procedures developed involve positively reinforced operant behavior. When operant methods are used, nose poking, not lever pressing, is the target response. In the current study differential acquisition of milk-reinforced lever pressing was observed in five inbred strains (C57BL/6J, DBA/2J, 129X1/SvJ, C3H/HeJ, and BALB/cJ) and one outbred stock (CD-1) of mice. Regardless of whether one or two levers (an \u201coperative\u201d and \u201cinoperative\u201d lever) were in the operant chamber, a concomitant variable-time fixed-ratio schedule of milk reinforcement established lever pressing in the majority of mice within two 120-min sessions. Substantial differences in lever pressing were observed across mice and between procedures. Adding an inoperative lever retarded acquisition in C57BL/6J, DBA/2J, 129X1/SvJ, and C3H/HeJ mice, but not in CD-1 and BALB/cJ mice. Locomotor activity was positively correlated with number of lever presses in both procedures. Analyses of durations of the subcomponents (e.g., time to move from hopper to lever) of operant behavior revealed further differences among the six types of mice. Together, the data suggest that appetitively reinforced lever pressing can be acquired rapidly in mice and that a combination of procedural, behavioral, and genetic variables contributes to this acquisition.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Pilocarpine Seizures Cause Age-Dependent Impairment in Auditory Location Discrimination",
@@ -81236,14 +81257,21 @@
       "Holmes, G."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389772/",
-    "process": [],
+    "process": [
+      "Discrimination Learning",
+      "Stimulus Control",
+      "Discrimination Training"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Children who have status epilepticus have continuous or rapidly repeating seizures that may be life-threatening and may cause life-long changes in brain and behavior. The extent to which status epilepticus causes deficits in auditory discrimination is unknown. A naturalistic auditory location discrimination method was used to evaluate this question using an animal model of status epilepticus. Male Sprague-Dawley rats were injected with saline on postnatal day (P) 20, or a convulsant dose of pilocarpine on P20 or P45. Pilocarpine on either day induced status epilepticus; status epilepticus at P45 resulted in CA3 cell loss and spontaneous seizures, whereas P20 rats had no cell loss or spontaneous seizures. Mature rats were trained with sound-source location and sound-silence discriminations. Control (saline P20) rats acquired both discriminations immediately. In status epilepticus (P20) rats, acquisition of the sound-source location discrimination was moderately impaired. Status epilepticus (P45) rats failed to acquire either sound-source location or sound-silence discriminations. Status epilepticus in rat causes an age-dependent, long-term impairment in auditory discrimination. This impairment may explain one cause of impaired auditory location discrimination in humans.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "The Role of Dopamine in Reinforcement: Changes in Reinforcement Sensitivity Induced by D1-type, D2-type, and Nonselective Dopamine Receptor Agonists",
@@ -81259,14 +81287,21 @@
       "Garris, P."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389773/",
-    "process": [],
+    "process": [
+      "Generalized Matching Law",
+      "Behavioral Pharmacology",
+      "Schedule: Concurrent Variable-Interval"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Dose-dependent changes in sensitivity to reinforcement were found when rats were treated with low, moderate, and high doses of the partial dopamine D1-type receptor agonist SKF38393 and with the nonselective dopamine agonist apomorphine, but did not change when rats were treated with similar doses of the selective dopamine D2-type receptor agonist quinpirole. Estimates of bias did not differ significantly across exposure to SKF38393 or quinpirole, but did change significantly at the high dose of apomorphine. Estimates of goodness of fit (r2) did not change significantly during quinpirole exposure. Poor goodness of fit was obtained for the high doses of SKF38393 and apomorphine. Decrements in absolute rates of responding were observed at the high dose of quinpirole and at the moderate and high doses of SKF38393 and apomorphine. Changes in r2 and absolute responding may be due to increases in stereotyped behavior during SKF38393 and apomorphine exposure that, in contrast to quinpirole, were distant from the response lever. The present data provide evidence that sensitivity to reward is affected more strongly by dopamine D1-like receptors rather than D2-like receptors, consistent with evidence from other studies investigating consummatory dopamine behavior and the tonic/phasic dopamine hypothesis.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Effects of Morphine on Temporal Discrimination and Color Matching: General Disruption of Stimulus Control or Selective Effects on Timing?",
@@ -81279,14 +81314,21 @@
       "Odum, A."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1393279/",
-    "process": [],
+    "process": [
+      "Temporal Discrimination",
+      "Stimulus Control",
+      "Behavioral Pharmacology"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Discrepant effects of drugs on behavior maintained by temporal-discrimination procedures make conclusive statements about the neuropharmacological bases of timing difficult. The current experiment examined the possible contribution of a general, drug-induced disruption of stimulus control. Four pigeons responded on a three-component multiple schedule that included a fixed-interval 2-min, temporal discrimination, and color-matching component. Under control conditions, response rates and choice responses during the first two components showed evidence of control by time, and accuracy for color matching was high in the third component. Morphine administration flattened the distribution of fixed-interval responding and produced a general disruption of accuracy in the temporal-discrimination component, whereas accuracy in the color-matching component was relatively unaffected. Analysis of the psychophysical functions from the temporal-discrimination component indicated that morphine decreased accuracy of temporal discrimination by decreasing overall stimulus control, rather than by selectively affecting timing. These results suggest the importance of determining the neurophysiological bases of stimulus control as it relates to temporal discrimination.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Derived Stimulus Relations, Semantic Priming, and Event-Related Potentials: Testing a Behavioral Theory of Semantic Networks",
@@ -81306,14 +81348,21 @@
       "Dymond, S."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389774/",
-    "process": [],
+    "process": [
+      "Stimulus Equivalence",
+      "Conditional Discrimination",
+      "Matching to Sample"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Derived equivalence relations, it has been argued, provide a behavioral model of semantic or symbolic meaning in natural language, and thus equivalence relations should possess properties that are typically associated with semantic relations. The present study sought to test this basic postulate using semantic priming. Across three experiments, participants were trained and tested in two 4-member equivalence relations using word-like nonsense words. Participants also were exposed to a single- or two-word lexical decision task, and both direct (Experiment 1) and mediated (Experiments 2 and 3) priming effects for reaction times and event-related potentials were observed within but not across equivalence relations. The findings support the argument that derived equivalence relations provides a useful preliminary model of semantic relations.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Relating Derived Relations as a Model of Analogical Reasoning: Reaction Times and Event-Related Potentials",
@@ -81333,14 +81382,21 @@
       "Dymond, S."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389775/",
-    "process": [],
+    "process": [
+      "Stimulus Equivalence",
+      "Conditional Discrimination",
+      "Matching to Sample"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The current study aimed to test a Relational Frame Theory (RFT) model of analogical reasoning based on the relating of derived same and derived difference relations. Experiment 1 recorded reaction time measures of similar\u2013similar (e.g., \u201capple is to orange as dog is to cat\u201d) versus different\u2013different (e.g., \u201che is to his brother as chalk is to cheese\u201d) derived relational responding, in both speed-contingent and speed-noncontingent conditions. Experiment 2 examined the event-related potentials (ERPs) associated with these two response patterns. Both experiments showed similar\u2013similar responding to be significantly faster than different\u2013different responding. Experiment 2 revealed significant differences between the waveforms of the two response patterns in the left-hemispheric prefrontal regions; different\u2013different waveforms were significantly more negative than similar\u2013similar waveforms. The behavioral and neurophysiological data support the RFT prediction that, all things being equal, similar\u2013similar responding is relationally \u201csimpler\u201d than, and functionally distinct from, different\u2013different analogical responding. The ERP data were fully consistent with findings in the neurocognitive literature on analogy. These findings strengthen the validity of the RFT model of analogical reasoning and supplement the behavior-analytic approach to analogy based on the relating of derived relations.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "On Aims and Methods in the Neuroimaging of Derived Relations",
@@ -81349,17 +81405,24 @@
     "issue": 3,
     "pages": "453-483",
     "authors": [
-      "Dickins, D."
+      "Dickins, D. W."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389776/",
-    "process": [],
+    "process": [
+      "Stimulus Equivalence",
+      "Conditional Discrimination",
+      "Matching to Sample"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Ingenious and seemingly powerful technologies have been developed recently that enable the visualization in some detail of events in the brain concomitant upon the ongoing behavioral performance of a human participant. Measurement of such brain events offers at the very least a new set of dependent variables in relation to which the independent variables familiarly manipulated in the operant laboratory may be explored. Two related paradigms in which a start has been made in such research concern the derivation of novel or emergent relations from a baseline set of trained relations, and include the phenomenon of transitive inference (TI), observed in studies of stimulus equivalence (SE) and serial learning (SL) or seriation. This paper reviews some published and forthcoming neuroimaging studies of these and related phenomena, and considers how this line of research both demands and represents a welcome synthesis between types of question and levels of explanation in behavioral science that often have been seen as antithetical.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Medial Prefrontal Cortex Lesions Abolish Contextual Control of Competing Responses",
@@ -81438,14 +81501,20 @@
       "Green, L."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389780/",
-    "process": [],
+    "process": [
+      "Choice",
+      "Optimization"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Although functional neuroimaging studies of human decision-making processes are increasingly common, most of the research in this area has relied on passive tasks that generate little individual variability. Relatively little attention has been paid to the ability of brain activity to predict overt behavior. Using functional magnetic resonance imaging (fMRI), we investigated the neural mechanisms underlying behavior during a dynamic decision task that required subjects to select smaller, short-term monetary payoffs in order to receive larger, long-term gains. The number of trials over which the long-term gains accrued was manipulated experimentally (2 versus 12). Event-related neural activity in right lateral prefrontal cortex, a region associated with high-level cognitive processing, selectively predicted choice behavior in both conditions, whereas insular cortex responded to fluctuations in amount of reward but did not predict choice behavior. These results demonstrate the utility of a functional neuroimaging approach in behavioral psychology, showing that (a) highly circumscribed brain regions are capable of predicting complex choice behavior, and (b) fMRI has the ability to dissociate the contributions of different neural mechanisms to particular behavioral tasks.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Dynamic Response-by-Response Models of Matching Behavior in Rhesus Monkeys",
@@ -81458,14 +81527,21 @@
       "Glimcher, P."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389781/",
-    "process": [],
+    "process": [
+      "Generalized Matching Law",
+      "Choice",
+      "Undermatching"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "We studied the choice behavior of 2 monkeys in a discrete-trial task with reinforcement contingencies similar to those Herrnstein (1961) used when he described the matching law. In each session, the monkeys experienced blocks of discrete trials at different relative-reinforcer frequencies or magnitudes with unsignalled transitions between the blocks. Steady-state data following adjustment to each transition were well characterized by the generalized matching law; response ratios undermatched reinforcer frequency ratios but matched reinforcer magnitude ratios. We modelled response-by-response behavior with linear models that used past reinforcers as well as past choices to predict the monkeys' choices on each trial. We found that more recently obtained reinforcers more strongly influenced choice behavior. Perhaps surprisingly, we also found that the monkeys' actions were influenced by the pattern of their own past choices. It was necessary to incorporate both past reinforcers and past choices in order to accurately capture steady-state behavior as well as the fluctuations during block transitions and the response-by-response patterns of behavior. Our results suggest that simple reinforcement learning models must account for the effects of past choices to accurately characterize behavior in this task, and that models with these properties provide a conceptual tool for studying how both past reinforcers and past choices are integrated by the neural systems that generate behavior.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Linear-Nonlinear-Poisson Models of Primate Choice Dynamics",
@@ -81474,20 +81550,27 @@
     "issue": 3,
     "pages": "581-617",
     "authors": [
-      "Corrado, G.",
-      "Sugrue, L.",
-      "Sebastian Seung, H.",
-      "Newsome, W."
+      "Corrado, G. S.",
+      "Sugrue, L. P.",
+      "Seung, H. S.",
+      "Newsome, W. T."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389782/",
-    "process": [],
+    "process": [
+      "Choice",
+      "Matching Law",
+      "Schedule: Concurrent Variable-Interval"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The equilibrium phenomenon of matching behavior traditionally has been studied in stationary environments. Here we attempt to uncover the local mechanism of choice that gives rise to matching by studying behavior in a highly dynamic foraging environment. In our experiments, 2 rhesus monkeys (Macacca mulatta) foraged for juice rewards by making eye movements to one of two colored icons presented on a computer monitor, each rewarded on dynamic variable-interval schedules. Using a generalization of Wiener kernel analysis, we recover a compact mechanistic description of the impact of past reward on future choice in the form of a Linear-Nonlinear-Poisson model. We validate this model through rigorous predictive and generative testing. Compared to our earlier work with this same data set, this model proves to be a better description of choice behavior and is more tightly correlated with putative neural value signals. Refinements over previous models include hyperbolic (as opposed to exponential) temporal discounting of past rewards, and differential (as opposed to fractional) comparisons of option value. Through numerical simulation we find that within this class of strategies, the model parameters employed by animals are very close to those that maximize reward harvesting efficiency.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Bridging the Gap between Brain and Behavior: Cognitive and Neural Mechanisms of Episodic Memory",
@@ -81497,17 +81580,24 @@
     "pages": "619-629",
     "authors": [
       "Eichenbaum, H.",
-      "Fortin, N."
+      "Fortin, N. J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389783/",
-    "process": [],
+    "process": [
+      "Remembering",
+      "Discrimination",
+      "Signal Detection"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The notion that non-human animals are capable of episodic memory is highly controversial. Here, we review recent behavioral work from our laboratory showing that the fundamental features of episodic memory can be observed in rats and that, as in humans, this capacity relies on the hippocampus. We also discuss electrophysiological evidence, from our laboratory and that of others, pointing to associative and sequential coding in hippocampal cells as potential neural mechanisms underlying episodic memory.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Neuroscience and Learning: Lessons from Studying the Involvement of a Region of Cerebellar Cortex in Eyeblink Classical Conditioning",
@@ -81520,14 +81610,19 @@
       "Steinmetz, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389784/",
-    "process": [],
+    "process": [
+      "Classical Conditioning"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "How the nervous system encodes learning and memory processes has interested researchers for 100\u2005years. Over this span of time, a number of basic neuroscience methods has been developed to explore the relationship between learning and the brain, including brain lesion, stimulation, pharmacology, anatomy, imaging, and recording techniques. In this paper, we summarize how different research approaches can be employed to generate converging data that speak to how structures and systems in the brain are involved in simple associative learning. To accomplish this, we review data regarding the involvement of a particular region of cerebellar cortex (Larsell's lobule HVI) in the widely used paradigm of classical eyeblink conditioning. We also present new data on the role of lobule HVI in eyeblink conditioning generated by combining temporary brain inactivation and single-cell recording methods, an approach that looks promising for further advancing our understanding of relationships between brain and behavior.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Neuronal Substrates of Relapse to Cocaine-Seeking Behavior: Role of Prefrontal Cortex",
@@ -81540,14 +81635,21 @@
       "Sun, W."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389785/",
-    "process": [],
+    "process": [
+      "Behavioral Pharmacology",
+      "Extinction",
+      "Reinforcement: Positive"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The return to drug seeking, even after prolonged periods of abstinence, is a defining feature of cocaine addiction. The neural circuitry underlying relapse has been identified in neuropharmacological studies of experimental animals, typically rats, and supported in brain imaging studies of human addicts. Although the nucleus accumbens (NAcc), which has long been implicated in goal-directed behavior, plays a critical role in this circuit, the prefrontal cortex (PFC) appears to process the events that directly trigger relapse: exposure to acute stress, cues previously associated with the drug, and the drug itself. In this paper, we review animal models of relapse and what they have revealed about the mechanisms underlying the involvement of the NAcc and PFC in cocaine-seeking behavior. We also present electrophysiological data from PFC illustrating how the hedonic, motor, motivational, and reinforcing effects of cocaine can be analyzed at the neuronal level. Our preliminary findings suggest a role for PFC in processing information related to cocaine seeking but not the hedonic effects of the drug. Further use of this recording technology can help dissect the functions of PFC and other components of the neural circuitry underlying relapse.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Behavioral Perspectives on the Neuroscience of Drug Addiction",
@@ -81557,19 +81659,26 @@
     "pages": "667-681",
     "authors": [
       "Winger, G.",
-      "Woods, J.",
-      "Galuska, C.",
+      "Woods, J. H.",
+      "Galuska, C. M.",
       "Wade-Galuska, T."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1389786/",
-    "process": [],
+    "process": [
+      "Behavioral Pharmacology",
+      "Choice",
+      "Reinforcement"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Neuroscientific approaches to drug addiction traditionally have been based on the premise that addiction is a process that results from brain changes that in turn result from chronic administration of drugs of abuse. An alternative approach views drug addiction as a behavioral disorder in which drugs function as preeminent reinforcers. Although there is a fundamental discrepancy between these two approaches, the emerging neuroscience of reinforcement and choice behavior eventually may shed light on the brain mechanisms involved in excessive drug use. Behavioral scientists could assist in this understanding by devoting more attention to the assessment of differences in the reinforcing strength of drugs and by attempting to develop and validate behavioral models of addiction.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Naming Our Concerns about Neuroscience: A Review of Bennett and Hacker's Philosophical Foundations of Neuroscience",
@@ -81621,14 +81730,21 @@
       "Rachlin, H."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1397795/",
-    "process": [],
+    "process": [
+      "Choice",
+      "Schedule: Random Interval",
+      "Schedule: Tandem"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Three pigeons chose between random-interval (RI) and tandem, continuous-reinforcement, fixed-interval (crf-FI) reinforcement schedules by pecking either of two keys. As long as a pigeon pecked on the RI key, both keys remained available. If a pigeon pecked on the crf-FI key, then the RI key became unavailable and the crf-FI timer began to time out. With this procedure, once the RI key was initially pecked, the prospective value of both alternatives remained constant regardless of time spent pecking on the RI key without reinforcement (RI waiting time). Despite this constancy, the rate at which pigeons switched from the RI to the crf-FI decreased sharply as RI waiting time increased. That is, prior choices influenced current choice\u2014an exercise effect. It is argued that such influence (independent of reinforcement contingencies) may serve as a sunk-cost commitment device in self-control situations. In a second experiment, extinction was programmed if RI waiting time exceeded a certain value. Rate of switching to the crf-FI first decreased and then increased as the extinction point approached, showing sensitivity to both prior choices and reinforcement contingencies. In a third experiment, crf-FI availability was limited to a brief window during the RI waiting time. When constrained in this way, switching occurred at a high rate regardless of when, during the RI waiting time, the crf-FI became available.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Resistance to Extinction following Variable-Interval Reinforcement:  Reinforcer Rate and Amount",
@@ -81698,18 +81814,25 @@
     "issue": 1,
     "pages": "73-93",
     "authors": [
-      "Johnson, M.",
-      "Bickel, W."
+      "Johnson, Matthew W.",
+      "Bickel, Warren K."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1397796/",
-    "process": [],
+    "process": [
+      "Choice",
+      "Schedule: Concurrent",
+      "Reinforcement: Positive"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Relative reinforcing efficacy refers to the behavior-strengthening or maintaining property of a reinforcer when compared to that of another reinforcer. Traditional measures of relative reinforcing efficacy sometimes have led to discordant results across and within studies. By contrast, previous investigations have found traditional measures to be congruent with behavioral economic measures, which provide a framework for integrating the discordant results. This study tested whether the previously demonstrated congruence between traditional relative reinforcing efficacy measures and behavioral economic demand curve measures is sufficiently robust to persist when demand for one reinforcer is altered. Cigarette smokers pulled plungers for cigarettes or two magnitudes of money on progressive-ratio schedules that increased the response requirement across sessions. Demand for the two different reinforcers was assessed in single-schedule and concurrent-schedule sessions. Demand curve measures Pmax and Omax correlated significantly with traditional measures of breakpoint and peak response rate, respectively. Relative locations of demand curves for money and cigarettes under single schedules predicted preference in concurrent schedules in most cases. Although measures of relative reinforcing efficacy for money changed with money magnitude, the congruence between traditional and behavioral economic measures remained intact. This robust congruence supports the proposal that demand curves should replace measures of relative reinforcing efficacy. The demand curve analysis illustrates why concordance between traditional measures is expected under some experimental conditions but not others.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Second-Order Schedules of Token Reinforcement with Pigeons: Implications for Unit Price",
@@ -81722,14 +81845,21 @@
       "Hackenberg, T."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1397791/",
-    "process": [],
+    "process": [
+      "Schedule: Second-Order",
+      "Token Economy",
+      "Conditioned Reinforcement"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Four pigeons were exposed to second-order schedules of token reinforcement, with stimulus lights serving as token reinforcers. Tokens were earned according to a fixed-ratio (token-production) schedule, with the opportunity to exchange tokens for food (exchange period) occurring after a fixed number had been produced (exchange-production ratio). The token-production and exchange-production ratios were manipulated systematically across conditions. Response rates varied inversely with the token-production ratio at each exchange-production ratio. Response rates also varied inversely with the exchange-production ratio at each token-production ratio, particularly at the higher token-production ratios. At higher token-production and exchange-production ratios, response rates increased in token-production segments closer to exchange periods and food. Some conditions were conducted in a closed economy, in which the pigeons earned all their daily ration of food within the session. Relative to comparable open-economy conditions, response rates in the closed economy were less affected by changes in token-production ratio, resulting in higher levels of food intake and body weight. Some of the results are consistent with the economic concept of unit price, a cost-benefit ratio comprised of responses per unit of food delivery, but most are well accounted for by a consideration of the number of responses required to produce exchange periods, without regard to the amount of reinforcement available during those exchange periods.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Experimental Control of Nodality VIA Equal Presentations of Conditional Discriminations in Different Equivalence Protocols Under Speed and No-speed Conditions",
@@ -81741,14 +81871,21 @@
       "Imam, A."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1397793/",
-    "process": [],
+    "process": [
+      "Stimulus Equivalence",
+      "Matching to Sample",
+      "Conditional Discrimination"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "A within-participant comparison of simple-to-complex, complex-to-simple, and simultaneous protocols was conducted establishing different sets of three 7-member equivalence classes for 4 undergraduate students. The protocols were implemented under either accuracy-only or accuracy-plus-speed conditions while keeping number of presentations of training and testing trials equal. The results partially support previous reports of differential effects on acquisition, with participants completing more blocks in training under the simultaneous than the complex-to-simple and the simple-to-complex protocols. Across the protocols, however, the number of trials completed to criterion did not vary systematically. More important, response speed and accuracy did not decrease as a function of nodal number, with or without the speed contingency, or under any protocol. The latter results challenge the generality of previous reports of the nodality effect and the notion of \u201crelatedness\u201d of equivalence-class members, and support a reinforcement-contingency, instead of a structural, perspective on equivalence-class formation.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "About Skinner and Time: Behavior-Analytic Contributions to Research on Animal Timing",
@@ -81762,14 +81899,21 @@
       "Wearden, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1397794/",
-    "process": [],
+    "process": [
+      "Temporal Control",
+      "Schedule: Fixed Interval",
+      "Temporal Discrimination"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The article discusses two important influences of B. F. Skinner, and later workers in the behavior-analytic tradition, on the study of animal timing. The first influence is methodological, and is traced from the invention of schedules imposing temporal constraints or periodicities on animals in The Behavior of Organisms, through the rate differentiation procedures of Schedules of Reinforcement, to modern temporal psychophysics in animals. The second influence has been the development of accounts of animal timing that have tried to avoid reference to internal processes of a cognitive sort, in particular internal clock mechanisms. Skinner's early discussion of temporal control is first reviewed, and then three recent theories\u2014Killeen & Fetterman's (1988) Behavioral Theory of Timing; Machado's (1997) Learning to Time; and Dragoi, Staddon, Palmer, & Buhusi's (2003) Adaptive Timer Model\u2014are discussed and evaluated.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Consumer Brand Choice: Individual and Group Analyses of Demand Elasticity",
@@ -81783,14 +81927,19 @@
       "Schrezenmaier, T."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1472629/",
-    "process": [],
+    "process": [
+      "Choice"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Following the behavior-analytic tradition of analyzing individual behavior, the present research investigated demand elasticity of individual consumers purchasing supermarket products, and compared individual and group analyses of elasticity. Panel data from 80 UK consumers purchasing 9 product categories (i.e., baked beans, biscuits, breakfast cereals, butter, cheese, fruit juice, instant coffee, margarine and tea) during a 16-week period were used. Elasticity coefficients were calculated for individual consumers with data from all or only 1 product category (intra-consumer elasticities), and for each product category using all data points from all consumers (overall product elasticity) or 1 average data point per consumer (interconsumer elasticity). In addition to this, split-sample elasticity coefficients were obtained for each individual with data from all product categories purchased during weeks 1 to 8 and 9 to 16. The results suggest that: 1) demand elasticity coefficients calculated for individual consumers purchasing supermarket food products are compatible with predictions from economic theory and behavioral economics; 2) overall product elasticities, typically employed in marketing and econometric research, include effects of interconsumer and intraconsumer elasticities; 3) when comparing demand elasticities of different product categories, group and individual analyses yield similar trends; and 4) individual differences in demand elasticity are relatively consistent across time, but do not seem to be consistent across products. These results demonstrate the theoretical, methodological, and managerial relevance of investigating the behavior of individual consumers.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Matching and Conditioned Reinforcement Rate",
@@ -81804,14 +81953,21 @@
       "Jimenez-Gomez, C."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1472632/",
-    "process": [],
+    "process": [
+      "Conditioned Reinforcement",
+      "Generalized Matching Law",
+      "Choice"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Attempts to examine the effects of variations in relative conditioned reinforcement rate on choice have been confounded by changes in rates of primary reinforcement or changes in the value of the conditioned reinforcer. To avoid these problems, this experiment used concurrent observing responses to examine sensitivity of choice to relative conditioned reinforcement rate. In the absence of observing responses, unsignaled periods of food delivery on a variable-interval 90-s schedule alternated with extinction on a center key (i.e., a mixed schedule was in effect). Two concurrently available observing responses produced 15-s access to a stimulus differentially associated with the schedule of food delivery (S+). The relative rate of S+ deliveries arranged by independent variable-interval schedules for the two observing responses varied across conditions. The relation between the ratio of observing responses and the ratio of S+ deliveries was well described by the generalized matching law, despite the absence of changes in the rate of food delivery. In addition, the value of the S+ deliveries likely remained constant across conditions because the ratio of S+ to mixed schedule food deliveries remained constant. Assuming that S+ deliveries serve as conditioned reinforcers, these findings are consistent with the functional similarity between primary and conditioned reinforcers suggested by general choice theories based on the concatenated matching law (e.g., contextual choice and hyperbolic value-added models). These findings are inconsistent with delay reduction theory, which has no terms for the effects of rate of conditioned reinforcement in the absence of changes in rate of primary reinforcement.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Rapid Acquisition in Concurrent Chains: Evidence for a Decision Model",
@@ -81824,14 +81980,21 @@
       "McLean, A."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1472631/",
-    "process": [],
+    "process": [
+      "Choice",
+      "Schedule: Concurrent Chains",
+      "Delay of Reinforcement"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Pigeons' choice in concurrent chains can adapt to rapidly changing contingencies. Grace, Bragason, and McLean (2003) found that relative initial-link response rate was sensitive to the immediacy ratio in the current session when one of the terminal-link fixed-interval schedules was changed daily according to a pseudorandom binary sequence (e.g., Schofield & Davison, 1997). The present experiment tested whether the degree of variation in delays across sessions had any effect on acquisition rate in Grace et al.'s (2003) rapid-acquisition procedure. In one condition (\u201cminimal variation\u201d), the left terminal link was always fixed-interval 8\u2005s and the right terminal link was either fixed-interval 4\u2005s or fixed-interval 16\u2005s. In the other condition (\u201cmaximal variation\u201d), a unique pair of fixed-interval values was used in each session. Responding was sensitive to the current-session immediacy ratio in both conditions, but across subjects there was no systematic difference in sensitivity. These results challenge the view that initial-link responding in the rapid-acquisition procedure is determined by changes in the learned value of the terminal-link stimuli, and suggests instead that a process resembling categorical discrimination may control performance. A decision model based on the assumption that delays are categorized as short or long relative to the history of delays provided a good account of the data and shows promise in being able to explain other choice phenomena.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Identity Matching-To-Sample with Olfactory Stimuli in Rats",
@@ -81845,14 +82008,21 @@
       "Galizio, M."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1472630/",
-    "process": [],
+    "process": [
+      "Matching to Sample",
+      "Conditional Discrimination",
+      "Stimulus Control"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Identity matching-to-sample has been difficult to demonstrate in rats, but most studies have used visual stimuli. There is evidence that rats can acquire complex forms of olfactory stimulus control, and the present study explored the possibility that identity matching might be facilitated in rats if olfactory stimuli were used. Four rats were trained on an identity match-to-sample procedure with odorants mixed in cups of sand as stimuli. Digging in the sample cup produced two comparison cups, and digging in the comparison cup that contained the same scent as the sample was reinforced. When criterion accuracy levels were reached, novel stimuli were added to the baseline training regimen. All 4 rats reached terminal performance of above 90% correct matching with more than 20 different baseline stimuli and matched novel stimulus combinations with above-chance accuracy; 3 of the 4 rats matched novel stimuli at levels significantly above chance. Accurate matching performance was demonstrated both with 2- and 3-comparison procedures. These results suggest that generalized matching-to-sample can be observed in rats when olfactory stimuli are used and, furthermore, that multiple-exemplar training may be important for its emergence.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "A Derived Transfer of Simple Discrimination and Self-Reported Arousal Functions in Spider Fearful and Non-Spider-Fearful Participants",
@@ -81866,14 +82036,21 @@
       "Forsyth, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1472626/",
-    "process": [],
+    "process": [
+      "Stimulus Equivalence",
+      "Discrimination",
+      "Stimulus Classes"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Two experiments investigated the derived transfer of functions through equivalence relations established using a stimulus pairing observation procedure. In Experiment 1, participants were trained on a simple discrimination (A1+/A2\u2212) and then a stimulus pairing observation procedure was used to establish 4 stimulus pairings (A1\u2013B1, A2\u2013B2, B1\u2013C1, B2\u2013C2). Subsequently, a transfer of the simple discrimination functions through equivalence relations was observed (e.g., C1+/C2\u2212). These procedures were modified in Experiment 2, which demonstrated that spider-fearful and non-spider-fearful participants show differing levels of a transfer of self-reported arousal functions for stimuli used in equivalence relations with video-based material depicting scenes with spiders. The results demonstrate that the stimulus pairing observation procedure provides a viable alternative to matching-to-sample, and also offer tentative support for a derived-relations model of the acquisition of anxiety responses in at least one sub-clinical population.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Naming and Categorization in Young Children: IV: Listener Behavior Training and Transfer of Function",
@@ -81887,14 +82064,21 @@
       "Lowe, C."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1472628/",
-    "process": [],
+    "process": [
+      "Stimulus Classes",
+      "Conditional Discrimination",
+      "Stimulus Equivalence"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Following pretraining with everyday objects, 14 children aged from 1 to 4\u2005years were trained, for each of three pairs of different arbitrary wooden shapes (Set 1), to select one stimulus in response to the spoken word /zog/, and the other to /vek/. When given a test for the corresponding tacts (\u201czog\u201d and \u201cvek\u201d), 10 children passed, showing that they had learned common names for the stimuli, and 4 failed. All children were trained to clap to one stimulus of Pair 1 and wave to the other. All those who named showed either transfer of the novel functions to the remaining two pairs of stimuli in Test 1, or novel function comprehension for all three pairs in Test 2, or both. Three of these children next participated in, and passed, category match-to-sample tests. In contrast, all 4 children who had learned only listener behavior failed both the category transfer and category match-to-sample tests. When 3 of them were next trained to name the stimuli, they passed the category transfer and (for the 2 subjects tested) category match-to-sample tests. Three children were next trained on the common listener relations with another set of arbitrary stimuli (Set 2); all succeeded on the tact and category tests with the Set 2 stimuli. Taken together with the findings from the other studies in the series, the present experiment shows that (a) common listener training also establishes the corresponding names in some but not all children, and (b) only children who learn common names categorize; all those who learn only listener behavior fail. This is good evidence in support of the naming account of categorization.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Mathematical Models and the Experimental Analysis of Behavior",
@@ -81992,14 +82176,21 @@
       "Dube, W."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1459849/",
-    "process": [],
+    "process": [
+      "Stimulus Equivalence",
+      "Conditional Discrimination",
+      "Matching to Sample"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Five adult humans were tested for emergent conditional discriminations under rapid-responding contingencies. During four-comparison matching-to-sample baseline training (AB and AC), limited-hold contingencies for responding to samples and comparisons were gradually restricted to the shortest duration consistent with at least 95% accuracy and no more than 5% failures to respond. The final limited-hold values were 0.4\u20130.5\u2005s for samples and 1.2\u20131.3\u2005s for comparisons; mean response latencies were 0.15\u20130.28\u2005s for samples and 0.59\u20130.73\u2005s for comparisons; inter-trial intervals were 0.4\u2005s. With these fast-responding requirements, test blocks presented 72 probe trials interspersed among 72 baseline trials, all without programmed differential consequences. Four equivalence test blocks (BC and CB probes, which tested simultaneously for both symmetry and transitivity) were followed by four symmetry (BA and CA probes) test blocks. Three subjects' results documented emergent performances indicative of equivalence classes despite fast-responding requirements that severely limited the time available for mediating vocal or subvocal responses. For these three subjects, mean latencies were slightly shorter in baseline trials than in probes, and shorter on symmetry than on equivalence probes. These differences, however, were usually less than the differences among mean latencies on the different types of trials within the baseline and probed performances.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Stimulus Equivalence: Testing Sidman's (2000) Theory",
