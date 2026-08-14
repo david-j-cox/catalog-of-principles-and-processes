@@ -147,9 +147,9 @@
   "pmcid": "PMC1403999",
   "page_pmcid": "",
   "catalog_title": "A Precision Liquid Feeding System Controlled by Licking Behavior",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "A Precision Liquid Feeding System Controlled by Licking Behavior",
+  "ratio": 1.0,
+  "match": true
  },
  "93": {
   "pmcid": "PMC1403997",
@@ -229,7 +229,8 @@
   "catalog_title": "BEHA VIOR STABILITY UNDER EXTENDED EXPOSURE TOA TIME-CORRELA TED REINFORCEMENT CONTINGENCY",
   "page_title": "",
   "ratio": 0.0,
-  "match": false
+  "match": true,
+  "note": "verified manually; citation_title matches. catalog title is OCR-damaged"
  },
  "103": {
   "pmcid": "PMC1404005",
@@ -237,31 +238,32 @@
   "catalog_title": "INTERMITTENT REINFORCEMENT OF DISCRIMINA TIVEL Y CONTROLLEDRESPONSES AND RUNS OF RESPONSES'",
   "page_title": "",
   "ratio": 0.0,
-  "match": false
+  "match": true,
+  "note": "verified manually; citation_title matches. catalog title is OCR-damaged"
  },
  "104": {
   "pmcid": "PMC1403971",
   "page_pmcid": "",
   "catalog_title": "Some Effects of Brain Stimulation on Timing Behavior",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Some effects of brain stimulation on timing behavior",
+  "ratio": 1.0,
+  "match": true
  },
  "105": {
   "pmcid": "PMC1403967",
   "page_pmcid": "",
   "catalog_title": "SOME ELECTRONIC CONTROL UNITS FOR OPERANT BEHAVIORSTUDIES: II. A RANDOM RATIO GENERATOR'",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Some electronic control units for operant behavior studies: II. A random ratio generator",
+  "ratio": 0.994,
+  "match": true
  },
  "290": {
   "pmcid": "PMC1404082",
   "page_pmcid": "",
   "catalog_title": "A Review of Positive Conditioned Reinforcement",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "A Review of Positive Conditioned Reinforcement",
+  "ratio": 1.0,
+  "match": true
  },
  "1234": {
   "pmcid": "PMC1333688",
@@ -347,25 +349,25 @@
   "pmcid": "PMC1284583",
   "page_pmcid": "",
   "catalog_title": "Key pecking during extinction after intermittent or continuous reinforcement as a function of the number of reinforcers delivered during training.",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Key pecking during extinction after intermittent or continuous reinforcement as a function of the number of reinforcers delivered during training",
+  "ratio": 1.0,
+  "match": true
  },
  "3316": {
   "pmcid": "PMC1284584",
   "page_pmcid": "",
   "catalog_title": "Key-peck probability and topography in a concurrent variable-interval variable-interval schedule with food and water reinforcers.",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Key-peck probability and topography in a concurrent variable-interval variable-interval schedule with food and water reinforcers",
+  "ratio": 1.0,
+  "match": true
  },
  "3317": {
   "pmcid": "PMC1284585",
   "page_pmcid": "",
   "catalog_title": "Body weight and response acquisition with delayed reinforcement.",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Body weight and response acquisition with delayed reinforcement",
+  "ratio": 1.0,
+  "match": true
  },
  "3318": {
   "pmcid": "PMC1284586",
@@ -451,33 +453,33 @@
   "pmcid": "PMC1284599",
   "page_pmcid": "",
   "catalog_title": "The Eternal Antithesis: A Commentary On Donahoe, Palmer, And Burgos.",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "The Eternal Antithesis: A Commentary On Donahoe, Palmer, And Burgos",
+  "ratio": 1.0,
+  "match": true
  },
  "3329": {
   "pmcid": "PMC1284600",
   "page_pmcid": "",
   "catalog_title": "Units Of Analysis And The Environmental Control Of Behavior.",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Units Of Analysis And The Environmental Control Of Behavior",
+  "ratio": 1.0,
+  "match": true
  },
  "3330": {
   "pmcid": "PMC1284601",
   "page_pmcid": "",
   "catalog_title": "The Role Of Motivation In The S-R Issue.",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "The Role Of Motivation In The S-R Issue",
+  "ratio": 1.0,
+  "match": true
  },
  "3408": {
   "pmcid": "PMC1284677",
   "page_pmcid": "",
   "catalog_title": "Ratio size and cocaine concentration effects on oral cocaine-reinforced behavior.",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Ratio size and cocaine concentration effects on oral cocaine-reinforced behavior",
+  "ratio": 1.0,
+  "match": true
  },
  "3653": {
   "pmcid": "PMC1284924",
@@ -547,49 +549,49 @@
   "pmcid": "PMC1193754",
   "page_pmcid": "",
   "catalog_title": "Unsignaled Delay Of Reinforcement, Relative Time, And Resistance To Change",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Unsignaled Delay Of Reinforcement, Relative Time, And Resistance To Change",
+  "ratio": 1.0,
+  "match": true
  },
  "3754": {
   "pmcid": "PMC1193756",
   "page_pmcid": "",
   "catalog_title": "Effects Of Reinforcement History On Response Rate And Response Pattern In Periodic Reinforcement",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Effects Of Reinforcement History On Response Rate And Response Pattern In Periodic Reinforcement",
+  "ratio": 1.0,
+  "match": true
  },
  "3755": {
   "pmcid": "PMC1193757",
   "page_pmcid": "",
   "catalog_title": "The Effects Of Interval Duration On Temporal Tracking And Alternation Learning",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "The Effects Of Interval Duration On Temporal Tracking And Alternation Learning",
+  "ratio": 1.0,
+  "match": true
  },
  "3756": {
   "pmcid": "PMC1193758",
   "page_pmcid": "",
   "catalog_title": "Effects Of Reinforcer Probability, Delay, And Response Requirements On The Choices Of Rats And Pigeons: Possible Species Differences",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Effects Of Reinforcer Probability, Delay, And Response Requirements On The Choices Of Rats And Pigeons: Possible Species Differences",
+  "ratio": 1.0,
+  "match": true
  },
  "3757": {
   "pmcid": "PMC1193759",
   "page_pmcid": "",
   "catalog_title": "Morphine Tolerance As A Function Of Ratio Schedule: Response Requirement Or Unit Price?",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Morphine Tolerance As A Function Of Ratio Schedule: Response Requirement Or Unit Price?",
+  "ratio": 1.0,
+  "match": true
  },
  "3758": {
   "pmcid": "PMC1193760",
   "page_pmcid": "",
   "catalog_title": "Effects Of Methylphenidate And Morphine On Delay-Discount Functions Obtained Within Sessions",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Effects Of Methylphenidate And Morphine On Delay-Discount Functions Obtained Within Sessions",
+  "ratio": 1.0,
+  "match": true
  },
  "3763": {
   "pmcid": "PMC1243897",
@@ -651,57 +653,57 @@
   "pmcid": "PMC1243979",
   "page_pmcid": "",
   "catalog_title": "Effects Of Adding A Second Reinforcement Alternative: Implications For Herrnstein's Interpretation Of re",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Effects Of Adding A Second Reinforcement Alternative: Implications For Herrnstein&#x27;s Interpretation Of re",
+  "ratio": 0.986,
+  "match": true
  },
  "3771": {
   "pmcid": "PMC1243980",
   "page_pmcid": "",
   "catalog_title": "Crewmember Performance Before, During, And After Spaceflight",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Crewmember Performance Before, During, And After Spaceflight",
+  "ratio": 1.0,
+  "match": true
  },
  "3776": {
   "pmcid": "PMC1389768",
   "page_pmcid": "",
   "catalog_title": "The Challenge of Characterizing Operations in the Mechanisms Underlying Behavior",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "The Challenge of Characterizing Operations in the Mechanisms Underlying Behavior",
+  "ratio": 1.0,
+  "match": true
  },
  "3778": {
   "pmcid": "PMC1389770",
   "page_pmcid": "",
   "catalog_title": "Effects of Reinforcement Schedule on Facilitation of Operant Extinction by Chlordiazepoxide",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Effects of Reinforcement Schedule on Facilitation of Operant Extinction by Chlordiazepoxide",
+  "ratio": 1.0,
+  "match": true
  },
  "3779": {
   "pmcid": "PMC1389771",
   "page_pmcid": "",
   "catalog_title": "Differential Acquisition of Lever Pressing in Inbred and Outbred Mice: Comparison of One-Lever and Two-Lever Procedures and Correlation with Differences in Locomotor Activity",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Differential Acquisition of Lever Pressing in Inbred and Outbred Mice: Comparison of One-Lever and Two-Lever Procedures and Correlation with Differences in Locomotor Activity",
+  "ratio": 1.0,
+  "match": true
  },
  "3780": {
   "pmcid": "PMC1389772",
   "page_pmcid": "",
   "catalog_title": "Pilocarpine Seizures Cause Age-Dependent Impairment in Auditory Location Discrimination",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Pilocarpine Seizures Cause Age-Dependent Impairment in Auditory Location Discrimination",
+  "ratio": 1.0,
+  "match": true
  },
  "3781": {
   "pmcid": "PMC1389773",
   "page_pmcid": "",
   "catalog_title": "The Role of Dopamine in Reinforcement: Changes in Reinforcement Sensitivity Induced by D1-type, D2-type, and Nonselective Dopamine Receptor Agonists",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "The Role of Dopamine in Reinforcement: Changes in Reinforcement Sensitivity Induced by D1-type, D2-type, and Nonselective Dopamine Receptor Agonists",
+  "ratio": 1.0,
+  "match": true
  },
  "3782": {
   "pmcid": "PMC1393279",
@@ -787,17 +789,17 @@
   "pmcid": "PMC1389786",
   "page_pmcid": "",
   "catalog_title": "Behavioral Perspectives on the Neuroscience of Drug Addiction",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Behavioral Perspectives on the Neuroscience of Drug Addiction",
+  "ratio": 1.0,
+  "match": true
  },
  "3796": {
   "pmcid": "PMC1389787",
   "page_pmcid": "",
   "catalog_title": "Naming Our Concerns about Neuroscience: A Review of Bennett and Hacker's Philosophical Foundations of Neuroscience",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Naming Our Concerns about Neuroscience: A Review of Bennett and Hacker&#x27;s Philosophical Foundations of Neuroscience",
+  "ratio": 0.987,
+  "match": true
  },
  "3798": {
   "pmcid": "PMC1397795",
@@ -867,32 +869,32 @@
   "pmcid": "PMC1472630",
   "page_pmcid": "",
   "catalog_title": "Identity Matching-To-Sample with Olfactory Stimuli in Rats",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Identity Matching-To-Sample with Olfactory Stimuli in Rats",
+  "ratio": 1.0,
+  "match": true
  },
  "3810": {
   "pmcid": "PMC1472626",
   "page_pmcid": "",
   "catalog_title": "A Derived Transfer of Simple Discrimination and Self-Reported Arousal Functions in Spider Fearful and Non-Spider-Fearful Participants",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "A Derived Transfer of Simple Discrimination and Self-Reported Arousal Functions in Spider Fearful and Non-Spider-Fearful Participants",
+  "ratio": 1.0,
+  "match": true
  },
  "3811": {
   "pmcid": "PMC1472628",
   "page_pmcid": "",
   "catalog_title": "Naming and Categorization in Young Children: IV: Listener Behavior Training and Transfer of Function",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Naming and Categorization in Young Children: IV: Listener Behavior Training and Transfer of Function",
+  "ratio": 1.0,
+  "match": true
  },
  "3816": {
   "pmcid": "PMC1459849",
   "page_pmcid": "",
   "catalog_title": "Equivalence Classes with Requirements for Short Response Latencies",
-  "page_title": "",
-  "ratio": 0.0,
-  "match": false
+  "page_title": "Equivalence Classes with Requirements for Short Response Latencies",
+  "ratio": 1.0,
+  "match": true
  }
 }
