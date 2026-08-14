@@ -6734,24 +6734,31 @@
     "signoffs": []
   },
   {
-    "title": "A Review of Positive Conditioned Reinforcement1",
+    "title": "A Review of Positive Conditioned Reinforcement",
     "year": 1962,
     "volume": 5,
     "issue": "4 Suppl",
     "pages": "543-597",
     "authors": [
-      "Kelleher, R.",
-      "Gollub, L."
+      "Kelleher, R. T.",
+      "Gollub, L. R."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1404082/",
-    "process": [],
+    "process": [
+      "Conditioned Reinforcement",
+      "Schedule: Chained",
+      "Stimulus Control"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "This review critically analyzes experimental data relevant to the concept of conditioned reinforcement. The review has five sections. Section I is a discussion of the relationship between primary and conditioned reinforcement in terms of chains of stimuli and responses. Section II is a detailed analysis of the conditions in which the component stimuli in chained schedules of reinforcement will become conditioned reinforcers; this section also analyzes studies of token reinforcement, observing responses, switching responses, implicit chained schedules, and higher-order conditioning. Section III analyzes experiments in which potential conditioned reinforcers are used either to prolong responding or to generate responding during experimental extinction. This section discusses hypotheses that have been offered as alternatives to the concept of conditioned reinforcement and hypotheses concerning the necessary and sufficient conditions for establishing a conditioned reinforcer. Section IV discusses other variables that act when a conditioned reinforcer is being established or that act when an established conditioned reinforcer is used to develop or maintain behavior. Section V is a general discussion of conditioned reinforcement.The evidence indicates that the conditioned reinforcing effectiveness of a stimulus is directly related to the frequency of primary reinforcement occurring in its presence, but is independent of the response rate or response pattern occurring in its presence. Results from chained schedules comprised of several components indicate that a stimulus can be established as a conditioned reinforcer by pairing it with an already established conditioned reinforcer rather than a primary reinforcer; however, this type of higher-order conditioning has not been clearly demonstrated with respondent conditioning procedures.Although discriminative stimuli are usually conditioned reinforcers, the available evidence indicates that establishing a stimulus as a discriminative stimulus is not necessary or sufficient for establishing it as a conditioned reinforcer. Discriminative stimuli in chained schedules with several components are not always conditioned reinforcers; stimuli that are simply paired with reinforcers can become conditioned reinforcers.The hypotheses that have been offered as alternatives to the concept of conditioned reinforcement are too limited to integrate the data that exist. The concepts of conditioned reinforcement and chained schedule, however, can be used to integrate the data obtained with diverse techniques. Recent experiments have revealed several techniques for the development of effective conditioned reinforcers. These techniques provide a powerful tool for advancing understanding of conditioned reinforcement and for extending control over behavior.",
+    "abstract": "This review critically analyzes experimental data relevant to the concept of conditioned reinforcement. The review has five sections. Section I is a discussion of the relationship between primary and conditioned reinforcement in terms of chains of stimuli and responses. Section II is a detailed analysis of the conditions in which the component stimuli in chained schedules of reinforcement will become conditioned reinforcers; this section also analyzes studies of token reinforcement, observing responses, switching responses, implicit chained schedules, and higher-order conditioning. Section III analyzes experiments in which potential conditioned reinforcers are used either to prolong responding or to generate responding during experimental extinction. This section discusses hypotheses that have been offered as alternatives to the concept of conditioned reinforcement and hypotheses concerning the necessary and sufficient conditions for establishing a conditioned reinforcer. Section IV discusses other variables that act when a conditioned reinforcer is being established or that act when an established conditioned reinforcer is used to develop or maintain behavior. Section V is a general discussion of conditioned reinforcement. The evidence indicates that the conditioned reinforcing effectiveness of a stimulus is directly related to the frequency of primary reinforcement occurring in its presence, but is independent of the response rate or response pattern occurring in its presence. Results from chained schedules comprised of several components indicate that a stimulus can be established as a conditioned reinforcer by pairing it with an already established conditioned reinforcer rather than a primary reinforcer; however, this type of higher-order conditioning has not been clearly demonstrated with respondent conditioning procedures. Although discriminative stimuli are usually conditioned reinforcers, the available evidence indicates that establishing a stimulus as a discriminative stimulus is not necessary or sufficient for establishing it as a conditioned reinforcer. Discriminative stimuli in chained schedules with several components are not always conditioned reinforcers; stimuli that are simply paired with reinforcers can become conditioned reinforcers. The hypotheses that have been offered as alternatives to the concept of conditioned reinforcement are too limited to integrate the data that exist. The concepts of conditioned reinforcement and chained schedule, however, can be used to integrate the data obtained with diverse techniques. Recent experiments have revealed several techniques for the development of effective conditioned reinforcers. These techniques provide a powerful tool for advancing understanding of conditioned reinforcement and for extending control over behavior.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Discrimination learning with and without \u201cerrors\u201d1",
@@ -26697,7 +26704,7 @@
     "signoffs": []
   },
   {
-    "title": "Inhibition and the stimulus control of operant behavior1",
+    "title": "Inhibition and the stimulus control of operant behavior",
     "year": 1970,
     "volume": 14,
     "issue": "3 Pt 2 Suppl",
@@ -26705,17 +26712,24 @@
     "authors": [
       "Hearst, E.",
       "Besley, S.",
-      "Farthing, G."
+      "Farthing, G. W."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1333688/",
-    "process": [],
+    "process": [
+      "Stimulus Control",
+      "Conditioned Inhibition",
+      "Generalization Gradient"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "A variety of methods, definitions, and theoretical notions that have been used in the study of inhibitory stimulus control were reviewed and evaluated. Preliminary data from several new operant methods were also described. It was proposed that future workers distinguish clearly between two forms of inhibitory control: (a) the learned power of a specific stimulus to reduce behavior, and (b) a dimensional effect, in which responding increases as values progressively more distant from the value of that specific stimulus along some dimension are presented (generalization gradient). Conclusions from several important recent studies were shown to be strongly dependent on the individual experimenter's criterion for deciding when a stimulus is inhibitory. The concept of inhibition seems a very valuable one for the field of operant behavior, and it deserves more attention than it has received in the past.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Color-naming functions for the pigeon1",
@@ -49163,7 +49177,7 @@
     "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1901/jeab.1981.36-285",
     "process": [
       "Behavioral Contrast",
-      "Additive Responses",
+      "Additivity Theory",
       "Schedule: Multiple"
     ],
     "static-equation": "",
@@ -49175,7 +49189,8 @@
     "reviewed": false,
     "signoffs": [],
     "ai-signoffs": 1,
-    "ai-reviewed": true
+    "ai-reviewed": true,
+    "needs-human": false
   },
   {
     "title": "Charles Bohris Ferster (1922-1981): An appreciation",
@@ -52153,17 +52168,24 @@
     "issue": 2,
     "pages": "345-384",
     "authors": [
-      "Williams, B."
+      "Williams, B. A."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1347926/",
-    "process": [],
+    "process": [
+      "Behavioral Contrast",
+      "Multiple Schedules of Reinforcement",
+      "Herrnsteins Equation"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Recent research on multiple schedule interactions is reviewed. Contrary to formulations that view contrast as the result of elicited behavior controlled by the stimulus-reinforcer contingency (e.g., additivity theory), the major controlling variable is the relative rate of reinforcement, which cannot be reduced to some combination of stimulus-reinforcer and response-reinforcer effects. Other recent theoretical formulations are also reviewed and all are found to face serious counterevidence. The best description of the available data continues to be in terms of the \u201ccontext of reinforcement,\u201d but Herrnstein's (1970) formulation of the basis of such context effects appears to be inadequate. An alternative conception is provided by Catania's concept of \u201cinhibition by reinforcement,\u201d by which rate of responding is inversely related to the average rate of reinforcement in the situation. Such a conception is related to Gibbon's recent scalar-expectancy account of autoshaping and Fantino's delay-reduction model of conditioned reinforcement, suggesting that a common set of principles determines several diverse conditioning phenomena. However, the empirical status of such a description remains uncertain, because recent evidence shows that schedule interactions are temporally asymmetric, depending primarily upon the conditions of reinforcement that follow a schedule component.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Eating and drinking: An economic analysis",
@@ -66281,14 +66303,21 @@
       "Domjan, M."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1322146/",
-    "process": [],
+    "process": [
+      "Reinforcement",
+      "Positive Reinforcement",
+      "Classical Conditioning"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Sexual reinforcers are not part of a regulatory system involved in the maintenance of critical metabolic processes, they differ for males and females, they differ as a function of species and mating system, and they show ontogenetic and seasonal changes related to endocrine conditions. Exposure to a member of the opposite sex without copulation can be sufficient for sexual reinforcement. However, copulatory access is a stronger reinforcer, and copulatory opportunity can serve to enhance the reinforcing efficacy of stimulus features of a sexual partner. Conversely, under certain conditions, noncopulatory exposure serves to decrease reinforcer efficacy. Many common learning phenomena such as acquisition, extinction, discrimination learning, second-order conditioning, and latent inhibition have been demonstrated in sexual conditioning. These observations extend the generality of findings obtained with more conventional reinforcers, but the mechanisms of these effects and their gender and species specificity remain to be explored.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "The role of autoshaping in cooperative two-player games between starlings",
@@ -67112,18 +67141,24 @@
     "issue": 3,
     "pages": "621-640",
     "authors": [
-      "McSweeney, F.",
-      "Roll, J."
+      "McSweeney, F. K.",
+      "Roll, J. M."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1322170/",
-    "process": [],
+    "process": [
+      "Response Rate",
+      "Conditioning"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "When the procedure is held constant within an experimental session, responding often changes systematically within that session. Many of these within-session changes in responding cannot be dismissed as learning curves or by-products of satiation. They have been observed in studies of positive reinforcement, avoidance, punishment, extinction, discrimination, delayed matching to sample, concept formation, maze and alley running, and laboratory analogues of foraging, as well as in the unconditioned substrates of conditioned behavior. When aversive stimuli are used, responding usually increases early in the session. When positive reinforcers are used, responding changes in a variety of ways, including increasing, decreasing, and bitonic functions. Both strong and minimal reinforcement procedures produce within-session decreases in positively reinforced behavior. Within-session changes in responding have substantial theoretical and methodological implications for research in conditioning.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Unit price as a useful metric in analyzing effects of reinforcer magnitude.",
@@ -73543,11 +73578,15 @@
     "issue": 2,
     "pages": "185-201",
     "authors": [
-      "Macenski, M.",
-      "Meisch, R."
+      "Macenski, M. J.",
+      "Meisch, R. A."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284677/",
-    "process": [],
+    "process": [
+      "Behavioral Pharmacology",
+      "Schedule: Concurrent",
+      "Schedule: Fixed Ratio"
+    ],
     "static-equation": "C = f(P) \\text{ where } P = \\frac{FR}{C_c}",
     "static-equation-definitions": "C=cocaine consumption; P=unit price; FR=fixed-ratio value; C_c=cocaine concentration",
     "recursive-equation": "",
@@ -73557,7 +73596,8 @@
     "reviewed": false,
     "signoffs": [],
     "ai-signoffs": 1,
-    "ai-reviewed": true
+    "ai-reviewed": true,
+    "needs-human": false
   },
   {
     "title": "Mental rotation and temporal contingencies.",
@@ -78464,14 +78504,21 @@
       "Panlilio, L."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284924/",
-    "process": [],
+    "process": [
+      "Stimulus Control",
+      "Schedule: Multiple",
+      "Behavioral Pharmacology"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Environmental stimuli that set the occasion wherein drugs are acquired can \"trigger\" drug-related behavior. Investigating the stimulus control of drug self-administration in laboratory animals should help us better understand this aspect of human drug abuse. Stimulus control of cocaine self-administration was generated here for the first time using multiple and chained schedules with short, frequently-alternating components--like those typically used to study food-maintained responding. The procedures and results are presented along with case histories to illustrate the strategies used to produce this stimulus control. All these multicomponent schedules contained variable-interval (VI) components as well as differential-reinforcement-of-other-behavior (DRO) or extinction components. Schedule parameters and unit dose were adjusted for each rat to produce stable, moderate rates in VI components, with minimal postreinforcement (infusion) pausing, and response cessation in extinction and DRO components. Whole-body drug levels on terminal baselines calculated retrospectively revealed that all rats maintained fairly stable drug levels (mean, 2.3 to 3.4 mg/kg) and molar rates of intake (approximately 6.0 mg/kg/hr). Within this range, no relation between local VI response rates and drug level was found. The stimulus control revealed in cumulative records was indistinguishable from that achieved with food under these schedules, suggesting that common mechanisms may underlie the control of cocaine- and food-maintained behavior.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Evolution, Behavior Principles, And Developmental Systems: A Review Of Gottlieb\u2019s Synthesizing Nature-nurture: Prenatal Roots Of Instinctive Behavior.",
@@ -79606,19 +79653,26 @@
     "issue": 3,
     "pages": "267-288",
     "authors": [
-      "Horne, P.",
-      "Lowe, C.",
-      "Randle, V."
+      "Horne, Pauline J.",
+      "Lowe, C. Fergus",
+      "Randle, Valerie R. L."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1284985/",
-    "process": [],
+    "process": [
+      "Stimulus Classes",
+      "Conditional Discrimination",
+      "Match to Sample"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Following pretraining with everyday objects, 1- to 4-year-old children received listener training with three pairs of arbitrary stimuli of differing shapes. For each pair, 9 children were trained to select one stimulus in response to the spoken word /zog/ and the other to the spoken word /vek/. Next, in the look-at-sample category match-to-sample test, none categorized the six stimuli correctly when asked to look at the sample before selecting from five comparisons. Seven of these children failed a subsequent test of corresponding speaker behavior (tact test); following tact training, 5 of them passed either a repeat of the look-at-sample category test (2 subjects) or an alternative category test (3 subjects) in which they were required to tact the sample before selecting comparisons. The remaining 2 failed both category tests. Of the 2 who passed the tact test, 1 passed the tact-sample category test; the other failed to complete category testing. Two children were next given a second stimulus set. One passed the look-at-sample category test and the tact test; the other failed both tests but passed the tact-sample category test after tact training. The results show that 1- to 4-year-old children may learn listener behavior without corresponding speaker behavior. The results also show that common listener behavior is not sufficient to establish arbitrary stimulus classes, and they are consistent with the proposition that naming may be necessary for categorization of such stimuli.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Wiener filter estimation of transfer functions.",
@@ -80205,14 +80259,21 @@
       "Fantino, E."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193697/",
-    "process": [],
+    "process": [
+      "Choice",
+      "Stimulus Control",
+      "Schedule: Variable Ratio"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The sunk cost effect is the increased tendency to persist in an endeavor once an investment of money, effort, or time has been made. To date, humans are the only animal in which this effect has been observed unambiguously. We developed a behavior-analytic model of the sunk cost effect to explore the potential for this behavior in pigeons as well as in humans. Each trial started out with a short expected ratio, but on some trials assumed a longer expected ratio part way through the trial. Subjects had the (usually preferable) option of \u201cescaping\u201d the trial if the longer expected ratio had come into effect in order to bring on a new trial that again had a short expected ratio. In Experiments 1 through 3, we manipulated two independent variables that we hypothesized would affect the pigeons' ability to discriminate the increase in the expected ratio within a trial: (a) the presence or absence of stimuli that signal an increase in the expected ratio, and (b) the severity of the increase in the expected ratio. We found that the pigeons were most likely to persist nonoptimally through the longer expected ratios when stimulus changes were absent and when the increase in the expected ratio was less severe. Experiment 4 employed a similar procedure with human subjects that manipulated only the severity of the increase in the expected ratio and found a result similar to that of the pigeon experiment. In Experiment 5, we tested the hypothesis that a particular history of reinforcement would induce pigeons to persist through the longer expected ratios; the results suggested instead that the history of reinforcement caused the pigeons to persist less compared to pigeons that did not have that history.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Simultaneous Visual Discrimination In Asian Elephants",
@@ -80221,20 +80282,27 @@
     "issue": 1,
     "pages": "15-29",
     "authors": [
-      "Nissani, M.",
-      "Hoefler-Nissani, D.",
-      "Lay, U.",
-      "Htun, U."
+      "Nissani, Moti",
+      "Hoefler-Nissani, Donna",
+      "U Tin Lay",
+      "U Wan Htun"
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193698/",
-    "process": [],
+    "process": [
+      "Discrimination Learning",
+      "Discrete Trials",
+      "Visual Stimulus"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
-    "abstract": "Two experiments explored the behavior of 20 Asian elephants (Elephas aximus) in simultaneous visual discrimination tasks. In Experiment 1, 7 Burmese logging elephants acquired a white+/black\u2212 discrimination, reaching criterion in a mean of 2.6 sessions and 117 discrete trials, whereas 4 elephants acquired a black+/white\u2212 discrimination in 5.3 sessions and 293 trials. One elephant failed to reach criterion in the white+/black\u2212 task in 9 sessions and 549 trials, and 2 elephants failed to reach criterion in the black+/white\u2212 task in 9 sessions and 452 trials. In Experiment 2, 3 elephants learned a large/small transposition problem, reaching criterion within a mean of 1.7 sessions and 58 trials. Four elephants failed to reach criterion in 4.8 sessions and 193 trials. Data from both the black/ white and large/small discriminations showed a surprising age effect, suggesting that elephants beyond the age of 20 to 30 years either may be unable to acquire these visual discriminations or may require an inordinate number of trials to do so. Overall, our results cannot be readily reconciled with the widespread view that elephants possess exceptional intelligence.",
+    "abstract": "Two experiments explored the behavior of 20 Asian elephants (Elephas maximus) in simultaneous visual discrimination tasks. In Experiment 1, 7 Burmese logging elephants acquired a white+/black\u2212 discrimination, reaching criterion in a mean of 2.6 sessions and 117 discrete trials, whereas 4 elephants acquired a black+/white\u2212 discrimination in 5.3 sessions and 293 trials. One elephant failed to reach criterion in the white+/black\u2212 task in 9 sessions and 549 trials, and 2 elephants failed to reach criterion in the black+/white\u2212 task in 9 sessions and 452 trials. In Experiment 2, 3 elephants learned a large/small transposition problem, reaching criterion within a mean of 1.7 sessions and 58 trials. Four elephants failed to reach criterion in 4.8 sessions and 193 trials. Data from both the black/white and large/small discriminations showed a surprising age effect, suggesting that elephants beyond the age of 20 to 30 years either may be unable to acquire these visual discriminations or may require an inordinate number of trials to do so. Overall, our results cannot be readily reconciled with the widespread view that elephants possess exceptional intelligence.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Within-Subject Testing Of The Signaled-Reinforcement Effect On Operant Responding As Measured By Response Rate And Resistance To Change",
@@ -80244,17 +80312,24 @@
     "pages": "31-45",
     "authors": [
       "Reed, P.",
-      "Doughty, A."
+      "Doughty, A. H."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193699/",
-    "process": [],
+    "process": [
+      "Multiple Schedules of Reinforcement",
+      "Schedule: Random Interval",
+      "Conditioned Reinforcement"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Response rates under random-interval schedules are lower when a brief (500 ms) signal accompanies reinforcement than when there is no signal. The present study examined this signaled-reinforcement effect and its relation to resistance to change. In Experiment 1, rats responded on a multiple random-interval 60-s random-interval 60-s schedule, with signaled reinforcement in only one component. Response resistance to alternative reinforcement, prefeeding, and extinction was compared between these components. Lower response rates, and greater resistance to change, occurred in the component with the reinforcement signal. In Experiment 2, response rates and resistance to change were compared after training on a multiple random-interval 60-s random-interval 60-s schedule in which reinforcer delivery was unsignaled in one component and a response-produced uncorrelated stimulus was presented in the other component. Higher response rates and greater resistance to change occurred with the uncorrelated stimulus. These results highlight the significance of considering the effects of an uncorrelated signal when used as a control condition, and challenge accounts of resistance to change that depend solely on reinforcer rate.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Naming And Categorization In Young Children: III. Vocal Tact Training And Transfer Of Function",
@@ -80268,14 +80343,21 @@
       "Hughes, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193700/",
-    "process": [],
+    "process": [
+      "Stimulus Classes",
+      "Match to Sample",
+      "Discrimination Training"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Following pretraining with everyday objects, 10 children aged from 1 to 4 years were given common vocal tact training with a set of three pairs of arbitrary stimuli of differing shapes; Set 1. Nine children learned to tact one stimulus as \u201czog\u201d and the other as \u201cvek\u201d in each pair, and all passed subsequent pairwise tests for the corresponding listener behavior to each listener stimulus (i.e., /zog/ and /vek/, respectively). The children were next trained to clap to one stimulus of Pair 1 and wave to the other, and all then showed name-consistent transfer of these behaviors to the stimuli of Pair 2 and Pair 3. Seven children also were given a test of listener responding to experimenter-modeled clap and wave gestures, respectively, which they all passed. Four of the children next participated in a category match-to-sample test for the Set 1 stimuli; all 4 passed. For each pair of two additional six-stimuli sets, Set 2 and Set 3, 3 children were trained to wave to one stimulus and to clap to the other. For each set, all 3 children showed perfect transfer of the vocal tacts trained to Set 1, and of listener behavior both to the auditory stimuli /zog/ and /vek/ and to experimenter-modeled clap and wave gestures. They also sorted the stimuli perfectly in category match-to-sample tests for Set 2, Sets 1 and 2 combined, Set 3, and Sets 1, 2, and 3 combined. The results show that even in very young children, naming is a powerful means of generating new category relations among as many as 18 arbitrary stimuli.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Marijuana Effects On Human Forgetting Functions",
@@ -80419,14 +80501,21 @@
       "Bragason, O."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193745/",
-    "process": [],
+    "process": [
+      "Schedule: Concurrent Chains",
+      "Choice",
+      "Generalized Matching Law"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Our research addressed the question of whether sensitivity to relative reinforcer magnitude in concurrent chains depends on the distribution of reinforcer delays when the terminal-link schedules are equal. In Experiment 1, 12 pigeons responded in a two-component procedure. In both components, the initial links were concurrent variable-interval 40 s variable-interval 40 s, and the terminal links were both 20-s interval schedules in which responses were reinforced by either 4 s of grain in one, or 2 s of grain in the other. The only difference between the components was whether the terminal-link schedules were fixed interval or variable intervals. For all subjects, the relative rate of responding in the initial links for the terminal link that produced the 4-s reinforcer was greater when the terminal links were fixed-interval schedules than when they were variable-interval schedules. This result is contrary to the prediction of Grace's (1994) contextual choice model, but is consistent with both Mazur's (2001) hyperbolic value-added model and Killeen's (1985) incentive theory. In Experiment 2, 4 pigeons responded in a concurrent-chains procedure in which 4-s or 2-s reinforcers were provided independently of responding according to equal fixed-time or mixed-time schedules. Preference for the 4-s reinforcer increased as the variability of the intervals comprising the mixed-time schedules was decreased. Generalized-matching sensitivity of initial-link response allocation to relative reinforcer magnitude was proportional to the geometric mean of the terminal-link delays.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Emergent, Untrained Stimulus Relations in Many-to-One Matching-to-Sample Discriminations in Rats",
@@ -80438,14 +80527,21 @@
       "Nakagawa, E."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193746/",
-    "process": [],
+    "process": [
+      "Matching to Sample",
+      "Conditional Discrimination",
+      "Stimulus Classes"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The present experiment investigated whether rats formed emergent, untrained stimulus relations in many-to-one matching-to-sample discriminations. In Phase 1, rats were trained to match two samples (triangle and horizontal stripes) to a common comparison (horizontal stripes) and two additional samples (circle or vertical stripes) to another comparison (vertical stripes). Then, in Phase 2, the rats were trained to match the one sample (triangle) to a new comparison (black) and the other sample (circle) to another comparison (white). In the Phase 3 test, half the rats (consistent group) were given two new tasks in which the sample-correct comparison relation was consistent with any emergent stimulus relations that previously may have been learned. The remaining 6 rats (inconsistent group) were given two new tasks in which the sample-correct comparison relation was not consistent with any previously learned emergent stimulus relations. Rats in the consistent group showed more accurate performance at the start of Phase 3, and faster learning to criterion in this phase, as compared with rats in the inconsistent group. This finding suggests that rats may form emergent, untrained stimulus relations between the discriminative stimuli in many-to-one matching-to-sample discriminations.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Eliot Shimoff 1943\u20132004",
@@ -80477,14 +80573,21 @@
       "Lattal, K."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193754/",
-    "process": [],
+    "process": [
+      "Delay of Reinforcement",
+      "Schedule: Multiple",
+      "Herrnsteins Equation"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Two experiments with pigeons examined the effects of unsignaled, nonresetting delays of reinforcement on responding maintained by different reinforcement rates. In Experiment 1, 3-s unsignaled delays were introduced into each component of a multiple variable-interval (VI) 15-s VI 90-s VI 540-s schedule. When considered as a proportion of the preceding immediate reinforcement baseline, responding was decreased similarly for the three multiple-schedule components in both the first six and last six sessions of exposure to the delay. In addition, the relation between response rates and reinforcement rates was altered such that both parameters of the single-response version of the matching law (i.e., k and Re) were decreased. Experiment 2 examined the effects of unsignaled delays ranging from 0.5 s to 8.0 s on responding maintained by a multiple VI 20-s VI 120-s schedule of reinforcement. Response rates in both components increased with brief unsignaled delays and decreased with longer delays. As in Experiment 1, response rates as a proportion of baseline were affected similarly for the two components in both the first six and last six sessions of exposure to the delay. Unlike delays imposed between two stimulus events, the effects of delays between responses and reinforcers do not appear to be attenuated when the average time between reinforcers is longer. In addition, the disruptions produced by unsignaled delays appear to be inconsistent with the general finding that responding maintained by higher rates of reinforcement is less resistant to change.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Effects Of Reinforcement History On Response Rate And Response Pattern In Periodic Reinforcement",
@@ -80497,14 +80600,21 @@
       "Menez, M."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193756/",
-    "process": [],
+    "process": [
+      "Schedule: Fixed Interval",
+      "Temporal Control",
+      "Response Rate"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Several researchers have suggested that conditioning history may have long-term effects on fixed-interval performances of rats. To test this idea and to identify possible factors involved in temporal control development, groups of rats initially were exposed to different reinforcement schedules: continuous, fixed-time, and random-interval. Afterwards, half of the rats in each group were studied on a fixed-interval 30-s schedule of reinforcement and the other half on a fixed-interval 90-s schedule of reinforcement. No evidence of long-term effects attributable to conditioning history on either response output or response patterning was found; history effects were transitory. Different tendencies in trajectory across sessions were observed for measures of early and late responding within the interreinforcer interval, suggesting that temporal control is the result of two separate processes: one involved in response output and the other in time allocation of responding and not responding.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "The Effects Of Interval Duration On Temporal Tracking And Alternation Learning",
@@ -80517,14 +80627,21 @@
       "Staddon, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193757/",
-    "process": [],
+    "process": [
+      "Temporal Control",
+      "Postreinforcement Pause",
+      "Schedule: Fixed Interval"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "On cyclic-interval reinforcement schedules, animals typically show a postreinforcement pause that is a function of the immediately preceding time interval (temporal tracking). Animals, however, do not track single-alternation schedules\u2014when two different intervals are presented in strict alternation on successive trials. In this experiment, pigeons were first trained with a cyclic schedule consisting of alternating blocks of 12 short intervals (5\u2005s or 30\u2005s) and 12 long intervals (180\u2005s), followed by three different single-alternation interval schedules: (a) 30\u2005s and 180\u2005s, (b) 5\u2005s and 180\u2005s, and (c) 5\u2005s and 30\u2005s. Pigeons tracked both schedules with alternating blocks of 12 intervals. With the single-alternation schedules, when the short interval duration was 5\u2005s, regardless of the duration of the longer interval, pigeons learned the alternation pattern, and their pause anticipated the upcoming interval. When the shorter interval was 30\u2005s, even when the ratio of short to long intervals was kept at 6:1, pigeons did not initially show anticipatory pausing\u2014a violation of the principle of timescale invariance.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Effects Of Reinforcer Probability, Delay, And Response Requirements On The Choices Of Rats And Pigeons: Possible Species Differences",
@@ -80536,14 +80653,21 @@
       "Mazur, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193758/",
-    "process": [],
+    "process": [
+      "Choice",
+      "Delay of Reinforcement",
+      "Conditioned Reinforcement"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "In Experiment 1 with rats, a left lever press led to a 5-s delay and then a possible reinforcer. A right lever press led to an adjusting delay and then a certain reinforcer. This delay was adjusted over trials to estimate an indifference point, or a delay at which the two alternatives were chosen about equally often. Indifference points increased as the probability of reinforcement for the left lever decreased. In some conditions with a 20% chance of food, a light above the left lever was lit during the 5-s delay on all trials, but in other conditions, the light was only lit on those trials that ended with food. Unlike previous results with pigeons, the presence or absence of the delay light on no-food trials had no effect on the rats' indifference points. In other conditions, the rats showed less preference for the 20% alternative when the time between trials was longer. In Experiment 2 with rats, fixed-interval schedules were used instead of simple delays, and the presence or absence of the fixed-interval requirement on no-food trials had no effect on the indifference points. In Experiment 3 with rats and Experiment 4 with pigeons, the animals chose between a fixed-ratio 8 schedule that led to food on 33% of the trials and an adjusting-ratio schedule with food on 100% of the trials. Surprisingly, the rats showed less preference for the 33% alternative in conditions in which the ratio requirement was omitted on no-food trials. For the pigeons, the presence or absence of the ratio requirement on no-food trials had little effect. The results suggest that there may be differences between rats and pigeons in how they respond in choice situations involving delayed and probabilistic reinforcers.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Morphine Tolerance As A Function Of Ratio Schedule: Response Requirement Or Unit Price?",
@@ -80558,14 +80682,21 @@
       "Dykstra, L."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193759/",
-    "process": [],
+    "process": [
+      "Behavioral Pharmacology",
+      "Schedule: Fixed Ratio",
+      "Schedule: Multiple"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Key pecking by 3 pigeons was maintained by a multiple fixed-ratio 10, fixed-ratio 30, fixed-ratio 90 schedule of food presentation. Components differed with respect to amount of reinforcement, such that the unit price was 10 responses per 1-s access to food. Acute administration of morphine, l-methadone, and cocaine dose-dependently decreased overall response rates in each of the components. When a rate decreasing dose of morphine was administered daily, tolerance, as measured by an increase in the dose that reduced response rates to 50% of control (i.e., the ED50 value), developed in each of the components; however, the degree of tolerance was smallest in the fixed-ratio 90 component (i.e., the ED50 value increased the least). When the l-methadone dose-effect curve was redetermined during the chronic morphine phase, the degree of cross-tolerance conferred to l-methadone was similar across components, suggesting that behavioral variables may not influence the degree of cross-tolerance between opioids. During the chronic phase, the cocaine dose-effect curve shifted to the right for 2 pigeons and to the left for 1 pigeon, which is consistent with predictions based on the lack of pharmacological similarity between morphine and cocaine. When the morphine, l-methadone, and cocaine dose-effect curves were redetermined after chronic morphine administration ended, the morphine and l-methadone ED50s replicated those obtained prior to chronic morphine administration. The morphine data suggest that the fixed-ratio value (i.e., the absolute output) determines the degree of tolerance and not the unit price.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Effects Of Methylphenidate And Morphine On Delay-Discount Functions Obtained Within Sessions",
@@ -80574,18 +80705,25 @@
     "issue": 3,
     "pages": "297-314",
     "authors": [
-      "Pitts, R.",
-      "McKinney, A."
+      "Pitts, Raymond C.",
+      "McKinney, A. Patrick"
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1193760/",
-    "process": [],
+    "process": [
+      "Choice",
+      "Delay of Reinforcement",
+      "Behavioral Pharmacology"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Four rats responded under a \u201cself-control\u201d procedure designed to obtain delay-discount functions within sessions. Each session consisted of seven blocks, with seven trials within each block. Each block consisted of two initial forced-choice trials followed by five free-choice trials. On choice trials, the rats could press either of two retractable levers. A press on one lever was followed by presentation of a smaller reinforcer (a single dipper presentation of a sucrose solution); a press on the other lever was followed by presentation of a larger reinforcer (four consecutive dipper presentations). The delay associated with the smaller reinforcer always was 0\u2005s, whereas the signaled delay associated with the larger reinforcer increased across blocks (from 0 to 50\u2005s). Under these conditions, the percentage of choices of the larger reinforcer decreased across blocks, and relatively reliable delay-discount functions were obtained within sessions. Doses of methylphenidate (1.0 to 17.0\u2005mg/kg) and morphine (0.3 to 17.0\u2005mg/kg) were then administered prior to selected sessions. Typically, intermediate doses of methylphenidate shifted the discount functions to the right (increased choices of the larger reinforcer). For 2 of the rats, this effect was pronounced; for the other 2 rats, this effect occurred after the range of delays for the larger reinforcer was decreased (0 to 20\u2005s). On the other hand, in most cases morphine produced a slight leftward shift in the discount function (decreased choices of the larger reinforcer). The present procedure appears to be a useful and efficient method to characterize drug effects on an entire delay-discount function. As with many procedures used to study self-control choices, however, sources of control other than reinforcement delay and amount may have been operating in the present study, and these sources must be considered when interpreting drug effects.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Behaviorism Makes Its Debut: A Review of Lattal and Chase's Behavior Theory and Philosophy",
@@ -80681,35 +80819,49 @@
       "Nevin, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1243897/",
-    "process": [],
+    "process": [
+      "Delayed Match to Sample",
+      "Remembering",
+      "Schedule: Multiple"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "This experiment examined the effects of reinforcement probability on resistance to change of remembering and response rate. Pigeons responded on a two-component multiple schedule in which completion of a variable-interval 20-s schedule produced delayed matching-to-sample trials in both components. Each session included four delays (0.1\u2005s, 2\u2005s, 4\u2005s, and 8\u2005s) between sample termination and presentation of comparison stimuli in both components. The two components differed in the probability of reinforcement arranged for correct matches (i.e., rich, p \u200a=\u200a .9; lean, p \u200a=\u200a .1). Response rates during the variable-interval portion of the procedure were higher in the rich component during baseline and more resistant to the disruptive effects of intercomponent food and extinction. Forgetting functions were constructed by examining matching accuracy as a function of delay duration. Baseline accuracy was higher in the rich component than in the lean component as measured by differences in the y-intercept of the forgetting functions (i.e., initial discrimination), rather than from differences in the slope of the forgetting function (i.e., rate of forgetting). Intercomponent food increased the rate of forgetting relatively more in the lean component than in the rich component, but initial discrimination was not systematically affected. Extinction reduced initial discrimination relatively more in the lean component than in the rich component, but did not systematically affect rate of forgetting. These results are consistent with our previous data suggesting that, as for response rate, accuracy and resistance to change of discriminating are positively related to rate of reinforcement. These data also suggest that the disruptability of remembering depends on the conditions of reinforcement, but the way in which remembering is disrupted depends on the nature of the disruptor.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
-    "title": "Effects Of Amphetamine-Cns Depressant Combinations And Of Other Cns Stimulants In Four-Choice Drug Discriminations",
+    "title": "Effects Of Amphetamine-CNS Depressant Combinations And Of Other CNS Stimulants In Four-Choice Drug Discriminations",
     "year": 2005,
     "volume": 84,
     "issue": 1,
     "pages": "77-97",
     "authors": [
       "Li, M.",
-      "Wessinger, W.",
-      "McMillan, D."
+      "Wessinger, W. D.",
+      "McMillan, D. E."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1243898/",
-    "process": [],
+    "process": [
+      "Behavioral Pharmacology",
+      "Discrimination",
+      "Stimulus Control"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Three pigeons were trained to discriminate among 5\u2005mg/kg pentobarbital, 2\u2005mg/kg amphetamine, a combination of these two drugs at these doses, and saline using a four-choice procedure (amphetamine\u2013pentobarbital group). Three other pigeons were trained to discriminate among 5\u2005mg/kg morphine, 2\u2005mg/kg methamphetamine, a combination of these two drugs at these doses, and saline (methamphetamine\u2013morphine group). After 10 to 13\u2005months of training, the pigeons averaged more than 90% of their responses on the appropriate key during training sessions. In subsequent testing, dose-response curves were determined for the individual drugs, for a wide range of dose combinations of the training drugs, and for two drugs to which the pigeons had not been exposed previously (pseudoephedrine and nicotine). After low test doses of the training drugs, pigeons responded on the saline key. As the dose increased, responding on the key associated with that drug during training sessions increased. When training drugs were combined at doses that were not discriminable when given alone, responding occurred on the saline key. When a discriminable dose of one training drug was combined with a nondiscriminable dose of the other training drug, responding occurred on the key associated with the discriminable dose. When both drugs were given at discriminable doses, responding almost always occurred on the drug-combination key. The response-rate decreasing effects of pentobarbital and amphetamine were mutually antagonized when the drugs were combined, but the rate-decreasing effects of morphine and methamphetamine were not. After low doses of pseudoephedrine and nicotine, pigeons in both groups responded on the saline key. After higher doses of pseudoephedrine and nicotine, responding in the amphetamine\u2013pentobarbital group occurred primarily on the amphetamine key. In the methamphetamine\u2013morphine group, higher doses of pseudoephedrine and especially nicotine engendered more responding on the combination key than had occurred in the other group. The four-choice procedure can reveal subtle effects in the discrimination of individual drugs and drug combinations that are not apparent with procedures offering fewer response alternatives.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "The Sensitivity Of Response Rate To The Rate Of Variable-Interval Reinforcement For Pigeons And Rats: A Review",
@@ -80721,7 +80873,11 @@
       "Shull, R."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1243899/",
-    "process": [],
+    "process": [
+      "Herrnsteins Equation",
+      "Schedule: Variable Interval",
+      "Response Rate"
+    ],
     "static-equation": "B = \\frac{kR}{R + R_o}",
     "static-equation-definitions": "B = rate of response; R = rate of reinforcement; k = maximum response rate; R_o = rate of reinforcers for half maximum response rate",
     "recursive-equation": "",
@@ -80731,7 +80887,8 @@
     "reviewed": false,
     "signoffs": [],
     "ai-signoffs": 1,
-    "ai-reviewed": true
+    "ai-reviewed": true,
+    "needs-human": false
   },
   {
     "title": "On The Classic And Modern Theories Of Matching",
@@ -80740,17 +80897,24 @@
     "issue": 1,
     "pages": "111-127",
     "authors": [
-      "McDowell, J."
+      "McDowell, J. J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1243894/",
-    "process": [],
+    "process": [
+      "Matching Law",
+      "Generalized Matching Law",
+      "Herrnsteins Equation"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Classic matching theory, which is based on Herrnstein's (1961) original matching equation and includes the well-known quantitative law of effect, is almost certainly false. The theory is logically inconsistent with known experimental findings, and experiments have shown that its central constant-k assumption is not tenable. Modern matching theory, which is based on the power function version of the original matching equation, remains tenable, although it has not been discussed or studied extensively. The modern theory is logically consistent with known experimental findings, it predicts the fact and details of the violation of the classic theory's constant-k assumption, and it accurately describes at least some data that are inconsistent with the classic theory.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "A Test Of The Formal And Modern Theories Of Matching",
@@ -80764,14 +80928,21 @@
       "McDowell, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1243976/",
-    "process": [],
+    "process": [
+      "Matching Law",
+      "Choice",
+      "Schedule: Concurrent Variable-Interval"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "The present study tested a formal, or purely mathematical, theory of matching, and a modern account derived by McDowell (1986) that incorporates deviations from strict matching\u2014bias and sensitivity. Six humans pressed a lever for monetary reinforcers on five concurrent variable interval (VI) schedules of reinforcement. All schedules were presented during each session. The magnitude on one alternative remained constant, and five magnitudes were presented across sessions on the other alternative. To test the formal account, two absolute response rate equations were fitted to the response and reinforcement rates at each alternative at each magnitude. Although the equations accounted for a high percentage of variance, there was a significant negative correlation between the standardized residuals and the predicted response rates. To test the modern account, an ensemble of four equations was fitted to the data. The equations predicted relative and absolute responding, and the independent variables in each equation were adjusted for bias and sensitivity. The equations accounted for a high percentage of variance, and the standardized residuals were not correlated with the predicted response rates. The values of the parameters were consistent with empirical findings and theoretical predictions, including the prediction that k should remain constant across changes in reinforcer magnitude. The results suggest that the formal theory of matching does not describe the data, and that the modern theory may provide an accurate and coherent description of concurrent and single-alternative responding.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Associative Symmetry In The Pigeon After Successive Matching-To-Sample Training",
@@ -80784,14 +80955,21 @@
       "Wasserman, E."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1243977/",
-    "process": [],
+    "process": [
+      "Matching to Sample",
+      "Conditional Discrimination",
+      "Stimulus Equivalence"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "If an organism is explicitly taught an A\u2192B association, then might it also spontaneously learn the symmetrical B\u2192A association? Little evidence attests to such \u201cassociative symmetry\u201d in nonhuman animals. We report for the first time a clear case of associative symmetry in the pigeon. Experiment 1 used a successive go/no go matching-to-sample procedure, which showed all of the training and testing stimuli in one location and intermixed arbitrary and identity matching trials. We found symmetrical responding that was as robust during testing (B\u2192A) as during training (A\u2192B). In Experiment 2, we trained different pigeons using only arbitrary matching trials before symmetry testing. No symmetrical responding was found. In Experiment 3, we trained other pigeons with only arbitrary matching trials and then tested for symmetry. When these pigeons, too, did not exhibit symmetrical responding, we retrained them with intermixed identity and arbitrary matching trials. Less robust symmetrical responding was obtained here than in Experiment 1. Collectively, these results suggest that identity matching may have to be learned concurrently with arbitrary matching from the outset of training for symmetry to emerge.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Earning And Obtaining Reinforcers Under Concurrent Interval Scheduling",
@@ -80800,17 +80978,24 @@
     "issue": 2,
     "pages": "167-183",
     "authors": [
-      "MacDonall, J."
+      "MacDonall, J. S."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1243978/",
-    "process": [],
+    "process": [
+      "Generalized Matching Law",
+      "Schedule: Concurrent",
+      "Choice"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Contingencies of reinforcement specify how reinforcers are earned and how they are obtained. Ratio contingencies specify the number of responses that earn a reinforcer, and the response satisfying the ratio requirement obtains the earned reinforcer. Simple interval schedules specify that a certain time earns a reinforcer, which is obtained by the first response after the interval. The earning of reinforcers has been overlooked, perhaps because simple schedules confound the rates of earning reinforcers with the rates of obtaining reinforcers. In concurrent variable-interval schedules, however, spending time at one alternative earns reinforcers not only at that alternative, but at the other alternative as well. Reinforcers earned for delivery at the other alternative are obtained after changing over. Thus the rates of earning reinforcers are not confounded with the rate of obtaining reinforcers, but the rates of earning reinforcers are the same at both alternatives, which masks their possibly differing effects on preference. Two experiments examined the separate effects of earning reinforcers and of obtaining reinforcers on preference by using concurrent interval schedules composed of two pairs of stay and switch schedules (MacDonall, 2000). In both experiments, the generalized matching law, which is based on rates of obtaining reinforcers, described responding only when rates of earning reinforcers were the same at each alternative. An equation that included both the ratio of the rates of obtaining reinforcers and the ratio of the rates of earning reinforcers described the results from all conditions from each experiment.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Effects Of Adding A Second Reinforcement Alternative: Implications For Herrnstein's Interpretation Of re",
@@ -80824,14 +81009,21 @@
       "Dallery, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1243979/",
-    "process": [],
+    "process": [
+      "Herrnsteins Equation",
+      "Matching Law",
+      "Schedule: Concurrent Variable-Interval"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
     "recursive-equation-definitions": "",
     "abstract": "Herrnstein's hyperbola describes the relation between response rate and reinforcer rate on variable-interval (VI) schedules. According to Herrnstein's (1970) interpretation, the parameter re represents the reinforcer rate extraneous to the alternative to which the equation is fitted (the target alternative). The hyperbola is based on an assumption that extraneous reinforcer rate remains constant with changes in reinforcer rate on the target alternative (the constant-re assumption) and that matching with no bias and perfect sensitivity occurs between response and reinforcer ratios. In the present experiment, 12 rats pressed levers for food on a series of 10 VI schedules arranged on the target alternative. Across conditions, six VI values and extinction were arranged on a second alternative. Reinforcer rate on the second alternative, r2, negatively covaried with reinforcer rate on the target alternative for five of the six VI values on the second alternative, and significant degrees of bias and undermatching occurred in response ratios. Given covariation of reinforcer rate on the second and target alternatives, the constant-re assumption can be maintained only by assuming that reinforcer rate from unmeasured background sources, rb, covaries with reinforcer rate on the second alternative such that their sum, re, remains constant. In a single-schedule arrangement, however, re equals rb and thus rb is assumed to remain constant, forcing a conceptual inconsistency between single- and concurrent-schedule arrangements. Furthermore, although an alternative formulation of the hyperbola can account for variations in bias and sensitivity, the modified equation also is based on the constant-re assumption and therefore suffers from the same logical problem as the hyperbola when reinforcer rate on the second alternative covaries with reinforcer rate on the target alternative.",
     "journal": "JEAB",
-    "signoffs": []
+    "signoffs": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Crewmember Performance Before, During, And After Spaceflight",
