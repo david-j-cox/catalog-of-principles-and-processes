@@ -1,0 +1,898 @@
+{
+ "0": {
+  "pmcid": "PMC1403885",
+  "page_pmcid": "",
+  "catalog_title": "The Phantom Plateau",
+  "page_title": "The Phantom Plateau",
+  "ratio": 1.0,
+  "match": true
+ },
+ "1": {
+  "pmcid": "PMC1403873",
+  "page_pmcid": "",
+  "catalog_title": "AN EASILY COPIED INK FOR GRAPHIC RECORDERS",
+  "page_title": "AN EASILY COPIED INK FOR GRAPHIC RECORDERS",
+  "ratio": 1.0,
+  "match": true
+ },
+ "2": {
+  "pmcid": "PMC1403876",
+  "page_pmcid": "",
+  "catalog_title": "A Conjunctive Schedule of Reinforcement",
+  "page_title": "A Conjunctive Schedule of Reinforcement",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3": {
+  "pmcid": "PMC1403884",
+  "page_pmcid": "",
+  "catalog_title": "Operant Extinction After Fixed-Interval Schedules with Young Children",
+  "page_title": "Operant Extinction after Fixed-interval Reinforcement with Young Children",
+  "ratio": 0.886,
+  "match": true
+ },
+ "4": {
+  "pmcid": "PMC1403867",
+  "page_pmcid": "",
+  "catalog_title": "SPARK SUPPRESSION",
+  "page_title": "SPARK SUPPRESSION",
+  "ratio": 1.0,
+  "match": true
+ },
+ "6": {
+  "pmcid": "PMC1403863",
+  "page_pmcid": "",
+  "catalog_title": "TENSION-GAUGE",
+  "page_title": "TENSION-GAUGE",
+  "ratio": 1.0,
+  "match": true
+ },
+ "8": {
+  "pmcid": "PMC1403874",
+  "page_pmcid": "",
+  "catalog_title": "NEW INK FOR CUMULATIVE RECORDERS",
+  "page_title": "NEW INK FOR CUMULATIVE RECORDERS",
+  "ratio": 1.0,
+  "match": true
+ },
+ "14": {
+  "pmcid": "PMC1403883",
+  "page_pmcid": "",
+  "catalog_title": "Avoidance Behavior and the Development of Gastroduodenal Ulcers",
+  "page_title": "Avoidance Behavior and the Development of Duodenal Ulcers",
+  "ratio": 0.95,
+  "match": true
+ },
+ "37": {
+  "pmcid": "PMC1403933",
+  "page_pmcid": "",
+  "catalog_title": "Erratum: The Effects of Deprivation upon Temporally Spaced Responding",
+  "page_title": "Erratum: The Effects of Deprivation upon Temporally Spaced Responding",
+  "ratio": 1.0,
+  "match": true
+ },
+ "79": {
+  "pmcid": "PMC1403951",
+  "page_pmcid": "",
+  "catalog_title": "Abstracts of the Conference on the Experimental Analysis of Behavior",
+  "page_title": "Abstracts of the Conference on the Experimental Analysis of Behavior",
+  "ratio": 1.0,
+  "match": true
+ },
+ "83": {
+  "pmcid": "PMC1403914",
+  "page_pmcid": "",
+  "catalog_title": "Punishment and Recovery During Fixed-Ratio Performance",
+  "page_title": "Punishment and recovery during fixed-ratio performance",
+  "ratio": 1.0,
+  "match": true
+ },
+ "85": {
+  "pmcid": "PMC1403905",
+  "page_pmcid": "",
+  "catalog_title": "A FLEXIBLE MODEL FOR GENERALIZATION GRADIENTS",
+  "page_title": "A flexible model for generalization gradients",
+  "ratio": 1.0,
+  "match": true
+ },
+ "86": {
+  "pmcid": "PMC1403907",
+  "page_pmcid": "",
+  "catalog_title": "The Psychiatric Nurse as a Behavioral Engineer",
+  "page_title": "The psychiatric nurse as a behavioral engineer",
+  "ratio": 1.0,
+  "match": true
+ },
+ "87": {
+  "pmcid": "PMC1403908",
+  "page_pmcid": "",
+  "catalog_title": "THE EFFECT OF CHANGING THE SCHEDULE OF REINFORCEMENTUPON DURATION OF RESPONDING'",
+  "page_title": "The effect of changing the schedule of reinforcement upon duration of responding",
+  "ratio": 0.994,
+  "match": true
+ },
+ "88": {
+  "pmcid": "PMC1403901",
+  "page_pmcid": "",
+  "catalog_title": "EFFECTS OF METHYLPHENIDYLACETATE AND CHLORPROMAZINEON CERTAIN COMPONENTS OF GENERAL ACTIVITY",
+  "page_title": "Effects of methylphenidylacetate and chlorpromazine on certain components of general activity",
+  "ratio": 0.995,
+  "match": true
+ },
+ "89": {
+  "pmcid": "PMC1403906",
+  "page_pmcid": "",
+  "catalog_title": "THE RELATION OF AMOUNT OF REINFORCEMENT TO PERFORMANCEUNDER A FIXED-INTERVAL SCHEDULE",
+  "page_title": "The relation of amount of reinforcement to performance under a fixed-interval schedule",
+  "ratio": 0.994,
+  "match": true
+ },
+ "90": {
+  "pmcid": "PMC1403903",
+  "page_pmcid": "",
+  "catalog_title": "GENERA LIZA TION OF CONDITIONED SUPPRESSION'",
+  "page_title": "Generalization of conditioned suppression",
+  "ratio": 0.976,
+  "match": true
+ },
+ "91": {
+  "pmcid": "PMC1403969",
+  "page_pmcid": "",
+  "catalog_title": "Suppression of a performance under differential reinforcement of low rates by a pre-time-out stimulus",
+  "page_title": "Suppression of a performance under differential reinforcement of low rates by a pre-time-out stimulus",
+  "ratio": 1.0,
+  "match": true
+ },
+ "92": {
+  "pmcid": "PMC1403999",
+  "page_pmcid": "",
+  "catalog_title": "A Precision Liquid Feeding System Controlled by Licking Behavior",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "93": {
+  "pmcid": "PMC1403997",
+  "page_pmcid": "",
+  "catalog_title": "A SIMPLE INTER VAL-PROGRAMMING CIRCUIT'",
+  "page_title": "A Simple Interval-Programming Circuit",
+  "ratio": 0.986,
+  "match": true
+ },
+ "94": {
+  "pmcid": "PMC1403996",
+  "page_pmcid": "",
+  "catalog_title": "STIMULUS GENERALIZATION AS A FUNCTION OF THE TIMEBETWEEN TRAINING AND TESTING PROCEDURES",
+  "page_title": "Stimulus Generalization as a Function of the Time between Training and Testing Procedures",
+  "ratio": 0.994,
+  "match": true
+ },
+ "95": {
+  "pmcid": "PMC1403998",
+  "page_pmcid": "",
+  "catalog_title": "Arc Suppression in Shock Circuits1",
+  "page_title": "Arc Suppression in Shock Circuits",
+  "ratio": 0.985,
+  "match": true
+ },
+ "96": {
+  "pmcid": "PMC1404008",
+  "page_pmcid": "",
+  "catalog_title": "Some Electronic Control Units for Operant Behavior Studies: I. A Response and Reinforcement Contingency Translator",
+  "page_title": "Some Electronic Control Units for Operant Behavior Studies: I. A Response and Reinforcement Contingency Translator",
+  "ratio": 1.0,
+  "match": true
+ },
+ "97": {
+  "pmcid": "PMC1404001",
+  "page_pmcid": "",
+  "catalog_title": "Discrimination of Changes in Heart Rate: Two Unsuccessful Attempts",
+  "page_title": "Discrimination of Changes in Heart Rate: Two Unsuccessful Attempts",
+  "ratio": 1.0,
+  "match": true
+ },
+ "98": {
+  "pmcid": "PMC1403993",
+  "page_pmcid": "",
+  "catalog_title": "HUMAN OBSERVING BEHAVIOR AFTER SIGNAL DETECTION",
+  "page_title": "Human Observing Behavior after Signal Detection",
+  "ratio": 1.0,
+  "match": true
+ },
+ "99": {
+  "pmcid": "PMC1404000",
+  "page_pmcid": "",
+  "catalog_title": "THE AVERSIVE CONTROL OF AN OPERANT DISCRIMINATION'",
+  "page_title": "The Aversive Control of an Operant Discrimination",
+  "ratio": 1.0,
+  "match": true
+ },
+ "100": {
+  "pmcid": "PMC1404004",
+  "page_pmcid": "",
+  "catalog_title": "MULTIPLE SCHEDULES OF TIME-CORRELATEDREINFORCEMENT",
+  "page_title": "Multiple Schedules of Time-Correlated Reinforcement",
+  "ratio": 0.99,
+  "match": true
+ },
+ "101": {
+  "pmcid": "PMC1404002",
+  "page_pmcid": "",
+  "catalog_title": "OPERANT BEHAVIOR IN MENTAL DEFECTIVES:EXPLORATORY STUDIES'",
+  "page_title": "Operant Behavior in Mental Defectives: Exploratory Studies",
+  "ratio": 0.991,
+  "match": true
+ },
+ "102": {
+  "pmcid": "PMC1404006",
+  "page_pmcid": "",
+  "catalog_title": "BEHA VIOR STABILITY UNDER EXTENDED EXPOSURE TOA TIME-CORRELA TED REINFORCEMENT CONTINGENCY",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "103": {
+  "pmcid": "PMC1404005",
+  "page_pmcid": "",
+  "catalog_title": "INTERMITTENT REINFORCEMENT OF DISCRIMINA TIVEL Y CONTROLLEDRESPONSES AND RUNS OF RESPONSES'",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "104": {
+  "pmcid": "PMC1403971",
+  "page_pmcid": "",
+  "catalog_title": "Some Effects of Brain Stimulation on Timing Behavior",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "105": {
+  "pmcid": "PMC1403967",
+  "page_pmcid": "",
+  "catalog_title": "SOME ELECTRONIC CONTROL UNITS FOR OPERANT BEHAVIORSTUDIES: II. A RANDOM RATIO GENERATOR'",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "290": {
+  "pmcid": "PMC1404082",
+  "page_pmcid": "",
+  "catalog_title": "A Review of Positive Conditioned Reinforcement",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "1234": {
+  "pmcid": "PMC1333688",
+  "page_pmcid": "",
+  "catalog_title": "Inhibition and the stimulus control of operant behavior",
+  "page_title": "Inhibition and the stimulus control of operant behavior",
+  "ratio": 1.0,
+  "match": true
+ },
+ "2237": {
+  "pmcid": "PMC1333075",
+  "page_pmcid": "",
+  "catalog_title": "Three Versions of the Additive Theories of Behavioral Contrast",
+  "page_title": "Three versions of the additive theories of behavioral contrast",
+  "ratio": 1.0,
+  "match": true
+ },
+ "2249": {
+  "pmcid": "PMC1333109",
+  "page_pmcid": "",
+  "catalog_title": "The Legacy of Guttman and Kalish (1956): 25 Years of Research on Stimulus Generalization",
+  "page_title": "The legacy of Guttman and Kalish (1956): Twenty-five years of research on stimulus generalization",
+  "ratio": 0.933,
+  "match": true
+ },
+ "2352": {
+  "pmcid": "PMC1347926",
+  "page_pmcid": "",
+  "catalog_title": "Another look at contrast in multiple schedules",
+  "page_title": "Another look at contrast in multiple schedules",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3054": {
+  "pmcid": "PMC1322146",
+  "page_pmcid": "",
+  "catalog_title": "The nature of sexual reinforcement.",
+  "page_title": "The nature of sexual reinforcement",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3096": {
+  "pmcid": "PMC1322170",
+  "page_pmcid": "",
+  "catalog_title": "Responding changes systematically within sessions during conditioning procedures.",
+  "page_title": "Responding changes systematically within sessions during conditioning procedures",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3311": {
+  "pmcid": "PMC1284581",
+  "page_pmcid": "",
+  "catalog_title": "William Nathan Schoenfeld (1915-1996): innovative scientist, inspiring teacher, relentless questioner, complicated man.",
+  "page_title": "William Nathan Schoenfeld (1915-1996): innovative scientist, inspiring teacher, relentless questioner, complicated man",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3312": {
+  "pmcid": "PMC1284582",
+  "page_pmcid": "",
+  "catalog_title": "The discrimination of relative frequency by pigeons.",
+  "page_title": "The discrimination of relative frequency by pigeons",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3313": {
+  "pmcid": "PMC1284587",
+  "page_pmcid": "",
+  "catalog_title": "On The Relation Between Preference And Resistance To Change.",
+  "page_title": "On The Relation Between Preference And Resistance To Change",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3314": {
+  "pmcid": "PMC1284588",
+  "page_pmcid": "",
+  "catalog_title": "Open Versus Closed Economies: Performance Of Domestic Hens Under Fixed Ratio Schedules.",
+  "page_title": "Open Versus Closed Economies: Performance Of Domestic Hens Under Fixed Ratio Schedules",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3315": {
+  "pmcid": "PMC1284583",
+  "page_pmcid": "",
+  "catalog_title": "Key pecking during extinction after intermittent or continuous reinforcement as a function of the number of reinforcers delivered during training.",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3316": {
+  "pmcid": "PMC1284584",
+  "page_pmcid": "",
+  "catalog_title": "Key-peck probability and topography in a concurrent variable-interval variable-interval schedule with food and water reinforcers.",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3317": {
+  "pmcid": "PMC1284585",
+  "page_pmcid": "",
+  "catalog_title": "Body weight and response acquisition with delayed reinforcement.",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3318": {
+  "pmcid": "PMC1284586",
+  "page_pmcid": "",
+  "catalog_title": "Conditioned reinforcement dynamics in three-link chained schedules.",
+  "page_title": "Conditioned reinforcement dynamics in three-link chained schedules",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3319": {
+  "pmcid": "PMC1284593",
+  "page_pmcid": "",
+  "catalog_title": "Residence Time In Concurrent Foraging With Fixed Times To Prey Arrival.",
+  "page_title": "Residence Time In Concurrent Foraging With Fixed Times To Prey Arrival",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3320": {
+  "pmcid": "PMC1284594",
+  "page_pmcid": "",
+  "catalog_title": "Learning About Food: Starlings, Skinner Boxes, And Earthworms.",
+  "page_title": "Learning About Food: Starlings, Skinner Boxes, And Earthworms",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3321": {
+  "pmcid": "PMC1284592",
+  "page_pmcid": "",
+  "catalog_title": "The S-R issue: its status in behavior analysis and in Donahoe and Palmer's learning and complex behavior.",
+  "page_title": "The S-R issue: its status in behavior analysis and in Donahoe and Palmer&#x27;s learning and complex behavior",
+  "ratio": 0.985,
+  "match": true
+ },
+ "3322": {
+  "pmcid": "PMC1284595",
+  "page_pmcid": "",
+  "catalog_title": "I Agree.",
+  "page_title": "I Agree",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3323": {
+  "pmcid": "PMC1284589",
+  "page_pmcid": "",
+  "catalog_title": "Some questions about unification of conditioning processes, stimulus-response psychology, and neural network models.",
+  "page_title": "Some questions about unification of conditioning processes, stimulus-response psychology, and neural network models",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3324": {
+  "pmcid": "PMC1284596",
+  "page_pmcid": "",
+  "catalog_title": "Beyond the moment: Complex behavior in temporally extended environments.",
+  "page_title": "Beyond The Moment: Complex Behavior In Temporally Extended Environments",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3325": {
+  "pmcid": "PMC1284597",
+  "page_pmcid": "",
+  "catalog_title": "In Today's Climate, A Forecast For Change: A commentary On Donahoe, Palmer, And Burgos.",
+  "page_title": "In Today&#x27;s Climate, A Forecast For Change: A commentary On Donahoe, Palmer, And Burgos",
+  "ratio": 0.982,
+  "match": true
+ },
+ "3326": {
+  "pmcid": "PMC1284598",
+  "page_pmcid": "",
+  "catalog_title": "We Also Need Complete Behavioral Models.",
+  "page_title": "We Also Need Complete Behavioral Models",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3327": {
+  "pmcid": "PMC1284590",
+  "page_pmcid": "",
+  "catalog_title": "R-S and S(-O)-R: alternative designs for neural networks.",
+  "page_title": "R-S and S(-O)-R: alternative designs for neural networks",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3328": {
+  "pmcid": "PMC1284599",
+  "page_pmcid": "",
+  "catalog_title": "The Eternal Antithesis: A Commentary On Donahoe, Palmer, And Burgos.",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3329": {
+  "pmcid": "PMC1284600",
+  "page_pmcid": "",
+  "catalog_title": "Units Of Analysis And The Environmental Control Of Behavior.",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3330": {
+  "pmcid": "PMC1284601",
+  "page_pmcid": "",
+  "catalog_title": "The Role Of Motivation In The S-R Issue.",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3408": {
+  "pmcid": "PMC1284677",
+  "page_pmcid": "",
+  "catalog_title": "Ratio size and cocaine concentration effects on oral cocaine-reinforced behavior.",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3653": {
+  "pmcid": "PMC1284924",
+  "page_pmcid": "",
+  "catalog_title": "Stimulus control of cocaine self-administration.",
+  "page_title": "Stimulus control of cocaine self-administration",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3710": {
+  "pmcid": "PMC1284985",
+  "page_pmcid": "",
+  "catalog_title": "Naming and categorization in young children: II. Listener behavior training.",
+  "page_title": "Naming and categorization in young children: II. Listener behavior training",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3740": {
+  "pmcid": "PMC1193697",
+  "page_pmcid": "",
+  "catalog_title": "The Sunk Cost Effect In Pigeons And Humans",
+  "page_title": "The Sunk Cost Effect In Pigeons And Humans",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3741": {
+  "pmcid": "PMC1193698",
+  "page_pmcid": "",
+  "catalog_title": "Simultaneous Visual Discrimination In Asian Elephants",
+  "page_title": "Simultaneous Visual Discrimination In Asian Elephants",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3742": {
+  "pmcid": "PMC1193699",
+  "page_pmcid": "",
+  "catalog_title": "Within-Subject Testing Of The Signaled-Reinforcement Effect On Operant Responding As Measured By Response Rate And Resistance To Change",
+  "page_title": "Within-Subject Testing Of The Signaled-Reinforcement Effect On Operant Responding As Measured By Response Rate And Resistance To Change",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3743": {
+  "pmcid": "PMC1193700",
+  "page_pmcid": "",
+  "catalog_title": "Naming And Categorization In Young Children: III. Vocal Tact Training And Transfer Of Function",
+  "page_title": "Naming And Categorization In Young Children: III. Vocal Tact Training And Transfer Of Function",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3750": {
+  "pmcid": "PMC1193745",
+  "page_pmcid": "",
+  "catalog_title": "Does Sensitivity to Magnitude Depend on the Temporal Distribution of Reinforcement?",
+  "page_title": "Does Sensitivity to Magnitude Depend on the Temporal Distribution of Reinforcement?",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3751": {
+  "pmcid": "PMC1193746",
+  "page_pmcid": "",
+  "catalog_title": "Emergent, Untrained Stimulus Relations in Many-to-One Matching-to-Sample Discriminations in Rats",
+  "page_title": "Emergent, Untrained Stimulus Relations in Many-to-One Matching-to-Sample Discriminations in Rats",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3753": {
+  "pmcid": "PMC1193754",
+  "page_pmcid": "",
+  "catalog_title": "Unsignaled Delay Of Reinforcement, Relative Time, And Resistance To Change",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3754": {
+  "pmcid": "PMC1193756",
+  "page_pmcid": "",
+  "catalog_title": "Effects Of Reinforcement History On Response Rate And Response Pattern In Periodic Reinforcement",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3755": {
+  "pmcid": "PMC1193757",
+  "page_pmcid": "",
+  "catalog_title": "The Effects Of Interval Duration On Temporal Tracking And Alternation Learning",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3756": {
+  "pmcid": "PMC1193758",
+  "page_pmcid": "",
+  "catalog_title": "Effects Of Reinforcer Probability, Delay, And Response Requirements On The Choices Of Rats And Pigeons: Possible Species Differences",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3757": {
+  "pmcid": "PMC1193759",
+  "page_pmcid": "",
+  "catalog_title": "Morphine Tolerance As A Function Of Ratio Schedule: Response Requirement Or Unit Price?",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3758": {
+  "pmcid": "PMC1193760",
+  "page_pmcid": "",
+  "catalog_title": "Effects Of Methylphenidate And Morphine On Delay-Discount Functions Obtained Within Sessions",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3763": {
+  "pmcid": "PMC1243897",
+  "page_pmcid": "",
+  "catalog_title": "Resistance To Change Of Forgetting Functions And Response Rates",
+  "page_title": "Resistance To Change Of Forgetting Functions And Response Rates",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3764": {
+  "pmcid": "PMC1243898",
+  "page_pmcid": "",
+  "catalog_title": "Effects Of Amphetamine-CNS Depressant Combinations And Of Other CNS Stimulants In Four-Choice Drug Discriminations",
+  "page_title": "Effects Of Amphetamine-Cns Depressant Combinations And Of Other Cns Stimulants In Four-Choice Drug Discriminations",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3765": {
+  "pmcid": "PMC1243899",
+  "page_pmcid": "",
+  "catalog_title": "The Sensitivity Of Response Rate To The Rate Of Variable-Interval Reinforcement For Pigeons And Rats: A Review",
+  "page_title": "The Sensitivity Of Response Rate To The Rate Of Variable-Interval Reinforcement For Pigeons And Rats: A Review",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3766": {
+  "pmcid": "PMC1243894",
+  "page_pmcid": "",
+  "catalog_title": "On The Classic And Modern Theories Of Matching",
+  "page_title": "On The Classic And Modern Theories Of Matching",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3767": {
+  "pmcid": "PMC1243976",
+  "page_pmcid": "",
+  "catalog_title": "A Test Of The Formal And Modern Theories Of Matching",
+  "page_title": "A Test Of The Formal And Modern Theories Of Matching",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3768": {
+  "pmcid": "PMC1243977",
+  "page_pmcid": "",
+  "catalog_title": "Associative Symmetry In The Pigeon After Successive Matching-To-Sample Training",
+  "page_title": "Associative Symmetry In The Pigeon After Successive Matching-To-Sample Training",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3769": {
+  "pmcid": "PMC1243978",
+  "page_pmcid": "",
+  "catalog_title": "Earning And Obtaining Reinforcers Under Concurrent Interval Scheduling",
+  "page_title": "Earning And Obtaining Reinforcers Under Concurrent Interval Scheduling",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3770": {
+  "pmcid": "PMC1243979",
+  "page_pmcid": "",
+  "catalog_title": "Effects Of Adding A Second Reinforcement Alternative: Implications For Herrnstein's Interpretation Of re",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3771": {
+  "pmcid": "PMC1243980",
+  "page_pmcid": "",
+  "catalog_title": "Crewmember Performance Before, During, And After Spaceflight",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3776": {
+  "pmcid": "PMC1389768",
+  "page_pmcid": "",
+  "catalog_title": "The Challenge of Characterizing Operations in the Mechanisms Underlying Behavior",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3778": {
+  "pmcid": "PMC1389770",
+  "page_pmcid": "",
+  "catalog_title": "Effects of Reinforcement Schedule on Facilitation of Operant Extinction by Chlordiazepoxide",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3779": {
+  "pmcid": "PMC1389771",
+  "page_pmcid": "",
+  "catalog_title": "Differential Acquisition of Lever Pressing in Inbred and Outbred Mice: Comparison of One-Lever and Two-Lever Procedures and Correlation with Differences in Locomotor Activity",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3780": {
+  "pmcid": "PMC1389772",
+  "page_pmcid": "",
+  "catalog_title": "Pilocarpine Seizures Cause Age-Dependent Impairment in Auditory Location Discrimination",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3781": {
+  "pmcid": "PMC1389773",
+  "page_pmcid": "",
+  "catalog_title": "The Role of Dopamine in Reinforcement: Changes in Reinforcement Sensitivity Induced by D1-type, D2-type, and Nonselective Dopamine Receptor Agonists",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3782": {
+  "pmcid": "PMC1393279",
+  "page_pmcid": "",
+  "catalog_title": "Effects of Morphine on Temporal Discrimination and Color Matching: General Disruption of Stimulus Control or Selective Effects on Timing?",
+  "page_title": "Effects of Morphine on Temporal Discrimination and Color Matching: General Disruption of Stimulus Control or Selective Effects on Timing?",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3783": {
+  "pmcid": "PMC1389774",
+  "page_pmcid": "",
+  "catalog_title": "Derived Stimulus Relations, Semantic Priming, and Event-Related Potentials: Testing a Behavioral Theory of Semantic Networks",
+  "page_title": "Derived Stimulus Relations, Semantic Priming, and Event-Related Potentials: Testing a Behavioral Theory of Semantic Networks",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3784": {
+  "pmcid": "PMC1389775",
+  "page_pmcid": "",
+  "catalog_title": "Relating Derived Relations as a Model of Analogical Reasoning: Reaction Times and Event-Related Potentials",
+  "page_title": "Relating Derived Relations as a Model of Analogical Reasoning: Reaction Times and Event-Related Potentials",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3785": {
+  "pmcid": "PMC1389776",
+  "page_pmcid": "",
+  "catalog_title": "On Aims and Methods in the Neuroimaging of Derived Relations",
+  "page_title": "On Aims and Methods in the Neuroimaging of Derived Relations",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3789": {
+  "pmcid": "PMC1389780",
+  "page_pmcid": "",
+  "catalog_title": "Prefrontal Brain Activity Predicts Temporally Extended Decision-Making Behavior",
+  "page_title": "Prefrontal Brain Activity Predicts Temporally Extended Decision-Making Behavior",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3790": {
+  "pmcid": "PMC1389781",
+  "page_pmcid": "",
+  "catalog_title": "Dynamic Response-by-Response Models of Matching Behavior in Rhesus Monkeys",
+  "page_title": "Dynamic Response-by-Response Models of Matching Behavior in Rhesus Monkeys",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3791": {
+  "pmcid": "PMC1389782",
+  "page_pmcid": "",
+  "catalog_title": "Linear-Nonlinear-Poisson Models of Primate Choice Dynamics",
+  "page_title": "Linear-Nonlinear-Poisson Models of Primate Choice Dynamics",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3792": {
+  "pmcid": "PMC1389783",
+  "page_pmcid": "",
+  "catalog_title": "Bridging the Gap between Brain and Behavior: Cognitive and Neural Mechanisms of Episodic Memory",
+  "page_title": "Bridging the Gap between Brain and Behavior: Cognitive and Neural Mechanisms of Episodic Memory",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3793": {
+  "pmcid": "PMC1389784",
+  "page_pmcid": "",
+  "catalog_title": "Neuroscience and Learning: Lessons from Studying the Involvement of a Region of Cerebellar Cortex in Eyeblink Classical Conditioning",
+  "page_title": "Neuroscience and Learning: Lessons from Studying the Involvement of a Region of Cerebellar Cortex in Eyeblink Classical Conditioning",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3794": {
+  "pmcid": "PMC1389785",
+  "page_pmcid": "",
+  "catalog_title": "Neuronal Substrates of Relapse to Cocaine-Seeking Behavior: Role of Prefrontal Cortex",
+  "page_title": "Neuronal Substrates of Relapse to Cocaine-Seeking Behavior: Role of Prefrontal Cortex",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3795": {
+  "pmcid": "PMC1389786",
+  "page_pmcid": "",
+  "catalog_title": "Behavioral Perspectives on the Neuroscience of Drug Addiction",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3796": {
+  "pmcid": "PMC1389787",
+  "page_pmcid": "",
+  "catalog_title": "Naming Our Concerns about Neuroscience: A Review of Bennett and Hacker's Philosophical Foundations of Neuroscience",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3798": {
+  "pmcid": "PMC1397795",
+  "page_pmcid": "",
+  "catalog_title": "The Influence of Prior Choices on Current Choice",
+  "page_title": "The Influence of Prior Choices on Current Choice",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3802": {
+  "pmcid": "PMC1397796",
+  "page_pmcid": "",
+  "catalog_title": "Replacing Relative Reinforcing Efficacy with Behavioral Economic Demand Curves",
+  "page_title": "Replacing Relative Reinforcing Efficacy with Behavioral Economic Demand Curves",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3803": {
+  "pmcid": "PMC1397791",
+  "page_pmcid": "",
+  "catalog_title": "Second-Order Schedules of Token Reinforcement with Pigeons: Implications for Unit Price",
+  "page_title": "Second-Order Schedules of Token Reinforcement with Pigeons: Implications for Unit Price",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3804": {
+  "pmcid": "PMC1397793",
+  "page_pmcid": "",
+  "catalog_title": "Experimental Control of Nodality VIA Equal Presentations of Conditional Discriminations in Different Equivalence Protocols Under Speed and No-speed Conditions",
+  "page_title": "Experimental Control of Nodality VIA Equal Presentations of Conditional Discriminations in Different Equivalence Protocols Under Speed and No-speed Conditions",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3805": {
+  "pmcid": "PMC1397794",
+  "page_pmcid": "",
+  "catalog_title": "About Skinner and Time: Behavior-Analytic Contributions to Research on Animal Timing",
+  "page_title": "About Skinner and Time: Behavior-Analytic Contributions to Research on Animal Timing",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3806": {
+  "pmcid": "PMC1472629",
+  "page_pmcid": "",
+  "catalog_title": "Consumer Brand Choice: Individual and Group Analyses of Demand Elasticity",
+  "page_title": "Consumer Brand Choice: Individual and Group Analyses of Demand Elasticity",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3807": {
+  "pmcid": "PMC1472632",
+  "page_pmcid": "",
+  "catalog_title": "Matching and Conditioned Reinforcement Rate",
+  "page_title": "Matching and Conditioned Reinforcement Rate",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3808": {
+  "pmcid": "PMC1472631",
+  "page_pmcid": "",
+  "catalog_title": "Rapid Acquisition in Concurrent Chains: Evidence for a Decision Model",
+  "page_title": "Rapid Acquisition in Concurrent Chains: Evidence for a Decision Model",
+  "ratio": 1.0,
+  "match": true
+ },
+ "3809": {
+  "pmcid": "PMC1472630",
+  "page_pmcid": "",
+  "catalog_title": "Identity Matching-To-Sample with Olfactory Stimuli in Rats",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3810": {
+  "pmcid": "PMC1472626",
+  "page_pmcid": "",
+  "catalog_title": "A Derived Transfer of Simple Discrimination and Self-Reported Arousal Functions in Spider Fearful and Non-Spider-Fearful Participants",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3811": {
+  "pmcid": "PMC1472628",
+  "page_pmcid": "",
+  "catalog_title": "Naming and Categorization in Young Children: IV: Listener Behavior Training and Transfer of Function",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ },
+ "3816": {
+  "pmcid": "PMC1459849",
+  "page_pmcid": "",
+  "catalog_title": "Equivalence Classes with Requirements for Short Response Latencies",
+  "page_title": "",
+  "ratio": 0.0,
+  "match": false
+ }
+}

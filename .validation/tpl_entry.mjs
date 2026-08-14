@@ -77,8 +77,14 @@ PMC landing page.`
        : `SKIP THIS TASK. No PMC route exists for this article (Elsevier or APA); it needs publisher \
 access we do not have here. Return equation_in_text="unknown", equation_note="no PMC route", and \
 spend nothing on it.`}
+   VERIFY IDENTITY BEFORE READING. PMC has served a cached page for a DIFFERENT article on first
+   fetch (observed: a request for PMC1389770 returned PMC1389781's body). After fetching, read the
+   page's citation_pmcid / citation_pmid / citation_doi / citation_title meta tags and confirm they
+   match THIS entry. If they do not, re-fetch until they do. If you cannot confirm identity, set
+   needs_human=true and say so -- never validate an entry against a body you have not confirmed is
+   the right article. State the id you matched on in equation_note.
    Determine whether the article DISPLAYS a mathematical equation (a numbered or
-   set-off display equation stating a model). Fetch the url once to check. Judge only from the source:
+   set-off display equation stating a model). Judge only from the source:
    - 'present'  -> the article displays at least one equation. In equation_note, name it briefly
                    (e.g. "Eq. 1, Mazur hyperbolic V = A/(1+kD)") so the equation panel can pick it up.
    - 'none'     -> you read the source and it displays no equations.
