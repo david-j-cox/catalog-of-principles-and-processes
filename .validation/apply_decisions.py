@@ -33,12 +33,24 @@ kinds = json.load(open(KINDS_F))['kinds']
 
 REJECT = ['Operant Conditioning', 'Conditioning', 'Behavioral Pharmacology', 'Foraging',
           'Operant Responding', 'Elicited Responding', 'Second-Order Conditioning',
-          'Concept Learning']
+          'Concept Learning',
+          # second pass, David 2026-08-27:
+          'Contingency',        # "generic. Just makes a claim about covariation. Not a thing."
+          'Generalization',     # too broad; Stimulus Generalization carries it
+          'Temporal Relations', # vague
+          'Aversive Control',   # not distinct from escape/avoidance; the processes involved
+                                # are punishment or negative reinforcement
+          # time is a STIMULUS DIMENSION, not a separate principle: a timing study is
+          # discrimination or generalization with time as the input, the way another study
+          # uses a light or a tone. So these two collapse into a measure (below).
+          'Temporal Control', 'Temporal Discrimination']
 
 FOLD = {'Functional Equivalence': 'Stimulus Equivalence'}
 
 ADD = {
- 'principle':  ['Satiation', 'Behavioral Momentum', 'Response Strength', 'Melioration'],
+ 'principle':  ['Satiation', 'Behavioral Momentum', 'Response Strength', 'Melioration',
+                # the counterpart to Stimulus Generalization, which David asked for
+                'Response Generalization'],
  'process':    ['Omission Training', 'Reinforcer Devaluation', 'Peak Procedure',
                 'Schedule: Progressive Ratio', 'Conditioned Taste Aversion',
                 'Reversal Learning', 'Response Cost', 'Time-Place Learning',
@@ -52,11 +64,18 @@ ADD = {
  'measure':    ['Reinforcer Rate', 'Reinforcer Magnitude', 'Reinforcer Quality',
                 'Discriminative Stimulus', 'Unconditioned Stimulus', 'Intertrial Interval',
                 'Interstimulus Interval', 'Reaction Time', 'Observing Response',
-                'Resistance to Extinction'],
+                'Resistance to Extinction',
+                # replaces Temporal Control / Temporal Discrimination: names the input
+                # dimension, so a timing paper reads Discrimination + Temporal Stimulus
+                'Temporal Stimulus'],
 }
 
 # RULE 3 carried into labels already in the vocabulary. Each is a direct parallel to one
 # he decided: a stimulus you present, or a temporal/effort parameter you set.
+# methods of APPLYING reinforcement, not fundamental components - David, second pass
+METHOD_NOT_PRINCIPLE = ['Differential Reinforcement', 'Alternative Reinforcement',
+                        'Noncontingent Reinforcement']
+
 RULE3 = {
  'Delay of Reinforcement':        'parallel to Intertrial Interval - a temporal parameter you set',
  'Delay':                         'same',
@@ -84,6 +103,8 @@ new_kinds = {}
 for c in canon:
     if c in RULE3:
         new_kinds[c] = 'measure'
+    elif c in METHOD_NOT_PRINCIPLE:
+        new_kinds[c] = 'process'
     elif c in kinds:
         new_kinds[c] = kinds[c]
     else:
@@ -110,7 +131,8 @@ json.dump({'kinds': {c: new_kinds[c] for c in canon},
 print(f'canonical -> {len(canon)} labels')
 for k, v in sorted(collections.Counter(new_kinds.values()).items(), key=lambda x: -x[1]):
     print(f'   {k:11} {v:3}')
-print(f'\nrejected as too broad this pass: {len(REJECT)}')
+print(f'\nmethods moved principle -> process: {METHOD_NOT_PRINCIPLE}')
+print(f'rejected as too broad/vague: {len(REJECT)}')
 print(f'merge rules dropped (target was rejected): {len(dead)} -> {sorted(dead)}')
 print(f'folded: {FOLD}')
 print(f'\nRULE-DERIVED, not decided by David - {len(RULE3)} existing labels moved principle -> measure:')

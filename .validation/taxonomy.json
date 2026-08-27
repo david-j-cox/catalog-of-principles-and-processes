@@ -6,7 +6,6 @@
     "Alternative Reinforcement",
     "Anticipatory Contrast",
     "Autoshaping",
-    "Aversive Control",
     "Aversive Stimuli",
     "Aversive Stimuli: Electric Shock",
     "Avoidance",
@@ -27,7 +26,6 @@
     "Conditioned Reinforcement",
     "Conditioned Suppression",
     "Conditioned Taste Aversion",
-    "Contingency",
     "Delay",
     "Delay Discounting",
     "Delay of Reinforcement",
@@ -47,7 +45,6 @@
     "Errorless Learning",
     "Escape",
     "Extinction",
-    "Generalization",
     "Generalization Gradient",
     "Habituation",
     "Imitation",
@@ -97,6 +94,7 @@
     "Response Cost",
     "Response Differentiation",
     "Response Effort",
+    "Response Generalization",
     "Response Produced Stimuli",
     "Response Rate",
     "Response Strength",
@@ -139,9 +137,7 @@
     "Stimulus Generalization",
     "Stimulus Substitution",
     "Successive Discrimination",
-    "Temporal Control",
-    "Temporal Discrimination",
-    "Temporal Relations",
+    "Temporal Stimulus",
     "Time-Out",
     "Time-Place Learning",
     "Token Economy",
@@ -1627,9 +1623,6 @@
     "Delayed Stimulus Control": 1
   },
   "merges": {
-    "Aversive control": [
-      "Aversive Control"
-    ],
     "Conditioned suppression": [
       "Conditioned Suppression"
     ],
@@ -1864,15 +1857,21 @@
   },
   "merge_note": "merges values are LISTS: a compound label may split into several tags (Schedules of Reinforcement: X -> Schedule: X + Reinforcement).",
   "rejected_too_broad": [
+    "Aversive Control",
     "Behavioral Pharmacology",
     "Classical Conditioning",
     "Concept Learning",
     "Conditioning",
+    "Contingency",
     "Elicited Responding",
     "Foraging",
+    "Generalization",
     "Operant Conditioning",
     "Operant Responding",
     "Respondent Conditioning",
-    "Second-Order Conditioning"
+    "Second-Order Conditioning",
+    "Temporal Control",
+    "Temporal Discrimination",
+    "Temporal Relations"
   ]
 }

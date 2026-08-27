@@ -2575,11 +2575,12 @@
       "Schedule: Fixed Ratio"
     ],
     "principles": [
-      "Aversive Control",
       "Punishment"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Aversive Control"
+    ]
   },
   {
     "title": "GENERA LIZA TION AND PREFERENCE ON ASTIMULUS-INTENSITY CONTINUUM",
@@ -2672,10 +2673,10 @@
     "needs-human": false,
     "processes": [
       "Extinction",
+      "Differential Reinforcement",
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Differential Reinforcement",
       "Escape",
       "Avoidance",
       "Motivating Operations"
@@ -2837,11 +2838,12 @@
       "Time-Out"
     ],
     "principles": [
-      "Aversive Control",
       "Avoidance"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Aversive Control"
+    ]
   },
   {
     "title": "A Precision Liquid Feeding System Controlled by Licking Behavior",
@@ -2959,13 +2961,13 @@
     "ai-signoffs": 1,
     "needs-human": false,
     "processes": [],
-    "principles": [
-      "Aversive Control"
-    ],
+    "principles": [],
     "topics": [
       "Aversive Stimuli: Electric Shock"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Aversive Control"
+    ]
   },
   {
     "title": "Some Electronic Control Units for Operant Behavior Studies: I. A Response and Reinforcement Contingency Translator",
@@ -14449,13 +14451,14 @@
       "Discrimination Learning"
     ],
     "principles": [
-      "Punishment",
-      "Generalization"
+      "Punishment"
     ],
     "topics": [
       "Conditioned Suppression"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Generalization"
+    ]
   },
   {
     "title": "Maintained generalization testing of conditioned suppression1",
@@ -14564,11 +14567,12 @@
     ],
     "processes": [],
     "principles": [
-      "Positive Reinforcement",
-      "Aversive Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Aversive Control"
+    ]
   },
   {
     "title": "Elicitation of aggression by a physical blow1",
@@ -14733,11 +14737,12 @@
     ],
     "processes": [],
     "principles": [
-      "Punishment",
-      "Aversive Control"
+      "Punishment"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Aversive Control"
+    ]
   },
   {
     "title": "A simple zener diode voltage regulator1",
@@ -16096,12 +16101,12 @@
     ],
     "processes": [],
     "principles": [
-      "Aversive Control",
       "Positive Punishment"
     ],
     "topics": [],
     "unmapped": [
-      "Escape Avoidance Contingency"
+      "Escape Avoidance Contingency",
+      "Aversive Control"
     ]
   },
   {
@@ -17228,12 +17233,12 @@
       "Schedule: Continuous"
     ],
     "principles": [
-      "Reinforcement",
-      "Aversive Control"
+      "Reinforcement"
     ],
     "topics": [],
     "unmapped": [
-      "Operant Conditioning"
+      "Operant Conditioning",
+      "Aversive Control"
     ]
   },
   {
@@ -17832,11 +17837,10 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Discrimination Learning"
-    ],
-    "principles": [
+      "Discrimination Learning",
       "Differential Reinforcement"
     ],
+    "principles": [],
     "topics": [],
     "unmapped": [
       "Precision of Performance",
@@ -18253,12 +18257,12 @@
       "class-review (unattributed)"
     ],
     "processes": [
+      "Differential Reinforcement",
       "Conditional Discrimination",
       "Time-Out",
       "Token Economy"
     ],
     "principles": [
-      "Differential Reinforcement",
       "Punishment"
     ],
     "topics": [],
@@ -18317,11 +18321,11 @@
     ],
     "processes": [
       "Schedule: Fixed Interval",
-      "Discrimination Learning"
+      "Discrimination Learning",
+      "Differential Reinforcement"
     ],
     "principles": [
-      "Reinforcement",
-      "Differential Reinforcement"
+      "Reinforcement"
     ],
     "topics": [],
     "unmapped": [
@@ -18670,12 +18674,12 @@
     "processes": [
       "Discrimination Learning",
       "Conditional Discrimination",
+      "Differential Reinforcement",
       "Extinction",
       "Schedule: Mixed",
       "Schedule: Fixed Ratio"
     ],
     "principles": [
-      "Differential Reinforcement",
       "Reinforcement"
     ],
     "topics": [],
@@ -18719,7 +18723,6 @@
       "Schedule: Variable Interval"
     ],
     "principles": [
-      "Generalization",
       "Reinforcement",
       "Stimulus Control"
     ],
@@ -18727,6 +18730,7 @@
       "Generalization Gradient"
     ],
     "unmapped": [
+      "Generalization",
       "Interoculur Generalization"
     ]
   },
@@ -19404,11 +19408,11 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Variable Interval"
+      "Schedule: Variable Interval",
+      "Differential Reinforcement"
     ],
     "principles": [
       "Reinforcement",
-      "Differential Reinforcement",
       "Positive Reinforcement"
     ],
     "topics": [
@@ -20151,13 +20155,12 @@
     "processes": [
       "Extinction"
     ],
-    "principles": [
-      "Temporal Relations"
-    ],
+    "principles": [],
     "topics": [],
     "unmapped": [
       "Imprinting Procedures",
       "Operant Conditioning",
+      "Temporal Relations",
       "Classical Conditioning"
     ]
   },
@@ -21266,12 +21269,12 @@
       "Discrimination Learning"
     ],
     "principles": [
-      "Temporal Relations",
       "Reinforcement"
     ],
     "topics": [],
     "unmapped": [
       "Steady State Experiments",
+      "Temporal Relations",
       "Parametric Conditions",
       "Operant Conditioning",
       "Scheules of Reinforcment: Multiple"
@@ -21901,12 +21904,12 @@
       "Discrimination Learning"
     ],
     "principles": [
-      "Aversive Control",
       "Negative Punishment",
       "Positive Reinforcement"
     ],
     "topics": [],
     "unmapped": [
+      "Aversive Control",
       "Behavioral Suppression",
       "Matching-To-Sample",
       "Operant Conditioning"
@@ -23176,13 +23179,14 @@
     ],
     "processes": [],
     "principles": [
-      "Temporal Relations",
       "Avoidance"
     ],
     "topics": [
       "Aversive Stimuli"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Relations"
+    ]
   },
   {
     "title": "Stimulus Factors in Aversive Controls: Conditioned Suppression after Equal Training to Two Stimuli",
@@ -23281,11 +23285,11 @@
     ],
     "processes": [],
     "principles": [
-      "Negative Reinforcement",
-      "Aversive Control"
+      "Negative Reinforcement"
     ],
     "topics": [],
     "unmapped": [
+      "Aversive Control",
       "Escape Latency"
     ]
   },
@@ -23362,14 +23366,14 @@
     ],
     "principles": [
       "Reinforcement",
-      "Positive Reinforcement",
-      "Temporal Relations"
+      "Positive Reinforcement"
     ],
     "topics": [
       "Conditioned Suppression"
     ],
     "unmapped": [
-      "Operant Conditioning"
+      "Operant Conditioning",
+      "Temporal Relations"
     ]
   },
   {
@@ -23625,13 +23629,13 @@
     "processes": [],
     "principles": [
       "Punishment",
-      "Stimulus Control",
-      "Aversive Control"
+      "Stimulus Control"
     ],
     "topics": [],
     "unmapped": [
       "Operant Conditioning",
-      "Escape Behavior"
+      "Escape Behavior",
+      "Aversive Control"
     ]
   },
   {
@@ -23821,11 +23825,10 @@
       "class-review (unattributed)"
     ],
     "processes": [],
-    "principles": [
-      "Temporal Relations"
-    ],
+    "principles": [],
     "topics": [],
     "unmapped": [
+      "Temporal Relations",
       "Delayed Stimulus Presentation"
     ]
   },
@@ -44300,11 +44303,12 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Editors, 1958-1973",
@@ -44488,11 +44492,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Negative Punishment",
-      "Temporal Control"
+      "Negative Punishment"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Economic and biological influences on a pigeon'S+ key peck",
@@ -45504,11 +45509,12 @@
       "Schedule: Differential Reinforcement of Low Rates"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Conditioned suppression of behavior maintained by intracranial stimulation as a function of stimulation intensity",
@@ -45667,13 +45673,14 @@
       "Schedule: Multiple"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [
       "Behavioral Contrast"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Choice and response contingencies",
@@ -46034,11 +46041,12 @@
       "Positive Punishment",
       "Negative Reinforcement",
       "Escape",
-      "Avoidance",
-      "Temporal Control"
+      "Avoidance"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Effects of previous housing conditions on shock-induced aggression",
@@ -46255,14 +46263,15 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [
       "Response Produced Stimuli",
       "Behavioral Contrast"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Response-rate invariance in concurrent schedules: Effects of different changeover contingencies",
@@ -46298,13 +46307,14 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [
       "Behavioral Contrast"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Time allocation on concurrent schedules with asymmetrical response requirements",
@@ -46377,11 +46387,12 @@
       "Extinction"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Preference and discrimination between response-dependent and response-independent schedules of reinforcement",
@@ -46801,11 +46812,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Performance in concurrent interval schedules: A systematic replication",
@@ -46956,11 +46968,11 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Conditioned Reinforcement",
-      "Temporal Control"
+      "Conditioned Reinforcement"
     ],
     "topics": [],
     "unmapped": [
+      "Temporal Control",
       "Classical Conditioning"
     ]
   },
@@ -46998,11 +47010,12 @@
     ],
     "principles": [
       "Negative Reinforcement",
-      "Avoidance",
-      "Temporal Control"
+      "Avoidance"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Effects of d-amphetamine, chlorpromazine, and chlordiazepoxide on intercurrent behavior during spaced-responding schedules",
@@ -47226,13 +47239,14 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [
       "Behavioral Contrast"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Peak shift following simultaneous discriminations",
@@ -47343,11 +47357,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Response-shock delay as a reinforcer in avoidance behavior",
@@ -47379,11 +47394,12 @@
     "principles": [
       "Negative Reinforcement",
       "Avoidance",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Concurrent second-order schedules of reinforcement",
@@ -47420,11 +47436,12 @@
     "principles": [
       "Positive Reinforcement",
       "Conditioned Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Switching from competition to sharing or cooperation at large response requirements: Competition requires more responding",
@@ -47638,11 +47655,12 @@
     ],
     "principles": [
       "Negative Reinforcement",
-      "Avoidance",
-      "Temporal Control"
+      "Avoidance"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Discriminative Properties Of Briefly Presented Stimuli",
@@ -47717,13 +47735,14 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [
       "Behavioral Contrast"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Titration Of Schedule Parameters By Pigeons",
@@ -47756,11 +47775,12 @@
       "Schedule: Chain"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Short-Term Memory In The Pigeon: Relative Recency",
@@ -47790,11 +47810,12 @@
     "processes": [],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Relation Between Level Of Food Deprivation And Rate Of Schedule-Induced Attack",
@@ -47825,11 +47846,12 @@
       "Schedule: Multiple"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Matching With A Trio Of Concurrent Variable-Interval Schedules Of Reinforcement",
@@ -47861,11 +47883,12 @@
       "Schedule: Concurrent"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Choice And The Rate Of Punishment In Concurrent Schedules",
@@ -48007,11 +48030,12 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Behavioral Control Of Visual Fixation Of The Rhesus Monkey",
@@ -48188,11 +48212,12 @@
       "Schedule: Conjunctive"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Some Conditions Affecting The Choice To Cooperate Or Compete",
@@ -48334,11 +48359,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Stimulus Duration As A Measure Of Stimulus Generalization",
@@ -48578,11 +48604,12 @@
       "Schedule: Concurrent"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Effects Of Signals Preceding And Following Shock On Baseline Responding During A Conditioned-Suppression Procedure",
@@ -49013,11 +49040,12 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Preference For Fixed-Interval Schedules: Effects Of Unequal Initial Links",
@@ -49127,11 +49155,12 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Operant conditioning in nondeprived adult and infant guinea pigs1",
@@ -49251,11 +49280,12 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Time-Based And Count-Based Measurement Of Preference",
@@ -49288,11 +49318,12 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Positive Reinforcement And The Elimination Of Reinforced Responses",
@@ -49404,13 +49435,14 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [
       "Behavioral Contrast"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Successive Discrimination Training With Equated Reinforcement Frequencies: Failure To Obtain Behavioral Contrast",
@@ -49616,11 +49648,12 @@
       "Schedule: Variable Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Matching In A Network",
@@ -49693,11 +49726,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Clock Control Of Human Performance On Avoidance And Fixed-Interval Schedules",
@@ -49735,11 +49769,12 @@
     "principles": [
       "Positive Reinforcement",
       "Negative Reinforcement",
-      "Temporal Control",
       "Conditioned Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Behavior Changes During Repeated Eight-Day Extinctions",
@@ -49925,13 +49960,14 @@
       "Schedule: Multiple"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [
       "Behavioral Contrast"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Effects of a Delay-Reinforcement Procedure on Performance Under IRT > t Schedules",
@@ -50036,11 +50072,12 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Effects Of Electric-Shock Delivery On Schedule-Induced Water Intake: Delay Of Shock, Shock Intensity, And Body-Weight Loss",
@@ -50075,11 +50112,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Positive Punishment",
-      "Temporal Control"
+      "Positive Punishment"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "PUNISHMENT OF RESPONDING UNDER SCHEDULES OF STIMULUS-SHOCK TERMINATION: EFFECTS OF d-AMPHETAMINE AND PENTOBARBITAL",
@@ -50320,11 +50358,12 @@
       "Schedule: Variable Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Variables Affecting Establishment Of Schedule-Induced Attack On Pictorial Targets In White King Pigeons",
@@ -50434,11 +50473,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Integrated Delays To Shock As Negative Reinforcement",
@@ -50475,11 +50515,12 @@
     ],
     "principles": [
       "Negative Reinforcement",
-      "Avoidance",
-      "Temporal Control"
+      "Avoidance"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Force And Rate Relations In Responding During Variable-Interval Reinforcement",
@@ -50622,11 +50663,12 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Local Contrast And Pavlovian Induction",
@@ -50693,11 +50735,12 @@
       "Schedule: Variable Interval"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Autoshaping, Random Control, And Omission Training In The Rat",
@@ -50837,12 +50880,12 @@
     ],
     "processes": [],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
     "unmapped": [
-      "Schedule: Probabilistic"
+      "Schedule: Probabilistic",
+      "Temporal Control"
     ]
   },
   {
@@ -50875,11 +50918,12 @@
       "Schedule: Concurrent"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Conjunctive Schedules Of Response-Dependent And Response-Independent Reinforcement",
@@ -50912,11 +50956,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Aversive control by an electrostatic shock source: an unmodifiable, humane preparation1",
@@ -51079,11 +51124,12 @@
       "Schedule: Differential Reinforcement of Other Behavior"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Behavioral Adaptation To Fixed-Interval And Fixed-Time Food Delivery In Golden Hamsters",
@@ -51118,12 +51164,12 @@
       "Schedule: Fixed Time"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
     "unmapped": [
-      "Classical Conditioning"
+      "Classical Conditioning",
+      "Temporal Control"
     ]
   },
   {
@@ -51164,11 +51210,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Response And Time Allocation In Concurrent Second-Order Schedules",
@@ -51203,11 +51250,12 @@
       "Schedule: Second-Order"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Signalled And Unsignalled Percentage Reinforcement Of Performance Under A Chained Schedule",
@@ -51279,11 +51327,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Effects Of Fixed-Ratio Sample And Choice Response Requirements Upon Oddity Matching",
@@ -51358,13 +51407,14 @@
     "principles": [
       "Positive Reinforcement",
       "Stimulus Control",
-      "Temporal Control",
       "Stimulus Generalization"
     ],
     "topics": [
       "Behavioral Contrast"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Dependency, Temporal Contiguity, And Response-Independent Reinforcement",
@@ -51400,11 +51450,12 @@
       "Schedule: Variable Time"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Social Learning By Following: An Analysis",
@@ -51471,11 +51522,12 @@
       "Schedule: Interdependent"
     ],
     "principles": [
-      "Positive Reinforcement",
-      "Temporal Control"
+      "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Line-Orientation Generalization Following Signalled-Reinforcer Training",
@@ -51555,11 +51607,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Positive Punishment",
-      "Temporal Control"
+      "Positive Punishment"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Matching Under Concurrent Fixed-Ratio Variable-Interval Schedules Of Food Presentation",
@@ -51908,11 +51961,12 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
-      "Temporal Control"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Effect Of Punishment On Human Variable-Interval Performance",
@@ -58033,13 +58087,12 @@
       "class-review (unattributed)"
     ],
     "processes": [],
-    "principles": [
-      "Temporal Discrimination"
-    ],
+    "principles": [],
     "topics": [
       "Response Bias"
     ],
     "unmapped": [
+      "Temporal Discrimination",
       "Webers Law",
       "Local Reinforcement Rate",
       "Relative Reinforcement Rate",
@@ -58128,11 +58181,12 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Conditioned Reinforcement",
-      "Contingency"
+      "Conditioned Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Contingency"
+    ]
   },
   {
     "title": "Response Strength in Multiple Periodic and Aperiodic Schedules",
@@ -58432,11 +58486,10 @@
     ],
     "processes": [
       "Response Differentiation",
+      "Differential Reinforcement",
       "Shaping"
     ],
-    "principles": [
-      "Differential Reinforcement"
-    ],
+    "principles": [],
     "topics": [
       "Response Topography"
     ],
@@ -58867,10 +58920,10 @@
     "ai-signoffs": 0,
     "ai-reviewed": true,
     "needs-human": true,
-    "processes": [],
-    "principles": [
+    "processes": [
       "Differential Reinforcement"
     ],
+    "principles": [],
     "topics": [],
     "unmapped": [
       "Temporal Psychophysics"
@@ -59137,11 +59190,10 @@
     ],
     "processes": [
       "Schedule: Concurrent",
-      "Schedule: Fixed Ratio"
-    ],
-    "principles": [
+      "Schedule: Fixed Ratio",
       "Alternative Reinforcement"
     ],
+    "principles": [],
     "topics": [],
     "unmapped": [
       "Suppression"
@@ -59332,11 +59384,10 @@
       "class-review (unattributed)"
     ],
     "processes": [
+      "Differential Reinforcement",
       "Schedule: Multiple"
     ],
-    "principles": [
-      "Differential Reinforcement"
-    ],
+    "principles": [],
     "topics": [
       "Behavioral Contrast",
       "Additivity Theory"
@@ -59702,11 +59753,10 @@
       "class-review (unattributed)"
     ],
     "processes": [],
-    "principles": [
-      "Contingency"
-    ],
+    "principles": [],
     "topics": [],
     "unmapped": [
+      "Contingency",
       "Appetitive Conditioning"
     ]
   },
@@ -60511,11 +60561,10 @@
       "class-review (unattributed)"
     ],
     "processes": [
+      "Differential Reinforcement",
       "Token Economy"
     ],
-    "principles": [
-      "Differential Reinforcement"
-    ],
+    "principles": [],
     "topics": [],
     "unmapped": []
   },
@@ -60833,11 +60882,10 @@
       "class-review (unattributed)"
     ],
     "processes": [
+      "Noncontingent Reinforcement",
       "Discrete Trial Teaching"
     ],
-    "principles": [
-      "Noncontingent Reinforcement"
-    ],
+    "principles": [],
     "topics": [
       "Choice"
     ],
@@ -61364,15 +61412,15 @@
       "Schedule: Multiple"
     ],
     "principles": [
-      "Stimulus Generalization",
-      "Generalization"
+      "Stimulus Generalization"
     ],
     "topics": [
       "Adjunctive Behavior"
     ],
     "unmapped": [
       "Interim Behavior",
-      "Schedule: Intermittent"
+      "Schedule: Intermittent",
+      "Generalization"
     ]
   },
   {
@@ -61683,11 +61731,10 @@
     "processes": [
       "Schedule: Variable Interval",
       "Schedule: Variable Ratio",
-      "Shaping"
-    ],
-    "principles": [
+      "Shaping",
       "Differential Reinforcement"
     ],
+    "principles": [],
     "topics": [],
     "unmapped": [
       "Rule-Governed Behavior"
@@ -62143,11 +62190,12 @@
       "Schedule: Fixed Interval"
     ],
     "principles": [
-      "Temporal Discrimination",
       "Conditioned Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Discrimination"
+    ]
   },
   {
     "title": "Effects of Fixed-Time Shocks and Brief Stimuli on Food-Maintained Behavior of Rats",
@@ -62873,12 +62921,11 @@
     "processes": [
       "Schedule: Variable Interval",
       "Changeover",
+      "Differential Reinforcement",
       "Schedule: Concurrent",
       "Discrete Trial Teaching"
     ],
-    "principles": [
-      "Differential Reinforcement"
-    ],
+    "principles": [],
     "topics": [
       "Choice"
     ],
@@ -62907,10 +62954,10 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [],
-    "principles": [
+    "processes": [
       "Differential Reinforcement"
     ],
+    "principles": [],
     "topics": [],
     "unmapped": []
   },
@@ -63063,11 +63110,10 @@
     ],
     "processes": [
       "Discrimination Learning",
+      "Differential Reinforcement",
       "Schedule: Variable Interval"
     ],
-    "principles": [
-      "Differential Reinforcement"
-    ],
+    "principles": [],
     "topics": [],
     "unmapped": [
       "Catastrophe Theory",
@@ -63103,12 +63149,11 @@
     ],
     "processes": [
       "Schedule: Fixed Interval",
+      "Differential Reinforcement",
       "Schedule: Fixed Ratio",
       "Schedule: Conjunctive"
     ],
-    "principles": [
-      "Differential Reinforcement"
-    ],
+    "principles": [],
     "topics": [],
     "unmapped": []
   },
@@ -63500,10 +63545,10 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [],
-    "principles": [
+    "processes": [
       "Differential Reinforcement"
     ],
+    "principles": [],
     "topics": [],
     "unmapped": []
   },
@@ -64420,11 +64465,10 @@
       "class-review (unattributed)"
     ],
     "processes": [
+      "Noncontingent Reinforcement",
       "Schedule: Differential Reinforcement of Low Rates"
     ],
-    "principles": [
-      "Noncontingent Reinforcement"
-    ],
+    "principles": [],
     "topics": [],
     "unmapped": [
       "Conditional Accerlation",
@@ -64801,12 +64845,11 @@
       "Autoshaping",
       "Schedule: Variable Interval"
     ],
-    "principles": [
-      "Generalization"
-    ],
+    "principles": [],
     "topics": [],
     "unmapped": [
       "Transfer",
+      "Generalization",
       "Acquisition"
     ]
   },
@@ -65194,10 +65237,10 @@
     "processes": [
       "Schedule: Variable Interval",
       "Schedule: Multiple",
+      "Alternative Reinforcement",
       "Extinction"
     ],
     "principles": [
-      "Alternative Reinforcement",
       "Behavioral Momentum"
     ],
     "topics": [],
@@ -65396,15 +65439,15 @@
       "Schedule: Variable Interval",
       "Schedule: Concurrent"
     ],
-    "principles": [
-      "Temporal Discrimination"
-    ],
+    "principles": [],
     "topics": [
       "Matching Law",
       "Choice",
       "Response Bias"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Discrimination"
+    ]
   },
   {
     "title": "Free-Operant Forgetting: Delayed Stimulus Control of Multiple-Schedule Performance",
@@ -89581,12 +89624,12 @@
     "needs-human": false,
     "processes": [],
     "principles": [
-      "Temporal Control",
       "Stimulus Control"
     ],
     "topics": [],
     "unmapped": [
-      "Experimental Analysis of Behavior"
+      "Experimental Analysis of Behavior",
+      "Temporal Control"
     ]
   },
   {
@@ -89722,11 +89765,11 @@
     "equation-provenance": "none",
     "processes": [],
     "principles": [
-      "Contingency",
       "Stimulus Control"
     ],
     "topics": [],
     "unmapped": [
+      "Contingency",
       "Experimental Analysis of Behavior"
     ]
   },
@@ -100149,13 +100192,13 @@
     "processes": [
       "Schedule: Fixed Interval"
     ],
-    "principles": [
-      "Temporal Control"
-    ],
+    "principles": [],
     "topics": [
       "Response Rate"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "The Effects Of Interval Duration On Temporal Tracking And Alternation Learning",
@@ -100187,13 +100230,13 @@
     "processes": [
       "Schedule: Fixed Interval"
     ],
-    "principles": [
-      "Temporal Control"
-    ],
+    "principles": [],
     "topics": [
       "Post-Reinforcement Pause"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Temporal Control"
+    ]
   },
   {
     "title": "Effects Of Reinforcer Probability, Delay, And Response Requirements On The Choices Of Rats And Pigeons: Possible Species Differences",
@@ -100943,11 +100986,10 @@
     "ai-signoffs": 1,
     "needs-human": false,
     "processes": [
-      "Schedule: Variable Time"
-    ],
-    "principles": [
+      "Schedule: Variable Time",
       "Noncontingent Reinforcement"
     ],
+    "principles": [],
     "topics": [],
     "unmapped": [
       "Operant Conditioning"
@@ -101058,11 +101100,11 @@
     "needs-human": false,
     "processes": [],
     "principles": [
-      "Temporal Discrimination",
       "Stimulus Control"
     ],
     "topics": [],
     "unmapped": [
+      "Temporal Discrimination",
       "Behavioral Pharmacology"
     ]
   },
@@ -101809,12 +101851,12 @@
     "processes": [
       "Schedule: Fixed Interval"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [],
+    "unmapped": [
       "Temporal Control",
       "Temporal Discrimination"
-    ],
-    "topics": [],
-    "unmapped": []
+    ]
   },
   {
     "title": "Consumer Brand Choice: Individual and Group Analyses of Demand Elasticity",
