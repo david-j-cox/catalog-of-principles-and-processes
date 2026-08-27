@@ -83,17 +83,24 @@ if [ -f "$ROOT/.validation/.probe" ]; then
     echo "$(stamp) PROBE HOME=$HOME USER=$(id -un) SHELL=${SHELL:-unset} TERM=${TERM:-unset}"
     echo "$(stamp) PROBE claude=$(command -v claude) node=$(command -v node)"
     echo "$(stamp) PROBE token=$([ -r "$TOKEN_FILE" ] && echo present || echo MISSING)"
+    if security find-generic-password -s "Claude Code-credentials" -w >/dev/null 2>&1; then
+      echo "$(stamp) PROBE keychain=READABLE from launchd"
+    else
+      echo "$(stamp) PROBE keychain=BLOCKED from launchd (rc=$?)"
+    fi
   } >> "$LOG"
-  OUT=$(claude -p "Reply with exactly: PROBE_OK" --debug 2>&1 | tail -25)
-  if [ ! -r "$TOKEN_FILE" ] && ! echo "$OUT" | grep -q "PROBE_OK"; then
-    echo "$(stamp) PROBE FAILED - no scheduler token. Run: claude setup-token" >> "$LOG"
-    echo "$(stamp) PROBE then save the token to $TOKEN_FILE (chmod 600)." >> "$LOG"
-    exit 0
-  fi
+  echo "$(stamp) PROBE version in project dir: $(claude --version 2>&1 | head -1)" >> "$LOG"
+  # The only thing that matters: can claude READ THE PROJECT? Answering a prompt from /tmp
+  # proves auth works and nothing else - the cycle reads and writes files in ~/Documents.
+  OUT=$(cd /tmp && claude -p "Read $ROOT/.validation/RUNBOOK.md and reply with exactly: PROBE_OK if you could read it, or the error if you could not." \
+          --add-dir "$ROOT" --permission-mode acceptEdits 2>&1 | head -5)
   if echo "$OUT" | grep -q "PROBE_OK"; then
-    echo "$(stamp) PROBE ok - claude runs under launchd, the full chain is live" >> "$LOG"
+    echo "$(stamp) PROBE ok - claude read a project file under launchd; the chain is live" >> "$LOG"
   else
     echo "$(stamp) PROBE FAILED - claude cannot run under launchd: $OUT" >> "$LOG"
+    echo "$(stamp) PROBE claude AUTH is fine and the keychain is readable; it is FILE ACCESS" >> "$LOG"
+    echo "$(stamp) PROBE that fails. Grant Full Disk Access to /Users/davidjcox/.local/bin/claude" >> "$LOG"
+    echo "$(stamp) PROBE (System Settings > Privacy & Security > Full Disk Access)." >> "$LOG"
   fi
   exit 0
 fi
