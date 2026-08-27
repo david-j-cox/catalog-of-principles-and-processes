@@ -1,0 +1,2016 @@
+{
+  "summary": {
+    "prompt": "v3(K=8)",
+    "recall_at_k": 0.5477178423236515,
+    "entries_fully_covered": 0.24731182795698925,
+    "label_precision": 0.24220183486238533,
+    "label_recall": 0.5477178423236515,
+    "label_f1": 0.33587786259541985,
+    "labels_per_entry_pred": 5.860215053763441,
+    "labels_per_entry_truth": 2.5913978494623655,
+    "model": "qwen2.5:72b",
+    "n": 93,
+    "exact_set_match": 0.0,
+    "any_overlap": 0.8064516129032258,
+    "mean_jaccard": 0.23227513227513227,
+    "produced_valid_labels": 1.0,
+    "seconds_per_entry": 7.548066936513429
+  },
+  "results": [
+    {
+      "idx": 2,
+      "title": "A Conjunctive Schedule of Reinforcement",
+      "pred": [
+        "Schedule: Conjunctive",
+        "Schedule: Fixed Interval",
+        "Schedule: Fixed Ratio",
+        "Response Rate",
+        "Temporal Control",
+        "Differential Reinforcement",
+        "Operant Responding",
+        "Behavioral Contrast"
+      ],
+      "truth": [
+        "Conjunctive Schedules",
+        "Schedule: Fixed Interval",
+        "Schedule: Fixed Ratio",
+        "Reinforcement: Positive"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Conjunctive\", \"Schedule: Fixed Interval\", \"Schedule: Fixed Ratio\", \"Response Rate\", \"Temporal Control\", \"Differential Reinforcement\", \"Operant Responding\", \"Behavioral Contrast\"]"
+    },
+    {
+      "idx": 3,
+      "title": "Operant Extinction After Fixed-Interval Schedules with Young Children",
+      "pred": [
+        "Extinction",
+        "Schedule: Fixed Interval",
+        "Operant Responding",
+        "Response Rate",
+        "Discriminability",
+        "Response Produced Stimuli"
+      ],
+      "truth": [
+        "Extinction",
+        "Schedule: Fixed Interval",
+        "Reinforcement: Positive"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2857142857142857,
+      "in_vocab": true,
+      "raw": "[\"Extinction\", \"Schedule: Fixed Interval\", \"Operant Responding\", \"Response Rate\", \"Discriminability\", \"Response Produced Stimuli\", \"Self-Talk\", \"Toy Manipulation\"]"
+    },
+    {
+      "idx": 14,
+      "title": "Avoidance Behavior and the Development of Gastroduodenal Ulcers",
+      "pred": [
+        "Avoidance",
+        "Aversive Stimulus: Electric Shock",
+        "Behavioral Pharmacology"
+      ],
+      "truth": [
+        "Avoidance"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.3333333333333333,
+      "in_vocab": true,
+      "raw": "[\"Avoidance\", \"Aversive Stimulus: Electric Shock\", \"Behavioral Pharmacology\", \"Corticosteroid Excretion\", \"Gastroduodenal Ulceration\", \"Prolonged Stress\", \"Stable Avoidance Responding\", \"Yoked Control"
+    },
+    {
+      "idx": 83,
+      "title": "Punishment and Recovery During Fixed-Ratio Performance",
+      "pred": [
+        "Punishment",
+        "Postreinforcement Pause",
+        "Response Rate",
+        "Electric Shock",
+        "Behavioral Contrast",
+        "Schedule: Fixed Ratio"
+      ],
+      "truth": [
+        "Aversive Control",
+        "Punishment",
+        "Schedule: Fixed Ratio"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2857142857142857,
+      "in_vocab": true,
+      "raw": "[\"Punishment\", \"Postreinforcement Pause\", \"Fixed Ratio\", \"Recovery\", \"Response Rate\", \"Electric Shock\", \"Behavioral Contrast\", \"Schedule: Fixed Ratio\"]"
+    },
+    {
+      "idx": 85,
+      "title": "A FLEXIBLE MODEL FOR GENERALIZATION GRADIENTS",
+      "pred": [
+        "Generalization Gradient",
+        "Stimulus Generalization",
+        "Reinforcement",
+        "Extinction"
+      ],
+      "truth": [
+        "Stimulus Generalization"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.25,
+      "in_vocab": true,
+      "raw": "[\"Generalization Gradient\", \"Stimulus Generalization\", \"Reinforcement\", \"Extinction\", \"Mechanical Model\", \"Teaching Tool\", \"Empirical Patterns\", \"Stimulus Spacing\"]"
+    },
+    {
+      "idx": 86,
+      "title": "The Psychiatric Nurse as a Behavioral Engineer",
+      "pred": [
+        "Operant Conditioning",
+        "Differential Reinforcement",
+        "Extinction",
+        "Avoidance Behavior",
+        "Behavioral Contrast",
+        "Reinforcement: Positive",
+        "Stimulus Control",
+        "Response Allocation"
+      ],
+      "truth": [
+        "Extinction",
+        "Differential Reinforcement",
+        "Schedule: Fixed Interval",
+        "Escape",
+        "Avoidance",
+        "Motivating Operations"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.16666666666666666,
+      "in_vocab": true,
+      "raw": "[\"Operant Conditioning\", \"Differential Reinforcement\", \"Extinction\", \"Avoidance Behavior\", \"Behavioral Contrast\", \"Reinforcement: Positive\", \"Stimulus Control\", \"Response Allocation\"]"
+    },
+    {
+      "idx": 87,
+      "title": "THE EFFECT OF CHANGING THE SCHEDULE OF REINFORCEMENTUPON DURATION OF RESPONDING'",
+      "pred": [
+        "Schedule: Continuous",
+        "Schedule: Fixed Ratio",
+        "Aversive Stimulus: Electric Shock",
+        "Response Rate",
+        "Reinforcement Delay",
+        "Postreinforcement Pause",
+        "Stimulus Control",
+        "Measurement: Duration"
+      ],
+      "truth": [
+        "Temporal patterning of operant responses"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Continuous\", \"Schedule: Fixed Ratio\", \"Aversive Stimulus: Electric Shock\", \"Response Rate\", \"Reinforcement Delay\", \"Postreinforcement Pause\", \"Stimulus Control\", \"Measurement: Duration\"]"
+    },
+    {
+      "idx": 88,
+      "title": "EFFECTS OF METHYLPHENIDYLACETATE AND CHLORPROMAZINEON CERTAIN COMPONENTS OF GENERAL ACTIVI",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Response Allocation"
+      ],
+      "truth": [
+        "Behavioral Pharmacology",
+        "Measurement: Duration"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.3333333333333333,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Response Allocation\", \"Activity Changes\", \"Sniffing\", \"Lying\", \"Grooming\", \"Dosage-Dependent Effects\", \"Timed Observations\"]"
+    },
+    {
+      "idx": 89,
+      "title": "THE RELATION OF AMOUNT OF REINFORCEMENT TO PERFORMANCEUNDER A FIXED-INTERVAL SCHEDULE",
+      "pred": [
+        "Schedule: Fixed Interval",
+        "Reinforcement: Positive",
+        "Response Rate",
+        "Stimulus Discriminability"
+      ],
+      "truth": [
+        "Effects of reinforcer magnitude on operant performance under fixed-interval schedules"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Fixed Interval\", \"Reinforcement: Positive\", \"Response Rate\", \"Stimulus Discriminability\", \"Cumulative Records\", \"Interval Histograms\", \"Satiation\", \"Exponential Relation\"]"
+    },
+    {
+      "idx": 90,
+      "title": "GENERA LIZA TION OF CONDITIONED SUPPRESSION'",
+      "pred": [
+        "Conditioned Suppression",
+        "Stimulus Generalization",
+        "Generalization Gradient",
+        "Aversive Stimuli: Electric Shock",
+        "Schedule: Variable Interval",
+        "Discrimination Learning",
+        "Stimulus Control"
+      ],
+      "truth": [
+        "Conditioned Suppression"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.14285714285714285,
+      "in_vocab": true,
+      "raw": "[\"Conditioned Suppression\", \"Stimulus Generalization\", \"Generalization Gradient\", \"Aversive Stimuli: Electric Shock\", \"Schedule: Variable Interval\", \"Discrimination Learning\", \"Stimulus Control\", \"Lev"
+    },
+    {
+      "idx": 91,
+      "title": "Suppression of a performance under differential reinforcement of low rates by a pre-time-o",
+      "pred": [
+        "Differential Reinforcement: Low Rates",
+        "Time-Out",
+        "Aversive Control",
+        "Avoidance Behavior",
+        "Schedule: Variable Interval",
+        "Reinforcement: Negative",
+        "Response Allocation",
+        "Stimulus Control"
+      ],
+      "truth": [
+        "Aversive Control",
+        "Avoidance",
+        "Time-Out"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2222222222222222,
+      "in_vocab": true,
+      "raw": "[\"Differential Reinforcement: Low Rates\", \"Time-Out\", \"Aversive Control\", \"Avoidance Behavior\", \"Schedule: Variable Interval\", \"Reinforcement: Negative\", \"Response Allocation\", \"Stimulus Control\"]"
+    },
+    {
+      "idx": 92,
+      "title": "A Precision Liquid Feeding System Controlled by Licking Behavior",
+      "pred": [
+        "Operant Responding",
+        "Reinforcement: Positive",
+        "Schedule: Fixed Ratio",
+        "Stimulus Control",
+        "Response Rate",
+        "Measurement: Duration",
+        "Conditioned Reinforcement",
+        "Respondent Conditioning"
+      ],
+      "truth": [
+        "Operant Conditioning"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Operant Responding\", \"Reinforcement: Positive\", \"Schedule: Fixed Ratio\", \"Stimulus Control\", \"Response Rate\", \"Measurement: Duration\", \"Conditioned Reinforcement\", \"Respondent Conditioning\"]"
+    },
+    {
+      "idx": 93,
+      "title": "A SIMPLE INTER VAL-PROGRAMMING CIRCUIT'",
+      "pred": [
+        "Schedule: Fixed Interval",
+        "Schedule: Variable Interval",
+        "Schedules of Reinforcement: Multiple",
+        "Reinforcement",
+        "Operant Conditioning",
+        "Response Rate"
+      ],
+      "truth": [
+        "Schedule-controlled reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Fixed Interval\", \"Schedule: Variable Interval\", \"Schedules of Reinforcement: Multiple\", \"Reinforcement\", \"Operant Conditioning\", \"Response Rate\", \"Apparatus\", \"Reliability\"]"
+    },
+    {
+      "idx": 94,
+      "title": "STIMULUS GENERALIZATION AS A FUNCTION OF THE TIMEBETWEEN TRAINING AND TESTING PROCEDURES",
+      "pred": [
+        "Stimulus Generalization",
+        "Discrimination Learning",
+        "Generalization Gradient",
+        "Response Allocation",
+        "Temporal Relations",
+        "Visual Stimulus"
+      ],
+      "truth": [
+        "Stimulus generalization and discrimination retention"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Stimulus Generalization\", \"Discrimination Learning\", \"Generalization Gradient\", \"Response Allocation\", \"Retention\", \"Temporal Relations\", \"Visual Stimulus\", \"Pigeons\"]"
+    },
+    {
+      "idx": 96,
+      "title": "Some Electronic Control Units for Operant Behavior Studies: I. A Response and Reinforcemen",
+      "pred": [
+        "Operant Conditioning",
+        "Response Rate",
+        "Temporal Control",
+        "Contingency"
+      ],
+      "truth": [
+        "Operant Conditioning"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.25,
+      "in_vocab": true,
+      "raw": "[\"Operant Conditioning\", \"Reinforcement Timing\", \"Response Rate\", \"Temporal Control\", \"Electronic Equipment\", \"Experimental Design\", \"Programming Systems\", \"Contingency\"]"
+    },
+    {
+      "idx": 97,
+      "title": "Discrimination of Changes in Heart Rate: Two Unsuccessful Attempts",
+      "pred": [
+        "Conditioned Reinforcement",
+        "Discrimination Learning",
+        "Stimulus Discriminability",
+        "Reinforcement: Positive",
+        "Respondent Conditioning",
+        "Experimental Analysis of Behavior"
+      ],
+      "truth": [
+        "Discrimination Learning"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.16666666666666666,
+      "in_vocab": true,
+      "raw": "[\"Conditioned Reinforcement\", \"Discrimination Learning\", \"Stimulus Discriminability\", \"Reinforcement: Positive\", \"Respondent Conditioning\", \"Verbal Behavior\", \"Experimental Analysis of Behavior\", \"Hea"
+    },
+    {
+      "idx": 98,
+      "title": "HUMAN OBSERVING BEHAVIOR AFTER SIGNAL DETECTION",
+      "pred": [
+        "Signal-Detection Theory",
+        "Operant Responding",
+        "Reinforcement: Positive",
+        "Stimulus Control",
+        "Postreinforcement Pause",
+        "Response Allocation",
+        "Discrimination"
+      ],
+      "truth": [
+        "discriminated operant control and postreinforcement stimulus control"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Signal-Detection Theory\", \"Operant Responding\", \"Reinforcement: Positive\", \"Stimulus Control\", \"Postreinforcement Pause\", \"Response Allocation\", \"Fixed Interval\", \"Discrimination\"]"
+    },
+    {
+      "idx": 99,
+      "title": "THE AVERSIVE CONTROL OF AN OPERANT DISCRIMINATION'",
+      "pred": [
+        "Aversive Control",
+        "Avoidance Learning",
+        "Discrimination Learning",
+        "Reinforcement: Negative",
+        "Stimulus Control",
+        "Extinction",
+        "Behavioral Contrast",
+        "Conditioned Suppression"
+      ],
+      "truth": [
+        "Discriminative control of avoidance"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Aversive Control\", \"Avoidance Learning\", \"Discrimination Learning\", \"Reinforcement: Negative\", \"Stimulus Control\", \"Extinction\", \"Behavioral Contrast\", \"Conditioned Suppression\"]"
+    },
+    {
+      "idx": 100,
+      "title": "MULTIPLE SCHEDULES OF TIME-CORRELATEDREINFORCEMENT",
+      "pred": [
+        "Schedule: Multiple",
+        "Schedule: Fixed Interval",
+        "Reinforcement: Delayed",
+        "Behavioral Pharmacology",
+        "Response Rate",
+        "Extinction",
+        "Postreinforcement Pause",
+        "Temporal Control"
+      ],
+      "truth": [
+        "Schedule control under time-correlated/limited-hold reinforcement showing a transition from interval-like to ratio-like performance"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Multiple\", \"Schedule: Fixed Interval\", \"Reinforcement: Delayed\", \"Behavioral Pharmacology\", \"Response Rate\", \"Extinction\", \"Postreinforcement Pause\", \"Temporal Control\"]"
+    },
+    {
+      "idx": 101,
+      "title": "OPERANT BEHAVIOR IN MENTAL DEFECTIVES:EXPLORATORY STUDIES'",
+      "pred": [
+        "Operant Conditioning",
+        "Schedule: Fixed Interval",
+        "Schedule: Fixed Ratio",
+        "Schedule: Variable Interval",
+        "Extinction",
+        "Postreinforcement Pause",
+        "Adjunctive Behavior",
+        "Reinforcer: Positive"
+      ],
+      "truth": [
+        "fixed ratio vs. interval schedules"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Operant Conditioning\", \"Schedule: Fixed Interval\", \"Schedule: Fixed Ratio\", \"Schedule: Variable Interval\", \"Extinction\", \"Postreinforcement Pause\", \"Adjunctive Behavior\", \"Reinforcer: Positive\"]"
+    },
+    {
+      "idx": 102,
+      "title": "BEHA VIOR STABILITY UNDER EXTENDED EXPOSURE TOA TIME-CORRELA TED REINFORCEMENT CONTINGENCY",
+      "pred": [
+        "Response Rate",
+        "Extinction",
+        "Postreinforcement Pause",
+        "Temporal Control",
+        "Schedule: Fixed Interval"
+      ],
+      "truth": [
+        "Time-correlated reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Response Rate\", \"Stability\", \"Extinction\", \"Postreinforcement Pause\", \"Temporal Control\", \"Schedule: Fixed Interval\", \"Variability\", \"Limited Hold\"]"
+    },
+    {
+      "idx": 103,
+      "title": "INTERMITTENT REINFORCEMENT OF DISCRIMINA TIVEL Y CONTROLLEDRESPONSES AND RUNS OF RESPONSES",
+      "pred": [
+        "Discrimination",
+        "Interresponse Times",
+        "Reinforcement: Delayed",
+        "Stimulus Control",
+        "Operant Responding",
+        "Differential Reinforcement",
+        "Conditioned Reinforcer"
+      ],
+      "truth": [
+        "Discriminated operant behavior under intermittent reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Discrimination\", \"Interresponse Times\", \"Reinforcement: Delayed\", \"Response Latency\", \"Stimulus Control\", \"Operant Responding\", \"Differential Reinforcement\", \"Conditioned Reinforcer\"]"
+    },
+    {
+      "idx": 104,
+      "title": "Some Effects of Brain Stimulation on Timing Behavior",
+      "pred": [
+        "Differential Reinforcement: Low Rates",
+        "Interresponse Times",
+        "Response Rate",
+        "Temporal Discrimination",
+        "Behavioral Pharmacology",
+        "Reinforcer: Positive",
+        "Stimulus Control"
+      ],
+      "truth": [
+        "Differential reinforcement of low rates"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Differential Reinforcement: Low Rates\", \"Intracranial Self-Stimulation\", \"Interresponse Times\", \"Response Rate\", \"Temporal Discrimination\", \"Behavioral Pharmacology\", \"Reinforcer: Positive\", \"Stimul"
+    },
+    {
+      "idx": 105,
+      "title": "SOME ELECTRONIC CONTROL UNITS FOR OPERANT BEHAVIORSTUDIES: II. A RANDOM RATIO GENERATOR'",
+      "pred": [
+        "Schedule: Variable Ratio",
+        "Schedules of Reinforcement: Variable Ratio",
+        "Operant Conditioning",
+        "Reinforcement",
+        "Response Rate",
+        "Interresponse Times"
+      ],
+      "truth": [
+        "Random ratio (RR) reinforcement \u2014 probabilistic control of operant responding"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Variable Ratio\", \"Schedules of Reinforcement: Variable Ratio\", \"Operant Conditioning\", \"Reinforcement\", \"Response Rate\", \"Interresponse Times\", \"Calibration\", \"Electronic Circuit\"]"
+    },
+    {
+      "idx": 290,
+      "title": "A Review of Positive Conditioned Reinforcement",
+      "pred": [
+        "Conditioned Reinforcement",
+        "Schedule: Chained",
+        "Stimulus Control",
+        "Extinction",
+        "Response Rate"
+      ],
+      "truth": [
+        "Conditioned Reinforcement",
+        "Schedule: Chained",
+        "Stimulus Control"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.6,
+      "in_vocab": true,
+      "raw": "[\"Conditioned Reinforcement\", \"Schedule: Chained\", \"Higher-Order Conditioning\", \"Stimulus Control\", \"Extinction\", \"Response Rate\", \"Primary Reinforcement\", \"Discriminative Stimuli\"]"
+    },
+    {
+      "idx": 1234,
+      "title": "Inhibition and the stimulus control of operant behavior",
+      "pred": [
+        "Conditioned Inhibition",
+        "Stimulus Control",
+        "Generalization Gradient",
+        "Operant Conditioning",
+        "Experimental Analysis of Behavior",
+        "Discrimination Learning",
+        "Response Allocation"
+      ],
+      "truth": [
+        "Stimulus Control",
+        "Conditioned Inhibition",
+        "Generalization Gradient"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.42857142857142855,
+      "in_vocab": true,
+      "raw": "[\"Conditioned Inhibition\", \"Stimulus Control\", \"Inhibition\", \"Generalization Gradient\", \"Operant Conditioning\", \"Experimental Analysis of Behavior\", \"Discrimination Learning\", \"Response Allocation\"]"
+    },
+    {
+      "idx": 2237,
+      "title": "Three Versions of the Additive Theories of Behavioral Contrast",
+      "pred": [
+        "Behavioral Contrast",
+        "Multiple Schedules of Reinforcement",
+        "Additivity Theory",
+        "Response Allocation",
+        "Contingency",
+        "Stimulus Control",
+        "Experimental Analysis of Behavior",
+        "Operant Conditioning"
+      ],
+      "truth": [
+        "Behavioral Contrast",
+        "Additivity Theory",
+        "Schedule: Multiple"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2222222222222222,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Contrast\", \"Multiple Schedules of Reinforcement\", \"Additivity Theory\", \"Response Allocation\", \"Contingency\", \"Stimulus Control\", \"Experimental Analysis of Behavior\", \"Operant Conditioning"
+    },
+    {
+      "idx": 2249,
+      "title": "The Legacy of Guttman and Kalish (1956): 25 Years of Research on Stimulus Generalization",
+      "pred": [
+        "Stimulus Generalization",
+        "Stimulus Control",
+        "Discriminability",
+        "Generalization Gradient",
+        "Peak Shift",
+        "Stimulus Discriminability"
+      ],
+      "truth": [
+        "Stimulus Generalization",
+        "Generalization Gradients",
+        "Early Rearing",
+        "Discriminability",
+        "Inhibitory Stimulus Control"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2222222222222222,
+      "in_vocab": true,
+      "raw": "[\"Stimulus Generalization\", \"Stimulus Control\", \"Discriminability\", \"Generalization Gradient\", \"Inhibitory Stimulus Control\", \"Peak Shift\", \"Attentional Effects\", \"Stimulus Discriminability\"]"
+    },
+    {
+      "idx": 2352,
+      "title": "Another look at contrast in multiple schedules",
+      "pred": [
+        "Behavioral contrast under multiple schedules",
+        "Multiple Schedules of Reinforcement",
+        "Reinforcement",
+        "Response Rate",
+        "Herrnsteins Equation",
+        "Delay-Reduction Hypothesis",
+        "Conditioned Reinforcement"
+      ],
+      "truth": [
+        "Behavioral Contrast",
+        "Multiple Schedules of Reinforcement",
+        "Herrnsteins Equation"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.25,
+      "in_vocab": true,
+      "raw": "[\"Behavioral contrast under multiple schedules\", \"Multiple Schedules of Reinforcement\", \"Reinforcement\", \"Response Rate\", \"Herrnsteins Equation\", \"Inhibition by reinforcement\", \"Delay-Reduction Hypoth"
+    },
+    {
+      "idx": 3054,
+      "title": "The nature of sexual reinforcement.",
+      "pred": [
+        "Reinforcement",
+        "Stimulus Control",
+        "Extinction",
+        "Discrimination Learning",
+        "Second-Order Conditioning"
+      ],
+      "truth": [
+        "Reinforcement",
+        "Positive Reinforcement",
+        "Classical Conditioning"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.14285714285714285,
+      "in_vocab": true,
+      "raw": "[\"Reinforcement\", \"Sexual Reinforcers\", \"Stimulus Control\", \"Acquisition\", \"Extinction\", \"Discrimination Learning\", \"Second-Order Conditioning\", \"Latent Inhibition\"]"
+    },
+    {
+      "idx": 3096,
+      "title": "Responding changes systematically within sessions during conditioning procedures.",
+      "pred": [
+        "Positive Reinforcement",
+        "Avoidance",
+        "Punishment",
+        "Extinction",
+        "Discrimination",
+        "Delayed Match to Sample",
+        "Concept Learning",
+        "Foraging"
+      ],
+      "truth": [
+        "Response Rate",
+        "Conditioning"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Positive Reinforcement\", \"Avoidance\", \"Punishment\", \"Extinction\", \"Discrimination\", \"Delayed Match to Sample\", \"Concept Learning\", \"Foraging\"]"
+    },
+    {
+      "idx": 3311,
+      "title": "William Nathan Schoenfeld (1915-1996): innovative scientist, inspiring teacher, relentless",
+      "pred": [
+        "Experimental Analysis of Behavior",
+        "Operant Conditioning",
+        "Stimulus Control",
+        "Behavioral Contrast",
+        "Differential Reinforcement",
+        "Reinforcement: Positive",
+        "Schedule: Multiple",
+        "Shaping"
+      ],
+      "truth": [
+        "Conditioned Reinforcement",
+        "Avoidance Behavior",
+        "Experimental Analysis of Behavior"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.1,
+      "in_vocab": true,
+      "raw": "[\"Experimental Analysis of Behavior\", \"Operant Conditioning\", \"Stimulus Control\", \"Behavioral Contrast\", \"Differential Reinforcement\", \"Reinforcement: Positive\", \"Schedule: Multiple\", \"Shaping\"]"
+    },
+    {
+      "idx": 3312,
+      "title": "The discrimination of relative frequency by pigeons.",
+      "pred": [
+        "Discrimination Learning",
+        "Choice",
+        "Stimulus Discriminability",
+        "Generalization",
+        "Temporal Relations"
+      ],
+      "truth": [
+        "Discrimination",
+        "Stimulus Control",
+        "Short-Term Memory"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Discrimination Learning\", \"Choice\", \"Stimulus Discriminability\", \"Serial Position Effect\", \"Negative Recency Effect\", \"Negative Primacy Effect\", \"Generalization\", \"Temporal Relations\"]"
+    },
+    {
+      "idx": 3313,
+      "title": "On The Relation Between Preference And Resistance To Change.",
+      "pred": [
+        "Schedule: Concurrent-Chain",
+        "Schedule: Multiple",
+        "Power Law",
+        "Multiple Schedules of Reinforcement"
+      ],
+      "truth": [
+        "Choice",
+        "Schedule: Concurrent Chains",
+        "Multiple Schedules of Reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.16666666666666666,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Concurrent-Chain\", \"Schedule: Multiple\", \"Resistance to Change\", \"Preference\", \"Power Law\", \"Reinforcement Rate\", \"Concurrent Schedules of Reinforcement\", \"Multiple Schedules of Reinforcem"
+    },
+    {
+      "idx": 3314,
+      "title": "Open Versus Closed Economies: Performance Of Domestic Hens Under Fixed Ratio Schedules.",
+      "pred": [
+        "Schedule: Fixed Ratio",
+        "Response Rate",
+        "Postreinforcement Pause",
+        "Experimental Analysis of Behavior",
+        "Operant Conditioning",
+        "Motivating Operations"
+      ],
+      "truth": [
+        "Schedule: Fixed Ratio",
+        "Deprivation"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.14285714285714285,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Fixed Ratio\", \"Response Rate\", \"Postreinforcement Pause\", \"Fixed-Ratio Schedules\", \"Experimental Analysis of Behavior\", \"Operant Conditioning\", \"Motivating Operations\", \"Session Length\"]"
+    },
+    {
+      "idx": 3315,
+      "title": "Key pecking during extinction after intermittent or continuous reinforcement as a function",
+      "pred": [
+        "Multiple Schedules of Reinforcement",
+        "Extinction",
+        "Reinforcement: Positive",
+        "Response Allocation",
+        "Behavioral Contrast"
+      ],
+      "truth": [
+        "Extinction",
+        "Schedules of Reinforcement: Variable Ratio",
+        "Schedules of Reinforcement: Continuous Reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.14285714285714285,
+      "in_vocab": true,
+      "raw": "[\"Multiple Schedules of Reinforcement\", \"Extinction\", \"Reinforcement: Positive\", \"Response Allocation\", \"Behavioral Contrast\", \"Fixed Ratio\", \"Variable Ratio\", \"Partial-Reinforcement Extinction Effect"
+    },
+    {
+      "idx": 3316,
+      "title": "Key-peck probability and topography in a concurrent variable-interval variable-interval sc",
+      "pred": [
+        "Schedule: Concurrent Variable-Interval",
+        "Response Topography",
+        "Reinforcer: Positive",
+        "Deprivation",
+        "Stimulus Control",
+        "Choice",
+        "Response Rate"
+      ],
+      "truth": [
+        "Schedule: Concurrent Variable-Interval",
+        "Response Topography",
+        "Deprivation"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.42857142857142855,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Concurrent Variable-Interval\", \"Response Topography\", \"Reinforcer: Positive\", \"Deprivation\", \"Stimulus Control\", \"Choice\", \"Response Rate\", \"Time Allocation\"]"
+    },
+    {
+      "idx": 3317,
+      "title": "Body weight and response acquisition with delayed reinforcement.",
+      "pred": [
+        "Schedule: Tandem",
+        "Delay of Reinforcement",
+        "Deprivation",
+        "Response Rate"
+      ],
+      "truth": [
+        "Delay of Reinforcement",
+        "Deprivation",
+        "Schedule: Tandem"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.75,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Tandem\", \"Differential Reinforcement of Other Behavior\", \"Delay of Reinforcement\", \"Deprivation\", \"Response Rate\", \"Acquisition\", \"Body Weight\", \"Lever Pressing\"]"
+    },
+    {
+      "idx": 3318,
+      "title": "Conditioned reinforcement dynamics in three-link chained schedules.",
+      "pred": [
+        "Schedule: Concurrent-Chain",
+        "Conditioned Reinforcement",
+        "Response Allocation",
+        "Stimulus Control",
+        "Discrimination Learning",
+        "Temporal Relations",
+        "Reinforcement Delay",
+        "Differential Reinforcement"
+      ],
+      "truth": [
+        "Conditioned Reinforcement",
+        "Schedule: Concurrent Chains",
+        "Schedule: Chained"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.1,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Concurrent-Chain\", \"Conditioned Reinforcement\", \"Response Allocation\", \"Stimulus Control\", \"Discrimination Learning\", \"Temporal Relations\", \"Reinforcement Delay\", \"Differential Reinforceme"
+    },
+    {
+      "idx": 3319,
+      "title": "Residence Time In Concurrent Foraging With Fixed Times To Prey Arrival.",
+      "pred": [
+        "Choice",
+        "Schedule: Concurrent",
+        "Response Allocation",
+        "Reinforcement Delay",
+        "Temporal Control",
+        "Foraging",
+        "Differential Reinforcement",
+        "Temporal Relations"
+      ],
+      "truth": [
+        "Foraging",
+        "Choice",
+        "Schedule: Concurrent"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.375,
+      "in_vocab": true,
+      "raw": "[\"Choice\", \"Schedule: Concurrent\", \"Response Allocation\", \"Reinforcement Delay\", \"Temporal Control\", \"Foraging\", \"Differential Reinforcement\", \"Temporal Relations\"]"
+    },
+    {
+      "idx": 3320,
+      "title": "Learning About Food: Starlings, Skinner Boxes, And Earthworms.",
+      "pred": [
+        "Foraging",
+        "Operant Conditioning",
+        "Reinforcement: Positive",
+        "Response Allocation",
+        "Schedule: Variable Interval",
+        "Stimulus Control",
+        "Temporal Relations",
+        "Behavioral Contrast"
+      ],
+      "truth": [
+        "Foraging",
+        "Schedule: Chained",
+        "Schedule: Fixed Ratio"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.1,
+      "in_vocab": true,
+      "raw": "[\"Foraging\", \"Operant Conditioning\", \"Reinforcement: Positive\", \"Response Allocation\", \"Schedule: Variable Interval\", \"Stimulus Control\", \"Temporal Relations\", \"Behavioral Contrast\"]"
+    },
+    {
+      "idx": 3321,
+      "title": "The S-R issue: its status in behavior analysis and in Donahoe and Palmer's learning and co",
+      "pred": [
+        "Operant Conditioning",
+        "Respondent Conditioning",
+        "Stimulus Control",
+        "Conditioning",
+        "Experimental Analysis of Behavior",
+        "Reinforcement",
+        "Momentary Maximizing"
+      ],
+      "truth": [
+        "Operant Conditioning",
+        "Respondent Conditioning",
+        "Reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.42857142857142855,
+      "in_vocab": true,
+      "raw": "[\"Operant Conditioning\", \"Respondent Conditioning\", \"Stimulus Control\", \"Conditioning\", \"Experimental Analysis of Behavior\", \"Reinforcement\", \"Momentary Maximizing\", \"Computer Simulations\"]"
+    },
+    {
+      "idx": 3325,
+      "title": "In Today's Climate, A Forecast For Change: A commentary On Donahoe, Palmer, And Burgos.",
+      "pred": [
+        "Experimental Analysis of Behavior",
+        "Operant Conditioning",
+        "Respondent Conditioning",
+        "Measurement",
+        "Concept Learning",
+        "Stimulus Control",
+        "Behavioral Contrast",
+        "Generalization"
+      ],
+      "truth": [
+        "Experimental Analysis of Behavior",
+        "Operant Conditioning",
+        "Respondent Conditioning"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.375,
+      "in_vocab": true,
+      "raw": "[\"Experimental Analysis of Behavior\", \"Operant Conditioning\", \"Respondent Conditioning\", \"Measurement\", \"Concept Learning\", \"Stimulus Control\", \"Behavioral Contrast\", \"Generalization\"]"
+    },
+    {
+      "idx": 3408,
+      "title": "Ratio size and cocaine concentration effects on oral cocaine-reinforced behavior.",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Choice",
+        "Reinforcement: Positive",
+        "Response Rate"
+      ],
+      "truth": [
+        "Behavioral Pharmacology",
+        "Schedule: Concurrent",
+        "Schedule: Fixed Ratio"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.16666666666666666,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Choice\", \"Schedule: Concurrent Fixed-Ratio\", \"Reinforcement: Positive\", \"Response Rate\", \"Dose-Response Relationship\", \"Cocaine\", \"Fixed Ratio\"]"
+    },
+    {
+      "idx": 3710,
+      "title": "Naming and categorization in young children: II. Listener behavior training.",
+      "pred": [
+        "Match to Sample",
+        "Stimulus Classes",
+        "Stimulus Control",
+        "Discrimination Learning"
+      ],
+      "truth": [
+        "Stimulus Classes",
+        "Conditional Discrimination",
+        "Match to Sample"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.4,
+      "in_vocab": true,
+      "raw": "[\"Listener Behavior\", \"Match to Sample\", \"Stimulus Classes\", \"Stimulus Control\", \"Discrimination Learning\", \"Training\", \"Categorization\", \"Speaker Behavior\"]"
+    },
+    {
+      "idx": 3740,
+      "title": "The Sunk Cost Effect In Pigeons And Humans",
+      "pred": [
+        "Choice",
+        "Response Allocation",
+        "Schedule: Fixed Ratio",
+        "Differential Reinforcement",
+        "Stimulus Control",
+        "Behavioral Contrast",
+        "Escape",
+        "Operant Responding"
+      ],
+      "truth": [
+        "Choice",
+        "Stimulus Control",
+        "Schedule: Variable Ratio"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2222222222222222,
+      "in_vocab": true,
+      "raw": "[\"Choice\", \"Response Allocation\", \"Schedule: Fixed Ratio\", \"Differential Reinforcement\", \"Stimulus Control\", \"Behavioral Contrast\", \"Escape\", \"Operant Responding\"]"
+    },
+    {
+      "idx": 3741,
+      "title": "Simultaneous Visual Discrimination In Asian Elephants",
+      "pred": [
+        "Discrimination Learning",
+        "Stimulus Control",
+        "Visual Stimulus",
+        "Response Allocation"
+      ],
+      "truth": [
+        "Discrimination Learning",
+        "Discrete Trials",
+        "Visual Stimulus"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.4,
+      "in_vocab": true,
+      "raw": "[\"Discrimination Learning\", \"Simultaneous Discrimination\", \"Stimulus Control\", \"Visual Stimulus\", \"Response Allocation\", \"Age Effects\", \"Acquisition\", \"Criterion\"]"
+    },
+    {
+      "idx": 3742,
+      "title": "Within-Subject Testing Of The Signaled-Reinforcement Effect On Operant Responding As Measu",
+      "pred": [
+        "Schedule: Multiple",
+        "Response Rate",
+        "Signal Detection",
+        "Reinforcement: Positive",
+        "Stimulus Control",
+        "Multiple Schedules of Reinforcement"
+      ],
+      "truth": [
+        "Multiple Schedules of Reinforcement",
+        "Schedule: Random Interval",
+        "Conditioned Reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.125,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Multiple\", \"Response Rate\", \"Resistance to Change\", \"Signal Detection\", \"Reinforcement: Positive\", \"Stimulus Control\", \"Multiple Schedules of Reinforcement\", \"Random Interval\"]"
+    },
+    {
+      "idx": 3743,
+      "title": "Naming And Categorization In Young Children: III. Vocal Tact Training And Transfer Of Func",
+      "pred": [
+        "Behavioral Chaining",
+        "Discrimination Learning",
+        "Stimulus Equivalence",
+        "Matching to Sample",
+        "Response Differentiation"
+      ],
+      "truth": [
+        "Stimulus Classes",
+        "Match to Sample",
+        "Discrimination Training"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Chaining\", \"Discrimination Learning\", \"Stimulus Equivalence\", \"Matching to Sample\", \"Response Differentiation\", \"Listener Behavior\", \"Vocal Tact Training\", \"Category Match-to-Sample\"]"
+    },
+    {
+      "idx": 3750,
+      "title": "Does Sensitivity to Magnitude Depend on the Temporal Distribution of Reinforcement?",
+      "pred": [
+        "Schedule: Concurrent-Chain",
+        "Reinforcer: Positive",
+        "Response Allocation",
+        "Matching Law",
+        "Temporal Relations"
+      ],
+      "truth": [
+        "Schedule: Concurrent Chains",
+        "Choice",
+        "Generalized Matching Law"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Concurrent-Chain\", \"Reinforcer: Positive\", \"Response Allocation\", \"Matching Law\", \"Temporal Relations\", \"Sensitivity to Magnitude\", \"Fixed Interval\", \"Variable Interval\"]"
+    },
+    {
+      "idx": 3751,
+      "title": "Emergent, Untrained Stimulus Relations in Many-to-One Matching-to-Sample Discriminations i",
+      "pred": [
+        "Matching to Sample",
+        "Stimulus Equivalence",
+        "Discrimination Learning",
+        "Response Allocation",
+        "Experimental Analysis of Behavior",
+        "Operant Conditioning",
+        "Conditioned Reinforcement",
+        "Stimulus Control"
+      ],
+      "truth": [
+        "Matching to Sample",
+        "Conditional Discrimination",
+        "Stimulus Classes"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.1,
+      "in_vocab": true,
+      "raw": "[\"Matching to Sample\", \"Stimulus Equivalence\", \"Discrimination Learning\", \"Response Allocation\", \"Experimental Analysis of Behavior\", \"Operant Conditioning\", \"Conditioned Reinforcement\", \"Stimulus Con"
+    },
+    {
+      "idx": 3753,
+      "title": "Unsignaled Delay Of Reinforcement, Relative Time, And Resistance To Change",
+      "pred": [
+        "Delay of Reinforcement",
+        "Multiple Schedules of Reinforcement",
+        "Matching Law",
+        "Response Rate",
+        "Schedule: Multiple"
+      ],
+      "truth": [
+        "Delay of Reinforcement",
+        "Schedule: Multiple",
+        "Herrnsteins Equation"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.3333333333333333,
+      "in_vocab": true,
+      "raw": "[\"Delay of Reinforcement\", \"Multiple Schedules of Reinforcement\", \"Matching Law\", \"Response Rate\", \"Reinforcement Rate\", \"Resistance to Change\", \"Schedule: Multiple\", \"Unsignaled Delay\"]"
+    },
+    {
+      "idx": 3754,
+      "title": "Effects Of Reinforcement History On Response Rate And Response Pattern In Periodic Reinfor",
+      "pred": [
+        "Temporal Control",
+        "Response Rate",
+        "Temporal Relations",
+        "Interresponse Times",
+        "Conditioning",
+        "Schedule: Fixed Interval"
+      ],
+      "truth": [
+        "Schedule: Fixed Interval",
+        "Temporal Control",
+        "Response Rate"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.5,
+      "in_vocab": true,
+      "raw": "[\"Temporal Control\", \"Fixed Interval\", \"Response Rate\", \"Reinforcement History\", \"Temporal Relations\", \"Interresponse Times\", \"Conditioning\", \"Schedule: Fixed Interval\"]"
+    },
+    {
+      "idx": 3755,
+      "title": "The Effects Of Interval Duration On Temporal Tracking And Alternation Learning",
+      "pred": [
+        "Temporal Control",
+        "Postreinforcement Pause",
+        "Alternating Schedules of Reinforcement",
+        "Schedule: Variable Interval",
+        "Response Allocation",
+        "Stimulus Discriminability",
+        "Temporal Relations"
+      ],
+      "truth": [
+        "Temporal Control",
+        "Postreinforcement Pause",
+        "Schedule: Fixed Interval"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.25,
+      "in_vocab": true,
+      "raw": "[\"Temporal Control\", \"Postreinforcement Pause\", \"Alternating Schedules of Reinforcement\", \"Schedule: Variable Interval\", \"Response Allocation\", \"Stimulus Discriminability\", \"Temporal Relations\", \"Lear"
+    },
+    {
+      "idx": 3756,
+      "title": "Effects Of Reinforcer Probability, Delay, And Response Requirements On The Choices Of Rats",
+      "pred": [
+        "Choice",
+        "Reinforcement: Delayed",
+        "Reinforcement: Positive",
+        "Schedule: Fixed Interval",
+        "Schedule: Fixed Ratio",
+        "Response Allocation",
+        "Temporal Control"
+      ],
+      "truth": [
+        "Choice",
+        "Delay of Reinforcement",
+        "Conditioned Reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.1111111111111111,
+      "in_vocab": true,
+      "raw": "[\"Choice\", \"Reinforcement: Delayed\", \"Reinforcement: Positive\", \"Schedule: Fixed Interval\", \"Schedule: Fixed Ratio\", \"Response Allocation\", \"Species Differences\", \"Temporal Control\"]"
+    },
+    {
+      "idx": 3757,
+      "title": "Morphine Tolerance As A Function Of Ratio Schedule: Response Requirement Or Unit Price?",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Schedule: Fixed Ratio",
+        "Multiple Schedules of Reinforcement",
+        "Response Rate"
+      ],
+      "truth": [
+        "Behavioral Pharmacology",
+        "Schedule: Fixed Ratio",
+        "Schedule: Multiple"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.4,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Schedule: Fixed Ratio\", \"Multiple Schedules of Reinforcement\", \"Tolerance\", \"Cross-Tolerance\", \"Dose-Response Relationship\", \"Pharmacological Similarity\", \"Response Rate\"]"
+    },
+    {
+      "idx": 3758,
+      "title": "Effects Of Methylphenidate And Morphine On Delay-Discount Functions Obtained Within Sessio",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Choice",
+        "Delay-Reduction Hypothesis",
+        "Reinforcement: Delayed",
+        "Schedule: Concurrent Variable-Interval",
+        "Response Allocation",
+        "Stimulus Control",
+        "Temporal Relations"
+      ],
+      "truth": [
+        "Choice",
+        "Delay of Reinforcement",
+        "Behavioral Pharmacology"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2222222222222222,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Choice\", \"Delay-Reduction Hypothesis\", \"Reinforcement: Delayed\", \"Schedule: Concurrent Variable-Interval\", \"Response Allocation\", \"Stimulus Control\", \"Temporal Relations\"]"
+    },
+    {
+      "idx": 3763,
+      "title": "Resistance To Change Of Forgetting Functions And Response Rates",
+      "pred": [
+        "Schedule: Multiple",
+        "Delayed Match to Sample",
+        "Response Rate"
+      ],
+      "truth": [
+        "Delayed Match to Sample",
+        "Remembering",
+        "Schedule: Multiple"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.5,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Multiple\", \"Delayed Match to Sample\", \"Reinforcement Probability\", \"Response Rate\", \"Forgetting Functions\", \"Resistance to Change\", \"Initial Discrimination\", \"Rate of Forgetting\"]"
+    },
+    {
+      "idx": 3764,
+      "title": "Effects Of Amphetamine-CNS Depressant Combinations And Of Other CNS Stimulants In Four-Cho",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Choice",
+        "Discrimination Learning",
+        "Response Allocation",
+        "Stimulus Control",
+        "Temporal Relations"
+      ],
+      "truth": [
+        "Behavioral Pharmacology",
+        "Discrimination",
+        "Stimulus Control"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2857142857142857,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Choice\", \"Discrimination Learning\", \"Dose-Response Curves\", \"Drug Discriminations\", \"Response Allocation\", \"Stimulus Control\", \"Temporal Relations\"]"
+    },
+    {
+      "idx": 3765,
+      "title": "The Sensitivity Of Response Rate To The Rate Of Variable-Interval Reinforcement For Pigeon",
+      "pred": [
+        "Schedule: Variable Interval",
+        "Response Rate",
+        "Reinforcement: Positive",
+        "Operant Responding",
+        "Herrnsteins Equation",
+        "Motivating Operations"
+      ],
+      "truth": [
+        "Herrnsteins Equation",
+        "Schedule: Variable Interval",
+        "Response Rate"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.5,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Variable Interval\", \"Response Rate\", \"Reinforcement: Positive\", \"Operant Responding\", \"Pigeons\", \"Rats\", \"Herrnsteins Equation\", \"Motivating Operations\"]"
+    },
+    {
+      "idx": 3766,
+      "title": "On The Classic And Modern Theories Of Matching",
+      "pred": [
+        "Matching Law",
+        "Herrnsteins Equation",
+        "Generalized Matching Law",
+        "Power Law",
+        "Choice",
+        "Schedules of Reinforcement: Concurrent",
+        "Response Allocation",
+        "Behavioral Contrast"
+      ],
+      "truth": [
+        "Matching Law",
+        "Generalized Matching Law",
+        "Herrnsteins Equation"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.375,
+      "in_vocab": true,
+      "raw": "[\"Matching Law\", \"Herrnsteins Equation\", \"Generalized Matching Law\", \"Power Law\", \"Choice\", \"Schedules of Reinforcement: Concurrent\", \"Response Allocation\", \"Behavioral Contrast\"]"
+    },
+    {
+      "idx": 3767,
+      "title": "A Test Of The Formal And Modern Theories Of Matching",
+      "pred": [
+        "Matching",
+        "Schedule: Concurrent Variable-Interval",
+        "Bias",
+        "Response Allocation",
+        "Reinforcement: Positive"
+      ],
+      "truth": [
+        "Matching Law",
+        "Choice",
+        "Schedule: Concurrent Variable-Interval"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.14285714285714285,
+      "in_vocab": true,
+      "raw": "[\"Matching\", \"Schedule: Concurrent Variable-Interval\", \"Bias\", \"Sensitivity\", \"Response Allocation\", \"Reinforcement: Positive\", \"Formal Theory of Matching\", \"Modern Theory of Matching\"]"
+    },
+    {
+      "idx": 3768,
+      "title": "Associative Symmetry In The Pigeon After Successive Matching-To-Sample Training",
+      "pred": [
+        "Matching to Sample",
+        "Stimulus Equivalence",
+        "Successive Discrimination",
+        "Response Allocation"
+      ],
+      "truth": [
+        "Matching to Sample",
+        "Conditional Discrimination",
+        "Stimulus Equivalence"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.4,
+      "in_vocab": true,
+      "raw": "[\"Matching to Sample\", \"Stimulus Equivalence\", \"Associative Symmetry\", \"Successive Discrimination\", \"Identity Matching\", \"Arbitrary Matching\", \"Response Allocation\", \"Training\"]"
+    },
+    {
+      "idx": 3769,
+      "title": "Earning And Obtaining Reinforcers Under Concurrent Interval Scheduling",
+      "pred": [
+        "Schedule: Concurrent Variable-Interval",
+        "Choice",
+        "Generalized Matching Law",
+        "Response Allocation",
+        "Reinforcement: Delayed",
+        "Postreinforcement Pause",
+        "Matching Law",
+        "Behavioral Contrast"
+      ],
+      "truth": [
+        "Generalized Matching Law",
+        "Schedule: Concurrent",
+        "Choice"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2222222222222222,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Concurrent Variable-Interval\", \"Choice\", \"Generalized Matching Law\", \"Response Allocation\", \"Reinforcement: Delayed\", \"Postreinforcement Pause\", \"Matching Law\", \"Behavioral Contrast\"]"
+    },
+    {
+      "idx": 3770,
+      "title": "Effects Of Adding A Second Reinforcement Alternative: Implications For Herrnstein's Interp",
+      "pred": [
+        "Herrnsteins Equation",
+        "Matching Law",
+        "Schedule: Concurrent Variable-Interval",
+        "Bias",
+        "Undermatching",
+        "Reinforcement: Delayed",
+        "Response Allocation",
+        "Schedules of Reinforcement: Concurrent"
+      ],
+      "truth": [
+        "Herrnsteins Equation",
+        "Matching Law",
+        "Schedule: Concurrent Variable-Interval"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.375,
+      "in_vocab": true,
+      "raw": "[\"Herrnsteins Equation\", \"Matching Law\", \"Schedule: Concurrent Variable-Interval\", \"Bias\", \"Undermatching\", \"Reinforcement: Delayed\", \"Response Allocation\", \"Schedules of Reinforcement: Concurrent\"]"
+    },
+    {
+      "idx": 3771,
+      "title": "Crewmember Performance Before, During, And After Spaceflight",
+      "pred": [
+        "Response Rate",
+        "Measurement",
+        "Temporal Control",
+        "Stimulus Discriminability",
+        "Behavioral Pharmacology",
+        "Operant Responding"
+      ],
+      "truth": [
+        "DRL",
+        "Repeated Acquisition",
+        "Delayed Match to Sample"
+      ],
+      "exact": false,
+      "any_overlap": false,
+      "jaccard": 0.0,
+      "in_vocab": true,
+      "raw": "[\"Response Rate\", \"Measurement\", \"Temporal Control\", \"Stimulus Discriminability\", \"Behavioral Pharmacology\", \"Fatigue\", \"Arousal\", \"Operant Responding\"]"
+    },
+    {
+      "idx": 3778,
+      "title": "Effects of Reinforcement Schedule on Facilitation of Operant Extinction by Chlordiazepoxid",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Extinction",
+        "Operant Conditioning",
+        "Reinforcement: Positive",
+        "Response Rate",
+        "Temporal Control"
+      ],
+      "truth": [
+        "Extinction",
+        "Behavioral Pharmacology",
+        "Operant Conditioning"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.5,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Extinction\", \"Fixed Interval\", \"Fixed Ratio\", \"Operant Conditioning\", \"Reinforcement: Positive\", \"Response Rate\", \"Temporal Control\"]"
+    },
+    {
+      "idx": 3779,
+      "title": "Differential Acquisition of Lever Pressing in Inbred and Outbred Mice: Comparison of One-L",
+      "pred": [
+        "Operant Conditioning",
+        "Reinforcement: Positive",
+        "Schedule: Fixed Ratio",
+        "Response Allocation"
+      ],
+      "truth": [
+        "Operant Conditioning",
+        "Schedule: Variable Time",
+        "Noncontingent Reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.16666666666666666,
+      "in_vocab": true,
+      "raw": "[\"Operant Conditioning\", \"Reinforcement: Positive\", \"Schedule: Fixed Ratio\", \"Schedule: Variable-Time\", \"Response Allocation\", \"Genetic Factors\", \"Locomotor Activity\", \"Behavioral Genetics\"]"
+    },
+    {
+      "idx": 3780,
+      "title": "Pilocarpine Seizures Cause Age-Dependent Impairment in Auditory Location Discrimination",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Discrimination Learning",
+        "Stimulus Discriminability",
+        "Temporal Control"
+      ],
+      "truth": [
+        "Discrimination Learning",
+        "Stimulus Control",
+        "Discrimination Training"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.16666666666666666,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Discrimination Learning\", \"Stimulus Discriminability\", \"Temporal Control\", \"Age-Dependent Effects\", \"Seizures\", \"Auditory Location Discrimination\", \"Status Epilepticus\"]"
+    },
+    {
+      "idx": 3781,
+      "title": "The Role of Dopamine in Reinforcement: Changes in Reinforcement Sensitivity Induced by D1-",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Response Rate",
+        "Bias"
+      ],
+      "truth": [
+        "Generalized Matching Law",
+        "Behavioral Pharmacology",
+        "Schedule: Concurrent Variable-Interval"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Reinforcement Sensitivity\", \"Dopamine Receptor Agonists\", \"Response Rate\", \"Bias\", \"Goodness of Fit\", \"Stereotyped Behavior\", \"D1-type Receptor\"]"
+    },
+    {
+      "idx": 3782,
+      "title": "Effects of Morphine on Temporal Discrimination and Color Matching: General Disruption of S",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Temporal Discrimination",
+        "Stimulus Control",
+        "Multiple Schedules of Reinforcement"
+      ],
+      "truth": [
+        "Temporal Discrimination",
+        "Stimulus Control",
+        "Behavioral Pharmacology"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.75,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Temporal Discrimination\", \"Stimulus Control\", \"Multiple Schedules of Reinforcement\", \"Fixed Interval\", \"Color Matching\", \"Morphine\", \"Accuracy\"]"
+    },
+    {
+      "idx": 3783,
+      "title": "Derived Stimulus Relations, Semantic Priming, and Event-Related Potentials: Testing a Beha",
+      "pred": [
+        "Stimulus Equivalence",
+        "Response Allocation",
+        "Stimulus Control",
+        "Temporal Relations"
+      ],
+      "truth": [
+        "Stimulus Equivalence",
+        "Conditional Discrimination",
+        "Matching to Sample"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.16666666666666666,
+      "in_vocab": true,
+      "raw": "[\"Stimulus Equivalence\", \"Semantic Priming\", \"Derived Stimulus Relations\", \"Event-Related Potentials\", \"Lexical Decision Task\", \"Response Allocation\", \"Stimulus Control\", \"Temporal Relations\"]"
+    },
+    {
+      "idx": 3784,
+      "title": "Relating Derived Relations as a Model of Analogical Reasoning: Reaction Times and Event-Re",
+      "pred": [
+        "Stimulus Equivalence",
+        "Response Differentiation",
+        "Conditioned Reinforcement",
+        "Temporal Relations",
+        "Signal Detection",
+        "Measurement: Duration",
+        "Behavioral Contrast",
+        "Generalization Gradient"
+      ],
+      "truth": [
+        "Stimulus Equivalence",
+        "Conditional Discrimination",
+        "Matching to Sample"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.1,
+      "in_vocab": true,
+      "raw": "[\"Stimulus Equivalence\", \"Response Differentiation\", \"Conditioned Reinforcement\", \"Temporal Relations\", \"Signal Detection\", \"Measurement: Duration\", \"Behavioral Contrast\", \"Generalization Gradient\"]"
+    },
+    {
+      "idx": 3785,
+      "title": "On Aims and Methods in the Neuroimaging of Derived Relations",
+      "pred": [
+        "Stimulus Equivalence",
+        "Operant Conditioning"
+      ],
+      "truth": [
+        "Stimulus Equivalence",
+        "Conditional Discrimination",
+        "Matching to Sample"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.25,
+      "in_vocab": true,
+      "raw": "[\"Stimulus Equivalence\", \"Derived Relations\", \"Neuroimaging\", \"Transitive Inference\", \"Serial Learning\", \"Behavioral Analysis\", \"Operant Conditioning\", \"Human Participants\"]"
+    },
+    {
+      "idx": 3789,
+      "title": "Prefrontal Brain Activity Predicts Temporally Extended Decision-Making Behavior",
+      "pred": [
+        "Choice",
+        "Temporal Control",
+        "Reinforcement: Delayed",
+        "Operant Responding",
+        "Behavioral Contrast",
+        "Stimulus Control",
+        "Measurement",
+        "Experimental Analysis of Behavior"
+      ],
+      "truth": [
+        "Choice",
+        "Optimization"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.1111111111111111,
+      "in_vocab": true,
+      "raw": "[\"Choice\", \"Temporal Control\", \"Reinforcement: Delayed\", \"Operant Responding\", \"Behavioral Contrast\", \"Stimulus Control\", \"Measurement\", \"Experimental Analysis of Behavior\"]"
+    },
+    {
+      "idx": 3790,
+      "title": "Dynamic Response-by-Response Models of Matching Behavior in Rhesus Monkeys",
+      "pred": [
+        "Choice",
+        "Matching Law",
+        "Generalized Matching Law",
+        "Response Allocation",
+        "Reinforcement Delay"
+      ],
+      "truth": [
+        "Generalized Matching Law",
+        "Choice",
+        "Undermatching"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.3333333333333333,
+      "in_vocab": true,
+      "raw": "[\"Choice\", \"Matching Law\", \"Generalized Matching Law\", \"Response Allocation\", \"Reinforcement Delay\", \"Past Choices Influence\", \"Steady-State Behavior\", \"Block Transitions\"]"
+    },
+    {
+      "idx": 3791,
+      "title": "Linear-Nonlinear-Poisson Models of Primate Choice Dynamics",
+      "pred": [
+        "Choice",
+        "Schedule: Concurrent Variable-Interval",
+        "Foraging",
+        "Temporal Control",
+        "Reinforcement: Delayed",
+        "Response Allocation",
+        "Matching Law"
+      ],
+      "truth": [
+        "Choice",
+        "Matching Law",
+        "Schedule: Concurrent Variable-Interval"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.42857142857142855,
+      "in_vocab": true,
+      "raw": "[\"Choice\", \"Schedule: Concurrent Variable-Interval\", \"Foraging\", \"Temporal Control\", \"Reinforcement: Delayed\", \"Response Allocation\", \"Matching Law\", \"Hyperbolic Discounting\"]"
+    },
+    {
+      "idx": 3792,
+      "title": "Bridging the Gap between Brain and Behavior: Cognitive and Neural Mechanisms of Episodic M",
+      "pred": [
+        "Remembering",
+        "Short-Term Memory",
+        "Stimulus Control",
+        "Temporal Relations",
+        "Conditioned Reinforcement",
+        "Response Allocation"
+      ],
+      "truth": [
+        "Remembering",
+        "Discrimination",
+        "Signal Detection"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.125,
+      "in_vocab": true,
+      "raw": "[\"Remembering\", \"Short-Term Memory\", \"Stimulus Control\", \"Temporal Relations\", \"Conditioned Reinforcement\", \"Response Allocation\", \"Hippocampus\", \"Electrophysiological\"]"
+    },
+    {
+      "idx": 3793,
+      "title": "Neuroscience and Learning: Lessons from Studying the Involvement of a Region of Cerebellar",
+      "pred": [
+        "Classical Conditioning",
+        "Respondent Conditioning",
+        "Stimulus Control",
+        "Temporal Relations"
+      ],
+      "truth": [
+        "Classical Conditioning"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.25,
+      "in_vocab": true,
+      "raw": "[\"Classical Conditioning\", \"Respondent Conditioning\", \"Stimulus Control\", \"Temporal Relations\", \"Neuroscience and Learning\", \"Brain Lesion\", \"Pharmacology\", \"Single-Cell Recording\"]"
+    },
+    {
+      "idx": 3794,
+      "title": "Neuronal Substrates of Relapse to Cocaine-Seeking Behavior: Role of Prefrontal Cortex",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Reinforcement: Positive",
+        "Stimulus Control",
+        "Conditioned Reinforcement",
+        "Avoidance Learning",
+        "Response Allocation",
+        "Temporal Relations",
+        "Signal Detection"
+      ],
+      "truth": [
+        "Behavioral Pharmacology",
+        "Extinction",
+        "Reinforcement: Positive"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2222222222222222,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Reinforcement: Positive\", \"Stimulus Control\", \"Conditioned Reinforcement\", \"Avoidance Learning\", \"Response Allocation\", \"Temporal Relations\", \"Signal Detection\"]"
+    },
+    {
+      "idx": 3795,
+      "title": "Behavioral Perspectives on the Neuroscience of Drug Addiction",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Reinforcement: Positive",
+        "Choice",
+        "Conditioned Reinforcement",
+        "Operant Conditioning",
+        "Stimulus Control",
+        "Response Allocation",
+        "Motivating Operations"
+      ],
+      "truth": [
+        "Behavioral Pharmacology",
+        "Choice",
+        "Reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2222222222222222,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Reinforcement: Positive\", \"Choice\", \"Conditioned Reinforcement\", \"Operant Conditioning\", \"Stimulus Control\", \"Response Allocation\", \"Motivating Operations\"]"
+    },
+    {
+      "idx": 3798,
+      "title": "The Influence of Prior Choices on Current Choice",
+      "pred": [
+        "Choice",
+        "Schedule: Concurrent",
+        "Reinforcement: Delayed",
+        "Response Allocation",
+        "Behavioral Contrast",
+        "Extinction",
+        "Postreinforcement Pause",
+        "Temporal Control"
+      ],
+      "truth": [
+        "Choice",
+        "Schedule: Random Interval",
+        "Schedule: Tandem"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.1,
+      "in_vocab": true,
+      "raw": "[\"Choice\", \"Schedule: Concurrent\", \"Reinforcement: Delayed\", \"Response Allocation\", \"Behavioral Contrast\", \"Extinction\", \"Postreinforcement Pause\", \"Temporal Control\"]"
+    },
+    {
+      "idx": 3802,
+      "title": "Replacing Relative Reinforcing Efficacy with Behavioral Economic Demand Curves",
+      "pred": [
+        "Behavioral Pharmacology",
+        "Schedule: Concurrent Variable-Interval",
+        "Reinforcement: Positive",
+        "Response Allocation",
+        "Matching Law"
+      ],
+      "truth": [
+        "Choice",
+        "Schedule: Concurrent",
+        "Reinforcement: Positive"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.14285714285714285,
+      "in_vocab": true,
+      "raw": "[\"Behavioral Pharmacology\", \"Schedule: Concurrent Variable-Interval\", \"Reinforcement: Positive\", \"Response Allocation\", \"Matching Law\", \"Demand Curve\", \"Progressive Ratio Schedule\", \"Relative Reinforc"
+    },
+    {
+      "idx": 3803,
+      "title": "Second-Order Schedules of Token Reinforcement with Pigeons: Implications for Unit Price",
+      "pred": [
+        "Schedule: Second-Order",
+        "Response Rate",
+        "Token Economy",
+        "Stimulus Control",
+        "Reinforcement: Positive",
+        "Conditioned Reinforcer"
+      ],
+      "truth": [
+        "Schedule: Second-Order",
+        "Token Economy",
+        "Conditioned Reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.2857142857142857,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Second-Order\", \"Response Rate\", \"Token Economy\", \"Fixed Ratio\", \"Economic Concept: Unit Price\", \"Stimulus Control\", \"Reinforcement: Positive\", \"Conditioned Reinforcer\"]"
+    },
+    {
+      "idx": 3804,
+      "title": "Experimental Control of Nodality VIA Equal Presentations of Conditional Discriminations in",
+      "pred": [
+        "Stimulus Equivalence",
+        "Conditional Discrimination"
+      ],
+      "truth": [
+        "Stimulus Equivalence",
+        "Matching to Sample",
+        "Conditional Discrimination"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.6666666666666666,
+      "in_vocab": true,
+      "raw": "[\"Stimulus Equivalence\", \"Conditional Discrimination\", \"Response Speed\", \"Accuracy\", \"Training Protocols\", \"Equivalence Classes\", \"Reinforcement Contingency\", \"Nodality Effect\"]"
+    },
+    {
+      "idx": 3805,
+      "title": "About Skinner and Time: Behavior-Analytic Contributions to Research on Animal Timing",
+      "pred": [
+        "Temporal Control",
+        "Schedules of Reinforcement: Variable Interval"
+      ],
+      "truth": [
+        "Temporal Control",
+        "Schedule: Fixed Interval",
+        "Temporal Discrimination"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.25,
+      "in_vocab": true,
+      "raw": "[\"Temporal Control\", \"Schedules of Reinforcement: Variable Interval\", \"Behavioral Theory of Timing\", \"Learning to Time\", \"Adaptive Timer Model\", \"Rate Differentiation\", \"Temporal Psychophysics\", \"Inte"
+    },
+    {
+      "idx": 3806,
+      "title": "Consumer Brand Choice: Individual and Group Analyses of Demand Elasticity",
+      "pred": [
+        "Choice",
+        "Response Allocation"
+      ],
+      "truth": [
+        "Choice"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.5,
+      "in_vocab": true,
+      "raw": "[\"Choice\", \"Response Allocation\", \"Economic Theory\", \"Behavioral Economics\", \"Individual Differences\", \"Demand Elasticity\", \"Consumer Behavior\", \"Marketing\"]"
+    },
+    {
+      "idx": 3807,
+      "title": "Matching and Conditioned Reinforcement Rate",
+      "pred": [
+        "Choice",
+        "Conditioned Reinforcement",
+        "Schedule: Concurrent Variable-Interval",
+        "Generalized Matching Law",
+        "Stimulus Control",
+        "Delay-Reduction Hypothesis"
+      ],
+      "truth": [
+        "Conditioned Reinforcement",
+        "Generalized Matching Law",
+        "Choice"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.5,
+      "in_vocab": true,
+      "raw": "[\"Choice\", \"Conditioned Reinforcement\", \"Schedule: Concurrent Variable-Interval\", \"Generalized Matching Law\", \"Mixed Schedules\", \"Observing Responses\", \"Stimulus Control\", \"Delay-Reduction Hypothesis\""
+    },
+    {
+      "idx": 3808,
+      "title": "Rapid Acquisition in Concurrent Chains: Evidence for a Decision Model",
+      "pred": [
+        "Schedule: Concurrent-Chain",
+        "Choice",
+        "Response Rate",
+        "Temporal Control",
+        "Conditioned Reinforcement",
+        "Discrimination Learning",
+        "Schedules of Reinforcement: Variable Interval"
+      ],
+      "truth": [
+        "Choice",
+        "Schedule: Concurrent Chains",
+        "Delay of Reinforcement"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.1111111111111111,
+      "in_vocab": true,
+      "raw": "[\"Schedule: Concurrent-Chain\", \"Choice\", \"Response Rate\", \"Temporal Control\", \"Conditioned Reinforcement\", \"Discrimination Learning\", \"Schedules of Reinforcement: Variable Interval\", \"Decision Model\"]"
+    },
+    {
+      "idx": 3809,
+      "title": "Identity Matching-To-Sample with Olfactory Stimuli in Rats",
+      "pred": [
+        "Matching to Sample",
+        "Stimulus Control",
+        "Generalization"
+      ],
+      "truth": [
+        "Matching to Sample",
+        "Conditional Discrimination",
+        "Stimulus Control"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.5,
+      "in_vocab": true,
+      "raw": "[\"Matching to Sample\", \"Olfactory Stimuli\", \"Stimulus Control\", \"Generalization\", \"Novel Stimuli\", \"Multiple-Exemplar Training\", \"Identity Matching\", \"Rats\"]"
+    },
+    {
+      "idx": 3810,
+      "title": "A Derived Transfer of Simple Discrimination and Self-Reported Arousal Functions in Spider ",
+      "pred": [
+        "Stimulus Equivalence",
+        "Conditional Discrimination",
+        "Stimulus Generalization",
+        "Behavioral Pharmacology",
+        "Aversive Stimuli"
+      ],
+      "truth": [
+        "Stimulus Equivalence",
+        "Discrimination",
+        "Stimulus Classes"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.14285714285714285,
+      "in_vocab": true,
+      "raw": "[\"Stimulus Equivalence\", \"Conditional Discrimination\", \"Stimulus Generalization\", \"Behavioral Pharmacology\", \"Aversive Stimuli\", \"Self-Reported Arousal\", \"Derived Transfer\", \"Anxiety Responses\"]"
+    },
+    {
+      "idx": 3811,
+      "title": "Naming and Categorization in Young Children: IV: Listener Behavior Training and Transfer o",
+      "pred": [
+        "Stimulus Equivalence",
+        "Matching to Sample",
+        "Discrimination Learning",
+        "Response Differentiation"
+      ],
+      "truth": [
+        "Stimulus Classes",
+        "Conditional Discrimination",
+        "Stimulus Equivalence"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.16666666666666666,
+      "in_vocab": true,
+      "raw": "[\"Stimulus Equivalence\", \"Matching to Sample\", \"Discrimination Learning\", \"Response Differentiation\", \"Listener Behavior Training\", \"Categorization\", \"Transfer of Function\", \"Naming\"]"
+    },
+    {
+      "idx": 3816,
+      "title": "Equivalence Classes with Requirements for Short Response Latencies",
+      "pred": [
+        "Conditional Discrimination",
+        "Matching to Sample",
+        "Stimulus Equivalence",
+        "Interresponse Time",
+        "Temporal Control"
+      ],
+      "truth": [
+        "Stimulus Equivalence",
+        "Conditional Discrimination",
+        "Matching to Sample"
+      ],
+      "exact": false,
+      "any_overlap": true,
+      "jaccard": 0.6,
+      "in_vocab": true,
+      "raw": "[\"Conditional Discrimination\", \"Matching to Sample\", \"Stimulus Equivalence\", \"Response Latency\", \"Limited Hold\", \"Interresponse Time\", \"Equivalence Classes\", \"Temporal Control\"]"
+    }
+  ]
+}
