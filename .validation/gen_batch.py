@@ -3,7 +3,7 @@
 Usage: python3 .validation/gen_batch.py <entry_count> [indices_csv]
 Writes .validation/batch.mjs and prints JSON: {track, selected, count}.
 """
-import json, sys, os
+import json, re, sys, os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 prog = json.load(open(os.path.join(ROOT, '.validation/progress.json')))
@@ -32,7 +32,17 @@ else:
     done = set(prog['entry_track']['done'])
     # Machine-readable era first: 1997+ sources can actually be fetched, so the equation
     # sweep works and escalation should be lower. Pre-1997 (scans/paywalls) comes after.
-    cand = [i for i in range(len(data)) if i not in done]
+    # 366 rows are journal front matter - editorial boards, volume indexes, errata.
+    # They are not articles: they carry no behaviour to tag and no equation to find, so
+    # they must never enter a batch. Filtering here rather than deleting them keeps the
+    # catalog's row indices stable.
+    FRONT = re.compile(r'^(author index|subject index|editorial board|contents of volume|'
+                       r'index (of|to) volume|acknowledg|erratum|corrigendum|supplemental|'
+                       r'list of|volume \d|title page|masthead|announcement|in memoriam|'
+                       r'obituary|reviewers)', re.I)
+    def is_article(i):
+        return not FRONT.search((data[i].get('title') or '').strip())
+    cand = [i for i in range(len(data)) if i not in done and is_article(i)]
     # Source reachability decides order (see .validation/fulltext_probe.py):
     #   0 fulltext - PMC serves machine-readable HTML body
     #   1 scan     - PMC has abstract only; Europe PMC render PDF yields OCR text

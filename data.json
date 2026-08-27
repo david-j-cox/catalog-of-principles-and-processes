@@ -250,12 +250,12 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Fixed Interval"
+      "Schedule: Fixed Interval",
+      "Schedule: Limited Hold"
     ],
     "principles": [],
     "topics": [],
     "unmapped": [
-      "Schedule: Limited Hold",
       "Ratio-like Performance"
     ]
   },
@@ -412,6 +412,7 @@
       "Schedule: Fixed Ratio",
       "Schedule: Variable Ratio",
       "Schedule: Variable Interval",
+      "Schedule: Interlocking",
       "Schedule: Tandem",
       "Schedule: Chain",
       "Schedule: Mixed",
@@ -422,8 +423,7 @@
     ],
     "topics": [],
     "unmapped": [
-      "Schedules of Reinforcement",
-      "Schedule: Interlocking"
+      "Schedules of Reinforcement"
     ]
   },
   {
@@ -521,10 +521,10 @@
       "Schedule: Fixed Ratio"
     ],
     "principles": [],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Behavioral Pharmacology"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "The Grooming Behavior of the Chimpanzee as a Reinforcer",
@@ -714,10 +714,11 @@
       "Discrimination Learning"
     ],
     "principles": [
-      "Positive Reinforcement",
+      "Positive Reinforcement"
+    ],
+    "topics": [
       "Response Produced Stimuli"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
@@ -2740,10 +2741,11 @@
     "processes": [],
     "principles": [],
     "topics": [
-      "Behavioral Pharmacology",
       "Measurement: Duration"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Behavioral Pharmacology"
+    ]
   },
   {
     "title": "THE RELATION OF AMOUNT OF REINFORCEMENT TO PERFORMANCEUNDER A FIXED-INTERVAL SCHEDULE",
@@ -2865,12 +2867,12 @@
     "ai-signoffs": 1,
     "ai-reviewed": true,
     "needs-human": false,
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "A SIMPLE INTER VAL-PROGRAMMING CIRCUIT'",
@@ -2958,10 +2960,11 @@
     "needs-human": false,
     "processes": [],
     "principles": [
-      "Aversive Stimuli: Electric Shock",
       "Aversive Control"
     ],
-    "topics": [],
+    "topics": [
+      "Aversive Stimuli: Electric Shock"
+    ],
     "unmapped": []
   },
   {
@@ -2993,12 +2996,12 @@
     "ai-signoffs": 1,
     "ai-reviewed": true,
     "needs-human": false,
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Discrimination of Changes in Heart Rate: Two Unsuccessful Attempts",
@@ -7375,12 +7378,12 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "RESPONSE LATENCY AS A FUNCTION OF AMOUNTOF REINFORCEMENT",
@@ -7405,12 +7408,12 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "EFFECTS OF OPERANT REINFORCEMENT ON THE GSR1",
@@ -14853,7 +14856,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Operant Conditioning",
       "Schedule: Fixed Ratio",
       "Schedule: Variable Interval",
       "Schedule: Differential Reinforcement of Low Rates"
@@ -14864,6 +14866,7 @@
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Scheduled of Reinforcement: Fixed Interval"
     ]
   },
@@ -15644,10 +15647,11 @@
     ],
     "principles": [
       "Reinforcement",
-      "Aversive Stimuli",
       "Motivating Operations"
     ],
-    "topics": [],
+    "topics": [
+      "Aversive Stimuli"
+    ],
     "unmapped": [
       "Punishment:Positive",
       "Schedules of Reinforcement: Negative",
@@ -15825,7 +15829,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Operant Conditioning",
       "Extinction"
     ],
     "principles": [
@@ -15834,7 +15837,8 @@
     ],
     "topics": [],
     "unmapped": [
-      "Measurement: Fluid Intake"
+      "Measurement: Fluid Intake",
+      "Operant Conditioning"
     ]
   },
   {
@@ -15896,7 +15900,6 @@
     "processes": [
       "Schedule: Fixed Ratio",
       "Schedule: Variable Interval",
-      "Operant Conditioning",
       "Discrimination Learning",
       "Schedule: Multiple"
     ],
@@ -15908,6 +15911,7 @@
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Aversive Stimulus Control"
     ]
   },
@@ -16271,10 +16275,9 @@
       "Discrimination Learning"
     ],
     "principles": [],
-    "topics": [
-      "Operant Responding"
-    ],
+    "topics": [],
     "unmapped": [
+      "Operant Responding",
       "Continuous Reinforcement Schedule"
     ]
   },
@@ -16449,7 +16452,6 @@
     ],
     "processes": [
       "Discrimination Learning",
-      "Operant Conditioning",
       "Schedule: Variable Interval"
     ],
     "principles": [
@@ -16457,6 +16459,7 @@
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Force Requirement for Reinforcement"
     ]
   },
@@ -16510,15 +16513,17 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Fixed Ratio",
-      "Operant Conditioning"
+      "Schedule: Fixed Ratio"
     ],
     "principles": [
-      "Reinforcement",
+      "Reinforcement"
+    ],
+    "topics": [
       "Delay of Reinforcement"
     ],
-    "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Variables determining the effects of delay in reinforcement, 12",
@@ -16574,7 +16579,6 @@
     ],
     "processes": [
       "Schedule: Differential Reinforcement of Low Rates",
-      "Operant Conditioning",
       "Schedule: Multiple",
       "Extinction"
     ],
@@ -16583,7 +16587,8 @@
     ],
     "topics": [],
     "unmapped": [
-      "Sequential IRT"
+      "Sequential IRT",
+      "Operant Conditioning"
     ]
   },
   {
@@ -16635,14 +16640,14 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "A handling device for small animals1",
@@ -16696,14 +16701,14 @@
     ],
     "processes": [
       "Schedule: Variable Interval",
-      "Extinction",
-      "Operant Conditioning"
+      "Extinction"
     ],
     "principles": [
       "Reinforcement"
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Stimulus Preference"
     ]
   },
@@ -16758,8 +16763,7 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Multiple",
-      "Operant Conditioning"
+      "Schedule: Multiple"
     ],
     "principles": [
       "Reinforcement"
@@ -16767,7 +16771,8 @@
     "topics": [],
     "unmapped": [
       "Avoidance Responding",
-      "Multiple Schedule Avoidance"
+      "Multiple Schedule Avoidance",
+      "Operant Conditioning"
     ]
   },
   {
@@ -16822,8 +16827,7 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Variable Ratio",
-      "Operant Conditioning"
+      "Schedule: Variable Ratio"
     ],
     "principles": [
       "Reinforcement"
@@ -16833,7 +16837,8 @@
     ],
     "unmapped": [
       "Conditoned Punishment",
-      "Stimulus-Shock Pairing"
+      "Stimulus-Shock Pairing",
+      "Operant Conditioning"
     ]
   },
   {
@@ -16938,15 +16943,14 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Stimulus Control"
     ],
     "topics": [],
     "unmapped": [
-      "Preference Behavior"
+      "Preference Behavior",
+      "Operant Conditioning"
     ]
   },
   {
@@ -17061,7 +17065,6 @@
     ],
     "processes": [
       "Schedule: Fixed Ratio",
-      "Operant Conditioning",
       "Discrimination Learning"
     ],
     "principles": [
@@ -17070,6 +17073,7 @@
     "topics": [],
     "unmapped": [
       "Scheudules of Reinforcement: Fixed Interval",
+      "Operant Conditioning",
       "Competing Response Framework"
     ]
   },
@@ -17221,15 +17225,16 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Continuous",
-      "Operant Conditioning"
+      "Schedule: Continuous"
     ],
     "principles": [
       "Reinforcement",
       "Aversive Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Escape behavior under continuous reinforcement as a function of aversive light intensity1",
@@ -17767,10 +17772,10 @@
     "processes": [
       "Token Economy"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [
       "Delay of Reinforcement"
     ],
-    "topics": [],
     "unmapped": [
       "Operant Reinforcement Principles",
       "Premack Principle"
@@ -17891,8 +17896,7 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Continuous",
-      "Operant Conditioning"
+      "Schedule: Continuous"
     ],
     "principles": [
       "Reinforcement"
@@ -17900,6 +17904,7 @@
     "topics": [],
     "unmapped": [
       "Supressive Effects of Shock Punishment",
+      "Operant Conditioning",
       "Classical Conditioning"
     ]
   },
@@ -17951,15 +17956,15 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Negative Reinforcement",
       "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Yoked control without a duplicate apparatus: a response record-playback system.",
@@ -18072,7 +18077,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Operant Conditioning",
       "Schedule: Fixed Ratio"
     ],
     "principles": [
@@ -18082,6 +18086,7 @@
     "topics": [],
     "unmapped": [
       "Operant Discrimination",
+      "Operant Conditioning",
       "Visceral Stimulation"
     ]
   },
@@ -18486,14 +18491,13 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
-    "principles": [
+    "processes": [],
+    "principles": [],
+    "topics": [
       "Delay of Reinforcement"
     ],
-    "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Schedules of Reinfrocment: Variable Interval",
       "Exponential Function"
     ]
@@ -18854,10 +18858,11 @@
     ],
     "processes": [],
     "principles": [
-      "Response Effort",
       "Stimulus Control"
     ],
-    "topics": [],
+    "topics": [
+      "Response Effort"
+    ],
     "unmapped": [
       "Measurement System",
       "Measurement Reliability"
@@ -19321,8 +19326,7 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Variable Interval",
-      "Operant Conditioning"
+      "Schedule: Variable Interval"
     ],
     "principles": [
       "Reinforcement",
@@ -19331,7 +19335,9 @@
     "topics": [
       "Interresponse Time"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Operant Conditioning of a Small Scale Muscle Response",
@@ -19358,15 +19364,14 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Positive Reinforcement"
     ],
     "topics": [],
     "unmapped": [
-      "Classical Conditioning"
+      "Classical Conditioning",
+      "Operant Conditioning"
     ]
   },
   {
@@ -19399,8 +19404,7 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Variable Interval",
-      "Operant Conditioning"
+      "Schedule: Variable Interval"
     ],
     "principles": [
       "Reinforcement",
@@ -19411,7 +19415,8 @@
       "Interresponse Time"
     ],
     "unmapped": [
-      "Behavior Chain"
+      "Behavior Chain",
+      "Operant Conditioning"
     ]
   },
   {
@@ -19484,8 +19489,7 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Fixed Ratio",
-      "Operant Conditioning"
+      "Schedule: Fixed Ratio"
     ],
     "principles": [
       "Reinforcement",
@@ -19494,7 +19498,9 @@
     "topics": [
       "Post-Reinforcement Pause"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Analysis of Water and NaCL Solution Acceptance by Schedule-Induced Polydipsia",
@@ -19523,15 +19529,16 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Variable Interval",
-      "Operant Conditioning"
+      "Schedule: Variable Interval"
     ],
     "principles": [
       "Reinforcement",
       "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "A Flexible Apparatus for Presenting Pairs of Visual Stimuli to Children",
@@ -19559,9 +19566,7 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Stimulus Control"
     ],
@@ -19569,6 +19574,7 @@
       "Measurement: Duration"
     ],
     "unmapped": [
+      "Operant Conditioning",
       "Choice Behavior"
     ]
   },
@@ -19625,7 +19631,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Operant Conditioning",
       "Extinction"
     ],
     "principles": [],
@@ -19634,6 +19639,7 @@
     ],
     "unmapped": [
       "Differential Reinforcement of Low Rate (DRL)",
+      "Operant Conditioning",
       "Galvanic Skin Potential",
       "Operant Reconditioning",
       "Schedules of Reinforcement:DRL"
@@ -19702,15 +19708,14 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Positive Reinforcement"
     ],
     "topics": [],
     "unmapped": [
-      "Measuresment: Latency of Response"
+      "Measuresment: Latency of Response",
+      "Operant Conditioning"
     ]
   },
   {
@@ -19738,14 +19743,13 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Stimulus Control"
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Device: Restraint"
     ]
   },
@@ -19859,7 +19863,6 @@
     ],
     "processes": [
       "Schedule: Fixed Ratio",
-      "Operant Conditioning",
       "Time-Out"
     ],
     "principles": [
@@ -19868,7 +19871,8 @@
     "topics": [],
     "unmapped": [
       "Disrimination Training",
-      "Reinforcement: Postiive"
+      "Reinforcement: Postiive",
+      "Operant Conditioning"
     ]
   },
   {
@@ -20053,12 +20057,11 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Measurement: Operant Behavior",
       "Punch Programming"
     ]
@@ -20146,7 +20149,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Operant Conditioning",
       "Extinction"
     ],
     "principles": [
@@ -20155,6 +20157,7 @@
     "topics": [],
     "unmapped": [
       "Imprinting Procedures",
+      "Operant Conditioning",
       "Classical Conditioning"
     ]
   },
@@ -20239,7 +20242,6 @@
     "processes": [
       "Time-Out",
       "Discrimination Learning",
-      "Operant Conditioning",
       "Schedule: Variable Interval"
     ],
     "principles": [
@@ -20251,6 +20253,7 @@
       "Conditioned Suppression"
     ],
     "unmapped": [
+      "Operant Conditioning",
       "Conditioned Acceleration"
     ]
   },
@@ -20415,12 +20418,12 @@
       "Schedule: Variable Interval"
     ],
     "principles": [
-      "Aversive Stimuli: Electric Shock",
       "Positive Reinforcement",
       "Reinforcement"
     ],
     "topics": [
-      "Aggression"
+      "Aggression",
+      "Aversive Stimuli: Electric Shock"
     ],
     "unmapped": [
       "Experimental Analysis of Behavior",
@@ -20462,14 +20465,14 @@
       "Extinction"
     ],
     "principles": [
-      "Stimulus Generalization"
+      "Stimulus Generalization",
+      "Response Strength"
     ],
     "topics": [
       "Response Rate"
     ],
     "unmapped": [
       "Variable Interval Training",
-      "Response Strength",
       "Response Rate Gradient",
       "Response Rate Gradient Correction"
     ]
@@ -20499,10 +20502,10 @@
     ],
     "processes": [],
     "principles": [],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Behavioral Pharmacology"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "Conditioned Suppression and Variable Ratio Reinforcement",
@@ -20534,8 +20537,7 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Extinction",
-      "Operant Conditioning"
+      "Extinction"
     ],
     "principles": [
       "Deprivation"
@@ -20546,6 +20548,7 @@
     ],
     "unmapped": [
       "Schedules of Reinforcement: Variable-Ratio",
+      "Operant Conditioning",
       "Cumulative Recording"
     ]
   },
@@ -20639,7 +20642,6 @@
     "processes": [
       "Extinction",
       "Schedule: Variable Interval",
-      "Operant Conditioning",
       "Discrimination Learning"
     ],
     "principles": [
@@ -20652,7 +20654,8 @@
       "Punishment: Electric Shock",
       "Schedules of Reinforcement: Multiple Schedule",
       "Extinction with Shock",
-      "Extinction without Shock"
+      "Extinction without Shock",
+      "Operant Conditioning"
     ]
   },
   {
@@ -20945,10 +20948,10 @@
     "processes": [
       "Discrimination Learning"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [
       "Compound Stimuli"
     ],
-    "topics": [],
     "unmapped": [
       "Explicit Cueing",
       "Attending"
@@ -20980,15 +20983,14 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Positive Reinforcement"
     ],
     "topics": [],
     "unmapped": [
       "Interreponse Times",
+      "Operant Conditioning",
       "Temporal Intervals"
     ]
   },
@@ -21023,7 +21025,6 @@
     ],
     "processes": [
       "Schedule: Fixed Ratio",
-      "Operant Conditioning",
       "Discrimination Learning"
     ],
     "principles": [
@@ -21032,6 +21033,7 @@
     "topics": [],
     "unmapped": [
       "Concurrent Schedules of Punishment",
+      "Operant Conditioning",
       "Continuous Punishment",
       "Multi-element Baseline"
     ]
@@ -21126,7 +21128,6 @@
     "processes": [
       "Schedule: Continuous",
       "Schedule: Fixed Interval",
-      "Operant Conditioning",
       "Schedule: Variable Ratio",
       "Discrimination Learning",
       "Schedule: Concurrent"
@@ -21137,6 +21138,7 @@
     "topics": [],
     "unmapped": [
       "Chained Interval",
+      "Operant Conditioning",
       "Schedules of Reinforcemetn: Variable Interval"
     ]
   },
@@ -21217,10 +21219,11 @@
     ],
     "processes": [],
     "principles": [
-      "Negative Reinforcement",
+      "Negative Reinforcement"
+    ],
+    "topics": [
       "Aversive Stimuli"
     ],
-    "topics": [],
     "unmapped": [
       "Noise Contingencies",
       "Multiple-Reversal Method"
@@ -21258,7 +21261,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Operant Conditioning",
       "Schedule: Fixed Interval",
       "Extinction",
       "Discrimination Learning"
@@ -21271,6 +21273,7 @@
     "unmapped": [
       "Steady State Experiments",
       "Parametric Conditions",
+      "Operant Conditioning",
       "Scheules of Reinforcment: Multiple"
     ]
   },
@@ -21305,11 +21308,11 @@
       "Discrimination Learning"
     ],
     "principles": [
-      "Punishment",
-      "Aversive Stimuli: Electric Shock"
+      "Punishment"
     ],
     "topics": [
-      "Generalization Gradient"
+      "Generalization Gradient",
+      "Aversive Stimuli: Electric Shock"
     ],
     "unmapped": [
       "Schedules of Reinforcement: Variable Intercal"
@@ -21340,10 +21343,10 @@
     ],
     "processes": [],
     "principles": [],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Behavioral Pharmacology"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "A method for chronic intravenous infusion in freely moving rats.",
@@ -21477,17 +21480,17 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
-      "Aversive Stimuli",
       "Negative Reinforcement"
     ],
-    "topics": [],
+    "topics": [
+      "Aversive Stimuli"
+    ],
     "unmapped": [
       "Hypothalamic Electrodes",
-      "Classical Conditioning"
+      "Classical Conditioning",
+      "Operant Conditioning"
     ]
   },
   {
@@ -21576,10 +21579,11 @@
     ],
     "principles": [
       "Positive Punishment",
-      "Positive Reinforcement",
+      "Positive Reinforcement"
+    ],
+    "topics": [
       "Aversive Stimuli"
     ],
-    "topics": [],
     "unmapped": [
       "Two-Response Operant",
       "Suppressive Effects"
@@ -21613,16 +21617,16 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Extinction",
-      "Operant Conditioning"
+      "Extinction"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [
       "Aversive Stimuli: Electric Shock"
     ],
-    "topics": [],
     "unmapped": [
       "Conditioned Aversive Stimuli",
-      "Avoidance Conditioning"
+      "Avoidance Conditioning",
+      "Operant Conditioning"
     ]
   },
   {
@@ -21740,15 +21744,15 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Successive Discrimination",
-      "Operant Conditioning"
+      "Successive Discrimination"
     ],
     "principles": [],
     "topics": [],
     "unmapped": [
       "Monetary Maximizing",
       "Probability Learning",
-      "Concurrent Variable Interval Experiment"
+      "Concurrent Variable Interval Experiment",
+      "Operant Conditioning"
     ]
   },
   {
@@ -21848,8 +21852,7 @@
     "processes": [
       "Schedule: Second-Order",
       "Schedule: Fixed Interval",
-      "Schedule: Fixed Ratio",
-      "Operant Conditioning"
+      "Schedule: Fixed Ratio"
     ],
     "principles": [
       "Reinforcement",
@@ -21858,6 +21861,7 @@
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Schedules of Reinforcment: Tandem",
       "Schedule Controlled Pattern of Responding"
     ]
@@ -21894,8 +21898,7 @@
     ],
     "processes": [
       "Time-Out",
-      "Discrimination Learning",
-      "Operant Conditioning"
+      "Discrimination Learning"
     ],
     "principles": [
       "Aversive Control",
@@ -21905,7 +21908,8 @@
     "topics": [],
     "unmapped": [
       "Behavioral Suppression",
-      "Matching-To-Sample"
+      "Matching-To-Sample",
+      "Operant Conditioning"
     ]
   },
   {
@@ -21941,11 +21945,11 @@
     ],
     "principles": [
       "Stimulus Control",
-      "Aversive Stimuli: Electric Shock",
       "Reinforcement"
     ],
     "topics": [
-      "Conditioned Suppression"
+      "Conditioned Suppression",
+      "Aversive Stimuli: Electric Shock"
     ],
     "unmapped": [
       "Threshold Training"
@@ -22189,18 +22193,19 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Variable Interval",
-      "Operant Conditioning"
+      "Schedule: Variable Interval"
     ],
     "principles": [
       "Reinforcement",
       "Positive Punishment",
-      "Positive Reinforcement",
+      "Positive Reinforcement"
+    ],
+    "topics": [
       "Aversive Stimuli: Electric Shock"
     ],
-    "topics": [],
     "unmapped": [
-      "Variable Interval Punishment"
+      "Variable Interval Punishment",
+      "Operant Conditioning"
     ]
   },
   {
@@ -22252,14 +22257,13 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
     "unmapped": [
       "Measurement: Rate of Response",
-      "Test Chamber"
+      "Test Chamber",
+      "Operant Conditioning"
     ]
   },
   {
@@ -22312,7 +22316,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Operant Conditioning",
       "Time-Out"
     ],
     "principles": [
@@ -22320,6 +22323,7 @@
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Discriminative Echolocation"
     ]
   },
@@ -22405,16 +22409,17 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Negative Reinforcement",
-      "Aversive Stimuli: Electric Shock",
       "Conditioned Reinforcement"
     ],
-    "topics": [],
-    "unmapped": []
+    "topics": [
+      "Aversive Stimuli: Electric Shock"
+    ],
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Shock Density and Effective Shock Intensity: A Comparison of Different Shock Scramblers",
@@ -22444,15 +22449,16 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Discriminated Avoidance",
-      "Operant Conditioning"
+      "Discriminated Avoidance"
     ],
     "principles": [
-      "Avoidance",
+      "Avoidance"
+    ],
+    "topics": [
       "Aversive Stimuli"
     ],
-    "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Acquisition of Operant Response"
     ]
   },
@@ -22552,7 +22558,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Operant Conditioning",
       "Extinction",
       "Discrimination Learning"
     ],
@@ -22560,7 +22565,9 @@
     "topics": [
       "Generalization Gradient"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "The Effect of Multiple 5 Delta Periods on Responding of a Fixed-Interval Schedule:V. Effect of Periods of Complete Darkness and of Occasional Omissions of Food Presentations",
@@ -22597,10 +22604,11 @@
     ],
     "principles": [
       "Reinforcement",
-      "Positive Reinforcement",
+      "Positive Reinforcement"
+    ],
+    "topics": [
       "Delay of Reinforcement"
     ],
-    "topics": [],
     "unmapped": [
       "Temporal Dependency",
       "Chained Behavior"
@@ -22724,7 +22732,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Operant Conditioning",
       "Discrimination Learning"
     ],
     "principles": [],
@@ -22732,6 +22739,7 @@
     "unmapped": [
       "Three Form-Discrimination Reversal",
       "Perspective Errors",
+      "Operant Conditioning",
       "Progressive-Dimensional-Change-Technique"
     ]
   },
@@ -22761,11 +22769,10 @@
     ],
     "processes": [],
     "principles": [],
-    "topics": [
-      "Behavioral Pharmacology"
-    ],
+    "topics": [],
     "unmapped": [
-      "Classical Conditioning"
+      "Classical Conditioning",
+      "Behavioral Pharmacology"
     ]
   },
   {
@@ -22931,12 +22938,12 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "An illuminated rat-lever using an electroluminescent lamp.",
@@ -22994,7 +23001,6 @@
     ],
     "processes": [
       "Discrimination Learning",
-      "Operant Conditioning",
       "Schedule: Variable Interval"
     ],
     "principles": [
@@ -23006,6 +23012,7 @@
     ],
     "unmapped": [
       "Response Suppression",
+      "Operant Conditioning",
       "Discrimination Performance"
     ]
   },
@@ -23039,8 +23046,7 @@
     "ai-reviewed": true,
     "needs-human": true,
     "processes": [
-      "Schedule: Differential Reinforcement of Low Rates",
-      "Operant Conditioning"
+      "Schedule: Differential Reinforcement of Low Rates"
     ],
     "principles": [
       "Reinforcement",
@@ -23050,7 +23056,8 @@
       "Interresponse Time"
     ],
     "unmapped": [
-      "Serial Interactions"
+      "Serial Interactions",
+      "Operant Conditioning"
     ]
   },
   {
@@ -23080,15 +23087,15 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Fixed Ratio",
-      "Operant Conditioning"
+      "Schedule: Fixed Ratio"
     ],
     "principles": [
       "Reinforcement"
     ],
     "topics": [],
     "unmapped": [
-      "Match-to-Sample"
+      "Match-to-Sample",
+      "Operant Conditioning"
     ]
   },
   {
@@ -23127,7 +23134,6 @@
       "Extinction",
       "Schedule: Continuous",
       "Schedule: Differential Reinforcement of Low Rates",
-      "Operant Conditioning",
       "Schedule: Multiple"
     ],
     "principles": [
@@ -23139,7 +23145,8 @@
       "Generalization Gradient"
     ],
     "unmapped": [
-      "Schdules of Reinforcement: Variable Interval"
+      "Schdules of Reinforcement: Variable Interval",
+      "Operant Conditioning"
     ]
   },
   {
@@ -23170,10 +23177,11 @@
     "processes": [],
     "principles": [
       "Temporal Relations",
-      "Avoidance",
+      "Avoidance"
+    ],
+    "topics": [
       "Aversive Stimuli"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
@@ -23206,7 +23214,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Operant Conditioning",
       "Discrimination Learning",
       "Schedule: Variable Interval",
       "Extinction"
@@ -23218,7 +23225,9 @@
     "topics": [
       "Conditioned Suppression"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Stimulus factors in aversive controls: conditioned suppression after equal training to two stimuli1",
@@ -23306,15 +23315,15 @@
     "signoffs": [],
     "ai-signoffs": 1,
     "ai-reviewed": true,
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
-      "Aversive Stimuli: Electric Shock",
       "Deprivation"
     ],
-    "topics": [],
+    "topics": [
+      "Aversive Stimuli: Electric Shock"
+    ],
     "unmapped": [
+      "Operant Conditioning",
       "Retention of Suppression"
     ]
   },
@@ -23349,7 +23358,6 @@
     ],
     "processes": [
       "Schedule: Variable Ratio",
-      "Operant Conditioning",
       "Extinction"
     ],
     "principles": [
@@ -23360,7 +23368,9 @@
     "topics": [
       "Conditioned Suppression"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Complete Squirrel Monkey Diet in Tablet Form",
@@ -23387,14 +23397,13 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Positive Reinforcement"
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Reinforcement: Food"
     ]
   },
@@ -23449,12 +23458,11 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Escape Conditioned Response",
       "Aversive Stimulus: Heat"
     ]
@@ -23486,15 +23494,15 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Discrimination Learning",
-      "Operant Conditioning"
+      "Discrimination Learning"
     ],
     "principles": [
       "Positive Reinforcement"
     ],
     "topics": [],
     "unmapped": [
-      "Free Operant"
+      "Free Operant",
+      "Operant Conditioning"
     ]
   },
   {
@@ -23521,12 +23529,11 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Behavioral Performance"
     ]
   },
@@ -23615,9 +23622,7 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Punishment",
       "Stimulus Control",
@@ -23625,6 +23630,7 @@
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Escape Behavior"
     ]
   },
@@ -23678,14 +23684,13 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Operant Conditioning"
-    ],
-    "principles": [
+    "processes": [],
+    "principles": [],
+    "topics": [
       "Delay of Reinforcement"
     ],
-    "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Free Responding",
       "Reinforcment: Positive"
     ]
@@ -23717,10 +23722,9 @@
     ],
     "processes": [],
     "principles": [],
-    "topics": [
-      "Behavioral Pharmacology"
-    ],
+    "topics": [],
     "unmapped": [
+      "Behavioral Pharmacology",
       "Free-Operant Behavior",
       "Drug-Maintained Behavior"
     ]
@@ -44409,10 +44413,11 @@
       "Schedule: Fixed Ratio"
     ],
     "principles": [
-      "Positive Reinforcement",
+      "Positive Reinforcement"
+    ],
+    "topics": [
       "Response Produced Stimuli"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
@@ -44701,15 +44706,16 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Fixed Ratio",
-      "Second-Order Conditioning"
+      "Schedule: Fixed Ratio"
     ],
     "principles": [
       "Positive Reinforcement",
       "Positive Punishment"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Second-Order Conditioning"
+    ]
   },
   {
     "title": "The discriminative control of free-operant avoidance despite exposure to shock during the stimulus correlated with nonreinfo r cement",
@@ -44845,10 +44851,11 @@
     "principles": [
       "Positive Reinforcement",
       "Negative Reinforcement",
-      "Escape",
+      "Escape"
+    ],
+    "topics": [
       "Response Produced Stimuli"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
@@ -44987,10 +44994,11 @@
       "Positive Reinforcement",
       "Stimulus Control",
       "Conditioned Inhibition",
-      "Response Produced Stimuli",
       "Stimulus Generalization"
     ],
-    "topics": [],
+    "topics": [
+      "Response Produced Stimuli"
+    ],
     "unmapped": []
   },
   {
@@ -46170,10 +46178,11 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Conditioned Reinforcement",
+      "Conditioned Reinforcement"
+    ],
+    "topics": [
       "Response Produced Stimuli"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
@@ -46247,10 +46256,10 @@
     "principles": [
       "Positive Reinforcement",
       "Stimulus Control",
-      "Temporal Control",
-      "Response Produced Stimuli"
+      "Temporal Control"
     ],
     "topics": [
+      "Response Produced Stimuli",
       "Behavioral Contrast"
     ],
     "unmapped": []
@@ -47528,10 +47537,11 @@
     ],
     "principles": [
       "Positive Reinforcement",
-      "Stimulus Control",
+      "Stimulus Control"
+    ],
+    "topics": [
       "Response Produced Stimuli"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
@@ -57575,11 +57585,10 @@
     "processes": [
       "Schedule: Concurrent Chains"
     ],
-    "principles": [
-      "Delay of Reinforcement"
-    ],
+    "principles": [],
     "topics": [
       "Choice",
+      "Delay of Reinforcement",
       "Matching Law"
     ],
     "unmapped": []
@@ -57724,10 +57733,11 @@
     ],
     "processes": [],
     "principles": [
-      "Stimulus Control",
+      "Stimulus Control"
+    ],
+    "topics": [
       "Compound Stimuli"
     ],
-    "topics": [],
     "unmapped": [
       "Prior Reinforcement History",
       "Prolonged Training"
@@ -57768,10 +57778,11 @@
       "Discrimination",
       "Stimulus Control"
     ],
-    "topics": [],
-    "unmapped": [
-      "Over-Shadowing",
+    "topics": [
       "Blocking"
+    ],
+    "unmapped": [
+      "Over-Shadowing"
     ]
   },
   {
@@ -58066,11 +58077,11 @@
     "ai-reviewed": true,
     "processes": [],
     "principles": [
-      "Reinforcement",
-      "Stimulus Discriminability"
+      "Reinforcement"
     ],
     "topics": [
       "Matching Law",
+      "Stimulus Discriminability",
       "Response Bias"
     ],
     "unmapped": [
@@ -58159,11 +58170,11 @@
       "Schedule: Concurrent Chains",
       "Extinction"
     ],
-    "principles": [],
-    "topics": [],
-    "unmapped": [
+    "principles": [
       "Satiation"
-    ]
+    ],
+    "topics": [],
+    "unmapped": []
   },
   {
     "title": "Alternative Fixed-Ratio Fixed-Interval Schedules of Reinforcement",
@@ -58381,13 +58392,12 @@
     "processes": [
       "Conditional Discrimination"
     ],
-    "principles": [
-      "Concept Learning"
-    ],
+    "principles": [],
     "topics": [],
     "unmapped": [
       "Matching-to-Sample",
       "Oddity-from-Sample",
+      "Concept Learning",
       "Learning Set Formation"
     ]
   },
@@ -58614,15 +58624,14 @@
     ],
     "processes": [
       "Repeated Acquisition",
-      "Schedule: Multiple"
+      "Schedule: Multiple",
+      "Stimulus Fading"
     ],
     "principles": [
       "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": [
-      "Stimulus Fading"
-    ]
+    "unmapped": []
   },
   {
     "title": "Long-Term Potential for Imprinting in Ducks and Chickens",
@@ -58900,11 +58909,11 @@
       "Signal Detection"
     ],
     "principles": [
-      "Discrimination",
-      "Stimulus Discriminability"
+      "Discrimination"
     ],
     "topics": [
       "Matching Law",
+      "Stimulus Discriminability",
       "Response Bias"
     ],
     "unmapped": []
@@ -58985,11 +58994,10 @@
       "Schedule: Fixed Interval",
       "Schedule: Variable Interval"
     ],
-    "principles": [
-      "Delay of Reinforcement"
-    ],
+    "principles": [],
     "topics": [
-      "Post-Reinforcement Pause"
+      "Post-Reinforcement Pause",
+      "Delay of Reinforcement"
     ],
     "unmapped": [
       "Schedule: Fixed -Ratio",
@@ -59178,10 +59186,11 @@
     "principles": [
       "Avoidance",
       "Positive Reinforcement",
-      "Negative Reinforcement",
+      "Negative Reinforcement"
+    ],
+    "topics": [
       "Aversive Stimuli: Electric Shock"
     ],
-    "topics": [],
     "unmapped": [
       "Response-Produced Shock",
       "Shock Postponement",
@@ -59243,12 +59252,11 @@
     "processes": [
       "Schedule: Concurrent Chains"
     ],
-    "principles": [
-      "Delay"
-    ],
+    "principles": [],
     "topics": [
       "Choice",
-      "Matching Law"
+      "Matching Law",
+      "Delay"
     ],
     "unmapped": [
       "Self-Control"
@@ -59331,11 +59339,11 @@
     ],
     "topics": [
       "Behavioral Contrast",
-      "Elicited Responding",
       "Additivity Theory"
     ],
     "unmapped": [
-      "Response Duration"
+      "Response Duration",
+      "Elicited Responding"
     ]
   },
   {
@@ -59369,13 +59377,13 @@
     ],
     "processes": [],
     "principles": [
-      "Delay",
       "Stimulus Control",
       "Discrimination"
     ],
     "topics": [
       "Remembering",
-      "Short-Term Memory"
+      "Short-Term Memory",
+      "Delay"
     ],
     "unmapped": [
       "Memory"
@@ -59546,10 +59554,10 @@
     ],
     "principles": [
       "Conditioned Reinforcement",
-      "Stimulus Control",
-      "Response Effort"
+      "Stimulus Control"
     ],
     "topics": [
+      "Response Effort",
       "Choice"
     ],
     "unmapped": []
@@ -59620,11 +59628,10 @@
     "processes": [
       "Signal Detection"
     ],
-    "principles": [
-      "Stimulus Discriminability"
-    ],
+    "principles": [],
     "topics": [
       "Matching Law",
+      "Stimulus Discriminability",
       "Response Bias"
     ],
     "unmapped": []
@@ -59730,12 +59737,12 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Second-Order Conditioning",
       "Autoshaping"
     ],
     "principles": [],
     "topics": [],
     "unmapped": [
+      "Second-Order Conditioning",
       "Tone Stimulus"
     ]
   },
@@ -59800,10 +59807,9 @@
       "class-review (unattributed)"
     ],
     "processes": [],
-    "principles": [
-      "Delay of Reinforcement"
-    ],
+    "principles": [],
     "topics": [
+      "Delay of Reinforcement",
       "Choice"
     ],
     "unmapped": [
@@ -59874,14 +59880,14 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Deprivation"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Conditioning"
+    ]
   },
   {
     "title": "Effects of Variations in Local Reinforcement Rate on Local Response Rate in Variable Interval Schedules",
@@ -60161,11 +60167,11 @@
     "processes": [
       "Schedule: Variable Interval"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [
       "Delay of Reinforcement",
       "Changeover Delay"
     ],
-    "topics": [],
     "unmapped": [
       "Scheduled: Fixed Interval"
     ]
@@ -60199,10 +60205,10 @@
       "Schedule: Variable Interval",
       "Schedule: Differential Reinforcement of Low Rates"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [
       "Delay of Reinforcement"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
@@ -60273,15 +60279,15 @@
     "processes": [
       "Schedule: Multiple"
     ],
-    "principles": [
-      "Changeover Delay"
-    ],
+    "principles": [],
     "topics": [
       "Additivity Theory",
       "Behavioral Contrast",
-      "Operant Responding"
+      "Changeover Delay"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Operant Responding"
+    ]
   },
   {
     "title": "Generalization Peak Shift in Rats Under Conditions of Positive Reinforcement and Avoidance",
@@ -60927,12 +60933,11 @@
     "processes": [
       "Schedule: Variable Interval"
     ],
-    "principles": [
-      "Changeover Delay"
-    ],
+    "principles": [],
     "topics": [
       "Optimization",
-      "Matching Law"
+      "Matching Law",
+      "Changeover Delay"
     ],
     "unmapped": []
   },
@@ -61231,11 +61236,11 @@
     "principles": [
       "Stimulus Control"
     ],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Elicited Responding",
       "Operant Responding"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "Trace Autoshaping: Acquisition, Maintenance, and Path Dependence at Long Trace Intervals",
@@ -61269,17 +61274,18 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Autoshaping",
-      "Conditioning"
+      "Autoshaping"
     ],
     "principles": [],
-    "topics": [],
+    "topics": [
+      "Interstimulus Interval"
+    ],
     "unmapped": [
       "Trace Conditioning",
-      "Interstimulus Interval",
       "Response Acquisition",
       "Response Maintenance",
-      "Path Dependence"
+      "Path Dependence",
+      "Conditioning"
     ]
   },
   {
@@ -61311,15 +61317,15 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Autoshaping",
-      "Conditioning"
+      "Autoshaping"
     ],
     "principles": [],
     "topics": [
       "Response Topography"
     ],
     "unmapped": [
-      "Omission Contingency"
+      "Omission Contingency",
+      "Conditioning"
     ]
   },
   {
@@ -61439,11 +61445,10 @@
       "Schedule: Multiple",
       "Schedule: Fixed Interval"
     ],
-    "principles": [
-      "Aversive Stimuli: Electric Shock"
-    ],
+    "principles": [],
     "topics": [
-      "Conditioned Suppression"
+      "Conditioned Suppression",
+      "Aversive Stimuli: Electric Shock"
     ],
     "unmapped": []
   },
@@ -61597,10 +61602,10 @@
       "Schedule: Mixed",
       "Extinction"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [
       "Aversive Stimuli: Electric Shock"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
@@ -61638,11 +61643,12 @@
       "Schedule: Variable Ratio"
     ],
     "principles": [
-      "Aversive Stimuli: Electric Shock",
       "Reinforcement",
       "Punishment"
     ],
-    "topics": [],
+    "topics": [
+      "Aversive Stimuli: Electric Shock"
+    ],
     "unmapped": []
   },
   {
@@ -61718,10 +61724,9 @@
       "Schedule: Concurrent Chains",
       "Schedule: Variable Interval"
     ],
-    "principles": [
-      "Delay of Reinforcement"
-    ],
+    "principles": [],
     "topics": [
+      "Delay of Reinforcement",
       "Choice"
     ],
     "unmapped": []
@@ -62178,10 +62183,11 @@
       "Schedule: Second-Order"
     ],
     "principles": [
-      "Aversive Stimuli: Electric Shock",
       "Positive Reinforcement"
     ],
-    "topics": [],
+    "topics": [
+      "Aversive Stimuli: Electric Shock"
+    ],
     "unmapped": []
   },
   {
@@ -62212,13 +62218,13 @@
       "class-review (unattributed)"
     ],
     "processes": [
+      "Errorless Learning",
       "Discrimination Learning"
     ],
     "principles": [],
     "topics": [],
     "unmapped": [
       "Stimulus Control Transfer",
-      "Errorless Learning",
       "Fading",
       "Probes"
     ]
@@ -62367,11 +62373,11 @@
     "ai-reviewed": true,
     "processes": [],
     "principles": [
-      "Stimulus Generalization",
-      "Stimulus Discriminability"
+      "Stimulus Generalization"
     ],
     "topics": [
-      "Generalization Gradient"
+      "Generalization Gradient",
+      "Stimulus Discriminability"
     ],
     "unmapped": [
       "Early Rearing",
@@ -62980,11 +62986,11 @@
       "Signal Detection"
     ],
     "principles": [
-      "Stimulus Discriminability",
       "Reinforcement"
     ],
     "topics": [
-      "Matching Law"
+      "Matching Law",
+      "Stimulus Discriminability"
     ],
     "unmapped": [
       "Schedule: Multiple Concurrent"
@@ -63283,10 +63289,11 @@
       "Extinction"
     ],
     "principles": [
-      "Changeover Delay",
       "Discrimination"
     ],
-    "topics": [],
+    "topics": [
+      "Changeover Delay"
+    ],
     "unmapped": []
   },
   {
@@ -63317,11 +63324,12 @@
     "processes": [],
     "principles": [
       "Discrimination",
-      "Stimulus Control",
-      "Concept Learning"
+      "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Concept Learning"
+    ]
   },
   {
     "title": "Effects on Spelling of Training Children to Read",
@@ -63350,12 +63358,12 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Token Economy"
+      "Token Economy",
+      "Response Cost"
     ],
     "principles": [],
     "topics": [],
     "unmapped": [
-      "Response Cost",
       "Overtraining"
     ]
   },
@@ -63573,11 +63581,10 @@
       "Schedule: Concurrent Chains",
       "Schedule: Fixed Interval"
     ],
-    "principles": [
-      "Delay of Reinforcement"
-    ],
+    "principles": [],
     "topics": [
-      "Choice"
+      "Choice",
+      "Delay of Reinforcement"
     ],
     "unmapped": [
       "Functional Equivalence"
@@ -63649,10 +63656,10 @@
       "Schedule: Differential Reinforcement of Low Rates",
       "Schedule: Variable Interval"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [
       "Delay of Reinforcement"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
@@ -63727,7 +63734,6 @@
     "processes": [
       "Discrimination Learning",
       "Autoshaping",
-      "Operant Conditioning",
       "Schedule: Variable Interval",
       "Schedule: Chain",
       "Schedule: Fixed Ratio",
@@ -63742,6 +63748,7 @@
     "unmapped": [
       "Two Process Theory",
       "Classical Conditioning",
+      "Operant Conditioning",
       "Differential Reinforcement Other Behavior"
     ]
   },
@@ -63774,10 +63781,11 @@
     "needs-human": true,
     "processes": [],
     "principles": [
-      "Habituation",
+      "Habituation"
+    ],
+    "topics": [
       "Aversive Stimuli: Electric Shock"
     ],
-    "topics": [],
     "unmapped": [
       "Nondiscriminated Avoidance"
     ]
@@ -63851,10 +63859,10 @@
     ],
     "principles": [],
     "topics": [
-      "Adjunctive Behavior"
+      "Adjunctive Behavior",
+      "Reinforcer Magnitude"
     ],
     "unmapped": [
-      "Reinforcer Magnitude",
       "Inhibition"
     ]
   },
@@ -63939,14 +63947,13 @@
       "Schedule: Variable Interval",
       "Schedule: Fixed Ratio"
     ],
-    "principles": [
-      "Changeover Delay"
-    ],
+    "principles": [],
     "topics": [
       "Choice",
       "Optimization",
       "Overmatching",
-      "Matching Law"
+      "Matching Law",
+      "Changeover Delay"
     ],
     "unmapped": []
   },
@@ -63984,11 +63991,10 @@
       "Schedule: Concurrent",
       "Schedule: Variable Interval"
     ],
-    "principles": [
-      "Changeover Delay"
-    ],
+    "principles": [],
     "topics": [
-      "Matching Law"
+      "Matching Law",
+      "Changeover Delay"
     ],
     "unmapped": []
   },
@@ -64097,16 +64103,15 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Avoidance"
     ],
     "topics": [],
     "unmapped": [
       "Classical Conditioning",
-      "Taste Aversion"
+      "Taste Aversion",
+      "Conditioning"
     ]
   },
   {
@@ -64134,10 +64139,10 @@
     ],
     "processes": [],
     "principles": [],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Foraging"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "Comparisons Between One-Key and Two-Key Versions of the Sinewave Schedule for Pigeons",
@@ -64168,10 +64173,10 @@
     "processes": [
       "Schedule: Concurrent"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [
       "Changeover Delay"
     ],
-    "topics": [],
     "unmapped": [
       "Schedule: Sinewave"
     ]
@@ -64269,11 +64274,11 @@
     ],
     "principles": [],
     "topics": [
-      "Foraging",
       "Choice",
       "Delay-Reduction Hypothesis"
     ],
     "unmapped": [
+      "Foraging",
       "Optimality Theory"
     ]
   },
@@ -64308,11 +64313,10 @@
       "Schedule: Concurrent",
       "Schedule: Variable Interval"
     ],
-    "principles": [
-      "Changeover Delay"
-    ],
+    "principles": [],
     "topics": [
-      "Matching Law"
+      "Matching Law",
+      "Changeover Delay"
     ],
     "unmapped": []
   },
@@ -64989,10 +64993,9 @@
       "Changeover",
       "Schedule: Variable Interval"
     ],
-    "principles": [
-      "Changeover Delay"
-    ],
+    "principles": [],
     "topics": [
+      "Changeover Delay",
       "Matching Law"
     ],
     "unmapped": []
@@ -65194,12 +65197,11 @@
       "Extinction"
     ],
     "principles": [
-      "Alternative Reinforcement"
+      "Alternative Reinforcement",
+      "Behavioral Momentum"
     ],
     "topics": [],
-    "unmapped": [
-      "Behavioral Momentum"
-    ]
+    "unmapped": []
   },
   {
     "title": "The Local Organization of Behavior: Dissociations Between a Pigeon's Behavior and Self-Reports of that Behavior",
@@ -65347,11 +65349,11 @@
       "Schedule: Variable Interval"
     ],
     "principles": [
-      "Stimulus Discriminability",
       "Reinforcement"
     ],
     "topics": [
       "Matching Law",
+      "Stimulus Discriminability",
       "Response Bias"
     ],
     "unmapped": [
@@ -83888,14 +83890,14 @@
     "ai-reviewed": true,
     "ai-signoffs": 1,
     "needs-human": false,
-    "processes": [
-      "Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [
       "Response Rate"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Conditioning"
+    ]
   },
   {
     "title": "Unit price as a useful metric in analyzing effects of reinforcer magnitude.",
@@ -89329,10 +89331,11 @@
       "Schedule: Tandem"
     ],
     "principles": [
-      "Delay of Reinforcement",
       "Deprivation"
     ],
-    "topics": [],
+    "topics": [
+      "Delay of Reinforcement"
+    ],
     "unmapped": []
   },
   {
@@ -89401,10 +89404,11 @@
     ],
     "principles": [],
     "topics": [
-      "Foraging",
       "Choice"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Foraging"
+    ]
   },
   {
     "title": "Learning About Food: Starlings, Skinner Boxes, And Earthworms.",
@@ -89439,10 +89443,10 @@
       "Schedule: Fixed Ratio"
     ],
     "principles": [],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Foraging"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "The S-R issue: its status in behavior analysis and in Donahoe and Palmer's learning and complex behavior.",
@@ -89471,14 +89475,13 @@
     "ai-reviewed": true,
     "ai-signoffs": 1,
     "needs-human": false,
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Reinforcement"
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Classical Conditioning"
     ]
   },
@@ -89543,13 +89546,12 @@
     "ai-reviewed": true,
     "ai-signoffs": 1,
     "needs-human": false,
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
     "unmapped": [
-      "Classical Conditioning"
+      "Classical Conditioning",
+      "Operant Conditioning"
     ]
   },
   {
@@ -89612,13 +89614,12 @@
     "ai-reviewed": true,
     "ai-signoffs": 1,
     "needs-human": false,
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
     "unmapped": [
       "Experimental Analysis of Behavior",
+      "Operant Conditioning",
       "Classical Conditioning"
     ]
   },
@@ -89648,14 +89649,15 @@
     "ai-signoffs": 1,
     "needs-human": false,
     "processes": [
-      "Operant Conditioning",
       "Delayed Matching to Sample"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [
       "Response Produced Stimuli"
     ],
-    "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "R-S and S(-O)-R: alternative designs for neural networks.",
@@ -89682,14 +89684,13 @@
     "ai-reviewed": true,
     "ai-signoffs": 1,
     "needs-human": false,
-    "processes": [
-      "Operant Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Stimulus Control"
     ],
     "topics": [],
     "unmapped": [
+      "Operant Conditioning",
       "Experimental Analysis of Behavior"
     ]
   },
@@ -89758,10 +89759,11 @@
     "processes": [],
     "principles": [
       "Stimulus Control",
-      "Stimulus Equivalence",
+      "Stimulus Equivalence"
+    ],
+    "topics": [
       "Compound Stimuli"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
@@ -91691,10 +91693,10 @@
       "Schedule: Fixed Ratio"
     ],
     "principles": [],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Behavioral Pharmacology"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "Mental rotation and temporal contingencies.",
@@ -97599,10 +97601,10 @@
     "principles": [
       "Stimulus Control"
     ],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Behavioral Pharmacology"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "Evolution, Behavior Principles, And Developmental Systems: A Review Of Gottlieb\u2019s Synthesizing Nature-nurture: Prenatal Roots Of Instinctive Behavior.",
@@ -100111,10 +100113,9 @@
     "processes": [
       "Schedule: Multiple"
     ],
-    "principles": [
-      "Delay of Reinforcement"
-    ],
+    "principles": [],
     "topics": [
+      "Delay of Reinforcement",
       "Matching Law"
     ],
     "unmapped": []
@@ -100222,11 +100223,11 @@
     "equation-provenance": "printed",
     "processes": [],
     "principles": [
-      "Delay of Reinforcement",
       "Conditioned Reinforcement"
     ],
     "topics": [
-      "Choice"
+      "Choice",
+      "Delay of Reinforcement"
     ],
     "unmapped": []
   },
@@ -100263,10 +100264,10 @@
       "Schedule: Multiple"
     ],
     "principles": [],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Behavioral Pharmacology"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "Effects Of Methylphenidate And Morphine On Delay-Discount Functions Obtained Within Sessions",
@@ -100295,14 +100296,14 @@
     "ai-signoffs": 1,
     "needs-human": false,
     "processes": [],
-    "principles": [
-      "Delay of Reinforcement"
-    ],
+    "principles": [],
     "topics": [
       "Choice",
-      "Behavioral Pharmacology"
+      "Delay of Reinforcement"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Behavioral Pharmacology"
+    ]
   },
   {
     "title": "Behaviorism Makes Its Debut: A Review of Lattal and Chase's Behavior Theory and Philosophy",
@@ -100472,10 +100473,10 @@
       "Discrimination",
       "Stimulus Control"
     ],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Behavioral Pharmacology"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "The Sensitivity Of Response Rate To The Rate Of Variable-Interval Reinforcement For Pigeons And Rats: A Review",
@@ -100905,14 +100906,14 @@
     "ai-signoffs": 1,
     "needs-human": false,
     "processes": [
-      "Extinction",
-      "Operant Conditioning"
+      "Extinction"
     ],
     "principles": [],
-    "topics": [
-      "Behavioral Pharmacology"
-    ],
-    "unmapped": []
+    "topics": [],
+    "unmapped": [
+      "Behavioral Pharmacology",
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Differential Acquisition of Lever Pressing in Inbred and Outbred Mice: Comparison of One-Lever and Two-Lever Procedures and Correlation with Differences in Locomotor Activity",
@@ -100942,14 +100943,15 @@
     "ai-signoffs": 1,
     "needs-human": false,
     "processes": [
-      "Operant Conditioning",
       "Schedule: Variable Time"
     ],
     "principles": [
       "Noncontingent Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Operant Conditioning"
+    ]
   },
   {
     "title": "Pilocarpine Seizures Cause Age-Dependent Impairment in Auditory Location Discrimination",
@@ -101022,10 +101024,11 @@
     ],
     "principles": [],
     "topics": [
-      "Matching Law",
-      "Behavioral Pharmacology"
+      "Matching Law"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Behavioral Pharmacology"
+    ]
   },
   {
     "title": "Effects of Morphine on Temporal Discrimination and Color Matching: General Disruption of Stimulus Control or Selective Effects on Timing?",
@@ -101058,10 +101061,10 @@
       "Temporal Discrimination",
       "Stimulus Control"
     ],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Behavioral Pharmacology"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "Derived Stimulus Relations, Semantic Priming, and Event-Related Potentials: Testing a Behavioral Theory of Semantic Networks",
@@ -101468,10 +101471,10 @@
     "principles": [
       "Positive Reinforcement"
     ],
-    "topics": [
+    "topics": [],
+    "unmapped": [
       "Behavioral Pharmacology"
-    ],
-    "unmapped": []
+    ]
   },
   {
     "title": "Behavioral Perspectives on the Neuroscience of Drug Addiction",
@@ -101506,10 +101509,11 @@
       "Reinforcement"
     ],
     "topics": [
-      "Behavioral Pharmacology",
       "Choice"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Behavioral Pharmacology"
+    ]
   },
   {
     "title": "Naming Our Concerns about Neuroscience: A Review of Bennett and Hacker's Philosophical Foundations of Neuroscience",
@@ -101910,11 +101914,10 @@
     "processes": [
       "Schedule: Concurrent Chains"
     ],
-    "principles": [
-      "Delay of Reinforcement"
-    ],
+    "principles": [],
     "topics": [
-      "Choice"
+      "Choice",
+      "Delay of Reinforcement"
     ],
     "unmapped": []
   },
