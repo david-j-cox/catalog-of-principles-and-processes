@@ -10,6 +10,9 @@ prog = json.load(open(os.path.join(ROOT, '.validation/progress.json')))
 tax = json.load(open(os.path.join(ROOT, '.validation/taxonomy.json')))
 data = json.load(open(os.path.join(ROOT, 'data.json')))
 canon = tax['canonical']
+# the reviewer sees the vocabulary GROUPED BY KIND, not as one flat list: it has to pick
+# a process for the process field and a principle for the principle field
+kinds = json.load(open(os.path.join(ROOT, '.validation/label_kinds.json')))['kinds']
 
 entry_count = int(sys.argv[1]) if len(sys.argv) > 1 else 40
 override = [int(x) for x in sys.argv[2].split(',')] if len(sys.argv) > 2 and sys.argv[2] else None
@@ -81,12 +84,13 @@ else:
             'year': d.get('year'), 'journal': d.get('journal', ''), 'url': d.get('url', ''),
             'abstract': (d.get('abstract', '') or '')[:2500],
             'process': d.get('process', []) or [], 'reviewed': bool(d.get('reviewed')),
+            'processes': d.get('processes', []) or [], 'principles': d.get('principles', []) or [],
             'sweep_equations': str(d.get('year')).isdigit() and int(d['year']) >= SWEEP_YEAR,
             'source_status': (FT.get(str(i)) or {}).get('status', 'unknown'),
             'pmcid': (FT.get(str(i)) or {}).get('pmcid'),
         })
     tpl = open(os.path.join(ROOT, '.validation/tpl_entry.mjs')).read()
-    js = tpl.replace('__CANON__', json.dumps(canon)).replace('__BATCH__', json.dumps(batch))
+    js = tpl.replace('__KINDS__', json.dumps(kinds)).replace('__BATCH__', json.dumps(batch))
 
 open(os.path.join(ROOT, '.validation/batch.mjs'), 'w').write(js)
 print(json.dumps({'track': track, 'selected': sel, 'count': len(sel), 'script_bytes': len(js)}))

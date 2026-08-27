@@ -4,7 +4,8 @@ export const meta = {
   phases: [ { title: 'Review', model: 'sonnet' }, { title: 'Escalate', model: 'opus' } ],
 }
 
-const CANON = __CANON__
+const KINDS = __KINDS__
+const byKind = (k) => Object.keys(KINDS).filter(x => KINDS[x] === k).sort()
 const BATCH = __BATCH__
 
 const FINAL_SCHEMA = {
@@ -19,7 +20,9 @@ const FINAL_SCHEMA = {
       year: { type: 'integer' }, journal: { type: 'string' }, title: { type: 'string' },
       note: { type: 'string' } } },
     process_action: { type: 'string', enum: ['validated_unchanged','corrected','normalized','assigned','left_empty','flagged_remove'] },
-    process_final: { type: 'array', items: { type: 'string' } },
+    processes:  { type: 'array', items: { type: 'string' } },
+    principles: { type: 'array', items: { type: 'string' } },
+    other_tags: { type: 'array', items: { type: 'string' } },
     proposes_new_label: { type: 'boolean' },
     reviewed: { type: 'boolean' },
     signoffs: { type: 'integer' },
@@ -35,12 +38,53 @@ const FRAME = `You are an editor in the Experimental Analysis of Behavior (EAB) 
 behavioral-research catalog entry. Journals: JEAB, JEP:ALC (J. Exp. Psych: Animal Learning/Behavior
 Processes), BP (Behavioural Processes). You know the canonical behavioral processes and schedules.`
 
-const TAXNOTE = `BEHAVIORAL-PROCESS TAXONOMY (canonical controlled vocabulary). Prefer EXACT matches from this
-list; treat case/format variants as the same concept and normalize to the canonical spelling here.
-Only set proposes_new_label=true (and needs_human=true) if the paper's process genuinely is not
-covered by any canonical label. Be conservative: if you cannot confidently determine the process from
-the available title/abstract, leave process empty and set needs_human=true rather than guessing.
-CANONICAL: ${CANON.join(' | ')}`
+const TAXNOTE = `THE CATALOG SEPARATES TWO THINGS. Tag both for every article.
+
+PROCESS - the pattern of behaviour-environment interaction the study ARRANGED, which
+reliably produces a phenomenon. "What happens when I run this?" Schedules, shaping,
+matching-to-sample, extinction.
+
+PRINCIPLE - the fundamental component interacting within that process which predicts the
+output. Usually known through its output rather than observed directly, the way gravity
+is. Reinforcement, discrimination, stimulus control.
+
+RULES THE VOCABULARY WAS BUILT ON. Apply them; do not work around them.
+1. BREADTH. A label naming a paradigm rather than a specific relation is useless even
+   when true - "Classical Conditioning" is like tagging a physics paper "Quantum
+   Physics". Such labels have been removed. Never reach for the broad parent when a
+   specific child fits, and never propose a paradigm-level label.
+2. AN INPUT IS A MEASURE, NOT A PRINCIPLE. Anything you set, present, or read off the
+   apparatus - a delay, a magnitude, a stimulus, a response requirement - is a measure of
+   a known input that drives a principle within a process. The principle is the invisible
+   thing doing the work, never the dial.
+3. A METHOD IS A PROCESS, NOT A PRINCIPLE. Differential, alternative and noncontingent
+   reinforcement are ways of APPLYING reinforcement. The principle is reinforcement.
+4. TIME IS A STIMULUS DIMENSION. A timing study is discrimination or generalization with
+   time as the input, exactly as another study uses a light or a tone. Tag it
+   Discrimination (principle) + Temporal Stimulus (measure) + the procedure (process).
+   The same holds for visual, auditory, olfactory, gustatory, tactile, interoceptive and
+   spatial stimuli.
+5. PREFER THE MEASURED RELATION TO AN INTERPRETATION OF IT. "Delay Discounting" names
+   what was measured; "self-control" and "impulsivity" are readings laid over the same
+   data, and are not in the vocabulary.
+
+Use ONLY labels from the lists below, copied EXACTLY, each in its own field. An empty
+field is correct when the article genuinely does not support one - do not pad. If the
+article's process or principle is genuinely absent from the vocabulary, set
+proposes_new_label=true and needs_human=true rather than forcing a poor fit; a proposal
+must pass rule 1 at both ends: not a paradigm, and not a one-off that would fit one paper.
+
+PROCESSES: ${byKind('process').join(' | ')}
+
+PRINCIPLES: ${byKind('principle').join(' | ')}
+
+PHENOMENA (the reliable output a process produces; goes in other_tags):
+${byKind('phenomenon').join(' | ')}
+
+MEASURES (inputs you set and outputs you read; goes in other_tags):
+${byKind('measure').join(' | ')}
+
+MODELS (formal quantitative accounts; goes in other_tags): ${byKind('model').join(' | ')}`
 
 function reviewPrompt(e) {
   return `${FRAME}
@@ -60,10 +104,14 @@ TASKS:
    and you can recover it from the title/url/your knowledge of this paper (you MAY web-fetch the url or
    web-search the title), fill it in metadata_fixes; otherwise leave it. Do NOT fabricate. Set
    metadata_changed=true only if you propose a concrete fix.
-2) PROCESS: If tags exist, validate each against the paper and the canonical taxonomy: keep good ones
-   (validated_unchanged), fix wrong ones (corrected), normalize case/format variants (normalized), or
-   mark clearly-wrong junk for removal (flagged_remove). If NO tags, assign 1-3 canonical processes
-   when confident (assigned), else leave_empty + needs_human=true. process_final = the final tag list.
+2) PROCESS AND PRINCIPLE. The stored tags are a legacy FLAT list that mixed the two
+   together, so treat them as a starting point, not as ground truth. Split what is
+   correct into the right field, drop what the rules above disqualify, and add what is
+   missing. Name what the study ARRANGED (processes) and what that arrangement ENGAGED
+   (principles). Most articles support at least one of each; if you can name only one
+   side, say why in notes rather than inventing the other. Put phenomena, measures and
+   models in other_tags. process_action describes what you did to the stored tags:
+   validated_unchanged, corrected, normalized, assigned, left_empty, or flagged_remove.
 3) EQUATION SWEEP. Source reachability for this entry was probed in advance:
    source_status=${e.source_status}${e.pmcid ? `, pmcid=${e.pmcid}` : ''}.
    ${e.source_status === 'fulltext'
@@ -124,10 +172,11 @@ function seniorPrompt(e, r1, r2) {
 ${TAXNOTE}
 
 Two independent reviewers assessed catalog index ${e.idx}. Reconcile into a single FINAL decision.
-ENTRY: title="${e.title}"; authors=${JSON.stringify(e.authors)}; journal=${e.journal}; current process=${JSON.stringify(e.process)}.
+ENTRY: title="${e.title}"; authors=${JSON.stringify(e.authors)}; journal=${e.journal}; stored legacy tags=${JSON.stringify(e.process)}.
 REVIEWER 1: ${JSON.stringify(r1)}
 REVIEWER 2: ${JSON.stringify(r2)}
-Produce the final metadata_fixes, process_final (canonical tags), the equation_in_text verdict
+Produce the final metadata_fixes, processes and principles (canonical labels, each in its own
+field), other_tags, the equation_in_text verdict
 (prefer a reviewer who actually reached the source over one who did not), and an honest signoff. Only
 signoffs=1 / reviewed=true if both reviewers substantively agree and no human check is needed; else
 needs_human=true. Return the structured object only.`

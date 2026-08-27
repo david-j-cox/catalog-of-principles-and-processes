@@ -92,8 +92,16 @@ else:
                 for k, v in r['metadata_fixes'].items():
                     if k in META_KEYS and v not in (None, '', []):
                         d[k] = v
-            if r.get('process_action') != 'left_empty' and isinstance(r.get('process_final'), list):
-                d['process'] = normtags(r['process_final'], r['idx'])
+            if r.get('process_action') != 'left_empty':
+                # the reviewer now returns the two fields separately; `process` is kept as
+                # the union so the legacy flat view and split_fields.py stay consistent
+                proc = normtags(r.get('processes') or [], r['idx'])
+                prin = normtags(r.get('principles') or [], r['idx'])
+                other = normtags(r.get('other_tags') or [], r['idx'])
+                d['processes'], d['principles'] = proc, prin
+                d['topics'] = other
+                d['unmapped'] = []
+                d['process'] = proc + prin + other
             d['ai-reviewed'] = True
             d['ai-signoffs'] = max(int(d.get('ai-signoffs') or 0), int(r.get('signoffs') or 0))
             d['needs-human'] = False
