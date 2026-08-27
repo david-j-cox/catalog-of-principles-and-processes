@@ -121,8 +121,13 @@ for _ in range(5):
             merges[k] = list(dict.fromkeys(flat)); changed = True
     if not changed:
         break
+# A merge target added above may itself be a merge key (chains resolved after canon was
+# built), which would leave both spellings valid and defeat the whole point. Drop keys
+# again now that chains are flat, then re-assert every target is canonical.
+canon = [c for c in canon if c not in merges]
 bad = [k for k, v in merges.items() for t in v if t not in canon]
 assert not bad, f'merge targets missing from canonical: {bad[:5]}'
+assert not [c for c in canon if c in merges], 'merge key survived into canonical'
 
 tax['canonical'] = canon
 tax['merges'] = merges
