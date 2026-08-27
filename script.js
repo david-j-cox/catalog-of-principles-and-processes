@@ -28,6 +28,14 @@ function createJournalBadge(journal) {
 // Behavioral data will be loaded from data.json
 let behavioralData = [];
 
+// Rows the catalog omits: journal front matter (editorial boards, volume indexes,
+// errata) and non-empirical articles (reviews, biographical pieces). They arrange
+// nothing, so they carry no process or principle. Flagged rather than row-deleted -
+// deleting renumbers every index and would invalidate the validation checkpoints.
+function isCatalogArticle(article) {
+    return !article || !article.excluded;
+}
+
 // Pagination state
 let currentPage = 1;
 let rowsPerPage = 20;
@@ -133,7 +141,7 @@ async function loadData() {
 
         // Merge with any local additions (isolated try/catch so corrupt
         // localStorage never discards a successful data.json fetch)
-        behavioralData = jsonData;
+        behavioralData = jsonData.filter(isCatalogArticle);
         try {
             const savedData = localStorage.getItem('behavioralData');
             if (savedData) {
@@ -145,7 +153,7 @@ async function loadData() {
                     )
                 );
                 if (localOnlyEntries.length) {
-                    behavioralData = [...jsonData, ...localOnlyEntries];
+                    behavioralData = [...jsonData.filter(isCatalogArticle), ...localOnlyEntries];
                 }
             }
         } catch (lsError) {
@@ -157,7 +165,7 @@ async function loadData() {
         console.error('Error loading data.json (likely due to local file access), using fallback data:', error);
         
         // Use fallback data, then merge with localStorage
-        behavioralData = fallbackData;
+        behavioralData = fallbackData.filter(isCatalogArticle);
         try {
             const savedData = localStorage.getItem('behavioralData');
             if (savedData) {
@@ -169,7 +177,7 @@ async function loadData() {
                         fallbackEntry.year === localEntry.year
                     )
                 );
-                behavioralData = [...fallbackData, ...localOnlyEntries];
+                behavioralData = [...fallbackData.filter(isCatalogArticle), ...localOnlyEntries];
             }
         } catch (parseError) {
             // Corrupt localStorage — stick with fallback data

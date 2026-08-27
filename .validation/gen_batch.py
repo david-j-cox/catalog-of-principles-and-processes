@@ -44,6 +44,8 @@ else:
                        r'list of|volume \d|title page|masthead|announcement|in memoriam|'
                        r'obituary|reviewers)', re.I)
     def is_article(i):
+        if data[i].get('excluded'):
+            return False           # already judged non-empirical; never re-queue it
         return not FRONT.search((data[i].get('title') or '').strip())
     cand = [i for i in range(len(data)) if i not in done and is_article(i)]
     # Source reachability decides order (see .validation/fulltext_probe.py):

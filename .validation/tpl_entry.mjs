@@ -10,7 +10,7 @@ const BATCH = __BATCH__
 
 const FINAL_SCHEMA = {
   type: 'object', additionalProperties: false,
-  required: ['idx','metadata_changed','metadata_fixes','process_action','processes','principles','other_tags','proposes_new_label','reviewed','signoffs','needs_human','confidence','notes','equation_in_text','equation_note'],
+  required: ['idx','metadata_changed','metadata_fixes','process_action','non_empirical','processes','principles','other_tags','proposes_new_label','reviewed','signoffs','needs_human','confidence','notes','equation_in_text','equation_note'],
   properties: {
     idx: { type: 'integer' },
     metadata_changed: { type: 'boolean' },
@@ -20,6 +20,7 @@ const FINAL_SCHEMA = {
       year: { type: 'integer' }, journal: { type: 'string' }, title: { type: 'string' },
       note: { type: 'string' } } },
     process_action: { type: 'string', enum: ['validated_unchanged','corrected','normalized','assigned','left_empty','flagged_remove'] },
+    non_empirical: { type: 'string', enum: ['no','review','biographical','other'] },
     processes:  { type: 'array', items: { type: 'string' } },
     principles: { type: 'array', items: { type: 'string' } },
     other_tags: { type: 'array', items: { type: 'string' } },
@@ -110,7 +111,18 @@ TASKS:
    and you can recover it from the title/url/your knowledge of this paper (you MAY web-fetch the url or
    web-search the title), fill it in metadata_fixes; otherwise leave it. Do NOT fabricate. Set
    metadata_changed=true only if you propose a concrete fix.
-2) PROCESS AND PRINCIPLE. The stored tags are a legacy FLAT list that mixed the two
+2) IS THIS AN EMPIRICAL ARTICLE? Decide FIRST. A review, a theoretical piece, a
+   biographical or memorial article, a book review, a commentary or an editorial
+   ARRANGES NOTHING, so it has no process in this catalog's sense and any tag on it would
+   be topical - naming what the piece is about rather than what was done. These are
+   omitted from the catalog. Set non_empirical to review / biographical / other, leave
+   processes, principles and other_tags EMPTY, set process_action='left_empty', and stop
+   tagging. Set non_empirical='no' for an ordinary empirical report and continue. Judge
+   from the article itself, not the title alone: an empirical paper with a long
+   introduction is still empirical, and a paper reporting new data is empirical even if
+   it also reviews a literature.
+
+3) PROCESS AND PRINCIPLE. The stored tags are a legacy FLAT list that mixed the two
    together, so treat them as a starting point, not as ground truth. Split what is
    correct into the right field, drop what the rules above disqualify, and add what is
    missing. Name what the study ARRANGED (processes) and what that arrangement ENGAGED
@@ -118,7 +130,7 @@ TASKS:
    side, say why in notes rather than inventing the other. Put phenomena, measures and
    models in other_tags. process_action describes what you did to the stored tags:
    validated_unchanged, corrected, normalized, assigned, left_empty, or flagged_remove.
-3) EQUATION SWEEP. Source reachability for this entry was probed in advance:
+4) EQUATION SWEEP. Source reachability for this entry was probed in advance:
    source_status=${e.source_status}${e.pmcid ? `, pmcid=${e.pmcid}` : ''}.
    ${e.source_status === 'fulltext'
      ? `RUN THIS TASK. PMC serves the machine-readable HTML body for this article: fetch \
@@ -166,7 +178,7 @@ spend nothing on it.`}
    Inline statistics (t, F, p, r-squared), fit diagnostics, and descriptive formulas are NOT equations
    for this purpose. Only models mapping independent variables to behavior count. Do NOT write the
    equation into any other field; flagging it here is the whole task.
-4) SIGNOFF: reviewed=true and signoffs=1 only if you are confident in BOTH metadata and process and
+5) SIGNOFF: reviewed=true and signoffs=1 only if you are confident in BOTH metadata and process and
    no human check is needed; otherwise reviewed=false, signoffs=0, needs_human=true.
 Set needs_human=true if: you propose a new label, you removed/changed an existing human tag, you made a
 metadata fix you are unsure of, or confidence < 0.6. Return the structured object only.`

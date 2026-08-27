@@ -92,6 +92,21 @@ else:
                 for k, v in r['metadata_fixes'].items():
                     if k in META_KEYS and v not in (None, '', []):
                         d[k] = v
+            ne = r.get('non_empirical')
+            if ne and ne != 'no':
+                # David: reviews, biographies and other non-empirical pieces are omitted
+                # from the catalog. Flagged, never row-deleted - deleting renumbers every
+                # index and would invalidate progress.json's checkpoints.
+                d['excluded'] = ne
+                for f in ('processes', 'principles', 'topics', 'unmapped', 'process'):
+                    d[f] = []
+                d['ai-reviewed'] = True
+                d['ai-signoffs'] = 1
+                d['needs-human'] = False
+                d.setdefault('signoffs', [])
+                applied += 1
+                continue
+            d.pop('excluded', None)
             if r.get('process_action') != 'left_empty':
                 # the reviewer now returns the two fields separately; `process` is kept as
                 # the union so the legacy flat view and split_fields.py stay consistent
@@ -150,4 +165,5 @@ print(json.dumps({
     'returned': len(returned), 'unreturned_retry': unreturned, f'{track}_remaining': remaining_after,
     'tokens_cumulative': prog['tokens_cumulative'], 'cycles': prog['cycles_completed'],
     'off_vocabulary_tags_rejected': len(rejected_tags),
+    'excluded_non_empirical': sum(1 for r in results if (r.get('non_empirical') or 'no') != 'no'),
 }))

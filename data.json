@@ -1197,10 +1197,7 @@
       "Herrnstein, R. J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1403933/",
-    "process": [
-      "Schedule: Differential Reinforcement of Low Rates",
-      "Deprivation"
-    ],
+    "process": [],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -1211,14 +1208,11 @@
     "signoffs": [],
     "ai-signoffs": 1,
     "ai-reviewed": true,
-    "processes": [
-      "Schedule: Differential Reinforcement of Low Rates"
-    ],
-    "principles": [
-      "Deprivation"
-    ],
+    "processes": [],
+    "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "THE EFFECT OF METHAMPHETAMINE ON OPERANT LEVELAND A VOIDANCE BEHA VIOR",
@@ -4530,7 +4524,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SOME TEMPORAL AND SEQUENTIAL PROPERTIES OF BEHA VIORDURING CONDITIONING AND EXTINCTION",
@@ -25772,7 +25767,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Reference Index",
@@ -25814,7 +25810,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Tables of Contents, Volumes 1-10",
@@ -67831,7 +67828,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Further thoughts on behavior regulation",
@@ -85962,7 +85960,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Most directed forgetting in pigeons can be attributed to the absence of reinforcement on forget trials during training or to other procedural artifacts.",
@@ -88128,7 +88127,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Drug discrimination under a concurrent schedule.",
@@ -88943,7 +88943,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Preference between variable-ratio and fixed-ratio schedules: local and extended relations.",
@@ -90222,7 +90223,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Food and amphetamine self-administration by baboons: effects of alternatives.",
@@ -90465,7 +90467,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Nonstable Concurrent Choice In Pigeons.",
@@ -91503,7 +91506,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Response Form, Force, And Number: Effects On Concurrent-schedule Performance.",
@@ -102225,7 +102229,16 @@
       "Muthukumaraswamy, S."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1459848/",
-    "process": [],
+    "process": [
+      "Matching to Sample",
+      "Conditional Discrimination",
+      "Differential Reinforcement",
+      "Stimulus Equivalence",
+      "Discrimination",
+      "Reinforcement",
+      "Conditioned Reinforcement",
+      "Discriminative Stimulus"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102233,10 +102246,24 @@
     "abstract": "Sidman's (2000) theory regarding the origin of equivalence relations predicts that a reinforcing stimulus common to distinct equivalence classes must drop out of the equivalence relations. This prediction was tested in the present study by arranging class-specific reinforcers, R1 and R2, following correct responding on the prerequisite conditional discriminations (Ax\u2013Bx, Cx\u2013Bx) for two stimulus classes, A1B1C1 and A2B2C2. A class-common reinforcer, R3, was presented following correct responding on the prerequisite conditional discriminations for a further two stimulus classes, A3B3C3 and A4B4C4. Sidman's theory predicts reinforcer inclusion within Classes 1 and 2 only, given this training arrangement. Experiment 1 tested for the emergence of four equivalence classes and of stimulus\u2013reinforcer and reinforcer\u2013stimulus relations in each class. Four of the 6 subjects demonstrated the reinforcer-based relations in all four equivalence classes, rather than in only those classes with a class-specific reinforcer, as Sidman's theory predicts. One of the remaining 2 subjects showed the reinforcer-based relations in three of the four classes. Experiment 2 extended these findings to document the emergence of interclass matching relations based on the common reinforcer R3, in 5 of 6 subjects, such that a Class 3 sample occasioned the selection of a Class 4 sample when the Class 3 comparison was absent, and similarly, a Class 4 sample occasioned the selection of a Class 3 comparison when the Class 4 comparison was absent. These interclass relations emerged despite the simultaneous maintenance of Class 3 and 4 baseline conditional discriminations, so that the Class 3 and 4 stimuli and reinforcer simultaneously were, and were not, part of a single larger equivalence class. These data are irreconcilable with Sidman's theory, and question the utility of the application of the equivalence relation in describing derived stimulus relations.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Matching to Sample",
+      "Conditional Discrimination",
+      "Differential Reinforcement"
+    ],
+    "principles": [
+      "Stimulus Equivalence",
+      "Discrimination",
+      "Reinforcement",
+      "Conditioned Reinforcement"
+    ],
+    "topics": [
+      "Discriminative Stimulus"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Function Transformation without Reinforcement",
@@ -102284,7 +102311,11 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false,
+    "excluded": "review"
   },
   {
     "title": "Notes on Discounting",
@@ -102296,7 +102327,15 @@
       "Rachlin, H."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1459845/",
-    "process": [],
+    "process": [
+      "Reinforcement",
+      "Delay Discounting",
+      "Probability Discounting",
+      "Choice",
+      "Matching Law",
+      "Optimization",
+      "Power Law"
+    ],
     "static-equation": "\\frac{v}{V} = \\frac{1}{1 + kD^{s}}",
     "static-equation-definitions": "v/V = discounted (relative) value; k = discounting constant; D = delay; s = exponent (Stevens power-law sensitivity); s = 1 reduces to Mazur's hyperbola",
     "recursive-equation": "",
@@ -102308,9 +102347,19 @@
     "ai-signoffs": 1,
     "ai-reviewed": true,
     "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "principles": [
+      "Reinforcement"
+    ],
+    "topics": [
+      "Delay Discounting",
+      "Probability Discounting",
+      "Choice",
+      "Matching Law",
+      "Optimization",
+      "Power Law"
+    ],
+    "unmapped": [],
+    "needs-human": false
   },
   {
     "title": "Negative Automaintenance Omission Training Is Effective",
@@ -102324,7 +102373,13 @@
       "Killeen, P."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1601948/",
-    "process": [],
+    "process": [
+      "Omission Training",
+      "Autoshaping",
+      "Negative Punishment",
+      "Positive Reinforcement",
+      "Response Rate"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102332,10 +102387,21 @@
     "abstract": "Twelve pigeons were exposed to negative automaintenance contingencies for 17\u201327 sessions immediately after brief (14\u201316 sessions) or extended (168\u2013237 sessions) exposure to positive automaintenance contingencies, or after 4\u201310 sessions of instrumental training. In all conditions, negative automaintenance contingencies virtually eliminated responding, reducing response rates to an average 1.3 responses per min. This reduction in response rate was validated by a model of transition between early and late response rates that assumed exponential transition of rates from one set of contingencies to the next. The model faithfully reproduced cumulative records, and yielded estimates of terminal rates under negative automaintenance that were close to operant level.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Omission Training",
+      "Autoshaping"
+    ],
+    "principles": [
+      "Negative Punishment",
+      "Positive Reinforcement"
+    ],
+    "topics": [
+      "Response Rate"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Contingency Discriminability and Peak Shift in Concurrent Schedules",
@@ -102349,7 +102415,20 @@
       "Davison, M."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592349/",
-    "process": [],
+    "process": [
+      "Schedule: Concurrent Variable-Interval",
+      "Schedule: Multiple",
+      "Discrimination",
+      "Stimulus Control",
+      "Reinforcement",
+      "Peak Shift",
+      "Choice",
+      "Visual Stimulus",
+      "Discriminative Stimulus",
+      "Stimulus Discriminability",
+      "Reinforcer Rate",
+      "Matching Law"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102357,10 +102436,28 @@
     "abstract": "We investigated the effects of discriminative stimuli on choice in a highly variable environment using a procedure in which multiple two-key concurrent VI VI components changed every 10 reinforcers and were signaled by differential flashes of red and yellow keylights. Across conditions, five pigeons were exposed to a number of different combinations of the following component reinforcer ratios: 27\u22361, 9\u22361, 3\u22361, 1\u22361, 1\u22363, 1\u22369, 1\u223627. Overall, there was clear control by the component signals in that preference, early in components and particularly before any reinforcers had been delivered, was ordinally related to the signaled reinforcer ratios. In conditions in which only two components arranged unequal reinforcer ratios (e.g., 27\u22361 and 1\u223627) with the remaining components arranging 1\u22361 reinforcer ratios, preference before the first reinforcer in a component showed peak shift in that the most extreme preference did not occur in the unequal reinforcer-ratio components, but in 1\u22361 components further towards the ends of the stimulus dimension. The contingency-discriminability model (Davison & Nevin, 1999) was fitted to the data and provided an excellent description of the interactions between stimulus and reinforcer effects in a highly variable environment.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Schedule: Concurrent Variable-Interval",
+      "Schedule: Multiple"
+    ],
+    "principles": [
+      "Discrimination",
+      "Stimulus Control",
+      "Reinforcement"
+    ],
+    "topics": [
+      "Peak Shift",
+      "Choice",
+      "Visual Stimulus",
+      "Discriminative Stimulus",
+      "Stimulus Discriminability",
+      "Reinforcer Rate",
+      "Matching Law"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "An Analysis of Reinforcement History Effects",
@@ -102370,10 +102467,23 @@
     "pages": "31-42",
     "authors": [
       "Okouchi, H.",
-      "Lattal, K."
+      "Lattal, K. A."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592348/",
-    "process": [],
+    "process": [
+      "Schedule: Tandem",
+      "Schedule: Variable Interval",
+      "Schedule: Differential Reinforcement of Low Rates",
+      "Schedule: Fixed Interval",
+      "Schedule: Multiple",
+      "Reinforcement",
+      "Discrimination",
+      "Behavioral Contrast",
+      "Response Strength",
+      "Reinforcer Rate",
+      "Response Rate",
+      "Discriminative Stimulus"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102381,10 +102491,28 @@
     "abstract": "Four pigeons were exposed to two tandem variable-interval differential-reinforcement-of-low-rate schedules under different stimulus conditions. The values of the tandem schedules were adjusted so that reinforcement rates in one stimulus condition were higher than those in the other, even though response rates in the two conditions were nearly identical. Following this, a fixed-interval schedule of either shorter or longer values than, or equal to the baseline schedule, was introduced in the two stimulus conditions respectively. Response rates during those fixed-interval schedules typically were higher in the presence of the stimuli previously correlated with the lower reinforcement rates than were those in the presence of the stimuli previously correlated with the higher reinforcement rates. Such effects of the reinforcement history were most prominent when the value of the fixed-interval schedule was shorter. The results are consistent with both incentive contrast and response strength conceptualizations of related effects. They also suggest methods for disentangling the effects of reinforcement rate on subsequent responding, from the response rate with which it is confounded in many conventional schedules of reinforcement.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Schedule: Tandem",
+      "Schedule: Variable Interval",
+      "Schedule: Differential Reinforcement of Low Rates",
+      "Schedule: Fixed Interval",
+      "Schedule: Multiple"
+    ],
+    "principles": [
+      "Reinforcement",
+      "Discrimination"
+    ],
+    "topics": [
+      "Behavioral Contrast",
+      "Response Strength",
+      "Reinforcer Rate",
+      "Response Rate",
+      "Discriminative Stimulus"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Fix and Sample with Rats in the Dynamics of Choice",
@@ -102517,10 +102645,19 @@
     "authors": [
       "Belke, T.",
       "Duncan, I.",
-      "David Pierce, W."
+      "Pierce, W. David"
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592355/",
-    "process": [],
+    "process": [
+      "Schedule: Concurrent Variable-Interval",
+      "Schedule: Concurrent",
+      "Schedule: Variable Ratio",
+      "Positive Reinforcement",
+      "Response Allocation",
+      "Choice",
+      "Reinforcer Quality",
+      "Matching Law"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102528,10 +102665,24 @@
     "abstract": "Choice between sucrose and wheel-running reinforcement was assessed in two experiments. In the first experiment, ten male Wistar rats were exposed to concurrent VI 30\u2005s VI 30\u2005s schedules of wheel-running and sucrose reinforcement. Sucrose concentration varied across concentrations of 2.5, 7.5, and 12.5%. As concentration increased, more behavior was allocated to sucrose and more reinforcements were obtained from that alternative. Allocation of behavior to wheel running decreased, but obtained wheel-running reinforcement did not change. Overall, the results suggested that food-deprived rats were sensitive to qualitative changes in food supply (sucrose concentration) while continuing to defend a level of physical activity (wheel running). In the second study, 15 female Long Evans rats were exposed to concurrent variable ratio schedules of sucrose and wheel-running, wheel-running and wheel-running, and sucrose and sucrose reinforcement. For each pair of reinforcers, substitutability was assessed by the effect of income-compensated price changes on consumption of the two reinforcers. Results showed that, as expected, sucrose substituted for sucrose and wheel running substituted for wheel running. Wheel running, however, did not substitute for sucrose; but sucrose partially substituted for wheel running. We address the implications of the interrelationships of sucrose and wheel running for an understanding of activity anorexia.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Schedule: Concurrent Variable-Interval",
+      "Schedule: Concurrent",
+      "Schedule: Variable Ratio"
+    ],
+    "principles": [
+      "Positive Reinforcement"
+    ],
+    "topics": [
+      "Response Allocation",
+      "Choice",
+      "Reinforcer Quality",
+      "Matching Law"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "The Effects of Delayed Reinforcement on Variability and Repetition of Response Sequences",
@@ -102542,11 +102693,19 @@
     "authors": [
       "Odum, A.",
       "Ward, R.",
-      "Anne Burke, K.",
+      "Burke, K.A.",
       "Barnes, C."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592357/",
-    "process": [],
+    "process": [
+      "Differential Reinforcement",
+      "Schedule: Multiple",
+      "Positive Reinforcement",
+      "Discrimination",
+      "Behavioral Variability",
+      "Delay of Reinforcement",
+      "Response Rate"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102554,10 +102713,23 @@
     "abstract": "Four experiments examined the effects of delays to reinforcement on key peck sequences of pigeons maintained under multiple schedules of contingencies that produced variable or repetitive behavior. In Experiments 1, 2, and 4, in the repeat component only the sequence right-right-left-left earned food, and in the vary component four-response sequences different from the previous 10 earned food. Experiments 1 and 2 examined the effects of nonresetting and resetting delays to reinforcement, respectively. In Experiment 3, in the repeat component sequences had to be the same as one of the previous three, whereas in the vary component sequences had to be different from each of the previous three for food. Experiment 4 compared postreinforcer delays to prereinforcement delays. With immediate reinforcement sequences occurred at a similar rate in the two components, but were less variable in the repeat component. Delays to reinforcement decreased the rate of sequences similarly in both components, but affected variability differently. Variability increased in the repeat component, but was unaffected in the vary component. These effects occurred regardless of the manner in which the delay to reinforcement was programmed or the contingency used to generate repetitive behavior. Furthermore, the effects were unique to prereinforcement delays.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Differential Reinforcement",
+      "Schedule: Multiple"
+    ],
+    "principles": [
+      "Positive Reinforcement",
+      "Discrimination"
+    ],
+    "topics": [
+      "Behavioral Variability",
+      "Delay of Reinforcement",
+      "Response Rate"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Assessing Unit-Price Related Remifentanil Choice in Rhesus Monkeys",
@@ -102572,7 +102744,15 @@
       "Hursh, S."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592359/",
-    "process": [],
+    "process": [
+      "Discrete Trials",
+      "Schedule: Fixed Ratio",
+      "Positive Reinforcement",
+      "Choice",
+      "Reinforcer Magnitude",
+      "Response Effort",
+      "Optimization"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102580,10 +102760,23 @@
     "abstract": "Given a commodity available at different prices, a unit-price account of choice predicts preference for the cheaper alternative. This experiment determined if rhesus monkeys preferred remifentanil (an ultra-short-acting \u03bc-opioid agonist) delivered at a lower unit price over a higher-priced remifentanil alternative (Phases 1 and 3). Choice between equal-priced alternatives also was assessed (Phase 2). A discrete-trials procedure was arranged in which three monkeys chose between two remifentanil alternatives by responding on one of two levers. Different prices were arranged by manipulating drug dose (0.3 and 0.1\u2005\u00b5g/kg/injection) and/or the ratio requirement. Monkeys usually chose the larger-dose alternative even when it was more expensive. Only when unit prices were relatively high (e.g., large response requirements) did monkeys choose the cheaper (or equally priced) smaller-dose alternative. Employing larger doses (0.9 and 0.3\u2005\u00b5g/kg/injection) attenuated the larger-dose preference. The results demonstrate that choice was not determined simply by unit price. An alternative model that employs demand-function analysis to generate choice predictions is proposed.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Discrete Trials",
+      "Schedule: Fixed Ratio"
+    ],
+    "principles": [
+      "Positive Reinforcement"
+    ],
+    "topics": [
+      "Choice",
+      "Reinforcer Magnitude",
+      "Response Effort",
+      "Optimization"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Disruption of Responding Maintained by Conditioned Reinforcement: Alterations in Response\u2013conditioned-Reinforcer Relations",
@@ -102597,7 +102790,18 @@
       "Lattal, K."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592356/",
-    "process": [],
+    "process": [
+      "Schedule: Mixed",
+      "Schedule: Multiple",
+      "Noncontingent Reinforcement",
+      "Conditioned Reinforcement",
+      "Observing Response",
+      "Response Produced Stimuli",
+      "Delay of Reinforcement",
+      "Delay",
+      "Response Rate",
+      "Discriminative Stimulus"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102605,10 +102809,26 @@
     "abstract": "An observing procedure was used to investigate the effects of alterations in response\u2013conditioned-reinforcer relations on observing. Pigeons responded to produce schedule-correlated stimuli paired with the availability of food or extinction. The contingency between observing responses and conditioned reinforcement was altered in three experiments. In Experiment 1, after a contingency was established in baseline between the observing response and conditioned reinforcement, it was removed and the schedule-correlated stimuli were presented independently of responding according to a variable-time schedule. The variable-time schedule was constructed such that the rate of stimulus presentations was yoked from baseline. The removal of the observing contingency reliably reduced rates of observing. In Experiment 2, resetting delays to conditioned reinforcement were imposed between observing responses and the schedule-correlated stimuli they produced. Delay values of 0, 0.5, 1, 5, and 10\u2005s were examined. Rates of observing varied inversely as a function of delay value. In Experiment 3, signaled and unsignaled resetting delays between observing responses and schedule-correlated stimuli were compared. Baseline rates of observing were decreased less by signaled delays than by unsignaled delays. Disruptions in response\u2013conditioned-reinforcer relations produce similar behavioral effects to those found with primary reinforcement.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Schedule: Mixed",
+      "Schedule: Multiple",
+      "Noncontingent Reinforcement"
+    ],
+    "principles": [
+      "Conditioned Reinforcement"
+    ],
+    "topics": [
+      "Observing Response",
+      "Response Produced Stimuli",
+      "Delay of Reinforcement",
+      "Delay",
+      "Response Rate",
+      "Discriminative Stimulus"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Choice between Single and Multiple Reinforcers in Concurrent-Chains Schedules",
@@ -102620,7 +102840,15 @@
       "Mazur, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592361/",
-    "process": [],
+    "process": [
+      "Schedule: Concurrent Chains",
+      "Conditioned Reinforcement",
+      "Choice",
+      "Delay of Reinforcement",
+      "Reinforcer Magnitude",
+      "Delay-Reduction Hypothesis",
+      "Matching Law"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102628,10 +102856,23 @@
     "abstract": "Pigeons responded on concurrent-chains schedules with equal variable-interval schedules as initial links. One terminal link delivered a single reinforcer after a fixed delay, and the other terminal link delivered either three or five reinforcers, each preceded by a fixed delay. Some conditions included a postreinforcer delay after the single reinforcer to equate the total durations of the two terminal links, but other conditions did not include such a postreinforcer delay. With short initial links, preference for the single-reinforcer alternative decreased when a postreinforcer delay was present, but with long initial links, the postreinforcer delays had no significant effect on preference. In conditions with a postreinforcer delay, preference for the single-reinforcer alternative frequently switched from above 50% to below 50% as the initial links were lengthened. This pattern of results was consistent with delay-reduction theory (Squires & Fantino, 1971), but not with the contextual-choice model (Grace, 1994) or the hyperbolic value-added model (Mazur, 2001) as they have usually been applied. However, the hyperbolic value-added model could account for the results if its calculations were expanded to include reinforcers delivered in later terminal links. The implications of these findings for models of concurrent-chains performance are discussed.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Schedule: Concurrent Chains"
+    ],
+    "principles": [
+      "Conditioned Reinforcement"
+    ],
+    "topics": [
+      "Choice",
+      "Delay of Reinforcement",
+      "Reinforcer Magnitude",
+      "Delay-Reduction Hypothesis",
+      "Matching Law"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Pigeons' Discrimination of Michotte's Launching Effect",
@@ -102645,7 +102886,14 @@
       "Wasserman, E."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592358/",
-    "process": [],
+    "process": [
+      "Successive Discrimination",
+      "Discrimination",
+      "Positive Reinforcement",
+      "Stimulus Control",
+      "Visual Stimulus",
+      "Discriminative Stimulus"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102653,10 +102901,22 @@
     "abstract": "We trained four pigeons to discriminate a Michotte launching animation from three other animations using a go/no-go task. The pigeons received food for pecking at one of the animations, but not for pecking at the others. The four animations featured two types of interactions among objects: causal (direct launching) and noncausal (delayed, distal, and distal & delayed). Two pigeons were reinforced for pecking at the causal interaction, but not at the noncausal interactions; two other pigeons were reinforced for pecking at the distal & delayed interaction, but not at the other interactions. Both discriminations proved difficult for the pigeons to master; later tests suggested that the pigeons often learned the discriminations by attending to subtle stimulus properties other than the intended ones.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Successive Discrimination"
+    ],
+    "principles": [
+      "Discrimination",
+      "Positive Reinforcement",
+      "Stimulus Control"
+    ],
+    "topics": [
+      "Visual Stimulus",
+      "Discriminative Stimulus"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Testing Response-Stimulus Equivalence Relations Using Differential Responses as a Sample",
@@ -102668,7 +102928,13 @@
       "Shimizu, H."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592360/",
-    "process": [],
+    "process": [
+      "Matching to Sample",
+      "Conditional Discrimination",
+      "Stimulus Equivalence",
+      "Stimulus Control",
+      "Response Topography"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102676,10 +102942,21 @@
     "abstract": "This study tested the notion that an equivalence relation may include a response when differential responses are paired with stimuli presented during training. Eight normal adults learned three kinds of computer mouse movements as differential response topographies (R1, R2, and R3). Next, in matching-to-sample training, one of the response topographies was used to select a comparison stimulus B (B1, B2, or B3) conditionally upon presentation of sample stimulus A (A1, A2, or A3), and to select stimulus D (D1, D2, or D3) conditionally upon presentation of stimulus C (C1, C2, or C3). After two sample\u2013comparison\u2013response relations (ABR and CDR) were established, 18 sample\u2013comparison relations were tested (BA, DC, RA, RB, RC, RD, AC, CA, AD, DA, BC, CB, BD, DB, AA, BB, CC, and DD). In the RA, RB, RC, and RD tests, the differential responses (R1, R2, and R3) were used as sample stimuli. All subjects made class-consistent comparison selections in the tests. This study provides evidence that responses may become members of an equivalence class.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Matching to Sample",
+      "Conditional Discrimination"
+    ],
+    "principles": [
+      "Stimulus Equivalence",
+      "Stimulus Control"
+    ],
+    "topics": [
+      "Response Topography"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Intertrial Sources of Stimulus Control and Delayed Matching-to-sample Performance in Humans",
@@ -102693,7 +102970,14 @@
       "Saunders, K."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1592362/",
-    "process": [],
+    "process": [
+      "Delayed Matching to Sample",
+      "Discrimination",
+      "Stimulus Control",
+      "Delay",
+      "Intertrial Interval",
+      "Short-Term Memory"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102701,10 +102985,22 @@
     "abstract": "Two experiments compared delayed matching-to-sample (DMTS) accuracy under 2 procedures in adults with mental retardation. In the trial-unique procedure, every trial in a session contained different stimuli. Thus, comparison stimuli that were correct on one trial were never incorrect on other trials in that session (or vice versa). In the 2-sample DMTS procedure, the same 2 comparison stimuli were presented on each trial, and their function changed quasi-randomly across trials conditional upon the sample stimulus. Across 2 experiments, 7 of 8 subjects showed the highest overall accuracy under the trial-unique procedure, and no subject showed consistently higher accuracy under the 2-sample procedure. Negative, exponential decay functions fit to logit p values showed that this difference was due largely to the steeper delay-mediated decline in sample control for the 2-sample procedure. Stimulus-control analyses indicated that, under the 2-sample procedure, the selection of the comparison stimulus on Trial N was often controlled by the comparison stimulus selection on Trial N-1 rather than the Trial-N sample stimulus. This source of competing stimulus control is not present in trial-unique procedures. Experiment 2 manipulated intertrial interval duration. There was a small but consistent increase in accuracy as a function of intertrial interval duration under the 2-sample procedure, but not under the trial-unique procedure.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Delayed Matching to Sample"
+    ],
+    "principles": [
+      "Discrimination",
+      "Stimulus Control"
+    ],
+    "topics": [
+      "Delay",
+      "Intertrial Interval",
+      "Short-Term Memory"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Do Conditional Reinforcers Count?",
@@ -102717,7 +103013,15 @@
       "Baum, W."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1679975/",
-    "process": [],
+    "process": [
+      "Schedule: Concurrent Variable-Interval",
+      "Conditioned Reinforcement",
+      "Positive Reinforcement",
+      "Matching Law",
+      "Choice",
+      "Reinforcer Rate",
+      "Discriminative Stimulus"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102725,10 +103029,23 @@
     "abstract": "Six pigeons were trained on a procedure in which seven components arranged different food-delivery ratios on concurrent variable-interval schedules each session. The components were unsignaled, lasted for 10 food deliveries, and occurred in random order with a 60-s blackout between components. The schedules were arranged using a switching-key procedure in which two responses on a center key changed the schedules and associated stimuli on two side keys. In Experiment 1, over five conditions, an increasing proportion of food deliveries accompanied by a magazine light was replaced with the presentation of the magazine light only. Local analyses of preference showed preference pulses toward the alternative that had just produced either a food-plus-magazine-light or magazine-light-only presentation, but pulses after food deliveries were always greater than those after magazine lights. Increasing proportions of magazine lights did not change the size of preference pulses after food or magazine-light presentations. Experiment 2 investigated the effects of correlations between food ratios and magazine-light ratios: In Condition 6, magazine-light ratios in components were inversely correlated (\u22121.0) with food ratios, and in Condition 7, magazine-light ratios were uncorrelated with food ratios. In Conditions 8 and 9, pecks also produced occasional 2.5-s flashes of a green keylight. In Condition 8, food and magazine-light ratios were correlated 1.0 whereas food and green-key ratios were correlated \u22121.0. In Condition 9, food and green-key ratios were correlated 1.0 whereas food and magazine-light ratios were correlated \u22121.0. Preference pulses toward alternatives after magazine lights and green keys depended on the correlation between these event ratios and the food ratios: If the ratios were correlated +1.0, positive preference pulses resulted; if the correlation was \u22121.0, preference pulses were negative. These results suggest that the Law of Effect has more to do with events signaling consequences than with strengthening responses.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Schedule: Concurrent Variable-Interval"
+    ],
+    "principles": [
+      "Conditioned Reinforcement",
+      "Positive Reinforcement"
+    ],
+    "topics": [
+      "Matching Law",
+      "Choice",
+      "Reinforcer Rate",
+      "Discriminative Stimulus"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Effects of D-Amphetamine and Ethanol on Variable and Repetitive Key-Peck Sequences in Pigeons",
@@ -102742,7 +103059,16 @@
       "Odum, A."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1679968/",
-    "process": [],
+    "process": [
+      "Schedule: Multiple",
+      "Differential Reinforcement",
+      "Response Differentiation",
+      "Reinforcement",
+      "Discrimination",
+      "Behavioral Variability",
+      "Response Topography",
+      "Response Rate"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102750,10 +103076,24 @@
     "abstract": "This experiment assessed the effects of d-amphetamine and ethanol on reinforced variable and repetitive key-peck sequences in pigeons. Pigeons responded on two keys under a multiple schedule of Repeat and Vary components. In the Repeat component, completion of a target sequence of right, right, left, left resulted in food. In the Vary component, 4-peck sequences differing from the previous 10 produced food. d-Amphetamine (0.1\u20133.0\u2005mg/kg, i.m.) was administered in two separate phases, separated by ethanol administration (1.0\u20132.0\u2005g/kg, i.g.). Under control conditions, measures of variability were high in the Vary component, and lower in the Repeat component. Following administration of the highest dose of d-amphetamine, but not ethanol, response rates decreased in both components. d-Amphetamine and ethanol tended to increase overall sequence variability in the Repeat component, and had less of an effect in the Vary component. Performance in the Repeat component during Phase 2 of d-amphetamine administration was more disrupted than during Phase 1. Measures of variability and repetition based on shifts in the relative frequency distributions of the 16 possible key-peck sequences differed from those based on the overall measure of variability, highlighting the importance of considering both molar and molecular measures when assessing the effects of drugs on reinforced variability and repetition. In addition, the shifts in the relative frequency distribution of response sequences suggest that d-amphetamine produced decrements in repeat performance by decreasing discriminative control within response sequences, whereas ethanol decreased repeat performance by decreasing discriminability between components as well as discriminative control within response sequences.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Schedule: Multiple",
+      "Differential Reinforcement",
+      "Response Differentiation"
+    ],
+    "principles": [
+      "Reinforcement",
+      "Discrimination"
+    ],
+    "topics": [
+      "Behavioral Variability",
+      "Response Topography",
+      "Response Rate"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Resurgence of Response Sequences during Extinction in Rats Shows a Primacy Effect",
@@ -102836,7 +103176,15 @@
       "Remington, B."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1679970/",
-    "process": [],
+    "process": [
+      "Conditional Discrimination",
+      "Matching to Sample",
+      "Stimulus Equivalence",
+      "Stimulus Control",
+      "Stimulus Classes",
+      "Visual Stimulus",
+      "Discriminative Stimulus"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102844,10 +103192,23 @@
     "abstract": "This paper reports two experiments that investigated the role of verbal behavior in the emergence and generalization of contextually controlled equivalence classes. During both experiments, participants were trained with two different combinations of the same easily nameable, yet formally unrelated, pictorial stimuli. Match-to-sample baselines for eight four-member classes were established under the contextual control of two colors. In the presence of one color, conditional relations were established between stimuli whose normative names rhymed. In the presence of the other color, conditional relations were established between stimuli whose normative names did not rhyme. Although, during Experiment 1, all participants demonstrated equivalence classes involving rhyming stimuli, none demonstrated the formation of nonrhyme equivalence classes. To investigate this finding, Experiment 2 evaluated whether participants would demonstrate both rhyme and nonrhyme equivalence classes given more extensive exposure to the experimental contingencies. All participants demonstrated contextually controlled rhyme and nonrhyme equivalence classes, although rhyme classes were demonstrated with greater facility than nonrhyme classes. Results indicate that visual stimuli are named, that verbal bases for stimulus classification can affect the emergence of contextually controlled equivalence classes, and that untrained contextually controlled conditional discriminations involving novel stimuli can emerge on the basis of participants' verbal behavior.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Conditional Discrimination",
+      "Matching to Sample"
+    ],
+    "principles": [
+      "Stimulus Equivalence",
+      "Stimulus Control",
+      "Stimulus Classes"
+    ],
+    "topics": [
+      "Visual Stimulus",
+      "Discriminative Stimulus"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "A Major Trio",
@@ -102882,7 +103243,15 @@
       "Barrett, J."
     ],
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1679976/",
-    "process": [],
+    "process": [
+      "Schedule: Fixed Interval",
+      "Schedule: Fixed Ratio",
+      "Schedule: Multiple",
+      "Reinforcement",
+      "Discrimination",
+      "Response Rate",
+      "Visual Stimulus"
+    ],
     "static-equation": "",
     "static-equation-definitions": "",
     "recursive-equation": "",
@@ -102890,10 +103259,23 @@
     "abstract": "Peter B. Dews played a significant role in shaping the distinctive characteristics and defining the underlying principles of the discipline of behavioral pharmacology. His early and sophisticated use of schedules of reinforcement in the 1950s, incorporated from research in the experimental analysis of behavior and integrated into the discipline of pharmacology, provided tremendous insight, inspiration, and impetus to the newly emerging field of behavioral pharmacology. The experimental findings generated by Dews' research, blending the sophisticated use of behavior and pharmacological principles together with the elegant manner of their presentation and far-reaching implications, provided the force and momentum to establish and direct behavioral pharmacology for several decades. This article attempts to capture some of Dews' research that integrated and inspired the blending of sophisticated behavioral work with that of pharmacology.",
     "journal": "JEAB",
     "signoffs": [],
-    "processes": [],
-    "principles": [],
-    "topics": [],
-    "unmapped": []
+    "processes": [
+      "Schedule: Fixed Interval",
+      "Schedule: Fixed Ratio",
+      "Schedule: Multiple"
+    ],
+    "principles": [
+      "Reinforcement",
+      "Discrimination"
+    ],
+    "topics": [
+      "Response Rate",
+      "Visual Stimulus"
+    ],
+    "unmapped": [],
+    "ai-reviewed": true,
+    "ai-signoffs": 1,
+    "needs-human": false
   },
   {
     "title": "Roger T. Kelleher, Behavior Analyst",
@@ -102916,7 +103298,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "biographical"
   },
   {
     "title": "An Architect of the Golden Years",
@@ -107760,7 +108143,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Divided Stimulus Control: A Replication and a Quantitative Model",
@@ -116139,7 +116523,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Behavioural processes",
@@ -117035,7 +117420,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -117057,7 +117443,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -117079,7 +117466,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Etude de l'influence des facteurs visuels sur les comportements sexuels et agressifs de Mollienesia (Poecilia) velifera (Pisces, Poeciliidae)",
@@ -118037,7 +118425,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -118059,7 +118448,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -118081,7 +118471,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Female mate choice in the pupfish, Cyprinodon variegatus",
@@ -119116,7 +119507,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -119138,7 +119530,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -119160,7 +119553,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Behavioural processes \u2014 The first three years",
@@ -120205,7 +120599,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Avian archistriatal control of fear-motivated behavior and adrenocortical function",
@@ -120473,7 +120868,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -120495,7 +120891,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial board",
@@ -120517,7 +120914,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The development of differences in the feeding behaviour of bottle and breast fed human infants from birth to two months",
@@ -120810,7 +121208,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Acknowledgement to reviewers",
@@ -120832,7 +121231,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Guide for authors",
@@ -121632,7 +122032,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -121654,7 +122055,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -121676,7 +122078,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Colour perception in cows",
@@ -123091,7 +123494,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index",
@@ -123113,7 +123517,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -123135,7 +123540,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -123157,7 +123563,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial",
@@ -124463,7 +124870,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index",
@@ -124485,7 +124893,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -124507,7 +124916,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -124529,7 +124939,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Publisher's note",
@@ -125780,7 +126191,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Acknowledgement to reviewers",
@@ -125802,7 +126214,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -125824,7 +126237,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial",
@@ -127543,7 +127957,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index",
@@ -127565,7 +127980,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Acknowledgement to reviewers",
@@ -127587,7 +128003,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -127609,7 +128026,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "An experimental model of aggressive dominance in (pisces, poeciliidae).",
@@ -130056,7 +130474,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index",
@@ -130078,7 +130497,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Acknowledgement to reviewers",
@@ -130100,7 +130520,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Influences of alcohol on the social responses of male resident mice to anosmic female intruders",
@@ -131586,7 +132007,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -131608,7 +132030,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Division of parental care and reproductive success in the zebra finch ().",
@@ -132863,7 +133286,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index",
@@ -132885,7 +133309,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "8th Biennial Meeting of the International Society for Research on Aggression 23\u201327 July, 1986, Chicago, Illinois",
@@ -133635,7 +134060,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "A radiotelemetry system for analyzing heart rate responses during playback experiments in blackbirds ()",
@@ -133808,7 +134234,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Acknowledgement to reviewers",
@@ -133830,7 +134257,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -133852,7 +134280,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "A method for identifying the nearby spatial cues used by animals during transverse orientation",
@@ -134957,7 +135386,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index",
@@ -134979,7 +135409,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The development of behaviour patterns and temperament in dairy heifers",
@@ -135799,7 +136230,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 15",
@@ -135821,7 +136253,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Acknowledgement to reviewers",
@@ -135843,7 +136276,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -135865,7 +136299,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Signals for food facilitate gerbils' foraging behaviour",
@@ -136382,7 +136817,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 16",
@@ -136404,7 +136840,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Children and their pet dogs : How they communicate",
@@ -136911,7 +137348,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Scopolamine effects on juvenile conspecific recognition in rats: Possible interaction with olfactory sensitivity",
@@ -137134,7 +137572,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 17",
@@ -137156,7 +137595,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial board",
@@ -137178,7 +137618,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Predator-prey interactions, reosurce depression and patch revisitation",
@@ -137575,7 +138016,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of Volume 18",
@@ -137597,7 +138039,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author Index of Volume 18",
@@ -137619,7 +138062,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Acknowledgement to Reviewers",
@@ -137641,7 +138085,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Facial displays and political leadership in France",
@@ -137993,7 +138438,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 19",
@@ -138015,7 +138461,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Guide for authors",
@@ -138463,7 +138910,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 20",
@@ -138485,7 +138933,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -138507,7 +138956,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "International Directory of Ethologists",
@@ -138553,7 +139003,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Taxonomic index",
@@ -138949,7 +139400,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 21",
@@ -138971,7 +139423,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Acknowledgement to reviewers",
@@ -138993,7 +139446,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Guide for authors",
@@ -139597,7 +140051,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 22",
@@ -139619,7 +140074,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of volume 22",
@@ -139641,7 +140097,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -139663,7 +140120,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "When did it really start or stop: the impact of censored observations on the analysis of duration",
@@ -140385,7 +140843,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 23",
@@ -140407,7 +140866,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of volume 23",
@@ -140429,7 +140889,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Central and peripheral endocrine correlates of the immobility reaction in the toad Bufo bufo",
@@ -140981,7 +141442,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 24",
@@ -141003,7 +141465,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of volume 24",
@@ -141025,7 +141488,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The effects of protein malnutrition and cortisol treatment on motor activity of rats",
@@ -141528,7 +141992,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 25",
@@ -141550,7 +142015,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of volume 25",
@@ -141572,7 +142038,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -141594,7 +142061,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Reinforcement signals facilitate learning about early behaviors of a response sequence",
@@ -142268,7 +142736,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Circadian differences in maze performance of C57BI/6 Ola mice",
@@ -143698,7 +144167,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume 28",
@@ -143720,7 +144190,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index",
@@ -143742,7 +144213,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -143764,7 +144236,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -143786,7 +144259,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Effects of test age, line and sex on tonic immobility responses and social reinstatement behaviour in Japanese quail Coturnix japonica",
@@ -145644,7 +146118,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Announcement from the publisher",
@@ -145666,7 +146141,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Hormonal and experiential factors influencing parental behaviour in male rodents: An integrative approach",
@@ -146525,7 +147001,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -146547,7 +147024,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Mimetic behavior of rats in flavor aversion learning",
@@ -146774,7 +147252,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Bases neurologiques des comportements (Neurological bases of behaviours)",
@@ -147305,7 +147784,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index",
@@ -147327,7 +147807,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -147349,7 +147830,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Functional analysis of maternal aggression in the house mouse (mus musculus domesticus)",
@@ -147995,7 +148477,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editor's preface",
@@ -148516,7 +148999,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume 33",
@@ -148538,7 +149022,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index",
@@ -148560,7 +149045,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -148582,7 +149068,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -148604,7 +149091,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "MALONEWS\u2014gnawing at the roots of academic psychology",
@@ -149360,7 +149848,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Introduction",
@@ -150053,7 +150542,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -150075,7 +150565,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Knowledge of session length is a determinant of within-session response patterns in a human operant paradigm",
@@ -150382,7 +150873,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The differential outcomes effect: A demonstration in domestic chickens responding under a titrating-delayed-matching-to-sample procedure",
@@ -150857,7 +151349,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index",
@@ -150879,7 +151372,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -150901,7 +151395,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Passage order through different pathways in groups of schooling fish, and the diversified leadership hypothesis",
@@ -151698,7 +152193,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Simultaneous processing of short delays and higher order temporal intervals within a session by pigeons",
@@ -152427,7 +152923,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -152449,7 +152946,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Object retrieval by Norway rats as a framework for preference and choice",
@@ -160681,7 +161179,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -160703,7 +161202,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents",
@@ -161957,7 +162457,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of Vol. 56",
@@ -161979,7 +162480,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of Vol. 56",
@@ -162542,7 +163044,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of volume 57",
@@ -162564,7 +163067,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume 57",
@@ -162586,7 +163090,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The object behind the echo: dolphins (Tursiops truncatus) perceive object shape globally through echolocation",
@@ -163067,7 +163572,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -163089,7 +163595,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume",
@@ -163111,7 +163618,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -163133,7 +163641,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Aims and Scope Editorial Board",
@@ -163965,7 +164474,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Influence of environment structure and food availability on the foraging behaviour of the laboratory rat",
@@ -164163,7 +164673,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject Index of Volume 60",
@@ -164185,7 +164696,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of Volume 60",
@@ -164207,7 +164719,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "IFC: EDITORIAL BOARD",
@@ -164692,7 +165205,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SUBJECT INDEX TO VOLUME 61",
@@ -164714,7 +165228,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "CONTENTS OF VOLUME 61",
@@ -164736,7 +165251,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Theories in Progress",
@@ -165127,7 +165643,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of volume 62",
@@ -165149,7 +165666,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume 62",
@@ -165171,7 +165689,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Influence of predation pressure on the escape behaviour of Podarcis muralis lizards",
@@ -165771,7 +166290,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SUBJECT INDEX",
@@ -165793,7 +166313,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "CONTENTS OF VOLUME",
@@ -165815,7 +166336,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Impetuosity and discounting: From basic process to human welfare",
@@ -166727,7 +167249,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "IBC: GUIDE FOR AUTHORS",
@@ -166815,7 +167338,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Components of early maternal environment affecting the predisposition to catalepsy",
@@ -167496,7 +168020,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject Index",
@@ -167518,7 +168043,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents",
@@ -168388,7 +168914,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Guide for author",
@@ -169856,7 +170383,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SUBJECT INDEX OF VOLUME 67",
@@ -169878,7 +170406,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "CONTENTS OF VOLUME 67",
@@ -169900,7 +170429,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "BM I: GUIDE FOR AUTHORS",
@@ -171009,7 +171539,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SUBJECT INDEX OF VOLUME 68",
@@ -171031,7 +171562,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "CONTENTS OF VOLUME 68",
@@ -171053,7 +171585,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SQAB 2004: Finding the center",
@@ -171770,7 +172303,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Establishing equivalence classes in preschool children with one-to-many and many-to-one training protocols",
@@ -172028,7 +172562,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -172050,7 +172585,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume 69",
@@ -172072,7 +172608,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The role of terminal-link stimuli in concurrent-chain schedules: revisited using a behavioral-history procedure",
@@ -172334,7 +172871,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Adaptive value of host discrimination in parasitoids: When host defences are very costly",
@@ -172951,7 +173489,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 70",
@@ -172973,7 +173512,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of volume 70",
@@ -172995,7 +173535,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume 70",
@@ -173017,7 +173558,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Inside front cover: Editorial Board",
@@ -174067,7 +174609,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of volume 71",
@@ -174089,7 +174632,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume 71",
@@ -174111,7 +174655,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -174133,7 +174678,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Facultative virulence: A strategy to manipulate host behaviour?",
@@ -174991,7 +175537,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Guide for Authors",
@@ -175057,7 +175604,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of volume 72 and 73",
@@ -175079,7 +175627,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Measuring social structure: A comparison of eight dominance indices",
@@ -176368,7 +176917,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index of volume 74",
@@ -176390,7 +176940,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -176412,7 +176963,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 74",
@@ -176434,7 +176986,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Guide for Authors",
@@ -177602,7 +178155,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index",
@@ -177624,7 +178178,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Non-photoperiodic factors and timing of breeding in blue tits: Impact of environmental and social influences in semi-natural conditions",
@@ -178411,7 +178966,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Announcement",
@@ -178433,7 +178989,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "An advantage for concavities in shape perception by chimpanzees (Pan troglodytes)",
@@ -178631,7 +179188,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 76",
@@ -178653,7 +179211,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume 76",
@@ -178675,7 +179234,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Equine learning behaviour",
@@ -179837,7 +180397,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject Index of Volume 77",
@@ -179859,7 +180420,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Announcement",
@@ -179881,7 +180443,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -179903,7 +180466,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Guide For Authors",
@@ -179947,7 +180511,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of Volume 77",
@@ -179969,7 +180534,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author Index of Volume 77",
@@ -179991,7 +180557,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Strategy of auditory discrimination of scale in Java sparrows: They use both \u201cimagery\u201d and specific cues",
@@ -181421,7 +181988,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 78",
@@ -181443,7 +182011,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume 78",
@@ -181465,7 +182034,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Rats\u2019 memory for event duration in delayed matching-to-sample with nonspatial comparison response alternatives",
@@ -182453,7 +183023,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Transitive inference in non-human animals: An empirical and theoretical analysis",
@@ -183068,7 +183639,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index of volume 79",
@@ -183090,7 +183662,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Contents of volume 79",
@@ -183112,7 +183685,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The role of parent\u2013offspring interactions during and after fledging in the Black-legged Kittiwake",
@@ -183941,7 +184515,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Effects of a parasitic nematode on male mate choice in a livebearing fish with a coercive mating system (western mosquitofish, Gambusia affinis)",
@@ -184766,7 +185341,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Comparative cognition in context: A tribute to the contributions of Sara J. Shettleworth",
@@ -186628,7 +187204,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial",
@@ -188470,7 +189047,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Author index for volume 80, 81, 82, 83",
@@ -188492,7 +189070,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial Board",
@@ -188514,7 +189093,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Subject index for volumes 80, 81, 82, 83",
@@ -188536,7 +189116,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Operant generalization in quail neonates after intradimensional training: Distinguishing positive and negative reinforcement",
@@ -189887,7 +190468,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SQAB 2009: Flying high",
@@ -192794,7 +193376,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Two-item discrimination and Hamilton search learning in infant pigtailed macaque monkeys",
@@ -194150,7 +194733,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SQAB Accouncement",
@@ -196238,7 +196822,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Effects of unexpected changes in visual scenes on the human acoustic startle response and prepulse inhibition",
@@ -197436,7 +198021,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SQAB 2011: Extinction",
@@ -200274,7 +200860,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Effect of preen oil on plumage bacteria: An experimental test with the mallard",
@@ -201706,7 +202293,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SQAB 2012:Timing",
@@ -204723,7 +205311,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Associative and temporal learning: New directions",
@@ -207982,7 +208571,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Roaring function in male goitered gazelles",
@@ -208166,7 +208756,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Motivation and manipulation capacities of the blue and yellow macaw and the tufted capuchin: A comparative approach",
@@ -210341,7 +210932,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial",
@@ -215466,7 +216058,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Predation among armored arachnids: Bothriurus bonariensis (Scorpions, Bothriuridae) versus four species of harvestmen (Harvestmen, Gonyleptidae)",
@@ -215886,7 +216479,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Strain- and context-dependent behavioural responses of acute alarm substance exposure in zebrafish",
@@ -219764,7 +220358,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Last male wins the egg fertilization fight: A case study in ladybird, Menochilus sexmaculatus",
@@ -220687,7 +221282,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Individual differences in cognition and personality",
@@ -223650,7 +224246,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "SQAB 2016: Persistence and relapse",
@@ -226264,7 +226861,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Species differences in urine scent-marking and counter-marking in Peromyscus",
@@ -228750,7 +229348,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Learning and performance: A tribute to the contributions of Ralph R. Miller",
@@ -231912,7 +232511,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Antecedents of behavioural and reproductive dominance in pairs of the primitively eusocial wasp Ropalidia marginata",
@@ -235561,7 +236161,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Corrigendum to \u201cInterventions aimed at changing impulsive choice in rats: Effects of immediate and relatively long delay to reward training\u201d [Behav. Process. 158 (2019) 126\u2013136",
@@ -235587,7 +236188,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The effect of sertraline, haloperidol and apomorphine on the behavioural manipulation of slugs (Deroceras invadens) by the nematode Phasmarhabditis hermaphrodita",
@@ -238397,7 +238999,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Temporal regularity and stimulus control in multiple fixed interval schedules",
@@ -242779,7 +243382,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Behavioral responses of three freshwater planaria species to light, visual and olfactory stimuli: Setting the stage for further ecotoxicological studies",
@@ -242836,7 +243440,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Manipulating monoamines reduces exploration and boldness of Mediterranean field crickets",
@@ -243076,7 +243681,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Does the addition of a new signalling trait enhance receiver responses in diurnal geckos?",
@@ -246929,7 +247535,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "At-risk drinking, operant demand, and cross-commodity discounting as predictors of drunk driving in underage college women",
@@ -250753,7 +251360,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Matching is acquired faster than mismatching by pigeons when salient stimuli are presented manually",
@@ -253805,7 +254413,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Paint marking using CO2 anaesthetization does not affect exploratory and recruitment behaviours in the rock ant, Temnothorax rugatulus",
@@ -256324,7 +256933,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Cost does not prevent pigeons from investing in the future",
@@ -258310,7 +258920,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The effectiveness of Go/Nogo dual-task is modulated by SOA and Go/Nogo ratio",
@@ -259244,7 +259855,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Adapting rodent cued threat conditioning to planarians: Memory acquisition, consolidation, and reconsolidation",
@@ -261991,7 +262603,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Stimulus similarity as a determinant of Pavlovian conditioning.",
@@ -262547,7 +263160,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Habituation of the forelimb-withdrawal response in neonatal rats.",
@@ -262994,7 +263608,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Overshadowing the instrumental conditioning of a lever-press response by a more valid predictor of the reinforcer.",
@@ -285720,7 +286335,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Exploring a Concurrent-Chains Paradox: Decreasing Preference as an Initial Link Is Shortened.",
@@ -288204,7 +288820,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Picture\u2013Object Recognition in Pigeons: Evidence of Representational Insight in a Visual Categorization Task Using a Complementary Information Procedure",
@@ -288226,7 +288843,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Stimulus-outcome interactions during instrumental discrimination learning by rats and humans.",
@@ -289336,7 +289954,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for How Do Room and Apparatus Cues Control Navigation in the Morris Water Task? Evidence for Distinct Contributions to a Movement Vector",
@@ -289358,7 +289977,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The information content of panoramic images I: The rotational errors and the similarity of views in rectangular experimental arenas.",
@@ -290419,7 +291039,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "\"Solving XOR\": Correction to Grand and Honey (2008).",
@@ -291843,7 +292464,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for A Comparison of Empirical and Theoretical Explanations of Temporal Discrimination",
@@ -291865,7 +292487,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Progressive Ratio Schedules of Reinforcement",
@@ -291887,7 +292510,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Competition Between Multiple Causes of a Single Outcome in Causal Reasoning",
@@ -291909,7 +292533,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Evidence for a Shift From Place Navigation to Directional Responding in One Variant of the Morris Water Task",
@@ -291931,7 +292556,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Inaugural editorial for Journal of Experimental Psychology: Animal Behavior Processes.",
@@ -294442,7 +295068,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Simultaneous Backward Conditioned Inhibition and Mediated Conditioning",
@@ -294464,7 +295091,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Effects of Concurrent Load on Feature- and Rule-Based Generalization in Human\nContingency Learning",
@@ -294486,7 +295114,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Corvid Caching: Insights From a Cognitive Model",
@@ -294508,7 +295137,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Both trace and delay conditioned eyeblink responding can be dissociated from outcome expectancy.",
@@ -295656,7 +296286,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Pavlovian Conditioning With Sexually Relevant UCS: Which Is the Necessary UCR?",
@@ -295678,7 +296309,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Conditioned Stimulus Informativeness Governs Conditioned Stimulus\u2212Unconditioned Stimulus Associability",
@@ -295700,7 +296332,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Human Sensitivity to The Magnitude and Probability of a Continuous Causal Relation in a Video Game",
@@ -295722,7 +296355,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Location and Salience of Unique Features in Human Perceptual Learning",
@@ -295744,7 +296378,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Avoidance but Not Aversion Following Sensory Preconditioning With Flavors: A Challenge to Stimulus Substitution",
@@ -295766,7 +296401,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Pigeons Make Errors as a Result of Interval Timing in a Visual, but Not a Visual-Spatial, Midsession Reversal Task",
@@ -295788,7 +296424,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Classical Conditioning Mechanisms Can Differentiate Between Seeing and Doing in Rats",
@@ -295810,7 +296447,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Perception of Emergent Configurations in Humans (Homo sapiens) and Chimpanzees (Pan troglodytes)",
@@ -295832,7 +296470,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for A Category-Overshadowing Effect in Pigeons: Support for the Common Elements Model of Object Categorization Learning",
@@ -295854,7 +296493,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "\"Pigeons prefer discriminative stimuli independently of the overall probability of reinforcement and of the number of presentations of the conditioned reinforcer\": Correction to Stagner et al. (2012).",
@@ -296890,7 +297530,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Pigeons Use Low Rather Than High Spatial Frequency Information to Make Visual Category Discriminations",
@@ -296912,7 +297553,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Editorial explaining the change in name of this journal to Journal of Experimental Psychology: Animal Learning and Cognition.",
@@ -298056,7 +298698,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Effects of Spatial Training on Transitive Inference Performance in Humans and Rhesus Monkeys",
@@ -298078,7 +298721,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Pigeons Learn Signal-Food Intervals Independently in a Multiple Peak Procedure",
@@ -298100,7 +298744,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for A Three-Component Model of Relational Responding in the Transposition Paradigm",
@@ -298122,7 +298767,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for The Cognitive Underpinnings of Flexible Tool Use in Great Apes",
@@ -298144,7 +298790,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Outcome predictability biases learning.",
@@ -299151,7 +299798,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Occasion Setting During a Spatial-Search Task With Pigeons",
@@ -299173,7 +299821,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Stress Increases Cue-Triggered \u201cWanting\u201d for Sweet Reward in Humans",
@@ -299195,7 +299844,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Extinction and Spontaneous Recovery of Spatial Behavior in Pigeons",
@@ -299217,7 +299867,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Dissociating Conscious Expectancies From Automatic Link Formation in Associative Learning: A Review on the So-Called Perruchet Effect",
@@ -299239,7 +299890,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Pigeons Use High Spatial Frequencies When Memorizing Pictures",
@@ -299261,7 +299913,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Do You See What I See? A Comparative Investigation of the Delboeuf Illusion in Humans (Homo sapiens), Rhesus Monkeys (Macaca mulatta), and Capuchin Monkeys (Cebus apella)",
@@ -299283,7 +299936,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for When Is a Choice Not a Choice? Pigeons Fail to Inhibit Incorrect Responses on a Go/No-Go Midsession Reversal Task",
@@ -299305,7 +299959,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Resolving the paradox of suboptimal choice.",
@@ -300316,7 +300971,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Contextual Control of Chained Instrumental Behaviors",
@@ -300338,7 +300994,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Concept Learning Without Differential Reinforcement in Pigeons by Means of Contextual Cueing",
@@ -300360,7 +301017,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for The Effect of Conditioned Inhibition on the Specific Pavlovian-Instrumental Transfer Effect",
@@ -300382,7 +301040,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Stepwise Conceptualization in Pigeons",
@@ -300404,7 +301063,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Rescaling of temporal expectations during extinction.",
@@ -301267,7 +301927,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Reinforcement Learning Models of Risky Choice and the Promotion of Risk-Taking by Losses Disguised as Wins in Rats",
@@ -301289,7 +301950,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Feature Predictiveness and Selective Attention in Pigeons\u2019 Categorization Learning",
@@ -301311,7 +301973,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Assessing the Acquisition of Anticipatory Responding in the Pigeon Using Reaction Time",
@@ -301333,7 +301996,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Bridging the Gap: Learning of Acoustic Nonadjacent Dependencies by a Songbird",
@@ -301355,7 +302019,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Ratios and Effect Size",
@@ -301377,7 +302042,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Rapid Visual Processing of Picture Stimuli by Pigeons in an RSVP (Rapid Serial Visual Presentation) Task",
@@ -301399,7 +302065,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Suboptimal choice, reward-predictive signals, and temporal information.",
@@ -302275,7 +302942,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Pigeons in Control of Their Actions: Learning and Performance in Stop-Signal and Change-Signal Tasks",
@@ -302297,7 +302965,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Task Switching in Rhesus Macaques (Macaca mulatta) and Tufted Capuchin Monkeys (Cebus apella) During Computerized Categorization Tasks",
@@ -302319,7 +302988,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Dietary Effects on Object Recognition: The Impact of High-Fat High-Sugar Diets on Recollection and Familiarity-Based Memory",
@@ -302341,7 +303011,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Landmark Learning, Cue Conflict, and Outbound View Sequence in Navigating Desert Ants",
@@ -302363,7 +303034,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Voluntary \nSwitching in an Invertebrate: The Effect of Cue and Reward Change",
@@ -302385,7 +303057,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Midsession Reversal Task With Pigeons: Parallel Processing of Alternatives Explains Choices",
@@ -302407,7 +303080,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Pigeons Deploy Selective Attention to Efficiently Learn a Stagewise Multidimensional Visual Discrimination Task",
@@ -302429,7 +303103,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Social Learning and Associative Processes: A Synthesis",
@@ -302451,7 +303126,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Learned biases in the processing of outcomes: A brief review of the outcome predictability effect.",
@@ -303390,7 +304066,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Pigeon Category Learning: Revisiting the Shepard, Hovland, and Jenkins (1961) Tasks",
@@ -303412,7 +304089,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "On the origins of computationally complex behavior.",
@@ -304384,7 +305062,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Midsession Reversal Learning: Pigeons Learn What Stimulus to Avoid",
@@ -304406,7 +305085,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Retroactive Interference: Counterconditioning and Extinction With and Without Biologically Significant Outcomes",
@@ -304428,7 +305108,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Experimentally Revealed Stochastic Preferences for Multicomponent Choice Options",
@@ -304450,7 +305131,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for The Effect of Preexposure on Overall Similarity Categorization",
@@ -304472,7 +305154,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Can the Stimulus Processing Assumptions of the Sometimes-Opponent-Process (SOP) Model Explain Instances of Contextual Learning?",
@@ -304494,7 +305177,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Individual Differences in the Nature of Conditioned Behavior Across a Conditioned Stimulus: Adaptation and Application of a Model",
@@ -304516,7 +305200,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Timing Compound Stimuli: Relative Reinforcer Probabilities Divide Stimulus Control in the Multiple Peak Procedure",
@@ -304538,7 +305223,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Goal-Directed Control on Interval Schedules Does Not Depend on the Action\u2013Outcome Correlation",
@@ -304560,7 +305246,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Special issue on recent advances in perceptual learning.",
@@ -305642,7 +306329,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for The Effects of Transcranial Direct Current Stimulation on Perceptual Learning for Upright Faces and Its Role in the Composite Face Effect",
@@ -305664,7 +306352,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Adaptive Testing of the Critical Features in 2D-Shape Discrimination by Pigeons and Starlings",
@@ -305686,7 +306375,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Effect of Context on the Instrumental Reinforcer Devaluation Effect Produced by Taste-Aversion Learning",
@@ -305708,7 +306398,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Assessment of the \u2018Timing\u2019 Function of Schedule-Induced Behavior on Fixed-Interval Performance",
@@ -305730,7 +306421,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Rats Delay Gratification During a Time-Based Diminishing Returns Task",
@@ -305752,7 +306444,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Abstract-Concept Learning in Two Species of New World Corvids, Pinyon Jays (Gymnorhinus Cyanocephalus) and California Scrub Jays (Aphelocoma Californica)",
@@ -305774,7 +306467,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Concurrent Evidence of Extinction Making Acquisition Context Specific and ABA and ABC Renewal Effects in Human Predictive Learning",
@@ -305796,7 +306490,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Reinforcer Predictability and Stimulus Salience Promote Discriminated Habit Learning",
@@ -305818,7 +306513,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Extending a Misallocation Model to Children\u2019s Choice Behavior",
@@ -305840,7 +306536,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Focusing and Shifting Attention in Pigeon Category Learning",
@@ -305862,7 +306559,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Transitive Inference After Minimal Training in Rhesus Macaques (Macaca mulatta)",
@@ -305884,7 +306582,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Matching-to-Sample Abstract-Concept Learning by Dogs (Canis familiaris)",
@@ -305906,7 +306605,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Theory protection: Do humans protect existing associative links?",
@@ -306808,7 +307508,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Inhibition in Discriminated Operant Learning: Tests of Response-Specificity After Feature-Negative and Extinction Learning",
@@ -306830,7 +307531,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for The Effects of Stimulus Pre-Exposure and Conditioning on Overt Visual Attention",
@@ -306852,7 +307554,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for On the Importance of Feedback for Categorization: Revisiting Category Learning Experiments Using an Adaptive Filter Model",
@@ -306874,7 +307577,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Inhibitory Summation as a Form of Generalization",
@@ -306896,7 +307600,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for The Learning Curve, Revisited",
@@ -306918,7 +307623,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Nonreactive Testing: Evaluating the Effect of Withholding Feedback in Predictive Learning",
@@ -306940,7 +307646,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Reversal of Inhibition by No-Modulation Training but Not by Extinction in Human Causal Learning",
@@ -306962,7 +307669,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Generalization Following Symmetrical Intradimensional Discrimination Training",
@@ -306984,7 +307692,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Hierarchical and Configural Control in Conditional Discrimination Learning",
@@ -307006,7 +307715,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Using Transcranial Direct Current Stimulation (tDCS) to Influence Decision Criterion in a Target Detection Paradigm",
@@ -307028,7 +307738,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Valence Generalization Across Nonrecurring Structures",
@@ -307050,7 +307761,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Pigeons discount continuously changing perspective during action recognition.",
@@ -307650,7 +308362,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Externalizing Forgetting: Delay Testing in a Long Operant Chamber",
@@ -307672,7 +308385,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for The Role of Numerical and Nonnumerical Magnitudes in Pigeons\u2019 Conditional Discrimination Behavior",
@@ -307694,7 +308408,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Partial Reinforcement Extinction and Omission Effects in the Elimination and Recovery of Discriminated Operant Behavior",
@@ -307716,7 +308431,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Temporal Order Processing in Rats Depends on the Training Protocol",
@@ -307738,7 +308454,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Modulating Perceptual Learning Indexed by the Face Inversion Effect: Simulating the Application of Transcranial Direct Current Stimulation Using the MKM Model",
@@ -307760,7 +308477,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Temporal Encoding: Relative and Absolute Representations of Time Guide Behavior",
@@ -307782,7 +308500,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Pigeons Discount Continuously Changing Perspective During Action Recognition",
@@ -307804,7 +308523,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for The Effects of Feature Extinction in Dual-Response Feature-Positive Discriminations",
@@ -307826,7 +308546,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The sequencing of trials during partial reinforcement affects subsequent extinction.",
@@ -308371,7 +309092,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Impact of Equivalence Class Training on Same/Different Learning by Pigeons",
@@ -308393,7 +309115,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Effect of Instructions on the Microstructure of Human Schedule Performance",
@@ -308415,7 +309138,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for The Effect of Four Different Object Properties on Latency to Approach in Goffin\u2019s Cockatoos (Cacatua goffiniana)",
@@ -308437,7 +309161,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Stimulus\u2013Outcome Associations Are Required for the Expression of Specific Pavlovian-Instrumental Transfer",
@@ -308459,7 +309184,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Symmetrical \u201csuper learning\u201d: Enhancing causal learning using a bidirectional probabilistic outcome.",
@@ -308913,7 +309639,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "\u201cCaptured\u201d by centaur: Opaque predictions or process insights?",
@@ -308960,7 +309687,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Impact of Temporal Uncertainty on Sign-Tracking Behavior",
@@ -308982,7 +309710,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "A deep neural network tracks tool proficiency development.",
@@ -309030,7 +309759,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Attention and Prediction Error as\n\t\t\t\t\t\tMechanisms for Theory Protection?",
@@ -309052,7 +309782,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Extinction Induced Representational Change",
@@ -309074,7 +309805,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Erratum to \u201cThe spatiotemporal dynamics of conditioned behavior: First-order and higher-order conditioning\u201d by Navarro et al. (2025).",
@@ -309096,7 +309828,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Probability and Rate of Reinforcement in Negative Prediction Error Learning",
@@ -309118,7 +309851,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Modulating Perceptual Learning: Anodal\n\t\t\t\t\t\tTranscranial Direct Current Stimulation (tDCS) Reduces the Face Inversion\n\t\t\t\t\t\tEffect (FIE), While Cathodal tDCS Restores It to Baseline",
@@ -309140,7 +309874,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Associative learning helps ants to hold grudges.",
@@ -309389,7 +310124,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "Supplemental Material for Starlings Solve the Ephemeral Reward Task",
@@ -309411,7 +310147,8 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   },
   {
     "title": "The back-translation of value-modulated attentional capture from humans to rodents.",
@@ -309467,6 +310204,7 @@
     "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [],
+    "excluded": "front-matter"
   }
 ]
