@@ -10,7 +10,10 @@ The page deliberately does NOT publish over itself: a self-publishing page has t
 regenerate its own source, and losing labelling work to a bad republish is worse than
 a copy-paste.
 """
-import json, os, collections, html
+import json, os, collections, html, re
+
+def slug(x):
+    return re.sub(r'[^a-z0-9]+', '-', x.lower()).strip('-')[:60]
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 tax = json.load(open(os.path.join(ROOT, '.validation/taxonomy.json')))
@@ -19,7 +22,22 @@ rows = json.load(open(os.path.join(ROOT, 'data.json')))
 canon = tax['canonical']
 CI = {c.lower() for c in canon}
 
-# --- queue A: kinds I derived rather than David deciding ---------------------
+# --- queue A ----------------------------------------------------------------
+# First: labels David's OWN breadth rule implicates but that he has not ruled on.
+# He rejected "Classical Conditioning" as too broad ("like saying Quantum Physics");
+# these name a paradigm or a field at the same altitude. Applying his rule to them is
+# his call, so they are surfaced rather than assumed - and they lead the queue because
+# each one is used on far more entries than a queue-B singleton.
+BREADTH = {
+ 'Operant Conditioning': ('process', 'exactly parallel to Classical Conditioning, which you rejected'),
+ 'Conditioning': ('process', 'broader still than either paradigm'),
+ 'Behavioral Pharmacology': ('context', 'names a field, closest thing here to your Quantum Physics example'),
+ 'Operant Responding': ('phenomenon', 'amounts to "behaviour occurred"'),
+ 'Elicited Responding': ('phenomenon', 'near-paradigm level'),
+ 'Foraging': ('context', 'a preparation/domain rather than a relation'),
+ 'Second-Order Conditioning': ('process', 'more specific - probably survives, but same family'),
+}
+
 DERIVED = {
  'Stimulus Generalization': ('principle', 'follows Generalization, which you called a principle'),
  'Temporal Discrimination': ('principle', 'follows Discrimination'),
@@ -27,7 +45,6 @@ DERIVED = {
  'Stimulus Equivalence': ('principle', 'emergent relations; many processes reach it'),
  'Concept Learning': ('principle', 'convergent endpoint of many procedures'),
  'Habituation': ('principle', 'convergent relation - but arguably a decrement, i.e. an absence'),
- 'Classical Conditioning': ('process', 'an arrangement you run (pair the stimuli)'),
  'Operant Conditioning': ('process', 'an arrangement you run'),
  'Conditioning': ('process', 'an arrangement you run'),
  'Second-Order Conditioning': ('process', 'an arrangement you run'),
@@ -41,21 +58,31 @@ for r in rows:
     for t in (r.get('process') or []):
         if t.lower() not in CI:
             usage[t].append(r.get('title', '') or '')
-cands = sorted([t for t in usage if len(t.split()) <= 4],
+# labels David has already rejected sit in `unmapped` so their entries surface as
+# needing a specific tag - but they are decided, so they never re-enter the queue.
+REJECTED = set(tax.get('rejected_too_broad') or [])
+cands = sorted([t for t in usage if len(t.split()) <= 4 and t not in REJECTED],
                key=lambda t: (-len(usage[t]), t.lower()))
 
-qa = [{'id': f'A{i}', 'q': 'A', 'label': l, 'kind': DERIVED[l][0], 'why': DERIVED[l][1],
-       'n': sum(1 for r in rows if l in (r.get('process') or [])), 'ex': ''}
-      for i, l in enumerate(sorted(DERIVED))]
-qb = [{'id': f'B{i}', 'q': 'B', 'label': t, 'kind': '', 'why': '',
+def mk(l, kind, why, q):
+    return {'id': slug(l), 'q': q, 'label': l, 'kind': kind, 'why': why,
+            'n': sum(1 for r in rows if l in (r.get('process') or [])), 'ex': ''}
+
+qa = ([mk(l, *BREADTH[l], 'breadth') for l in sorted(BREADTH, key=lambda x: -sum(
+          1 for r in rows if x in (r.get('process') or [])))]
+      + [mk(l, *DERIVED[l], 'A') for l in sorted(DERIVED)])
+qb = [{'id': slug(t), 'q': 'B', 'label': t, 'kind': '', 'why': '',
        'n': len(usage[t]), 'ex': (usage[t][0] or '')[:110]}
-      for i, t in enumerate(cands)]
+      for t in cands]
 items = qa + qb
 
+# 'composite' comes from David's Concept Learning note: "not a process as many things
+# can produce it. But not an individual principle either, as many principles might be
+# used or come together to produce it."
 KINDS = [('principle', 'Principle', '1'), ('process', 'Process', '2'),
-         ('phenomenon', 'Phenomenon', '3'), ('measure', 'Measure', '4'),
-         ('model', 'Model', '5'), ('context', 'Context', '6'),
-         ('reject', 'Not a concept', '0')]
+         ('composite', 'Composite', '3'), ('phenomenon', 'Phenomenon', '4'),
+         ('measure', 'Measure', '5'), ('model', 'Model', '6'),
+         ('context', 'Context', '7'), ('reject', 'Too broad / not a concept', '0')]
 
 keybtns = ''.join(
     f'<button class="kb" data-kind="{k}" data-key="{key}">'
@@ -73,21 +100,21 @@ doc = f'''<title>Label the Vocabulary</title>
   --ink:#15201d; --ink-2:#41544e; --ink-3:#71857e;
   --paper:#f4f6f4; --card:#fbfcfb; --line:#d9e0dc; --accent:#0f6b60; --accent-soft:#e2efeb;
   --k-principle:#0f6b60; --k-process:#2f5d9e; --k-phenomenon:#7a4a86;
-  --k-measure:#4a6572; --k-model:#9c4646; --k-context:#5c6b3f; --k-reject:#9aa5a1;
+  --k-measure:#4a6572; --k-model:#9c4646; --k-context:#5c6b3f; --k-reject:#9aa5a1; --k-composite:#b0682a;
   --shadow:0 1px 2px rgba(21,32,29,.05),0 10px 30px -20px rgba(21,32,29,.4);
 }}
 @media (prefers-color-scheme: dark) {{ :root:not([data-theme="light"]) {{
   --ink:#e6ece9; --ink-2:#a7b6b1; --ink-3:#7c8c87;
   --paper:#101614; --card:#182220; --line:#2a3733; --accent:#5fbfae; --accent-soft:#1b302c;
   --k-principle:#5fbfae; --k-process:#7aa5e6; --k-phenomenon:#bd93c9;
-  --k-measure:#94aab6; --k-model:#e08b8b; --k-context:#a3b878; --k-reject:#5a6a66;
+  --k-measure:#94aab6; --k-model:#e08b8b; --k-context:#a3b878; --k-reject:#5a6a66; --k-composite:#d0a05c;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -20px rgba(0,0,0,.8);
 }} }}
 :root[data-theme="dark"] {{
   --ink:#e6ece9; --ink-2:#a7b6b1; --ink-3:#7c8c87;
   --paper:#101614; --card:#182220; --line:#2a3733; --accent:#5fbfae; --accent-soft:#1b302c;
   --k-principle:#5fbfae; --k-process:#7aa5e6; --k-phenomenon:#bd93c9;
-  --k-measure:#94aab6; --k-model:#e08b8b; --k-context:#a3b878; --k-reject:#5a6a66;
+  --k-measure:#94aab6; --k-model:#e08b8b; --k-context:#a3b878; --k-reject:#5a6a66; --k-composite:#d0a05c;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px -20px rgba(0,0,0,.8);
 }}
 * {{ box-sizing:border-box; }}
@@ -131,6 +158,7 @@ h1 {{ font-family:Spectral,Georgia,serif; font-weight:600; font-size:clamp(1.7re
 .kb-n {{ font-weight:600; color:var(--c); }}
 [data-kind="principle"] {{ --c:var(--k-principle); }}
 [data-kind="process"] {{ --c:var(--k-process); }}
+[data-kind="composite"] {{ --c:var(--k-composite); }}
 [data-kind="phenomenon"] {{ --c:var(--k-phenomenon); }}
 [data-kind="measure"] {{ --c:var(--k-measure); }}
 [data-kind="model"] {{ --c:var(--k-model); }}
@@ -215,7 +243,12 @@ textarea {{ width:100%; min-height:14rem; font:400 .82rem/1.5 "IBM Plex Mono",mo
 const ITEMS = {json.dumps(items)};
 const KEYMAP = {json.dumps({k: key for k, _, key in KINDS})};
 const BYKEY = Object.fromEntries(Object.entries(KEYMAP).map(([k, v]) => [v, k]));
-const STORE = 'catalog-label-v1';
+const STORE = 'catalog-label-v2';   // v1 keyed items by position; v2 keys by label
+const SEED = {json.dumps({slug('Concept Learning'): 'principle'})};
+const SEED_NOTES = {json.dumps({slug('Concept Learning'):
+  'Likely too broad as well. Concept learning involves individual principles '
+  '(generalization, discrimination) - maybe a second-order principle. Not a process, '
+  'as many things can produce it; not an individual principle either.'})};
 
 let state = {{}}, notes = {{}};
 try {{
@@ -223,6 +256,8 @@ try {{
   state = raw.state || raw || {{}};       // tolerate the pre-notes shape
   notes = raw.notes || {{}};
 }} catch (e) {{ state = {{}}; notes = {{}}; }}
+for (const k in SEED) if (!(k in state)) state[k] = SEED[k];
+for (const k in SEED_NOTES) if (!(k in notes)) notes[k] = SEED_NOTES[k];
 let i = 0;
 while (i < ITEMS.length && state[ITEMS[i].id]) i++;
 
@@ -263,7 +298,8 @@ function render() {{
   const prev = state[it.id];
   stage.innerHTML =
     '<div class="card"' + (it.kind ? ' data-kind="' + it.kind + '"' : '') + '>' +
-      '<span class="qtag">' + (it.q === 'A' ? 'Confirm my call' : 'New concept') + '</span>' +
+      '<span class="qtag">' + (it.q === 'breadth' ? 'Your breadth rule may reject this'
+          : it.q === 'A' ? 'Confirm my call' : 'New concept') + '</span>' +
       '<p class="term">' + esc(it.label) + '</p>' +
       '<p class="meta">used on <em>' + it.n + '</em> ' + (it.n === 1 ? 'entry' : 'entries') +
         (it.ex ? ' &middot; e.g. &ldquo;' + esc(it.ex) + '&rdquo;' : '') + '</p>' +
@@ -280,7 +316,7 @@ function render() {{
         '<button id="back">&larr; Back</button>' +
         '<button id="skip">Skip &rarr;</button>' +
         '<span class="spacer"></span>' +
-        '<span class="hint">' + (prev ? 'currently: ' + esc(prev) : 'press 0&ndash;6, or c to explain') + '</span>' +
+        '<span class="hint">' + (prev ? 'currently: ' + esc(prev) : 'press 0&ndash;7, or c to explain') + '</span>' +
       '</div>' +
     '</div>';
 

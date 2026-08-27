@@ -16,7 +16,6 @@
     "Changeover",
     "Changeover Delay",
     "Choice",
-    "Classical Conditioning",
     "Compound Stimuli",
     "Concept Learning",
     "Conditional Discrimination",
@@ -1818,9 +1817,6 @@
     "Discriminability": [
       "Stimulus Discriminability"
     ],
-    "Respondent Conditioning": [
-      "Classical Conditioning"
-    ],
     "Generalized Matching Law": [
       "Matching Law"
     ],
@@ -1834,5 +1830,9 @@
       "Discrimination Learning"
     ]
   },
-  "merge_note": "merges values are LISTS: a compound label may split into several tags (Schedules of Reinforcement: X -> Schedule: X + Reinforcement)."
+  "merge_note": "merges values are LISTS: a compound label may split into several tags (Schedules of Reinforcement: X -> Schedule: X + Reinforcement).",
+  "rejected_too_broad": [
+    "Classical Conditioning",
+    "Respondent Conditioning"
+  ]
 }

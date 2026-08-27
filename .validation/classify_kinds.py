@@ -47,7 +47,7 @@ KINDS = {
  ],
  'process': [
    'Extinction',                      # (D) absence of a thing cannot be a principle
-   'Classical Conditioning', 'Operant Conditioning', 'Conditioning',
+   'Operant Conditioning', 'Conditioning',
    'Second-Order Conditioning',       # arrangements you run, not convergent endpoints
    'Shaping', 'Behavioral Chaining', 'Magazine Training', 'Autoshaping', 'Time-Out',
    'Token Economy', 'Error Correction', 'Repeated Acquisition', 'Discrete Trials',

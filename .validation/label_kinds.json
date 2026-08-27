@@ -16,7 +16,6 @@
     "Changeover": "process",
     "Changeover Delay": "principle",
     "Choice": "phenomenon",
-    "Classical Conditioning": "process",
     "Compound Stimuli": "principle",
     "Concept Learning": "principle",
     "Conditional Discrimination": "process",
@@ -121,7 +120,7 @@
   },
   "counts": {
     "principle": 39,
-    "process": 46,
+    "process": 45,
     "phenomenon": 22,
     "measure": 4,
     "model": 5,

@@ -14924,8 +14924,7 @@
     ],
     "processes": [
       "Schedule: Variable Interval",
-      "Extinction",
-      "Classical Conditioning"
+      "Extinction"
     ],
     "principles": [
       "Positive Punishment",
@@ -14936,7 +14935,8 @@
       "Conditioned Suppression"
     ],
     "unmapped": [
-      "Reinforcement Schedules: Fixed Ratio"
+      "Reinforcement Schedules: Fixed Ratio",
+      "Classical Conditioning"
     ]
   },
   {
@@ -15640,8 +15640,7 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Variable Interval",
-      "Classical Conditioning"
+      "Schedule: Variable Interval"
     ],
     "principles": [
       "Reinforcement",
@@ -15651,7 +15650,8 @@
     "topics": [],
     "unmapped": [
       "Punishment:Positive",
-      "Schedules of Reinforcement: Negative"
+      "Schedules of Reinforcement: Negative",
+      "Classical Conditioning"
     ]
   },
   {
@@ -16332,8 +16332,7 @@
     ],
     "processes": [
       "Schedule: Multiple",
-      "Schedule: Fixed Interval",
-      "Classical Conditioning"
+      "Schedule: Fixed Interval"
     ],
     "principles": [
       "Reinforcement",
@@ -16341,7 +16340,9 @@
       "Negative Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Differential response rates correlated with the presence of \u201cneutral\u201d stimuli1",
@@ -17891,15 +17892,15 @@
     ],
     "processes": [
       "Schedule: Continuous",
-      "Operant Conditioning",
-      "Classical Conditioning"
+      "Operant Conditioning"
     ],
     "principles": [
       "Reinforcement"
     ],
     "topics": [],
     "unmapped": [
-      "Supressive Effects of Shock Punishment"
+      "Supressive Effects of Shock Punishment",
+      "Classical Conditioning"
     ]
   },
   {
@@ -18009,12 +18010,12 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Extinction"
     ],
     "principles": [],
     "topics": [],
     "unmapped": [
+      "Classical Conditioning",
       "Elicited Aggression"
     ]
   },
@@ -18370,12 +18371,11 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
     "unmapped": [
+      "Classical Conditioning",
       "Reflexing Responses",
       "Behavioral Stability for Recording"
     ]
@@ -19283,14 +19283,13 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Habituation"
     ],
     "topics": [],
     "unmapped": [
+      "Classical Conditioning",
       "Stimulus Control of Induction"
     ]
   },
@@ -19360,14 +19359,15 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Operant Conditioning"
     ],
     "principles": [
       "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Probability of Response and Probability of Reinforcement in a Response-Defined Analogue of an Interval Schedule",
@@ -20147,15 +20147,15 @@
     ],
     "processes": [
       "Operant Conditioning",
-      "Extinction",
-      "Classical Conditioning"
+      "Extinction"
     ],
     "principles": [
       "Temporal Relations"
     ],
     "topics": [],
     "unmapped": [
-      "Imprinting Procedures"
+      "Imprinting Procedures",
+      "Classical Conditioning"
     ]
   },
   {
@@ -21478,7 +21478,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Operant Conditioning"
     ],
     "principles": [
@@ -21487,7 +21486,8 @@
     ],
     "topics": [],
     "unmapped": [
-      "Hypothalamic Electrodes"
+      "Hypothalamic Electrodes",
+      "Classical Conditioning"
     ]
   },
   {
@@ -22759,14 +22759,14 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [
       "Behavioral Pharmacology"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "An apparatus and procedure for conditioning the eye-blink reflex in the squirrel monkey.",
@@ -22819,12 +22819,11 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
     "unmapped": [
+      "Classical Conditioning",
       "Aversive Control: Restraint",
       "Measurement"
     ]
@@ -23581,12 +23580,11 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
     "unmapped": [
+      "Classical Conditioning",
       "Somatic Response"
     ]
   },
@@ -45136,16 +45134,16 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Positive Reinforcement",
       "Stimulus Control",
       "Conditioned Inhibition"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Generalization of excitation and inhibition after different amounts of training of an avoidance baseline",
@@ -46864,8 +46862,7 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Schedule: Multiple",
-      "Classical Conditioning"
+      "Schedule: Multiple"
     ],
     "principles": [
       "Positive Reinforcement",
@@ -46874,7 +46871,9 @@
     "topics": [
       "Behavioral Contrast"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Maintenance of behavior controlling the duration of discriminative stimuli",
@@ -46944,8 +46943,7 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Extinction",
-      "Classical Conditioning"
+      "Extinction"
     ],
     "principles": [
       "Positive Reinforcement",
@@ -46953,7 +46951,9 @@
       "Temporal Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Rapid acquisition of discrete-trial lever-press avoidance: Effects of signal-shock interval",
@@ -48454,14 +48454,14 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Response Bias And The Discrimination Of Stimulus Duration",
@@ -48604,7 +48604,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Schedule: Variable Interval"
     ],
     "principles": [
@@ -48613,7 +48612,9 @@
       "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Detection of water level in inverted bottles",
@@ -48960,15 +48961,15 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Positive Reinforcement",
       "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "An Analysis Of Rats' Drinking-Tube Contacts Under Tandem And Fixed-Interval Schedules Of Food Presentation",
@@ -49204,12 +49205,12 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Scaling Of Stimulus Duration By Pigeons",
@@ -49474,7 +49475,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Schedule: Multiple"
     ],
     "principles": [
@@ -49483,7 +49483,9 @@
     "topics": [
       "Behavioral Contrast"
     ],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Choice And The Dependability Of Stimuli That Predict Shock And Safety",
@@ -50642,14 +50644,15 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Schedule: Multiple"
     ],
     "principles": [
       "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "The Effects Of Unsignalled Delayed Reinforcement",
@@ -50715,7 +50718,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Schedule: Variable Time",
       "Schedule: Differential Reinforcement of Other Behavior"
     ],
@@ -50723,7 +50725,9 @@
       "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Autoshaping As A Function Of Prior Food Presentations",
@@ -50752,14 +50756,15 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Schedule: Variable Time"
     ],
     "principles": [
       "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Reinforcement Rate And Interresponse Time Differentiation",
@@ -51100,15 +51105,16 @@
     ],
     "processes": [
       "Schedule: Fixed Interval",
-      "Schedule: Fixed Time",
-      "Classical Conditioning"
+      "Schedule: Fixed Time"
     ],
     "principles": [
       "Positive Reinforcement",
       "Temporal Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Drug Effects On Fixed-Interval Responding With Pause Requirements For Food Presentation",
@@ -52040,14 +52046,15 @@
     "processes": [
       "Schedule: Fixed Interval",
       "Schedule: Fixed Ratio",
-      "Schedule: Differential Reinforcement of Low Rates",
-      "Classical Conditioning"
+      "Schedule: Differential Reinforcement of Low Rates"
     ],
     "principles": [
       "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "The Conditioned Reinforcement Of Repeated Acquisition",
@@ -52217,7 +52224,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Schedule: Multiple",
       "Schedule: Chain",
       "Schedule: Differential Reinforcement of Other Behavior"
@@ -52227,7 +52233,9 @@
       "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Conditional Discrimination Performance By Pigeons On A Response-Independent Procedure",
@@ -52258,14 +52266,15 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Discrimination Learning"
     ],
     "principles": [
       "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Demand For Food On Fixed-Ratio Schedules As A Function Of The Quality Of Concurrently Available Reinforcement",
@@ -52369,14 +52378,15 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Discrimination Learning"
     ],
     "principles": [
       "Positive Punishment"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Rate And Temporal Pattern Of Key Pecking Under Autoshaping And Omission Schedules Of Reinforcement",
@@ -52405,14 +52415,15 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Schedule: Differential Reinforcement of Other Behavior"
     ],
     "principles": [
       "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Punishment of autoshaped key-peck responses of pigeons",
@@ -58292,14 +58303,13 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [
       "Conditioned Suppression"
     ],
     "unmapped": [
+      "Classical Conditioning",
       "Respondents",
       "Automatic Responses"
     ]
@@ -61460,12 +61470,12 @@
     "signoffs": [
       "class-review (unattributed)"
     ],
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Melioration, Matching, and Maximation",
@@ -63717,7 +63727,6 @@
     "processes": [
       "Discrimination Learning",
       "Autoshaping",
-      "Classical Conditioning",
       "Operant Conditioning",
       "Schedule: Variable Interval",
       "Schedule: Chain",
@@ -63732,6 +63741,7 @@
     "topics": [],
     "unmapped": [
       "Two Process Theory",
+      "Classical Conditioning",
       "Differential Reinforcement Other Behavior"
     ]
   },
@@ -63799,13 +63809,13 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Autoshaping",
-      "Classical Conditioning"
+      "Autoshaping"
     ],
     "principles": [],
     "topics": [],
     "unmapped": [
       "Orienting Reflex",
+      "Classical Conditioning",
       "Pavlovian Procedure"
     ]
   },
@@ -64088,7 +64098,6 @@
       "class-review (unattributed)"
     ],
     "processes": [
-      "Classical Conditioning",
       "Conditioning"
     ],
     "principles": [
@@ -64096,6 +64105,7 @@
     ],
     "topics": [],
     "unmapped": [
+      "Classical Conditioning",
       "Taste Aversion"
     ]
   },
@@ -82864,15 +82874,15 @@
     "ai-reviewed": true,
     "ai-signoffs": 1,
     "needs-human": false,
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [
       "Reinforcement",
       "Positive Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "The role of autoshaping in cooperative two-player games between starlings",
@@ -89462,14 +89472,15 @@
     "ai-signoffs": 1,
     "needs-human": false,
     "processes": [
-      "Operant Conditioning",
-      "Classical Conditioning"
+      "Operant Conditioning"
     ],
     "principles": [
       "Reinforcement"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "I Agree.",
@@ -89497,14 +89508,15 @@
     "ai-signoffs": 1,
     "needs-human": false,
     "processes": [
-      "Discrimination Learning",
-      "Classical Conditioning"
+      "Discrimination Learning"
     ],
     "principles": [
       "Stimulus Control"
     ],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Some questions about unification of conditioning processes, stimulus-response psychology, and neural network models.",
@@ -89532,12 +89544,13 @@
     "ai-signoffs": 1,
     "needs-human": false,
     "processes": [
-      "Classical Conditioning",
       "Operant Conditioning"
     ],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Beyond the moment: Complex behavior in temporally extended environments.",
@@ -89600,13 +89613,13 @@
     "ai-signoffs": 1,
     "needs-human": false,
     "processes": [
-      "Operant Conditioning",
-      "Classical Conditioning"
+      "Operant Conditioning"
     ],
     "principles": [],
     "topics": [],
     "unmapped": [
-      "Experimental Analysis of Behavior"
+      "Experimental Analysis of Behavior",
+      "Classical Conditioning"
     ]
   },
   {
@@ -101416,12 +101429,12 @@
     "ai-reviewed": true,
     "ai-signoffs": 1,
     "needs-human": false,
-    "processes": [
-      "Classical Conditioning"
-    ],
+    "processes": [],
     "principles": [],
     "topics": [],
-    "unmapped": []
+    "unmapped": [
+      "Classical Conditioning"
+    ]
   },
   {
     "title": "Neuronal Substrates of Relapse to Cocaine-Seeking Behavior: Role of Prefrontal Cortex",

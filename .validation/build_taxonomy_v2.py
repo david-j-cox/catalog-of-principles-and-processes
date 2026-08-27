@@ -80,7 +80,6 @@ DUPES = {
     'Signal-Detection Theory': 'Signal Detection',
     'Timeout': 'Time-Out',
     'Discriminability': 'Stimulus Discriminability',
-    'Respondent Conditioning': 'Classical Conditioning',
     'Generalized Matching Law': 'Matching Law',
     'Herrnsteins Equation': 'Matching Law',
     'Matching': 'Matching Law',
@@ -89,6 +88,21 @@ DUPES = {
 
 # labels that name apparatus or a field, not a behavioural process or principle
 DROP = ['Slide Projector', 'Visual Stimulus', 'Experimental Analysis of Behavior', 'Measurement']
+
+# David's breadth rule (2026-08-27), from rejecting "Classical Conditioning":
+#   "Too broad. It's like saying 'Quantum Physics'. Might be true, but it's not useful
+#    because it's too broad and encompasses too many things."
+# A label that names a PARADIGM rather than a specific relation or arrangement tells you
+# nothing when you tag an article with it. Only the label David actually rejected is
+# removed here; the rest are queued for him to confirm, since applying his rule to
+# borderline cases is his call, not mine. Tag instances of a rejected label move to
+# `unmapped` so the entries surface as needing a more specific tag - never silently
+# deleted, since "too broad" means under-specified, not wrong.
+# Respondent Conditioning was merged INTO Classical Conditioning; with that target
+# rejected it would fall back to canonical on its own, so it is rejected alongside -
+# it names the identical paradigm and fails the same breadth test.
+REJECTED = ['Classical Conditioning', 'Respondent Conditioning']
+DROP = DROP + REJECTED
 
 new_labels = ['Schedule: Alternating', 'Schedule: Differential Reinforcement of Low Rates',
               'Schedule: Differential Reinforcement of High Rates',
@@ -133,9 +147,11 @@ tax['canonical'] = canon
 tax['merges'] = merges
 tax['merge_note'] = ('merges values are LISTS: a compound label may split into several tags '
                      '(Schedules of Reinforcement: X -> Schedule: X + Reinforcement).')
+tax['rejected_too_broad'] = REJECTED
 json.dump(tax, open(TAX, 'w'), indent=2, ensure_ascii=True)
 
 print(f'canonical  {len(old_canon)} -> {len(canon)}')
 print(f'merges     {len(tax.get("merges") or {})} rules ({sum(1 for v in merges.values() if len(v) > 1)} one-to-many)')
 print(f'dropped    {DROP}')
 print(f'added      {new_labels}')
+print(f'rejected   {REJECTED} (too broad)')
