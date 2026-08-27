@@ -149,3 +149,7 @@ DataToAdd/
 data_colleciton_template.xlsx
 # transient validation batch script
 .validation/batch.mjs
+
+# The validation pipeline is source, not scratch: the *.py rule above had left
+# apply_batch/gen_batch/preflight untracked and unrecoverable.
+!.validation/*.py
