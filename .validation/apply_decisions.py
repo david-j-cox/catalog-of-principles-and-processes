@@ -48,7 +48,7 @@ REJECT = ['Operant Conditioning', 'Conditioning', 'Behavioral Pharmacology', 'Fo
 FOLD = {'Functional Equivalence': 'Stimulus Equivalence'}
 
 ADD = {
- 'principle':  ['Satiation', 'Behavioral Momentum', 'Response Strength', 'Melioration',
+ 'principle':  ['Satiation', 'Melioration',
                 # the counterpart to Stimulus Generalization, which David asked for
                 'Response Generalization'],
  'process':    ['Omission Training', 'Reinforcer Devaluation', 'Peak Procedure',
@@ -60,7 +60,13 @@ ADD = {
  'phenomenon': ['Delay Discounting', 'Probability Discounting', 'Blocking', 'Resurgence',
                 'Overshadowing', 'Renewal', 'Latent Inhibition', 'Reinstatement',
                 'Working Memory', 'Behavioral Variability', 'Anticipatory Contrast',
-                'Response Bout'],
+                'Response Bout',
+                # David, on reconsidering: "more of a phenomena that is covered by many
+                # processes and would have to be explained by foundational principles."
+                # That is the sharpest principle/phenomenon test yet - a principle EXPLAINS,
+                # a phenomenon NEEDS explaining. Response Strength goes with it: it is the
+                # thing reinforcement rate, magnitude and delay are invoked to account for.
+                'Behavioral Momentum', 'Response Strength'],
  'measure':    ['Reinforcer Rate', 'Reinforcer Magnitude', 'Reinforcer Quality',
                 'Discriminative Stimulus', 'Unconditioned Stimulus', 'Intertrial Interval',
                 'Interstimulus Interval', 'Reaction Time', 'Observing Response',

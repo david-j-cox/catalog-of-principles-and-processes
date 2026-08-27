@@ -67,6 +67,12 @@ RULES THE VOCABULARY WAS BUILT ON. Apply them; do not work around them.
 5. PREFER THE MEASURED RELATION TO AN INTERPRETATION OF IT. "Delay Discounting" names
    what was measured; "self-control" and "impulsivity" are readings laid over the same
    data, and are not in the vocabulary.
+6. A PRINCIPLE EXPLAINS; A PHENOMENON NEEDS EXPLAINING. If many processes produce it and
+   it would itself have to be accounted for by something more foundational, it is a
+   phenomenon, not a principle. Behavioural momentum and response strength are phenomena
+   for exactly this reason: reinforcement rate, magnitude and delay are invoked to
+   explain them. Reinforcement and discrimination explain other things and are not
+   themselves explained here - those are principles.
 
 Use ONLY labels from the lists below, copied EXACTLY, each in its own field. An empty
 field is correct when the article genuinely does not support one - do not pad. If the

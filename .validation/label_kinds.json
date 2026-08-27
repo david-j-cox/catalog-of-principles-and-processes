@@ -12,7 +12,7 @@
     "Avoidance": "principle",
     "Behavioral Chaining": "process",
     "Behavioral Contrast": "phenomenon",
-    "Behavioral Momentum": "principle",
+    "Behavioral Momentum": "phenomenon",
     "Behavioral Variability": "phenomenon",
     "Bias": "phenomenon",
     "Blocking": "phenomenon",
@@ -101,7 +101,7 @@
     "Response Generalization": "principle",
     "Response Produced Stimuli": "measure",
     "Response Rate": "measure",
-    "Response Strength": "principle",
+    "Response Strength": "phenomenon",
     "Response Topography": "measure",
     "Resurgence": "phenomenon",
     "Reversal Learning": "process",
@@ -154,10 +154,10 @@
     "Working Memory": "phenomenon"
   },
   "counts": {
+    "phenomenon": 34,
     "measure": 31,
-    "phenomenon": 32,
-    "principle": 25,
     "process": 59,
+    "principle": 23,
     "model": 5
   }
 }

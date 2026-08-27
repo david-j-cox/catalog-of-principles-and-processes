@@ -20470,11 +20470,11 @@
       "Extinction"
     ],
     "principles": [
-      "Stimulus Generalization",
-      "Response Strength"
+      "Stimulus Generalization"
     ],
     "topics": [
-      "Response Rate"
+      "Response Rate",
+      "Response Strength"
     ],
     "unmapped": [
       "Variable Interval Training",
@@ -65242,10 +65242,10 @@
       "Alternative Reinforcement",
       "Extinction"
     ],
-    "principles": [
+    "principles": [],
+    "topics": [
       "Behavioral Momentum"
     ],
-    "topics": [],
     "unmapped": []
   },
   {
