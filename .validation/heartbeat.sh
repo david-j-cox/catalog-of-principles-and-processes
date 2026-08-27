@@ -108,4 +108,11 @@ PYTHON_FOR_CYCLE="$PY_BIN" claude -p "Run one validation cycle exactly as specif
 starting at step 1 (preflight has already returned GO). Commit the cycle and release \
 the lock before you finish. Do not push." \
   --permission-mode acceptEdits >> "$LOG" 2>&1
-echo "$(stamp) cycle finished rc=$?" >> "$LOG"
+RC=$?
+if grep -qE "EPERM|operation not permitted|An unknown error occurred" <(tail -40 "$LOG"); then
+  echo "$(stamp) CYCLE FAILED - claude cannot read the repo under launchd (macOS TCC)." >> "$LOG"
+  echo "$(stamp) CYCLE FIX: grant Full Disk Access to /Users/davidjcox/.local/bin/claude," >> "$LOG"
+  echo "$(stamp) CYCLE      or move the repo out of ~/Documents. Auth is fine; file access is not." >> "$LOG"
+else
+  echo "$(stamp) cycle finished rc=$RC" >> "$LOG"
+fi
