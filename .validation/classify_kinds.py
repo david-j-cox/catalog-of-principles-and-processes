@@ -3,7 +3,7 @@
 
   principle  a fundamental component that interacts within a process to predict the
              output. Usually inferred from behaviour rather than observed directly -
-             the gravity/electromagnetism analogy. Reinforcement, extinction.
+             the gravity/electromagnetism analogy. Reinforcement, discrimination.
   process    a pattern of behaviour-environment interaction you can ARRANGE, which
              reliably produces a phenomenon. "What happens when I run this?"
              Schedules, shaping, chaining, matching-to-sample.
@@ -15,8 +15,11 @@
   context    the preparation or domain a study sits in, not a behavioural relation.
              Behavioural pharmacology, foraging.
 
-A label may be BOTH principle and process (extinction is a relation you infer AND a
-procedure you run); those carry kind 'both' and are the ones most worth David's eye.
+Every label takes exactly ONE kind - nothing is both. Two rules from David decide the
+hard cases: an absence cannot be a fundamental component (so extinction is a process,
+not a principle - applied to one response it is reallocation relative to the other
+contingencies in effect); and if many different processes converge on it, it is a
+principle (discrimination, generalization, avoidance).
 
 Writes .validation/label_kinds.json. Does not touch data.json.
 """
@@ -36,8 +39,16 @@ KINDS = {
    'Conditioned Excitation', 'Conditioned Inhibition', 'Temporal Control',
    'Temporal Relations', 'Compound Stimuli', 'Stimulus Classes', 'Response Produced Stimuli',
    'Changeover Delay', 'Stimulus Discriminability',
+   'Discrimination', 'Generalization', 'Avoidance',   # (D) many processes get you these
+   'Stimulus Generalization', 'Temporal Discrimination',  # follow their parents
+   'Escape',                          # parallel to Avoidance
+   'Stimulus Equivalence', 'Concept Learning',        # emergent, convergent endpoints
+   'Habituation',                     # convergent relation, many procedures reach it
  ],
  'process': [
+   'Extinction',                      # (D) absence of a thing cannot be a principle
+   'Classical Conditioning', 'Operant Conditioning', 'Conditioning',
+   'Second-Order Conditioning',       # arrangements you run, not convergent endpoints
    'Shaping', 'Behavioral Chaining', 'Magazine Training', 'Autoshaping', 'Time-Out',
    'Token Economy', 'Error Correction', 'Repeated Acquisition', 'Discrete Trials',
    'Discrete Trial Teaching', 'Matching to Sample', 'Delayed Matching to Sample',
@@ -55,17 +66,17 @@ KINDS = {
    'Schedule: Second-Order', 'Schedule: Tandem', 'Schedule: Variable Interval',
    'Schedule: Variable Ratio', 'Schedule: Variable Time',
  ],
- 'both': [
-   'Extinction', 'Discrimination', 'Generalization', 'Stimulus Generalization',
-   'Habituation', 'Classical Conditioning', 'Operant Conditioning', 'Conditioning',
-   'Second-Order Conditioning', 'Avoidance', 'Escape', 'Conditioned Suppression',
-   'Imitation', 'Stimulus Equivalence', 'Concept Learning', 'Temporal Discrimination',
- ],
+ # David's rule (2026-08-27): an absence cannot be a fundamental component, so
+ # extinction is a process only - applied to one response it is reallocation relative
+ # to the other contingencies in effect. Conversely, if MANY different processes
+ # converge on it, it is a principle. That rule dissolves the 'both' kind entirely;
+ # every label below now takes one side. Entries marked (D) are David's explicit calls.
  'phenomenon': [
    'Behavioral Contrast', 'Local Contrast', 'Peak Shift', 'Post-Reinforcement Pause',
    'Generalization Gradient', 'Adjunctive Behavior', 'Elicited Responding',
    'Operant Responding', 'Response Allocation', 'Aggression', 'Imprinting',
    'Overmatching', 'Undermatching', 'Response Bias', 'Bias', 'Momentary Maximizing',
+   'Conditioned Suppression', 'Imitation',   # measured outcomes, not components
    'Choice', 'Remembering', 'Short-Term Memory', 'Stimulus Substitution',
  ],
  'measure': [

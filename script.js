@@ -580,6 +580,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         volume:  document.getElementById('volume-filter'),
         issue:   document.getElementById('issue-filter'),
         process: document.getElementById('process-filter'),
+        principle: document.getElementById('principle-filter'),
         review:  document.getElementById('review-filter'),
     };
     populateFilters();
@@ -650,6 +651,18 @@ function createTitleContent(title, url) {
 // Normalize a process field into a clean array of strings.
 // Handles: proper arrays, raw JSON strings like '["A","B"]',
 // comma-delimited strings, and strips stray brackets/quotes/asterisks.
+// The catalog stores processes and principles as separate fields (see
+// .validation/split_fields.py). `process` is the legacy flat list, kept as the source
+// the split derives from - read it only when the split fields are absent.
+function getProcesses(article) {
+    if (Array.isArray(article.processes)) return article.processes;
+    return normalizeProcesses(article.process);
+}
+function getPrinciples(article) {
+    if (Array.isArray(article.principles)) return article.principles;
+    return [];
+}
+
 function normalizeProcesses(value) {
     if (!value) return [];
     const items = Array.isArray(value) ? value : [String(value)];
@@ -838,10 +851,9 @@ function getSortValue(article, key) {
         if (Array.isArray(a) && a.length) return String(a[0]).toLowerCase();
         return String(a || '').toLowerCase();
     }
-    if (key === 'process') {
-        const p = article.process;
-        if (Array.isArray(p) && p.length) return String(p[0]).toLowerCase();
-        return String(p || '').toLowerCase();
+    if (key === 'process' || key === 'principle') {
+        const p = key === 'process' ? getProcesses(article) : getPrinciples(article);
+        return p.length ? String(p[0]).toLowerCase() : '';
     }
     if (key === 'journal') return (article.journal || 'JEAB').toLowerCase();
     const val = article[key];
@@ -957,7 +969,8 @@ function renderPage() {
             <td class="issue">${escapeHtml(article.issue)}</td>
             <td class="pages">${escapeHtml(article.pages) || 'N/A'}</td>
             <td class="abstract-cell">${createAbstractContent(article.abstract || 'No abstract available', index)}</td>
-            <td class="process">${createProcessContent(article.process)}</td>
+            <td class="process">${createProcessContent(getProcesses(article))}</td>
+            <td class="principle">${createProcessContent(getPrinciples(article))}</td>
             <td class="static-equation">${createEquationContent(staticEquation, staticDefinitions)}</td>
             <td class="recursive-equation">${createEquationContent(recursiveEquation, recursiveDefinitions)}</td>
         `;
@@ -1092,17 +1105,23 @@ function populateFilters() {
 
     // Get unique processes — normalize all entries through normalizeProcesses()
     // so raw JSON strings, comma-lists, stray brackets etc. are cleaned first
+    const fillOptions = (select, values) => {
+        if (!select) return;
+        [...new Set(values)].filter(Boolean).sort().forEach(v => {
+            const option = document.createElement('option');
+            option.value = v;
+            option.textContent = v;
+            select.appendChild(option);
+        });
+    };
     const allProcesses = [];
+    const allPrinciples = [];
     behavioralData.forEach(article => {
-        allProcesses.push(...normalizeProcesses(article.process));
+        allProcesses.push(...getProcesses(article));
+        allPrinciples.push(...getPrinciples(article));
     });
-    const processes = [...new Set(allProcesses)].filter(Boolean).sort();
-    processes.forEach(process => {
-        const option = document.createElement('option');
-        option.value = process;
-        option.textContent = process;
-        processFilter.appendChild(option);
-    });
+    fillOptions(processFilter, allProcesses);
+    fillOptions(document.getElementById('principle-filter'), allPrinciples);
     
 }
 
@@ -1211,7 +1230,8 @@ function applyFilters() {
         filteredData = filteredData.filter(article =>
             (article.title || '').toLowerCase().includes(searchTerm) ||
             (article.journal || 'JEAB').toLowerCase().includes(searchTerm) ||
-            matchesProcessSearch(article.process, searchTerm) ||
+            matchesProcessSearch(getProcesses(article), searchTerm) ||
+            matchesProcessSearch(getPrinciples(article), searchTerm) ||
             matchesAuthorsSearch(article.authors, searchTerm) ||
             (article['static-equation'] && [].concat(article['static-equation']).join(' ').toLowerCase().includes(searchTerm)) ||
             (article['static-equation-definitions'] && article['static-equation-definitions'].toLowerCase().includes(searchTerm)) ||
@@ -1238,7 +1258,13 @@ function applyFilters() {
 
     // Apply process filter
     if (processFilter) {
-        filteredData = filteredData.filter(article => matchesProcessFilter(article.process, processFilter));
+        filteredData = filteredData.filter(article => matchesProcessFilter(getProcesses(article), processFilter));
+    }
+
+    // Apply principle filter
+    const principleFilter = filterEls.principle ? filterEls.principle.value : '';
+    if (principleFilter) {
+        filteredData = filteredData.filter(article => matchesProcessFilter(getPrinciples(article), principleFilter));
     }
 
     // Apply review status filter
@@ -1272,7 +1298,8 @@ function updateStatistics() {
     const totalArticles = behavioralData.length;
     const allProcesses = new Set();
     behavioralData.forEach(article => {
-        normalizeProcesses(article.process).forEach(p => allProcesses.add(p));
+        getProcesses(article).forEach(p => allProcesses.add(p));
+        getPrinciples(article).forEach(p => allProcesses.add(p));
     });
     const uniqueProcesses = allProcesses.size;
     const years = behavioralData.map(a => a.year).filter(y => y != null && y > 0);
@@ -1540,7 +1567,8 @@ function exportTableToCSV() {
         'Issue',
         'Pages',
         'Abstract',
-        'Behavioral Process',
+        'Process',
+        'Principle',
         'Static Equation',
         'Static Equation Definitions',
         'Recursive Equation',
@@ -1560,7 +1588,8 @@ function exportTableToCSV() {
             article.issue || '',
             `"${(article.pages || '').replace(/"/g, '""')}"`,
             `"${(article.abstract || '').replace(/"/g, '""')}"`,
-            `"${formatProcessForCSV(article.process)}"`,
+            `"${formatProcessForCSV(getProcesses(article))}"`,
+            `"${formatProcessForCSV(getPrinciples(article))}"`,
             `"${cleanEquationForCSV(normalizeEqGlobal(article['static-equation']))}"`,
             `"${normalizeEqGlobal(article['static-equation-definitions']).replace(/"/g, '""')}"`,
             `"${cleanEquationForCSV(normalizeEqGlobal(article['recursive-equation']))}"`,
@@ -1647,7 +1676,9 @@ function openEditModal(article) {
     document.getElementById('edit-issue').value = article.issue || '';
     document.getElementById('edit-pages').value = article.pages || '';
     document.getElementById('edit-abstract').value = article.abstract || '';
-    document.getElementById('edit-process').value = formatProcessForInput(article.process);
+    document.getElementById('edit-process').value = formatProcessForInput(getProcesses(article));
+    const editPrinciple = document.getElementById('edit-principle');
+    if (editPrinciple) editPrinciple.value = formatProcessForInput(getPrinciples(article));
     document.getElementById('edit-static-equation').value = normalizeEqGlobal(article['static-equation']);
     document.getElementById('edit-static-definitions').value = article['static-equation-definitions'] || '';
     document.getElementById('edit-recursive-equation').value = normalizeEqGlobal(article['recursive-equation']);
