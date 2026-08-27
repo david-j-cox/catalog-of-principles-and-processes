@@ -10,7 +10,7 @@ const BATCH = __BATCH__
 
 const FINAL_SCHEMA = {
   type: 'object', additionalProperties: false,
-  required: ['idx','metadata_changed','metadata_fixes','process_action','process_final','proposes_new_label','reviewed','signoffs','needs_human','confidence','notes','equation_in_text','equation_note'],
+  required: ['idx','metadata_changed','metadata_fixes','process_action','processes','principles','other_tags','proposes_new_label','reviewed','signoffs','needs_human','confidence','notes','equation_in_text','equation_note'],
   properties: {
     idx: { type: 'integer' },
     metadata_changed: { type: 'boolean' },

@@ -92,5 +92,17 @@ else:
     tpl = open(os.path.join(ROOT, '.validation/tpl_entry.mjs')).read()
     js = tpl.replace('__KINDS__', json.dumps(kinds)).replace('__BATCH__', json.dumps(batch))
 
-open(os.path.join(ROOT, '.validation/batch.mjs'), 'w').write(js)
+BATCH = os.path.join(ROOT, '.validation/batch.mjs')
+open(BATCH, 'w').write(js)
+
+# A schema whose `required` names a key absent from `properties` can never be satisfied:
+# every agent exhausts its retry cap and the batch returns nothing at full price. That
+# cost one 20-entry calibration run and 977k tokens, so no batch ships unchecked.
+import subprocess
+chk = subprocess.run(['node', os.path.join(ROOT, '.validation/check_schema.mjs'), BATCH],
+                     capture_output=True, text=True)
+if chk.returncode != 0:
+    os.remove(BATCH)
+    sys.stderr.write(chk.stdout + chk.stderr)
+    sys.exit('gen_batch: refusing to emit a batch with an unsatisfiable schema')
 print(json.dumps({'track': track, 'selected': sel, 'count': len(sel), 'script_bytes': len(js)}))
