@@ -1,0 +1,10586 @@
+[
+ {
+  "phrase": "reinforcer magnitude",
+  "df": 66,
+  "title_df": 31,
+  "orphan": true,
+  "score": 13.0,
+  "key": "magnitude reinforcer"
+ },
+ {
+  "phrase": "taste aversion",
+  "df": 51,
+  "title_df": 26,
+  "orphan": true,
+  "score": 12.71,
+  "key": "aversion taste"
+ },
+ {
+  "phrase": "delayed matching-to-sample",
+  "df": 66,
+  "title_df": 25,
+  "orphan": true,
+  "score": 11.78,
+  "key": "delayed matching-to-sample"
+ },
+ {
+  "phrase": "response acquisition",
+  "df": 19,
+  "title_df": 14,
+  "orphan": true,
+  "score": 11.65,
+  "key": "acquisition response"
+ },
+ {
+  "phrase": "discriminative stimuli",
+  "df": 152,
+  "title_df": 32,
+  "orphan": true,
+  "score": 11.42,
+  "key": "discriminative stimuli"
+ },
+ {
+  "phrase": "time allocation",
+  "df": 54,
+  "title_df": 19,
+  "orphan": true,
+  "score": 10.87,
+  "key": "allocation time"
+ },
+ {
+  "phrase": "response sequences",
+  "df": 42,
+  "title_df": 17,
+  "orphan": true,
+  "score": 10.82,
+  "key": "response sequences"
+ },
+ {
+  "phrase": "behavioral momentum",
+  "df": 55,
+  "title_df": 18,
+  "orphan": true,
+  "score": 10.61,
+  "key": "behavioral momentum"
+ },
+ {
+  "phrase": "auditory stimuli",
+  "df": 70,
+  "title_df": 19,
+  "orphan": true,
+  "score": 10.49,
+  "key": "auditory stimuli"
+ },
+ {
+  "phrase": "animal behavior",
+  "df": 54,
+  "title_df": 17,
+  "orphan": true,
+  "score": 10.4,
+  "key": "animal behavior"
+ },
+ {
+  "phrase": "latent inhibition",
+  "df": 70,
+  "title_df": 49,
+  "orphan": false,
+  "score": 10.2,
+  "key": "inhibition latent"
+ },
+ {
+  "phrase": "perceptual learning",
+  "df": 52,
+  "title_df": 41,
+  "orphan": false,
+  "score": 10.18,
+  "key": "learning perceptual"
+ },
+ {
+  "phrase": "response strength",
+  "df": 38,
+  "title_df": 13,
+  "orphan": true,
+  "score": 9.8,
+  "key": "response strength"
+ },
+ {
+  "phrase": "observing responses",
+  "df": 52,
+  "title_df": 13,
+  "orphan": true,
+  "score": 9.48,
+  "key": "observing responses"
+ },
+ {
+  "phrase": "behavior analysis",
+  "df": 82,
+  "title_df": 46,
+  "orphan": false,
+  "score": 9.35,
+  "key": "analysis behavior"
+ },
+ {
+  "phrase": "spatial memory",
+  "df": 67,
+  "title_df": 37,
+  "orphan": false,
+  "score": 8.85,
+  "key": "memory spatial"
+ },
+ {
+  "phrase": "spaced responding",
+  "df": 24,
+  "title_df": 21,
+  "orphan": false,
+  "score": 8.74,
+  "key": "responding spaced"
+ },
+ {
+  "phrase": "response cost",
+  "df": 20,
+  "title_df": 8,
+  "orphan": true,
+  "score": 8.63,
+  "key": "cost response"
+ },
+ {
+  "phrase": "rate of responding",
+  "df": 168,
+  "title_df": 4,
+  "orphan": true,
+  "score": 8.59,
+  "key": "rate responding"
+ },
+ {
+  "phrase": "operant behavior",
+  "df": 144,
+  "title_df": 51,
+  "orphan": false,
+  "score": 8.49,
+  "key": "behavior operant"
+ },
+ {
+  "phrase": "delayed reward",
+  "df": 27,
+  "title_df": 8,
+  "orphan": true,
+  "score": 8.4,
+  "key": "delayed reward"
+ },
+ {
+  "phrase": "interstimulus interval",
+  "df": 15,
+  "title_df": 7,
+  "orphan": true,
+  "score": 8.38,
+  "key": "interstimulus interval"
+ },
+ {
+  "phrase": "spatial learning",
+  "df": 53,
+  "title_df": 27,
+  "orphan": false,
+  "score": 8.02,
+  "key": "learning spatial"
+ },
+ {
+  "phrase": "learning by pigeons",
+  "df": 21,
+  "title_df": 17,
+  "orphan": false,
+  "score": 7.97,
+  "key": "learning pigeons"
+ },
+ {
+  "phrase": "fixed ratios",
+  "df": 37,
+  "title_df": 7,
+  "orphan": true,
+  "score": 7.96,
+  "key": "fixed ratios"
+ },
+ {
+  "phrase": "functional equivalence",
+  "df": 12,
+  "title_df": 6,
+  "orphan": true,
+  "score": 7.95,
+  "key": "equivalence functional"
+ },
+ {
+  "phrase": "rapid acquisition",
+  "df": 23,
+  "title_df": 17,
+  "orphan": false,
+  "score": 7.77,
+  "key": "acquisition rapid"
+ },
+ {
+  "phrase": "time place",
+  "df": 15,
+  "title_df": 14,
+  "orphan": false,
+  "score": 7.76,
+  "key": "place time"
+ },
+ {
+  "phrase": "probability discounting",
+  "df": 37,
+  "title_df": 21,
+  "orphan": false,
+  "score": 7.71,
+  "key": "discounting probability"
+ },
+ {
+  "phrase": "nictitating membrane response",
+  "df": 13,
+  "title_df": 13,
+  "orphan": false,
+  "score": 7.69,
+  "key": "membrane nictitating response"
+ },
+ {
+  "phrase": "membrane response",
+  "df": 13,
+  "title_df": 13,
+  "orphan": false,
+  "score": 7.69,
+  "key": "membrane response"
+ },
+ {
+  "phrase": "response duration",
+  "df": 22,
+  "title_df": 6,
+  "orphan": true,
+  "score": 7.64,
+  "key": "duration response"
+ },
+ {
+  "phrase": "associative learning",
+  "df": 175,
+  "title_df": 42,
+  "orphan": false,
+  "score": 7.64,
+  "key": "associative learning"
+ },
+ {
+  "phrase": "equivalence classes",
+  "df": 72,
+  "title_df": 28,
+  "orphan": false,
+  "score": 7.6,
+  "key": "classes equivalence"
+ },
+ {
+  "phrase": "variability of response",
+  "df": 8,
+  "title_df": 5,
+  "orphan": true,
+  "score": 7.49,
+  "key": "response variability"
+ },
+ {
+  "phrase": "observing behavior",
+  "df": 30,
+  "title_df": 18,
+  "orphan": false,
+  "score": 7.48,
+  "key": "behavior observing"
+ },
+ {
+  "phrase": "schedule performance",
+  "df": 52,
+  "title_df": 23,
+  "orphan": false,
+  "score": 7.45,
+  "key": "performance schedule"
+ },
+ {
+  "phrase": "equine learning",
+  "df": 12,
+  "title_df": 12,
+  "orphan": false,
+  "score": 7.45,
+  "key": "equine learning"
+ },
+ {
+  "phrase": "interval timing",
+  "df": 44,
+  "title_df": 21,
+  "orphan": false,
+  "score": 7.4,
+  "key": "interval timing"
+ },
+ {
+  "phrase": "behavior in rats",
+  "df": 25,
+  "title_df": 16,
+  "orphan": false,
+  "score": 7.34,
+  "key": "behavior rats"
+ },
+ {
+  "phrase": "human predictive learning",
+  "df": 16,
+  "title_df": 13,
+  "orphan": false,
+  "score": 7.28,
+  "key": "human learning predictive"
+ },
+ {
+  "phrase": "rule-governed behavior",
+  "df": 14,
+  "title_df": 5,
+  "orphan": true,
+  "score": 7.24,
+  "key": "behavior rule-governed"
+ },
+ {
+  "phrase": "free operant",
+  "df": 18,
+  "title_df": 5,
+  "orphan": true,
+  "score": 7.19,
+  "key": "free operant"
+ },
+ {
+  "phrase": "variable-ratio schedules",
+  "df": 51,
+  "title_df": 21,
+  "orphan": false,
+  "score": 7.17,
+  "key": "schedules variable-ratio"
+ },
+ {
+  "phrase": "conditioned taste",
+  "df": 36,
+  "title_df": 18,
+  "orphan": false,
+  "score": 7.17,
+  "key": "conditioned taste"
+ },
+ {
+  "phrase": "human associative learning",
+  "df": 17,
+  "title_df": 13,
+  "orphan": false,
+  "score": 7.17,
+  "key": "associative human learning"
+ },
+ {
+  "phrase": "reversal learning",
+  "df": 41,
+  "title_df": 19,
+  "orphan": false,
+  "score": 7.16,
+  "key": "learning reversal"
+ },
+ {
+  "phrase": "time-place learning",
+  "df": 24,
+  "title_df": 15,
+  "orphan": false,
+  "score": 7.15,
+  "key": "learning time-place"
+ },
+ {
+  "phrase": "causal learning",
+  "df": 28,
+  "title_df": 16,
+  "orphan": false,
+  "score": 7.14,
+  "key": "causal learning"
+ },
+ {
+  "phrase": "aversion learning",
+  "df": 22,
+  "title_df": 14,
+  "orphan": false,
+  "score": 7.03,
+  "key": "aversion learning"
+ },
+ {
+  "phrase": "predictive learning",
+  "df": 23,
+  "title_df": 14,
+  "orphan": false,
+  "score": 6.95,
+  "key": "learning predictive"
+ },
+ {
+  "phrase": "rabbit's nictitating membrane response",
+  "df": 10,
+  "title_df": 10,
+  "orphan": false,
+  "score": 6.91,
+  "key": "membrane nictitating rabbit's response"
+ },
+ {
+  "phrase": "response rates",
+  "df": 571,
+  "title_df": 25,
+  "orphan": false,
+  "score": 6.9,
+  "key": "rates response"
+ },
+ {
+  "phrase": "responding maintained",
+  "df": 56,
+  "title_df": 20,
+  "orphan": false,
+  "score": 6.9,
+  "key": "maintained responding"
+ },
+ {
+  "phrase": "behavioral economics",
+  "df": 33,
+  "title_df": 16,
+  "orphan": false,
+  "score": 6.89,
+  "key": "behavioral economics"
+ },
+ {
+  "phrase": "acquired equivalence",
+  "df": 20,
+  "title_df": 13,
+  "orphan": false,
+  "score": 6.89,
+  "key": "acquired equivalence"
+ },
+ {
+  "phrase": "sexual behavior",
+  "df": 34,
+  "title_df": 16,
+  "orphan": false,
+  "score": 6.85,
+  "key": "behavior sexual"
+ },
+ {
+  "phrase": "response requirements",
+  "df": 53,
+  "title_df": 19,
+  "orphan": false,
+  "score": 6.82,
+  "key": "requirements response"
+ },
+ {
+  "phrase": "verbal behavior",
+  "df": 48,
+  "title_df": 18,
+  "orphan": false,
+  "score": 6.77,
+  "key": "behavior verbal"
+ },
+ {
+  "phrase": "unconditioned stimuli",
+  "df": 36,
+  "title_df": 16,
+  "orphan": false,
+  "score": 6.77,
+  "key": "stimuli unconditioned"
+ },
+ {
+  "phrase": "social behaviour",
+  "df": 56,
+  "title_df": 19,
+  "orphan": false,
+  "score": 6.76,
+  "key": "behaviour social"
+ },
+ {
+  "phrase": "time place learning",
+  "df": 11,
+  "title_df": 10,
+  "orphan": false,
+  "score": 6.76,
+  "key": "learning place time"
+ },
+ {
+  "phrase": "visual stimuli",
+  "df": 131,
+  "title_df": 25,
+  "orphan": false,
+  "score": 6.74,
+  "key": "stimuli visual"
+ },
+ {
+  "phrase": "anticipatory contrast",
+  "df": 18,
+  "title_df": 12,
+  "orphan": false,
+  "score": 6.74,
+  "key": "anticipatory contrast"
+ },
+ {
+  "phrase": "place learning",
+  "df": 23,
+  "title_df": 13,
+  "orphan": false,
+  "score": 6.68,
+  "key": "learning place"
+ },
+ {
+  "phrase": "conditional discriminations",
+  "df": 81,
+  "title_df": 21,
+  "orphan": false,
+  "score": 6.67,
+  "key": "conditional discriminations"
+ },
+ {
+  "phrase": "equivalence relations",
+  "df": 53,
+  "title_df": 18,
+  "orphan": false,
+  "score": 6.67,
+  "key": "equivalence relations"
+ },
+ {
+  "phrase": "social learning",
+  "df": 46,
+  "title_df": 17,
+  "orphan": false,
+  "score": 6.66,
+  "key": "learning social"
+ },
+ {
+  "phrase": "learning in rats",
+  "df": 19,
+  "title_df": 12,
+  "orphan": false,
+  "score": 6.66,
+  "key": "learning rats"
+ },
+ {
+  "phrase": "human behavior",
+  "df": 42,
+  "title_df": 16,
+  "orphan": false,
+  "score": 6.59,
+  "key": "behavior human"
+ },
+ {
+  "phrase": "delayed matching-to-sample performance",
+  "df": 16,
+  "title_df": 11,
+  "orphan": false,
+  "score": 6.58,
+  "key": "delayed matching-to-sample performance"
+ },
+ {
+  "phrase": "reinforcer devaluation",
+  "df": 16,
+  "title_df": 11,
+  "orphan": false,
+  "score": 6.58,
+  "key": "devaluation reinforcer"
+ },
+ {
+  "phrase": "equivalence class",
+  "df": 36,
+  "title_df": 15,
+  "orphan": false,
+  "score": 6.57,
+  "key": "class equivalence"
+ },
+ {
+  "phrase": "reinforcer duration",
+  "df": 26,
+  "title_df": 13,
+  "orphan": false,
+  "score": 6.52,
+  "key": "duration reinforcer"
+ },
+ {
+  "phrase": "feeding behaviour",
+  "df": 26,
+  "title_df": 13,
+  "orphan": false,
+  "score": 6.52,
+  "key": "behaviour feeding"
+ },
+ {
+  "phrase": "peak procedure",
+  "df": 55,
+  "title_df": 17,
+  "orphan": false,
+  "score": 6.48,
+  "key": "peak procedure"
+ },
+ {
+  "phrase": "temporally spaced responding",
+  "df": 10,
+  "title_df": 9,
+  "orphan": false,
+  "score": 6.45,
+  "key": "responding spaced temporally"
+ },
+ {
+  "phrase": "behavioural responses",
+  "df": 68,
+  "title_df": 18,
+  "orphan": false,
+  "score": 6.45,
+  "key": "behavioural responses"
+ },
+ {
+  "phrase": "behavior in pigeons",
+  "df": 19,
+  "title_df": 11,
+  "orphan": false,
+  "score": 6.35,
+  "key": "behavior pigeons"
+ },
+ {
+  "phrase": "progressive-ratio schedules",
+  "df": 19,
+  "title_df": 11,
+  "orphan": false,
+  "score": 6.35,
+  "key": "progressive-ratio schedules"
+ },
+ {
+  "phrase": "human causal learning",
+  "df": 19,
+  "title_df": 11,
+  "orphan": false,
+  "score": 6.35,
+  "key": "causal human learning"
+ },
+ {
+  "phrase": "working memory",
+  "df": 56,
+  "title_df": 16,
+  "orphan": false,
+  "score": 6.33,
+  "key": "memory working"
+ },
+ {
+  "phrase": "human operant",
+  "df": 20,
+  "title_df": 11,
+  "orphan": false,
+  "score": 6.29,
+  "key": "human operant"
+ },
+ {
+  "phrase": "agonistic behaviour",
+  "df": 32,
+  "title_df": 13,
+  "orphan": false,
+  "score": 6.28,
+  "key": "agonistic behaviour"
+ },
+ {
+  "phrase": "reaction time",
+  "df": 40,
+  "title_df": 14,
+  "orphan": false,
+  "score": 6.27,
+  "key": "reaction time"
+ },
+ {
+  "phrase": "recognition memory",
+  "df": 21,
+  "title_df": 11,
+  "orphan": false,
+  "score": 6.23,
+  "key": "memory recognition"
+ },
+ {
+  "phrase": "intertrial interval",
+  "df": 104,
+  "title_df": 17,
+  "orphan": false,
+  "score": 6.16,
+  "key": "intertrial interval"
+ },
+ {
+  "phrase": "positive and negative",
+  "df": 75,
+  "title_df": 16,
+  "orphan": false,
+  "score": 6.16,
+  "key": "negative positive"
+ },
+ {
+  "phrase": "component duration",
+  "df": 23,
+  "title_df": 11,
+  "orphan": false,
+  "score": 6.13,
+  "key": "component duration"
+ },
+ {
+  "phrase": "conditioned responding",
+  "df": 83,
+  "title_df": 16,
+  "orphan": false,
+  "score": 6.12,
+  "key": "conditioned responding"
+ },
+ {
+  "phrase": "behavior in male",
+  "df": 13,
+  "title_df": 9,
+  "orphan": false,
+  "score": 6.12,
+  "key": "behavior male"
+ },
+ {
+  "phrase": "equivalence class formation",
+  "df": 18,
+  "title_df": 10,
+  "orphan": false,
+  "score": 6.1,
+  "key": "class equivalence formation"
+ },
+ {
+  "phrase": "preference and resistance",
+  "df": 9,
+  "title_df": 8,
+  "orphan": false,
+  "score": 6.1,
+  "key": "preference resistance"
+ },
+ {
+  "phrase": "learning behaviour",
+  "df": 9,
+  "title_df": 8,
+  "orphan": false,
+  "score": 6.1,
+  "key": "behaviour learning"
+ },
+ {
+  "phrase": "pattern learning",
+  "df": 9,
+  "title_df": 8,
+  "orphan": false,
+  "score": 6.1,
+  "key": "learning pattern"
+ },
+ {
+  "phrase": "aggressive behaviour",
+  "df": 51,
+  "title_df": 14,
+  "orphan": false,
+  "score": 6.09,
+  "key": "aggressive behaviour"
+ },
+ {
+  "phrase": "response suppression",
+  "df": 27,
+  "title_df": 2,
+  "orphan": true,
+  "score": 6.05,
+  "key": "response suppression"
+ },
+ {
+  "phrase": "behavioral responses",
+  "df": 56,
+  "title_df": 14,
+  "orphan": false,
+  "score": 6.04,
+  "key": "behavioral responses"
+ },
+ {
+  "phrase": "conditioned taste aversion",
+  "df": 26,
+  "title_df": 11,
+  "orphan": false,
+  "score": 6.01,
+  "key": "aversion conditioned taste"
+ },
+ {
+  "phrase": "schedules of food",
+  "df": 88,
+  "title_df": 15,
+  "orphan": false,
+  "score": 6.0,
+  "key": "food schedules"
+ },
+ {
+  "phrase": "concurrent-chains schedules",
+  "df": 35,
+  "title_df": 12,
+  "orphan": false,
+  "score": 5.99,
+  "key": "concurrent-chains schedules"
+ },
+ {
+  "phrase": "progressive ratio",
+  "df": 27,
+  "title_df": 11,
+  "orphan": false,
+  "score": 5.98,
+  "key": "progressive ratio"
+ },
+ {
+  "phrase": "serial learning",
+  "df": 15,
+  "title_df": 9,
+  "orphan": false,
+  "score": 5.96,
+  "key": "learning serial"
+ },
+ {
+  "phrase": "learning task",
+  "df": 67,
+  "title_df": 14,
+  "orphan": false,
+  "score": 5.96,
+  "key": "learning task"
+ },
+ {
+  "phrase": "social behavior",
+  "df": 50,
+  "title_df": 13,
+  "orphan": false,
+  "score": 5.95,
+  "key": "behavior social"
+ },
+ {
+  "phrase": "discounting of delayed",
+  "df": 28,
+  "title_df": 11,
+  "orphan": false,
+  "score": 5.95,
+  "key": "delayed discounting"
+ },
+ {
+  "phrase": "aggressive behavior",
+  "df": 39,
+  "title_df": 12,
+  "orphan": false,
+  "score": 5.92,
+  "key": "aggressive behavior"
+ },
+ {
+  "phrase": "retention interval",
+  "df": 79,
+  "title_df": 14,
+  "orphan": false,
+  "score": 5.92,
+  "key": "interval retention"
+ },
+ {
+  "phrase": "ratio and interval",
+  "df": 16,
+  "title_df": 9,
+  "orphan": false,
+  "score": 5.89,
+  "key": "interval ratio"
+ },
+ {
+  "phrase": "reinforcer rate",
+  "df": 56,
+  "title_df": 13,
+  "orphan": false,
+  "score": 5.89,
+  "key": "rate reinforcer"
+ },
+ {
+  "phrase": "conditioned flavor",
+  "df": 16,
+  "title_df": 9,
+  "orphan": false,
+  "score": 5.89,
+  "key": "conditioned flavor"
+ },
+ {
+  "phrase": "conditioned behavior",
+  "df": 9,
+  "title_df": 3,
+  "orphan": true,
+  "score": 5.86,
+  "key": "behavior conditioned"
+ },
+ {
+  "phrase": "long-term memory",
+  "df": 23,
+  "title_df": 10,
+  "orphan": false,
+  "score": 5.86,
+  "key": "long-term memory"
+ },
+ {
+  "phrase": "delayed rewards",
+  "df": 43,
+  "title_df": 12,
+  "orphan": false,
+  "score": 5.86,
+  "key": "delayed rewards"
+ },
+ {
+  "phrase": "brain stimulation",
+  "df": 32,
+  "title_df": 11,
+  "orphan": false,
+  "score": 5.85,
+  "key": "brain stimulation"
+ },
+ {
+  "phrase": "instrumental behavior",
+  "df": 24,
+  "title_df": 10,
+  "orphan": false,
+  "score": 5.83,
+  "key": "behavior instrumental"
+ },
+ {
+  "phrase": "instrumental responding",
+  "df": 24,
+  "title_df": 10,
+  "orphan": false,
+  "score": 5.83,
+  "key": "instrumental responding"
+ },
+ {
+  "phrase": "conditioned stimuli",
+  "df": 71,
+  "title_df": 13,
+  "orphan": false,
+  "score": 5.82,
+  "key": "conditioned stimuli"
+ },
+ {
+  "phrase": "variable-time schedule",
+  "df": 38,
+  "title_df": 0,
+  "orphan": true,
+  "score": 5.82,
+  "key": "schedule variable-time"
+ },
+ {
+  "phrase": "behavior maintained",
+  "df": 34,
+  "title_df": 11,
+  "orphan": false,
+  "score": 5.81,
+  "key": "behavior maintained"
+ },
+ {
+  "phrase": "exploratory behaviour",
+  "df": 34,
+  "title_df": 11,
+  "orphan": false,
+  "score": 5.81,
+  "key": "behaviour exploratory"
+ },
+ {
+  "phrase": "concurrent-chains schedule",
+  "df": 21,
+  "title_df": 2,
+  "orphan": true,
+  "score": 5.8,
+  "key": "concurrent-chains schedule"
+ },
+ {
+  "phrase": "behavior dynamics",
+  "df": 12,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.8,
+  "key": "behavior dynamics"
+ },
+ {
+  "phrase": "flavor preference",
+  "df": 18,
+  "title_df": 9,
+  "orphan": false,
+  "score": 5.78,
+  "key": "flavor preference"
+ },
+ {
+  "phrase": "patterns of responding",
+  "df": 58,
+  "title_df": 12,
+  "orphan": false,
+  "score": 5.74,
+  "key": "patterns responding"
+ },
+ {
+  "phrase": "response force",
+  "df": 13,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.72,
+  "key": "force response"
+ },
+ {
+  "phrase": "observational learning",
+  "df": 13,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.72,
+  "key": "learning observational"
+ },
+ {
+  "phrase": "differential sample",
+  "df": 8,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.72,
+  "key": "differential sample"
+ },
+ {
+  "phrase": "pigeon short-term",
+  "df": 8,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.72,
+  "key": "pigeon short-term"
+ },
+ {
+  "phrase": "taste aversion learning",
+  "df": 13,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.72,
+  "key": "aversion learning taste"
+ },
+ {
+  "phrase": "appetitive conditioned",
+  "df": 13,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.72,
+  "key": "appetitive conditioned"
+ },
+ {
+  "phrase": "response patterns",
+  "df": 92,
+  "title_df": 12,
+  "orphan": false,
+  "score": 5.7,
+  "key": "patterns response"
+ },
+ {
+  "phrase": "fear responses",
+  "df": 30,
+  "title_df": 10,
+  "orphan": false,
+  "score": 5.67,
+  "key": "fear responses"
+ },
+ {
+  "phrase": "responding in pigeons",
+  "df": 14,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.66,
+  "key": "pigeons responding"
+ },
+ {
+  "phrase": "memory in rats",
+  "df": 14,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.66,
+  "key": "memory rats"
+ },
+ {
+  "phrase": "responding in rats",
+  "df": 21,
+  "title_df": 9,
+  "orphan": false,
+  "score": 5.65,
+  "key": "rats responding"
+ },
+ {
+  "phrase": "within-session changes in responding",
+  "df": 21,
+  "title_df": 9,
+  "orphan": false,
+  "score": 5.65,
+  "key": "changes responding within-session"
+ },
+ {
+  "phrase": "responding as function",
+  "df": 9,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.62,
+  "key": "function responding"
+ },
+ {
+  "phrase": "orienting response",
+  "df": 9,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.62,
+  "key": "orienting response"
+ },
+ {
+  "phrase": "associative symmetry",
+  "df": 9,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.62,
+  "key": "associative symmetry"
+ },
+ {
+  "phrase": "negative contrast",
+  "df": 34,
+  "title_df": 10,
+  "orphan": false,
+  "score": 5.6,
+  "key": "contrast negative"
+ },
+ {
+  "phrase": "self-control paradigm",
+  "df": 15,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.6,
+  "key": "paradigm self-control"
+ },
+ {
+  "phrase": "reinforcer probability",
+  "df": 15,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.6,
+  "key": "probability reinforcer"
+ },
+ {
+  "phrase": "serial compound",
+  "df": 15,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.6,
+  "key": "compound serial"
+ },
+ {
+  "phrase": "relative reinforcer",
+  "df": 36,
+  "title_df": 10,
+  "orphan": false,
+  "score": 5.57,
+  "key": "reinforcer relative"
+ },
+ {
+  "phrase": "pavlovian appetitive",
+  "df": 16,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.55,
+  "key": "appetitive pavlovian"
+ },
+ {
+  "phrase": "category learning",
+  "df": 16,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.55,
+  "key": "category learning"
+ },
+ {
+  "phrase": "conditioned fear",
+  "df": 25,
+  "title_df": 9,
+  "orphan": false,
+  "score": 5.54,
+  "key": "conditioned fear"
+ },
+ {
+  "phrase": "long-term retention",
+  "df": 10,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.53,
+  "key": "long-term retention"
+ },
+ {
+  "phrase": "acquisition and performance",
+  "df": 10,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.53,
+  "key": "acquisition performance"
+ },
+ {
+  "phrase": "behaviour in male",
+  "df": 10,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.53,
+  "key": "behaviour male"
+ },
+ {
+  "phrase": "food preference",
+  "df": 17,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.5,
+  "key": "food preference"
+ },
+ {
+  "phrase": "sexual behaviour",
+  "df": 27,
+  "title_df": 9,
+  "orphan": false,
+  "score": 5.49,
+  "key": "behaviour sexual"
+ },
+ {
+  "phrase": "learning and memory",
+  "df": 51,
+  "title_df": 10,
+  "orphan": false,
+  "score": 5.47,
+  "key": "learning memory"
+ },
+ {
+  "phrase": "changes in responding",
+  "df": 31,
+  "title_df": 9,
+  "orphan": false,
+  "score": 5.43,
+  "key": "changes responding"
+ },
+ {
+  "phrase": "time spent",
+  "df": 217,
+  "title_df": 1,
+  "orphan": false,
+  "score": 5.43,
+  "key": "spent time"
+ },
+ {
+  "phrase": "startle response",
+  "df": 20,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.39,
+  "key": "response startle"
+ },
+ {
+  "phrase": "rate and magnitude",
+  "df": 12,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.38,
+  "key": "magnitude rate"
+ },
+ {
+  "phrase": "time estimation",
+  "df": 12,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.38,
+  "key": "estimation time"
+ },
+ {
+  "phrase": "interval duration",
+  "df": 21,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.36,
+  "key": "duration interval"
+ },
+ {
+  "phrase": "exploratory behavior",
+  "df": 22,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.34,
+  "key": "behavior exploratory"
+ },
+ {
+  "phrase": "behavioral history",
+  "df": 13,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.33,
+  "key": "behavioral history"
+ },
+ {
+  "phrase": "reinforcer type",
+  "df": 13,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.33,
+  "key": "reinforcer type"
+ },
+ {
+  "phrase": "fixed and variable",
+  "df": 24,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.3,
+  "key": "fixed variable"
+ },
+ {
+  "phrase": "consummatory behavior",
+  "df": 14,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.28,
+  "key": "behavior consummatory"
+ },
+ {
+  "phrase": "timing behavior",
+  "df": 25,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.28,
+  "key": "behavior timing"
+ },
+ {
+  "phrase": "closed economy",
+  "df": 25,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.28,
+  "key": "closed economy"
+ },
+ {
+  "phrase": "relational responding",
+  "df": 14,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.28,
+  "key": "relational responding"
+ },
+ {
+  "phrase": "configural learning",
+  "df": 14,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.28,
+  "key": "configural learning"
+ },
+ {
+  "phrase": "pavlovian conditioned",
+  "df": 26,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.26,
+  "key": "conditioned pavlovian"
+ },
+ {
+  "phrase": "behavioral research",
+  "df": 27,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.25,
+  "key": "behavioral research"
+ },
+ {
+  "phrase": "schedule of food",
+  "df": 116,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.25,
+  "key": "food schedule"
+ },
+ {
+  "phrase": "heart rate",
+  "df": 28,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.24,
+  "key": "heart rate"
+ },
+ {
+  "phrase": "time perception",
+  "df": 15,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.24,
+  "key": "perception time"
+ },
+ {
+  "phrase": "reaction times",
+  "df": 31,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.21,
+  "key": "reaction times"
+ },
+ {
+  "phrase": "learning performance",
+  "df": 31,
+  "title_df": 8,
+  "orphan": false,
+  "score": 5.21,
+  "key": "learning performance"
+ },
+ {
+  "phrase": "ratio and interval schedules",
+  "df": 8,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.2,
+  "key": "interval ratio schedules"
+ },
+ {
+  "phrase": "acquisition of preference",
+  "df": 8,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.2,
+  "key": "acquisition preference"
+ },
+ {
+  "phrase": "event duration",
+  "df": 8,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.2,
+  "key": "duration event"
+ },
+ {
+  "phrase": "response requirement",
+  "df": 82,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.16,
+  "key": "requirement response"
+ },
+ {
+  "phrase": "optimality theory",
+  "df": 10,
+  "title_df": 2,
+  "orphan": true,
+  "score": 5.16,
+  "key": "optimality theory"
+ },
+ {
+  "phrase": "learning based",
+  "df": 18,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.14,
+  "key": "based learning"
+ },
+ {
+  "phrase": "geometry learning",
+  "df": 9,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.13,
+  "key": "geometry learning"
+ },
+ {
+  "phrase": "brief stimuli",
+  "df": 19,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.11,
+  "key": "brief stimuli"
+ },
+ {
+  "phrase": "reinforcer amount",
+  "df": 19,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.11,
+  "key": "amount reinforcer"
+ },
+ {
+  "phrase": "similar stimuli",
+  "df": 19,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.11,
+  "key": "similar stimuli"
+ },
+ {
+  "phrase": "behavioral analysis",
+  "df": 20,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.09,
+  "key": "analysis behavioral"
+ },
+ {
+  "phrase": "schedules of food presentation",
+  "df": 21,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.07,
+  "key": "food presentation schedules"
+ },
+ {
+  "phrase": "behavior in humans",
+  "df": 10,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.07,
+  "key": "behavior humans"
+ },
+ {
+  "phrase": "memory in pigeons",
+  "df": 10,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.07,
+  "key": "memory pigeons"
+ },
+ {
+  "phrase": "organization of behavior",
+  "df": 10,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.07,
+  "key": "behavior organization"
+ },
+ {
+  "phrase": "reinforcer frequency",
+  "df": 21,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.07,
+  "key": "frequency reinforcer"
+ },
+ {
+  "phrase": "differential outcome",
+  "df": 10,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.07,
+  "key": "differential outcome"
+ },
+ {
+  "phrase": "flavor aversion",
+  "df": 10,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.07,
+  "key": "aversion flavor"
+ },
+ {
+  "phrase": "abstract-concept learning",
+  "df": 10,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.07,
+  "key": "abstract-concept learning"
+ },
+ {
+  "phrase": "memory task",
+  "df": 22,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.06,
+  "key": "memory task"
+ },
+ {
+  "phrase": "acquisition and maintenance",
+  "df": 23,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.04,
+  "key": "acquisition maintenance"
+ },
+ {
+  "phrase": "aba renewal",
+  "df": 23,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.04,
+  "key": "aba renewal"
+ },
+ {
+  "phrase": "comparison stimuli",
+  "df": 105,
+  "title_df": 4,
+  "orphan": false,
+  "score": 5.01,
+  "key": "comparison stimuli"
+ },
+ {
+  "phrase": "omission training",
+  "df": 11,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.01,
+  "key": "omission training"
+ },
+ {
+  "phrase": "acoustic startle response",
+  "df": 11,
+  "title_df": 6,
+  "orphan": false,
+  "score": 5.01,
+  "key": "acoustic response startle"
+ },
+ {
+  "phrase": "instrumental learning",
+  "df": 27,
+  "title_df": 7,
+  "orphan": false,
+  "score": 5.0,
+  "key": "instrumental learning"
+ },
+ {
+  "phrase": "contextual stimuli",
+  "df": 30,
+  "title_df": 7,
+  "orphan": false,
+  "score": 4.99,
+  "key": "contextual stimuli"
+ },
+ {
+  "phrase": "animal behaviour",
+  "df": 29,
+  "title_df": 7,
+  "orphan": false,
+  "score": 4.99,
+  "key": "animal behaviour"
+ },
+ {
+  "phrase": "time intervals",
+  "df": 35,
+  "title_df": 7,
+  "orphan": false,
+  "score": 4.98,
+  "key": "intervals time"
+ },
+ {
+  "phrase": "animal learning",
+  "df": 31,
+  "title_df": 7,
+  "orphan": false,
+  "score": 4.98,
+  "key": "animal learning"
+ },
+ {
+  "phrase": "delayed reinforcers",
+  "df": 32,
+  "title_df": 7,
+  "orphan": false,
+  "score": 4.98,
+  "key": "delayed reinforcers"
+ },
+ {
+  "phrase": "behavioral economic",
+  "df": 32,
+  "title_df": 7,
+  "orphan": false,
+  "score": 4.98,
+  "key": "behavioral economic"
+ },
+ {
+  "phrase": "positive conditioned",
+  "df": 12,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.97,
+  "key": "conditioned positive"
+ },
+ {
+  "phrase": "response elimination",
+  "df": 12,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.97,
+  "key": "elimination response"
+ },
+ {
+  "phrase": "evolutionary theory",
+  "df": 12,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.97,
+  "key": "evolutionary theory"
+ },
+ {
+  "phrase": "discriminated operant",
+  "df": 12,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.97,
+  "key": "discriminated operant"
+ },
+ {
+  "phrase": "social discounting",
+  "df": 12,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.97,
+  "key": "discounting social"
+ },
+ {
+  "phrase": "vocal behavior",
+  "df": 13,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.93,
+  "key": "behavior vocal"
+ },
+ {
+  "phrase": "theory of behavior",
+  "df": 13,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.93,
+  "key": "behavior theory"
+ },
+ {
+  "phrase": "reinforcer efficacy",
+  "df": 13,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.93,
+  "key": "efficacy reinforcer"
+ },
+ {
+  "phrase": "animal behavior processes",
+  "df": 13,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.93,
+  "key": "animal behavior processes"
+ },
+ {
+  "phrase": "rates of responding",
+  "df": 116,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.92,
+  "key": "rates responding"
+ },
+ {
+  "phrase": "electrical stimulation",
+  "df": 14,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.9,
+  "key": "electrical stimulation"
+ },
+ {
+  "phrase": "behavior processes",
+  "df": 14,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.9,
+  "key": "behavior processes"
+ },
+ {
+  "phrase": "relational learning",
+  "df": 14,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.9,
+  "key": "learning relational"
+ },
+ {
+  "phrase": "conditioned and unconditioned",
+  "df": 15,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.87,
+  "key": "conditioned unconditioned"
+ },
+ {
+  "phrase": "human learning",
+  "df": 15,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.87,
+  "key": "human learning"
+ },
+ {
+  "phrase": "behavior systems",
+  "df": 15,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.87,
+  "key": "behavior systems"
+ },
+ {
+  "phrase": "concept formation",
+  "df": 16,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.85,
+  "key": "concept formation"
+ },
+ {
+  "phrase": "operant response",
+  "df": 48,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.84,
+  "key": "operant response"
+ },
+ {
+  "phrase": "behavioral variability",
+  "df": 18,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.82,
+  "key": "behavioral variability"
+ },
+ {
+  "phrase": "reward magnitude",
+  "df": 18,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.82,
+  "key": "magnitude reward"
+ },
+ {
+  "phrase": "number of responses",
+  "df": 102,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.81,
+  "key": "number responses"
+ },
+ {
+  "phrase": "conditioned reinforcers",
+  "df": 41,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.8,
+  "key": "conditioned reinforcers"
+ },
+ {
+  "phrase": "discriminative properties",
+  "df": 19,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.8,
+  "key": "discriminative properties"
+ },
+ {
+  "phrase": "maternal behaviour",
+  "df": 19,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.8,
+  "key": "behaviour maternal"
+ },
+ {
+  "phrase": "conditioned place",
+  "df": 19,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.8,
+  "key": "conditioned place"
+ },
+ {
+  "phrase": "alternative behavior",
+  "df": 36,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.78,
+  "key": "alternative behavior"
+ },
+ {
+  "phrase": "time of day",
+  "df": 21,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.78,
+  "key": "day time"
+ },
+ {
+  "phrase": "female preference",
+  "df": 24,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.77,
+  "key": "female preference"
+ },
+ {
+  "phrase": "comparator hypothesis",
+  "df": 23,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.77,
+  "key": "comparator hypothesis"
+ },
+ {
+  "phrase": "response latency",
+  "df": 30,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.76,
+  "key": "latency response"
+ },
+ {
+  "phrase": "behavioral patterns",
+  "df": 26,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.76,
+  "key": "behavioral patterns"
+ },
+ {
+  "phrase": "memory processes",
+  "df": 26,
+  "title_df": 6,
+  "orphan": false,
+  "score": 4.76,
+  "key": "memory processes"
+ },
+ {
+  "phrase": "conditioned response",
+  "df": 69,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.73,
+  "key": "conditioned response"
+ },
+ {
+  "phrase": "extended training",
+  "df": 49,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.69,
+  "key": "extended training"
+ },
+ {
+  "phrase": "stimuli associated",
+  "df": 50,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.69,
+  "key": "associated stimuli"
+ },
+ {
+  "phrase": "reinforcer rates",
+  "df": 50,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.69,
+  "key": "rates reinforcer"
+ },
+ {
+  "phrase": "compound conditioned",
+  "df": 8,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.68,
+  "key": "compound conditioned"
+ },
+ {
+  "phrase": "maintenance of behavior",
+  "df": 8,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.68,
+  "key": "behavior maintenance"
+ },
+ {
+  "phrase": "behaviour of rats",
+  "df": 8,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.68,
+  "key": "behaviour rats"
+ },
+ {
+  "phrase": "within-session patterns of responding",
+  "df": 8,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.68,
+  "key": "patterns responding within-session"
+ },
+ {
+  "phrase": "rat behavior",
+  "df": 8,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.68,
+  "key": "behavior rat"
+ },
+ {
+  "phrase": "episodic-like memory",
+  "df": 8,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.68,
+  "key": "episodic-like memory"
+ },
+ {
+  "phrase": "sequence learning",
+  "df": 8,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.68,
+  "key": "learning sequence"
+ },
+ {
+  "phrase": "categorization learning",
+  "df": 8,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.68,
+  "key": "categorization learning"
+ },
+ {
+  "phrase": "novel stimuli",
+  "df": 63,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.67,
+  "key": "novel stimuli"
+ },
+ {
+  "phrase": "ratio performance",
+  "df": 9,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.64,
+  "key": "performance ratio"
+ },
+ {
+  "phrase": "mediating behavior",
+  "df": 9,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.64,
+  "key": "behavior mediating"
+ },
+ {
+  "phrase": "response contingencies",
+  "df": 9,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.64,
+  "key": "contingencies response"
+ },
+ {
+  "phrase": "stimuli correlated",
+  "df": 43,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.64,
+  "key": "correlated stimuli"
+ },
+ {
+  "phrase": "defensive behavior",
+  "df": 9,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.64,
+  "key": "behavior defensive"
+ },
+ {
+  "phrase": "acquisition with delayed",
+  "df": 9,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.64,
+  "key": "acquisition delayed"
+ },
+ {
+  "phrase": "within-session response",
+  "df": 9,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.64,
+  "key": "response within-session"
+ },
+ {
+  "phrase": "theory of behavior dynamics",
+  "df": 9,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.64,
+  "key": "behavior dynamics theory"
+ },
+ {
+  "phrase": "persistence and relapse",
+  "df": 9,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.64,
+  "key": "persistence relapse"
+ },
+ {
+  "phrase": "social reinstatement",
+  "df": 9,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.64,
+  "key": "reinstatement social"
+ },
+ {
+  "phrase": "behavioral momentum theory",
+  "df": 42,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.63,
+  "key": "behavioral momentum theory"
+ },
+ {
+  "phrase": "momentum theory",
+  "df": 42,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.63,
+  "key": "momentum theory"
+ },
+ {
+  "phrase": "development of behavioral",
+  "df": 10,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.61,
+  "key": "behavioral development"
+ },
+ {
+  "phrase": "compound samples",
+  "df": 10,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.61,
+  "key": "compound samples"
+ },
+ {
+  "phrase": "complex visual stimuli",
+  "df": 10,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.61,
+  "key": "complex stimuli visual"
+ },
+ {
+  "phrase": "destructive behavior",
+  "df": 10,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.61,
+  "key": "behavior destructive"
+ },
+ {
+  "phrase": "maternal behavior",
+  "df": 10,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.61,
+  "key": "behavior maternal"
+ },
+ {
+  "phrase": "correct responses",
+  "df": 80,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.6,
+  "key": "correct responses"
+ },
+ {
+  "phrase": "pattern of responding",
+  "df": 69,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.6,
+  "key": "pattern responding"
+ },
+ {
+  "phrase": "response key",
+  "df": 78,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.58,
+  "key": "key response"
+ },
+ {
+  "phrase": "responses maintained",
+  "df": 11,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.58,
+  "key": "maintained responses"
+ },
+ {
+  "phrase": "acoustic stimuli",
+  "df": 11,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.58,
+  "key": "acoustic stimuli"
+ },
+ {
+  "phrase": "variable environment",
+  "df": 11,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.58,
+  "key": "environment variable"
+ },
+ {
+  "phrase": "agonistic behavior",
+  "df": 11,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.58,
+  "key": "agonistic behavior"
+ },
+ {
+  "phrase": "antipredator behavior",
+  "df": 11,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.58,
+  "key": "antipredator behavior"
+ },
+ {
+  "phrase": "response to social",
+  "df": 11,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.58,
+  "key": "response social"
+ },
+ {
+  "phrase": "learning processes",
+  "df": 35,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.57,
+  "key": "learning processes"
+ },
+ {
+  "phrase": "search behavior",
+  "df": 12,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.56,
+  "key": "behavior search"
+ },
+ {
+  "phrase": "number of trials",
+  "df": 51,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.55,
+  "key": "number trials"
+ },
+ {
+  "phrase": "behavioral processes",
+  "df": 31,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.54,
+  "key": "behavioral processes"
+ },
+ {
+  "phrase": "complex behavior",
+  "df": 13,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.54,
+  "key": "behavior complex"
+ },
+ {
+  "phrase": "response reinforcer",
+  "df": 13,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.54,
+  "key": "reinforcer response"
+ },
+ {
+  "phrase": "behavior of organisms",
+  "df": 13,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.54,
+  "key": "behavior organisms"
+ },
+ {
+  "phrase": "discounting of delayed rewards",
+  "df": 13,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.54,
+  "key": "delayed discounting rewards"
+ },
+ {
+  "phrase": "learning in humans",
+  "df": 13,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.54,
+  "key": "humans learning"
+ },
+ {
+  "phrase": "response distribution",
+  "df": 11,
+  "title_df": 1,
+  "orphan": true,
+  "score": 4.53,
+  "key": "distribution response"
+ },
+ {
+  "phrase": "time course",
+  "df": 29,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.53,
+  "key": "course time"
+ },
+ {
+  "phrase": "inter-trial interval",
+  "df": 14,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.52,
+  "key": "inter-trial interval"
+ },
+ {
+  "phrase": "sample stimuli",
+  "df": 61,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.52,
+  "key": "sample stimuli"
+ },
+ {
+  "phrase": "repeated exposure",
+  "df": 26,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.51,
+  "key": "exposure repeated"
+ },
+ {
+  "phrase": "response sequence",
+  "df": 26,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.51,
+  "key": "response sequence"
+ },
+ {
+  "phrase": "immediate and delayed",
+  "df": 16,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.51,
+  "key": "delayed immediate"
+ },
+ {
+  "phrase": "variable-time schedules",
+  "df": 25,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.51,
+  "key": "schedules variable-time"
+ },
+ {
+  "phrase": "behavioral theory",
+  "df": 16,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.51,
+  "key": "behavioral theory"
+ },
+ {
+  "phrase": "differential outcomes",
+  "df": 15,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.51,
+  "key": "differential outcomes"
+ },
+ {
+  "phrase": "prediction error",
+  "df": 16,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.51,
+  "key": "error prediction"
+ },
+ {
+  "phrase": "reinforcing properties",
+  "df": 24,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.5,
+  "key": "properties reinforcing"
+ },
+ {
+  "phrase": "detection theory",
+  "df": 17,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.5,
+  "key": "detection theory"
+ },
+ {
+  "phrase": "relationship between response",
+  "df": 18,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.5,
+  "key": "relationship response"
+ },
+ {
+  "phrase": "reinforcing value",
+  "df": 22,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.5,
+  "key": "reinforcing value"
+ },
+ {
+  "phrase": "herrnstein's equation",
+  "df": 22,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.5,
+  "key": "equation herrnstein's"
+ },
+ {
+  "phrase": "cs-us interval",
+  "df": 23,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.5,
+  "key": "cs-us interval"
+ },
+ {
+  "phrase": "sensitivity to reinforcer",
+  "df": 18,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.5,
+  "key": "reinforcer sensitivity"
+ },
+ {
+  "phrase": "operant learning",
+  "df": 17,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.5,
+  "key": "learning operant"
+ },
+ {
+  "phrase": "behavioural response",
+  "df": 22,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.5,
+  "key": "behavioural response"
+ },
+ {
+  "phrase": "amount of training",
+  "df": 21,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.49,
+  "key": "amount training"
+ },
+ {
+  "phrase": "progressive-ratio schedule",
+  "df": 21,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.49,
+  "key": "progressive-ratio schedule"
+ },
+ {
+  "phrase": "behavioral mechanisms",
+  "df": 19,
+  "title_df": 5,
+  "orphan": false,
+  "score": 4.49,
+  "key": "behavioral mechanisms"
+ },
+ {
+  "phrase": "relative rate",
+  "df": 42,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.45,
+  "key": "rate relative"
+ },
+ {
+  "phrase": "produced food",
+  "df": 81,
+  "title_df": 0,
+  "orphan": false,
+  "score": 4.39,
+  "key": "food produced"
+ },
+ {
+  "phrase": "expectancy theory",
+  "df": 37,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.39,
+  "key": "expectancy theory"
+ },
+ {
+  "phrase": "overall response",
+  "df": 80,
+  "title_df": 0,
+  "orphan": false,
+  "score": 4.38,
+  "key": "overall response"
+ },
+ {
+  "phrase": "conditioned responses",
+  "df": 35,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.37,
+  "key": "conditioned responses"
+ },
+ {
+  "phrase": "scalar expectancy theory",
+  "df": 35,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.37,
+  "key": "expectancy scalar theory"
+ },
+ {
+  "phrase": "positive contrast",
+  "df": 32,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.33,
+  "key": "contrast positive"
+ },
+ {
+  "phrase": "instrumental response",
+  "df": 31,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.32,
+  "key": "instrumental response"
+ },
+ {
+  "phrase": "training context",
+  "df": 31,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.32,
+  "key": "context training"
+ },
+ {
+  "phrase": "observing response",
+  "df": 29,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.3,
+  "key": "observing response"
+ },
+ {
+  "phrase": "probe trials",
+  "df": 64,
+  "title_df": 1,
+  "orphan": false,
+  "score": 4.29,
+  "key": "probe trials"
+ },
+ {
+  "phrase": "ratio requirement",
+  "df": 42,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.27,
+  "key": "ratio requirement"
+ },
+ {
+  "phrase": "schedule of food presentation",
+  "df": 52,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.26,
+  "key": "food presentation schedule"
+ },
+ {
+  "phrase": "exteroceptive stimuli",
+  "df": 25,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.25,
+  "key": "exteroceptive stimuli"
+ },
+ {
+  "phrase": "negative stimuli",
+  "df": 24,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.24,
+  "key": "negative stimuli"
+ },
+ {
+  "phrase": "theory of timing",
+  "df": 24,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.24,
+  "key": "theory timing"
+ },
+ {
+  "phrase": "relative response",
+  "df": 60,
+  "title_df": 1,
+  "orphan": false,
+  "score": 4.23,
+  "key": "relative response"
+ },
+ {
+  "phrase": "differential-reinforcement-of-low-rate schedule",
+  "df": 23,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.23,
+  "key": "differential-reinforcement-of-low-rate schedule"
+ },
+ {
+  "phrase": "conditional relations",
+  "df": 23,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.23,
+  "key": "conditional relations"
+ },
+ {
+  "phrase": "responses per",
+  "df": 59,
+  "title_df": 1,
+  "orphan": false,
+  "score": 4.22,
+  "key": "per responses"
+ },
+ {
+  "phrase": "response keys",
+  "df": 67,
+  "title_df": 0,
+  "orphan": false,
+  "score": 4.2,
+  "key": "keys response"
+ },
+ {
+  "phrase": "derived relations",
+  "df": 21,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.2,
+  "key": "derived relations"
+ },
+ {
+  "phrase": "place preference",
+  "df": 21,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.2,
+  "key": "place preference"
+ },
+ {
+  "phrase": "problem behavior",
+  "df": 19,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.18,
+  "key": "behavior problem"
+ },
+ {
+  "phrase": "alternative response",
+  "df": 36,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.18,
+  "key": "alternative response"
+ },
+ {
+  "phrase": "social stimuli",
+  "df": 19,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.18,
+  "key": "social stimuli"
+ },
+ {
+  "phrase": "learning theory",
+  "df": 19,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.18,
+  "key": "learning theory"
+ },
+ {
+  "phrase": "emergent relations",
+  "df": 19,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.18,
+  "key": "emergent relations"
+ },
+ {
+  "phrase": "learning ability",
+  "df": 19,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.18,
+  "key": "ability learning"
+ },
+ {
+  "phrase": "conditioned inhibitor",
+  "df": 19,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.18,
+  "key": "conditioned inhibitor"
+ },
+ {
+  "phrase": "operant performance",
+  "df": 18,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.17,
+  "key": "operant performance"
+ },
+ {
+  "phrase": "overall rate",
+  "df": 56,
+  "title_df": 1,
+  "orphan": false,
+  "score": 4.17,
+  "key": "overall rate"
+ },
+ {
+  "phrase": "behavior analysts",
+  "df": 17,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.17,
+  "key": "analysts behavior"
+ },
+ {
+  "phrase": "olfactory stimuli",
+  "df": 17,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.17,
+  "key": "olfactory stimuli"
+ },
+ {
+  "phrase": "stress response",
+  "df": 18,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.17,
+  "key": "response stress"
+ },
+ {
+  "phrase": "single response",
+  "df": 35,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.16,
+  "key": "response single"
+ },
+ {
+  "phrase": "excitation and inhibition",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "excitation inhibition"
+ },
+ {
+  "phrase": "time limits",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "limits time"
+ },
+ {
+  "phrase": "negative automaintenance",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "automaintenance negative"
+ },
+ {
+  "phrase": "stimuli by pigeons",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "pigeons stimuli"
+ },
+ {
+  "phrase": "response in rats",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "rats response"
+ },
+ {
+  "phrase": "autoshaped responding",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "autoshaped responding"
+ },
+ {
+  "phrase": "local preference",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "local preference"
+ },
+ {
+  "phrase": "target response",
+  "df": 46,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.16,
+  "key": "response target"
+ },
+ {
+  "phrase": "machine learning",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "learning machine"
+ },
+ {
+  "phrase": "unsignaled delayed",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "delayed unsignaled"
+ },
+ {
+  "phrase": "pacemaker rate",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "pacemaker rate"
+ },
+ {
+  "phrase": "behavioral economic demand",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "behavioral demand economic"
+ },
+ {
+  "phrase": "training history",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "history training"
+ },
+ {
+  "phrase": "associative memory",
+  "df": 8,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.16,
+  "key": "associative memory"
+ },
+ {
+  "phrase": "detection task",
+  "df": 14,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "detection task"
+ },
+ {
+  "phrase": "interval length",
+  "df": 15,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "interval length"
+ },
+ {
+  "phrase": "rate and duration",
+  "df": 9,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "duration rate"
+ },
+ {
+  "phrase": "discriminative functions",
+  "df": 15,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "discriminative functions"
+ },
+ {
+  "phrase": "schedules of response-independent",
+  "df": 9,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "response-independent schedules"
+ },
+ {
+  "phrase": "responding reinforced",
+  "df": 9,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "reinforced responding"
+ },
+ {
+  "phrase": "reinforcer delays",
+  "df": 15,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "delays reinforcer"
+ },
+ {
+  "phrase": "behavioral theory of timing",
+  "df": 14,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "behavioral theory timing"
+ },
+ {
+  "phrase": "local and global",
+  "df": 9,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "global local"
+ },
+ {
+  "phrase": "within-trial contrast",
+  "df": 9,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "contrast within-trial"
+ },
+ {
+  "phrase": "mating behavior",
+  "df": 14,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "behavior mating"
+ },
+ {
+  "phrase": "human behaviour",
+  "df": 9,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "behaviour human"
+ },
+ {
+  "phrase": "sex ratio",
+  "df": 15,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "ratio sex"
+ },
+ {
+  "phrase": "spatial behavior",
+  "df": 9,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "behavior spatial"
+ },
+ {
+  "phrase": "courtship behaviour",
+  "df": 14,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "behaviour courtship"
+ },
+ {
+  "phrase": "learning and cognition",
+  "df": 14,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "cognition learning"
+ },
+ {
+  "phrase": "preference learning",
+  "df": 9,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "learning preference"
+ },
+ {
+  "phrase": "successive negative",
+  "df": 9,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "negative successive"
+ },
+ {
+  "phrase": "successive negative contrast",
+  "df": 9,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "contrast negative successive"
+ },
+ {
+  "phrase": "abc renewal",
+  "df": 14,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "abc renewal"
+ },
+ {
+  "phrase": "negative patterning",
+  "df": 15,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.15,
+  "key": "negative patterning"
+ },
+ {
+  "phrase": "trial spacing",
+  "df": 10,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "spacing trial"
+ },
+ {
+  "phrase": "random ratio",
+  "df": 12,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "random ratio"
+ },
+ {
+  "phrase": "intracranial stimulation",
+  "df": 10,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "intracranial stimulation"
+ },
+ {
+  "phrase": "behavioral persistence",
+  "df": 10,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "behavioral persistence"
+ },
+ {
+  "phrase": "intermittent schedules",
+  "df": 13,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "intermittent schedules"
+ },
+ {
+  "phrase": "food acquisition",
+  "df": 11,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "acquisition food"
+ },
+ {
+  "phrase": "reinforced behavior",
+  "df": 13,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "behavior reinforced"
+ },
+ {
+  "phrase": "negative discriminative",
+  "df": 12,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "discriminative negative"
+ },
+ {
+  "phrase": "schedule-controlled behavior",
+  "df": 11,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "behavior schedule-controlled"
+ },
+ {
+  "phrase": "random-ratio schedules",
+  "df": 11,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "random-ratio schedules"
+ },
+ {
+  "phrase": "models of learning",
+  "df": 13,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "learning models"
+ },
+ {
+  "phrase": "behavioral units",
+  "df": 11,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "behavioral units"
+ },
+ {
+  "phrase": "initial-link duration",
+  "df": 11,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "duration initial-link"
+ },
+ {
+  "phrase": "approach behavior",
+  "df": 12,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "approach behavior"
+ },
+ {
+  "phrase": "learning in animals",
+  "df": 11,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "animals learning"
+ },
+ {
+  "phrase": "time budgets",
+  "df": 10,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "budgets time"
+ },
+ {
+  "phrase": "pavlovian contingencies",
+  "df": 12,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "contingencies pavlovian"
+ },
+ {
+  "phrase": "copulatory behavior",
+  "df": 10,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "behavior copulatory"
+ },
+ {
+  "phrase": "delayed and probabilistic",
+  "df": 11,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "delayed probabilistic"
+ },
+ {
+  "phrase": "brain and behavior",
+  "df": 12,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "behavior brain"
+ },
+ {
+  "phrase": "defensive behaviour",
+  "df": 10,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "behaviour defensive"
+ },
+ {
+  "phrase": "courtship behavior",
+  "df": 10,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "behavior courtship"
+ },
+ {
+  "phrase": "pavlovian learning",
+  "df": 11,
+  "title_df": 4,
+  "orphan": false,
+  "score": 4.14,
+  "key": "learning pavlovian"
+ },
+ {
+  "phrase": "sample and comparison",
+  "df": 33,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.13,
+  "key": "comparison sample"
+ },
+ {
+  "phrase": "following training",
+  "df": 44,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.13,
+  "key": "following training"
+ },
+ {
+  "phrase": "response pattern",
+  "df": 32,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.12,
+  "key": "pattern response"
+ },
+ {
+  "phrase": "min schedule",
+  "df": 60,
+  "title_df": 0,
+  "orphan": false,
+  "score": 4.09,
+  "key": "min schedule"
+ },
+ {
+  "phrase": "interreinforcement interval",
+  "df": 42,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.09,
+  "key": "interreinforcement interval"
+ },
+ {
+  "phrase": "operant chamber",
+  "df": 30,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.08,
+  "key": "chamber operant"
+ },
+ {
+  "phrase": "changes in response",
+  "df": 41,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.08,
+  "key": "changes response"
+ },
+ {
+  "phrase": "amount of time",
+  "df": 50,
+  "title_df": 1,
+  "orphan": false,
+  "score": 4.07,
+  "key": "amount time"
+ },
+ {
+  "phrase": "extensive training",
+  "df": 29,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.06,
+  "key": "extensive training"
+ },
+ {
+  "phrase": "ratio size",
+  "df": 28,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.05,
+  "key": "ratio size"
+ },
+ {
+  "phrase": "reinforcer value",
+  "df": 28,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.05,
+  "key": "reinforcer value"
+ },
+ {
+  "phrase": "training procedures",
+  "df": 28,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.05,
+  "key": "procedures training"
+ },
+ {
+  "phrase": "schedule components",
+  "df": 39,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.04,
+  "key": "components schedule"
+ },
+ {
+  "phrase": "reinforcer ratios",
+  "df": 39,
+  "title_df": 2,
+  "orphan": false,
+  "score": 4.04,
+  "key": "ratios reinforcer"
+ },
+ {
+  "phrase": "response and time",
+  "df": 27,
+  "title_df": 3,
+  "orphan": false,
+  "score": 4.03,
+  "key": "response time"
+ },
+ {
+  "phrase": "training sessions",
+  "df": 55,
+  "title_df": 0,
+  "orphan": false,
+  "score": 4.01,
+  "key": "sessions training"
+ },
+ {
+  "phrase": "post-reinforcement pauses",
+  "df": 23,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.95,
+  "key": "pauses post-reinforcement"
+ },
+ {
+  "phrase": "behavior patterns",
+  "df": 23,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.95,
+  "key": "behavior patterns"
+ },
+ {
+  "phrase": "anxiety-like behavior",
+  "df": 23,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.95,
+  "key": "anxiety-like behavior"
+ },
+ {
+  "phrase": "variable-ratio schedule",
+  "df": 43,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.94,
+  "key": "schedule variable-ratio"
+ },
+ {
+  "phrase": "reinforcer magnitudes",
+  "df": 22,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.93,
+  "key": "magnitudes reinforcer"
+ },
+ {
+  "phrase": "passage of time",
+  "df": 32,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.9,
+  "key": "passage time"
+ },
+ {
+  "phrase": "schedule parameters",
+  "df": 20,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.89,
+  "key": "parameters schedule"
+ },
+ {
+  "phrase": "responses were reinforced",
+  "df": 49,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.89,
+  "key": "reinforced responses"
+ },
+ {
+  "phrase": "reinforced response",
+  "df": 31,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.88,
+  "key": "reinforced response"
+ },
+ {
+  "phrase": "positive behavioral",
+  "df": 19,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.87,
+  "key": "behavioral positive"
+ },
+ {
+  "phrase": "function of reinforcer",
+  "df": 19,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.87,
+  "key": "function reinforcer"
+ },
+ {
+  "phrase": "learning abilities",
+  "df": 19,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.87,
+  "key": "abilities learning"
+ },
+ {
+  "phrase": "discriminative performance",
+  "df": 18,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.85,
+  "key": "discriminative performance"
+ },
+ {
+  "phrase": "rate of food",
+  "df": 30,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.85,
+  "key": "food rate"
+ },
+ {
+  "phrase": "reinforcer delivery",
+  "df": 30,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.85,
+  "key": "delivery reinforcer"
+ },
+ {
+  "phrase": "sample duration",
+  "df": 18,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.85,
+  "key": "duration sample"
+ },
+ {
+  "phrase": "memory performance",
+  "df": 18,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.85,
+  "key": "memory performance"
+ },
+ {
+  "phrase": "learning paradigm",
+  "df": 18,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.85,
+  "key": "learning paradigm"
+ },
+ {
+  "phrase": "behavioral traits",
+  "df": 18,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.85,
+  "key": "behavioral traits"
+ },
+ {
+  "phrase": "conditioned reinforcing",
+  "df": 17,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.83,
+  "key": "conditioned reinforcing"
+ },
+ {
+  "phrase": "responding occurred",
+  "df": 46,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.83,
+  "key": "occurred responding"
+ },
+ {
+  "phrase": "support the hypothesis",
+  "df": 46,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.83,
+  "key": "hypothesis support"
+ },
+ {
+  "phrase": "stimuli paired",
+  "df": 17,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.83,
+  "key": "paired stimuli"
+ },
+ {
+  "phrase": "conditioned place preference",
+  "df": 17,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.83,
+  "key": "conditioned place preference"
+ },
+ {
+  "phrase": "magazine approach",
+  "df": 29,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.83,
+  "key": "approach magazine"
+ },
+ {
+  "phrase": "key produced",
+  "df": 45,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.81,
+  "key": "key produced"
+ },
+ {
+  "phrase": "conditional stimuli",
+  "df": 16,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.81,
+  "key": "conditional stimuli"
+ },
+ {
+  "phrase": "overall reinforcer",
+  "df": 16,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.81,
+  "key": "overall reinforcer"
+ },
+ {
+  "phrase": "target behavior",
+  "df": 28,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.81,
+  "key": "behavior target"
+ },
+ {
+  "phrase": "acquisition of conditioned",
+  "df": 16,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.81,
+  "key": "acquisition conditioned"
+ },
+ {
+  "phrase": "response classes",
+  "df": 15,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.79,
+  "key": "classes response"
+ },
+ {
+  "phrase": "differential response",
+  "df": 15,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.79,
+  "key": "differential response"
+ },
+ {
+  "phrase": "forgetting functions",
+  "df": 15,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.79,
+  "key": "forgetting functions"
+ },
+ {
+  "phrase": "sample and comparison stimuli",
+  "df": 27,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.78,
+  "key": "comparison sample stimuli"
+ },
+ {
+  "phrase": "learning tasks",
+  "df": 27,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.78,
+  "key": "learning tasks"
+ },
+ {
+  "phrase": "emotional response",
+  "df": 14,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.77,
+  "key": "emotional response"
+ },
+ {
+  "phrase": "shock-shock interval",
+  "df": 14,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.77,
+  "key": "interval shock-shock"
+ },
+ {
+  "phrase": "response patterning",
+  "df": 14,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.77,
+  "key": "patterning response"
+ },
+ {
+  "phrase": "delayed food",
+  "df": 14,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.77,
+  "key": "delayed food"
+ },
+ {
+  "phrase": "session duration",
+  "df": 14,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.77,
+  "key": "duration session"
+ },
+ {
+  "phrase": "handling time",
+  "df": 14,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.77,
+  "key": "handling time"
+ },
+ {
+  "phrase": "reproductive behaviour",
+  "df": 14,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.77,
+  "key": "behaviour reproductive"
+ },
+ {
+  "phrase": "nonreinforced trials",
+  "df": 26,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.76,
+  "key": "nonreinforced trials"
+ },
+ {
+  "phrase": "differential responding",
+  "df": 35,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.76,
+  "key": "differential responding"
+ },
+ {
+  "phrase": "training stimuli",
+  "df": 35,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.76,
+  "key": "stimuli training"
+ },
+ {
+  "phrase": "behavior but",
+  "df": 26,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.76,
+  "key": "behavior but"
+ },
+ {
+  "phrase": "initial training",
+  "df": 35,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.76,
+  "key": "initial training"
+ },
+ {
+  "phrase": "conditioned emotional",
+  "df": 13,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.75,
+  "key": "conditioned emotional"
+ },
+ {
+  "phrase": "terminal-link duration",
+  "df": 13,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.75,
+  "key": "duration terminal-link"
+ },
+ {
+  "phrase": "response to novel",
+  "df": 13,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.75,
+  "key": "novel response"
+ },
+ {
+  "phrase": "response functions",
+  "df": 12,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.73,
+  "key": "functions response"
+ },
+ {
+  "phrase": "response location",
+  "df": 12,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.73,
+  "key": "location response"
+ },
+ {
+  "phrase": "discriminative responding",
+  "df": 12,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.73,
+  "key": "discriminative responding"
+ },
+ {
+  "phrase": "behavior allocation",
+  "df": 12,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.73,
+  "key": "allocation behavior"
+ },
+ {
+  "phrase": "alternative reinforcer",
+  "df": 12,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.73,
+  "key": "alternative reinforcer"
+ },
+ {
+  "phrase": "variable delays",
+  "df": 12,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.73,
+  "key": "delays variable"
+ },
+ {
+  "phrase": "baseline relations",
+  "df": 12,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.73,
+  "key": "baseline relations"
+ },
+ {
+  "phrase": "discounting task",
+  "df": 25,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.73,
+  "key": "discounting task"
+ },
+ {
+  "phrase": "social motivation",
+  "df": 12,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.73,
+  "key": "motivation social"
+ },
+ {
+  "phrase": "inhibitory learning",
+  "df": 12,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.73,
+  "key": "inhibitory learning"
+ },
+ {
+  "phrase": "conditioned emotional response",
+  "df": 11,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.71,
+  "key": "conditioned emotional response"
+ },
+ {
+  "phrase": "symmetry and transitivity",
+  "df": 11,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.71,
+  "key": "symmetry transitivity"
+ },
+ {
+  "phrase": "overall reinforcer rate",
+  "df": 11,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.71,
+  "key": "overall rate reinforcer"
+ },
+ {
+  "phrase": "extended comparator hypothesis",
+  "df": 11,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.71,
+  "key": "comparator extended hypothesis"
+ },
+ {
+  "phrase": "acquisition context",
+  "df": 11,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.71,
+  "key": "acquisition context"
+ },
+ {
+  "phrase": "animal learning and cognition",
+  "df": 11,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.71,
+  "key": "animal cognition learning"
+ },
+ {
+  "phrase": "ratio strain",
+  "df": 10,
+  "title_df": 0,
+  "orphan": true,
+  "score": 3.68,
+  "key": "ratio strain"
+ },
+ {
+  "phrase": "response number",
+  "df": 10,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.68,
+  "key": "number response"
+ },
+ {
+  "phrase": "prolonged training",
+  "df": 10,
+  "title_df": 0,
+  "orphan": true,
+  "score": 3.68,
+  "key": "prolonged training"
+ },
+ {
+  "phrase": "response lever",
+  "df": 23,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.68,
+  "key": "lever response"
+ },
+ {
+  "phrase": "pecking response",
+  "df": 10,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.68,
+  "key": "pecking response"
+ },
+ {
+  "phrase": "relative reinforcing",
+  "df": 10,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.68,
+  "key": "reinforcing relative"
+ },
+ {
+  "phrase": "response latencies",
+  "df": 23,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.68,
+  "key": "latencies response"
+ },
+ {
+  "phrase": "relative response rates",
+  "df": 32,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.68,
+  "key": "rates relative response"
+ },
+ {
+  "phrase": "unconditioned response",
+  "df": 10,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.68,
+  "key": "response unconditioned"
+ },
+ {
+  "phrase": "response-reinforcer contingencies",
+  "df": 10,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.68,
+  "key": "contingencies response-reinforcer"
+ },
+ {
+  "phrase": "response function",
+  "df": 10,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.68,
+  "key": "function response"
+ },
+ {
+  "phrase": "impulsive behavior",
+  "df": 10,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.68,
+  "key": "behavior impulsive"
+ },
+ {
+  "phrase": "discounting of hypothetical",
+  "df": 10,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.68,
+  "key": "discounting hypothetical"
+ },
+ {
+  "phrase": "incentive contrast",
+  "df": 10,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.68,
+  "key": "contrast incentive"
+ },
+ {
+  "phrase": "operant research",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "operant research"
+ },
+ {
+  "phrase": "distribution of interresponse",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "distribution interresponse"
+ },
+ {
+  "phrase": "conditioned and unconditioned stimuli",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "conditioned stimuli unconditioned"
+ },
+ {
+  "phrase": "correct response",
+  "df": 31,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.66,
+  "key": "correct response"
+ },
+ {
+  "phrase": "training trials",
+  "df": 39,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.66,
+  "key": "training trials"
+ },
+ {
+  "phrase": "elements of compound",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "compound elements"
+ },
+ {
+  "phrase": "signal value",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "signal value"
+ },
+ {
+  "phrase": "listener behavior",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "behavior listener"
+ },
+ {
+  "phrase": "feature positive",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "feature positive"
+ },
+ {
+  "phrase": "resurgence of target",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "resurgence target"
+ },
+ {
+  "phrase": "animal memory",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "animal memory"
+ },
+ {
+  "phrase": "responses of male",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "male responses"
+ },
+ {
+  "phrase": "partner preference",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "partner preference"
+ },
+ {
+  "phrase": "male preference",
+  "df": 9,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.66,
+  "key": "male preference"
+ },
+ {
+  "phrase": "overall response rates",
+  "df": 38,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.64,
+  "key": "overall rates response"
+ },
+ {
+  "phrase": "postreinforcement pauses",
+  "df": 38,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.64,
+  "key": "pauses postreinforcement"
+ },
+ {
+  "phrase": "response units",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "response units"
+ },
+ {
+  "phrase": "analysis of response",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "analysis response"
+ },
+ {
+  "phrase": "interreinforcement time",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "interreinforcement time"
+ },
+ {
+  "phrase": "classically conditioned",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "classically conditioned"
+ },
+ {
+  "phrase": "behavioral interactions",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "behavioral interactions"
+ },
+ {
+  "phrase": "training phase",
+  "df": 38,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.64,
+  "key": "phase training"
+ },
+ {
+  "phrase": "approach response",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "approach response"
+ },
+ {
+  "phrase": "formation of equivalence",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "equivalence formation"
+ },
+ {
+  "phrase": "risk sensitivity",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "risk sensitivity"
+ },
+ {
+  "phrase": "local enhancement",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "enhancement local"
+ },
+ {
+  "phrase": "parental behaviour",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "behaviour parental"
+ },
+ {
+  "phrase": "spatial behaviour",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "behaviour spatial"
+ },
+ {
+  "phrase": "negative occasion",
+  "df": 8,
+  "title_df": 3,
+  "orphan": false,
+  "score": 3.64,
+  "key": "negative occasion"
+ },
+ {
+  "phrase": "baseline training",
+  "df": 30,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.63,
+  "key": "baseline training"
+ },
+ {
+  "phrase": "reinforcer ratio",
+  "df": 30,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.63,
+  "key": "ratio reinforcer"
+ },
+ {
+  "phrase": "local response",
+  "df": 21,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.62,
+  "key": "local response"
+ },
+ {
+  "phrase": "suppression of responding",
+  "df": 21,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.62,
+  "key": "responding suppression"
+ },
+ {
+  "phrase": "schedule component",
+  "df": 21,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.62,
+  "key": "component schedule"
+ },
+ {
+  "phrase": "period of time",
+  "df": 37,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.61,
+  "key": "period time"
+ },
+ {
+  "phrase": "training procedure",
+  "df": 29,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.6,
+  "key": "procedure training"
+ },
+ {
+  "phrase": "elapsed time",
+  "df": 20,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.59,
+  "key": "elapsed time"
+ },
+ {
+  "phrase": "schedule value",
+  "df": 20,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.59,
+  "key": "schedule value"
+ },
+ {
+  "phrase": "responses produced",
+  "df": 36,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.58,
+  "key": "produced responses"
+ },
+ {
+  "phrase": "positive correlation",
+  "df": 28,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.57,
+  "key": "correlation positive"
+ },
+ {
+  "phrase": "responding but",
+  "df": 35,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.56,
+  "key": "but responding"
+ },
+ {
+  "phrase": "reinforced interresponse",
+  "df": 19,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.56,
+  "key": "interresponse reinforced"
+ },
+ {
+  "phrase": "relative time",
+  "df": 19,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.56,
+  "key": "relative time"
+ },
+ {
+  "phrase": "behavioral changes",
+  "df": 19,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.56,
+  "key": "behavioral changes"
+ },
+ {
+  "phrase": "theories of learning",
+  "df": 19,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.56,
+  "key": "learning theories"
+ },
+ {
+  "phrase": "reference memory",
+  "df": 19,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.56,
+  "key": "memory reference"
+ },
+ {
+  "phrase": "peak time",
+  "df": 19,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.56,
+  "key": "peak time"
+ },
+ {
+  "phrase": "response ratios",
+  "df": 27,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.54,
+  "key": "ratios response"
+ },
+ {
+  "phrase": "power function",
+  "df": 34,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.53,
+  "key": "function power"
+ },
+ {
+  "phrase": "external stimuli",
+  "df": 18,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.53,
+  "key": "external stimuli"
+ },
+ {
+  "phrase": "frequency and duration",
+  "df": 18,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.53,
+  "key": "duration frequency"
+ },
+ {
+  "phrase": "behavioral response",
+  "df": 18,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.53,
+  "key": "behavioral response"
+ },
+ {
+  "phrase": "key-peck response",
+  "df": 18,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.53,
+  "key": "key-peck response"
+ },
+ {
+  "phrase": "relation between response",
+  "df": 18,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.53,
+  "key": "relation response"
+ },
+ {
+  "phrase": "significant preference",
+  "df": 34,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.53,
+  "key": "preference significant"
+ },
+ {
+  "phrase": "learning but",
+  "df": 18,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.53,
+  "key": "but learning"
+ },
+ {
+  "phrase": "responses emitted",
+  "df": 26,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.51,
+  "key": "emitted responses"
+ },
+ {
+  "phrase": "fixed number",
+  "df": 26,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.51,
+  "key": "fixed number"
+ },
+ {
+  "phrase": "discriminative function",
+  "df": 17,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.5,
+  "key": "discriminative function"
+ },
+ {
+  "phrase": "sec schedule",
+  "df": 33,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.5,
+  "key": "schedule sec"
+ },
+ {
+  "phrase": "terminal-link stimuli",
+  "df": 17,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.5,
+  "key": "stimuli terminal-link"
+ },
+ {
+  "phrase": "reinforced trials",
+  "df": 17,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.5,
+  "key": "reinforced trials"
+ },
+ {
+  "phrase": "response alternatives",
+  "df": 17,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.5,
+  "key": "alternatives response"
+ },
+ {
+  "phrase": "retention intervals",
+  "df": 33,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.5,
+  "key": "intervals retention"
+ },
+ {
+  "phrase": "delayed matching-to-sample task",
+  "df": 17,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.5,
+  "key": "delayed matching-to-sample task"
+ },
+ {
+  "phrase": "electric shocks",
+  "df": 25,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.48,
+  "key": "electric shocks"
+ },
+ {
+  "phrase": "rate but",
+  "df": 25,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.48,
+  "key": "but rate"
+ },
+ {
+  "phrase": "target responding",
+  "df": 25,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.48,
+  "key": "responding target"
+ },
+ {
+  "phrase": "behavioral tests",
+  "df": 25,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.48,
+  "key": "behavioral tests"
+ },
+ {
+  "phrase": "reinforcing efficacy",
+  "df": 16,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.47,
+  "key": "efficacy reinforcing"
+ },
+ {
+  "phrase": "pigeons' responses",
+  "df": 32,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.47,
+  "key": "pigeons' responses"
+ },
+ {
+  "phrase": "stimuli but",
+  "df": 32,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.47,
+  "key": "but stimuli"
+ },
+ {
+  "phrase": "responding following",
+  "df": 16,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.47,
+  "key": "following responding"
+ },
+ {
+  "phrase": "conditioned aversion",
+  "df": 16,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.47,
+  "key": "aversion conditioned"
+ },
+ {
+  "phrase": "environmental stimuli",
+  "df": 24,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.44,
+  "key": "environmental stimuli"
+ },
+ {
+  "phrase": "overall rates",
+  "df": 31,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.43,
+  "key": "overall rates"
+ },
+ {
+  "phrase": "schedules but",
+  "df": 31,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.43,
+  "key": "but schedules"
+ },
+ {
+  "phrase": "fixed intervals",
+  "df": 31,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.43,
+  "key": "fixed intervals"
+ },
+ {
+  "phrase": "changes in reinforcer",
+  "df": 15,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.43,
+  "key": "changes reinforcer"
+ },
+ {
+  "phrase": "incorrect responses",
+  "df": 23,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.41,
+  "key": "incorrect responses"
+ },
+ {
+  "phrase": "per trial",
+  "df": 23,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.41,
+  "key": "per trial"
+ },
+ {
+  "phrase": "every trial",
+  "df": 30,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.4,
+  "key": "every trial"
+ },
+ {
+  "phrase": "terminal-link schedules",
+  "df": 30,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.4,
+  "key": "schedules terminal-link"
+ },
+ {
+  "phrase": "time distributions",
+  "df": 14,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.39,
+  "key": "distributions time"
+ },
+ {
+  "phrase": "suppression procedure",
+  "df": 14,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.39,
+  "key": "procedure suppression"
+ },
+ {
+  "phrase": "behaviour in response",
+  "df": 14,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.39,
+  "key": "behaviour response"
+ },
+ {
+  "phrase": "rate changes",
+  "df": 22,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.37,
+  "key": "changes rate"
+ },
+ {
+  "phrase": "ratio requirements",
+  "df": 22,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.37,
+  "key": "ratio requirements"
+ },
+ {
+  "phrase": "function of time",
+  "df": 22,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.37,
+  "key": "function time"
+ },
+ {
+  "phrase": "warning signal",
+  "df": 22,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.37,
+  "key": "signal warning"
+ },
+ {
+  "phrase": "rates and patterns",
+  "df": 22,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.37,
+  "key": "patterns rates"
+ },
+ {
+  "phrase": "interfood interval",
+  "df": 22,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.37,
+  "key": "interfood interval"
+ },
+ {
+  "phrase": "inter-response time",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "inter-response time"
+ },
+ {
+  "phrase": "neutral stimuli",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "neutral stimuli"
+ },
+ {
+  "phrase": "response independent",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "independent response"
+ },
+ {
+  "phrase": "rate of food delivery",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "delivery food rate"
+ },
+ {
+  "phrase": "scalar timing theory",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "scalar theory timing"
+ },
+ {
+  "phrase": "adaptive behavior",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "adaptive behavior"
+ },
+ {
+  "phrase": "behavioral repertoire",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "behavioral repertoire"
+ },
+ {
+  "phrase": "delayed outcomes",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "delayed outcomes"
+ },
+ {
+  "phrase": "learning mechanisms",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "learning mechanisms"
+ },
+ {
+  "phrase": "feature negative",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "feature negative"
+ },
+ {
+  "phrase": "song learning",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "learning song"
+ },
+ {
+  "phrase": "canine behavior",
+  "df": 13,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.35,
+  "key": "behavior canine"
+ },
+ {
+  "phrase": "relative rates",
+  "df": 28,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.33,
+  "key": "rates relative"
+ },
+ {
+  "phrase": "responses occurred",
+  "df": 28,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.33,
+  "key": "occurred responses"
+ },
+ {
+  "phrase": "absolute response",
+  "df": 21,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.33,
+  "key": "absolute response"
+ },
+ {
+  "phrase": "waiting time",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "time waiting"
+ },
+ {
+  "phrase": "differential consequences",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "consequences differential"
+ },
+ {
+  "phrase": "baseline rate",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "baseline rate"
+ },
+ {
+  "phrase": "differential-reinforcement-of-low-rate schedules",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "differential-reinforcement-of-low-rate schedules"
+ },
+ {
+  "phrase": "exclusive preference",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "exclusive preference"
+ },
+ {
+  "phrase": "preference tests",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "preference tests"
+ },
+ {
+  "phrase": "systems theory",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "systems theory"
+ },
+ {
+  "phrase": "rates of discounting",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "discounting rates"
+ },
+ {
+  "phrase": "episodic memory",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "episodic memory"
+ },
+ {
+  "phrase": "memory tasks",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "memory tasks"
+ },
+ {
+  "phrase": "mating behaviour",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "behaviour mating"
+ },
+ {
+  "phrase": "behavioral plasticity",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "behavioral plasticity"
+ },
+ {
+  "phrase": "stress responses",
+  "df": 12,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.31,
+  "key": "responses stress"
+ },
+ {
+  "phrase": "strong preference",
+  "df": 27,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.3,
+  "key": "preference strong"
+ },
+ {
+  "phrase": "training but",
+  "df": 20,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.3,
+  "key": "but training"
+ },
+ {
+  "phrase": "aperiodic schedules",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "aperiodic schedules"
+ },
+ {
+  "phrase": "motor responses",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "motor responses"
+ },
+ {
+  "phrase": "visual and auditory stimuli",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "auditory stimuli visual"
+ },
+ {
+  "phrase": "positive association",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "association positive"
+ },
+ {
+  "phrase": "operant key",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "key operant"
+ },
+ {
+  "phrase": "stimulus-reinforcer relations",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "relations stimulus-reinforcer"
+ },
+ {
+  "phrase": "simple schedules",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "schedules simple"
+ },
+ {
+  "phrase": "discounting functions",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "discounting functions"
+ },
+ {
+  "phrase": "response recovery",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "recovery response"
+ },
+ {
+  "phrase": "physiological responses",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "physiological responses"
+ },
+ {
+  "phrase": "novelty preference",
+  "df": 11,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.27,
+  "key": "novelty preference"
+ },
+ {
+  "phrase": "responding produced",
+  "df": 26,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.26,
+  "key": "produced responding"
+ },
+ {
+  "phrase": "independently of responding",
+  "df": 26,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.26,
+  "key": "independently responding"
+ },
+ {
+  "phrase": "response output",
+  "df": 19,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.25,
+  "key": "output response"
+ },
+ {
+  "phrase": "relative duration",
+  "df": 19,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.25,
+  "key": "duration relative"
+ },
+ {
+  "phrase": "negative correlation",
+  "df": 19,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.25,
+  "key": "correlation negative"
+ },
+ {
+  "phrase": "response-shock interval",
+  "df": 19,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.25,
+  "key": "interval response-shock"
+ },
+ {
+  "phrase": "trials per",
+  "df": 19,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.25,
+  "key": "per trials"
+ },
+ {
+  "phrase": "distribution of responses",
+  "df": 19,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.25,
+  "key": "distribution responses"
+ },
+ {
+  "phrase": "theories of associative learning",
+  "df": 19,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.25,
+  "key": "associative learning theories"
+ },
+ {
+  "phrase": "peak responding",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "peak responding"
+ },
+ {
+  "phrase": "electrical brain stimulation",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "brain electrical stimulation"
+ },
+ {
+  "phrase": "discriminative behavior",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "behavior discriminative"
+ },
+ {
+  "phrase": "collateral behavior",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "behavior collateral"
+ },
+ {
+  "phrase": "time interval",
+  "df": 25,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.22,
+  "key": "interval time"
+ },
+ {
+  "phrase": "mean response",
+  "df": 25,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.22,
+  "key": "mean response"
+ },
+ {
+  "phrase": "time scales",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "scales time"
+ },
+ {
+  "phrase": "rate of learning",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "learning rate"
+ },
+ {
+  "phrase": "trials but",
+  "df": 25,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.22,
+  "key": "but trials"
+ },
+ {
+  "phrase": "longer duration",
+  "df": 25,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.22,
+  "key": "duration longer"
+ },
+ {
+  "phrase": "feeding behavior",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "behavior feeding"
+ },
+ {
+  "phrase": "response strategy",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "response strategy"
+ },
+ {
+  "phrase": "duration of food",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "duration food"
+ },
+ {
+  "phrase": "component reinforcer",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "component reinforcer"
+ },
+ {
+  "phrase": "response to novelty",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "novelty response"
+ },
+ {
+  "phrase": "peak interval",
+  "df": 10,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.22,
+  "key": "interval peak"
+ },
+ {
+  "phrase": "response frequency",
+  "df": 18,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.21,
+  "key": "frequency response"
+ },
+ {
+  "phrase": "rates but",
+  "df": 18,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.21,
+  "key": "but rates"
+ },
+ {
+  "phrase": "length of time",
+  "df": 18,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.21,
+  "key": "length time"
+ },
+ {
+  "phrase": "relevant stimuli",
+  "df": 18,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.21,
+  "key": "relevant stimuli"
+ },
+ {
+  "phrase": "local rates",
+  "df": 18,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.21,
+  "key": "local rates"
+ },
+ {
+  "phrase": "schedules arranged",
+  "df": 18,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.21,
+  "key": "arranged schedules"
+ },
+ {
+  "phrase": "delay-reduction theory",
+  "df": 18,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.21,
+  "key": "delay-reduction theory"
+ },
+ {
+  "phrase": "lick suppression",
+  "df": 18,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.21,
+  "key": "lick suppression"
+ },
+ {
+  "phrase": "schedule but",
+  "df": 24,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.18,
+  "key": "but schedule"
+ },
+ {
+  "phrase": "larger reinforcer",
+  "df": 24,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.18,
+  "key": "larger reinforcer"
+ },
+ {
+  "phrase": "learning process",
+  "df": 24,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.18,
+  "key": "learning process"
+ },
+ {
+  "phrase": "response following",
+  "df": 17,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.17,
+  "key": "following response"
+ },
+ {
+  "phrase": "varying the duration",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "duration varying"
+ },
+ {
+  "phrase": "food-maintained responding",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "food-maintained responding"
+ },
+ {
+  "phrase": "appetitive behavior",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "appetitive behavior"
+ },
+ {
+  "phrase": "general theory",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "general theory"
+ },
+ {
+  "phrase": "functional classes",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "classes functional"
+ },
+ {
+  "phrase": "initial response",
+  "df": 17,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.17,
+  "key": "initial response"
+ },
+ {
+  "phrase": "subsequent learning",
+  "df": 17,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.17,
+  "key": "learning subsequent"
+ },
+ {
+  "phrase": "operant chambers",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "chambers operant"
+ },
+ {
+  "phrase": "ratio values",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "ratio values"
+ },
+ {
+  "phrase": "rate of key",
+  "df": 17,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.17,
+  "key": "key rate"
+ },
+ {
+  "phrase": "absolute rate",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "absolute rate"
+ },
+ {
+  "phrase": "behavioral parameters",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "behavioral parameters"
+ },
+ {
+  "phrase": "absence of differential",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "absence differential"
+ },
+ {
+  "phrase": "motivated behavior",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "behavior motivated"
+ },
+ {
+  "phrase": "relative reinforcer frequency",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "frequency reinforcer relative"
+ },
+ {
+  "phrase": "relative reinforcer rate",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "rate reinforcer relative"
+ },
+ {
+  "phrase": "gambling behavior",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "behavior gambling"
+ },
+ {
+  "phrase": "parental behavior",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "behavior parental"
+ },
+ {
+  "phrase": "mate preference",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "mate preference"
+ },
+ {
+  "phrase": "instrumental responses",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "instrumental responses"
+ },
+ {
+  "phrase": "memory tests",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "memory tests"
+ },
+ {
+  "phrase": "behavioral and neural",
+  "df": 9,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.17,
+  "key": "behavioral neural"
+ },
+ {
+  "phrase": "produced either",
+  "df": 23,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.14,
+  "key": "either produced"
+ },
+ {
+  "phrase": "number of responses per",
+  "df": 23,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.14,
+  "key": "number per responses"
+ },
+ {
+  "phrase": "suppressed responding",
+  "df": 23,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.14,
+  "key": "responding suppressed"
+ },
+ {
+  "phrase": "proportion of time",
+  "df": 23,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.14,
+  "key": "proportion time"
+ },
+ {
+  "phrase": "total time",
+  "df": 23,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.14,
+  "key": "time total"
+ },
+ {
+  "phrase": "spent responding",
+  "df": 23,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.14,
+  "key": "responding spent"
+ },
+ {
+  "phrase": "baseline response",
+  "df": 23,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.14,
+  "key": "baseline response"
+ },
+ {
+  "phrase": "response speed",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "response speed"
+ },
+ {
+  "phrase": "response curves",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "curves response"
+ },
+ {
+  "phrase": "cumulative response",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "cumulative response"
+ },
+ {
+  "phrase": "negative induction",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "induction negative"
+ },
+ {
+  "phrase": "vocal responses",
+  "df": 16,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.12,
+  "key": "responses vocal"
+ },
+ {
+  "phrase": "response timing",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "response timing"
+ },
+ {
+  "phrase": "operant task",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "operant task"
+ },
+ {
+  "phrase": "ratio value",
+  "df": 16,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.12,
+  "key": "ratio value"
+ },
+ {
+  "phrase": "punished responding",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "punished responding"
+ },
+ {
+  "phrase": "primary reinforcer",
+  "df": 16,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.12,
+  "key": "primary reinforcer"
+ },
+ {
+  "phrase": "properties of behavior",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "behavior properties"
+ },
+ {
+  "phrase": "attack behavior",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "attack behavior"
+ },
+ {
+  "phrase": "component response",
+  "df": 16,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.12,
+  "key": "component response"
+ },
+ {
+  "phrase": "fading procedure",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "fading procedure"
+ },
+ {
+  "phrase": "session time",
+  "df": 16,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.12,
+  "key": "session time"
+ },
+ {
+  "phrase": "schedule values",
+  "df": 16,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.12,
+  "key": "schedule values"
+ },
+ {
+  "phrase": "hypothesis of conditioned",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "conditioned hypothesis"
+ },
+ {
+  "phrase": "recent behavior",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "behavior recent"
+ },
+ {
+  "phrase": "learning set",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "learning set"
+ },
+ {
+  "phrase": "reinforcer quality",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "quality reinforcer"
+ },
+ {
+  "phrase": "competing responses",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "competing responses"
+ },
+ {
+  "phrase": "cognition and behavior",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "behavior cognition"
+ },
+ {
+  "phrase": "conceptual behavior",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "behavior conceptual"
+ },
+ {
+  "phrase": "rate of conditioned",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "conditioned rate"
+ },
+ {
+  "phrase": "response persistence",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "persistence response"
+ },
+ {
+  "phrase": "hyperbolic discounting",
+  "df": 16,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.12,
+  "key": "discounting hyperbolic"
+ },
+ {
+  "phrase": "discounting model",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "discounting model"
+ },
+ {
+  "phrase": "behavioral characteristics",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "behavioral characteristics"
+ },
+ {
+  "phrase": "memory formation",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "formation memory"
+ },
+ {
+  "phrase": "memory systems",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "memory systems"
+ },
+ {
+  "phrase": "cooperative behaviour",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "behaviour cooperative"
+ },
+ {
+  "phrase": "learning research",
+  "df": 8,
+  "title_df": 2,
+  "orphan": false,
+  "score": 3.12,
+  "key": "learning research"
+ },
+ {
+  "phrase": "lever produced",
+  "df": 22,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.09,
+  "key": "lever produced"
+ },
+ {
+  "phrase": "time spent responding",
+  "df": 22,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.09,
+  "key": "responding spent time"
+ },
+ {
+  "phrase": "initial-link response",
+  "df": 22,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.09,
+  "key": "initial-link response"
+ },
+ {
+  "phrase": "equal duration",
+  "df": 15,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.07,
+  "key": "duration equal"
+ },
+ {
+  "phrase": "time periods",
+  "df": 15,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.07,
+  "key": "periods time"
+ },
+ {
+  "phrase": "rate of key pecking",
+  "df": 15,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.07,
+  "key": "key pecking rate"
+ },
+ {
+  "phrase": "discounting tasks",
+  "df": 15,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.07,
+  "key": "discounting tasks"
+ },
+ {
+  "phrase": "behaviour patterns",
+  "df": 15,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.07,
+  "key": "behaviour patterns"
+ },
+ {
+  "phrase": "min schedules",
+  "df": 21,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.04,
+  "key": "min schedules"
+ },
+ {
+  "phrase": "pause duration",
+  "df": 21,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.04,
+  "key": "duration pause"
+ },
+ {
+  "phrase": "per reinforcer",
+  "df": 21,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.04,
+  "key": "per reinforcer"
+ },
+ {
+  "phrase": "increases in responding",
+  "df": 14,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.02,
+  "key": "increases responding"
+ },
+ {
+  "phrase": "baseline responding",
+  "df": 14,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.02,
+  "key": "baseline responding"
+ },
+ {
+  "phrase": "decreases in responding",
+  "df": 14,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.02,
+  "key": "decreases responding"
+ },
+ {
+  "phrase": "running response",
+  "df": 14,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.02,
+  "key": "response running"
+ },
+ {
+  "phrase": "schedules of food delivery",
+  "df": 14,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.02,
+  "key": "delivery food schedules"
+ },
+ {
+  "phrase": "number of stimuli",
+  "df": 14,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.02,
+  "key": "number stimuli"
+ },
+ {
+  "phrase": "peak trials",
+  "df": 14,
+  "title_df": 1,
+  "orphan": false,
+  "score": 3.02,
+  "key": "peak trials"
+ },
+ {
+  "phrase": "produced brief",
+  "df": 20,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.0,
+  "key": "brief produced"
+ },
+ {
+  "phrase": "rate increases",
+  "df": 20,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.0,
+  "key": "increases rate"
+ },
+ {
+  "phrase": "individual responses",
+  "df": 20,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.0,
+  "key": "individual responses"
+ },
+ {
+  "phrase": "correct responding",
+  "df": 20,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.0,
+  "key": "correct responding"
+ },
+ {
+  "phrase": "received training",
+  "df": 20,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.0,
+  "key": "received training"
+ },
+ {
+  "phrase": "highly variable",
+  "df": 20,
+  "title_df": 0,
+  "orphan": false,
+  "score": 3.0,
+  "key": "highly variable"
+ },
+ {
+  "phrase": "response durations",
+  "df": 13,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.96,
+  "key": "durations response"
+ },
+ {
+  "phrase": "prior training",
+  "df": 13,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.96,
+  "key": "prior training"
+ },
+ {
+  "phrase": "maintain responding",
+  "df": 13,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.96,
+  "key": "maintain responding"
+ },
+ {
+  "phrase": "presence of stimuli",
+  "df": 13,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.96,
+  "key": "presence stimuli"
+ },
+ {
+  "phrase": "schedule requirements",
+  "df": 13,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.96,
+  "key": "requirements schedule"
+ },
+ {
+  "phrase": "individual trials",
+  "df": 13,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.96,
+  "key": "individual trials"
+ },
+ {
+  "phrase": "larger more delayed",
+  "df": 13,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.96,
+  "key": "delayed larger"
+ },
+ {
+  "phrase": "original training",
+  "df": 19,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.94,
+  "key": "original training"
+ },
+ {
+  "phrase": "response occurred",
+  "df": 19,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.94,
+  "key": "occurred response"
+ },
+ {
+  "phrase": "response was required",
+  "df": 19,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.94,
+  "key": "required response"
+ },
+ {
+  "phrase": "pairs of stimuli",
+  "df": 19,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.94,
+  "key": "pairs stimuli"
+ },
+ {
+  "phrase": "time but",
+  "df": 19,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.94,
+  "key": "but time"
+ },
+ {
+  "phrase": "behavioral measures",
+  "df": 19,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.94,
+  "key": "behavioral measures"
+ },
+ {
+  "phrase": "arbitrary stimuli",
+  "df": 19,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.94,
+  "key": "arbitrary stimuli"
+ },
+ {
+  "phrase": "significantly more time",
+  "df": 19,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.94,
+  "key": "significantly time"
+ },
+ {
+  "phrase": "frequency of responding",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "frequency responding"
+ },
+ {
+  "phrase": "component stimuli",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "component stimuli"
+ },
+ {
+  "phrase": "responses of pigeons",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "pigeons responses"
+ },
+ {
+  "phrase": "responses and reinforcers",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "reinforcers responses"
+ },
+ {
+  "phrase": "rate as function",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "function rate"
+ },
+ {
+  "phrase": "rats' behavior",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "behavior rats'"
+ },
+ {
+  "phrase": "rats' responding",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "rats' responding"
+ },
+ {
+  "phrase": "reinforcer availability",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "availability reinforcer"
+ },
+ {
+  "phrase": "duration and number",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "duration number"
+ },
+ {
+  "phrase": "schedule of food delivery",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "delivery food schedule"
+ },
+ {
+  "phrase": "optimal behavior",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "behavior optimal"
+ },
+ {
+  "phrase": "vocal learning",
+  "df": 12,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.9,
+  "key": "learning vocal"
+ },
+ {
+  "phrase": "responses required",
+  "df": 18,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.89,
+  "key": "required responses"
+ },
+ {
+  "phrase": "response probability",
+  "df": 18,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.89,
+  "key": "probability response"
+ },
+ {
+  "phrase": "produced similar",
+  "df": 18,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.89,
+  "key": "produced similar"
+ },
+ {
+  "phrase": "rate of pecking",
+  "df": 18,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.89,
+  "key": "pecking rate"
+ },
+ {
+  "phrase": "response but",
+  "df": 18,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.89,
+  "key": "but response"
+ },
+ {
+  "phrase": "rates occurred",
+  "df": 18,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.89,
+  "key": "occurred rates"
+ },
+ {
+  "phrase": "food reinforcer",
+  "df": 18,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.89,
+  "key": "food reinforcer"
+ },
+ {
+  "phrase": "reinforcer was delivered",
+  "df": 18,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.89,
+  "key": "delivered reinforcer"
+ },
+ {
+  "phrase": "rates of lever",
+  "df": 18,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.89,
+  "key": "lever rates"
+ },
+ {
+  "phrase": "total responses",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "responses total"
+ },
+ {
+  "phrase": "reduced responding",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "reduced responding"
+ },
+ {
+  "phrase": "lever-press response",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "lever-press response"
+ },
+ {
+  "phrase": "operant level",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "level operant"
+ },
+ {
+  "phrase": "individual response",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "individual response"
+ },
+ {
+  "phrase": "accelerated responding",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "accelerated responding"
+ },
+ {
+  "phrase": "given trial",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "given trial"
+ },
+ {
+  "phrase": "random order",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "order random"
+ },
+ {
+  "phrase": "rates of pecking",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "pecking rates"
+ },
+ {
+  "phrase": "dependent variable",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "dependent variable"
+ },
+ {
+  "phrase": "component schedules",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "component schedules"
+ },
+ {
+  "phrase": "conditional probability",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "conditional probability"
+ },
+ {
+  "phrase": "schedule requirement",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "requirement schedule"
+ },
+ {
+  "phrase": "initial-link responding",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "initial-link responding"
+ },
+ {
+  "phrase": "numbers of responses",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "numbers responses"
+ },
+ {
+  "phrase": "interval but",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "but interval"
+ },
+ {
+  "phrase": "local rates of responding",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "local rates responding"
+ },
+ {
+  "phrase": "relating response",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "relating response"
+ },
+ {
+  "phrase": "food-reinforced responding",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "food-reinforced responding"
+ },
+ {
+  "phrase": "positive and negative stimuli",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "negative positive stimuli"
+ },
+ {
+  "phrase": "schedule contingencies",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "contingencies schedule"
+ },
+ {
+  "phrase": "rates of lever pressing",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "lever pressing rates"
+ },
+ {
+  "phrase": "delayed reinforcer",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "delayed reinforcer"
+ },
+ {
+  "phrase": "target stimuli",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "stimuli target"
+ },
+ {
+  "phrase": "operant contingencies",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "contingencies operant"
+ },
+ {
+  "phrase": "science of behavior",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "behavior science"
+ },
+ {
+  "phrase": "sensitivity of response",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "response sensitivity"
+ },
+ {
+  "phrase": "theory predicts",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "predicts theory"
+ },
+ {
+  "phrase": "feeding time",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "feeding time"
+ },
+ {
+  "phrase": "repeated choices",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "choices repeated"
+ },
+ {
+  "phrase": "discounting function",
+  "df": 17,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.83,
+  "key": "discounting function"
+ },
+ {
+  "phrase": "behavioral ecology",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "behavioral ecology"
+ },
+ {
+  "phrase": "degree of discounting",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "degree discounting"
+ },
+ {
+  "phrase": "information theory",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "information theory"
+ },
+ {
+  "phrase": "antipredator responses",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "antipredator responses"
+ },
+ {
+  "phrase": "models of associative learning",
+  "df": 11,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.83,
+  "key": "associative learning models"
+ },
+ {
+  "phrase": "early in training",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "early training"
+ },
+ {
+  "phrase": "occasionally produced",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "occasionally produced"
+ },
+ {
+  "phrase": "level of responding",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "level responding"
+ },
+ {
+  "phrase": "positive stimuli",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "positive stimuli"
+ },
+ {
+  "phrase": "independent variable",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "independent variable"
+ },
+ {
+  "phrase": "local response rates",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "local rates response"
+ },
+ {
+  "phrase": "response times",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "response times"
+ },
+ {
+  "phrase": "end of training",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "end training"
+ },
+ {
+  "phrase": "proportion of responses",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "proportion responses"
+ },
+ {
+  "phrase": "time allocated",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "allocated time"
+ },
+ {
+  "phrase": "baseline response rates",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "baseline rates response"
+ },
+ {
+  "phrase": "additional training",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "additional training"
+ },
+ {
+  "phrase": "alternative explanations",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "alternative explanations"
+ },
+ {
+  "phrase": "consecutive trials",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "consecutive trials"
+ },
+ {
+  "phrase": "positive relationship",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "positive relationship"
+ },
+ {
+  "phrase": "hypothesis predicts",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "hypothesis predicts"
+ },
+ {
+  "phrase": "block of trials",
+  "df": 16,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.77,
+  "key": "block trials"
+ },
+ {
+  "phrase": "trials per session",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "per session trials"
+ },
+ {
+  "phrase": "response competition",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "competition response"
+ },
+ {
+  "phrase": "aggressive responses",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "aggressive responses"
+ },
+ {
+  "phrase": "subsequent responding",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "responding subsequent"
+ },
+ {
+  "phrase": "relative preference",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "preference relative"
+ },
+ {
+  "phrase": "response decrement",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "decrement response"
+ },
+ {
+  "phrase": "equal rates",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "equal rates"
+ },
+ {
+  "phrase": "reinforcer durations",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "durations reinforcer"
+ },
+ {
+  "phrase": "positive transfer",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "positive transfer"
+ },
+ {
+  "phrase": "behavioral model",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "behavioral model"
+ },
+ {
+  "phrase": "stimuli signaling",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "signaling stimuli"
+ },
+ {
+  "phrase": "reinforcer probabilities",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "probabilities reinforcer"
+ },
+ {
+  "phrase": "behavioral neuroscience",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "behavioral neuroscience"
+ },
+ {
+  "phrase": "real time",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "real time"
+ },
+ {
+  "phrase": "fear response",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "fear response"
+ },
+ {
+  "phrase": "learning speed",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "learning speed"
+ },
+ {
+  "phrase": "learning paradigms",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "learning paradigms"
+ },
+ {
+  "phrase": "local cues",
+  "df": 10,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.76,
+  "key": "cues local"
+ },
+ {
+  "phrase": "running rates",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "rates running"
+ },
+ {
+  "phrase": "baseline rates",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "baseline rates"
+ },
+ {
+  "phrase": "training produced",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "produced training"
+ },
+ {
+  "phrase": "random sequence",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "random sequence"
+ },
+ {
+  "phrase": "variable intervals",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "intervals variable"
+ },
+ {
+  "phrase": "number of times",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "number times"
+ },
+ {
+  "phrase": "contrast occurred",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "contrast occurred"
+ },
+ {
+  "phrase": "produced grain",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "grain produced"
+ },
+ {
+  "phrase": "longer time",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "longer time"
+ },
+ {
+  "phrase": "similar rates",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "rates similar"
+ },
+ {
+  "phrase": "training session",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "session training"
+ },
+ {
+  "phrase": "amount of time spent",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "amount spent time"
+ },
+ {
+  "phrase": "smaller reinforcer",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "reinforcer smaller"
+ },
+ {
+  "phrase": "spent significantly more time",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "significantly spent time"
+ },
+ {
+  "phrase": "behavioral flexibility",
+  "df": 15,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.71,
+  "key": "behavioral flexibility"
+ },
+ {
+  "phrase": "monkeys responding",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "monkeys responding"
+ },
+ {
+  "phrase": "maintaining responding",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "maintaining responding"
+ },
+ {
+  "phrase": "increasing response",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "increasing response"
+ },
+ {
+  "phrase": "ratio contingencies",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "contingencies ratio"
+ },
+ {
+  "phrase": "discriminative cue",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "cue discriminative"
+ },
+ {
+  "phrase": "emotional responses",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "emotional responses"
+ },
+ {
+  "phrase": "rate of primary",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "primary rate"
+ },
+ {
+  "phrase": "consequences of responding",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "consequences responding"
+ },
+ {
+  "phrase": "duration of exposure",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "duration exposure"
+ },
+ {
+  "phrase": "schedule parameter",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "parameter schedule"
+ },
+ {
+  "phrase": "color stimuli",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "color stimuli"
+ },
+ {
+  "phrase": "open economy",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "economy open"
+ },
+ {
+  "phrase": "reinforcer amounts",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "amounts reinforcer"
+ },
+ {
+  "phrase": "behavioral models",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "behavioral models"
+ },
+ {
+  "phrase": "preference pulses",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "preference pulses"
+ },
+ {
+  "phrase": "individual learning",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "individual learning"
+ },
+ {
+  "phrase": "wheel-running rates",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "rates wheel-running"
+ },
+ {
+  "phrase": "responses to novel",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "novel responses"
+ },
+ {
+  "phrase": "subsequent acquisition",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "acquisition subsequent"
+ },
+ {
+  "phrase": "target conditioned",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "conditioned target"
+ },
+ {
+  "phrase": "learning strategies",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "learning strategies"
+ },
+ {
+  "phrase": "social preference",
+  "df": 9,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.69,
+  "key": "preference social"
+ },
+ {
+  "phrase": "rates generally",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "generally rates"
+ },
+ {
+  "phrase": "responding developed",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "developed responding"
+ },
+ {
+  "phrase": "presence of discriminative",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "discriminative presence"
+ },
+ {
+  "phrase": "complete suppression",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "complete suppression"
+ },
+ {
+  "phrase": "minute schedule",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "minute schedule"
+ },
+ {
+  "phrase": "interval was varied",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "interval varied"
+ },
+ {
+  "phrase": "every response",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "every response"
+ },
+ {
+  "phrase": "reduced response",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "reduced response"
+ },
+ {
+  "phrase": "individual stimuli",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "individual stimuli"
+ },
+ {
+  "phrase": "total response",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "response total"
+ },
+ {
+  "phrase": "fixed duration",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "duration fixed"
+ },
+ {
+  "phrase": "either response",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "either response"
+ },
+ {
+  "phrase": "pigeons' behavior",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "behavior pigeons'"
+ },
+ {
+  "phrase": "rates varied",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "rates varied"
+ },
+ {
+  "phrase": "initial-link schedule",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "initial-link schedule"
+ },
+ {
+  "phrase": "single reinforcer",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "reinforcer single"
+ },
+ {
+  "phrase": "rates maintained",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "maintained rates"
+ },
+ {
+  "phrase": "power functions",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "functions power"
+ },
+ {
+  "phrase": "times spent",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "spent times"
+ },
+ {
+  "phrase": "optimal alternative",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "alternative optimal"
+ },
+ {
+  "phrase": "compound with another",
+  "df": 14,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.64,
+  "key": "another compound"
+ },
+ {
+  "phrase": "time distribution",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "distribution time"
+ },
+ {
+  "phrase": "pigeons produced",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "pigeons produced"
+ },
+ {
+  "phrase": "free-operant responding",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "free-operant responding"
+ },
+ {
+  "phrase": "form of learning",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "form learning"
+ },
+ {
+  "phrase": "overt behavior",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "behavior overt"
+ },
+ {
+  "phrase": "motor response",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "motor response"
+ },
+ {
+  "phrase": "response topographies",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "response topographies"
+ },
+ {
+  "phrase": "classical and operant",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "classical operant"
+ },
+ {
+  "phrase": "previous training",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "previous training"
+ },
+ {
+  "phrase": "minimum duration",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "duration minimum"
+ },
+ {
+  "phrase": "acquisition curves",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "acquisition curves"
+ },
+ {
+  "phrase": "rate of observing",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "observing rate"
+ },
+ {
+  "phrase": "response levers",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "levers response"
+ },
+ {
+  "phrase": "response decrements",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "decrements response"
+ },
+ {
+  "phrase": "independent of responding",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "independent responding"
+ },
+ {
+  "phrase": "feedback stimuli",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "feedback stimuli"
+ },
+ {
+  "phrase": "positive reinforcers",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "positive reinforcers"
+ },
+ {
+  "phrase": "terminal response",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "response terminal"
+ },
+ {
+  "phrase": "training followed",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "followed training"
+ },
+ {
+  "phrase": "consummatory responses",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "consummatory responses"
+ },
+ {
+  "phrase": "matching-to-sample training",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "matching-to-sample training"
+ },
+ {
+  "phrase": "melioration theory",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "melioration theory"
+ },
+ {
+  "phrase": "postreinforcement pausing",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "pausing postreinforcement"
+ },
+ {
+  "phrase": "preference for larger",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "larger preference"
+ },
+ {
+  "phrase": "learning to time",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "learning time"
+ },
+ {
+  "phrase": "comparison response",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "comparison response"
+ },
+ {
+  "phrase": "acquisition trials",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "acquisition trials"
+ },
+ {
+  "phrase": "value of delayed",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "delayed value"
+ },
+ {
+  "phrase": "sample sizes",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "sample sizes"
+ },
+ {
+  "phrase": "duration of tonic immobility",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "duration immobility tonic"
+ },
+ {
+  "phrase": "duration of tonic",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "duration tonic"
+ },
+ {
+  "phrase": "behaviour but",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "behaviour but"
+ },
+ {
+  "phrase": "simultaneous compound",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "compound simultaneous"
+ },
+ {
+  "phrase": "game theory",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "game theory"
+ },
+ {
+  "phrase": "behavioral inhibition",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "behavioral inhibition"
+ },
+ {
+  "phrase": "discounting procedure",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "discounting procedure"
+ },
+ {
+  "phrase": "anti-predator behaviour",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "anti-predator behaviour"
+ },
+ {
+  "phrase": "adaptive response",
+  "df": 8,
+  "title_df": 1,
+  "orphan": false,
+  "score": 2.6,
+  "key": "adaptive response"
+ },
+ {
+  "phrase": "individual variability",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "individual variability"
+ },
+ {
+  "phrase": "increases in response",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "increases response"
+ },
+ {
+  "phrase": "baseline schedule",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "baseline schedule"
+ },
+ {
+  "phrase": "successive sessions",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "sessions successive"
+ },
+ {
+  "phrase": "specific response",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "response specific"
+ },
+ {
+  "phrase": "responding depended",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "depended responding"
+ },
+ {
+  "phrase": "trial onset",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "onset trial"
+ },
+ {
+  "phrase": "trial began",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "began trial"
+ },
+ {
+  "phrase": "mean duration",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "duration mean"
+ },
+ {
+  "phrase": "pattern of behavior",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "behavior pattern"
+ },
+ {
+  "phrase": "behavior are discussed",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "behavior discussed"
+ },
+ {
+  "phrase": "inter-response times",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "inter-response times"
+ },
+ {
+  "phrase": "reinforcer but",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "but reinforcer"
+ },
+ {
+  "phrase": "brief electric",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "brief electric"
+ },
+ {
+  "phrase": "running rate",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "rate running"
+ },
+ {
+  "phrase": "response distributions",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "distributions response"
+ },
+ {
+  "phrase": "positively accelerated responding",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "accelerated positively responding"
+ },
+ {
+  "phrase": "ratio of responses",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "ratio responses"
+ },
+ {
+  "phrase": "behavioral phenomena",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "behavioral phenomena"
+ },
+ {
+  "phrase": "pigeons' responding",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "pigeons' responding"
+ },
+ {
+  "phrase": "variable number",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "number variable"
+ },
+ {
+  "phrase": "response biases",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "biases response"
+ },
+ {
+  "phrase": "single schedules",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "schedules single"
+ },
+ {
+  "phrase": "next trial",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "next trial"
+ },
+ {
+  "phrase": "alternative responding",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "alternative responding"
+ },
+ {
+  "phrase": "duration but",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "but duration"
+ },
+ {
+  "phrase": "behavior following",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "behavior following"
+ },
+ {
+  "phrase": "clear preference",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "clear preference"
+ },
+ {
+  "phrase": "blocks of trials",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "blocks trials"
+ },
+ {
+  "phrase": "repeated exposures",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "exposures repeated"
+ },
+ {
+  "phrase": "theory suggests",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "suggests theory"
+ },
+ {
+  "phrase": "peak frequency",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "frequency peak"
+ },
+ {
+  "phrase": "spend more time",
+  "df": 13,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.56,
+  "key": "spend time"
+ },
+ {
+  "phrase": "number of responses required",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "number required responses"
+ },
+ {
+  "phrase": "presses produced",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "presses produced"
+ },
+ {
+  "phrase": "operant responses",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "operant responses"
+ },
+ {
+  "phrase": "procedure produced",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "procedure produced"
+ },
+ {
+  "phrase": "throughout training",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "throughout training"
+ },
+ {
+  "phrase": "constant rate",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "constant rate"
+ },
+ {
+  "phrase": "min interval",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "interval min"
+ },
+ {
+  "phrase": "overall rate of responding",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "overall rate responding"
+ },
+ {
+  "phrase": "responses made",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "made responses"
+ },
+ {
+  "phrase": "trials followed",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "followed trials"
+ },
+ {
+  "phrase": "affect the rate",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "affect rate"
+ },
+ {
+  "phrase": "increasing the duration",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "duration increasing"
+ },
+ {
+  "phrase": "reversal training",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "reversal training"
+ },
+ {
+  "phrase": "compound training",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "compound training"
+ },
+ {
+  "phrase": "training pigeons",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "pigeons training"
+ },
+ {
+  "phrase": "changes in behavior",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "behavior changes"
+ },
+ {
+  "phrase": "behavior as well",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "behavior well"
+ },
+ {
+  "phrase": "terminal-link schedule",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "schedule terminal-link"
+ },
+ {
+  "phrase": "per unit time",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "per time unit"
+ },
+ {
+  "phrase": "unit time",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "time unit"
+ },
+ {
+  "phrase": "rates of key pecking",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "key pecking rates"
+ },
+ {
+  "phrase": "rates of key",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "key rates"
+ },
+ {
+  "phrase": "differential-reinforcement-of-other-behavior schedule",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "differential-reinforcement-of-other-behavior schedule"
+ },
+ {
+  "phrase": "time scale",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "scale time"
+ },
+ {
+  "phrase": "total duration",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "duration total"
+ },
+ {
+  "phrase": "alternative reinforcers",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "alternative reinforcers"
+ },
+ {
+  "phrase": "reinforced alternative",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "alternative reinforced"
+ },
+ {
+  "phrase": "suboptimal alternative",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "alternative suboptimal"
+ },
+ {
+  "phrase": "sample size",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "sample size"
+ },
+ {
+  "phrase": "learning criterion",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "criterion learning"
+ },
+ {
+  "phrase": "significant positive",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "positive significant"
+ },
+ {
+  "phrase": "repeated trials",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "repeated trials"
+ },
+ {
+  "phrase": "space and time",
+  "df": 12,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.48,
+  "key": "space time"
+ },
+ {
+  "phrase": "specified time",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "specified time"
+ },
+ {
+  "phrase": "stable responding",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "responding stable"
+ },
+ {
+  "phrase": "controlled responding",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "controlled responding"
+ },
+ {
+  "phrase": "overall responding",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "overall responding"
+ },
+ {
+  "phrase": "mean rate",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "mean rate"
+ },
+ {
+  "phrase": "absolute rates",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "absolute rates"
+ },
+ {
+  "phrase": "stable response",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "response stable"
+ },
+ {
+  "phrase": "responding even",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "even responding"
+ },
+ {
+  "phrase": "number of responses emitted",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "emitted number responses"
+ },
+ {
+  "phrase": "fixed period",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "fixed period"
+ },
+ {
+  "phrase": "following acquisition",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "acquisition following"
+ },
+ {
+  "phrase": "sets of stimuli",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "sets stimuli"
+ },
+ {
+  "phrase": "instrumental training",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "instrumental training"
+ },
+ {
+  "phrase": "reinforcer was varied",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "reinforcer varied"
+ },
+ {
+  "phrase": "last response",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "last response"
+ },
+ {
+  "phrase": "local rate",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "local rate"
+ },
+ {
+  "phrase": "average response",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "average response"
+ },
+ {
+  "phrase": "schedule was varied",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "schedule varied"
+ },
+ {
+  "phrase": "training set",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "set training"
+ },
+ {
+  "phrase": "whether response",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "response whether"
+ },
+ {
+  "phrase": "changes in response rates",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "changes rates response"
+ },
+ {
+  "phrase": "schedules ranging",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "ranging schedules"
+ },
+ {
+  "phrase": "expected time",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "expected time"
+ },
+ {
+  "phrase": "produced food according",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "according food produced"
+ },
+ {
+  "phrase": "mean time",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "mean time"
+ },
+ {
+  "phrase": "sequence of responses",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "responses sequence"
+ },
+ {
+  "phrase": "following repeated",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "following repeated"
+ },
+ {
+  "phrase": "interval elapsed",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "elapsed interval"
+ },
+ {
+  "phrase": "time taken",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "taken time"
+ },
+ {
+  "phrase": "detection performance",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "detection performance"
+ },
+ {
+  "phrase": "pecks produced",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "pecks produced"
+ },
+ {
+  "phrase": "maximum response",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "maximum response"
+ },
+ {
+  "phrase": "response rates maintained",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "maintained rates response"
+ },
+ {
+  "phrase": "min schedule of food",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "food min schedule"
+ },
+ {
+  "phrase": "no-food trials",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "no-food trials"
+ },
+ {
+  "phrase": "immediate reinforcer",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "immediate reinforcer"
+ },
+ {
+  "phrase": "shorter duration",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "duration shorter"
+ },
+ {
+  "phrase": "alternative responses",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "alternative responses"
+ },
+ {
+  "phrase": "sample key",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "key sample"
+ },
+ {
+  "phrase": "coding hypothesis",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "coding hypothesis"
+ },
+ {
+  "phrase": "sensitivity of behavior",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "behavior sensitivity"
+ },
+ {
+  "phrase": "explicit training",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "explicit training"
+ },
+ {
+  "phrase": "schedules were varied",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "schedules varied"
+ },
+ {
+  "phrase": "sample presentation",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "presentation sample"
+ },
+ {
+  "phrase": "interreinforcer interval",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "interreinforcer interval"
+ },
+ {
+  "phrase": "classes were established",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "classes established"
+ },
+ {
+  "phrase": "time and energy",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "energy time"
+ },
+ {
+  "phrase": "behavioral mechanism",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "behavioral mechanism"
+ },
+ {
+  "phrase": "trained relations",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "relations trained"
+ },
+ {
+  "phrase": "discount rates",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "discount rates"
+ },
+ {
+  "phrase": "member equivalence",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "equivalence member"
+ },
+ {
+  "phrase": "error term",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "error term"
+ },
+ {
+  "phrase": "neotropical behaviour",
+  "df": 11,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.4,
+  "key": "behaviour neotropical"
+ },
+ {
+  "phrase": "average rate",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "average rate"
+ },
+ {
+  "phrase": "probability of responding",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "probability responding"
+ },
+ {
+  "phrase": "responses were recorded",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "recorded responses"
+ },
+ {
+  "phrase": "produced dose-dependent",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "dose-dependent produced"
+ },
+ {
+  "phrase": "fewer responses",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "fewer responses"
+ },
+ {
+  "phrase": "component produced",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "component produced"
+ },
+ {
+  "phrase": "peak response",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "peak response"
+ },
+ {
+  "phrase": "always produced",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "always produced"
+ },
+ {
+  "phrase": "schedule alternated",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "alternated schedule"
+ },
+ {
+  "phrase": "responses occurring",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "occurring responses"
+ },
+ {
+  "phrase": "repeated presentations",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "presentations repeated"
+ },
+ {
+  "phrase": "sec schedules",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "schedules sec"
+ },
+ {
+  "phrase": "stimuli that signal",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "signal stimuli"
+ },
+ {
+  "phrase": "learned response",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "learned response"
+ },
+ {
+  "phrase": "initial acquisition",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "acquisition initial"
+ },
+ {
+  "phrase": "proportion of time spent",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "proportion spent time"
+ },
+ {
+  "phrase": "total time spent",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "spent time total"
+ },
+ {
+  "phrase": "either fixed",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "either fixed"
+ },
+ {
+  "phrase": "session time spent",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "session spent time"
+ },
+ {
+  "phrase": "learning are discussed",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "discussed learning"
+ },
+ {
+  "phrase": "overall rates of responding",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "overall rates responding"
+ },
+ {
+  "phrase": "highest rate",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "highest rate"
+ },
+ {
+  "phrase": "response class",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "class response"
+ },
+ {
+  "phrase": "pressing produced",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "pressing produced"
+ },
+ {
+  "phrase": "produced access",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "access produced"
+ },
+ {
+  "phrase": "random-ratio schedule",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "random-ratio schedule"
+ },
+ {
+  "phrase": "absolute response rates",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "absolute rates response"
+ },
+ {
+  "phrase": "variable duration",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "duration variable"
+ },
+ {
+  "phrase": "time ratios",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "ratios time"
+ },
+ {
+  "phrase": "decreases in response",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "decreases response"
+ },
+ {
+  "phrase": "times per",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "per times"
+ },
+ {
+  "phrase": "stimuli appeared",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "appeared stimuli"
+ },
+ {
+  "phrase": "contrast to previous",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "contrast previous"
+ },
+ {
+  "phrase": "reinforcer deliveries",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "deliveries reinforcer"
+ },
+ {
+  "phrase": "variable- interval",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "interval variable-"
+ },
+ {
+  "phrase": "fixed amount",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "amount fixed"
+ },
+ {
+  "phrase": "individual behavior",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "behavior individual"
+ },
+ {
+  "phrase": "controlling variable",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "controlling variable"
+ },
+ {
+  "phrase": "lever-pressing rates",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "lever-pressing rates"
+ },
+ {
+  "phrase": "given repeated",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "given repeated"
+ },
+ {
+  "phrase": "produced points",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "points produced"
+ },
+ {
+  "phrase": "ratios of responses",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "ratios responses"
+ },
+ {
+  "phrase": "similar response",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "response similar"
+ },
+ {
+  "phrase": "alternative associated",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "alternative associated"
+ },
+ {
+  "phrase": "single trial",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "single trial"
+ },
+ {
+  "phrase": "auditory conditioned",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "auditory conditioned"
+ },
+ {
+  "phrase": "signal duration",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "duration signal"
+ },
+ {
+  "phrase": "rate of forgetting",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "forgetting rate"
+ },
+ {
+  "phrase": "target responses",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "responses target"
+ },
+ {
+  "phrase": "baseline conditional",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "baseline conditional"
+ },
+ {
+  "phrase": "behavior often",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "behavior often"
+ },
+ {
+  "phrase": "familiar stimuli",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "familiar stimuli"
+ },
+ {
+  "phrase": "member equivalence classes",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "classes equivalence member"
+ },
+ {
+  "phrase": "stop times",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "stop times"
+ },
+ {
+  "phrase": "call duration",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "call duration"
+ },
+ {
+  "phrase": "negative relationship",
+  "df": 10,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.3,
+  "key": "negative relationship"
+ },
+ {
+  "phrase": "suppress responding",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "responding suppress"
+ },
+ {
+  "phrase": "lever responses",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "lever responses"
+ },
+ {
+  "phrase": "interval produced",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "interval produced"
+ },
+ {
+  "phrase": "behavioral and physiological",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "behavioral physiological"
+ },
+ {
+  "phrase": "continued training",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "continued training"
+ },
+ {
+  "phrase": "differential sensitivity",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "differential sensitivity"
+ },
+ {
+  "phrase": "constant rates",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "constant rates"
+ },
+ {
+  "phrase": "steady-state behavior",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "behavior steady-state"
+ },
+ {
+  "phrase": "responding emerged",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "emerged responding"
+ },
+ {
+  "phrase": "response threshold",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "response threshold"
+ },
+ {
+  "phrase": "produced min",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "min produced"
+ },
+ {
+  "phrase": "schedule associated",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "associated schedule"
+ },
+ {
+  "phrase": "responding ceased",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "ceased responding"
+ },
+ {
+  "phrase": "relative responding",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "relative responding"
+ },
+ {
+  "phrase": "interval between successive",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "interval successive"
+ },
+ {
+  "phrase": "reduced response rates",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "rates reduced response"
+ },
+ {
+  "phrase": "total number of responses",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "number responses total"
+ },
+ {
+  "phrase": "various schedules",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "schedules various"
+ },
+ {
+  "phrase": "avoid electric",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "avoid electric"
+ },
+ {
+  "phrase": "set of stimuli",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "set stimuli"
+ },
+ {
+  "phrase": "per response",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "per response"
+ },
+ {
+  "phrase": "highest response",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "highest response"
+ },
+ {
+  "phrase": "punished response",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "punished response"
+ },
+ {
+  "phrase": "behavior whereas",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "behavior whereas"
+ },
+ {
+  "phrase": "responding recovered",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "recovered responding"
+ },
+ {
+  "phrase": "time per",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "per time"
+ },
+ {
+  "phrase": "rats were conditioned",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "conditioned rats"
+ },
+ {
+  "phrase": "response tendencies",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "response tendencies"
+ },
+ {
+  "phrase": "learning occurred",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "learning occurred"
+ },
+ {
+  "phrase": "produced terminal",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "produced terminal"
+ },
+ {
+  "phrase": "mean interval",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "interval mean"
+ },
+ {
+  "phrase": "behavior developed",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "behavior developed"
+ },
+ {
+  "phrase": "pair of stimuli",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "pair stimuli"
+ },
+ {
+  "phrase": "pause durations",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "durations pause"
+ },
+ {
+  "phrase": "many trials",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "many trials"
+ },
+ {
+  "phrase": "key-peck responding",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "key-peck responding"
+ },
+ {
+  "phrase": "controlled behavior",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "behavior controlled"
+ },
+ {
+  "phrase": "initial-link schedules",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "initial-link schedules"
+ },
+ {
+  "phrase": "time to complete",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "complete time"
+ },
+ {
+  "phrase": "schedules provided",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "provided schedules"
+ },
+ {
+  "phrase": "response dependent",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "dependent response"
+ },
+ {
+  "phrase": "alternative but",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "alternative but"
+ },
+ {
+  "phrase": "amounts of time",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "amounts time"
+ },
+ {
+  "phrase": "signal-detection analysis",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "analysis signal-detection"
+ },
+ {
+  "phrase": "affect response",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "affect response"
+ },
+ {
+  "phrase": "trials whereas",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "trials whereas"
+ },
+ {
+  "phrase": "stimuli occurred",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "occurred stimuli"
+ },
+ {
+  "phrase": "absolute duration",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "absolute duration"
+ },
+ {
+  "phrase": "right-key responses",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "responses right-key"
+ },
+ {
+  "phrase": "schedule arranged",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "arranged schedule"
+ },
+ {
+  "phrase": "schedule whereas",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "schedule whereas"
+ },
+ {
+  "phrase": "pigeons discriminated",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "discriminated pigeons"
+ },
+ {
+  "phrase": "behavior occurs",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "behavior occurs"
+ },
+ {
+  "phrase": "facilitated learning",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "facilitated learning"
+ },
+ {
+  "phrase": "trace interval",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "interval trace"
+ },
+ {
+  "phrase": "stimuli served",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "served stimuli"
+ },
+ {
+  "phrase": "schedule operated",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "operated schedule"
+ },
+ {
+  "phrase": "acquisition phase",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "acquisition phase"
+ },
+ {
+  "phrase": "current trial",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "current trial"
+ },
+ {
+  "phrase": "responding usually",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "responding usually"
+ },
+ {
+  "phrase": "ratio of reinforcers",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "ratio reinforcers"
+ },
+ {
+  "phrase": "standard duration",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "duration standard"
+ },
+ {
+  "phrase": "hyperbolic equation",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "equation hyperbolic"
+ },
+ {
+  "phrase": "development of tolerance",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "development tolerance"
+ },
+ {
+  "phrase": "models of behavior",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "behavior models"
+ },
+ {
+  "phrase": "four-member equivalence",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "equivalence four-member"
+ },
+ {
+  "phrase": "training rats",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "rats training"
+ },
+ {
+  "phrase": "wait times",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "times wait"
+ },
+ {
+  "phrase": "learning literature",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "learning literature"
+ },
+ {
+  "phrase": "rate of discounting",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "discounting rate"
+ },
+ {
+  "phrase": "significant negative",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "negative significant"
+ },
+ {
+  "phrase": "peak times",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "peak times"
+ },
+ {
+  "phrase": "resurgence occurred",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "occurred resurgence"
+ },
+ {
+  "phrase": "trial blocks",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "blocks trial"
+ },
+ {
+  "phrase": "repeated measures",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "measures repeated"
+ },
+ {
+  "phrase": "positive social",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "positive social"
+ },
+ {
+  "phrase": "stable over time",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "stable time"
+ },
+ {
+  "phrase": "recently reinforced alternative",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "alternative recently reinforced"
+ },
+ {
+  "phrase": "memory trace",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "memory trace"
+ },
+ {
+  "phrase": "various behavioral",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "behavioral various"
+ },
+ {
+  "phrase": "hypothesis suggests",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "hypothesis suggests"
+ },
+ {
+  "phrase": "conditioned lick",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "conditioned lick"
+ },
+ {
+  "phrase": "magazine approach paradigm",
+  "df": 9,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.2,
+  "key": "approach magazine paradigm"
+ },
+ {
+  "phrase": "response rates generally",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "generally rates response"
+ },
+ {
+  "phrase": "schedule types",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "schedule types"
+ },
+ {
+  "phrase": "initial pause",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "initial pause"
+ },
+ {
+  "phrase": "doses produced",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "doses produced"
+ },
+ {
+  "phrase": "average rates",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "average rates"
+ },
+ {
+  "phrase": "response measures",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "measures response"
+ },
+ {
+  "phrase": "behavioral profiles",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "behavioral profiles"
+ },
+ {
+  "phrase": "total responding",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "responding total"
+ },
+ {
+  "phrase": "but produced",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "but produced"
+ },
+ {
+  "phrase": "error rates",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "error rates"
+ },
+ {
+  "phrase": "high-rate responding",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "high-rate responding"
+ },
+ {
+  "phrase": "response probabilities",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "probabilities response"
+ },
+ {
+  "phrase": "operant procedures",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "operant procedures"
+ },
+ {
+  "phrase": "animals' behavior",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "animals' behavior"
+ },
+ {
+  "phrase": "key responses",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "key responses"
+ },
+ {
+  "phrase": "schedule consisting",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "consisting schedule"
+ },
+ {
+  "phrase": "progressive ratio schedule",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "progressive ratio schedule"
+ },
+ {
+  "phrase": "response rates occurred",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "occurred rates response"
+ },
+ {
+  "phrase": "successive reinforcements",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "reinforcements successive"
+ },
+ {
+  "phrase": "repeated presentation",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "presentation repeated"
+ },
+ {
+  "phrase": "stimuli were reversed",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "reversed stimuli"
+ },
+ {
+  "phrase": "either schedule",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "either schedule"
+ },
+ {
+  "phrase": "duration of access",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "access duration"
+ },
+ {
+  "phrase": "rate varied",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "rate varied"
+ },
+ {
+  "phrase": "successfully discriminated",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "discriminated successfully"
+ },
+ {
+  "phrase": "operant procedure",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "operant procedure"
+ },
+ {
+  "phrase": "relative frequency of responding",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "frequency relative responding"
+ },
+ {
+  "phrase": "component response rates",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "component rates response"
+ },
+ {
+  "phrase": "intermittently produced",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "intermittently produced"
+ },
+ {
+  "phrase": "produced sec",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "produced sec"
+ },
+ {
+  "phrase": "various stimuli",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "stimuli various"
+ },
+ {
+  "phrase": "schedule maintained",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "maintained schedule"
+ },
+ {
+  "phrase": "mean interresponse",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "interresponse mean"
+ },
+ {
+  "phrase": "rate decreases",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "decreases rate"
+ },
+ {
+  "phrase": "rate of lever pressing",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "lever pressing rate"
+ },
+ {
+  "phrase": "rate of lever",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "lever rate"
+ },
+ {
+  "phrase": "absence of response",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "absence response"
+ },
+ {
+  "phrase": "duration varied",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "duration varied"
+ },
+ {
+  "phrase": "response rates varied",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "rates response varied"
+ },
+ {
+  "phrase": "relative time spent",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "relative spent time"
+ },
+ {
+  "phrase": "recovery of responding",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "recovery responding"
+ },
+ {
+  "phrase": "preceding trial",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "preceding trial"
+ },
+ {
+  "phrase": "pigeons' responses were reinforced",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "pigeons' reinforced responses"
+ },
+ {
+  "phrase": "average duration",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "average duration"
+ },
+ {
+  "phrase": "important variable",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "important variable"
+ },
+ {
+  "phrase": "responses and time",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "responses time"
+ },
+ {
+  "phrase": "interval was manipulated",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "interval manipulated"
+ },
+ {
+  "phrase": "correct responses were reinforced",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "correct reinforced responses"
+ },
+ {
+  "phrase": "responding whereas",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "responding whereas"
+ },
+ {
+  "phrase": "given time",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "given time"
+ },
+ {
+  "phrase": "responses per reinforcer",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "per reinforcer responses"
+ },
+ {
+  "phrase": "lever pressing produced",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "lever pressing produced"
+ },
+ {
+  "phrase": "estimates of sensitivity",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "estimates sensitivity"
+ },
+ {
+  "phrase": "key produced food",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "food key produced"
+ },
+ {
+  "phrase": "line stimuli",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "line stimuli"
+ },
+ {
+  "phrase": "alternative account",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "account alternative"
+ },
+ {
+  "phrase": "much time",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "much time"
+ },
+ {
+  "phrase": "type of response",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "response type"
+ },
+ {
+  "phrase": "trials produced",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "produced trials"
+ },
+ {
+  "phrase": "alternative approach",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "alternative approach"
+ },
+ {
+  "phrase": "probe stimuli",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "probe stimuli"
+ },
+ {
+  "phrase": "trained on conditional",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "conditional trained"
+ },
+ {
+  "phrase": "acquisition but",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "acquisition but"
+ },
+ {
+  "phrase": "negative emotional",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "emotional negative"
+ },
+ {
+  "phrase": "measures of behavior",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "behavior measures"
+ },
+ {
+  "phrase": "relations between stimuli",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "relations stimuli"
+ },
+ {
+  "phrase": "trials suggesting",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "suggesting trials"
+ },
+ {
+  "phrase": "training dose",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "dose training"
+ },
+ {
+  "phrase": "baseline trials",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "baseline trials"
+ },
+ {
+  "phrase": "log response",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "log response"
+ },
+ {
+  "phrase": "research and theory",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "research theory"
+ },
+ {
+  "phrase": "acquisition training",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "acquisition training"
+ },
+ {
+  "phrase": "fewer trials",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "fewer trials"
+ },
+ {
+  "phrase": "stimuli as samples",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "samples stimuli"
+ },
+ {
+  "phrase": "rate of acquisition",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "acquisition rate"
+ },
+ {
+  "phrase": "four-member equivalence classes",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "classes equivalence four-member"
+ },
+ {
+  "phrase": "arranged reinforcer",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "arranged reinforcer"
+ },
+ {
+  "phrase": "produced significant",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "produced significant"
+ },
+ {
+  "phrase": "training phases",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "phases training"
+ },
+ {
+  "phrase": "fixed delays",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "delays fixed"
+ },
+ {
+  "phrase": "discounting models",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "discounting models"
+ },
+ {
+  "phrase": "response accuracy",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "accuracy response"
+ },
+ {
+  "phrase": "token reinforcers",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "reinforcers token"
+ },
+ {
+  "phrase": "response options",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "options response"
+ },
+ {
+  "phrase": "shorter time",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "shorter time"
+ },
+ {
+  "phrase": "sample durations",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "durations sample"
+ },
+ {
+  "phrase": "responses as well",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "responses well"
+ },
+ {
+  "phrase": "behavior analytic",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "analytic behavior"
+ },
+ {
+  "phrase": "hyperboloid discounting",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "discounting hyperboloid"
+ },
+ {
+  "phrase": "steep discounting",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "discounting steep"
+ },
+ {
+  "phrase": "behavioral strategies",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "behavioral strategies"
+ },
+ {
+  "phrase": "extinguished responding",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "extinguished responding"
+ },
+ {
+  "phrase": "behavioral states",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "behavioral states"
+ },
+ {
+  "phrase": "preference for novel",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "novel preference"
+ },
+ {
+  "phrase": "age classes",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "age classes"
+ },
+ {
+  "phrase": "females spent more time",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "females spent time"
+ },
+ {
+  "phrase": "memory decay",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "decay memory"
+ },
+ {
+  "phrase": "consistent over time",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "consistent time"
+ },
+ {
+  "phrase": "time exploring",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "exploring time"
+ },
+ {
+  "phrase": "trials revealed",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "revealed trials"
+ },
+ {
+  "phrase": "negative impact",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "impact negative"
+ },
+ {
+  "phrase": "time point",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "point time"
+ },
+ {
+  "phrase": "novel behavioral",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "behavioral novel"
+ },
+ {
+  "phrase": "suboptimal behavior",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "behavior suboptimal"
+ },
+ {
+  "phrase": "resurgence procedure",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "procedure resurgence"
+ },
+ {
+  "phrase": "associative learning theory",
+  "df": 8,
+  "title_df": 0,
+  "orphan": false,
+  "score": 2.08,
+  "key": "associative learning theory"
+ }
+]

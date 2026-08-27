@@ -1,0 +1,507 @@
+[
+ {
+  "label": "Reinforcer Rate",
+  "kind": "principle",
+  "df": 315,
+  "title_df": 50,
+  "terms": [
+   "reinforcement frequency",
+   "reinforcer rate",
+   "rate of reinforcement"
+  ],
+  "why": "the other arm of the matching relation"
+ },
+ {
+  "label": "Discriminative Stimulus",
+  "kind": "principle",
+  "df": 267,
+  "title_df": 59,
+  "terms": [
+   "discriminative stimulus",
+   "discriminative stimuli"
+  ],
+  "why": "the S-delta/S-D relation itself, distinct from Stimulus Control"
+ },
+ {
+  "label": "Unconditioned Stimulus",
+  "kind": "principle",
+  "df": 227,
+  "title_df": 48,
+  "terms": [
+   "unconditioned stimulus",
+   "unconditioned stimuli"
+  ],
+  "why": "the respondent counterpart"
+ },
+ {
+  "label": "Delay Discounting",
+  "kind": "principle",
+  "df": 147,
+  "title_df": 77,
+  "terms": [
+   "delay discounting",
+   "temporal discounting"
+  ],
+  "why": "value declines as a function of delay"
+ },
+ {
+  "label": "Reinforcer Magnitude",
+  "kind": "principle",
+  "df": 140,
+  "title_df": 64,
+  "terms": [
+   "reinforcer magnitude",
+   "reinforcement magnitude",
+   "reinforcer amount",
+   "magnitude of reinforcement"
+  ],
+  "why": "amount as a determinant, distinct from rate and delay"
+ },
+ {
+  "label": "Intertrial Interval",
+  "kind": "process",
+  "df": 124,
+  "title_df": 20,
+  "terms": [
+   "intertrial interval"
+  ],
+  "why": "ditto"
+ },
+ {
+  "label": "Blocking",
+  "kind": "phenomenon",
+  "df": 109,
+  "title_df": 65,
+  "terms": [
+   "blocking"
+  ],
+  "why": "prior conditioning to one cue prevents learning about a redundant one"
+ },
+ {
+  "label": "Self-Control",
+  "kind": "phenomenon",
+  "df": 102,
+  "title_df": 56,
+  "terms": [
+   "self-control",
+   "self control"
+  ],
+  "why": "choice of a larger later over a smaller sooner reinforcer"
+ },
+ {
+  "label": "Impulsivity",
+  "kind": "phenomenon",
+  "df": 89,
+  "title_df": 30,
+  "terms": [
+   "impulsivity",
+   "impulsive choice"
+  ],
+  "why": "the converse choice pattern"
+ },
+ {
+  "label": "Reaction Time",
+  "kind": "measure",
+  "df": 88,
+  "title_df": 28,
+  "terms": [
+   "reaction time",
+   "response latency"
+  ],
+  "why": "a dependent variable the list omits"
+ },
+ {
+  "label": "Resurgence",
+  "kind": "phenomenon",
+  "df": 87,
+  "title_df": 75,
+  "terms": [
+   "resurgence"
+  ],
+  "why": "return of a previously reinforced response when a newer one is extinguished"
+ },
+ {
+  "label": "Omission Training",
+  "kind": "process",
+  "df": 81,
+  "title_df": 27,
+  "terms": [
+   "omission"
+  ],
+  "why": "reinforcement contingent on not responding"
+ },
+ {
+  "label": "Overshadowing",
+  "kind": "phenomenon",
+  "df": 80,
+  "title_df": 41,
+  "terms": [
+   "overshadowing"
+  ],
+  "why": "the more salient element of a compound acquires control at the expense of the other"
+ },
+ {
+  "label": "Observing Response",
+  "kind": "process",
+  "df": 80,
+  "title_df": 35,
+  "terms": [
+   "observing response",
+   "observing behavior"
+  ],
+  "why": "responses that produce discriminative stimuli"
+ },
+ {
+  "label": "Renewal",
+  "kind": "phenomenon",
+  "df": 77,
+  "title_df": 41,
+  "terms": [
+   "renewal"
+  ],
+  "why": "return of responding on a context change after extinction"
+ },
+ {
+  "label": "Latent Inhibition",
+  "kind": "phenomenon",
+  "df": 72,
+  "title_df": 49,
+  "terms": [
+   "latent inhibition"
+  ],
+  "why": "pre-exposure retards later conditioning"
+ },
+ {
+  "label": "Satiation",
+  "kind": "principle",
+  "df": 71,
+  "title_df": 9,
+  "terms": [
+   "satiation",
+   "satiety"
+  ],
+  "why": "the counterpart to Deprivation, which the vocabulary already has"
+ },
+ {
+  "label": "Reinforcer Devaluation",
+  "kind": "process",
+  "df": 70,
+  "title_df": 22,
+  "terms": [
+   "reinforcer devaluation",
+   "devaluation"
+  ],
+  "why": "post-training reduction of reinforcer value, the goal-directed test"
+ },
+ {
+  "label": "Reinstatement",
+  "kind": "phenomenon",
+  "df": 63,
+  "title_df": 25,
+  "terms": [
+   "reinstatement"
+  ],
+  "why": "return of responding after unsignalled reinforcer presentation"
+ },
+ {
+  "label": "Peak Procedure",
+  "kind": "process",
+  "df": 63,
+  "title_df": 19,
+  "terms": [
+   "peak procedure",
+   "peak interval"
+  ],
+  "why": "the standard timing preparation"
+ },
+ {
+  "label": "Behavioral Economics",
+  "kind": "context",
+  "df": 62,
+  "title_df": 27,
+  "terms": [
+   "behavioral economics",
+   "behavioural economics",
+   "demand curve",
+   "unit price"
+  ],
+  "why": "the demand/elasticity framing of reinforcer value"
+ },
+ {
+  "label": "Schedule: Progressive Ratio",
+  "kind": "process",
+  "df": 60,
+  "title_df": 32,
+  "terms": [
+   "progressive ratio",
+   "progressive-ratio"
+  ],
+  "why": "breakpoint procedure; a schedule family the list omits"
+ },
+ {
+  "label": "Working Memory",
+  "kind": "phenomenon",
+  "df": 56,
+  "title_df": 16,
+  "terms": [
+   "working memory"
+  ],
+  "why": "sits beside the existing Short-Term Memory"
+ },
+ {
+  "label": "Behavioral Momentum",
+  "kind": "principle",
+  "df": 55,
+  "title_df": 18,
+  "terms": [
+   "behavioral momentum",
+   "behavioural momentum"
+  ],
+  "why": "resistance to change as a property of a reinforced response"
+ },
+ {
+  "label": "Conditioned Taste Aversion",
+  "kind": "process",
+  "df": 55,
+  "title_df": 30,
+  "terms": [
+   "taste aversion"
+  ],
+  "why": "a distinct preparation, not general classical conditioning"
+ },
+ {
+  "label": "Verbal Behavior",
+  "kind": "context",
+  "df": 53,
+  "title_df": 21,
+  "terms": [
+   "verbal behavior",
+   "verbal behaviour"
+  ],
+  "why": "a domain, flagged since it may fail the breadth test"
+ },
+ {
+  "label": "Resistance to Extinction",
+  "kind": "measure",
+  "df": 44,
+  "title_df": 16,
+  "terms": [
+   "resistance to extinction"
+  ],
+  "why": "the standard persistence measure"
+ },
+ {
+  "label": "Response Strength",
+  "kind": "principle",
+  "df": 43,
+  "title_df": 13,
+  "terms": [
+   "response strength"
+  ],
+  "why": "the construct behind rate, resistance and persistence"
+ },
+ {
+  "label": "Reversal Learning",
+  "kind": "process",
+  "df": 42,
+  "title_df": 20,
+  "terms": [
+   "reversal learning",
+   "serial reversal"
+  ],
+  "why": "repeated contingency reversal"
+ },
+ {
+  "label": "Probability Discounting",
+  "kind": "principle",
+  "df": 37,
+  "title_df": 21,
+  "terms": [
+   "probability discounting"
+  ],
+  "why": "value declines as a function of odds against"
+ },
+ {
+  "label": "Risky Choice",
+  "kind": "phenomenon",
+  "df": 36,
+  "title_df": 22,
+  "terms": [
+   "risky choice",
+   "risk sensitivity",
+   "risk-sensitive"
+  ],
+  "why": "choice under variable reinforcement outcomes"
+ },
+ {
+  "label": "Reinforcer Quality",
+  "kind": "principle",
+  "df": 32,
+  "title_df": 16,
+  "terms": [
+   "reinforcer quality",
+   "reinforcer type",
+   "qualitatively different reinforcers"
+  ],
+  "why": "type as a determinant"
+ },
+ {
+  "label": "Behavioral Variability",
+  "kind": "phenomenon",
+  "df": 32,
+  "title_df": 11,
+  "terms": [
+   "behavioral variability",
+   "behavioural variability",
+   "response variability"
+  ],
+  "why": "variability as an operant dimension"
+ },
+ {
+  "label": "Rule-Governed Behavior",
+  "kind": "phenomenon",
+  "df": 27,
+  "title_df": 11,
+  "terms": [
+   "rule-governed",
+   "rule governed",
+   "instructional control"
+  ],
+  "why": "verbally-mediated control"
+ },
+ {
+  "label": "Melioration",
+  "kind": "principle",
+  "df": 25,
+  "title_df": 8,
+  "terms": [
+   "melioration"
+  ],
+  "why": "allocation toward the locally higher return rate"
+ },
+ {
+  "label": "Response Cost",
+  "kind": "process",
+  "df": 25,
+  "title_df": 8,
+  "terms": [
+   "response cost"
+  ],
+  "why": "a punishment procedure the list cannot express"
+ },
+ {
+  "label": "Time-Place Learning",
+  "kind": "process",
+  "df": 24,
+  "title_df": 16,
+  "terms": [
+   "time-place learning",
+   "time place learning"
+  ],
+  "why": "temporal-spatial discrimination"
+ },
+ {
+  "label": "Errorless Learning",
+  "kind": "process",
+  "df": 23,
+  "title_df": 14,
+  "terms": [
+   "errorless"
+  ],
+  "why": "fading-based discrimination training"
+ },
+ {
+  "label": "Interstimulus Interval",
+  "kind": "process",
+  "df": 18,
+  "title_df": 7,
+  "terms": [
+   "interstimulus interval"
+  ],
+  "why": "a procedural parameter that determines the outcome"
+ },
+ {
+  "label": "Anticipatory Contrast",
+  "kind": "phenomenon",
+  "df": 18,
+  "title_df": 12,
+  "terms": [
+   "anticipatory contrast"
+  ],
+  "why": "distinct from the Behavioral Contrast already listed"
+ },
+ {
+  "label": "Differential Outcomes",
+  "kind": "process",
+  "df": 16,
+  "title_df": 5,
+  "terms": [
+   "differential outcomes"
+  ],
+  "why": "outcome-specific expectancies in conditional discrimination"
+ },
+ {
+  "label": "Response Bout",
+  "kind": "phenomenon",
+  "df": 16,
+  "title_df": 0,
+  "terms": [
+   "response bout",
+   "bout length",
+   "bout-and-pause"
+  ],
+  "why": "the microstructure of responding"
+ },
+ {
+  "label": "Stimulus Fading",
+  "kind": "process",
+  "df": 15,
+  "title_df": 7,
+  "terms": [
+   "stimulus fading",
+   "fading procedure"
+  ],
+  "why": "the mechanism errorless training uses"
+ },
+ {
+  "label": "Token Economy: Token Reinforcement",
+  "kind": "process",
+  "df": 15,
+  "title_df": 9,
+  "terms": [
+   "token reinforcement",
+   "token economy"
+  ],
+  "why": "refines the existing Token Economy toward the reinforcer"
+ },
+ {
+  "label": "Schedule: Limited Hold",
+  "kind": "process",
+  "df": 12,
+  "title_df": 0,
+  "terms": [
+   "limited hold"
+  ],
+  "why": "named by taggers, absent from the list"
+ },
+ {
+  "label": "Functional Equivalence",
+  "kind": "principle",
+  "df": 12,
+  "title_df": 6,
+  "terms": [
+   "functional equivalence"
+  ],
+  "why": "distinct from Stimulus Equivalence"
+ },
+ {
+  "label": "Schedule: Interlocking",
+  "kind": "process",
+  "df": 4,
+  "title_df": 3,
+  "terms": [
+   "interlocking schedule"
+  ],
+  "why": "named by taggers, absent from the list"
+ }
+]

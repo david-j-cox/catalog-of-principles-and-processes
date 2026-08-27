@@ -52,17 +52,26 @@ DERIVED = {
  'Imitation': ('phenomenon', 'an outcome you observe - could equally be a principle'),
 }
 
-# --- queue B: off-vocabulary concepts, with the article that used them -------
-usage = collections.defaultdict(list)
-for r in rows:
-    for t in (r.get('process') or []):
-        if t.lower() not in CI:
-            usage[t].append(r.get('title', '') or '')
-# labels David has already rejected sit in `unmapped` so their entries surface as
-# needing a specific tag - but they are decided, so they never re-enter the queue.
-REJECTED = set(tax.get('rejected_too_broad') or [])
-cands = sorted([t for t in usage if len(t.split()) <= 4 and t not in REJECTED],
-               key=lambda t: (-len(usage[t]), t.lower()))
+# --- queue B: the corpus-derived covering vocabulary ------------------------
+# The 459 orphan strings are NOT the source. Measured: they subsume only 6% onto
+# corpus-frequent concepts - 455 of 459 appear on exactly one entry, so they are one-off
+# coinages, not a taxonomy in waiting. propose_vocab.py derives candidates from all
+# 11,554 real articles instead, and each proposal carries its own evidence.
+prop = json.load(open(os.path.join(ROOT, '.validation/proposed_vocab.json')))
+FRONT = re.compile(r'^(author index|subject index|editorial board|contents of volume|'
+                   r'index (of|to) volume|acknowledg|erratum|corrigendum|supplemental|'
+                   r'list of|volume \d|title page|masthead|announcement|in memoriam|'
+                   r'obituary|reviewers)', re.I)
+arts = [r for r in rows if not FRONT.search((r.get('title') or '').strip())]
+
+def example(terms):
+    """A title that announces the concept - the clearest evidence it is real."""
+    for r in arts:
+        t = (r.get('title') or '')
+        if any(m in t.lower() for m in terms):
+            return t[:112]
+    return ''
+
 
 def mk(l, kind, why, q):
     return {'id': slug(l), 'q': q, 'label': l, 'kind': kind, 'why': why,
@@ -71,9 +80,9 @@ def mk(l, kind, why, q):
 qa = ([mk(l, *BREADTH[l], 'breadth') for l in sorted(BREADTH, key=lambda x: -sum(
           1 for r in rows if x in (r.get('process') or [])))]
       + [mk(l, *DERIVED[l], 'A') for l in sorted(DERIVED)])
-qb = [{'id': slug(t), 'q': 'B', 'label': t, 'kind': '', 'why': '',
-       'n': len(usage[t]), 'ex': (usage[t][0] or '')[:110]}
-      for t in cands]
+qb = [{'id': slug(p['label']), 'q': 'B', 'label': p['label'], 'kind': p['kind'],
+       'why': p['why'], 'n': p['df'], 'tn': p['title_df'], 'ex': example(p['terms'])}
+      for p in prop]
 items = qa + qb
 
 # 'composite' comes from David's Concept Learning note: "not a process as many things
@@ -208,12 +217,12 @@ textarea {{ width:100%; min-height:14rem; font:400 .82rem/1.5 "IBM Plex Mono",mo
 </style>
 
 <div class="wrap">
-  <p class="eyebrow">Catalog vocabulary &middot; {len(items)} calls</p>
+  <p class="eyebrow">Catalog vocabulary &middot; {len(items)} calls, down from 477</p>
   <h1>Label the Vocabulary</h1>
-  <p class="sub">Queue A is {len(qa)} labels whose kind I inferred by rule rather than you deciding &mdash;
-  confirm or flip them. Queue B is {len(qb)} concepts your students and the pipeline used that the
-  vocabulary cannot express; each needs a kind, or a reject. Press a number key. Progress is
-  saved in this browser as you go.</p>
+  <p class="sub">Queue A is {len(qa)} labels whose kind I inferred rather than you deciding &mdash;
+  confirm or flip them. Queue B is {len(qb)} additions derived from all 11,554 articles, each
+  carrying its own evidence. Press a kind to accept it as that kind, or 0 to reject; <b>c</b> to
+  say why &mdash; the reasons are what a tagging rule gets written from. Progress saves as you go.</p>
 
   <div class="progress">
     <div class="track"><div class="fill" id="fill"></div></div>
@@ -299,11 +308,14 @@ function render() {{
   stage.innerHTML =
     '<div class="card"' + (it.kind ? ' data-kind="' + it.kind + '"' : '') + '>' +
       '<span class="qtag">' + (it.q === 'breadth' ? 'Your breadth rule may reject this'
-          : it.q === 'A' ? 'Confirm my call' : 'New concept') + '</span>' +
+          : it.q === 'A' ? 'Confirm my call' : 'Proposed addition') + '</span>' +
       '<p class="term">' + esc(it.label) + '</p>' +
-      '<p class="meta">used on <em>' + it.n + '</em> ' + (it.n === 1 ? 'entry' : 'entries') +
-        (it.ex ? ' &middot; e.g. &ldquo;' + esc(it.ex) + '&rdquo;' : '') + '</p>' +
-      (it.why ? '<p class="why">I called this <b>' + esc(it.kind) + '</b> &mdash; ' +
+      '<p class="meta">' +
+        (it.q === 'B'
+          ? '<em>' + it.n + '</em> articles use it, <em>' + (it.tn || 0) + '</em> in the title'
+          : 'tagged on <em>' + it.n + '</em> ' + (it.n === 1 ? 'entry' : 'entries')) +
+        (it.ex ? ' &middot; &ldquo;' + esc(it.ex) + '&rdquo;' : '') + '</p>' +
+      (it.why ? '<p class="why">Proposing <b>' + esc(it.kind) + '</b> &mdash; ' +
         esc(it.why) + '</p>' : '') +
       '<div class="keys">' + {json.dumps(keybtns)} + '</div>' +
       '<div class="note-wrap">' +
