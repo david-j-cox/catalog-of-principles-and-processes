@@ -25,7 +25,11 @@ gt = [i for i in prog['entry_track']['done']
 if LIMIT:
     gt = gt[:LIMIT]
 
-V2 = os.environ.get('BENCH_PROMPT') == 'v2'
+V2 = os.environ.get('BENCH_PROMPT') in ('v2', 'v3')
+# v3: candidate generation. The model does not decide, it narrows 172 labels to K so the
+# API reviewer adjudicates a shortlist instead of the whole vocabulary. The metric that
+# matters here is recall@K - a true label missing from the shortlist is unrecoverable.
+K = int(os.environ.get('BENCH_K') or 0)
 
 SYS = ("You are an editor in the Experimental Analysis of Behavior (EAB) tradition tagging a "
        "behavioral-research catalog entry. Choose 1-3 labels from the controlled vocabulary that "
@@ -51,12 +55,17 @@ SYS_V2 = ("You are an editor in the Experimental Analysis of Behavior (EAB) trad
 
 
 def ask(title, abstract):
-    tail = "JSON array of exact labels:" if V2 else "JSON array of 1-3 exact labels:"
+    if K:
+        tail = (f"List the {K} labels most likely to apply, best first. Favour coverage: it is "
+                f"better to include a plausible label than to omit a correct one.\n"
+                f"JSON array of exactly {K} exact labels:")
+    else:
+        tail = "JSON array of exact labels:" if V2 else "JSON array of 1-3 exact labels:"
     prompt = (f"CONTROLLED VOCABULARY (choose only from these):\n{' | '.join(canon)}\n\n"
               f"PAPER\ntitle: {title}\nabstract: {abstract[:2500]}\n\n" + tail)
     body = json.dumps({
         'model': MODEL, 'prompt': prompt, 'system': SYS_V2 if V2 else SYS, 'stream': False,
-        'options': {'temperature': 0, 'num_ctx': 8192, 'num_predict': 120},
+        'options': {'temperature': 0, 'num_ctx': 8192, 'num_predict': 120 + 30 * K},
     }).encode()
     req = urllib.request.Request('http://localhost:11434/api/generate', body,
                                  {'Content-Type': 'application/json'})
@@ -106,7 +115,10 @@ ntrue = sum(len(r['truth']) for r in results)
 prec = tp / npred if npred else 0.0
 rec = tp / ntrue if ntrue else 0.0
 summary = {
-    'prompt': 'v2' if V2 else 'v1',
+    'prompt': f'v3(K={K})' if K else ('v2' if V2 else 'v1'),
+    'recall_at_k': rec,
+    'entries_fully_covered': sum(1 for r in results
+        if set(t.lower() for t in r['truth']) <= set(p.lower() for p in r['pred'])) / N,
     'label_precision': prec, 'label_recall': rec,
     'label_f1': 2 * prec * rec / (prec + rec) if (prec + rec) else 0.0,
     'labels_per_entry_pred': npred / N, 'labels_per_entry_truth': ntrue / N,

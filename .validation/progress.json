@@ -388,5 +388,6 @@
     "end": "02:00",
     "note": "Widened 2026-08-27: machine-on hours, not just overnight. heartbeat.sh skips on battery."
   },
-  "cooldown_until": 0
+  "cooldown_until": 1787853600.0,
+  "schema_note": "Paused 2026-08-27 06:01 ET. process/principle split under design; do not write process tags until the taxonomy is resolved. Clear cooldown_until to resume."
 }

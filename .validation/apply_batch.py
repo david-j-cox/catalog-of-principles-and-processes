@@ -25,7 +25,7 @@ _TAX = json.load(open(os.path.join(ROOT, '.validation/taxonomy.json')))
 MERGES = _TAX.get('merges', {})
 CANON = _TAX['canonical']
 _CANON_CI = {c.lower(): c for c in CANON}
-_MERGE_CI = {k.lower(): v for k, v in MERGES.items()}
+_MERGE_CI = {k.lower(): (v if isinstance(v, list) else [v]) for k, v in MERGES.items()}
 followup_fh = open(os.path.join(ROOT, '.validation/followup.jsonl'), 'a')
 rejected_tags = []
 
@@ -36,20 +36,23 @@ def normtags(tags, idx=None):
     processed entries acquired free-text descriptions ("Temporal patterning of operant
     responses") that the site cannot filter or group on. Off-vocabulary tags are now
     dropped from the entry and recorded for human vocabulary review instead.
+
+    A merge may be ONE-TO-MANY: "Schedules of Reinforcement: Fixed Interval" expands to
+    "Schedule: Fixed Interval" + "Reinforcement", so the arrangement and the consequence
+    type stay separable.
     """
     out = []
     for t in tags:
         if not isinstance(t, str) or not t.strip():
             continue
-        k = t.strip().lower()
-        if k in _MERGE_CI:
-            k = _MERGE_CI[k].lower()
-        if k in _CANON_CI:
-            c = _CANON_CI[k]
-            if c not in out:
-                out.append(c)
-        else:
-            rejected_tags.append({'idx': idx, 'tag': t})
+        expanded = _MERGE_CI.get(t.strip().lower(), [t.strip()])
+        for e in expanded:
+            c = _CANON_CI.get(e.lower())
+            if c:
+                if c not in out:
+                    out.append(c)
+            else:
+                rejected_tags.append({'idx': idx, 'tag': t})
     return out
 
 applied = queued = 0

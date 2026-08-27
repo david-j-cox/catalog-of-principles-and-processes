@@ -3,22 +3,15 @@
     "Additivity Theory",
     "Adjunctive Behavior",
     "Aggression",
-    "Alternating Schedules of Reinforcement",
     "Alternative Reinforcement",
     "Autoshaping",
     "Aversive Control",
-    "Aversive Stimulation",
     "Aversive Stimuli",
     "Aversive Stimuli: Electric Shock",
-    "Aversive Stimulus: Electric Shock",
     "Avoidance",
-    "Avoidance Behavior",
-    "Avoidance Learning",
-    "Behavior Contrast",
     "Behavioral Chaining",
     "Behavioral Contrast",
     "Behavioral Pharmacology",
-    "Behavioral contrast under multiple schedules",
     "Bias",
     "Changeover",
     "Changeover Delay",
@@ -31,60 +24,40 @@
     "Conditioned Inhibition",
     "Conditioned Punishment",
     "Conditioned Reinforcement",
-    "Conditioned Reinforcer",
     "Conditioned Suppression",
-    "Conditioned Supression",
     "Conditioning",
-    "Conjunctive Schedules",
     "Contingency",
-    "DRH",
-    "DRL",
-    "DRO",
     "Delay",
     "Delay of Reinforcement",
     "Delay-Reduction Hypothesis",
-    "Delayed Match to Sample",
-    "Delayed Reinforcement",
+    "Delayed Matching to Sample",
     "Deprivation",
     "Differential Reinforcement",
-    "Differential Reinforcement: Low Rates",
     "Differential Suppression",
-    "Differential reinforcement of low rates",
     "Discrete Trial Teaching",
     "Discrete Trials",
-    "Discriminability",
     "Discriminated Avoidance",
     "Discrimination",
     "Discrimination Learning",
-    "Discrimination Training",
-    "Electric Shock",
     "Elicited Responding",
     "Error Correction",
     "Escape",
-    "Experimental Analysis of Behavior",
     "Extinction",
     "Foraging",
     "Generalization",
     "Generalization Gradient",
-    "Generalization Gradients",
-    "Generalized Matching Law",
     "Habituation",
-    "Herrnsteins Equation",
     "Imitation",
     "Imprinting",
     "Interresponse Time",
-    "Interresponse Times",
     "Local Contrast",
     "Magazine Training",
-    "Match to Sample",
-    "Matching",
     "Matching Law",
     "Matching to Sample",
-    "Measurement",
     "Measurement: Duration",
     "Momentary Maximizing",
     "Motivating Operations",
-    "Multiple Schedules of Reinforcement",
+    "Negative Punishment",
     "Negative Reinforcement",
     "Noncontingent Reinforcement",
     "Operant Conditioning",
@@ -92,39 +65,33 @@
     "Optimization",
     "Overmatching",
     "Peak Shift",
+    "Positive Punishment",
     "Positive Reinforcement",
     "Post-Reinforcement Pause",
-    "Postreinforcement Pause",
     "Power Law",
     "Punishment",
-    "Punishment: Negative",
-    "Punishment: Positive",
     "Reinforcement",
-    "Reinforcement Delay",
-    "Reinforcement: Delayed",
-    "Reinforcement: Negative",
     "Reinforcement: Positive",
-    "Reinforcement: Postive",
-    "Reinforcer: Positive",
     "Remembering",
     "Repeated Acquisition",
-    "Respondent Conditioning",
     "Response Allocation",
     "Response Bias",
-    "Response Chains",
     "Response Differentiation",
     "Response Effort",
     "Response Produced Stimuli",
     "Response Rate",
     "Response Topography",
+    "Schedule: Alternating",
     "Schedule: Chain",
-    "Schedule: Chained",
     "Schedule: Concurrent",
     "Schedule: Concurrent Chains",
     "Schedule: Concurrent Variable-Interval",
     "Schedule: Concurrent-Chain",
     "Schedule: Conjunctive",
     "Schedule: Continuous",
+    "Schedule: Differential Reinforcement of High Rates",
+    "Schedule: Differential Reinforcement of Low Rates",
+    "Schedule: Differential Reinforcement of Other Behavior",
     "Schedule: Fixed Interval",
     "Schedule: Fixed Ratio",
     "Schedule: Fixed Time",
@@ -137,26 +104,13 @@
     "Schedule: Variable Interval",
     "Schedule: Variable Ratio",
     "Schedule: Variable Time",
-    "Schedules of Reinforcement: Concurrent",
-    "Schedules of Reinforcement: Continuous Reinforcement",
-    "Schedules of Reinforcement: DRL",
-    "Schedules of Reinforcement: Differential Reinforcement of Other Behavior",
     "Schedules of Reinforcement: Fixed Interval",
-    "Schedules of Reinforcement: Fixed Rate",
     "Schedules of Reinforcement: Fixed Ratio",
-    "Schedules of Reinforcement: Mixed",
-    "Schedules of Reinforcement: Multiple",
-    "Schedules of Reinforcement: Multiple Schedules",
     "Schedules of Reinforcement: Variable Interval",
-    "Schedules of Reinforcement: Variable Ratio",
     "Second-Order Conditioning",
-    "Second-Order Schedules",
     "Shaping",
-    "Shock",
     "Short-Term Memory",
     "Signal Detection",
-    "Signal-Detection Theory",
-    "Slide Projector",
     "Stimulus Classes",
     "Stimulus Control",
     "Stimulus Discriminability",
@@ -168,10 +122,8 @@
     "Temporal Discrimination",
     "Temporal Relations",
     "Time-Out",
-    "Timeout",
     "Token Economy",
-    "Undermatching",
-    "Visual Stimulus"
+    "Undermatching"
   ],
   "singletons_for_review": [
     "Absolute Threshold",
@@ -1650,21 +1602,243 @@
     "Delayed Stimulus Control": 1
   },
   "merges": {
-    "Aversive control": "Aversive Control",
-    "Conditioned suppression": "Conditioned Suppression",
-    "Operant conditioning": "Operant Conditioning",
-    "Reinforcement:Positive": "Reinforcement: Positive",
-    "Schedule: Concurrent Chain": "Schedule: Concurrent-Chain",
-    "Schedule: Fixed-Interval": "Schedule: Fixed Interval",
-    "Schedule: Fixed-Ratio": "Schedule: Fixed Ratio",
-    "Schedule: Fixed-Time": "Schedule: Fixed Time",
-    "Schedule: Random-Interval": "Schedule: Random Interval",
-    "Schedule: Variable-Interval": "Schedule: Variable Interval",
-    "Schedules of Reinforcement: Fixed-Interval": "Schedules of Reinforcement: Fixed Interval",
-    "Schedules of Reinforcement: Fixed-Ratio": "Schedules of Reinforcement: Fixed Ratio",
-    "Schedules of Reinforcement:Fixed Ratio": "Schedules of Reinforcement: Fixed Ratio",
-    "Schedules of Reinforcement:Variable Interval": "Schedules of Reinforcement: Variable Interval",
-    "Stimulus generalization": "Stimulus Generalization",
-    "Time-out": "Time-Out"
-  }
+    "Aversive control": [
+      "Aversive Control"
+    ],
+    "Conditioned suppression": [
+      "Conditioned Suppression"
+    ],
+    "Operant conditioning": [
+      "Operant Conditioning"
+    ],
+    "Reinforcement:Positive": [
+      "Positive Reinforcement"
+    ],
+    "Schedule: Concurrent Chain": [
+      "Schedule: Concurrent Chains"
+    ],
+    "Schedule: Fixed-Interval": [
+      "Schedule: Fixed Interval"
+    ],
+    "Schedule: Fixed-Ratio": [
+      "Schedule: Fixed Ratio"
+    ],
+    "Schedule: Fixed-Time": [
+      "Schedule: Fixed Time"
+    ],
+    "Schedule: Random-Interval": [
+      "Schedule: Variable Interval"
+    ],
+    "Schedule: Variable-Interval": [
+      "Schedule: Variable Interval"
+    ],
+    "Schedules of Reinforcement: Fixed-Interval": [
+      "Schedule: Fixed Interval",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Fixed-Ratio": [
+      "Schedule: Fixed Ratio",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement:Fixed Ratio": [
+      "Schedule: Fixed Ratio",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement:Variable Interval": [
+      "Schedule: Variable Interval",
+      "Reinforcement"
+    ],
+    "Stimulus generalization": [
+      "Stimulus Generalization"
+    ],
+    "Time-out": [
+      "Time-Out"
+    ],
+    "Schedules of Reinforcement: Concurrent": [
+      "Schedule: Concurrent",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Continuous Reinforcement": [
+      "Schedule: Continuous",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: DRL": [
+      "Schedule: Differential Reinforcement of Low Rates",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Differential Reinforcement of Other Behavior": [
+      "Schedule: Differential Reinforcement of Other Behavior",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Fixed Interval": [
+      "Schedule: Fixed Interval",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Fixed Rate": [
+      "Schedule: Fixed Ratio",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Fixed Ratio": [
+      "Schedule: Fixed Ratio",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Mixed": [
+      "Schedule: Mixed",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Multiple": [
+      "Schedule: Multiple",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Multiple Schedules": [
+      "Schedule: Multiple",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Variable Interval": [
+      "Schedule: Variable Interval",
+      "Reinforcement"
+    ],
+    "Schedules of Reinforcement: Variable Ratio": [
+      "Schedule: Variable Ratio",
+      "Reinforcement"
+    ],
+    "Alternating Schedules of Reinforcement": [
+      "Schedule: Alternating",
+      "Reinforcement"
+    ],
+    "Multiple Schedules of Reinforcement": [
+      "Schedule: Multiple",
+      "Reinforcement"
+    ],
+    "Conjunctive Schedules": [
+      "Schedule: Conjunctive"
+    ],
+    "Second-Order Schedules": [
+      "Schedule: Second-Order"
+    ],
+    "DRL": [
+      "Schedule: Differential Reinforcement of Low Rates"
+    ],
+    "DRH": [
+      "Schedule: Differential Reinforcement of High Rates"
+    ],
+    "DRO": [
+      "Schedule: Differential Reinforcement of Other Behavior"
+    ],
+    "Differential Reinforcement: Low Rates": [
+      "Schedule: Differential Reinforcement of Low Rates"
+    ],
+    "Differential reinforcement of low rates": [
+      "Schedule: Differential Reinforcement of Low Rates"
+    ],
+    "Schedule: Chained": [
+      "Schedule: Chain"
+    ],
+    "Schedule: Concurrent-Chain": [
+      "Schedule: Concurrent Chains"
+    ],
+    "Schedule: Random Interval": [
+      "Schedule: Variable Interval"
+    ],
+    "Avoidance Behavior": [
+      "Avoidance"
+    ],
+    "Avoidance Learning": [
+      "Avoidance"
+    ],
+    "Behavior Contrast": [
+      "Behavioral Contrast"
+    ],
+    "Behavioral contrast under multiple schedules": [
+      "Behavioral Contrast"
+    ],
+    "Conditioned Supression": [
+      "Conditioned Suppression"
+    ],
+    "Conditioned Reinforcer": [
+      "Conditioned Reinforcement"
+    ],
+    "Aversive Stimulation": [
+      "Aversive Stimuli"
+    ],
+    "Aversive Stimulus: Electric Shock": [
+      "Aversive Stimuli: Electric Shock"
+    ],
+    "Electric Shock": [
+      "Aversive Stimuli: Electric Shock"
+    ],
+    "Shock": [
+      "Aversive Stimuli: Electric Shock"
+    ],
+    "Delayed Reinforcement": [
+      "Delay of Reinforcement"
+    ],
+    "Reinforcement Delay": [
+      "Delay of Reinforcement"
+    ],
+    "Reinforcement: Delayed": [
+      "Delay of Reinforcement"
+    ],
+    "Generalization Gradients": [
+      "Generalization Gradient"
+    ],
+    "Interresponse Times": [
+      "Interresponse Time"
+    ],
+    "Match to Sample": [
+      "Matching to Sample"
+    ],
+    "Delayed Match to Sample": [
+      "Delayed Matching to Sample"
+    ],
+    "Reinforcement: Postive": [
+      "Positive Reinforcement"
+    ],
+    "Reinforcement: Positive": [
+      "Positive Reinforcement"
+    ],
+    "Reinforcer: Positive": [
+      "Positive Reinforcement"
+    ],
+    "Reinforcement: Negative": [
+      "Negative Reinforcement"
+    ],
+    "Punishment: Positive": [
+      "Positive Punishment"
+    ],
+    "Punishment: Negative": [
+      "Negative Punishment"
+    ],
+    "Postreinforcement Pause": [
+      "Post-Reinforcement Pause"
+    ],
+    "Response Chains": [
+      "Behavioral Chaining"
+    ],
+    "Signal-Detection Theory": [
+      "Signal Detection"
+    ],
+    "Timeout": [
+      "Time-Out"
+    ],
+    "Discriminability": [
+      "Stimulus Discriminability"
+    ],
+    "Respondent Conditioning": [
+      "Classical Conditioning"
+    ],
+    "Generalized Matching Law": [
+      "Matching Law"
+    ],
+    "Herrnsteins Equation": [
+      "Matching Law"
+    ],
+    "Matching": [
+      "Matching Law"
+    ],
+    "Discrimination Training": [
+      "Discrimination Learning"
+    ]
+  },
+  "merge_note": "merges values are LISTS: a compound label may split into several tags (Schedules of Reinforcement: X -> Schedule: X + Reinforcement)."
 }
