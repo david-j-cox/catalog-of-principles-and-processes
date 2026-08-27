@@ -18439,10 +18439,11 @@
     ],
     "processes": [],
     "principles": [],
-    "topics": [],
-    "unmapped": [
-      "Slide Projector",
+    "topics": [
       "Visual Stimulus"
+    ],
+    "unmapped": [
+      "Slide Projector"
     ]
   },
   {
@@ -19181,10 +19182,11 @@
     ],
     "processes": [],
     "principles": [],
-    "topics": [],
-    "unmapped": [
-      "Slide Projector",
+    "topics": [
       "Visual Stimulus"
+    ],
+    "unmapped": [
+      "Slide Projector"
     ]
   },
   {
@@ -99796,10 +99798,10 @@
       "Discrete Trials"
     ],
     "principles": [],
-    "topics": [],
-    "unmapped": [
+    "topics": [
       "Visual Stimulus"
-    ]
+    ],
+    "unmapped": []
   },
   {
     "title": "Within-Subject Testing Of The Signaled-Reinforcement Effect On Operant Responding As Measured By Response Rate And Resistance To Change",

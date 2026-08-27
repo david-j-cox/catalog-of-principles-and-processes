@@ -65,9 +65,14 @@ ADD = {
                 'Discriminative Stimulus', 'Unconditioned Stimulus', 'Intertrial Interval',
                 'Interstimulus Interval', 'Reaction Time', 'Observing Response',
                 'Resistance to Extinction',
-                # replaces Temporal Control / Temporal Discrimination: names the input
-                # dimension, so a timing paper reads Discrimination + Temporal Stimulus
-                'Temporal Stimulus'],
+                # Stimulus dimensions. David: these are "structural / topographical types
+                # of the same token" - one kind of thing (an input that drives a principle),
+                # differing only in form. Temporal joins them rather than being a principle
+                # of its own: a timing paper is discrimination with time as the stimulus,
+                # the way another study uses a light or a tone.
+                'Temporal Stimulus', 'Visual Stimulus', 'Auditory Stimulus',
+                'Olfactory Stimulus', 'Gustatory Stimulus', 'Tactile Stimulus',
+                'Interoceptive Stimulus', 'Spatial Stimulus'],
 }
 
 # RULE 3 carried into labels already in the vocabulary. Each is a direct parallel to one
@@ -91,6 +96,10 @@ RULE3 = {
 canon = set(tax['canonical'])
 merges = {k: (v if isinstance(v, list) else [v]) for k, v in tax['merges'].items()}
 
+# Visual Stimulus was dropped earlier as apparatus. Under David's input framing that was
+# wrong - it names a stimulus dimension, so it returns as a measure.
+tax['rejected_too_broad'] = [x for x in (tax.get('rejected_too_broad') or [])
+                             if x != 'Visual Stimulus']
 canon -= set(REJECT)
 tax['rejected_too_broad'] = sorted(set(tax.get('rejected_too_broad') or []) | set(REJECT))
 for src, dst in FOLD.items():
