@@ -930,7 +930,9 @@ function renderPage() {
                 ? `<span class="badge-needs-review">Flagged for review</span>`
                 : article['ai-reviewed'] === true
                     ? `<span class="badge-needs-review">AI pass · needs review</span>`
-                    : `<span class="badge-needs-review">Needs Review</span>`;
+                    : humanSignoffs(article).length > 0
+                        ? `<span class="badge-needs-review">Human reviewed ${humanSignoffs(article).length}/${SIGNOFF_THRESHOLD}</span>`
+                        : `<span class="badge-needs-review">Needs Review</span>`;
 
         let signoffBtn = '';
         if (githubToken && githubUsername &&

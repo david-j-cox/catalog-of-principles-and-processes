@@ -1,7 +1,7 @@
 export const meta = {
   name: 'entry-validation-batch',
   description: 'Single-reviewer EAB validation of catalog entries (metadata + behavioral-process tag), escalate on doubt',
-  phases: [ { title: 'Review' }, { title: 'Escalate' } ],
+  phases: [ { title: 'Review', model: 'sonnet' }, { title: 'Escalate', model: 'opus' } ],
 }
 
 const CANON = __CANON__
@@ -139,11 +139,11 @@ function needEscalate(r) {
 
 const results = (await pipeline(
   BATCH,
-  (e) => agent(reviewPrompt(e), { label: `rev:${e.idx}`, phase: 'Review', schema: FINAL_SCHEMA }),
+  (e) => agent(reviewPrompt(e), { label: `rev:${e.idx}`, phase: 'Review', schema: FINAL_SCHEMA, model: 'sonnet' }),
   (r, e) => {
     if (!needEscalate(r)) return r
-    return agent(reviewPrompt(e), { label: `rev2:${e.idx}`, phase: 'Escalate', schema: FINAL_SCHEMA })
-      .then(r2 => agent(seniorPrompt(e, r, r2), { label: `snr:${e.idx}`, phase: 'Escalate', schema: FINAL_SCHEMA }))
+    return agent(reviewPrompt(e), { label: `rev2:${e.idx}`, phase: 'Escalate', schema: FINAL_SCHEMA, model: 'opus' })
+      .then(r2 => agent(seniorPrompt(e, r, r2), { label: `snr:${e.idx}`, phase: 'Escalate', schema: FINAL_SCHEMA, model: 'opus' }))
   },
 )).filter(Boolean)
 
