@@ -47,8 +47,15 @@ REJECT = ['Operant Conditioning', 'Conditioning', 'Behavioral Pharmacology', 'Fo
 
 FOLD = {'Functional Equivalence': 'Stimulus Equivalence'}
 
+# David, extending rule 6 to melioration: an explanatory ACCOUNT of how allocation works
+# belongs beside the matching law, not beside reinforcement - and the same holds for the
+# competing accounts tested against it in the same literature. Momentary Maximizing joins
+# it, completing the set of quantitative accounts of choice allocation.
+TO_MODEL = ['Melioration', 'Momentary Maximizing']
+
 ADD = {
- 'principle':  ['Satiation', 'Melioration',
+ 'model':      ['Melioration'],
+ 'principle':  ['Satiation',
                 # the counterpart to Stimulus Generalization, which David asked for
                 'Response Generalization'],
  'process':    ['Omission Training', 'Reinforcer Devaluation', 'Peak Procedure',
@@ -116,7 +123,9 @@ for k, labels in ADD.items():
 
 new_kinds = {}
 for c in canon:
-    if c in RULE3:
+    if c in TO_MODEL:
+        new_kinds[c] = 'model'
+    elif c in RULE3:
         new_kinds[c] = 'measure'
     elif c in METHOD_NOT_PRINCIPLE:
         new_kinds[c] = 'process'

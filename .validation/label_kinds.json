@@ -61,8 +61,8 @@
     "Matching Law": "model",
     "Matching to Sample": "process",
     "Measurement: Duration": "measure",
-    "Melioration": "principle",
-    "Momentary Maximizing": "phenomenon",
+    "Melioration": "model",
+    "Momentary Maximizing": "model",
     "Motivating Operations": "principle",
     "Negative Punishment": "principle",
     "Negative Reinforcement": "principle",
@@ -154,10 +154,10 @@
     "Working Memory": "phenomenon"
   },
   "counts": {
-    "phenomenon": 34,
-    "measure": 31,
+    "principle": 22,
     "process": 59,
-    "principle": 23,
-    "model": 5
+    "measure": 31,
+    "phenomenon": 33,
+    "model": 7
   }
 }
